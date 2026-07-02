@@ -660,19 +660,25 @@
                                     <ul className="space-y-2 text-xs text-slate-600">
                                         <li className="flex gap-2">
                                             <span className="text-spartaRed font-bold">1</span>
-                                            <span>Raw 데이터 수집 단계에서 metadata extraction 및 schema normalization 자동 수행</span>
+                                            <span>Raw 데이터 수집 단계에서 metadata extraction 및 schema normalization 수행 + 저장</span>										
                                         </li>
                                         <li className="flex gap-2">
                                             <span className="text-spartaRed font-bold">2</span>
-                                            <span>Quality Filtering Layer에서 EDA 기반 threshold rule + ML 기반 anomaly detection 결합</span>
+											<div className="flex flex-col space-y-1">
+                                            <span>Preprocessing단계에서  얼굴인식/특징점추출/얼굴정렬 수행</span>
+											<span>on-demand 함수 적용 : smoothing, re-alignment 등 </span>
+											</div>
                                         </li>
                                         <li className="flex gap-2">
                                             <span className="text-spartaRed font-bold">3</span>
-                                            <span>Labeling 단계는 semi-automated human-in-the-loop 구조로 효율성 확보</span>
+                                            <span>Quality Filtering Layer에서 EDA 기반 threshold rule + ML 기반 anomaly detection 결합</span>
                                         </li>
                                         <li className="flex gap-2">
                                             <span className="text-spartaRed font-bold">4</span>
+											<div className="flex flex-col space-y-1">
+											<span>Labeling 단계는 semi-automated human-in-the-loop 구조로 효율성 확보</span>
                                             <span>Training Pipeline은 versioned dataset 기반으로 재현 가능한 학습 환경 구성 및 registry 기반의 lineage tracking 구현</span>
+											</div>
                                         </li>
                                     </ul>
                                 </div>
