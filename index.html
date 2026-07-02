@@ -486,7 +486,7 @@
                         {/* Tableau Dashboard */}
                         <div className="space-y-4 pt-4 border-t border-borderGray">
                             <h3 className="text-lg font-bold text-slate-900 flex items-center">
-                                <span className="text-spartaRed font-mono text-sm mr-2 font-bold">[Tableau]</span> 실시간 비즈니스 데이터 그로스 대시보드 구축
+                                <span className="text-spartaRed font-mono text-sm mr-2 font-bold">[Tableau]</span> 실시간 비즈니스 그로스 대시보드 구축
                             </h3>
                             <p className="text-xs font-bold text-slate-700">비즈니스 의사결정 속도 단축을 위한 실시간 Tableau 대시보드 아키텍처</p>
                             
@@ -501,16 +501,16 @@
                                 </div>
 
                                 <div className="md:col-span-8 bg-white p-4 rounded border border-borderGray space-y-3">
-                                    <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">주요 위젯 사양</h4>
+                                    <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">주요 지표 차트</h4>
                                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[10px] text-slate-700">
                                         <div className="p-2.5 bg-lightGray rounded border border-slate-200">
-                                            콘텐츠 카테고리별 유저당 누적 생성량 & 체류시간 [기간조정]
+                                            콘텐츠 카테고리별 세션당 생성량 & 체류시간 [기간조정]
                                         </div>
                                         <div className="p-2.5 bg-lightGray rounded border border-slate-200">
                                             유입 코호트별 Funnel 차트 + 이탈 구간 경고 알림
                                         </div>
                                         <div className="p-2.5 bg-lightGray rounded border border-slate-200">
-                                            마케팅 채널별 유저당 누적 생성량 대비 GPU Cost 모니터링 차트
+                                            마케팅 채널별 잔존율 대비 GPU Cost 모니터링 차트
                                         </div>
                                     </div>
                                 </div>
@@ -629,7 +629,7 @@
 
                                 <p className="text-xs text-slate-700 font-bold bg-white p-3 rounded border border-slate-200">
                                     <i className="fa-solid fa-square-check text-spartaRed mr-1.5"></i>
-                                    정제 가이드라인 설계: 얼굴 인식에 영향을 주는 crop size, similarity 등의 모델 인자값과 불필요한 작업 최소화를 위한 frame sampling, 최소 SNR, 이미지 최소 해상도의 데이터 정화 임계값(Threshold) 수립.
+                                    정제 가이드라인 설계: 얼굴 인식에 영향을 주는 crop size, similarity 등의 모델 인자값 그리고 최소 SNR, 이미지 최소 해상도의 데이터 정화 임계값(Threshold) 수립.
                                 </p>
                             </div>
                         </div>
@@ -666,7 +666,7 @@
                                             <span className="text-spartaRed font-bold">2</span>
 											<div className="flex flex-col space-y-1">
                                             <span>Preprocessing단계에서  얼굴인식/특징점추출/얼굴정렬 수행</span>
-											<span>on-demand 함수 적용 : smoothing, re-alignment 등 </span>
+											<span>On-demand 함수 적용 : smoothing, re-alignment 등 </span>
 											</div>
                                         </li>
                                         <li className="flex gap-2">
