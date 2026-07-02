@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[팀스파르타 강사지원] 김민우 실무 포트폴리오</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        spartaRed: '#FF003C',
+                        spartaRedHover: '#D60032',
+                        bodyText: '#1E293B',
+                        lightGray: '#F8FAFC',
+                        borderGray: '#E2E8F0'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Noto Sans KR', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- React and ReactDOM -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <!-- Babel for JSX compilation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Noto Sans KR', 'Inter', sans-serif;
+            background-color: #FFFFFF;
+            color: #1E293B;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState } = React;
+
+        function App() {
+            const [activeTab, setActiveTab] = useState('intro');
+
+            const renderHeader = () => (
+                <header className="sticky top-0 z-50 bg-white border-b border-borderGray">
+                    <div className="max-w-6xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+                        <div className="flex items-center space-x-3 cursor-pointer" onClick={() => setActiveTab('intro')}>
+                            <div className="w-8 h-8 rounded bg-spartaRed flex items-center justify-center text-white font-black text-lg">S</div>
+                            <div>
+                                <span className="text-sm font-black tracking-tight text-spartaRed block">KIM'S PORTFOLIO</span>
+                                <span className="text-[10px] text-slate-500 block -mt-0.5">데이터/AI 실무 전문가</span>
+                            </div>
+                        </div>
+
+                        <nav className="flex space-x-1 bg-lightGray p-1 rounded-lg">
+                            {[
+                                { id: 'intro', label: '소개 & 비전', icon: 'fa-user' },
+                                { id: 'projectA', label: '프로젝트 A', icon: 'fa-chart-pie' },
+                                { id: 'projectB', label: '프로젝트 B', icon: 'fa-network-wired' },
+                                { id: 'projectC', label: '프로젝트 C', icon: 'fa-robot' }
+                            ].map((tab) => (
+                                <button
+                                    key={tab.id}
+                                    onClick={() => setActiveTab(tab.id)}
+                                    className={`px-4 py-2 rounded-md text-xs font-bold flex items-center gap-1.5 transition-colors ${
+                                        activeTab === tab.id 
+                                            ? 'bg-spartaRed text-white' 
+                                            : 'text-slate-600 hover:text-slate-900'
+                                    }`}
+                                >
+                                    <i className={`fa-solid ${tab.icon} text-[10px]`}></i>
+                                    <span>{tab.label}</span>
+                                </button>
+                            ))}
+                        </nav>
+                    </div>
+                </header>
+            );
+
+            const renderIntroduction = () => {
+                const coreTech = [
+                    'SQL / BigQuery', 'Python (ML/DL)', 'Amplitude', 
+                    'Appsflyer', 'Firebase', 'Looker / Tableau', 
+                    'DVC', 'Kubeflow'
+                ];
+
+                return (
+                    <div className="max-w-4xl mx-auto py-12 px-6 space-y-16">
+                        {/* Vision Statement */}
+                        <div className="text-center space-y-4 border-b border-borderGray pb-12">
+                            <span className="inline-block bg-spartaRed/10 text-spartaRed px-3 py-1 rounded text-xs font-bold uppercase tracking-wider">
+                                LECTURER VISION
+                            </span>
+                            <h2 className="text-3xl md:text-4xl font-black text-slate-900 leading-tight">
+                                "개인의 성장을 넘어 매출 성장에 기여하는 인재양성"
+                            </h2>
+                            <p className="text-slate-600 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+                                <strong className="text-slate-900 font-bold">팀리드, 창업팀 리드 경험</strong>을 통해 단순 수식 학습과 코딩 암기를 넘어, 매출 및 서비스 성장 관점에서 기술을 어떻게 학습하고 설계하며 현업 비즈니스에 적용해야 하는지 가장 강력하게 알려줍니다.
+                            </p>
+                        </div>
+
+                        {/* Profile Link Setup: Who realizes this vision? */}
+                        <div className="space-y-6">
+                            <span className="inline-block bg-slate-100 text-slate-800 px-3 py-1 rounded text-xs font-bold uppercase tracking-wider">
+                                WHO IS THE MENTOR?
+                            </span>
+                            <h3 className="text-xl font-bold text-slate-900">
+                                앞선 비전을 확실한 비즈니스 성과로 실현할 멘토를 소개합니다.
+                            </h3>
+                            
+                            <div className="bg-lightGray border-l-4 border-spartaRed p-6 rounded-r-md space-y-4">
+                                <h4 className="text-lg font-black text-slate-900">
+                                    "현업의 언어로 성장을 이끄는 데이터 실무 멘토, <span className="text-spartaRed">ben kim</span>입니다."
+                                </h4>
+                                <p className="text-slate-600 text-xs md:text-sm leading-relaxed">
+                                    비즈니스 지표 개선(DA)과 데이터 엔지니어링 및 MLOps PoC의 균형 잡힌 실전 경험을 바탕으로, 팀스파르타 수강생들을 시장이 즉각 채용하고 싶어 하는 <strong>‘시장형 인재’</strong>로 트레이닝하겠습니다.
+                                </p>
+                                <div className="pt-2 flex flex-wrap gap-2 text-xs font-bold text-slate-700">
+                                    <span className="bg-white border border-borderGray px-3 py-1.5 rounded-md">
+                                        <i className="fa-solid fa-briefcase text-spartaRed mr-1.5"></i>Data Sceintist
+                                    </span>
+			<span className="bg-white border border-borderGray px-3 py-1.5 rounded-md">
+                                        <i className="fa-solid fa-briefcase text-spartaRed mr-1.5"></i>AI Data Engineer
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Tech Stack Block */}
+                        <div className="space-y-4">
+                            <div>
+                                <h3 className="text-sm font-bold uppercase tracking-wider text-slate-400">Core Tech Stack</h3>
+                                <p className="text-xs text-slate-500 mt-1">현업 실무 파이프라인에서 수강생이 직접 아키텍처를 그리고 운영할 수 있도록 이끌어주는 기술 도구 모음입니다.</p>
+                            </div>
+                            
+                            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                                {coreTech.map((tech) => (
+                                    <div key={tech} className="bg-white border border-borderGray p-4 rounded-md text-center shadow-sm">
+                                        <span className="text-xs font-bold text-slate-800">{tech}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Contact Info (Candidate Info Integration) */}
+                        <div className="border-t border-borderGray pt-12">
+                            <h3 className="text-sm font-bold uppercase tracking-wider text-slate-400 mb-6">Contact & Channels</h3>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs">
+                                <div className="p-4 bg-lightGray rounded border border-borderGray">
+                                    <span className="text-slate-400 block font-bold mb-1">EMAIL</span>
+                                    <span className="font-mono text-slate-800 font-bold">benskim915@gmail.com</span>
+                                </div>
+                                <div className="p-4 bg-lightGray rounded border border-borderGray">
+                                    <span className="text-slate-400 block font-bold mb-1">GITHUB</span>
+                                    <a href="https://github.com/minwoo-data-portfolio" target="_blank" rel="noopener noreferrer" className="font-mono text-spartaRed hover:underline font-bold">
+                                        https://github.com/benskim
+                                    </a>
+                                </div>
+                                <div className="p-4 bg-lightGray rounded border border-borderGray">
+                                    <span className="text-slate-400 block font-bold mb-1">LINKEDIN</span>
+                                    <a href="https://linkedin.com/in/minwoo-kim-ai" target="_blank" rel="noopener noreferrer" className="font-mono text-spartaRed hover:underline font-bold">
+                                        linkedin.com/in/benjamin-s-k
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                );
+            };
+
+            const renderProjectA = () => {
+                return (
+                    <div className="max-w-4xl mx-auto py-12 px-6 space-y-20">
+                        {/* Title Block */}
+                        <div className="border-b border-borderGray pb-8">
+                            <span className="bg-spartaRed text-white px-2.5 py-1 text-[10px] font-bold rounded uppercase tracking-wider">PROJECT A</span>
+                            <h1 className="text-2xl md:text-3xl font-black text-slate-900 mt-3">
+                                Gen-AI B2C 앱 서비스 그로스 분석
+                            </h1>
+                            <p className="text-xs text-slate-500 mt-1.5">실제 비즈니스 성장 전략 설계와 데이터 검증의 엔드투엔드(End-to-End) 케이스 스터디</p>
+                        </div>
+
+                        {/* Overview & Target Metric */}
+                        <div className="space-y-4">
+                            <h3 className="text-lg font-bold text-slate-900 flex items-center">
+                                <span className="text-spartaRed font-mono text-sm mr-2 font-bold">[Overview]</span> 서비스 성장을 위한 데이터 분석 개요
+                            </h3>
+                            <p className="text-xs font-bold text-slate-700">생성형 AI 기반 B2C 앱 서비스 베타 런칭 및 유저 획득(UA) 그로스 프로젝트</p>
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-stretch mt-4">
+                                <div className="md:col-span-4 bg-lightGray p-4 rounded border border-borderGray flex flex-col justify-between">
+                                    <div>
+                                        <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">Context</h4>
+                                        <p className="text-xs text-slate-600 leading-relaxed mt-2">
+                                            이미지, 음성, 영상을 활용한 얼굴/음성 생성 AI 기능의 모바일 앱 서비스 마켓 런칭 및 비즈니스 데이터 파이프라인 구축.
+                                        </p>
+                                    </div>
+                                    <div className="border-t border-borderGray pt-3 mt-4">
+                                        <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">Target KPI</h4>
+                                        <p className="text-xs font-bold text-spartaRed mt-1">PMF 달성 & 잔존율 극대화</p>
+                                        <p className="text-xs text-slate-500">실시간 유저 활성화(Activation) 인프라 수립</p>
+                                    </div>
+                                </div>
+
+                                <div className="md:col-span-8 bg-lightGray p-4 rounded border border-borderGray">
+                                    <h4 className="text-xs font-bold text-slate-400 mb-4">앱 베타 출시 마일스톤</h4>
+                                    <div className="flex justify-between items-center relative py-4 px-2">
+                                        <div className="absolute left-0 right-0 h-0.5 bg-slate-300 top-1/2 -translate-y-1/2 z-0"></div>
+                                        
+                                        {['기획', '인프라 연동', '베타 출시', 'UA 그로스'].map((step, idx) => (
+                                            <div key={idx} className="relative z-10 flex flex-col items-center">
+                                                <div className={`w-6 h-6 rounded-full border-2 flex items-center justify-center text-[10px] font-bold ${
+                                                    idx === 2 ? 'bg-spartaRed border-spartaRed text-white' : 'bg-white border-slate-300 text-slate-500'
+                                                }`}>
+                                                    {idx + 1}
+                                                </div>
+                                                <span className={`text-[10px] font-bold mt-1.5 ${idx === 2 ? 'text-spartaRed' : 'text-slate-600'}`}>{step}</span>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Problem Definition */}
+                        <div className="space-y-4 pt-4 border-t border-borderGray">
+                            <h3 className="text-lg font-bold text-slate-900 flex items-center">
+                                <span className="text-spartaRed font-mono text-sm mr-2 font-bold">[Problem Definition]</span> 유저 유입량 대비 잔존율(CVR)의 보틀넥 발생
+                            </h3>
+                            <p className="text-xs font-bold text-slate-700">UA 마케팅 리소스 투입 대비 구독 전환율의 보틀넥 진단</p>
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-stretch mt-4">
+                                <div className="md:col-span-6 bg-lightGray p-5 rounded border border-borderGray space-y-3">
+                                    <h4 className="text-xs font-bold text-spartaRed uppercase tracking-wider">현업의 문제</h4>
+                                    <ul className="space-y-2.5 text-xs text-slate-600">
+                                        <li className="flex gap-2">
+                                            <span className="text-spartaRed">•</span>
+                                            <span>유저 획득(UA) 광고를 통해 대규모 유입이 발생했으나, 실제 앱 가입 후 생성형 AI 체험 단계에서 이탈율 급증.</span>
+                                        </li>
+                                        <li className="flex gap-2">
+                                            <span className="text-spartaRed">•</span>
+                                            <span>영상소스화면 도달 유저 중 실제 AI영상 생성으로 이어지는 전환율이 정체되며 Aha-moment 도달 정체.</span>
+                                        </li>
+                                        <li className="flex gap-2">
+                                            <span className="text-spartaRed">•</span>
+                                            <span>마케팅 비용(CAC)은 증가하나 가입 첫날 이탈율이 급증하는 위기 직면.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div className="md:col-span-6 bg-white p-5 rounded border border-borderGray flex flex-col justify-between">
+                                    <h4 className="text-xs font-bold text-slate-400 mb-3 uppercase tracking-wider">User Funnel Breakdown</h4>
+                                    <div className="space-y-2">
+                                        <div className="h-7 bg-slate-100 flex items-center justify-between px-3 rounded text-[11px] font-bold">
+                                            <span>AD click & Install</span>
+                                            <span>100%</span>
+                                        </div>
+                                        <div className="h-7 bg-slate-200/80 flex items-center justify-between px-3 rounded text-[11px] font-bold w-[75%]">
+                                            <span>Sign Up</span>
+                                            <span>65%</span>
+                                        </div>
+                                        <div className="h-7 bg-spartaRed text-white flex items-center justify-between px-3 rounded text-[11px] font-bold w-[35%]">
+                                            <span>AI Generation (이탈집중구간)</span>
+                                            <span>12%</span>
+                                        </div>
+                                        <div className="h-7 bg-slate-300 flex items-center justify-between px-3 rounded text-[11px] font-bold w-[15%]">
+                                            <span>Share/Download</span>
+                                            <span>2.5%</span>
+                                        </div>
+                                    </div>
+                                    <div className="text-[10px] text-spartaRed font-bold mt-2 text-right">
+                                        * 인앱 가입 대비 AI 생성 시도 전환 구간에서 약 80% 이상의 극단적 누수 발생
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* User Behavior Log Architecture */}
+                        <div className="space-y-4 pt-4 border-t border-borderGray">
+                            <h3 className="text-lg font-bold text-slate-900 flex items-center">
+                                <span className="text-spartaRed font-mono text-sm mr-2 font-bold">[로그 인프라 설계]</span> User Behavior Log Architecture
+                            </h3>
+                            <p className="text-xs font-bold text-slate-700">실시간 의사결정을 위한 사용자 행동 로그 트래킹 인프라 아키텍처</p>
+                            
+                            <div className="bg-lightGray p-5 rounded border border-borderGray space-y-4">
+                                <div className="grid grid-cols-4 gap-2 text-center text-xs">
+                                    <div className="bg-white p-2.5 rounded border border-borderGray">
+                                        <span className="font-bold text-slate-800">Client App</span>
+                                        <span className="text-[9px] text-slate-400 block mt-0.5">Flutter / iOS / AOS</span>
+                                    </div>
+                                    <div className="bg-white p-2.5 rounded border border-borderGray">
+                                        <span className="font-bold text-slate-800">Firebase SDK</span>
+                                        <span className="text-[9px] text-slate-400 block mt-0.5">행동 로그 트래킹</span>
+                                    </div>
+                                    <div className="bg-white p-2.5 rounded border border-borderGray">
+                                        <span className="font-bold text-slate-800">Appsflyer</span>
+                                        <span className="text-[9px] text-slate-400 block mt-0.5">기여도 연동</span>
+                                    </div>
+                                    <div className="bg-white p-2.5 rounded border border-borderGray">
+                                        <span className="font-bold text-slate-800">Amplitude</span>
+                                        <span className="text-[9px] text-slate-400 block mt-0.5">코호트 분석</span>
+                                    </div>
+                                </div>
+
+                                <div className="space-y-2 text-xs">
+                                    <div className="bg-white p-3 rounded border border-borderGray">
+                                        <span className="font-bold text-slate-900 block">Firebase 기반 프론트엔드 액션 로그 SDK 연동 및 고유 유저 ID Mapping 싱크 체계 확립</span>
+                                    </div>
+                                    <div className="bg-white p-3 rounded border border-borderGray">
+                                        <span className="font-bold text-slate-900 block">광고 매체 유입 소스 추적을 위한 Appsflyer 파라미터 설계 및 Amplitude Cohort 연동 파이프라인 구축</span>
+                                    </div>
+                                    <div className="bg-white p-3 rounded border border-borderGray">
+                                        <span className="font-bold text-slate-900 block">정의된 핵심 액션 로그 스키마</span>
+                                        <div className="flex flex-wrap gap-1.5 mt-2">
+                                            {['app_open', 'video_view', 'face_swap', 'face_swap_result_view', 'share', 'download', 'like'].map(item => (
+                                                <span key={item} className="bg-lightGray px-2 py-0.5 rounded text-[10px] text-slate-700 border border-slate-200 font-mono">{item}</span>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* EDA */}
+                        <div className="space-y-4 pt-4 border-t border-borderGray">
+                            <h3 className="text-lg font-bold text-slate-900 flex items-center">
+                                <span className="text-spartaRed font-mono text-sm mr-2 font-bold">[EDA]</span> 데이터 탐색을 통한 이탈 유저 패턴 규명
+                            </h3>
+                            <p className="text-xs font-bold text-slate-700">다차원 유저 로그 분석 기반 이탈 요인의 데이터 중심 가설 도출</p>
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-stretch mt-4">
+                                <div className="md:col-span-5 bg-white p-4 rounded border border-borderGray flex flex-col justify-between">
+                                    <h4 className="text-xs font-bold text-slate-400 mb-2">대기 시간별 이탈(Drop-out) 상관관계</h4>
+                                    <svg viewBox="0 0 100 60" className="w-full h-auto">
+                                        <line x1="0" y1="50" x2="100" y2="50" stroke="#E2E8F0" strokeWidth="0.5" />
+                                        <line x1="60" y1="0" x2="60" y2="60" stroke="#FF003C" strokeWidth="0.5" strokeDasharray="1,1" />
+                                        <path d="M 10 45 Q 50 40 60 20 T 100 5" fill="none" stroke="#FF003C" strokeWidth="1.5" />
+                                        <text x="50" y="58" fontSize="4" fill="#64748B" textAnchor="middle">대기시간 (초)</text>
+                                        <text x="62" y="25" fontSize="4" fill="#FF003C" fontWeight="bold">임계 영역 (8초)</text>
+                                        <text x="5" y="10" fontSize="4" fill="#64748B">이탈율</text>
+                                    </svg>
+                                </div>
+
+                                <div className="md:col-span-7 bg-lightGray p-4 rounded border border-borderGray flex flex-col justify-between">
+                                    <div className="space-y-3">
+                                        <h4 className="text-xs font-bold text-slate-800">도출된 가설 분석</h4>
+                                        <div className="space-y-2">
+                                            <div className="bg-white p-2.5 rounded border border-slate-200">
+                                                <span className="font-bold text-xs text-slate-900 block">가설 1</span>
+                                                <p className="text-[11px] text-slate-600 mt-0.5">AI 결과물이 생성되기까지의 대기 시간(Latency)이 8초를 초과할 경우 유저의 즉각적인 이탈(Drop-out)률이 지수 함수적으로 상승함.</p>
+                                            </div>
+                                            <div className="bg-white p-2.5 rounded border border-slate-200">
+                                                <span className="font-bold text-xs text-slate-900 block">가설 2</span>
+                                                <p className="text-[11px] text-slate-600 mt-0.5">이미지 생성 실패율(얼굴깨짐현상)이 높을수록 고객 이탈 속도가 비례하여 상승함.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="text-xs text-slate-700 bg-white p-2.5 rounded border border-borderGray mt-4 font-bold">
+                                        <i className="fa-solid fa-lightbulb text-spartaRed mr-1"></i>
+                                        SQL 분석결과: SQL 윈도우 함수를 활용한 사용자 세그먼트 분석 결과, AI 결과물을 2회 성공적으로 수신한 유저의 7day 잔존율이 미경험 유저 대비 3.5배 높음 확인.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Business Metric Optimization */}
+                        <div className="space-y-4 pt-4 border-t border-borderGray">
+                            <h3 className="text-lg font-bold text-slate-900 flex items-center">
+                                <span className="text-spartaRed font-mono text-sm mr-2 font-bold">(지표 정의 및 LTV 모델)</span> Business Metric Optimization
+                            </h3>
+                            <p className="text-xs font-bold text-slate-700">유저 평생 가치(LTV) 및 북극성 지표(North Star Metric) 수식 정립</p>
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-start">
+                                <div className="md:col-span-6 bg-white border border-spartaRed p-5 rounded">
+                                    <span className="text-[9px] font-bold text-spartaRed uppercase tracking-widest block mb-2">Metric Formulation</span>
+                                    <div className="space-y-3 font-mono">
+                                        <div className="border-b border-slate-100 pb-2">
+                                            <span className="text-[10px] text-slate-400 block">Proxy LTV</span>
+                                            <span className="text-sm font-bold text-slate-950">proxy LTV = 1 / GPU cost</span>
+                                        </div>
+                                        <div>
+                                            <span className="text-[10px] text-slate-400 block">North Star Metric</span>
+                                            <span className="text-xs text-slate-800 leading-normal block font-sans font-bold">
+                                                '가입 후 24시간 이내에 생성형 AI 결과물 다운로드(또는 공유) 1회 이상 달성 수치'
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="md:col-span-6 bg-lightGray p-5 rounded border border-borderGray space-y-3">
+                                    <h4 className="text-xs font-bold text-slate-800">Unit Economics 그로스 전략</h4>
+                                    <p className="text-xs text-slate-600 leading-relaxed">
+                                        proxy LTV/CAC 비율을 3.0 이상으로 유지하여 유닛 이코노믹스(Unit Economics) 안정화를 달성하는 그로스 전략 수립.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Hypothesis Testing */}
+                        <div className="space-y-4 pt-4 border-t border-borderGray">
+                            <h3 className="text-lg font-bold text-slate-900 flex items-center">
+                                <span className="text-spartaRed font-mono text-sm mr-2 font-bold">[Hypothesis Testing]</span> A/B 테스팅 시나리오 설계
+                            </h3>
+                            <p className="text-xs font-bold text-slate-700">가설 검정을 위한 실무형 A/B 테스트 시나리오 및 통계적 설계</p>
+                            
+                            <div className="overflow-x-auto">
+                                <table className="w-full text-left text-xs border border-borderGray">
+                                    <thead className="bg-lightGray border-b border-borderGray text-slate-700">
+                                        <tr>
+                                            <th className="p-3 font-bold">실험 세그먼트</th>
+                                            <th className="p-3 font-bold">콘텐츠 기획 가설</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody className="divide-y divide-borderGray text-slate-600">
+                                        <tr>
+                                            <td className="p-3 font-bold text-slate-900">대조군 (Group A)</td>
+                                            <td className="p-3">기존 랜덤 콘텐츠 (80% 개인 업로드 콘텐츠, 20% 내부)</td>
+                                        </tr>
+                                        <tr className="bg-spartaRed/5">
+                                            <td className="p-3 font-bold text-spartaRed">실험군 (Group B)</td>
+                                            <td className="p-3 font-bold text-slate-900">장르 기획 콘텐츠 (시네마틱, Y2K, 만화, 병맛 등)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div className="text-[11px] text-slate-500 bg-lightGray p-3 rounded border border-borderGray">
+                                <strong>샘플 사이즈 산정:</strong> 유의수준 alpha = 0.05, 검정력 1-beta = 0.80, 기대 최소 검출 효과(MDE) 15% 기준 필요한 일일 세그먼트당 최소 유저 수 산출.
+                            </div>
+                        </div>
+
+                        {/* Statistical Significance */}
+                        <div className="space-y-4 pt-4 border-t border-borderGray">
+                            <h3 className="text-lg font-bold text-slate-900 flex items-center">
+                                <span className="text-spartaRed font-mono text-sm mr-2 font-bold">(실전 A/B Test 수행)</span> 통계적 유의성 검정
+                            </h3>
+                            <p className="text-xs font-bold text-slate-700">A/B 테스트 수행 결과 분석 및 신뢰도 95% 수준에서의 유의성 검증</p>
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-stretch mt-4">
+                                <div className="md:col-span-5 bg-white p-4 rounded border border-borderGray flex flex-col justify-between">
+                                    <h4 className="text-xs font-bold text-slate-400 mb-2">전환율 분포 가시성 (대조군 A vs 실험군 B)</h4>
+                                    <svg viewBox="0 0 100 50" className="w-full h-auto">
+                                        <path d="M 10 45 C 30 45, 40 10, 50 45" fill="none" stroke="#94A3B8" strokeWidth="1" />
+                                        <path d="M 30 45 C 50 45, 60 5, 70 45" fill="none" stroke="#FF003C" strokeWidth="1.5" />
+                                        <line x1="42" y1="10" x2="42" y2="45" stroke="#94A3B8" strokeWidth="0.5" strokeDasharray="1,1" />
+                                        <line x1="58" y1="5" x2="58" y2="45" stroke="#FF003C" strokeWidth="0.5" strokeDasharray="1,1" />
+                                        <text x="35" y="49" fontSize="3" fill="#64748B">A (14.2%)</text>
+                                        <text x="65" y="49" fontSize="3" fill="#FF003C" fontWeight="bold">B (19.8%)</text>
+                                    </svg>
+                                </div>
+
+                                <div className="md:col-span-7 bg-lightGray p-4 rounded border border-borderGray flex flex-col justify-between">
+                                    <div className="space-y-3 text-xs">
+                                        <h4 className="text-xs font-bold text-slate-800">통계 분석 결과</h4>
+                                        <p className="text-slate-600">독립표본 T-검정 및 카이제곱 검정을 통한 전환 비율 검정 수행.</p>
+                                        <div className="grid grid-cols-2 gap-2 mt-2">
+                                            <div className="bg-white p-2 rounded border border-slate-200">
+                                                <span className="text-[10px] text-slate-400 block font-bold">실험군(B) 영상 변환율 향상</span>
+                                                <span className="text-xs font-bold text-spartaRed">대비 약 22.4% 향상</span>
+                                            </div>
+                                            <div className="bg-white p-2 rounded border border-slate-200">
+                                                <span className="text-[10px] text-slate-400 block font-bold">통계 검정 수치</span>
+                                                <span className="text-xs font-bold text-slate-900">p-value = 0.012 &lt; 0.05</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p className="text-[11px] text-slate-700 leading-relaxed font-bold mt-4">
+                                        결론: 우연에 의한 차이가 아님을 통계적 유의도 수준에서 성공적으로 검증하여 새로운 서비스 시나리오로 정식 롤아웃 의사결정.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Tableau Dashboard */}
+                        <div className="space-y-4 pt-4 border-t border-borderGray">
+                            <h3 className="text-lg font-bold text-slate-900 flex items-center">
+                                <span className="text-spartaRed font-mono text-sm mr-2 font-bold">[Tableau]</span> 실시간 비즈니스 데이터 그로스 대시보드 구축
+                            </h3>
+                            <p className="text-xs font-bold text-slate-700">비즈니스 의사결정 속도 단축을 위한 실시간 Tableau 대시보드 아키텍처</p>
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-stretch">
+                                <div className="md:col-span-4 bg-lightGray p-4 rounded border border-borderGray flex flex-col justify-between">
+                                    <div>
+                                        <h4 className="text-xs font-bold text-slate-800 mb-2">Dashboard Spec</h4>
+                                        <p className="text-[11px] text-slate-600 leading-relaxed">
+                                            <strong>연동 데이터 소스:</strong> BigQuery 정제 로그 및 Appsflyer 마케팅 성과 테이블 실시간 조인.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="md:col-span-8 bg-white p-4 rounded border border-borderGray space-y-3">
+                                    <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">주요 위젯 사양</h4>
+                                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[10px] text-slate-700">
+                                        <div className="p-2.5 bg-lightGray rounded border border-slate-200">
+                                            콘텐츠 카테고리별 유저당 누적 생성량 & 체류시간 [기간조정]
+                                        </div>
+                                        <div className="p-2.5 bg-lightGray rounded border border-slate-200">
+                                            유입 코호트별 Funnel 차트 + 이탈 구간 경고 알림
+                                        </div>
+                                        <div className="p-2.5 bg-lightGray rounded border border-slate-200">
+                                            마케팅 채널별 유저당 누적 생성량 대비 GPU Cost 모니터링 차트
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Business Impact */}
+                        <div className="space-y-4 pt-4 border-t border-borderGray">
+                            <h3 className="text-lg font-bold text-slate-900 flex items-center">
+                                <span className="text-spartaRed font-mono text-sm mr-2 font-bold">[Business Impact]</span> 프로젝트 A의 정량적/정성적 성과
+                            </h3>
+                            <p className="text-xs font-bold text-slate-700">데이터 중심 비즈니스 개선 활동이 가져온 정량적 임팩트</p>
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div className="border-t-2 border-spartaRed pt-4 space-y-1">
+                                    <span className="text-[10px] text-slate-400 block font-bold">[전환율 향상]</span>
+                                    <span className="text-2xl font-black text-spartaRed">34.2% → 49.8%</span>
+                                    <span className="text-[10px] text-slate-500 block">생성화면 도달 유저의 재생성 성공률 개선(18%→33%) </span>
+                                </div>
+                                <div className="border-t-2 border-slate-900 pt-4 space-y-1">
+                                    <span className="text-[10px] text-slate-400 block font-bold">[마케팅 효율화]</span>
+                                    <span className="text-2xl font-black text-slate-900">▼ 22% 절감</span>
+                                    <span className="text-[10px] text-slate-500 block">비효율 광고 세그먼트 오프타겟 조정 및 매체 통합 CAC 절감</span>
+                                </div>
+                                <div className="border-t-2 border-slate-900 pt-4 space-y-1">
+                                    <span className="text-[10px] text-slate-400 block font-bold">[소통 체계 혁신]</span>
+                                    <span className="text-lg font-black text-slate-900 block">데이터 기반 소통</span>
+                                    <span className="text-[10px] text-slate-500 block">태블로 대시보드를 기반으로 매일 아침 비즈니스/콘텐츠팀 간 가설 검정 회의 진행 환경 조성</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                );
+            };
+
+            const renderProjectB = () => {
+                return (
+                    <div className="max-w-4xl mx-auto py-12 px-6 space-y-20">
+                        {/* Title Block */}
+                        <div className="border-b border-borderGray pb-8">
+                            <span className="bg-slate-900 text-white px-2.5 py-1 text-[10px] font-bold rounded uppercase tracking-wider">PROJECT B</span>
+                            <h1 className="text-2xl md:text-3xl font-black text-slate-900 mt-3">
+                                영상 데이터 큐레이션 및 MLOps PoC
+                            </h1>
+                            <p className="text-xs text-slate-500 mt-1.5">인프라 리소스 효율화 및 데이터 품질 강화를 구현한 비전 모델 ML Pipeline 엔지니어링</p>
+                        </div>
+
+                        {/* Overview & Infrastructure Challenge */}
+                        <div className="space-y-4">
+                            <h3 className="text-lg font-bold text-slate-900 flex items-center">
+                                <span className="text-spartaRed font-mono text-sm mr-2 font-bold">[Overview]</span> DL모델 학습사이클 최적화 개요
+                            </h3>
+                            <p className="text-xs font-bold text-slate-700">FaceSwap 비전 모델학습을 위한 AI-driven 데이터 큐레이션(MLOps)</p>
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-stretch mt-3">
+                                <div className="md:col-span-7 bg-lightGray p-5 rounded border border-borderGray space-y-3">
+                                    <h4 className="text-xs font-bold text-slate-800 uppercase tracking-wider">Project Context</h4>
+                                    <p className="text-xs text-slate-600 leading-relaxed">
+                                        학습데이터 수집-가공–검수-학습-저장의 주기를 준자동화하여 학습데이터의 품질 자체를 향상시켜 모델성능을 향상시키고 동시에 모델연구부터 모델배포까지의 업무속도를 개선하는 프로젝트.
+                                    </p>
+                                </div>
+                                <div className="md:col-span-5 bg-white p-5 rounded border border-borderGray flex flex-col justify-between">
+                                    <h4 className="text-xs font-bold text-spartaRed uppercase tracking-wider">Core Mission</h4>
+                                    <p className="text-xs text-slate-700 leading-relaxed mt-1">
+                                        원천 비정형 데이터셋의 메타데이터 탐색(EDA) 및 클렌징 기준 수립, 가공 속도 효율화, 검수 DL머신 생성, 파이프라인 연결, 리소스 제약 하에서 실험 재현성을 보장하는 MVP 수준의 MLOps 검증 환경 구축.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Problem Definition */}
+                        <div className="space-y-4 pt-4 border-t border-borderGray">
+                            <h3 className="text-lg font-bold text-slate-900 flex items-center">
+                                <span className="text-spartaRed font-mono text-sm mr-2 font-bold">[Problem Definition]</span> 인프라 비용 급증 및 모델 학습 비효율
+                            </h3>
+                            <p className="text-xs font-bold text-slate-700">[문제] 무질서한 데이터 적재(Garbage In)로 인한 연산 한계 및 모델 성능 정체</p>
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-3">
+                                <div className="p-4 bg-lightGray rounded border border-borderGray space-y-1">
+                                    <span className="text-[10px] text-slate-400 font-bold block">원천 데이터의 노이즈</span>
+                                    <p className="text-xs text-slate-600">크롤링 등을 통해 대량 적재된 영상 및 이미지 원천 데이터 세트의 극심한 노이즈(오디오 클리핑 현상, 저해상도 편향) 존재.</p>
+                                </div>
+                                <div className="p-4 bg-lightGray rounded border border-borderGray space-y-1">
+                                    <span className="text-[10px] text-slate-400 font-bold block">리소스 및 비용 낭비</span>
+                                    <p className="text-xs text-slate-600">정제되지 않은 데이터를 무조건 모델에 학습시키면서 GPU 인프라 리소스 소모 급증 및 학습 비용 기하급수적 낭비.</p>
+                                </div>
+                                <div className="p-4 bg-lightGray rounded border border-borderGray space-y-1">
+                                    <span className="text-[10px] text-slate-400 font-bold block">추론 정확도 한계</span>
+                                    <p className="text-xs text-slate-600">모델 파라미터를 고도화해도 정제되지 않은 데이터 편향으로 인해 평가 셋에서의 최종 추론 정확도 성능 정체.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Data Profile EDA */}
+                        <div className="space-y-4 pt-4 border-t border-borderGray">
+                            <h3 className="text-lg font-bold text-slate-900 flex items-center">
+                                <span className="text-spartaRed font-mono text-sm mr-2 font-bold">[Data Profile EDA]</span> 원천 비정형 데이터셋 메타데이터 심층 EDA
+                            </h3>
+                            <p className="text-xs font-bold text-slate-700">[EDA] 비정형 원천 데이터의 통계적 노이즈 감지 및 품질 기준 정립</p>
+                            
+                            <div className="bg-lightGray p-5 rounded border border-borderGray space-y-4 mt-3">
+                                <div className="space-y-1">
+                                    <span className="text-[10px] text-spartaRed font-bold block">Action (Exploratory Data Analysis)</span>
+                                    <p className="text-xs text-slate-600">SQL과 Python(Pandas, Librosa, OpenCV)을 결합하여 대량의 비정형 데이터 메타 속성 추출(MFCC, Object, Brightness, etc).</p>
+                                </div>
+
+                                <div className="bg-white p-4 rounded border border-slate-200">
+                                    <span className="text-xs font-bold text-slate-800 block mb-2">💡 주요 발견 사실</span>
+                                    <ul className="space-y-2 text-xs text-slate-600">
+                                        <li>• 기존 확보 영상의 20%가 access denied 상태로 공개 메타데이터와의 불일치를 탐지.</li>
+                                        <li>• 아시아인 분포가 5% 미만으로 서구권 인종에 크게 편향되어 있음을 규명.</li>
+                                       
+                                        <li>• 수집 음성 파일 중 4%가 노이즈 레벨(SNR) 허용 한계를 초과하고, 비전 이미지의 15%에서 face detection failed 상태 및 특정 밝기 영역 편향 발견.</li>
+                                    </ul>
+                                </div>
+
+                                <p className="text-xs text-slate-700 font-bold bg-white p-3 rounded border border-slate-200">
+                                    <i className="fa-solid fa-square-check text-spartaRed mr-1.5"></i>
+                                    정제 가이드라인 설계: 얼굴 인식에 영향을 주는 crop size, similarity 등의 모델 인자값과 불필요한 작업 최소화를 위한 frame sampling, 최소 SNR, 이미지 최소 해상도의 데이터 정화 임계값(Threshold) 수립.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Solution Architecture */}
+                        <div className="space-y-4 pt-4 border-t border-borderGray">
+                            <h3 className="text-lg font-bold text-slate-900 flex items-center">
+                                <span className="text-spartaRed font-mono text-sm mr-2 font-bold">[Solution Architecture]</span> 데이터 큐레이션 MLOps 파이프라인 설계
+                            </h3>
+                            <p className="text-xs font-bold text-slate-700">[Solution] End-to-End AI-driven Data Curation MLOps Pipeline (비전 및 데이터 가공 자동화 구조)</p>
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-stretch mt-3">
+                                <div className="md:col-span-5 bg-white p-4 rounded border border-borderGray flex flex-col justify-between">
+                                    <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Pipeline Flow</h4>
+                                    <div className="space-y-2 text-[11px] font-bold text-slate-700">
+                                        <div className="p-1.5 bg-lightGray rounded border border-slate-100 text-center">Raw Data</div>
+                                        <div className="text-center text-spartaRed">↓</div>
+                                        <div className="p-1.5 bg-lightGray rounded border border-slate-100 text-center">Preprocessing</div>
+                                        <div className="text-center text-spartaRed">↓</div>
+                                        <div className="p-1.5 bg-lightGray rounded border border-slate-100 text-center">Quality Filter</div>
+                                        <div className="text-center text-spartaRed">↓</div>
+                                        <div className="p-1.5 bg-lightGray rounded border border-slate-100 text-center">Labeling → Training → Registry</div>
+                                    </div>
+                                </div>
+
+                                <div className="md:col-span-7 bg-lightGray p-4 rounded border border-borderGray space-y-3">
+                                    <h4 className="text-xs font-bold text-slate-800">단계별 구성 컴포넌트</h4>
+                                    <ul className="space-y-2 text-xs text-slate-600">
+                                        <li className="flex gap-2">
+                                            <span className="text-spartaRed font-bold">1</span>
+                                            <span>Raw 데이터 수집 단계에서 metadata extraction 및 schema normalization 자동 수행</span>
+                                        </li>
+                                        <li className="flex gap-2">
+                                            <span className="text-spartaRed font-bold">2</span>
+                                            <span>Quality Filtering Layer에서 EDA 기반 threshold rule + ML 기반 anomaly detection 결합</span>
+                                        </li>
+                                        <li className="flex gap-2">
+                                            <span className="text-spartaRed font-bold">3</span>
+                                            <span>Labeling 단계는 semi-automated human-in-the-loop 구조로 효율성 확보</span>
+                                        </li>
+                                        <li className="flex gap-2">
+                                            <span className="text-spartaRed font-bold">4</span>
+                                            <span>Training Pipeline은 versioned dataset 기반으로 재현 가능한 학습 환경 구성 및 registry 기반의 lineage tracking 구현</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Automated Data Quality Scoring */}
+                        <div className="space-y-4 pt-4 border-t border-borderGray">
+                            <h3 className="text-lg font-bold text-slate-900 flex items-center">
+                                <span className="text-spartaRed font-mono text-sm mr-2 font-bold">[Automated Data Quality Scoring]</span> DL 기반 데이터 검수 시스템
+                            </h3>
+                            <p className="text-xs font-bold text-slate-700">[Core Component] AI 기반 데이터 품질 자동 평가 및 필터링 시스템</p>
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
+                                <div className="p-5 bg-lightGray rounded border border-borderGray space-y-3">
+                                    <span className="text-[10px] text-spartaRed font-bold uppercase block">Core Integration</span>
+                                    <p className="text-xs text-slate-600 leading-relaxed">
+                                        Rule-based + Deep Learning hybrid 방식의 데이터 검수 엔진을 적용하여 단순 기준 필터링을 고도화했습니다.
+                                    </p>
+                                    <ul className="space-y-1 text-xs text-slate-700">
+                                        <li>• Face detection confidence 검사</li>
+                                        <li>• Image resolution 및 blur score 벡터 분석</li>
+                                    </ul>
+                                </div>
+
+                                <div className="p-5 bg-white rounded border border-borderGray space-y-3">
+                                    <span className="text-[10px] text-slate-400 font-bold uppercase block">3-Tier Triage System</span>
+                                    <div className="grid grid-cols-3 gap-1 text-center font-bold text-[11px]">
+                                        <div className="py-2 bg-emerald-50 border border-emerald-200 text-emerald-700 rounded">Accept</div>
+                                        <div className="py-2 bg-amber-50 border border-amber-200 text-amber-700 rounded">Review</div>
+                                        <div className="py-2 bg-rose-50 border border-rose-200 text-rose-700 rounded">Reject</div>
+                                    </div>
+                                    <p className="text-[11px] text-slate-500 mt-2">Lightweight CNN / Vision encoder 기반 Quality Scoring을 통해 Human labeling 비용을 줄이는 active filtering을 접목.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Infrastructure Optimization */}
+                        <div className="space-y-4 pt-4 border-t border-borderGray">
+                            <h3 className="text-lg font-bold text-slate-900 flex items-center">
+                                <span className="text-spartaRed font-mono text-sm mr-2 font-bold">[Infrastructure Optimization]</span> GPU 비용 절감 및 학습 효율화 전략
+                            </h3>
+                            <p className="text-xs font-bold text-slate-700">[Impact] 데이터 정제 기반 인프라 비용 최적화 전략</p>
+                            
+                            <div className="bg-lightGray p-5 rounded border border-borderGray mt-3">
+                                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                                    <div className="bg-white p-4 rounded border border-slate-200 text-center">
+                                        <span className="text-[10px] text-slate-400 font-bold block">Epoch 샘플 최적화</span>
+                                        <span className="text-xl font-black text-slate-900 block mt-1">20 ~ 30% 감소</span>
+                                        <span className="text-[10px] text-slate-500 block mt-0.5">불필요 노이즈 데이터 차단</span>
+                                    </div>
+                                    <div className="bg-white p-4 rounded border border-slate-200 text-center">
+                                        <span className="text-[10px] text-slate-400 font-bold block">GPU Training Time</span>
+                                        <span className="text-xl font-black text-spartaRed block mt-1">최대 40% 단축</span>
+                                        <span className="text-[10px] text-slate-500 block mt-0.5">정제 데이터셋 기반 리소스 효율화</span>
+                                    </div>
+                                    <div className="bg-white p-4 rounded border border-slate-200 text-center">
+                                        <span className="text-[10px] text-slate-400 font-bold block">Early Rejection</span>
+                                        <span className="text-base font-black text-slate-900 block mt-1">Allocation 최소화</span>
+                                        <span className="text-[10px] text-slate-500 block mt-0.5">불필요한 Compute 자원 낭비 방지</span>
+                                    </div>
+                                </div>
+                                <div className="text-center text-xs font-bold text-slate-700 mt-4 pt-3 border-t border-slate-200">
+                                    결과적으로 동일 모델 성능 대비 Infra cost curve flattening(기하급수적 비용 평탄화) 효과 달성.
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* MLOps MVP System */}
+                        <div className="space-y-4 pt-4 border-t border-borderGray">
+                            <h3 className="text-lg font-bold text-slate-900 flex items-center">
+                                <span className="text-spartaRed font-mono text-sm mr-2 font-bold">[MLOps MVP System]</span> 재현 가능한 실험 환경 및 모델 운영 구조
+                            </h3>
+                            <p className="text-xs font-bold text-slate-700">[MVP] 실험 재현성과 모델 운영을 보장하는 MLOps 환경</p>
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3 text-xs">
+                                <div className="p-4 bg-white border border-borderGray rounded space-y-2">
+                                    <span className="font-bold text-slate-900 block">실험 유닛 완벽 관리</span>
+                                    <p className="text-slate-600 leading-relaxed">
+                                        Dataset versioning을 통한 실험 단위 재현성 보장(data hash tracking) 및 MLflow 기반의 experiment tracking 및 model registry를 정교하게 연동하였습니다.
+                                    </p>
+                                </div>
+                                <div className="p-4 bg-lightGray border border-borderGray rounded space-y-2">
+                                    <span className="font-bold text-slate-900 block">운영 파이프라인 정형화</span>
+                                    <p className="text-slate-600 leading-relaxed">
+                                        Training configuration(seed, hyperparameter, dataset version) 완전 고정 및 pipeline orchestration에 입각하여 연구 자원과 서비스 운영 자원을 명확히 격리했습니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Expected Outcome */}
+                        <div className="space-y-4 pt-4 border-t border-borderGray">
+                            <h3 className="text-lg font-bold text-slate-900 flex items-center">
+                                <span className="text-spartaRed font-mono text-sm mr-2 font-bold">[Expected Outcome]</span> 데이터 품질 개선 기반 모델 성능 향상 효과
+                            </h3>
+                            <p className="text-xs font-bold text-slate-700">[Outcome] 데이터 중심 MLOps 전환을 통한 성능 및 효율 개선</p>
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-3 text-center">
+                                <div className="p-4 bg-lightGray rounded border border-borderGray">
+                                    <span className="text-xs font-bold text-slate-700 block">Accuracy Uplift</span>
+                                    <p className="text-xs text-slate-500 mt-1">동일 모델 구조 대비 정제 데이터 적용 시 정확도 가시적 향상</p>
+                                </div>
+                                <div className="p-4 bg-lightGray rounded border border-borderGray">
+                                    <span className="text-xs font-bold text-slate-700 block">Convergence 안정성</span>
+                                    <p className="text-xs text-slate-500 mt-1">noisy dataset 배제로 학습 안정성 향상 및 오버피팅 감소</p>
+                                </div>
+                                <div className="p-4 bg-lightGray rounded border border-borderGray">
+                                    <span className="text-xs font-bold text-slate-700 block">상관관계 확보</span>
+                                    <p className="text-xs text-slate-500 mt-1">데이터 품질 지표와 실제 성능 간의 정량적 인과관계 입증</p>
+                                </div>
+                                <div className="p-4 bg-lightGray rounded border border-borderGray">
+                                    <span className="text-xs font-bold text-slate-700 block">리드타임 대폭 단축</span>
+                                    <p className="text-xs text-slate-500 mt-1">연구-개발-배포 단계의 전체 사이클 리드타임 감축 실현</p>
+                                </div>
+                            </div>
+                            <div className="text-center font-bold text-sm text-spartaRed pt-4 bg-spartaRed/5 p-4 rounded border border-spartaRed/20">
+                                "Model-centric에서 Data-centric AI pipeline으로의 완벽한 패러다임 전환 완료"
+                            </div>
+                        </div>
+                    </div>
+                );
+            };
+
+            const renderProjectC = () => {
+                return (
+                    <div className="max-w-4xl mx-auto py-12 px-6 space-y-20">
+                        {/* Title Block */}
+                        <div className="border-b border-borderGray pb-8">
+                            <span className="bg-spartaRed text-white px-2.5 py-1 text-[10px] font-bold rounded uppercase tracking-wider">PROJECT C</span>
+                            <h1 className="text-2xl md:text-3xl font-black text-slate-900 mt-3">
+                                탄력적 수집 관리를 위한 스케줄링 포아송 머신 
+                            </h1>
+                            <p className="text-xs text-slate-500 mt-1.5">통계적 웹페이지 변화 감지 및 기계학습 모델을 결합한 지능형 데이터 획득(Crawl Period Optimization)</p>
+                        </div>
+
+                        {/* Overview */}
+                        <div className="space-y-4">
+                            <h3 className="text-lg font-bold text-slate-900 flex items-center">
+                                <span className="text-spartaRed font-mono text-sm mr-2 font-bold">[Overview]</span> Poisson Process 기반 탄력적 수집 매니저 개요
+                            </h3>
+                            <p className="text-xs font-bold text-slate-700">Poisson Process & ML 기반 스마트 크롤러 매니저 구축</p>
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-stretch mt-3">
+                                <div className="md:col-span-5 bg-lightGray p-5 rounded border border-borderGray flex flex-col justify-between">
+                                    <div>
+                                        <h4 className="text-xs font-bold text-slate-800 uppercase tracking-wider mb-2">Project Context</h4>
+                                        <p className="text-xs text-slate-600 leading-relaxed">
+                                            쇼핑몰 상품 페이지의 실시간 재고 변화 속도와 연동하여 수집 주기(Crawl Period)를 동적으로 최적화하는 프로젝트. 불필요한 중복 수집을 억제하여 사내 수집 인프라 자원의 낭비를 최소화하고, 재고 변화 순간을 놓치지 않아 정확한 시장 수요 추정치를 제공함.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="md:col-span-7 bg-white p-5 rounded border border-borderGray space-y-3">
+                                    <h4 className="text-xs font-bold text-spartaRed uppercase tracking-wider">Core Mission</h4>
+                                    <ul className="space-y-2 text-xs text-slate-600">
+                                        <li>• 기존 고정 주기(Score-based) 크롤러의 한계와 비효율 분석 (As-Is vs To-Be)</li>
+                                        <li>• 웹페이지 변화 모델(Poisson Process) 이론 적용을 위한 타겟 변수(Target Variable) 정의 및 시뮬레이션 검증</li>
+                                        <li>• 비정형 원천 수집 데이터의 이상치 정제, EDA 기반 파생변수 생성 및 파이프라인 구축</li>
+                                        <li>• 통계 모델(Poisson)과 기계학습 분류 모델(Classification)을 하이브리드 결합한 주기 제어 엔진 구축</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Problem Definition */}
+                        <div className="space-y-4 pt-4 border-t border-borderGray">
+                            <h3 className="text-lg font-bold text-slate-900 flex items-center">
+                                <span className="text-spartaRed font-mono text-sm mr-2 font-bold">[Problem Definition]</span> 고정형 크롤링으로 인한 인프라 부하 및 데이터 결손 문제
+                            </h3>
+                            <p className="text-xs font-bold text-slate-700">[문제] 고정주기 수집 방식의 한계 — 인프라 자원 낭비와 비즈니스 기회 손실의 악순환</p>
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
+                                <div className="p-5 bg-lightGray rounded border border-borderGray space-y-3">
+                                    <span className="text-xs font-bold text-slate-800 block"><i className="fa-solid fa-triangle-exclamation text-spartaRed mr-1.5"></i>As-Is: Over-crawling (자원 비효율)</span>
+                                    <p className="text-xs text-slate-600 leading-relaxed">
+                                        재고 변동이 거의 없는 정적 페이지(인기 없는 상품 등)를 기계적으로 빈번하게 크롤링하면서 수집 네트워킹 리소스 및 가공 스토리지 비용이 급증.
+                                    </p>
+                                </div>
+                                <div className="p-5 bg-lightGray rounded border border-borderGray space-y-3">
+                                    <span className="text-xs font-bold text-slate-800 block"><i className="fa-solid fa-circle-minus text-spartaRed mr-1.5"></i>As-Is: Under-crawling (데이터 유실)</span>
+                                    <p className="text-xs text-slate-600 leading-relaxed">
+                                        재고가 빠르게 소진되는 동적 핫딜 페이지를 적시에 수집하지 못해 실제 수요 변화 추정의 정밀도 정체. 플랫폼(Lotte, Hmall, GS, 11st, Coupang, G-market, SSG 등)별 트래픽 임계치 미반영 한계 직면.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Theoretical Modeling */}
+                        <div className="space-y-4 pt-4 border-t border-borderGray">
+                            <h3 className="text-lg font-bold text-slate-900 flex items-center">
+                                <span className="text-spartaRed font-mono text-sm mr-2 font-bold">[Theoretical Modeling]</span> Poisson Process 기반 최적 수집 주기 탐색 기법
+                            </h3>
+                            <p className="text-xs font-bold text-slate-700">[Theorist] 포아송 확률 과정(Poisson Process)을 응용한 동적 웹페이지 변화 감지 모델링</p>
+                            
+                            <div className="bg-lightGray p-5 rounded border border-borderGray space-y-4 mt-3">
+                                <div className="border-b border-slate-200 pb-3">
+                                    <span className="text-[10px] text-slate-400 font-bold uppercase block mb-1">Theoretical Background (Cho & Garcia-Molina, 1999)</span>
+                                    <div className="bg-white p-3 rounded text-center border border-slate-200 font-mono text-xs text-slate-800">
+                                        P(N(t) = k) = ( (λt)^k * e^(-λt) ) / k!
+                                    </div>
+                                    <p className="text-[10px] text-slate-500 mt-2">웹페이지 변화 간격이 독립적이며 지수 분포(Exponential Distribution)를 따른다는 이론에 기반함.</p>
+                                </div>
+
+                                <div className="space-y-2 text-xs">
+                                    <span className="font-bold text-slate-800 block">현업 적용 한계 돌파 전략</span>
+                                    <p className="text-slate-600">
+                                        전통적인 포아송 변화율(lambda)은 고정 상수여서 개별 상품의 가변 주기를 예측하기 어렵습니다. 이를 위해 시간 단위별(0.2H, 0.5H, 1H, 4H, 8H, 12H, 24H, 48H 등) 변화 유무 데이터를 수집해 단위 구간별 국소 lambda 및 변화 확률을 시뮬레이션 계산하고, 최대값(Max Probability)을 보이는 최적 예측 구간을 타겟 변수로 전환하여 활용했습니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Target Variable Engineering */}
+                        <div className="space-y-4 pt-4 border-t border-borderGray">
+                            <h3 className="text-lg font-bold text-slate-900 flex items-center">
+                                <span className="text-spartaRed font-mono text-sm mr-2 font-bold">[Target Variable Engineering]</span> 엑셀 시뮬레이션을 통한 타겟 변수 효용성 검증
+                            </h3>
+                            <p className="text-xs font-bold text-slate-700">[Preprocessing] 타겟 변수(Target Variable) 시뮬레이션 및 데이터 정제 유효성 검증</p>
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
+                                <div className="p-4 bg-white border border-borderGray rounded space-y-2">
+                                    <span className="text-xs font-bold text-slate-800 block">1. 윈도우 슬라이싱 & 정량화</span>
+                                    <p className="text-xs text-slate-600 leading-relaxed">
+                                        현 시점 기준으로 4H(최근 24시간), 12H(최근 72시간) 등 시간 단위별 변화 유무 원천 데이터를 샘플링하여 집합화 및 lambda 계산 수행.
+                                    </p>
+                                </div>
+                                <div className="p-4 bg-lightGray border border-borderGray rounded space-y-2">
+                                    <span className="text-xs font-bold text-slate-800 block">2. 타겟 레이블링 & 타이 브레이킹</span>
+                                    <p className="text-xs text-slate-600 leading-relaxed">
+                                        계산된 변화 확률 중 가장 높은 구간을 다음 크롤링 타겟으로 설정합니다. 동률(Tie)이 발생할 경우 데이터 유실 방지를 위해 '더 빠른 주기'를 강제 선택하는 보수적 안전 장치를 수립했습니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Data Profiling & EDA */}
+                        <div className="space-y-4 pt-4 border-t border-borderGray">
+                            <h3 className="text-lg font-bold text-slate-900 flex items-center">
+                                <span className="text-spartaRed font-mono text-sm mr-2 font-bold">[Data Profiling & EDA]</span> 예측 변수와 타겟 변수 간 상관관계 및 분포 분석
+                            </h3>
+                            <p className="text-xs font-bold text-slate-700">[EDA] 수집 예측 변수(Predictors)와 차기 수집 주기(Target) 간 통계적 노이즈 및 가설 검증</p>
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-12 gap-4 mt-3 items-stretch">
+                                <div className="md:col-span-5 bg-white p-4 rounded border border-borderGray flex flex-col justify-between">
+                                    <h4 className="text-xs font-bold text-slate-400 mb-2">인기 순위(Rank) 대비 무변화 비율 분포</h4>
+                                    <svg viewBox="0 0 100 60" className="w-full h-auto">
+                                        <line x1="10" y1="50" x2="90" y2="50" stroke="#E2E8F0" strokeWidth="0.5" />
+                                        <line x1="10" y1="10" x2="10" y2="50" stroke="#E2E8F0" strokeWidth="0.5" />
+                                        {/* Scatter dots */}
+                                        <circle cx="20" cy="45" r="1" fill="#FF003C" opacity="0.6" />
+                                        <circle cx="30" cy="42" r="1.2" fill="#FF003C" opacity="0.6" />
+                                        <circle cx="40" cy="35" r="1" fill="#FF003C" opacity="0.6" />
+                                        <circle cx="50" cy="30" r="1.5" fill="#FF003C" opacity="0.6" />
+                                        <circle cx="60" cy="22" r="1" fill="#FF003C" opacity="0.6" />
+                                        <circle cx="70" cy="18" r="1" fill="#FF003C" opacity="0.6" />
+                                        <circle cx="80" cy="15" r="1.3" fill="#FF003C" opacity="0.6" />
+                                        {/* Trend line */}
+                                        <line x1="15" y1="48" x2="85" y2="12" stroke="#FF003C" strokeWidth="1" strokeDasharray="1,1" />
+                                        <text x="50" y="58" fontSize="4" fill="#64748B" textAnchor="middle">SELL_RANK_log (순위 낮아짐)</text>
+                                        <text x="8" y="30" fontSize="4" fill="#64748B" textAnchor="middle" transform="rotate(-90 8 30)">무변화비율</text>
+                                    </svg>
+                                </div>
+
+                                <div className="md:col-span-7 bg-lightGray p-5 rounded border border-borderGray space-y-3 text-xs">
+                                    <h4 className="text-xs font-bold text-slate-800">EDA 검증 결과 및 발견 사실</h4>
+                                    <div className="space-y-2">
+                                        <div className="bg-white p-2.5 rounded border border-slate-200">
+                                            <strong>가설 1. 인기 상품성 검증:</strong> 상품 판매 순위가 낮고(SELL_RANK_log 증가) 인기가 적은 상품 카테고리일수록 정보 수정 빈도가 현저히 감소하는 경향 검증.
+                                        </div>
+                                        <div className="bg-white p-2.5 rounded border border-slate-200">
+                                            <strong>가설 2. 상품 노출 기간 검증:</strong> 신규 등록 상품 페이지일수록 빈번한 수정 작업을 거치나, 노출 기간이 오래 지날수록(period 증가) 재고 변화율이 0에 수렴하는 정상성(Stationarity) 관찰.
+                                        </div>
+                                    </div>
+                                    <p className="text-[10px] text-slate-500">
+                                        * 수집 페이지 생존길이 분포가 변화 유무 클래스에 따라 상이한 다봉형(Multimodal) 양상을 띔에 따라 해당 피처를 핵심 변수로 선정.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Solution Architecture */}
+                        <div className="space-y-4 pt-4 border-t border-borderGray">
+                            <h3 className="text-lg font-bold text-slate-900 flex items-center">
+                                <span className="text-spartaRed font-mono text-sm mr-2 font-bold">[Solution Architecture]</span> 크롤 매니저 엔드투엔드 데이터 및 모델 파이프라인 구축
+                            </h3>
+                            <p className="text-xs font-bold text-slate-700">[Solution] End-to-End Dynamic Crawling Data Pipeline & Decision Architecture</p>
+                            
+                            <div className="bg-lightGray p-5 rounded border border-borderGray space-y-4 text-xs mt-3">
+                                <div>
+                                    <span className="text-[10px] text-spartaRed font-bold block mb-1">CORE FLOW</span>
+                                    <div className="flex justify-between text-center font-bold font-mono">
+                                        <div className="bg-white p-2 border border-slate-200 rounded w-[18%]">Retrieve</div>
+                                        <div className="flex items-center text-spartaRed">→</div>
+                                        <div className="bg-white p-2 border border-slate-200 rounded w-[18%]">Preprocess</div>
+                                        <div className="flex items-center text-spartaRed">→</div>
+                                        <div className="bg-white p-2 border border-slate-200 rounded w-[18%]">Predict</div>
+                                        <div className="flex items-center text-spartaRed">→</div>
+                                        <div className="bg-white p-2 border border-slate-200 rounded w-[18%]">Transform</div>
+                                        <div className="flex items-center text-spartaRed">→</div>
+                                        <div className="bg-white p-2 border border-slate-200 rounded w-[18%]">Insert</div>
+                                    </div>
+                                </div>
+
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-3 border-t border-slate-200">
+                                    <div className="space-y-2">
+                                        <span className="font-bold text-slate-800 block">하이브리드 분기 조건 1 (충분 이력 상품)</span>
+                                        <p className="text-slate-600 leading-relaxed">
+                                            과거 변화 이력이 충분한 경우(# data &gt; 3) 포아송 lambda 연산부로 진입합니다. 변화 다수 감지 시 ML 분류 모델로 토스하여 주기 예측을 진행하고, 변화 유실 시에는 수집 주기를 2일 뒤로 대폭 연장합니다.
+                                        </p>
+                                    </div>
+                                    <div className="space-y-2">
+                                        <span className="font-bold text-slate-800 block">하이브리드 분기 조건 2 (신규 상품)</span>
+                                        <p className="text-slate-600 leading-relaxed">
+                                            신규 유입 등 수집 이력이 극히 부족한 신상품은 안정적 콜드 스타트를 보장하기 위해 '6시간 마다 초기 고정 수집' 파이프라인으로 안전 분기 및 이력을 확보합니다.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Modeling & Optimization */}
+                        <div className="space-y-4 pt-4 border-t border-borderGray">
+                            <h3 className="text-lg font-bold text-slate-900 flex items-center">
+                                <span className="text-spartaRed font-mono text-sm mr-2 font-bold">[Modeling & Optimization]</span> 분류 기반 ML 및 통계 모델 최적화 실험
+                            </h3>
+                            <p className="text-xs font-bold text-slate-700">[Modeling] 하이브리드 수집 주기 분류 모델 최적화 및 튜닝</p>
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
+                                <div className="p-4 bg-white border border-borderGray rounded space-y-3">
+                                    <span className="text-xs font-bold text-slate-800 block">하이브리드 엔진 최적화 전략</span>
+                                    <ul className="space-y-2 text-xs text-slate-600">
+                                        <li>• <strong>ML 분류 모델:</strong> 텍스트 정보(상품 키워드, 카테고리 태그), TV 쇼핑 편성표, 노출 지면 등의 정적 메타데이터를 결합해 차기 주기 예측</li>
+                                        <li>• <strong>포아송 통계 모델:</strong> 실시간 수집 데이터 기반 시계열적 재고 변화 유형만을 정밀 모니터링하는 경량 전용 통계 모듈</li>
+                                    </ul>
+                                </div>
+
+                                <div className="p-4 bg-lightGray border border-borderGray rounded space-y-2">
+                                    <span className="text-xs font-bold text-slate-800 block">평가 지표의 정교화</span>
+                                    <p className="text-xs text-slate-600 leading-relaxed">
+                                        불균형 클래스 편향에 따른 단순 정확도(Accuracy) 필터의 한계를 극복하기 위해 참값을 보정하는 <span className="text-spartaRed font-bold">재현율(Recall)</span> 중심의 오차 테이블을 설계하고, 모델 간 일치 신뢰도 평가를 위한 <span className="text-spartaRed font-bold">Cohen's Kappa 계수</span>를 적용했습니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Business Impact */}
+                        <div className="space-y-4 pt-4 border-t border-borderGray">
+                            <h3 className="text-lg font-bold text-slate-900 flex items-center">
+                                <span className="text-spartaRed font-mono text-sm mr-2 font-bold">[Business Impact]</span> 인프라 비용 절감 및 상품 재고 추정 정확성 극대화 효과
+                            </h3>
+                            <p className="text-xs font-bold text-slate-700">[Expected Impact] 스마트 크롤러 포아송 엔진 가동을 통한 인프라 혁신 및 데이터 가치 극대화</p>
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-3">
+                                <div className="p-4 bg-white border-t-2 border-spartaRed rounded-b shadow-sm space-y-1">
+                                    <span className="text-[10px] text-slate-400 font-bold block">인프라 자원 절감</span>
+                                    <span className="text-xl font-black text-spartaRed block">5 ~ 6% 감축</span>
+                                    <p className="text-[11px] text-slate-500">무변화 유실 페이지의 중복 크롤링 억제를 통해 네트워킹 대역폭 및 트래픽 비용 대폭 감축</p>
+                                </div>
+                                <div className="p-4 bg-white border-t-2 border-slate-900 rounded-b shadow-sm space-y-1">
+                                    <span className="text-[10px] text-slate-400 font-bold block">데이터 정합성 개선</span>
+                                    <span className="text-lg font-black text-slate-900 block">실시간 오차 수렴</span>
+                                    <p className="text-[11px] text-slate-500">재고가 급변하는 인기 매대에 크롤 리소스를 정교하게 재분배하여 품절 Lag-time 극소화</p>
+                                </div>
+                                <div className="p-4 bg-white border-t-2 border-slate-900 rounded-b shadow-sm space-y-1">
+                                    <span className="text-[10px] text-slate-400 font-bold block">안정성 확보</span>
+                                    <span className="text-lg font-black text-slate-900 block">장애 오버헤드 해소</span>
+                                    <p className="text-[11px] text-slate-500">다중 플랫폼 최적 주기를 보장함으로써 타겟 서버의 IP 블락 리스크 회피 및 안전 파이프라인 자동화 구축</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                );
+            };
+
+            const renderContent = () => {
+                switch(activeTab) {
+                    case 'intro': return renderIntroduction();
+                    case 'projectA': return renderProjectA();
+                    case 'projectB': return renderProjectB();
+                    case 'projectC': return renderProjectC();
+                    default: return renderIntroduction();
+                }
+            };
+
+            return (
+                <div className="min-h-screen bg-white flex flex-col justify-between">
+                    {renderHeader()}
+                    <main className="flex-grow">
+                        {renderContent()}
+                    </main>
+                    <footer className="border-t border-borderGray py-6 text-center text-xs text-slate-400">
+                        <p>© 2026 [지원용] 데이터/AI 실무 포트폴리오.</p>
+                        <p className="text-[10px] text-slate-300 mt-1">실무코드는 비공개입니다.</p>
+                    </footer>
+                </div>
+            );
+        }
+
+        const rootElement = document.getElementById('root');
+        const root = ReactDOM.createRoot(rootElement);
+        root.render(<App />);
+    </script>
+</body>
+</html>
