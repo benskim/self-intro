@@ -1,0 +1,36 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Bens Notes"
+  site-url: "https://benskim.github.io/self-intro/"
+  repo-url: "https://github.com/benskim/self-intro"
+  navbar:
+    left:
+      - text: "About"
+        href: index.qmd
+      - text: "Report"
+        href: report.qmd
+      - text: "Projects"
+        href: projects.qmd
+      - text: "Experience"
+        href: experience.qmd
+
+    right:
+      - icon: github
+        href: https://github.com/benskim
+  search: true
+
+execute:
+  freeze: auto
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    css: styles.css
+    toc: true
+    code-fold: true
+    code-tools: true

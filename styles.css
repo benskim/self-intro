@@ -1,0 +1,111 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+:root {
+  --brand-red: #ff1b4a;
+  --brand-red-dark: #d8113a;
+  --badge-pink-bg: #ffd6e0;
+  --badge-pink-text: #c9184a;
+  --badge-gray-bg: #eef1f5;
+  --badge-gray-text: #334155;
+  --card-bg: #f6f7f9;
+  --text-main: #18181b;
+  --text-sub: #4b5563;
+  --border-light: #e5e7eb;
+}
+
+body {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  color: var(--text-main);
+  background-color: #ffffff;
+  line-height: 1.7;
+}
+
+/* 상단 내비게이션 포인트 */
+.navbar {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+  color: var(--brand-red) !important;
+  font-weight: 600;
+}
+
+/* 섹션 배지 */
+.badge-vision {
+  display: inline-block;
+  background-color: var(--badge-pink-bg);
+  color: var(--badge-pink-text);
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  padding: 0.28rem 0.7rem;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+}
+
+.badge-who {
+  display: inline-block;
+  background-color: var(--badge-gray-bg);
+  color: var(--badge-gray-text);
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  padding: 0.28rem 0.7rem;
+  border-radius: 6px;
+  margin-bottom: 0.6rem;
+}
+
+/* 메인 히어로 타이포그래피 */
+.hero-quote {
+  font-size: clamp(1.7rem, 3.2vw, 2.5rem);
+  font-weight: 800;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+/* 좌측 레드 라인 강조 카드 */
+.highlight-box {
+  background-color: var(--card-bg);
+  border-left: 4px solid var(--brand-red);
+  padding: 1.5rem 1.75rem;
+  border-radius: 0 8px 8px 0;
+  margin: 1.25rem 0 2rem 0;
+}
+
+.highlight-box .lead-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin-bottom: 0.6rem;
+}
+
+.highlight-box .accent-red {
+  color: var(--brand-red);
+}
+
+/* 역할 태그 필 */
+.role-pill-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.role-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  color: #111827;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 8px;
+}
+
+.role-pill i {
+  color: var(--brand-red);
+}

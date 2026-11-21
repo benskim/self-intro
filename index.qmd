@@ -1,0 +1,45 @@
+---
+title: ""
+page-layout: full
+toc: false
+---
+
+::: {.badge-vision}
+VISION
+:::
+
+::: {.hero-quote}
+"제약조건 안에서 가장 저항이 적고 실행가능한 행동을 발견하자"
+:::
+
+**팀리드, 창업팀 리드 경험**을 통해 단순 수식 학습과 코딩 암기를 넘어, 매출 및 서비스 성장 관점에서 기술을 어떻게 학습하고 설계하며 현업 비즈니스에 적용해야 하는지 고민합니다.
+
+---
+
+::: {.badge-who}
+WHO ?
+:::
+
+## 비전을 확실한 비즈니스 성과로 실현한다.[cite: 1]
+
+::: {.highlight-box}
+::: {.lead-title}
+"서로 다른 현장의 언어를 통합해서 결과를 만드는, [ben kim]{.accent-red}입니다."[cite: 1]
+:::
+
+서로 다른 이해관계자 속에서 목표와 요구사항을 정하고, 비즈니스 지표 개선에 필요한 분석 및 데이터 엔지니어링 실전 경험을 바탕으로 **'함께 성장하는 팀'**을 만들겠습니다[cite: 1].
+
+::: {.role-pill-group}
+[ [Data Scientist]{.role-pill} ]{.bi .bi-briefcase-fill}
+[ [AI Data Engineer]{.role-pill} ]{.bi .bi-briefcase-fill}
+:::
+:::
+
+## 소개
+
+데이터 기반 의사결정과 재현 가능한 분석 파이프라인 구축에 집중하고 있습니다.
+
+### 주요 기술 스택
+* **언어 & 데이터:** Python, SQL (DuckDB, PostgreSQL, MySQL)
+* **분석 & 시각화:** Pandas, NumPy, SciPy, 통계·시계열 분석, 시각화 도구
+* **워크플로우 & 인프라:** Git, GitHub Actions, Docker, AWS, Quarto
