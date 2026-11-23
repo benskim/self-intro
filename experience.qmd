@@ -15,7 +15,7 @@ toc: true
 * 데이터 수집, 가공, 검수까지 아우르는 컴퓨터 비전 맞춤형 데이터 큐레이션 시스템 구축 및 최적화
 * Kubeflow, DVC를 활용해 엔지니어링 지원
 
-→ 상세: [Project B. 영상 데이터 큐레이션 및 MLOps PoC](projects/project-b.qmd)
+→ 상세: [영상 데이터 큐레이션 및 MLOps PoC](projects/project-b.qmd)
 
 **생성형 AI 기반 B2C 서비스의 데이터 의사결정 지원**
 
@@ -23,7 +23,7 @@ toc: true
 * 앱스토어·구글 플레이 베타 서비스 런칭 리딩
 * 디지털 마케팅(Meta, Google Ads) 리딩
 
-→ 상세: [Project A. Gen-AI B2C 앱 서비스 그로스 분석](projects/project-a.qmd)
+→ 상세: [생성형AI B2C 앱 서비스 그로스 분석](projects/project-a.qmd)
 
 ## freewheelin — 데이터 분석가 {#freewheelin}
 
@@ -49,7 +49,7 @@ toc: true
 
 * 재고량 결측치 보정 및 이상치 처리 (클러스터링, 이상 탐지)
 
-→ 상세: [Project C. 탄력적 수집 관리를 위한 스케줄링 포아송 머신](projects/project-c.qmd)
+→ 상세: [탄력적 수집 관리를 위한 스케줄링 예측 머신](projects/project-c.qmd)
 
 **여러 쇼핑몰에 흩어진 동일 상품의 표준 키 생성**
 
@@ -60,10 +60,6 @@ toc: true
 * 지리 데이터 활용
 * 공공 데이터를 활용해 상점 주소와 업종 카테고리 정제
 * 관심 대상 특성의 분포를 시각화하고 대조군과 비교
-
-## 대한민국 육군 — 작전 보조 {#army}
-
-`2015 ~ 2017` (2년)
 
 ## 학력
 

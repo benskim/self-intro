@@ -15,7 +15,7 @@ A career that runs from data analytics through data curation and MLOps to statis
 * Built and optimized a computer-vision data curation system covering data collection, processing, and screening
 * Supported engineering with Kubeflow and DVC
 
-→ Details: [Project B. Video Data Curation and MLOps PoC](projects/project-b.qmd)
+→ Details: [Video Data Curation and MLOps PoC](projects/project-b.qmd)
 
 **Supported data-driven decisions for a Gen-AI based B2C service**
 
@@ -23,7 +23,7 @@ A career that runs from data analytics through data curation and MLOps to statis
 * Led the beta launch (App Store, Google Play)
 * Led digital marketing (Meta, Google Ads)
 
-→ Details: [Project A. Gen-AI B2C App Growth Analytics](projects/project-a.qmd)
+→ Details: [Gen-AI B2C App Service Growth Analytics](projects/project-a.qmd)
 
 ## freewheelin — Data Analyst {#freewheelin}
 
@@ -49,7 +49,7 @@ A career that runs from data analytics through data curation and MLOps to statis
 
 * Imputed missing inventory values and handled outliers (clustering, anomaly detection)
 
-→ Details: [Project C. Scheduling Poisson Machine for Adaptive Crawling](projects/project-c.qmd)
+→ Details: [Predictive Scheduling Machine for Elastic Collection Management](projects/project-c.qmd)
 
 **Created standardized keys for the same product listed across multiple shopping malls**
 
@@ -60,10 +60,6 @@ A career that runs from data analytics through data curation and MLOps to statis
 * Used geographical data
 * Cleaned store addresses and categories using open data
 * Visualized the distribution of target features and compared it with a control group
-
-## Republic of Korea Army — Operations Assistant {#army}
-
-`2015 – 2017` (2 yrs)
 
 ## Education
 
