@@ -1,11 +1,7 @@
 [
   {
     "listing": "/en/projects.html",
-    "items": [
-      "/en/projects/project-a.html",
-      "/en/projects/project-c.html",
-      "/en/projects/project-b.html"
-    ]
+    "items": []
   },
   {
     "listing": "/projects.html",
