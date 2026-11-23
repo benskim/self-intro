@@ -1,16 +1,35 @@
 [
   {
+    "listing": "/en/projects.html",
+    "items": [
+      "/en/projects/project-a.html",
+      "/en/projects/project-c.html",
+      "/en/projects/project-b.html"
+    ]
+  },
+  {
     "listing": "/projects.html",
     "items": [
+      "/en/projects/project-a.html",
       "/projects/project-a.html",
+      "/en/projects/project-c.html",
+      "/en/projects/project-b.html",
       "/projects/project-b.html",
       "/projects/project-c.html"
     ]
   },
   {
+    "listing": "/en/report.html",
+    "items": [
+      "/en/posts/2026-11-sample-analysis/index.html"
+    ]
+  },
+  {
     "listing": "/report.html",
     "items": [
-      "/posts/sample/index.html"
+      "/posts/sample/index.html",
+      "/posts/2026-11-sample-analysis/index.html",
+      "/en/posts/2026-11-sample-analysis/index.html"
     ]
   }
 ]

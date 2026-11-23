@@ -1,35 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://benskim.github.io/self-intro/experience.html</loc>
-    <lastmod>2026-11-23T02:17:58.880Z</lastmod>
-  </url>
-  <url>
-    <loc>https://benskim.github.io/self-intro/projects.html</loc>
-    <lastmod>2026-11-23T02:17:58.881Z</lastmod>
-  </url>
-  <url>
-    <loc>https://benskim.github.io/self-intro/projects/project-c.html</loc>
-    <lastmod>2026-11-23T02:17:58.897Z</lastmod>
-  </url>
-  <url>
-    <loc>https://benskim.github.io/self-intro/report.html</loc>
-    <lastmod>2026-11-23T02:17:58.897Z</lastmod>
-  </url>
-  <url>
-    <loc>https://benskim.github.io/self-intro/posts/sample/index.html</loc>
-    <lastmod>2026-11-23T02:17:58.881Z</lastmod>
-  </url>
-  <url>
     <loc>https://benskim.github.io/self-intro/projects/project-b.html</loc>
-    <lastmod>2026-11-23T02:17:58.897Z</lastmod>
+    <lastmod>2026-11-23T03:53:17.680Z</lastmod>
   </url>
   <url>
     <loc>https://benskim.github.io/self-intro/projects/project-a.html</loc>
-    <lastmod>2026-11-23T02:17:58.897Z</lastmod>
+    <lastmod>2026-11-23T03:53:17.680Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/en/projects/project-b.html</loc>
+    <lastmod>2026-11-23T03:53:17.664Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/en/projects/project-a.html</loc>
+    <lastmod>2026-11-23T03:53:17.663Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/en/projects.html</loc>
+    <lastmod>2026-11-23T03:53:17.663Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/en/posts/2026-11-sample-analysis/index.html</loc>
+    <lastmod>2026-11-23T03:53:17.663Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/projects.html</loc>
+    <lastmod>2026-11-23T03:53:17.666Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/posts/2026-11-sample-analysis/index.html</loc>
+    <lastmod>2026-11-23T03:53:17.665Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/experience.html</loc>
+    <lastmod>2026-11-23T03:53:17.664Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/posts/sample/index.html</loc>
+    <lastmod>2026-11-23T03:53:17.666Z</lastmod>
   </url>
   <url>
     <loc>https://benskim.github.io/self-intro/index.html</loc>
-    <lastmod>2026-11-23T02:17:58.880Z</lastmod>
+    <lastmod>2026-11-23T03:53:17.664Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/en/experience.html</loc>
+    <lastmod>2026-11-23T03:53:17.663Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/en/index.html</loc>
+    <lastmod>2026-11-23T03:53:17.663Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/en/report.html</loc>
+    <lastmod>2026-11-23T03:53:17.664Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/en/projects/project-c.html</loc>
+    <lastmod>2026-11-23T03:53:17.664Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/report.html</loc>
+    <lastmod>2026-11-23T03:53:17.681Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/projects/project-c.html</loc>
+    <lastmod>2026-11-23T03:53:17.681Z</lastmod>
   </url>
 </urlset>
