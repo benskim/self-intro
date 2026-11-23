@@ -1,7 +1,7 @@
 ---
 title: "탄력적 수집 관리를 위한 스케줄링 포아송 머신"
 subtitle: "통계적 웹페이지 변화 감지 및 기계학습 모델을 결합한 지능형 데이터 획득(Crawl Period Optimization)"
-image: images/project-c.png
+image: ../../projects/images/project-c.png
 toc: true
 ---
 

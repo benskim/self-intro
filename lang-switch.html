@@ -1,6 +1,5 @@
 <script>
-/* KO | EN switch: points each link at the same page in the other language,
-   and keeps English pages navigating inside /en/. */
+/* Keep navigation and language switching at the repository root. */
 document.addEventListener("DOMContentLoaded", function () {
   try {
     var meta = document.querySelector('meta[name="quarto:offset"]');
@@ -8,17 +7,31 @@ document.addEventListener("DOMContentLoaded", function () {
     if (root.slice(-1) !== "/") root += "/";
     var rel = location.pathname.slice(root.length);
     if (rel === "" || rel.slice(-1) === "/") rel += "index.html";
+    var isKo = rel.indexOf("ko/") === 0;
     var isEn = rel.indexOf("en/") === 0;
-    var ko = isEn ? rel.slice(3) : rel;
-    var en = isEn ? rel : "en/" + rel;
+    var page = isKo ? rel.slice(3) : isEn ? rel.slice(3) : rel;
+    var ko = "ko/" + page;
+    var en = "en/" + page;
+    var leftNav = {
+      "About": "index",
+      "Report": "report",
+      "Projects": "projects",
+      "Experience": "experience"
+    };
     document.querySelectorAll(".navbar a[href]").forEach(function (a) {
       var label = a.textContent.trim();
-      var u = new URL(a.getAttribute("href"), location.href);
-      if (label === "KO") { a.href = root + ko + location.hash; if (!isEn) a.classList.add("active"); return; }
-      if (label === "EN") { a.href = root + en + location.hash; if (isEn) a.classList.add("active"); return; }
-      if (isEn && u.origin === location.origin && u.pathname.indexOf(root) === 0 &&
-          u.pathname.indexOf(root + "en/") !== 0) {
-        a.href = root + "en/" + u.pathname.slice(root.length) + u.search + u.hash;
+      if (label === "KO") {
+        a.href = root + ko + location.hash;
+        if (isKo) a.classList.add("active");
+        return;
+      }
+      if (label === "EN") {
+        a.href = root + en + location.hash;
+        if (isEn) a.classList.add("active");
+        return;
+      }
+      if (Object.prototype.hasOwnProperty.call(leftNav, label)) {
+        a.href = root + (isEn ? "en/" : "ko/") + leftNav[label] + ".html";
       }
     });
   } catch (e) {}

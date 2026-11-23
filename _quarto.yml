@@ -9,17 +9,17 @@ website:
   navbar:
     left:
       - text: "About"
-        href: index.qmd
+        href: ko/index.qmd
       - text: "Report"
-        href: report.qmd
+        href: ko/report.qmd
       - text: "Projects"
-        href: projects.qmd
+        href: ko/projects.qmd
       - text: "Experience"
-        href: experience.qmd
+        href: ko/experience.qmd
 
     right:
       - text: "KO"
-        href: index.qmd
+        href: ko/index.qmd
       - text: "EN"
         href: en/index.qmd
       - icon: github
