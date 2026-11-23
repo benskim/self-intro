@@ -270,63 +270,140 @@
     "href": "en/projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Gen-AI B2C App Growth Analytics\n\n\nAn end-to-end case study of real business growth strategy and data validation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nScheduling Poisson Machine for Adaptive Crawling\n\n\nIntelligent data acquisition (crawl period optimization) combining statistical page-change detection and machine learning\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVideo Data Curation and MLOps PoC\n\n\nML pipeline engineering for a vision model that improves infrastructure efficiency and data quality\n\n\n\n\n\n\n\nNo matching items"
+    "text": "No matching items"
   },
   {
-    "objectID": "en/posts/sample/index.html",
-    "href": "en/posts/sample/index.html",
+    "objectID": "en/posts/2026-11-sample-analysis/index.html",
+    "href": "en/posts/2026-11-sample-analysis/index.html",
     "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
     "section": "",
     "text": "NoteBefore you read\n\n\n\nThe design and result figures here match Project A. The per-group conversion counts (A: 82, B: 114 of 576 per group) are values arranged to match the reported conversion rates (14.2%, 19.8%) and p-value (0.012); replace them with values re-aggregated from the real logs if available."
   },
   {
-    "objectID": "en/posts/sample/index.html#background-and-objective",
-    "href": "en/posts/sample/index.html#background-and-objective",
+    "objectID": "en/posts/2026-11-sample-analysis/index.html#background-and-objective",
+    "href": "en/posts/2026-11-sample-analysis/index.html#background-and-objective",
     "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
     "section": "1. Background and objective",
     "text": "1. Background and objective\nUA ads brought large inflow, but drop-off surged at the AI generation step right after sign-up. We test the hypothesis that switching content exposure from random content (A) to genre-curated content (B) improves the video conversion rate.\n\nH0: The video conversion rates of the two groups are equal (\\(p_A = p_B\\))\nH1: The video conversion rates differ (\\(p_A \\neq p_B\\)), significance level \\(\\alpha = 0.05\\)"
   },
   {
-    "objectID": "en/posts/sample/index.html#diagnosis-where-users-leak",
-    "href": "en/posts/sample/index.html#diagnosis-where-users-leak",
+    "objectID": "en/posts/2026-11-sample-analysis/index.html#diagnosis-where-users-leak",
+    "href": "en/posts/2026-11-sample-analysis/index.html#diagnosis-where-users-leak",
     "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
     "section": "2. Diagnosis: where users leak",
     "text": "2. Diagnosis: where users leak\n\n\n\nShare of installs by step. More than 80% leak out between sign-up (65%) and AI generation (12%)\n\n\nAd click & Install (100%) → Sign Up (65%) → AI Generation (12%) → Share/Download (2.5%). The sign-up → AI generation step loses more than 80% of users and is the largest leak, so the video conversion rate was chosen as the experiment metric."
   },
   {
-    "objectID": "en/posts/sample/index.html#experiment-design-and-sample-sizing",
-    "href": "en/posts/sample/index.html#experiment-design-and-sample-sizing",
+    "objectID": "en/posts/2026-11-sample-analysis/index.html#experiment-design-and-sample-sizing",
+    "href": "en/posts/2026-11-sample-analysis/index.html#experiment-design-and-sample-sizing",
     "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
     "section": "3. Experiment design and sample sizing",
     "text": "3. Experiment design and sample sizing\n\n\n\n\n\n\n\nItem\nDetail\n\n\n\n\nControl (Group A)\nExisting random content (80% user-uploaded, 20% in-house)\n\n\nTreatment (Group B)\nGenre-curated content (cinematic, Y2K, cartoon, meme, etc.)\n\n\nPrimary metric\nVideo conversion rate (users who successfully generate an AI video among exposed users), baseline 14.2%\n\n\nAssignment / duration\nNew users randomly assigned 50:50 with Firebase Remote Config (A/B Testing), 14 days\n\n\nSignificance / power\n\\(\\alpha = 0.05\\) / \\(1-\\beta = 0.80\\)\n\n\nMinimum detectable effect (MDE)\n+6.5 pp (14.2% → 20.7%)\n\n\n\nHow groups are assigned: Remote Config serves a different content-exposure policy parameter per group. The group is recorded as a user property on the exposure event, logged when the app activates the value. These logs flow from Firebase into BigQuery and Amplitude, where per-group funnels and conversion are aggregated. Firebase randomizes per app installation (instance), so users who reinstall or use several devices may land in different groups and need to be checked in analysis.\nThe required sample size per group for comparing two proportions is:\n\\[n = \\frac{(z_{1-\\alpha/2}+z_{1-\\beta})^2\\,[p_1(1-p_1)+p_2(1-p_2)]}{(p_2-p_1)^2}\\]\nfrom scipy import stats\n\ndef n_per_group(p1, p2, alpha=0.05, power=0.80):\n    k = (stats.norm.ppf(1 - alpha/2) + stats.norm.ppf(power)) ** 2\n    return k * (p1*(1-p1) + p2*(1-p2)) / (p2 - p1) ** 2\n\nn_per_group(0.142, 0.142 + 0.065)   # 531.3 -&gt; at least 532 per group\nAt least 532 per group, or 38 per segment per day over 14 days. The actual sample was 576 per group (about 41 per day), meeting the design requirement.\n\n\n\nThe larger the difference to detect, the fewer samples are needed"
   },
   {
-    "objectID": "en/posts/sample/index.html#test-results",
-    "href": "en/posts/sample/index.html#test-results",
+    "objectID": "en/posts/2026-11-sample-analysis/index.html#test-results",
+    "href": "en/posts/2026-11-sample-analysis/index.html#test-results",
     "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
     "section": "4. Test results",
     "text": "4. Test results\n\n\n\nItem\nControl A\nTreatment B\n\n\n\n\nSample size\n576\n576\n\n\nSuccessful video generations\n82\n114\n\n\nVideo conversion rate\n14.2%\n19.8%\n\n\nDifference\n+5.6 pp (about +39% relative)\n\n\n\n\nimport numpy as np\nfrom scipy import stats\n\nn, a, b = 576, 82, 114\nchi2, p_chi, *_ = stats.chi2_contingency([[a, n-a], [b, n-b]], correction=False)\nt, p_t = stats.ttest_ind(np.r_[np.ones(b), np.zeros(n-b)],\n                         np.r_[np.ones(a), np.zeros(n-a)])\n\n\n\nTest\nStatistic\np-value\n\n\n\n\nChi-square test\nχ² = 6.30 (df=1)\n0.012\n\n\nIndependent-samples t-test\nt = 2.51 (df=1150)\n0.012\n\n\n\nThe 95% confidence interval of the difference is +1.2 to +9.9 pp, which excludes 0.\n\n\n\nA/B video conversion with 95% confidence intervals\n\n\nConclusion: Since p = 0.012 &lt; 0.05, we reject H0 and decided to roll out genre-curated content."
   },
   {
-    "objectID": "en/posts/sample/index.html#key-takeaways",
-    "href": "en/posts/sample/index.html#key-takeaways",
+    "objectID": "en/posts/2026-11-sample-analysis/index.html#key-takeaways",
+    "href": "en/posts/2026-11-sample-analysis/index.html#key-takeaways",
     "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
     "section": "5. Key takeaways",
     "text": "5. Key takeaways\n\nInsight 1: Video conversion for genre-curated content (B) is 19.8%, 5.6 pp (about +39% relative) above control (14.2%), and significant at the 5% level (p = 0.012).\nInsight 2: The observed difference (+5.6 pp) is smaller than the design MDE (+6.5 pp), so power on this sample is about 71%. The direction is reliable, but the confidence interval of the effect size (+1.2 to +9.9 pp) is wide, so it should be re-estimated through post-rollout monitoring.\nNext actions: Break down the effect by genre (cinematic, Y2K, etc.), and verify 7-day retention and proxy LTV/CAC ≥ 3.0 including GPU cost."
   },
   {
-    "objectID": "en/posts/sample/index.html#limitations",
-    "href": "en/posts/sample/index.html#limitations",
+    "objectID": "en/posts/2026-11-sample-analysis/index.html#limitations",
+    "href": "en/posts/2026-11-sample-analysis/index.html#limitations",
     "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
     "section": "6. Limitations",
     "text": "6. Limitations\n\nAssignment is per installation, so users who reinstall or use several devices may switch groups; check with the user_id mapping in the logs.\nThis is a single-period, single-metric test, so novelty effects are to be checked through post-rollout monitoring.\nSubgroup effects by genre need multiple-comparison correction and were not covered in this test."
   },
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
+    "objectID": "en/experience.html",
+    "href": "en/experience.html",
+    "title": "Experience",
     "section": "",
-    "text": "Gen-AI B2C App Growth Analytics\n\n\nAn end-to-end case study of real business growth strategy and data validation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGen-AI B2C 앱 서비스 그로스 분석\n\n\n실제 비즈니스 성장 전략 설계와 데이터 검증의 엔드투엔드(End-to-End) 케이스 스터디\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nScheduling Poisson Machine for Adaptive Crawling\n\n\nIntelligent data acquisition (crawl period optimization) combining statistical page-change detection and machine learning\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVideo Data Curation and MLOps PoC\n\n\nML pipeline engineering for a vision model that improves infrastructure efficiency and data quality\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n영상 데이터 큐레이션 및 MLOps PoC\n\n\n인프라 리소스 효율화 및 데이터 품질 강화를 구현한 비전 모델 ML Pipeline 엔지니어링\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n탄력적 수집 관리를 위한 스케줄링 포아송 머신\n\n\n통계적 웹페이지 변화 감지 및 기계학습 모델을 결합한 지능형 데이터 획득(Crawl Period Optimization)\n\n\n\n\n\n\n\n일치 없음"
+    "text": "A career that runs from data analytics through data curation and MLOps to statistical predictive modeling, and on to leading teams."
+  },
+  {
+    "objectID": "en/experience.html#klleon",
+    "href": "en/experience.html#klleon",
+    "title": "Experience",
+    "section": "Klleon R&D — Data Part Lead",
+    "text": "Klleon R&D — Data Part Lead\nMar 2021 – Nov 2023 (2 yrs 9 mos)\nBuilt and led the MLOps team and data part for an effective research environment\n\nDeveloped Korean TTS technology based on Data-Centric AI (DCAI)\nBuilt and optimized a computer-vision data curation system covering data collection, processing, and screening\nSupported engineering with Kubeflow and DVC\n\n→ Details: Project B. Video Data Curation and MLOps PoC\nSupported data-driven decisions for a Gen-AI based B2C service\n\nAnalyzed users with Firebase, Appsflyer, Amplitude, Tableau, and statistical modeling\nLed the beta launch (App Store, Google Play)\nLed digital marketing (Meta, Google Ads)\n\n→ Details: Project A. Gen-AI B2C App Growth Analytics"
+  },
+  {
+    "objectID": "en/experience.html#freewheelin",
+    "href": "en/experience.html#freewheelin",
+    "title": "Experience",
+    "section": "freewheelin — Data Analyst",
+    "text": "freewheelin — Data Analyst\nApr 2019 – Jul 2020 (1 yr 4 mos) · Gwanak-gu, Seoul\nBuilt a dashboard for promotion performance analysis\n\nAnalyzed the correlation between promotions and user properties (price, free-trial period)\nAnalyzed retention trends of user groups by promotion\nDefined and calculated KPIs to measure performance\n\nReorganized the data management system\n\nCentralized data in BigQuery\nReduced inefficient storage cost\nOversaw data quality"
+  },
+  {
+    "objectID": "en/experience.html#epopcon",
+    "href": "en/experience.html#epopcon",
+    "title": "Experience",
+    "section": "Epopcon — Data Scientist",
+    "text": "Epopcon — Data Scientist\nDec 2017 – Mar 2019 (1 yr 4 mos)\nBuilt stochastic scheduling models that predict when product stock levels change (Poisson process)\n\nImputed missing inventory values and handled outliers (clustering, anomaly detection)\n\n→ Details: Project C. Scheduling Poisson Machine for Adaptive Crawling\nCreated standardized keys for the same product listed across multiple shopping malls\n\nPreprocessed image and natural-language data, then applied the MinHash-LSH algorithm\n\nAnalyzed hidden customer behavior patterns\n\nUsed geographical data\nCleaned store addresses and categories using open data\nVisualized the distribution of target features and compared it with a control group"
+  },
+  {
+    "objectID": "en/experience.html#army",
+    "href": "en/experience.html#army",
+    "title": "Experience",
+    "section": "Republic of Korea Army — Operations Assistant",
+    "text": "Republic of Korea Army — Operations Assistant\n2015 – 2017 (2 yrs)"
+  },
+  {
+    "objectID": "en/experience.html#education",
+    "href": "en/experience.html#education",
+    "title": "Experience",
+    "section": "Education",
+    "text": "Education\nYonsei University — Bachelor’s degree, Applied Statistics and Economics"
+  },
+  {
+    "objectID": "en/experience.html#certifications",
+    "href": "en/experience.html#certifications",
+    "title": "Experience",
+    "section": "Certifications",
+    "text": "Certifications\n\nTensorFlow Developer Professional Certificate\nUsing Machine Learning in Trading and Finance\nFinancial Engineering and Risk Management Part I"
+  },
+  {
+    "objectID": "en/experience.html#core-skills",
+    "href": "en/experience.html#core-skills",
+    "title": "Experience",
+    "section": "Core Skills",
+    "text": "Core Skills\nMathematics · Problem Management · Analytical Skills"
+  },
+  {
+    "objectID": "en/experience.html#links",
+    "href": "en/experience.html#links",
+    "title": "Experience",
+    "section": "Links",
+    "text": "Links\n\nLinkedIn\nMedium Blog"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "",
+    "section": "",
+    "text": "코드\n팀리드, 창업팀 리드 경험을 통해 단순 수식 학습과 코딩 암기를 넘어, 매출 및 서비스 성장 관점에서 기술을 어떻게 학습하고 설계하며 현업 비즈니스에 적용해야 하는지 고민합니다."
+  },
+  {
+    "objectID": "index.html#비전을-확실한-비즈니스-성과로-실현한다.",
+    "href": "index.html#비전을-확실한-비즈니스-성과로-실현한다.",
+    "title": "",
+    "section": "비전을 확실한 비즈니스 성과로 실현한다.",
+    "text": "비전을 확실한 비즈니스 성과로 실현한다.\n\n\n“서로 다른 현장의 언어를 통합해서 결과를 만드는, ben kim입니다.”\n\n서로 다른 이해관계자 속에서 목표와 요구사항을 정하고, 비즈니스 지표 개선에 필요한 분석 및 데이터 엔지니어링 실전 경험을 바탕으로 ‘함께 성장하는 팀’을 만들겠습니다.\n\nData Scientist AI Data Engineer"
+  },
+  {
+    "objectID": "index.html#소개",
+    "href": "index.html#소개",
+    "title": "",
+    "section": "소개",
+    "text": "소개\n스타트업 데이터 분석가, 데이터 사이언티스트부터 AI 데이터 파트 리드까지 경험하며, 데이터 기반 의사결정과 재현 가능한 분석·ML 파이프라인을 구축해 왔습니다. 유저 그로스 분석, 비전 모델 학습 데이터 큐레이션(MLOps), 통계·ML 하이브리드 예측 모델링을 다룹니다.\n경력 보기 · 프로젝트 보기\n\n주요 기술 스택\n\n언어 & 데이터: Python, SQL (DuckDB, PostgreSQL, MySQL, BigQuery)\n분석 & 시각화: Pandas, NumPy, SciPy, 통계·시계열 분석, Tableau\n그로스 & 로그 분석: Firebase, Appsflyer, Amplitude, A/B 테스트 설계\nML & MLOps: Kubeflow, DVC, MLflow, OpenCV, Librosa\n워크플로우 & 인프라: Git, GitHub Actions, Docker, AWS, Quarto\n\n\n\n학력 & 자격\n\n연세대학교 응용통계학·경제학 학사\nTensorFlow Developer Professional Certificate"
   },
   {
     "objectID": "posts/sample/index.html",
@@ -389,7 +466,7 @@
     "href": "experience.html#klleon",
     "title": "Experience",
     "section": "Klleon R&D — 데이터 파트 리드",
-    "text": "Klleon R&D — 데이터 파트 리드\n2021.03 ~ 2023.11 (2년 9개월)\n연구 환경 효율화를 위한 MLOps 팀·데이터 파트 구축 및 리딩\n\n데이터 중심 AI(Data-Centric AI, DCAI) 접근으로 한국어 TTS 기술 개발\n데이터 수집, 가공, 검수까지 아우르는 컴퓨터 비전 맞춤형 데이터 큐레이션 시스템 구축 및 최적화\nKubeflow, DVC를 활용해 엔지니어링 지원\n\n→ 상세: 영상 데이터 큐레이션 및 MLOps PoC\n생성형 AI 기반 B2C 서비스의 데이터 의사결정 지원\n\nFirebase, Appsflyer, Amplitude, Tableau, 통계 모델링을 활용한 유저 분석\n앱스토어·구글 플레이 베타 서비스 런칭 리딩\n디지털 마케팅(Meta, Google Ads) 리딩\n\n→ 상세: 생성형AI B2C 앱 서비스 그로스 분석"
+    "text": "Klleon R&D — 데이터 파트 리드\n2021.03 ~ 2023.11 (2년 9개월)\n연구 환경 효율화를 위한 MLOps 팀·데이터 파트 구축 및 리딩\n\n데이터 중심 AI(Data-Centric AI, DCAI) 접근으로 한국어 TTS 기술 개발\n데이터 수집, 가공, 검수까지 아우르는 컴퓨터 비전 맞춤형 데이터 큐레이션 시스템 구축 및 최적화\nKubeflow, DVC를 활용해 엔지니어링 지원\n\n→ 상세: Project B. 영상 데이터 큐레이션 및 MLOps PoC\n생성형 AI 기반 B2C 서비스의 데이터 의사결정 지원\n\nFirebase, Appsflyer, Amplitude, Tableau, 통계 모델링을 활용한 유저 분석\n앱스토어·구글 플레이 베타 서비스 런칭 리딩\n디지털 마케팅(Meta, Google Ads) 리딩\n\n→ 상세: Project A. Gen-AI B2C 앱 서비스 그로스 분석"
   },
   {
     "objectID": "experience.html#freewheelin",
@@ -403,7 +480,14 @@
     "href": "experience.html#epopcon",
     "title": "Experience",
     "section": "이팝콘 (Epopcon) — 데이터 사이언티스트",
-    "text": "이팝콘 (Epopcon) — 데이터 사이언티스트\n2017.12 ~ 2019.03 (1년 4개월)\n상품 재고량 변화 시점을 예측하는 확률적 스케줄링 모델 개발 (포아송 과정)\n\n재고량 결측치 보정 및 이상치 처리 (클러스터링, 이상 탐지)\n\n→ 상세: 탄력적 수집 관리를 위한 스케줄링 예측 머신\n여러 쇼핑몰에 흩어진 동일 상품의 표준 키 생성\n\n이미지와 자연어 데이터를 전처리한 뒤 minhash-LSH 알고리즘 적용\n\n숨은 고객 행동 패턴 분석\n\n지리 데이터 활용\n공공 데이터를 활용해 상점 주소와 업종 카테고리 정제\n관심 대상 특성의 분포를 시각화하고 대조군과 비교"
+    "text": "이팝콘 (Epopcon) — 데이터 사이언티스트\n2017.12 ~ 2019.03 (1년 4개월)\n상품 재고량 변화 시점을 예측하는 확률적 스케줄링 모델 개발 (포아송 과정)\n\n재고량 결측치 보정 및 이상치 처리 (클러스터링, 이상 탐지)\n\n→ 상세: Project C. 탄력적 수집 관리를 위한 스케줄링 포아송 머신\n여러 쇼핑몰에 흩어진 동일 상품의 표준 키 생성\n\n이미지와 자연어 데이터를 전처리한 뒤 minhash-LSH 알고리즘 적용\n\n숨은 고객 행동 패턴 분석\n\n지리 데이터 활용\n공공 데이터를 활용해 상점 주소와 업종 카테고리 정제\n관심 대상 특성의 분포를 시각화하고 대조군과 비교"
+  },
+  {
+    "objectID": "experience.html#army",
+    "href": "experience.html#army",
+    "title": "Experience",
+    "section": "대한민국 육군 — 작전 보조",
+    "text": "대한민국 육군 — 작전 보조\n2015 ~ 2017 (2년)"
   },
   {
     "objectID": "experience.html#학력",
@@ -434,81 +518,109 @@
     "text": "링크\n\nLinkedIn\nMedium Blog"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "",
+    "objectID": "posts/2026-11-sample-analysis/index.html",
+    "href": "posts/2026-11-sample-analysis/index.html",
+    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
     "section": "",
-    "text": "코드\n팀리드, 창업팀 리드 경험을 통해 단순 수식 학습과 코딩 암기를 넘어, 매출 및 서비스 성장 관점에서 기술을 어떻게 학습하고 설계하며 현업 비즈니스에 적용해야 하는지 고민합니다."
+    "text": "노트읽기 전 안내\n\n\n\n이 글의 설계·결과 수치는 Project A와 동일합니다. 군별 전환 수(A 82명, B 114명 / 군당 576명)는 보고된 전환율(14.2%, 19.8%)과 p-value(0.012)에 맞춰 정리한 값이므로, 실제 로그로 재집계한 값이 있다면 그 값으로 교체해야 합니다."
   },
   {
-    "objectID": "index.html#비전을-확실한-비즈니스-성과로-실현한다.",
-    "href": "index.html#비전을-확실한-비즈니스-성과로-실현한다.",
-    "title": "",
-    "section": "비전을 확실한 비즈니스 성과로 실현한다.",
-    "text": "비전을 확실한 비즈니스 성과로 실현한다.\n\n\n“서로 다른 현장의 언어를 통합해서 결과를 만드는, ben kim입니다.”\n\n서로 다른 이해관계자 속에서 목표와 요구사항을 정하고, 비즈니스 지표 개선에 필요한 분석 및 데이터 엔지니어링 실전 경험을 바탕으로 ‘함께 성장하는 팀’을 만들겠습니다.\n\nData Scientist AI Data Engineer"
+    "objectID": "posts/2026-11-sample-analysis/index.html#분석-배경-및-목적",
+    "href": "posts/2026-11-sample-analysis/index.html#분석-배경-및-목적",
+    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
+    "section": "1. 분석 배경 및 목적",
+    "text": "1. 분석 배경 및 목적\nUA 광고로 대규모 유입이 발생했지만 가입 후 AI 생성 체험 단계에서 이탈이 급증했습니다. 콘텐츠 노출 방식을 랜덤 콘텐츠(A) → 장르 기획 콘텐츠(B) 로 바꾸면 영상 변환율이 개선된다는 가설을 검증합니다.\n\nH0: 두 군의 영상 변환율은 같다 (\\(p_A = p_B\\))\nH1: 두 군의 영상 변환율은 다르다 (\\(p_A \\neq p_B\\)), 유의수준 \\(\\alpha = 0.05\\)"
   },
   {
-    "objectID": "index.html#소개",
-    "href": "index.html#소개",
-    "title": "",
-    "section": "소개",
-    "text": "소개\n스타트업 데이터 분석가, 데이터 사이언티스트부터 AI 데이터 파트 리드까지 경험하며, 데이터 기반 의사결정과 재현 가능한 분석·ML 파이프라인을 구축해 왔습니다. 유저 그로스 분석, 비전 모델 학습 데이터 큐레이션(MLOps), 통계·ML 하이브리드 예측 모델링을 다룹니다.\n경력 보기 · 프로젝트 보기\n\n주요 기술 스택\n\n언어 & 데이터: Python, SQL (DuckDB, PostgreSQL, MySQL, BigQuery)\n분석 & 시각화: Pandas, NumPy, SciPy, 통계·시계열 분석, Tableau\n그로스 & 로그 분석: Firebase, Appsflyer, Amplitude, A/B 테스트 설계\nML & MLOps: Kubeflow, DVC, MLflow, OpenCV, Librosa\n워크플로우 & 인프라: Git, GitHub Actions, Docker, AWS, Quarto\n\n\n\n학력 & 자격\n\n연세대학교 응용통계학·경제학 학사\nTensorFlow Developer Professional Certificate"
+    "objectID": "posts/2026-11-sample-analysis/index.html#문제-진단-어디서-새는가",
+    "href": "posts/2026-11-sample-analysis/index.html#문제-진단-어디서-새는가",
+    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
+    "section": "2. 문제 진단: 어디서 새는가",
+    "text": "2. 문제 진단: 어디서 새는가\n\n\n\n설치 대비 단계별 비율. 가입(65%) 대비 AI 생성 시도(12%) 구간에서 약 80% 이상 누수\n\n\nAD click & Install(100%) → Sign Up(65%) → AI Generation(12%) → Share/Download(2.5%) 중 가입 → AI 생성 시도 구간에서 약 80% 이상이 이탈합니다. 이 구간이 가장 큰 누수이므로 실험의 대상 지표를 영상 변환율로 정했습니다."
   },
   {
-    "objectID": "en/experience.html",
-    "href": "en/experience.html",
-    "title": "Experience",
+    "objectID": "posts/2026-11-sample-analysis/index.html#실험-설계와-표본-산정",
+    "href": "posts/2026-11-sample-analysis/index.html#실험-설계와-표본-산정",
+    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
+    "section": "3. 실험 설계와 표본 산정",
+    "text": "3. 실험 설계와 표본 산정\n\n\n\n\n\n\n\n구분\n내용\n\n\n\n\n대조군 (Group A)\n기존 랜덤 콘텐츠 (80% 개인 업로드, 20% 내부)\n\n\n실험군 (Group B)\n장르 기획 콘텐츠 (시네마틱, Y2K, 만화, 병맛 등)\n\n\n주지표\n영상 변환율 (노출 유저 중 AI 영상 생성 성공 비율), 기준 14.2%\n\n\n배정 / 기간\nFirebase Remote Config(A/B Testing)로 신규 유저 무작위 50:50, 14일\n\n\n유의수준 / 검정력\n\\(\\alpha = 0.05\\) / \\(1-\\beta = 0.80\\)\n\n\n최소 검출 효과 (MDE)\n+6.5%p (14.2% → 20.7%)\n\n\n\n군 배정 방식: Remote Config 파라미터(콘텐츠 노출 정책)를 군별로 다르게 내려주고, 앱이 값을 적용(activate)한 시점의 노출 이벤트에 군 정보를 user property로 남깁니다. 이 로그가 Firebase → BigQuery / Amplitude로 연동되어 군별 퍼널과 변환율을 집계합니다. Firebase의 무작위 배정은 앱 설치(instance) 단위이므로, 재설치나 다기기 사용 유저는 다른 군에 배정될 수 있어 분석 시 확인이 필요합니다.\n두 비율 비교의 군당 필요 표본 수는 다음과 같습니다.\n\\[n = \\frac{(z_{1-\\alpha/2}+z_{1-\\beta})^2\\,[p_1(1-p_1)+p_2(1-p_2)]}{(p_2-p_1)^2}\\]\nfrom scipy import stats\n\ndef n_per_group(p1, p2, alpha=0.05, power=0.80):\n    k = (stats.norm.ppf(1 - alpha/2) + stats.norm.ppf(power)) ** 2\n    return k * (p1*(1-p1) + p2*(1-p2)) / (p2 - p1) ** 2\n\nn_per_group(0.142, 0.142 + 0.065)   # 531.3 -&gt; 군당 최소 532명\n군당 최소 532명, 14일 기준 일일 세그먼트당 최소 38명입니다. 실제 수집된 표본은 군당 576명(일일 약 41명)으로 설계 기준을 충족했습니다.\n\n\n\n검출하려는 차이가 클수록 필요 표본 수는 급격히 줄어든다"
+  },
+  {
+    "objectID": "posts/2026-11-sample-analysis/index.html#검정-결과",
+    "href": "posts/2026-11-sample-analysis/index.html#검정-결과",
+    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
+    "section": "4. 검정 결과",
+    "text": "4. 검정 결과\n\n\n\n항목\n대조군 A\n실험군 B\n\n\n\n\n표본 수\n576\n576\n\n\n영상 생성 성공\n82\n114\n\n\n영상 변환율\n14.2%\n19.8%\n\n\n차이\n+5.6%p (상대 약 +39%)\n\n\n\n\nimport numpy as np\nfrom scipy import stats\n\nn, a, b = 576, 82, 114\nchi2, p_chi, *_ = stats.chi2_contingency([[a, n-a], [b, n-b]], correction=False)\nt, p_t = stats.ttest_ind(np.r_[np.ones(b), np.zeros(n-b)],\n                         np.r_[np.ones(a), np.zeros(n-a)])\n\n\n\n검정\n통계량\np-value\n\n\n\n\n카이제곱 검정\nχ² = 6.30 (df=1)\n0.012\n\n\n독립표본 t-검정\nt = 2.51 (df=1150)\n0.012\n\n\n\n차이의 95% 신뢰구간은 +1.2 ~ +9.9%p로 0을 포함하지 않습니다.\n\n\n\nA/B 영상 변환율과 95% 신뢰구간\n\n\n결론: p-value 0.012 &lt; 0.05이므로 H0를 기각합니다. 장르 기획 콘텐츠를 정식 롤아웃하기로 결정했습니다."
+  },
+  {
+    "objectID": "posts/2026-11-sample-analysis/index.html#핵심-요약",
+    "href": "posts/2026-11-sample-analysis/index.html#핵심-요약",
+    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
+    "section": "5. 핵심 요약",
+    "text": "5. 핵심 요약\n\n인사이트 1: 장르 기획 콘텐츠(B)의 영상 변환율은 19.8%로 대조군(14.2%)보다 5.6%p(상대 약 +39%) 높고, 5% 유의수준에서 유의합니다 (p = 0.012).\n인사이트 2: 관측 차이(+5.6%p)는 설계 MDE(+6.5%p)보다 작아 이 표본에서의 검정력은 약 71%입니다. 방향은 신뢰할 수 있으나 효과 크기의 신뢰구간(+1.2 ~ +9.9%p)이 넓어, 롤아웃 후 모니터링으로 재추정이 필요합니다.\n후속 액션: 장르별(시네마틱, Y2K 등) 효과 분해, 7-day 잔존율 및 GPU cost를 함께 보는 proxy LTV/CAC ≥ 3.0 검증."
+  },
+  {
+    "objectID": "posts/2026-11-sample-analysis/index.html#한계",
+    "href": "posts/2026-11-sample-analysis/index.html#한계",
+    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
+    "section": "6. 한계",
+    "text": "6. 한계\n\n배정이 설치 단위이므로 재설치·다기기 유저의 군 이탈 가능성은 로그의 user_id 매핑으로 점검해야 합니다.\n단일 기간·단일 지표 검정이므로 신기성 효과(novelty effect)는 롤아웃 후 모니터링으로 확인합니다.\n장르별 하위 그룹 효과는 다중 비교 보정이 필요해 이번 검정에서 다루지 않았습니다."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
     "section": "",
-    "text": "A career that runs from data analytics through data curation and MLOps to statistical predictive modeling, and on to leading teams."
+    "text": "Gen-AI B2C App Growth Analytics\n\n\nAn end-to-end case study of real business growth strategy and data validation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGen-AI B2C 앱 서비스 그로스 분석\n\n\n실제 비즈니스 성장 전략 설계와 데이터 검증의 엔드투엔드(End-to-End) 케이스 스터디\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nScheduling Poisson Machine for Adaptive Crawling\n\n\nIntelligent data acquisition (crawl period optimization) combining statistical page-change detection and machine learning\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVideo Data Curation and MLOps PoC\n\n\nML pipeline engineering for a vision model that improves infrastructure efficiency and data quality\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n영상 데이터 큐레이션 및 MLOps PoC\n\n\n인프라 리소스 효율화 및 데이터 품질 강화를 구현한 비전 모델 ML Pipeline 엔지니어링\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n탄력적 수집 관리를 위한 스케줄링 포아송 머신\n\n\n통계적 웹페이지 변화 감지 및 기계학습 모델을 결합한 지능형 데이터 획득(Crawl Period Optimization)\n\n\n\n\n\n\n\n일치 없음"
   },
   {
-    "objectID": "en/experience.html#klleon",
-    "href": "en/experience.html#klleon",
-    "title": "Experience",
-    "section": "Klleon R&D — Data Part Lead",
-    "text": "Klleon R&D — Data Part Lead\nMar 2021 – Nov 2023 (2 yrs 9 mos)\nBuilt and led the MLOps team and data part for an effective research environment\n\nDeveloped Korean TTS technology based on Data-Centric AI (DCAI)\nBuilt and optimized a computer-vision data curation system covering data collection, processing, and screening\nSupported engineering with Kubeflow and DVC\n\n→ Details: Video Data Curation and MLOps PoC\nSupported data-driven decisions for a Gen-AI based B2C service\n\nAnalyzed users with Firebase, Appsflyer, Amplitude, Tableau, and statistical modeling\nLed the beta launch (App Store, Google Play)\nLed digital marketing (Meta, Google Ads)\n\n→ Details: Gen-AI B2C App Service Growth Analytics"
+    "objectID": "en/posts/sample/index.html",
+    "href": "en/posts/sample/index.html",
+    "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
+    "section": "",
+    "text": "NoteBefore you read\n\n\n\nThe design and result figures here match Project A. The per-group conversion counts (A: 82, B: 114 of 576 per group) are values arranged to match the reported conversion rates (14.2%, 19.8%) and p-value (0.012); replace them with values re-aggregated from the real logs if available."
   },
   {
-    "objectID": "en/experience.html#freewheelin",
-    "href": "en/experience.html#freewheelin",
-    "title": "Experience",
-    "section": "freewheelin — Data Analyst",
-    "text": "freewheelin — Data Analyst\nApr 2019 – Jul 2020 (1 yr 4 mos) · Gwanak-gu, Seoul\nBuilt a dashboard for promotion performance analysis\n\nAnalyzed the correlation between promotions and user properties (price, free-trial period)\nAnalyzed retention trends of user groups by promotion\nDefined and calculated KPIs to measure performance\n\nReorganized the data management system\n\nCentralized data in BigQuery\nReduced inefficient storage cost\nOversaw data quality"
+    "objectID": "en/posts/sample/index.html#background-and-objective",
+    "href": "en/posts/sample/index.html#background-and-objective",
+    "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
+    "section": "1. Background and objective",
+    "text": "1. Background and objective\nUA ads brought large inflow, but drop-off surged at the AI generation step right after sign-up. We test the hypothesis that switching content exposure from random content (A) to genre-curated content (B) improves the video conversion rate.\n\nH0: The video conversion rates of the two groups are equal (\\(p_A = p_B\\))\nH1: The video conversion rates differ (\\(p_A \\neq p_B\\)), significance level \\(\\alpha = 0.05\\)"
   },
   {
-    "objectID": "en/experience.html#epopcon",
-    "href": "en/experience.html#epopcon",
-    "title": "Experience",
-    "section": "Epopcon — Data Scientist",
-    "text": "Epopcon — Data Scientist\nDec 2017 – Mar 2019 (1 yr 4 mos)\nBuilt stochastic scheduling models that predict when product stock levels change (Poisson process)\n\nImputed missing inventory values and handled outliers (clustering, anomaly detection)\n\n→ Details: Predictive Scheduling Machine for Elastic Collection Management\nCreated standardized keys for the same product listed across multiple shopping malls\n\nPreprocessed image and natural-language data, then applied the MinHash-LSH algorithm\n\nAnalyzed hidden customer behavior patterns\n\nUsed geographical data\nCleaned store addresses and categories using open data\nVisualized the distribution of target features and compared it with a control group"
+    "objectID": "en/posts/sample/index.html#diagnosis-where-users-leak",
+    "href": "en/posts/sample/index.html#diagnosis-where-users-leak",
+    "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
+    "section": "2. Diagnosis: where users leak",
+    "text": "2. Diagnosis: where users leak\n\n\n\nShare of installs by step. More than 80% leak out between sign-up (65%) and AI generation (12%)\n\n\nAd click & Install (100%) → Sign Up (65%) → AI Generation (12%) → Share/Download (2.5%). The sign-up → AI generation step loses more than 80% of users and is the largest leak, so the video conversion rate was chosen as the experiment metric."
   },
   {
-    "objectID": "en/experience.html#education",
-    "href": "en/experience.html#education",
-    "title": "Experience",
-    "section": "Education",
-    "text": "Education\nYonsei University — Bachelor’s degree, Applied Statistics and Economics"
+    "objectID": "en/posts/sample/index.html#experiment-design-and-sample-sizing",
+    "href": "en/posts/sample/index.html#experiment-design-and-sample-sizing",
+    "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
+    "section": "3. Experiment design and sample sizing",
+    "text": "3. Experiment design and sample sizing\n\n\n\n\n\n\n\nItem\nDetail\n\n\n\n\nControl (Group A)\nExisting random content (80% user-uploaded, 20% in-house)\n\n\nTreatment (Group B)\nGenre-curated content (cinematic, Y2K, cartoon, meme, etc.)\n\n\nPrimary metric\nVideo conversion rate (users who successfully generate an AI video among exposed users), baseline 14.2%\n\n\nAssignment / duration\nNew users randomly assigned 50:50 with Firebase Remote Config (A/B Testing), 14 days\n\n\nSignificance / power\n\\(\\alpha = 0.05\\) / \\(1-\\beta = 0.80\\)\n\n\nMinimum detectable effect (MDE)\n+6.5 pp (14.2% → 20.7%)\n\n\n\nHow groups are assigned: Remote Config serves a different content-exposure policy parameter per group. The group is recorded as a user property on the exposure event, logged when the app activates the value. These logs flow from Firebase into BigQuery and Amplitude, where per-group funnels and conversion are aggregated. Firebase randomizes per app installation (instance), so users who reinstall or use several devices may land in different groups and need to be checked in analysis.\nThe required sample size per group for comparing two proportions is:\n\\[n = \\frac{(z_{1-\\alpha/2}+z_{1-\\beta})^2\\,[p_1(1-p_1)+p_2(1-p_2)]}{(p_2-p_1)^2}\\]\nfrom scipy import stats\n\ndef n_per_group(p1, p2, alpha=0.05, power=0.80):\n    k = (stats.norm.ppf(1 - alpha/2) + stats.norm.ppf(power)) ** 2\n    return k * (p1*(1-p1) + p2*(1-p2)) / (p2 - p1) ** 2\n\nn_per_group(0.142, 0.142 + 0.065)   # 531.3 -&gt; at least 532 per group\nAt least 532 per group, or 38 per segment per day over 14 days. The actual sample was 576 per group (about 41 per day), meeting the design requirement.\n\n\n\nThe larger the difference to detect, the fewer samples are needed"
   },
   {
-    "objectID": "en/experience.html#certifications",
-    "href": "en/experience.html#certifications",
-    "title": "Experience",
-    "section": "Certifications",
-    "text": "Certifications\n\nTensorFlow Developer Professional Certificate\nUsing Machine Learning in Trading and Finance\nFinancial Engineering and Risk Management Part I"
+    "objectID": "en/posts/sample/index.html#test-results",
+    "href": "en/posts/sample/index.html#test-results",
+    "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
+    "section": "4. Test results",
+    "text": "4. Test results\n\n\n\nItem\nControl A\nTreatment B\n\n\n\n\nSample size\n576\n576\n\n\nSuccessful video generations\n82\n114\n\n\nVideo conversion rate\n14.2%\n19.8%\n\n\nDifference\n+5.6 pp (about +39% relative)\n\n\n\n\nimport numpy as np\nfrom scipy import stats\n\nn, a, b = 576, 82, 114\nchi2, p_chi, *_ = stats.chi2_contingency([[a, n-a], [b, n-b]], correction=False)\nt, p_t = stats.ttest_ind(np.r_[np.ones(b), np.zeros(n-b)],\n                         np.r_[np.ones(a), np.zeros(n-a)])\n\n\n\nTest\nStatistic\np-value\n\n\n\n\nChi-square test\nχ² = 6.30 (df=1)\n0.012\n\n\nIndependent-samples t-test\nt = 2.51 (df=1150)\n0.012\n\n\n\nThe 95% confidence interval of the difference is +1.2 to +9.9 pp, which excludes 0.\n\n\n\nA/B video conversion with 95% confidence intervals\n\n\nConclusion: Since p = 0.012 &lt; 0.05, we reject H0 and decided to roll out genre-curated content."
   },
   {
-    "objectID": "en/experience.html#core-skills",
-    "href": "en/experience.html#core-skills",
-    "title": "Experience",
-    "section": "Core Skills",
-    "text": "Core Skills\nMathematics · Problem Management · Analytical Skills"
+    "objectID": "en/posts/sample/index.html#key-takeaways",
+    "href": "en/posts/sample/index.html#key-takeaways",
+    "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
+    "section": "5. Key takeaways",
+    "text": "5. Key takeaways\n\nInsight 1: Video conversion for genre-curated content (B) is 19.8%, 5.6 pp (about +39% relative) above control (14.2%), and significant at the 5% level (p = 0.012).\nInsight 2: The observed difference (+5.6 pp) is smaller than the design MDE (+6.5 pp), so power on this sample is about 71%. The direction is reliable, but the confidence interval of the effect size (+1.2 to +9.9 pp) is wide, so it should be re-estimated through post-rollout monitoring.\nNext actions: Break down the effect by genre (cinematic, Y2K, etc.), and verify 7-day retention and proxy LTV/CAC ≥ 3.0 including GPU cost."
   },
   {
-    "objectID": "en/experience.html#links",
-    "href": "en/experience.html#links",
-    "title": "Experience",
-    "section": "Links",
-    "text": "Links\n\nLinkedIn\nMedium Blog"
+    "objectID": "en/posts/sample/index.html#limitations",
+    "href": "en/posts/sample/index.html#limitations",
+    "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
+    "section": "6. Limitations",
+    "text": "6. Limitations\n\nAssignment is per installation, so users who reinstall or use several devices may switch groups; check with the user_id mapping in the logs.\nThis is a single-period, single-metric test, so novelty effects are to be checked through post-rollout monitoring.\nSubgroup effects by genre need multiple-comparison correction and were not covered in this test."
   },
   {
     "objectID": "en/index.html",
@@ -536,7 +648,7 @@
     "href": "en/report.html",
     "title": "Report",
     "section": "",
-    "text": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion\n\n\n\nAnalysis Note\n\nA/B Test\n\nProject A\n\n\n\n\nA sample report on the Project A A/B test, organized as funnel diagnosis, sample sizing, and significance testing.\n\n\n\n\n\n\nNov 23, 2026\n\n\n\n\n\nNo matching items"
+    "text": "No matching items"
   },
   {
     "objectID": "en/projects/project-c.html",
@@ -606,7 +718,7 @@
     "href": "report.html",
     "title": "Report",
     "section": "",
-    "text": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion\n\n\n\nAnalysis Note\n\nA/B Test\n\nProject A\n\n\n\n\nA sample report on the Project A A/B test, organized as funnel diagnosis, sample sizing, and significance testing.\n\n\n\n\n\n\n\n\n23.\n\n\n\n\n:::\n:::\n\n\n\n\n\n\n\n\nA/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선\n\n\n\n분석노트\n\nA/B테스트\n\nProject A\n\n\n\n\nProject A의 A/B 테스트를 퍼널 진단 → 표본 산정 → 유의성 검정 순서로 정리한 샘플 리포트입니다.\n\n\n\n\n\n\n\n\n23.\n\n\n\n\n:::\n:::\n:::\n일치 없음\n:::\n:::"
+    "text": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion\n\n\n\nAnalysis Note\n\nA/B Test\n\nProject A\n\n\n\nA sample report on the Project A A/B test, organized as funnel diagnosis, sample sizing, and significance testing.\n\n\n\n\n\n23.\n\n\n\n\n:::\n\n:::\n\n\n\n\n\n\n\n\nA/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선\n\n\n\n분석노트\n\nA/B테스트\n\nProject A\n\n\n\nProject A의 A/B 테스트를 퍼널 진단 → 표본 산정 → 유의성 검정 순서로 정리한 샘플 리포트입니다.\n\n\n\n\n\n23.\n\n\n\n\n:::\n\n:::\n:::\n일치 없음\n:::\n:::"
   },
   {
     "objectID": "projects/project-c.html",

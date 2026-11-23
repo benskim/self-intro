@@ -127,7 +127,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     const options = {
       valueNames: ['listing-image','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
+      searchColumns: [],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -462,60 +462,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1795408250586" data-listing-reading-time-sort="5" data-listing-word-count-sort="972">
-<div class="thumbnail"><a href="../en/projects/project-a.html" class="no-external-icon">
 
-<img loading="lazy" src="../projects/images/project-a.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../en/projects/project-a.html" class="no-external-icon">Gen-AI B2C App Growth Analytics</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../en/projects/project-a.html" class="no-external-icon">An end-to-end case study of real business growth strategy and data validation</a>
-</div>
-</div>
-<div class="metadata">
-
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1795408250587" data-listing-reading-time-sort="5" data-listing-word-count-sort="886">
-<div class="thumbnail"><a href="../en/projects/project-c.html" class="no-external-icon">
-
-<img loading="lazy" src="../projects/images/project-c.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../en/projects/project-c.html" class="no-external-icon">Scheduling Poisson Machine for Adaptive Crawling</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../en/projects/project-c.html" class="no-external-icon">Intelligent data acquisition (crawl period optimization) combining statistical page-change detection and machine learning</a>
-</div>
-</div>
-<div class="metadata">
-
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1795408250587" data-listing-reading-time-sort="4" data-listing-word-count-sort="650">
-<div class="thumbnail"><a href="../en/projects/project-b.html" class="no-external-icon">
-
-<img loading="lazy" src="../projects/images/project-b.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../en/projects/project-b.html" class="no-external-icon">Video Data Curation and MLOps PoC</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../en/projects/project-b.html" class="no-external-icon">ML pipeline engineering for a vision model that improves infrastructure efficiency and data quality</a>
-</div>
-</div>
-<div class="metadata">
-
-</div>
-</div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div></main> <!-- /main -->
@@ -1098,12 +1045,12 @@ window.Quarto = {
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Projects"</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">listing:</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">  contents:</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">    - projects/project-a.qmd</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">    - projects/project-b.qmd</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">    - projects/project-c.qmd</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">    - en/projects/project-a.qmd</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">    - en/projects/project-b.qmd</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">    - en/projects/project-c.qmd</span></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">  sort: "title"</span></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">  type: default</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">  fields: [image,title, subtitle]</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">  fields: [image, title, subtitle]</span></span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
