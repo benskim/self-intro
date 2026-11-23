@@ -378,6 +378,27 @@
     "text": "6. Limitations\n\nAssignment is per installation, so users who reinstall or use several devices may switch groups; check with the user_id mapping in the logs.\nThis is a single-period, single-metric test, so novelty effects are to be checked through post-rollout monitoring.\nSubgroup effects by genre need multiple-comparison correction and were not covered in this test."
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "",
+    "section": "",
+    "text": "코드\n팀리드, 창업팀 리드 경험을 통해 단순 수식 학습과 코딩 암기를 넘어, 매출 및 서비스 성장 관점에서 기술을 어떻게 학습하고 설계하며 현업 비즈니스에 적용해야 하는지 고민합니다."
+  },
+  {
+    "objectID": "index.html#비전을-확실한-비즈니스-성과로-실현한다.",
+    "href": "index.html#비전을-확실한-비즈니스-성과로-실현한다.",
+    "title": "",
+    "section": "비전을 확실한 비즈니스 성과로 실현한다.",
+    "text": "비전을 확실한 비즈니스 성과로 실현한다.\n\n\n“서로 다른 현장의 언어를 통합해서 결과를 만드는, ben kim입니다.”\n\n서로 다른 이해관계자 속에서 목표와 요구사항을 정하고, 비즈니스 지표 개선에 필요한 분석 및 데이터 엔지니어링 실전 경험을 바탕으로 ‘함께 성장하는 팀’을 만들겠습니다.\n\nData Scientist AI Data Engineer"
+  },
+  {
+    "objectID": "index.html#소개",
+    "href": "index.html#소개",
+    "title": "",
+    "section": "소개",
+    "text": "소개\n스타트업 데이터 분석가, 데이터 사이언티스트부터 AI 데이터 파트 리드까지 경험하며, 데이터 기반 의사결정과 재현 가능한 분석·ML 파이프라인을 구축해 왔습니다. 유저 그로스 분석, 비전 모델 학습 데이터 큐레이션(MLOps), 통계·ML 하이브리드 예측 모델링을 다룹니다.\n경력 보기 · 프로젝트 보기\n\n주요 기술 스택\n\n언어 & 데이터: Python, SQL (DuckDB, PostgreSQL, MySQL, BigQuery)\n분석 & 시각화: Pandas, NumPy, SciPy, 통계·시계열 분석, Tableau\n그로스 & 로그 분석: Firebase, Appsflyer, Amplitude, A/B 테스트 설계\nML & MLOps: Kubeflow, DVC, MLflow, OpenCV, Librosa\n워크플로우 & 인프라: Git, GitHub Actions, Docker, AWS, Quarto\n\n\n\n학력 & 자격\n\n연세대학교 응용통계학·경제학 학사\nTensorFlow Developer Professional Certificate"
+  },
+  {
     "objectID": "en/experience.html",
     "href": "en/experience.html",
     "title": "Experience",
