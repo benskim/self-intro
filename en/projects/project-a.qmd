@@ -1,7 +1,7 @@
 ---
 title: "Gen-AI B2C App Growth Analytics"
 subtitle: "An end-to-end case study of real business growth strategy and data validation"
-image: ../../projects/images/project-a.png
+image: ../../ko/projects/images/project-a.png
 toc: true
 ---
 

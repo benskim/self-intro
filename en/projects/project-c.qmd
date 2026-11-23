@@ -1,7 +1,7 @@
 ---
 title: "Scheduling Poisson Machine for Adaptive Crawling"
 subtitle: "Intelligent data acquisition (crawl period optimization) combining statistical page-change detection and machine learning"
-image: ../../projects/images/project-c.png
+image: ../../ko/projects/images/project-c.png
 toc: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Video Data Curation and MLOps PoC"
 subtitle: "ML pipeline engineering for a vision model that improves infrastructure efficiency and data quality"
-image: ../../projects/images/project-b.png
+image: ../../ko/projects/images/project-b.png
 toc: true
 ---
 
