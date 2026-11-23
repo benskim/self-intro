@@ -1,35 +1,127 @@
 ---
-title: "AI 훈련데이터 큐레이션 및 MLOps 시스템 구축"
+title: "영상 데이터 큐레이션 및 MLOps PoC"
 subtitle: "인프라 리소스 효율화 및 데이터 품질 강화를 구현한 비전 모델 ML Pipeline 엔지니어링"
 image: images/project-b.png
 toc: true
 ---
 
-## 1. Overview (프로젝트 개요)
+## [Overview]{.tag} DL모델 학습사이클 최적화 개요
 
-* **목표:** FaceSwap 비전 모델 학습을 위한 AI-driven 데이터 큐레이션(MLOps) 및 DL 모델 학습 사이클 최적화[cite: 8].
-* **핵심 미션:** 원천 비정형 데이터셋 메타데이터 EDA 및 클렌징 기준 수립, 가공 속도 효율화, 검수 DL 모델 구성, 파이프라인 연결 및 자원 제약 하 실험 재현성을 보장하는 MVP 수준의 MLOps 검증 환경 구축[cite: 8].
+::: {.lead-line}
+FaceSwap 비전 모델학습을 위한 AI-driven 데이터 큐레이션(MLOps)
+:::
 
-## 2. Problem Definition
+* **Project Context:** 학습데이터 수집-가공–검수-학습-저장의 주기를 준자동화하여 학습데이터의 품질 자체를 향상시켜 모델성능을 향상시키고 동시에 모델연구부터 모델배포까지의 업무속도를 개선하는 프로젝트.
+* **Core Mission:** 원천 비정형 데이터셋의 메타데이터 탐색(EDA) 및 클렌징 기준 수립, 가공 속도 효율화, 검수 DL머신 생성, 파이프라인 연결, 리소스 제약 하에서 실험 재현성을 보장하는 MVP 수준의 MLOps 검증 환경 구축.
 
-* **원천 데이터 노이즈:** 크롤링 등으로 대량 적재된 영상/이미지 원천 데이터셋의 노이즈(오디오 클리핑 현상, 저해상도 편향 등)[cite: 8].
-* **리소스 및 비용 낭비:** 정제되지 않은 데이터 학습으로 인한 GPU 인프라 리소스 소모 급증 및 학습 비용 낭비[cite: 8].
-* **추론 정확도 한계:** 데이터 편향으로 인한 평가 셋 추론 정확도 정체[cite: 9].
+## [Problem Definition]{.tag} 인프라 비용 급증 및 모델 학습 비효율
 
-## 3. Data Profile EDA & 정제 가이드라인
+::: {.lead-line}
+무질서한 데이터 적재(Garbage In)로 인한 연산 한계 및 모델 성능 정체
+:::
 
-* **분석 도구:** SQL 및 Python(Pandas, Librosa, OpenCV)을 결합해 메타 속성(MFCC, Object, Brightness 등) 추출[cite: 9].
-* **주요 발견:** 기존 확보 영상의 20%가 `access denied` 상태로 공개 메타데이터와 불일치[cite: 9]. 아시아인 분포가 5% 미만으로 서구권 편향 확인[cite: 9]. 수집 음성 파일 중 4%가 노이즈 레벨(SNR) 허용 한계 초과, 비전 이미지의 15%에서 face detection failed 및 특정 밝기 영역 편향 발견[cite: 9].
-* **정제 기준:** crop size, similarity 등 얼굴 인식 모델 인자값과 최소 SNR, 최소 해상도 임계값(Threshold) 수립[cite: 9].
+* **원천 데이터의 노이즈:** 크롤링 등을 통해 대량 적재된 영상 및 이미지 원천 데이터 세트의 극심한 노이즈(오디오 클리핑 현상, 저해상도 편향) 존재.
+* **리소스 및 비용 낭비:** 정제되지 않은 데이터를 무조건 모델에 학습시키면서 GPU 인프라 리소스 소모 급증 및 학습 비용 기하급수적 낭비.
+* **추론 정확도 한계:** 모델 파라미터를 고도화해도 정제되지 않은 데이터 편향으로 인해 평가 셋에서의 최종 추론 정확도 성능 정체.
 
-## 4. Solution Architecture & 자동화 품질 검수
+## [Data Profile EDA]{.tag} 원천 비정형 데이터셋 메타데이터 심층 EDA
 
-* **파이프라인 흐름:** `Raw Data` → `Preprocessing` → `Quality Filter` → `Labeling` → `Training` → `Registry`[cite: 9, 10].
-* **단계별 구성:** Raw 단계 메타데이터 추출 및 스키마 정규화, Preprocessing 단계 얼굴인식·특징점추출·얼굴정렬 및 온디맨드 함수(smoothing, re-alignment) 적용, Quality Filtering 단계 EDA 기반 threshold rule + ML anomaly detection 결합, Labeling 단계 semi-automated human-in-the-loop 적용, Training 단계 versioned dataset 및 registry 기반 lineage tracking 구현[cite: 10].
-* **3-Tier Triage 검수:** face detection confidence, image resolution, blur score 벡터 분석과 경량 CNN / Vision encoder 기반 Quality Scoring을 결합해 `Accept` / `Review` / `Reject`로 분류[cite: 10].
+::: {.lead-line}
+비정형 원천 데이터의 통계적 노이즈 감지 및 품질 기준 정립
+:::
 
-## 5. MLOps MVP & Expected Outcome
+**Action (Exploratory Data Analysis):** SQL과 Python(Pandas, Librosa, OpenCV)을 결합하여 대량의 비정형 데이터 메타 속성 추출(MFCC, Object, Brightness, etc).
 
-* **재현성 관리:** data hash tracking 기반 dataset versioning 및 MLflow 기반 experiment tracking·model registry 연동, seed·하이퍼파라미터·데이터셋 버전 고정 및 연구/운영 자원 격리[cite: 10].
-* **인프라 효율화:** Epoch 샘플 최적화(20~30% 감소), GPU Training Time 최대 40% 단축, Early Rejection을 통한 연산 낭비 최소화로 Infra cost curve flattening 달성[cite: 10].
-* **데이터 중심 전환 효과:** 동일 모델 구조 대비 정제 데이터 적용 시 정확도 향상, 학습 안정성 및 오버피팅 완화, 연구-개발-배포 리드타임 단축[cite: 10].
+::: {.callout-card}
+💡 **주요 발견 사실**
+
+* 기존 확보 영상의 20%가 `access denied` 상태로 공개 메타데이터와의 불일치를 탐지.
+* 아시아인 분포가 5% 미만으로 서구권 인종에 크게 편향되어 있음을 규명.
+* 수집 음성 파일 중 4%가 노이즈 레벨(SNR) 허용 한계를 초과하고, 비전 이미지의 15%에서 face detection failed 상태 및 특정 밝기 영역 편향 발견.
+:::
+
+::: {.callout-card .accent}
+✅ **정제 가이드라인 설계:** 얼굴 인식에 영향을 주는 crop size, similarity 등의 모델 인자값 그리고 최소 SNR, 이미지 최소 해상도의 데이터 정화 임계값(Threshold) 수립.
+:::
+
+## [Solution Architecture]{.tag} 데이터 큐레이션 MLOps 파이프라인 설계
+
+::: {.lead-line}
+End-to-End AI-driven Data Curation MLOps Pipeline (비전 및 데이터 가공 자동화 구조)
+:::
+
+```{mermaid}
+%%| fig-align: center
+flowchart LR
+  A["Raw Data"] --> B["Preprocessing"] --> C["Quality Filter"] --> D["Labeling"] --> E["Training"] --> F["Registry"]
+```
+
+**단계별 구성 컴포넌트**
+
+1. **Raw:** 데이터 수집 단계에서 metadata extraction 및 schema normalization 수행 + 저장
+2. **Preprocessing:** 얼굴인식/특징점추출/얼굴정렬 수행 — On-demand 함수 적용: smoothing, re-alignment 등
+3. **Quality Filtering:** EDA 기반 threshold rule + ML 기반 anomaly detection 결합
+4. **Labeling / Training:** Labeling 단계는 semi-automated human-in-the-loop 구조로 효율성 확보. Training Pipeline은 versioned dataset 기반으로 재현 가능한 학습 환경 구성 및 registry 기반의 lineage tracking 구현
+
+## [Automated Data Quality Scoring]{.tag} DL 기반 데이터 검수 시스템
+
+::: {.lead-line}
+AI 기반 데이터 품질 자동 평가 및 필터링 시스템 (Core Component)
+:::
+
+**Core Integration** — Rule-based + Deep Learning hybrid 방식의 데이터 검수 엔진을 적용하여 단순 기준 필터링을 고도화했습니다.
+
+* Face detection confidence 검사
+* Image resolution 및 blur score 벡터 분석
+
+**3-Tier Triage System**
+
+::: {.triage}
+[Accept]{.accept} [Review]{.review} [Reject]{.reject}
+:::
+
+Lightweight CNN / Vision encoder 기반 Quality Scoring을 통해 Human labeling 비용을 줄이는 active filtering을 접목.
+
+## [Infrastructure Optimization]{.tag} GPU 비용 절감 및 학습 효율화 전략
+
+::: {.lead-line}
+데이터 정제 기반 인프라 비용 최적화 전략 (Impact)
+:::
+
+::: {.kpi-grid}
+::: {.kpi}
+[Epoch 샘플 최적화]{.kpi-label} [20 ~ 30% 감소]{.kpi-value} [불필요 노이즈 데이터 차단]{.kpi-desc}
+:::
+::: {.kpi .red}
+[GPU Training Time]{.kpi-label} [최대 40% 단축]{.kpi-value} [정제 데이터셋 기반 리소스 효율화]{.kpi-desc}
+:::
+::: {.kpi}
+[Early Rejection]{.kpi-label} [Allocation 최소화]{.kpi-value} [불필요한 Compute 자원 낭비 방지]{.kpi-desc}
+:::
+:::
+
+결과적으로 동일 모델 성능 대비 **Infra cost curve flattening**(기하급수적 비용 평탄화) 효과 달성.
+
+## [MLOps MVP System]{.tag} 재현 가능한 실험 환경 및 모델 운영 구조
+
+::: {.lead-line}
+실험 재현성과 모델 운영을 보장하는 MLOps 환경 (MVP)
+:::
+
+* **실험 유닛 완벽 관리:** Dataset versioning을 통한 실험 단위 재현성 보장(data hash tracking) 및 MLflow 기반의 experiment tracking 및 model registry를 정교하게 연동하였습니다.
+* **운영 파이프라인 정형화:** Training configuration(seed, hyperparameter, dataset version) 완전 고정 및 pipeline orchestration에 입각하여 연구 자원과 서비스 운영 자원을 명확히 격리했습니다.
+
+## [Expected Outcome]{.tag} 데이터 품질 개선 기반 모델 성능 향상 효과
+
+::: {.lead-line}
+데이터 중심 MLOps 전환을 통한 성능 및 효율 개선 (Outcome)
+:::
+
+* **Accuracy Uplift:** 동일 모델 구조 대비 정제 데이터 적용 시 정확도 가시적 향상
+* **Convergence 안정성:** noisy dataset 배제로 학습 안정성 향상 및 오버피팅 감소
+* **상관관계 확보:** 데이터 품질 지표와 실제 성능 간의 정량적 인과관계 입증
+* **리드타임 대폭 단축:** 연구-개발-배포 단계의 전체 사이클 리드타임 감축 실현
+
+::: {.callout-card .final}
+"Model-centric에서 Data-centric AI pipeline으로의 완벽한 패러다임 전환 완료"
+:::
