@@ -85,9 +85,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f35a81a4717690815b2013502477d714.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-44085f83eb32c20888df19c1e8db3b97.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-f35a81a4717690815b2013502477d714.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-cb61c712ca1a7fe70a83faed8e4da2d7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-b348d5b559a602027a1f18095d1d555f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-cb61c712ca1a7fe70a83faed8e4da2d7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -125,9 +125,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-description','listing-date','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -428,24 +428,27 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
-    <h5 class="quarto-listing-category-title">분류</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">전체 <span class="quarto-category-count">(3)</span></div><div class="category" data-category="QSUyRkIlMjBUZXN0">A/B Test <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QSUyRkIlRUQlODUlOEMlRUMlOEElQTQlRUQlOEElQjg=">A/B테스트 <span class="quarto-category-count">(2)</span></div><div class="category" data-category="QW5hbHlzaXMlMjBOb3Rl">Analysis Note <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHJvamVjdCUyMEE=">Project A <span class="quarto-category-count">(3)</span></div><div class="category" data-category="JUVCJUI2JTg0JUVDJTg0JTlEJUVCJTg1JUI4JUVEJThBJUI4">분석노트 <span class="quarto-category-count">(2)</span></div></div></div>
+    </div>
 <!-- main -->
 <div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">소스 코드</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Report"</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">listing:</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">  contents: posts</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">  sort: "date desc"</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">  type: default</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">  categories: true</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">  sort-ui: false</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">  filter-ui: false</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="an">page-layout:</span><span class="co"> full</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="an">title-block-banner:</span><span class="co"> false</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span></code></pre></div><button title="클립보드 복사" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
-</div></div></div></div></div><main class="content column-page-left" id="quarto-document-content" tabindex="-1">
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">  contents:</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">    - posts/2026-11-sample-analysis/index.qmd</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">  sort: "date desc"</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">  type: grid</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">  grid-columns: 1</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">  fields: [image, title, description, date, categories]</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">  categories: false</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">  sort-ui: false</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">  filter-ui: false</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="an">page-layout:</span><span class="co"> full</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="an">title-block-banner:</span><span class="co"> false</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span></code></pre></div><button title="클립보드 복사" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+</div></div></div></div></div><main class="content column-page" id="quarto-document-content" tabindex="-1">
 
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -455,7 +458,7 @@ window.Quarto = {
 
 
 
-<div class="quarto-title-meta column-page-left">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -469,92 +472,18 @@ window.Quarto = {
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="JUVCJUI2JTg0JUVDJTg0JTlEJUVCJTg1JUI4JUVEJThBJUI4JTJDQSUyRkIlRUQlODUlOEMlRUMlOEElQTQlRUQlOEElQjglMkNQcm9qZWN0JTIwQQ==" data-listing-date-sort="1795392000000" data-listing-file-modified-sort="1795409350055" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="606">
-<div class="thumbnail"><a href="./posts/2026-11-sample-analysis/index.html" class="no-external-icon">
-
-<img loading="lazy" src="./posts/2026-11-sample-analysis/images/ab-result.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/2026-11-sample-analysis/index.html" class="no-external-icon">A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('JUVCJUI2JTg0JUVDJTg0JTlEJUVCJTg1JUI4JUVEJThBJUI4'); return false;">분석노트</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QSUyRkIlRUQlODUlOEMlRUMlOEElQTQlRUQlOEElQjg='); return false;">A/B테스트</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHJvamVjdCUyMEE='); return false;">Project A</div>
-
-</div>
-<div class="listing-description">
-<a href="./posts/2026-11-sample-analysis/index.html" class="no-external-icon">
-<p>Project A의 A/B 테스트를 퍼널 진단 → 표본 산정 → 유의성 검정 순서로 정리한 샘플 리포트입니다.</p>
-</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/2026-11-sample-analysis/index.html" class="no-external-icon">
-<div class="listing-date">
-<ol start="2026" type="1">
-<li><ol start="11" type="1">
-<li>23.
-</li></ol></li></ol></div>
-
-
-</a>
-<p>:::</p>
-<p>:::</p>
-<div class="quarto-post image-right" data-index="1" data-categories="JUVCJUI2JTg0JUVDJTg0JTlEJUVCJTg1JUI4JUVEJThBJUI4JTJDQSUyRkIlRUQlODUlOEMlRUMlOEElQTQlRUQlOEElQjglMkNQcm9qZWN0JTIwQQ==" data-listing-date-sort="1795392000000" data-listing-file-modified-sort="1795409350056" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="606">
-<div class="thumbnail"><a href="./posts/sample/index.html" class="no-external-icon">
-
-<img loading="lazy" src="./posts/sample/images/ab-result.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/sample/index.html" class="no-external-icon">A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('JUVCJUI2JTg0JUVDJTg0JTlEJUVCJTg1JUI4JUVEJThBJUI4'); return false;">분석노트</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QSUyRkIlRUQlODUlOEMlRUMlOEElQTQlRUQlOEElQjg='); return false;">A/B테스트</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHJvamVjdCUyMEE='); return false;">Project A</div>
-
-</div>
-<div class="listing-description">
-<a href="./posts/sample/index.html" class="no-external-icon">
-<p>Project A의 A/B 테스트를 퍼널 진단 → 표본 산정 → 유의성 검정 순서로 정리한 샘플 리포트입니다.</p>
-</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/sample/index.html" class="no-external-icon">
-<div class="listing-date">
-<ol start="2026" type="1">
-<li><ol start="11" type="1">
-<li>23.
-</li></ol></li></ol></div>
-
-
-</a>
-<p>:::</p>
-<p>:::</p>
-<div class="quarto-post image-right" data-index="2" data-categories="QW5hbHlzaXMlMjBOb3RlJTJDQSUyRkIlMjBUZXN0JTJDUHJvamVjdCUyMEE=" data-listing-date-sort="1795392000000" data-listing-file-modified-sort="1795409350053" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="758">
-<div class="thumbnail"><a href="./en/posts/2026-11-sample-analysis/index.html" class="no-external-icon">
-
-<img loading="lazy" src="./en/posts/2026-11-sample-analysis/images/ab-result.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./en/posts/2026-11-sample-analysis/index.html" class="no-external-icon">A/B Test Analysis Note: Genre-Curated Content and Video Conversion</a>
-</h3>
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-1">
+<div class="g-col-1" data-index="0" data-categories="QW5hbHlzaXMlMjBOb3RlJTJDQSUyRkIlMjBUZXN0JTJDUHJvamVjdCUyMEE=" data-listing-date-sort="1795392000000" data-listing-file-modified-sort="1795411892814" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="758">
+<a href="./en/posts/2026-11-sample-analysis/index.html" class="quarto-grid-link no-external-icon">
+</a><div class="quarto-grid-item card h-100 card-left"><a href="./en/posts/2026-11-sample-analysis/index.html" class="quarto-grid-link no-external-icon">
+<p class="card-img-top">
+<img loading="lazy" src="./en/posts/2026-11-sample-analysis/images/ab-result.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+A/B Test Analysis Note: Genre-Curated Content and Video Conversion
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('QW5hbHlzaXMlMjBOb3Rl'); return false;">Analysis Note</div>
@@ -564,14 +493,10 @@ window.Quarto = {
 <div class="listing-category" onclick="window.quartoListingCategory('UHJvamVjdCUyMEE='); return false;">Project A</div>
 
 </div>
-<div class="listing-description">
-<a href="./en/posts/2026-11-sample-analysis/index.html" class="no-external-icon">
+<div class="card-text listing-description">
 <p>A sample report on the Project A A/B test, organized as funnel diagnosis, sample sizing, and significance testing.</p>
-</a>
 </div>
-</div>
-<div class="metadata">
-<a href="./en/posts/2026-11-sample-analysis/index.html" class="no-external-icon">
+<div class="card-attribution card-text-small end">
 <div class="listing-date">
 <ol start="2026" type="1">
 <li><ol start="11" type="1">
@@ -579,8 +504,43 @@ window.Quarto = {
 </li></ol></li></ol></div>
 
 
-</a>
+</div>
 <p>:::</p>
+</div></a>
+<p>:::</p>
+<div class="g-col-1" data-index="1" data-categories="JUVCJUI2JTg0JUVDJTg0JTlEJUVCJTg1JUI4JUVEJThBJUI4JTJDQSUyRkIlRUQlODUlOEMlRUMlOEElQTQlRUQlOEElQjglMkNQcm9qZWN0JTIwQQ==" data-listing-date-sort="1795392000000" data-listing-file-modified-sort="1795411892817" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="606">
+<a href="./posts/2026-11-sample-analysis/index.html" class="quarto-grid-link no-external-icon">
+</a><div class="quarto-grid-item card h-100 card-left"><a href="./posts/2026-11-sample-analysis/index.html" class="quarto-grid-link no-external-icon">
+<p class="card-img-top">
+<img loading="lazy" src="./posts/2026-11-sample-analysis/images/ab-result.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVCJUI2JTg0JUVDJTg0JTlEJUVCJTg1JUI4JUVEJThBJUI4'); return false;">분석노트</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QSUyRkIlRUQlODUlOEMlRUMlOEElQTQlRUQlOEElQjg='); return false;">A/B테스트</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UHJvamVjdCUyMEE='); return false;">Project A</div>
+
+</div>
+<div class="card-text listing-description">
+<p>Project A의 A/B 테스트를 퍼널 진단 → 표본 산정 → 유의성 검정 순서로 정리한 샘플 리포트입니다.</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+<ol start="2026" type="1">
+<li><ol start="11" type="1">
+<li>23.
+</li></ol></li></ol></div>
+
+
+</div>
+<p>:::</p>
+</div></a>
 <p>:::</p>
 <p>:::</p>
 <div class="listing-no-matching d-none">일치 없음</div>
@@ -594,10 +554,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-</div>
-</div>
 </div></main></div>
-
 
 
  <!-- /main -->

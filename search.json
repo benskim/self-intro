@@ -1,572 +1,5 @@
 [
   {
-    "objectID": "experience.html",
-    "href": "experience.html",
-    "title": "Experience",
-    "section": "",
-    "text": "데이터 분석, 데이터 큐레이션·MLOps, 통계 기반 예측 모델링을 거쳐 팀을 이끄는 역할까지 이어온 경력입니다."
-  },
-  {
-    "objectID": "experience.html#klleon",
-    "href": "experience.html#klleon",
-    "title": "Experience",
-    "section": "Klleon R&D — 데이터 파트 리드",
-    "text": "Klleon R&D — 데이터 파트 리드\n2021.03 ~ 2023.11 (2년 9개월)\n연구 환경 효율화를 위한 MLOps 팀·데이터 파트 구축 및 리딩\n\n데이터 중심 AI(Data-Centric AI, DCAI) 접근으로 한국어 TTS 기술 개발\n데이터 수집, 가공, 검수까지 아우르는 컴퓨터 비전 맞춤형 데이터 큐레이션 시스템 구축 및 최적화\nKubeflow, DVC를 활용해 엔지니어링 지원\n\n→ 상세: 영상 데이터 큐레이션 및 MLOps PoC\n생성형 AI 기반 B2C 서비스의 데이터 의사결정 지원\n\nFirebase, Appsflyer, Amplitude, Tableau, 통계 모델링을 활용한 유저 분석\n앱스토어·구글 플레이 베타 서비스 런칭 리딩\n디지털 마케팅(Meta, Google Ads) 리딩\n\n→ 상세: 생성형AI B2C 앱 서비스 그로스 분석"
-  },
-  {
-    "objectID": "experience.html#freewheelin",
-    "href": "experience.html#freewheelin",
-    "title": "Experience",
-    "section": "freewheelin — 데이터 분석가",
-    "text": "freewheelin — 데이터 분석가\n2019.04 ~ 2020.07 (1년 4개월) · 서울 관악구\n프로모션 성과 분석 대시보드 제작\n\n프로모션과 유저 속성(가격, 무료 체험 기간) 간 상관관계 분석\n프로모션별 유저 그룹의 리텐션 추이 분석\n성과 측정을 위한 KPI 정의 및 산출\n\n데이터 관리 체계 재정비\n\nBigQuery로 데이터 중앙화\n비효율적인 저장 비용 절감\n데이터 품질 관리 총괄"
-  },
-  {
-    "objectID": "experience.html#epopcon",
-    "href": "experience.html#epopcon",
-    "title": "Experience",
-    "section": "이팝콘 (Epopcon) — 데이터 사이언티스트",
-    "text": "이팝콘 (Epopcon) — 데이터 사이언티스트\n2017.12 ~ 2019.03 (1년 4개월)\n상품 재고량 변화 시점을 예측하는 확률적 스케줄링 모델 개발 (포아송 과정)\n\n재고량 결측치 보정 및 이상치 처리 (클러스터링, 이상 탐지)\n\n→ 상세: 탄력적 수집 관리를 위한 스케줄링 예측 머신\n여러 쇼핑몰에 흩어진 동일 상품의 표준 키 생성\n\n이미지와 자연어 데이터를 전처리한 뒤 minhash-LSH 알고리즘 적용\n\n숨은 고객 행동 패턴 분석\n\n지리 데이터 활용\n공공 데이터를 활용해 상점 주소와 업종 카테고리 정제\n관심 대상 특성의 분포를 시각화하고 대조군과 비교"
-  },
-  {
-    "objectID": "experience.html#학력",
-    "href": "experience.html#학력",
-    "title": "Experience",
-    "section": "학력",
-    "text": "학력\n연세대학교 — 학사, 응용통계학 · 경제학"
-  },
-  {
-    "objectID": "experience.html#자격증",
-    "href": "experience.html#자격증",
-    "title": "Experience",
-    "section": "자격증",
-    "text": "자격증\n\nTensorFlow Developer Professional Certificate\nUsing Machine Learning in Trading and Finance\nFinancial Engineering and Risk Management Part I"
-  },
-  {
-    "objectID": "experience.html#보유-기술",
-    "href": "experience.html#보유-기술",
-    "title": "Experience",
-    "section": "보유 기술",
-    "text": "보유 기술\n수학 · 문제 관리 · 분석 능력"
-  },
-  {
-    "objectID": "experience.html#링크",
-    "href": "experience.html#링크",
-    "title": "Experience",
-    "section": "링크",
-    "text": "링크\n\nLinkedIn\nMedium Blog"
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Gen-AI B2C App Growth Analytics\n\n\nAn end-to-end case study of real business growth strategy and data validation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGen-AI B2C 앱 서비스 그로스 분석\n\n\n실제 비즈니스 성장 전략 설계와 데이터 검증의 엔드투엔드(End-to-End) 케이스 스터디\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nScheduling Poisson Machine for Adaptive Crawling\n\n\nIntelligent data acquisition (crawl period optimization) combining statistical page-change detection and machine learning\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVideo Data Curation and MLOps PoC\n\n\nML pipeline engineering for a vision model that improves infrastructure efficiency and data quality\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n영상 데이터 큐레이션 및 MLOps PoC\n\n\n인프라 리소스 효율화 및 데이터 품질 강화를 구현한 비전 모델 ML Pipeline 엔지니어링\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n탄력적 수집 관리를 위한 스케줄링 포아송 머신\n\n\n통계적 웹페이지 변화 감지 및 기계학습 모델을 결합한 지능형 데이터 획득(Crawl Period Optimization)\n\n\n\n\n\n\n\n일치 없음"
-  },
-  {
-    "objectID": "projects/project-c.html",
-    "href": "projects/project-c.html",
-    "title": "탄력적 수집 관리를 위한 스케줄링 포아송 머신",
-    "section": "",
-    "text": "Poisson Process & ML 기반 스마트 크롤러 매니저 구축\n\n\nProject Context: 쇼핑몰 상품 페이지의 실시간 재고 변화 속도와 연동하여 수집 주기(Crawl Period)를 동적으로 최적화하는 프로젝트. 불필요한 중복 수집을 억제하여 사내 수집 인프라 자원의 낭비를 최소화하고, 재고 변화 순간을 놓치지 않아 정확한 시장 수요 추정치를 제공함.\nCore Mission\n\n기존 고정 주기(Score-based) 크롤러의 한계와 비효율 분석 (As-Is vs To-Be)\n웹페이지 변화 모델(Poisson Process) 이론 적용을 위한 타겟 변수(Target Variable) 정의 및 시뮬레이션 검증\n비정형 원천 수집 데이터의 이상치 정제, EDA 기반 파생변수 생성 및 파이프라인 구축\n통계 모델(Poisson)과 기계학습 분류 모델(Classification)을 하이브리드 결합한 주기 제어 엔진 구축"
-  },
-  {
-    "objectID": "projects/project-c.html#overview-poisson-process-기반-탄력적-수집-매니저-개요",
-    "href": "projects/project-c.html#overview-poisson-process-기반-탄력적-수집-매니저-개요",
-    "title": "탄력적 수집 관리를 위한 스케줄링 포아송 머신",
-    "section": "",
-    "text": "Poisson Process & ML 기반 스마트 크롤러 매니저 구축\n\n\nProject Context: 쇼핑몰 상품 페이지의 실시간 재고 변화 속도와 연동하여 수집 주기(Crawl Period)를 동적으로 최적화하는 프로젝트. 불필요한 중복 수집을 억제하여 사내 수집 인프라 자원의 낭비를 최소화하고, 재고 변화 순간을 놓치지 않아 정확한 시장 수요 추정치를 제공함.\nCore Mission\n\n기존 고정 주기(Score-based) 크롤러의 한계와 비효율 분석 (As-Is vs To-Be)\n웹페이지 변화 모델(Poisson Process) 이론 적용을 위한 타겟 변수(Target Variable) 정의 및 시뮬레이션 검증\n비정형 원천 수집 데이터의 이상치 정제, EDA 기반 파생변수 생성 및 파이프라인 구축\n통계 모델(Poisson)과 기계학습 분류 모델(Classification)을 하이브리드 결합한 주기 제어 엔진 구축"
-  },
-  {
-    "objectID": "projects/project-c.html#problem-definition-고정형-크롤링으로-인한-인프라-부하-및-데이터-결손-문제",
-    "href": "projects/project-c.html#problem-definition-고정형-크롤링으로-인한-인프라-부하-및-데이터-결손-문제",
-    "title": "탄력적 수집 관리를 위한 스케줄링 포아송 머신",
-    "section": "Problem Definition 고정형 크롤링으로 인한 인프라 부하 및 데이터 결손 문제",
-    "text": "Problem Definition 고정형 크롤링으로 인한 인프라 부하 및 데이터 결손 문제\n\n고정주기 수집 방식의 한계 — 인프라 자원 낭비와 비즈니스 기회 손실의 악순환\n\n\nAs-Is: Over-crawling (자원 비효율) — 재고 변동이 거의 없는 정적 페이지(인기 없는 상품 등)를 기계적으로 빈번하게 크롤링하면서 수집 네트워킹 리소스 및 가공 스토리지 비용이 급증.\nAs-Is: Under-crawling (데이터 유실) — 재고가 빠르게 소진되는 동적 핫딜 페이지를 적시에 수집하지 못해 실제 수요 변화 추정의 정밀도 정체. 플랫폼(Lotte, Hmall, GS, 11st, Coupang, G-market, SSG 등)별 트래픽 임계치 미반영 한계 직면."
-  },
-  {
-    "objectID": "projects/project-c.html#theoretical-modeling-poisson-process-기반-최적-수집-주기-탐색-기법",
-    "href": "projects/project-c.html#theoretical-modeling-poisson-process-기반-최적-수집-주기-탐색-기법",
-    "title": "탄력적 수집 관리를 위한 스케줄링 포아송 머신",
-    "section": "Theoretical Modeling Poisson Process 기반 최적 수집 주기 탐색 기법",
-    "text": "Theoretical Modeling Poisson Process 기반 최적 수집 주기 탐색 기법\n\n포아송 확률 과정(Poisson Process)을 응용한 동적 웹페이지 변화 감지 모델링\n\nTheoretical Background (Cho & Garcia-Molina, 1999)\n\\[P(N(t)=k) = \\frac{(\\lambda t)^k e^{-\\lambda t}}{k!}\\]\n웹페이지 변화 간격이 독립적이며 지수 분포(Exponential Distribution)를 따른다는 이론에 기반함.\n현업 적용 한계 돌파 전략 — 전통적인 포아송 변화율(\\(\\lambda\\))은 고정 상수여서 개별 상품의 가변 주기를 예측하기 어렵습니다. 이를 위해 시간 단위별(0.2H, 0.5H, 1H, 4H, 8H, 12H, 24H, 48H 등) 변화 유무 데이터를 수집해 단위 구간별 국소 \\(\\lambda\\) 및 변화 확률을 시뮬레이션 계산하고, 최대값(Max Probability)을 보이는 최적 예측 구간을 타겟 변수로 전환하여 활용했습니다."
-  },
-  {
-    "objectID": "projects/project-c.html#target-variable-engineering-엑셀-시뮬레이션을-통한-타겟-변수-효용성-검증",
-    "href": "projects/project-c.html#target-variable-engineering-엑셀-시뮬레이션을-통한-타겟-변수-효용성-검증",
-    "title": "탄력적 수집 관리를 위한 스케줄링 포아송 머신",
-    "section": "Target Variable Engineering 엑셀 시뮬레이션을 통한 타겟 변수 효용성 검증",
-    "text": "Target Variable Engineering 엑셀 시뮬레이션을 통한 타겟 변수 효용성 검증\n\n타겟 변수(Target Variable) 시뮬레이션 및 데이터 정제 유효성 검증 (Preprocessing)\n\n\n윈도우 슬라이싱 & 정량화: 현 시점 기준으로 4H(최근 24시간), 12H(최근 72시간) 등 시간 단위별 변화 유무 원천 데이터를 샘플링하여 집합화 및 \\(\\lambda\\) 계산 수행.\n타겟 레이블링 & 타이 브레이킹: 계산된 변화 확률 중 가장 높은 구간을 다음 크롤링 타겟으로 설정합니다. 동률(Tie)이 발생할 경우 데이터 유실 방지를 위해 ’더 빠른 주기’를 강제 선택하는 보수적 안전 장치를 수립했습니다."
-  },
-  {
-    "objectID": "projects/project-c.html#data-profiling-eda-예측-변수와-타겟-변수-간-상관관계-및-분포-분석",
-    "href": "projects/project-c.html#data-profiling-eda-예측-변수와-타겟-변수-간-상관관계-및-분포-분석",
-    "title": "탄력적 수집 관리를 위한 스케줄링 포아송 머신",
-    "section": "Data Profiling & EDA 예측 변수와 타겟 변수 간 상관관계 및 분포 분석",
-    "text": "Data Profiling & EDA 예측 변수와 타겟 변수 간 상관관계 및 분포 분석\n\n수집 예측 변수(Predictors)와 차기 수집 주기(Target) 간 통계적 노이즈 및 가설 검증\n\n\n\n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  SELL_RANK_log (순위 낮아짐)\n  무변화비율\n\n\n인기 순위(Rank) 대비 무변화 비율 분포 (개념도)\n\n\nEDA 검증 결과 및 발견 사실\n\n가설 1. 인기 상품성 검증: 상품 판매 순위가 낮고(SELL_RANK_log 증가) 인기가 적은 상품 카테고리일수록 정보 수정 빈도가 현저히 감소하는 경향 검증.\n\n\n가설 2. 상품 노출 기간 검증: 신규 등록 상품 페이지일수록 빈번한 수정 작업을 거치나, 노출 기간이 오래 지날수록(period 증가) 재고 변화율이 0에 수렴하는 정상성(Stationarity) 관찰.\n\n수집 페이지 생존길이 분포가 변화 유무 클래스에 따라 상이한 다봉형(Multimodal) 양상을 띔에 따라 해당 피처를 핵심 변수로 선정."
-  },
-  {
-    "objectID": "projects/project-c.html#solution-architecture-크롤-매니저-엔드투엔드-데이터-및-모델-파이프라인-구축",
-    "href": "projects/project-c.html#solution-architecture-크롤-매니저-엔드투엔드-데이터-및-모델-파이프라인-구축",
-    "title": "탄력적 수집 관리를 위한 스케줄링 포아송 머신",
-    "section": "Solution Architecture 크롤 매니저 엔드투엔드 데이터 및 모델 파이프라인 구축",
-    "text": "Solution Architecture 크롤 매니저 엔드투엔드 데이터 및 모델 파이프라인 구축\n\nEnd-to-End Dynamic Crawling Data Pipeline & Decision Architecture\n\nCORE FLOW\n\n\n\n\n\n\nflowchart LR\n  A[\"Retrieve\"] --&gt; B[\"Preprocess\"] --&gt; C[\"Predict\"] --&gt; D[\"Transform\"] --&gt; E[\"Insert\"]\n\n\n\n\n\n\n\n하이브리드 분기 조건 1 (충분 이력 상품): 과거 변화 이력이 충분한 경우(# data &gt; 3) 포아송 \\(\\lambda\\) 연산부로 진입합니다. 변화 다수 감지 시 ML 분류 모델로 토스하여 주기 예측을 진행하고, 변화 유실 시에는 수집 주기를 2일 뒤로 대폭 연장합니다.\n하이브리드 분기 조건 2 (신규 상품): 신규 유입 등 수집 이력이 극히 부족한 신상품은 안정적 콜드 스타트를 보장하기 위해 ‘6시간 마다 초기 고정 수집’ 파이프라인으로 안전 분기 및 이력을 확보합니다."
-  },
-  {
-    "objectID": "projects/project-c.html#modeling-optimization-분류-기반-ml-및-통계-모델-최적화-실험",
-    "href": "projects/project-c.html#modeling-optimization-분류-기반-ml-및-통계-모델-최적화-실험",
-    "title": "탄력적 수집 관리를 위한 스케줄링 포아송 머신",
-    "section": "Modeling & Optimization 분류 기반 ML 및 통계 모델 최적화 실험",
-    "text": "Modeling & Optimization 분류 기반 ML 및 통계 모델 최적화 실험\n\n하이브리드 수집 주기 분류 모델 최적화 및 튜닝 (Modeling)\n\n하이브리드 엔진 최적화 전략\n\nML 분류 모델: 텍스트 정보(상품 키워드, 카테고리 태그), TV 쇼핑 편성표, 노출 지면 등의 정적 메타데이터를 결합해 차기 주기 예측\n포아송 통계 모델: 실시간 수집 데이터 기반 시계열적 재고 변화 유형만을 정밀 모니터링하는 경량 전용 통계 모듈\n\n평가 지표의 정교화 — 불균형 클래스 편향에 따른 단순 정확도(Accuracy) 필터의 한계를 극복하기 위해 참값을 보정하는 재현율(Recall) 중심의 오차 테이블을 설계하고, 모델 간 일치 신뢰도 평가를 위한 Cohen’s Kappa 계수를 적용했습니다."
-  },
-  {
-    "objectID": "projects/project-c.html#business-impact-인프라-비용-절감-및-상품-재고-추정-정확성-극대화-효과",
-    "href": "projects/project-c.html#business-impact-인프라-비용-절감-및-상품-재고-추정-정확성-극대화-효과",
-    "title": "탄력적 수집 관리를 위한 스케줄링 포아송 머신",
-    "section": "Business Impact 인프라 비용 절감 및 상품 재고 추정 정확성 극대화 효과",
-    "text": "Business Impact 인프라 비용 절감 및 상품 재고 추정 정확성 극대화 효과\n\n스마트 크롤러 포아송 엔진 가동을 통한 인프라 혁신 및 데이터 가치 극대화 (Expected Impact)\n\n\n\n인프라 자원 절감 5 ~ 6% 감축 무변화 유실 페이지의 중복 크롤링 억제를 통해 네트워킹 대역폭 및 트래픽 비용 대폭 감축\n\n\n데이터 정합성 개선 실시간 오차 수렴 재고가 급변하는 인기 매대에 크롤 리소스를 정교하게 재분배하여 품절 Lag-time 극소화\n\n\n안정성 확보 장애 오버헤드 해소 다중 플랫폼 최적 주기를 보장함으로써 타겟 서버의 IP 블락 리스크 회피 및 안전 파이프라인 자동화 구축"
-  },
-  {
-    "objectID": "report.html",
-    "href": "report.html",
-    "title": "Report",
-    "section": "",
-    "text": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선\n\n\n\n분석노트\n\nA/B테스트\n\nProject A\n\n\n\n\nProject A의 A/B 테스트를 퍼널 진단 → 표본 산정 → 유의성 검정 순서로 정리한 샘플 리포트입니다.\n\n\n\n\n\n\n\n\n23.\n\n\n\n\n:::\n:::\n\n\n\n\n\n\n\n\nA/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선\n\n\n\n분석노트\n\nA/B테스트\n\nProject A\n\n\n\n\nProject A의 A/B 테스트를 퍼널 진단 → 표본 산정 → 유의성 검정 순서로 정리한 샘플 리포트입니다.\n\n\n\n\n\n\n\n\n23.\n\n\n\n\n:::\n:::\n\n\n\n\n\n\n\n\nA/B Test Analysis Note: Genre-Curated Content and Video Conversion\n\n\n\nAnalysis Note\n\nA/B Test\n\nProject A\n\n\n\n\nA sample report on the Project A A/B test, organized as funnel diagnosis, sample sizing, and significance testing.\n\n\n\n\n\n\n\n\n23.\n\n\n\n\n:::\n:::\n:::\n일치 없음\n:::\n:::"
-  },
-  {
-    "objectID": "en/index.html",
-    "href": "en/index.html",
-    "title": "",
-    "section": "",
-    "text": "Code\nThrough experience as a team lead and startup team lead, I think beyond memorizing formulas and code: how should technology be learned, designed, and applied in real business, from the perspective of revenue and service growth?"
-  },
-  {
-    "objectID": "en/index.html#turning-vision-into-concrete-business-results.",
-    "href": "en/index.html#turning-vision-into-concrete-business-results.",
-    "title": "",
-    "section": "Turning vision into concrete business results.",
-    "text": "Turning vision into concrete business results.\n\n\n“I’m ben kim, who brings together the languages of different fields to deliver results.”\n\nAcross stakeholders with different interests, I set goals and requirements, and draw on hands-on analytics and data engineering experience to improve business metrics and build a team that grows together.\n\nData Scientist AI Data Engineer"
-  },
-  {
-    "objectID": "en/index.html#about",
-    "href": "en/index.html#about",
-    "title": "",
-    "section": "About",
-    "text": "About\nStarting as a data analyst and data scientist at startups and growing into an AI data part lead, I have built data-driven decision-making and reproducible analytics and ML pipelines. My work spans user growth analytics, training-data curation (MLOps) for vision models, and hybrid statistical + ML predictive modeling.\nExperience · Projects\n\nTech Stack\n\nLanguages & Data: Python, SQL (DuckDB, PostgreSQL, MySQL, BigQuery)\nAnalytics & Visualization: Pandas, NumPy, SciPy, statistics and time-series analysis, Tableau\nGrowth & Log Analytics: Firebase, Appsflyer, Amplitude, A/B test design\nML & MLOps: Kubeflow, DVC, MLflow, OpenCV, Librosa\nWorkflow & Infrastructure: Git, GitHub Actions, Docker, AWS, Quarto\n\n\n\nEducation & Certification\n\nYonsei University, B.A. in Applied Statistics and Economics\nTensorFlow Developer Professional Certificate"
-  },
-  {
-    "objectID": "en/projects/project-a.html",
-    "href": "en/projects/project-a.html",
-    "title": "Gen-AI B2C App Growth Analytics",
-    "section": "",
-    "text": "Beta launch and user-acquisition (UA) growth project for a generative-AI B2C app\n\n\nContext: Market launch of a mobile app offering face/voice generation AI built on images, audio, and video, together with the business data pipeline.\nTarget KPI: Reach PMF and maximize retention — build real-time user activation infrastructure.\nBeta launch milestones:\n\n\n\n\n\n\n\nflowchart LR\n  A[\"1 Planning\"] --&gt; B[\"2 Infra integration\"] --&gt; C[\"3 Beta launch\"] --&gt; D[\"4 UA growth\"]\n  style C fill:#ff1b4a,color:#fff,stroke:#ff1b4a"
-  },
-  {
-    "objectID": "en/projects/project-a.html#overview-data-analytics-for-service-growth",
-    "href": "en/projects/project-a.html#overview-data-analytics-for-service-growth",
-    "title": "Gen-AI B2C App Growth Analytics",
-    "section": "",
-    "text": "Beta launch and user-acquisition (UA) growth project for a generative-AI B2C app\n\n\nContext: Market launch of a mobile app offering face/voice generation AI built on images, audio, and video, together with the business data pipeline.\nTarget KPI: Reach PMF and maximize retention — build real-time user activation infrastructure.\nBeta launch milestones:\n\n\n\n\n\n\n\nflowchart LR\n  A[\"1 Planning\"] --&gt; B[\"2 Infra integration\"] --&gt; C[\"3 Beta launch\"] --&gt; D[\"4 UA growth\"]\n  style C fill:#ff1b4a,color:#fff,stroke:#ff1b4a"
-  },
-  {
-    "objectID": "en/projects/project-a.html#problem-definition-retention-cvr-bottleneck-versus-user-inflow",
-    "href": "en/projects/project-a.html#problem-definition-retention-cvr-bottleneck-versus-user-inflow",
-    "title": "Gen-AI B2C App Growth Analytics",
-    "section": "Problem Definition Retention (CVR) bottleneck versus user inflow",
-    "text": "Problem Definition Retention (CVR) bottleneck versus user inflow\n\nDiagnosing the bottleneck between UA marketing spend and conversion\n\nProblems on the ground\n\nUA ads brought large inflow, but drop-off surged at the generative-AI experience step right after sign-up.\nAmong users who reached the video-source screen, the rate of actually generating an AI video stalled, delaying the aha-moment.\nMarketing cost (CAC) kept rising while first-day churn after sign-up spiked.\n\nUser funnel breakdown\n\nAd click & Install100%\n\n\nSign Up65%\n\n\nAI Generation (drop-off hotspot)12%\n\n\nShare/Download2.5%\n\n\nBetween in-app sign-up and the first AI generation attempt, more than 80% of users leak out."
-  },
-  {
-    "objectID": "en/projects/project-a.html#log-infrastructure-user-behavior-log-architecture",
-    "href": "en/projects/project-a.html#log-infrastructure-user-behavior-log-architecture",
-    "title": "Gen-AI B2C App Growth Analytics",
-    "section": "Log Infrastructure User Behavior Log Architecture",
-    "text": "Log Infrastructure User Behavior Log Architecture\n\nUser behavior log tracking architecture for real-time decision making\n\n\n\n\n\n\n\nflowchart LR\n  A[\"Client App&lt;br/&gt;Flutter / iOS / AOS\"] --&gt; B[\"Firebase SDK&lt;br/&gt;Behavior log tracking\"] --&gt; C[\"Appsflyer&lt;br/&gt;Attribution\"] --&gt; D[\"Amplitude&lt;br/&gt;Cohort analysis\"]\n\n\n\n\n\n\n\nCollection and integration: Integrated a Firebase-based front-end action-log SDK and established unique user-ID mapping and sync.\nAcquisition-source tracking: Designed Appsflyer parameters for ad-channel attribution and built the Amplitude cohort integration pipeline.\nCore action-log schema:\n\n\napp_open video_view face_swap face_swap_result_view share download like"
-  },
-  {
-    "objectID": "en/projects/project-a.html#eda-identifying-churn-patterns-through-data-exploration",
-    "href": "en/projects/project-a.html#eda-identifying-churn-patterns-through-data-exploration",
-    "title": "Gen-AI B2C App Growth Analytics",
-    "section": "EDA Identifying churn patterns through data exploration",
-    "text": "EDA Identifying churn patterns through data exploration\n\nData-driven hypotheses on churn drivers from multidimensional user-log analysis\n\n\n\n  \n  \n  \n  Wait time (sec)\n  Critical zone (8s)\n  Drop-out\n\n\nDrop-out versus wait time (conceptual diagram)\n\n\nHypotheses\n\nHypothesis 1 — When latency before the AI result exceeds 8 seconds, immediate user drop-out rises exponentially.\n\n\nHypothesis 2 — The higher the image-generation failure rate (face distortion), the faster customers churn, proportionally.\n\n\n💡 SQL result: A user-segment analysis with SQL window functions showed that users who successfully received AI results twice had a 7-day retention rate 3.5x higher than users who had not."
-  },
-  {
-    "objectID": "en/projects/project-a.html#metric-definition-ltv-model-business-metric-optimization",
-    "href": "en/projects/project-a.html#metric-definition-ltv-model-business-metric-optimization",
-    "title": "Gen-AI B2C App Growth Analytics",
-    "section": "Metric Definition & LTV Model Business Metric Optimization",
-    "text": "Metric Definition & LTV Model Business Metric Optimization\n\nFormulating lifetime value (LTV) and the North Star Metric\n\nMetric formulation\n\nProxy LTV: \\(\\text{proxy LTV} = 1 / \\text{GPU cost}\\)\nNorth Star Metric: ‘Number of users who download (or share) a generated AI result at least once within 24 hours of sign-up’\n\nUnit economics growth strategy — Keep the proxy LTV/CAC ratio at 3.0 or higher to stabilize unit economics."
-  },
-  {
-    "objectID": "en/projects/project-a.html#hypothesis-testing-ab-test-scenario-design",
-    "href": "en/projects/project-a.html#hypothesis-testing-ab-test-scenario-design",
-    "title": "Gen-AI B2C App Growth Analytics",
-    "section": "Hypothesis Testing A/B test scenario design",
-    "text": "Hypothesis Testing A/B test scenario design\n\nA practical A/B test scenario and statistical design for hypothesis testing\n\n\n\n\n\n\n\n\nSegment\nContent hypothesis\n\n\n\n\nControl (Group A)\nExisting random content (80% user-uploaded, 20% in-house)\n\n\nTreatment (Group B)\nGenre-curated content (cinematic, Y2K, cartoon, meme, etc.)\n\n\n\n\nPrimary metric: Video conversion rate = share of users exposed to content who successfully generate an AI video (baseline 14.2%)\nAssignment / duration: New users randomly assigned 50:50 with Firebase Remote Config (A/B Testing), branching the content-exposure policy value; 14 days (two weekly cycles). The group is logged as a user property and on action logs for per-group analysis in BigQuery and Amplitude.\nSample size: With significance level \\(\\alpha = 0.05\\), power \\(1-\\beta = 0.80\\), and a minimum detectable effect (MDE) of +6.5 pp (14.2% → 20.7%), at least 532 users per group, i.e. at least 38 users per segment per day over 14 days."
-  },
-  {
-    "objectID": "en/projects/project-a.html#ab-test-execution-statistical-significance",
-    "href": "en/projects/project-a.html#ab-test-execution-statistical-significance",
-    "title": "Gen-AI B2C App Growth Analytics",
-    "section": "A/B Test Execution Statistical significance",
-    "text": "A/B Test Execution Statistical significance\n\nAnalyzing the A/B test and verifying significance at the 95% confidence level\n\nConversion proportions were tested with an independent-samples t-test and a chi-square test (576 users per group, about 41 per day).\n\n\n  \n  \n  \n  \n  A (14.2%)\n  B (19.8%)\n\n\nConversion distributions, control A vs treatment B (conceptual diagram)\n\n\n\n\nTreatment (B) video conversion lift +5.6 pp (about +39%) A 14.2% → B 19.8% (82 → 114 of 576 per group)\n\n\nTest statistic p = 0.012 &lt; 0.05 95% CI of the difference: +1.2 to +9.9 pp\n\n\nConclusion: The difference was verified as statistically significant, not due to chance, and the new service scenario was decided for full rollout. The observed difference (+5.6 pp) is smaller than the design MDE (+6.5 pp), so power is about 71%; the effect size will be re-checked through post-rollout monitoring.\n\nA detailed reproduction is in Report: A/B Test Analysis Note."
-  },
-  {
-    "objectID": "en/projects/project-a.html#tableau-real-time-business-growth-dashboard",
-    "href": "en/projects/project-a.html#tableau-real-time-business-growth-dashboard",
-    "title": "Gen-AI B2C App Growth Analytics",
-    "section": "Tableau Real-time business growth dashboard",
-    "text": "Tableau Real-time business growth dashboard\n\nReal-time Tableau dashboard architecture to speed up business decisions\n\n\nDashboard spec — data sources: Real-time join of refined BigQuery logs and Appsflyer marketing performance tables.\nKey charts\n\nGenerations per session and dwell time by content category [adjustable period]\nFunnel chart by acquisition cohort with drop-off alerts\nRetention versus GPU cost monitoring by marketing channel"
-  },
-  {
-    "objectID": "en/projects/project-a.html#business-impact-quantitative-and-qualitative-results",
-    "href": "en/projects/project-a.html#business-impact-quantitative-and-qualitative-results",
-    "title": "Gen-AI B2C App Growth Analytics",
-    "section": "Business Impact Quantitative and qualitative results",
-    "text": "Business Impact Quantitative and qualitative results\n\nQuantitative impact of data-driven business improvement\n\n\n\nVideo generation conversion lift 24.2% → 39.8% Improved AI video generation conversion\n\n\nRegeneration success rate 18% → 33% Regeneration success among users who reached the generation screen\n\n\nMarketing efficiency ▼ 12% cost CAC reduced by retargeting inefficient ad segments and consolidating channels\n\n\nCommunication culture Data-driven Daily morning hypothesis-testing meetings between business and content teams, based on the Tableau dashboard"
-  },
-  {
-    "objectID": "en/projects/project-b.html",
-    "href": "en/projects/project-b.html",
-    "title": "Video Data Curation and MLOps PoC",
-    "section": "",
-    "text": "AI-driven data curation (MLOps) for training a FaceSwap vision model\n\n\nProject context: Semi-automate the cycle of training-data collection, processing, screening, training, and storage to raise data quality itself, improve model performance, and speed up work from model research to deployment.\nCore mission: Run EDA on the metadata of raw unstructured datasets and set cleansing criteria, speed up processing, build a DL screening model, connect the pipeline, and set up an MVP-level MLOps validation environment that guarantees experiment reproducibility under resource constraints."
-  },
-  {
-    "objectID": "en/projects/project-b.html#overview-optimizing-the-dl-model-training-cycle",
-    "href": "en/projects/project-b.html#overview-optimizing-the-dl-model-training-cycle",
-    "title": "Video Data Curation and MLOps PoC",
-    "section": "",
-    "text": "AI-driven data curation (MLOps) for training a FaceSwap vision model\n\n\nProject context: Semi-automate the cycle of training-data collection, processing, screening, training, and storage to raise data quality itself, improve model performance, and speed up work from model research to deployment.\nCore mission: Run EDA on the metadata of raw unstructured datasets and set cleansing criteria, speed up processing, build a DL screening model, connect the pipeline, and set up an MVP-level MLOps validation environment that guarantees experiment reproducibility under resource constraints."
-  },
-  {
-    "objectID": "en/projects/project-b.html#problem-definition-soaring-infrastructure-cost-and-inefficient-model-training",
-    "href": "en/projects/project-b.html#problem-definition-soaring-infrastructure-cost-and-inefficient-model-training",
-    "title": "Video Data Curation and MLOps PoC",
-    "section": "Problem Definition Soaring infrastructure cost and inefficient model training",
-    "text": "Problem Definition Soaring infrastructure cost and inefficient model training\n\nCompute limits and stalled model performance caused by disorderly data intake (Garbage In)\n\n\nNoisy raw data: Video and image datasets collected in bulk by crawling and similar means carried heavy noise (audio clipping, low-resolution bias).\nWasted resources and cost: Training on unrefined data indiscriminately caused GPU resource consumption and training cost to balloon.\nAccuracy ceiling: Even with more sophisticated model parameters, data bias kept inference accuracy on the evaluation set stalled."
-  },
-  {
-    "objectID": "en/projects/project-b.html#data-profile-eda-in-depth-metadata-eda-of-raw-unstructured-datasets",
-    "href": "en/projects/project-b.html#data-profile-eda-in-depth-metadata-eda-of-raw-unstructured-datasets",
-    "title": "Video Data Curation and MLOps PoC",
-    "section": "Data Profile EDA In-depth metadata EDA of raw unstructured datasets",
-    "text": "Data Profile EDA In-depth metadata EDA of raw unstructured datasets\n\nDetecting statistical noise in raw unstructured data and establishing quality criteria\n\nAction (exploratory data analysis): Combined SQL and Python (Pandas, Librosa, OpenCV) to extract metadata attributes at scale (MFCC, objects, brightness, etc.).\n\n💡 Key findings\n\n20% of the videos already on hand were in access denied state, inconsistent with their public metadata.\nAsian faces made up under 5% of the data, revealing a strong Western bias.\n4% of collected audio files exceeded the allowed noise level (SNR), and 15% of vision images showed face-detection failure along with bias in certain brightness ranges.\n\n\n\n✅ Cleansing guideline design: Set model parameters that affect face recognition (crop size, similarity, etc.), plus thresholds for minimum SNR and minimum image resolution for data purification."
-  },
-  {
-    "objectID": "en/projects/project-b.html#solution-architecture-data-curation-mlops-pipeline-design",
-    "href": "en/projects/project-b.html#solution-architecture-data-curation-mlops-pipeline-design",
-    "title": "Video Data Curation and MLOps PoC",
-    "section": "Solution Architecture Data curation MLOps pipeline design",
-    "text": "Solution Architecture Data curation MLOps pipeline design\n\nEnd-to-end AI-driven data curation MLOps pipeline (automated vision and data processing)\n\n\n\n\n\n\n\nflowchart LR\n  A[\"Raw Data\"] --&gt; B[\"Preprocessing\"] --&gt; C[\"Quality Filter\"] --&gt; D[\"Labeling\"] --&gt; E[\"Training\"] --&gt; F[\"Registry\"]\n\n\n\n\n\n\nStage components\n\nRaw: Metadata extraction and schema normalization at collection, then storage\nPreprocessing: Face detection, landmark extraction, and face alignment; on-demand functions such as smoothing and re-alignment\nQuality filtering: Combines EDA-based threshold rules with ML-based anomaly detection\nLabeling / Training: Labeling uses a semi-automated human-in-the-loop design for efficiency. The training pipeline builds a reproducible environment on versioned datasets, with registry-based lineage tracking"
-  },
-  {
-    "objectID": "en/projects/project-b.html#automated-data-quality-scoring-dl-based-data-screening-system",
-    "href": "en/projects/project-b.html#automated-data-quality-scoring-dl-based-data-screening-system",
-    "title": "Video Data Curation and MLOps PoC",
-    "section": "Automated Data Quality Scoring DL-based data screening system",
-    "text": "Automated Data Quality Scoring DL-based data screening system\n\nAI-based automatic data quality evaluation and filtering (core component)\n\nCore integration — Applied a hybrid rule-based + deep learning screening engine to go beyond simple criteria filtering.\n\nFace detection confidence check\nVector analysis of image resolution and blur score\n\n3-tier triage system\n\nAccept Review Reject\n\nQuality scoring with a lightweight CNN / vision encoder adds active filtering that cuts human labeling cost."
-  },
-  {
-    "objectID": "en/projects/project-b.html#infrastructure-optimization-gpu-cost-reduction-and-training-efficiency",
-    "href": "en/projects/project-b.html#infrastructure-optimization-gpu-cost-reduction-and-training-efficiency",
-    "title": "Video Data Curation and MLOps PoC",
-    "section": "Infrastructure Optimization GPU cost reduction and training efficiency",
-    "text": "Infrastructure Optimization GPU cost reduction and training efficiency\n\nInfrastructure cost optimization through data refinement (impact)\n\n\n\nEpoch sample optimization 20–30% fewer Blocks unnecessary noisy data\n\n\nGPU training time Up to 40% shorter Resource efficiency from refined datasets\n\n\nEarly rejection Minimized allocation Avoids wasted compute resources\n\n\nThe result is infra cost curve flattening at the same model performance."
-  },
-  {
-    "objectID": "en/projects/project-b.html#mlops-mvp-system-reproducible-experiments-and-model-operations",
-    "href": "en/projects/project-b.html#mlops-mvp-system-reproducible-experiments-and-model-operations",
-    "title": "Video Data Curation and MLOps PoC",
-    "section": "MLOps MVP System Reproducible experiments and model operations",
-    "text": "MLOps MVP System Reproducible experiments and model operations\n\nAn MLOps environment that guarantees experiment reproducibility and model operations (MVP)\n\n\nExperiment unit management: Dataset versioning guarantees reproducibility per experiment (data hash tracking), tightly integrated with MLflow experiment tracking and model registry.\nStandardized operations pipeline: Training configuration (seed, hyperparameters, dataset version) is fully fixed, and pipeline orchestration cleanly isolates research resources from service operation resources."
-  },
-  {
-    "objectID": "en/projects/project-b.html#expected-outcome-model-performance-gains-from-better-data-quality",
-    "href": "en/projects/project-b.html#expected-outcome-model-performance-gains-from-better-data-quality",
-    "title": "Video Data Curation and MLOps PoC",
-    "section": "Expected Outcome Model performance gains from better data quality",
-    "text": "Expected Outcome Model performance gains from better data quality\n\nPerformance and efficiency gains from the shift to data-centric MLOps (outcome)\n\n\nAccuracy uplift: Visible accuracy gains with refined data on the same model architecture\nConvergence stability: Excluding noisy data improves training stability and reduces overfitting\nEstablished correlation: Demonstrated a quantitative causal link between data-quality metrics and actual performance\nShorter lead time: Shortened the end-to-end research-development-deployment cycle\n\n\n“A full paradigm shift from model-centric to data-centric AI pipelines”"
-  },
-  {
-    "objectID": "en/posts/2026-11-sample-analysis/index.html",
-    "href": "en/posts/2026-11-sample-analysis/index.html",
-    "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
-    "section": "",
-    "text": "NoteBefore you read\n\n\n\nThe design and result figures here match Project A. The per-group conversion counts (A: 82, B: 114 of 576 per group) are values arranged to match the reported conversion rates (14.2%, 19.8%) and p-value (0.012); replace them with values re-aggregated from the real logs if available."
-  },
-  {
-    "objectID": "en/posts/2026-11-sample-analysis/index.html#background-and-objective",
-    "href": "en/posts/2026-11-sample-analysis/index.html#background-and-objective",
-    "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
-    "section": "1. Background and objective",
-    "text": "1. Background and objective\nUA ads brought large inflow, but drop-off surged at the AI generation step right after sign-up. We test the hypothesis that switching content exposure from random content (A) to genre-curated content (B) improves the video conversion rate.\n\nH0: The video conversion rates of the two groups are equal (\\(p_A = p_B\\))\nH1: The video conversion rates differ (\\(p_A \\neq p_B\\)), significance level \\(\\alpha = 0.05\\)"
-  },
-  {
-    "objectID": "en/posts/2026-11-sample-analysis/index.html#diagnosis-where-users-leak",
-    "href": "en/posts/2026-11-sample-analysis/index.html#diagnosis-where-users-leak",
-    "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
-    "section": "2. Diagnosis: where users leak",
-    "text": "2. Diagnosis: where users leak\n\n\n\nShare of installs by step. More than 80% leak out between sign-up (65%) and AI generation (12%)\n\n\nAd click & Install (100%) → Sign Up (65%) → AI Generation (12%) → Share/Download (2.5%). The sign-up → AI generation step loses more than 80% of users and is the largest leak, so the video conversion rate was chosen as the experiment metric."
-  },
-  {
-    "objectID": "en/posts/2026-11-sample-analysis/index.html#experiment-design-and-sample-sizing",
-    "href": "en/posts/2026-11-sample-analysis/index.html#experiment-design-and-sample-sizing",
-    "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
-    "section": "3. Experiment design and sample sizing",
-    "text": "3. Experiment design and sample sizing\n\n\n\n\n\n\n\nItem\nDetail\n\n\n\n\nControl (Group A)\nExisting random content (80% user-uploaded, 20% in-house)\n\n\nTreatment (Group B)\nGenre-curated content (cinematic, Y2K, cartoon, meme, etc.)\n\n\nPrimary metric\nVideo conversion rate (users who successfully generate an AI video among exposed users), baseline 14.2%\n\n\nAssignment / duration\nNew users randomly assigned 50:50 with Firebase Remote Config (A/B Testing), 14 days\n\n\nSignificance / power\n\\(\\alpha = 0.05\\) / \\(1-\\beta = 0.80\\)\n\n\nMinimum detectable effect (MDE)\n+6.5 pp (14.2% → 20.7%)\n\n\n\nHow groups are assigned: Remote Config serves a different content-exposure policy parameter per group. The group is recorded as a user property on the exposure event, logged when the app activates the value. These logs flow from Firebase into BigQuery and Amplitude, where per-group funnels and conversion are aggregated. Firebase randomizes per app installation (instance), so users who reinstall or use several devices may land in different groups and need to be checked in analysis.\nThe required sample size per group for comparing two proportions is:\n\\[n = \\frac{(z_{1-\\alpha/2}+z_{1-\\beta})^2\\,[p_1(1-p_1)+p_2(1-p_2)]}{(p_2-p_1)^2}\\]\nfrom scipy import stats\n\ndef n_per_group(p1, p2, alpha=0.05, power=0.80):\n    k = (stats.norm.ppf(1 - alpha/2) + stats.norm.ppf(power)) ** 2\n    return k * (p1*(1-p1) + p2*(1-p2)) / (p2 - p1) ** 2\n\nn_per_group(0.142, 0.142 + 0.065)   # 531.3 -&gt; at least 532 per group\nAt least 532 per group, or 38 per segment per day over 14 days. The actual sample was 576 per group (about 41 per day), meeting the design requirement.\n\n\n\nThe larger the difference to detect, the fewer samples are needed"
-  },
-  {
-    "objectID": "en/posts/2026-11-sample-analysis/index.html#test-results",
-    "href": "en/posts/2026-11-sample-analysis/index.html#test-results",
-    "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
-    "section": "4. Test results",
-    "text": "4. Test results\n\n\n\nItem\nControl A\nTreatment B\n\n\n\n\nSample size\n576\n576\n\n\nSuccessful video generations\n82\n114\n\n\nVideo conversion rate\n14.2%\n19.8%\n\n\nDifference\n+5.6 pp (about +39% relative)\n\n\n\n\nimport numpy as np\nfrom scipy import stats\n\nn, a, b = 576, 82, 114\nchi2, p_chi, *_ = stats.chi2_contingency([[a, n-a], [b, n-b]], correction=False)\nt, p_t = stats.ttest_ind(np.r_[np.ones(b), np.zeros(n-b)],\n                         np.r_[np.ones(a), np.zeros(n-a)])\n\n\n\nTest\nStatistic\np-value\n\n\n\n\nChi-square test\nχ² = 6.30 (df=1)\n0.012\n\n\nIndependent-samples t-test\nt = 2.51 (df=1150)\n0.012\n\n\n\nThe 95% confidence interval of the difference is +1.2 to +9.9 pp, which excludes 0.\n\n\n\nA/B video conversion with 95% confidence intervals\n\n\nConclusion: Since p = 0.012 &lt; 0.05, we reject H0 and decided to roll out genre-curated content."
-  },
-  {
-    "objectID": "en/posts/2026-11-sample-analysis/index.html#key-takeaways",
-    "href": "en/posts/2026-11-sample-analysis/index.html#key-takeaways",
-    "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
-    "section": "5. Key takeaways",
-    "text": "5. Key takeaways\n\nInsight 1: Video conversion for genre-curated content (B) is 19.8%, 5.6 pp (about +39% relative) above control (14.2%), and significant at the 5% level (p = 0.012).\nInsight 2: The observed difference (+5.6 pp) is smaller than the design MDE (+6.5 pp), so power on this sample is about 71%. The direction is reliable, but the confidence interval of the effect size (+1.2 to +9.9 pp) is wide, so it should be re-estimated through post-rollout monitoring.\nNext actions: Break down the effect by genre (cinematic, Y2K, etc.), and verify 7-day retention and proxy LTV/CAC ≥ 3.0 including GPU cost."
-  },
-  {
-    "objectID": "en/posts/2026-11-sample-analysis/index.html#limitations",
-    "href": "en/posts/2026-11-sample-analysis/index.html#limitations",
-    "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
-    "section": "6. Limitations",
-    "text": "6. Limitations\n\nAssignment is per installation, so users who reinstall or use several devices may switch groups; check with the user_id mapping in the logs.\nThis is a single-period, single-metric test, so novelty effects are to be checked through post-rollout monitoring.\nSubgroup effects by genre need multiple-comparison correction and were not covered in this test."
-  },
-  {
-    "objectID": "posts/2026-11-sample-analysis/index.html",
-    "href": "posts/2026-11-sample-analysis/index.html",
-    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
-    "section": "",
-    "text": "노트읽기 전 안내\n\n\n\n이 글의 설계·결과 수치는 Project A와 동일합니다. 군별 전환 수(A 82명, B 114명 / 군당 576명)는 보고된 전환율(14.2%, 19.8%)과 p-value(0.012)에 맞춰 정리한 값이므로, 실제 로그로 재집계한 값이 있다면 그 값으로 교체해야 합니다."
-  },
-  {
-    "objectID": "posts/2026-11-sample-analysis/index.html#분석-배경-및-목적",
-    "href": "posts/2026-11-sample-analysis/index.html#분석-배경-및-목적",
-    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
-    "section": "1. 분석 배경 및 목적",
-    "text": "1. 분석 배경 및 목적\nUA 광고로 대규모 유입이 발생했지만 가입 후 AI 생성 체험 단계에서 이탈이 급증했습니다. 콘텐츠 노출 방식을 랜덤 콘텐츠(A) → 장르 기획 콘텐츠(B) 로 바꾸면 영상 변환율이 개선된다는 가설을 검증합니다.\n\nH0: 두 군의 영상 변환율은 같다 (\\(p_A = p_B\\))\nH1: 두 군의 영상 변환율은 다르다 (\\(p_A \\neq p_B\\)), 유의수준 \\(\\alpha = 0.05\\)"
-  },
-  {
-    "objectID": "posts/2026-11-sample-analysis/index.html#문제-진단-어디서-새는가",
-    "href": "posts/2026-11-sample-analysis/index.html#문제-진단-어디서-새는가",
-    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
-    "section": "2. 문제 진단: 어디서 새는가",
-    "text": "2. 문제 진단: 어디서 새는가\n\n\n\n설치 대비 단계별 비율. 가입(65%) 대비 AI 생성 시도(12%) 구간에서 약 80% 이상 누수\n\n\nAD click & Install(100%) → Sign Up(65%) → AI Generation(12%) → Share/Download(2.5%) 중 가입 → AI 생성 시도 구간에서 약 80% 이상이 이탈합니다. 이 구간이 가장 큰 누수이므로 실험의 대상 지표를 영상 변환율로 정했습니다."
-  },
-  {
-    "objectID": "posts/2026-11-sample-analysis/index.html#실험-설계와-표본-산정",
-    "href": "posts/2026-11-sample-analysis/index.html#실험-설계와-표본-산정",
-    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
-    "section": "3. 실험 설계와 표본 산정",
-    "text": "3. 실험 설계와 표본 산정\n\n\n\n\n\n\n\n구분\n내용\n\n\n\n\n대조군 (Group A)\n기존 랜덤 콘텐츠 (80% 개인 업로드, 20% 내부)\n\n\n실험군 (Group B)\n장르 기획 콘텐츠 (시네마틱, Y2K, 만화, 병맛 등)\n\n\n주지표\n영상 변환율 (노출 유저 중 AI 영상 생성 성공 비율), 기준 14.2%\n\n\n배정 / 기간\nFirebase Remote Config(A/B Testing)로 신규 유저 무작위 50:50, 14일\n\n\n유의수준 / 검정력\n\\(\\alpha = 0.05\\) / \\(1-\\beta = 0.80\\)\n\n\n최소 검출 효과 (MDE)\n+6.5%p (14.2% → 20.7%)\n\n\n\n군 배정 방식: Remote Config 파라미터(콘텐츠 노출 정책)를 군별로 다르게 내려주고, 앱이 값을 적용(activate)한 시점의 노출 이벤트에 군 정보를 user property로 남깁니다. 이 로그가 Firebase → BigQuery / Amplitude로 연동되어 군별 퍼널과 변환율을 집계합니다. Firebase의 무작위 배정은 앱 설치(instance) 단위이므로, 재설치나 다기기 사용 유저는 다른 군에 배정될 수 있어 분석 시 확인이 필요합니다.\n두 비율 비교의 군당 필요 표본 수는 다음과 같습니다.\n\\[n = \\frac{(z_{1-\\alpha/2}+z_{1-\\beta})^2\\,[p_1(1-p_1)+p_2(1-p_2)]}{(p_2-p_1)^2}\\]\nfrom scipy import stats\n\ndef n_per_group(p1, p2, alpha=0.05, power=0.80):\n    k = (stats.norm.ppf(1 - alpha/2) + stats.norm.ppf(power)) ** 2\n    return k * (p1*(1-p1) + p2*(1-p2)) / (p2 - p1) ** 2\n\nn_per_group(0.142, 0.142 + 0.065)   # 531.3 -&gt; 군당 최소 532명\n군당 최소 532명, 14일 기준 일일 세그먼트당 최소 38명입니다. 실제 수집된 표본은 군당 576명(일일 약 41명)으로 설계 기준을 충족했습니다.\n\n\n\n검출하려는 차이가 클수록 필요 표본 수는 급격히 줄어든다"
-  },
-  {
-    "objectID": "posts/2026-11-sample-analysis/index.html#검정-결과",
-    "href": "posts/2026-11-sample-analysis/index.html#검정-결과",
-    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
-    "section": "4. 검정 결과",
-    "text": "4. 검정 결과\n\n\n\n항목\n대조군 A\n실험군 B\n\n\n\n\n표본 수\n576\n576\n\n\n영상 생성 성공\n82\n114\n\n\n영상 변환율\n14.2%\n19.8%\n\n\n차이\n+5.6%p (상대 약 +39%)\n\n\n\n\nimport numpy as np\nfrom scipy import stats\n\nn, a, b = 576, 82, 114\nchi2, p_chi, *_ = stats.chi2_contingency([[a, n-a], [b, n-b]], correction=False)\nt, p_t = stats.ttest_ind(np.r_[np.ones(b), np.zeros(n-b)],\n                         np.r_[np.ones(a), np.zeros(n-a)])\n\n\n\n검정\n통계량\np-value\n\n\n\n\n카이제곱 검정\nχ² = 6.30 (df=1)\n0.012\n\n\n독립표본 t-검정\nt = 2.51 (df=1150)\n0.012\n\n\n\n차이의 95% 신뢰구간은 +1.2 ~ +9.9%p로 0을 포함하지 않습니다.\n\n\n\nA/B 영상 변환율과 95% 신뢰구간\n\n\n결론: p-value 0.012 &lt; 0.05이므로 H0를 기각합니다. 장르 기획 콘텐츠를 정식 롤아웃하기로 결정했습니다."
-  },
-  {
-    "objectID": "posts/2026-11-sample-analysis/index.html#핵심-요약",
-    "href": "posts/2026-11-sample-analysis/index.html#핵심-요약",
-    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
-    "section": "5. 핵심 요약",
-    "text": "5. 핵심 요약\n\n인사이트 1: 장르 기획 콘텐츠(B)의 영상 변환율은 19.8%로 대조군(14.2%)보다 5.6%p(상대 약 +39%) 높고, 5% 유의수준에서 유의합니다 (p = 0.012).\n인사이트 2: 관측 차이(+5.6%p)는 설계 MDE(+6.5%p)보다 작아 이 표본에서의 검정력은 약 71%입니다. 방향은 신뢰할 수 있으나 효과 크기의 신뢰구간(+1.2 ~ +9.9%p)이 넓어, 롤아웃 후 모니터링으로 재추정이 필요합니다.\n후속 액션: 장르별(시네마틱, Y2K 등) 효과 분해, 7-day 잔존율 및 GPU cost를 함께 보는 proxy LTV/CAC ≥ 3.0 검증."
-  },
-  {
-    "objectID": "posts/2026-11-sample-analysis/index.html#한계",
-    "href": "posts/2026-11-sample-analysis/index.html#한계",
-    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
-    "section": "6. 한계",
-    "text": "6. 한계\n\n배정이 설치 단위이므로 재설치·다기기 유저의 군 이탈 가능성은 로그의 user_id 매핑으로 점검해야 합니다.\n단일 기간·단일 지표 검정이므로 신기성 효과(novelty effect)는 롤아웃 후 모니터링으로 확인합니다.\n장르별 하위 그룹 효과는 다중 비교 보정이 필요해 이번 검정에서 다루지 않았습니다."
-  },
-  {
-    "objectID": "posts/sample/index.html",
-    "href": "posts/sample/index.html",
-    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
-    "section": "",
-    "text": "노트읽기 전 안내\n\n\n\n이 글의 설계·결과 수치는 Project A와 동일합니다. 군별 전환 수(A 82명, B 114명 / 군당 576명)는 보고된 전환율(14.2%, 19.8%)과 p-value(0.012)에 맞춰 정리한 값이므로, 실제 로그로 재집계한 값이 있다면 그 값으로 교체해야 합니다."
-  },
-  {
-    "objectID": "posts/sample/index.html#분석-배경-및-목적",
-    "href": "posts/sample/index.html#분석-배경-및-목적",
-    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
-    "section": "1. 분석 배경 및 목적",
-    "text": "1. 분석 배경 및 목적\nUA 광고로 대규모 유입이 발생했지만 가입 후 AI 생성 체험 단계에서 이탈이 급증했습니다. 콘텐츠 노출 방식을 랜덤 콘텐츠(A) → 장르 기획 콘텐츠(B) 로 바꾸면 영상 변환율이 개선된다는 가설을 검증합니다.\n\nH0: 두 군의 영상 변환율은 같다 (\\(p_A = p_B\\))\nH1: 두 군의 영상 변환율은 다르다 (\\(p_A \\neq p_B\\)), 유의수준 \\(\\alpha = 0.05\\)"
-  },
-  {
-    "objectID": "posts/sample/index.html#문제-진단-어디서-새는가",
-    "href": "posts/sample/index.html#문제-진단-어디서-새는가",
-    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
-    "section": "2. 문제 진단: 어디서 새는가",
-    "text": "2. 문제 진단: 어디서 새는가\n\n\n\n설치 대비 단계별 비율. 가입(65%) 대비 AI 생성 시도(12%) 구간에서 약 80% 이상 누수\n\n\nAD click & Install(100%) → Sign Up(65%) → AI Generation(12%) → Share/Download(2.5%) 중 가입 → AI 생성 시도 구간에서 약 80% 이상이 이탈합니다. 이 구간이 가장 큰 누수이므로 실험의 대상 지표를 영상 변환율로 정했습니다."
-  },
-  {
-    "objectID": "posts/sample/index.html#실험-설계와-표본-산정",
-    "href": "posts/sample/index.html#실험-설계와-표본-산정",
-    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
-    "section": "3. 실험 설계와 표본 산정",
-    "text": "3. 실험 설계와 표본 산정\n\n\n\n\n\n\n\n구분\n내용\n\n\n\n\n대조군 (Group A)\n기존 랜덤 콘텐츠 (80% 개인 업로드, 20% 내부)\n\n\n실험군 (Group B)\n장르 기획 콘텐츠 (시네마틱, Y2K, 만화, 병맛 등)\n\n\n주지표\n영상 변환율 (노출 유저 중 AI 영상 생성 성공 비율), 기준 14.2%\n\n\n배정 / 기간\nFirebase Remote Config(A/B Testing)로 신규 유저 무작위 50:50, 14일\n\n\n유의수준 / 검정력\n\\(\\alpha = 0.05\\) / \\(1-\\beta = 0.80\\)\n\n\n최소 검출 효과 (MDE)\n+6.5%p (14.2% → 20.7%)\n\n\n\n군 배정 방식: Remote Config 파라미터(콘텐츠 노출 정책)를 군별로 다르게 내려주고, 앱이 값을 적용(activate)한 시점의 노출 이벤트에 군 정보를 user property로 남깁니다. 이 로그가 Firebase → BigQuery / Amplitude로 연동되어 군별 퍼널과 변환율을 집계합니다. Firebase의 무작위 배정은 앱 설치(instance) 단위이므로, 재설치나 다기기 사용 유저는 다른 군에 배정될 수 있어 분석 시 확인이 필요합니다.\n두 비율 비교의 군당 필요 표본 수는 다음과 같습니다.\n\\[n = \\frac{(z_{1-\\alpha/2}+z_{1-\\beta})^2\\,[p_1(1-p_1)+p_2(1-p_2)]}{(p_2-p_1)^2}\\]\nfrom scipy import stats\n\ndef n_per_group(p1, p2, alpha=0.05, power=0.80):\n    k = (stats.norm.ppf(1 - alpha/2) + stats.norm.ppf(power)) ** 2\n    return k * (p1*(1-p1) + p2*(1-p2)) / (p2 - p1) ** 2\n\nn_per_group(0.142, 0.142 + 0.065)   # 531.3 -&gt; 군당 최소 532명\n군당 최소 532명, 14일 기준 일일 세그먼트당 최소 38명입니다. 실제 수집된 표본은 군당 576명(일일 약 41명)으로 설계 기준을 충족했습니다.\n\n\n\n검출하려는 차이가 클수록 필요 표본 수는 급격히 줄어든다"
-  },
-  {
-    "objectID": "posts/sample/index.html#검정-결과",
-    "href": "posts/sample/index.html#검정-결과",
-    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
-    "section": "4. 검정 결과",
-    "text": "4. 검정 결과\n\n\n\n항목\n대조군 A\n실험군 B\n\n\n\n\n표본 수\n576\n576\n\n\n영상 생성 성공\n82\n114\n\n\n영상 변환율\n14.2%\n19.8%\n\n\n차이\n+5.6%p (상대 약 +39%)\n\n\n\n\nimport numpy as np\nfrom scipy import stats\n\nn, a, b = 576, 82, 114\nchi2, p_chi, *_ = stats.chi2_contingency([[a, n-a], [b, n-b]], correction=False)\nt, p_t = stats.ttest_ind(np.r_[np.ones(b), np.zeros(n-b)],\n                         np.r_[np.ones(a), np.zeros(n-a)])\n\n\n\n검정\n통계량\np-value\n\n\n\n\n카이제곱 검정\nχ² = 6.30 (df=1)\n0.012\n\n\n독립표본 t-검정\nt = 2.51 (df=1150)\n0.012\n\n\n\n차이의 95% 신뢰구간은 +1.2 ~ +9.9%p로 0을 포함하지 않습니다.\n\n\n\nA/B 영상 변환율과 95% 신뢰구간\n\n\n결론: p-value 0.012 &lt; 0.05이므로 H0를 기각합니다. 장르 기획 콘텐츠를 정식 롤아웃하기로 결정했습니다."
-  },
-  {
-    "objectID": "posts/sample/index.html#핵심-요약",
-    "href": "posts/sample/index.html#핵심-요약",
-    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
-    "section": "5. 핵심 요약",
-    "text": "5. 핵심 요약\n\n인사이트 1: 장르 기획 콘텐츠(B)의 영상 변환율은 19.8%로 대조군(14.2%)보다 5.6%p(상대 약 +39%) 높고, 5% 유의수준에서 유의합니다 (p = 0.012).\n인사이트 2: 관측 차이(+5.6%p)는 설계 MDE(+6.5%p)보다 작아 이 표본에서의 검정력은 약 71%입니다. 방향은 신뢰할 수 있으나 효과 크기의 신뢰구간(+1.2 ~ +9.9%p)이 넓어, 롤아웃 후 모니터링으로 재추정이 필요합니다.\n후속 액션: 장르별(시네마틱, Y2K 등) 효과 분해, 7-day 잔존율 및 GPU cost를 함께 보는 proxy LTV/CAC ≥ 3.0 검증."
-  },
-  {
-    "objectID": "posts/sample/index.html#한계",
-    "href": "posts/sample/index.html#한계",
-    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
-    "section": "6. 한계",
-    "text": "6. 한계\n\n배정이 설치 단위이므로 재설치·다기기 유저의 군 이탈 가능성은 로그의 user_id 매핑으로 점검해야 합니다.\n단일 기간·단일 지표 검정이므로 신기성 효과(novelty effect)는 롤아웃 후 모니터링으로 확인합니다.\n장르별 하위 그룹 효과는 다중 비교 보정이 필요해 이번 검정에서 다루지 않았습니다."
-  },
-  {
-    "objectID": "en/report.html",
-    "href": "en/report.html",
-    "title": "Report",
-    "section": "",
-    "text": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion\n\n\n\nAnalysis Note\n\nA/B Test\n\nProject A\n\n\n\n\nA sample report on the Project A A/B test, organized as funnel diagnosis, sample sizing, and significance testing.\n\n\n\n\n\n\nNov 23, 2026\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "en/projects/project-c.html",
-    "href": "en/projects/project-c.html",
-    "title": "Scheduling Poisson Machine for Adaptive Crawling",
-    "section": "",
-    "text": "A smart crawler manager built on a Poisson process and ML\n\n\nProject context: Dynamically optimize the crawl period by tying it to how fast stock changes on shopping-mall product pages. Suppressing redundant crawls minimizes waste of in-house collection infrastructure, and not missing stock-change moments yields accurate market demand estimates.\nCore mission\n\nAnalyze the limits and inefficiency of the existing fixed-period (score-based) crawler (As-Is vs To-Be)\nDefine the target variable for applying the page-change model (Poisson process) and validate it by simulation\nClean outliers in raw unstructured collection data, engineer features from EDA, and build the pipeline\nBuild a period-control engine that combines a statistical model (Poisson) with an ML classification model"
-  },
-  {
-    "objectID": "en/projects/project-c.html#overview-poisson-process-based-adaptive-crawl-manager",
-    "href": "en/projects/project-c.html#overview-poisson-process-based-adaptive-crawl-manager",
-    "title": "Scheduling Poisson Machine for Adaptive Crawling",
-    "section": "",
-    "text": "A smart crawler manager built on a Poisson process and ML\n\n\nProject context: Dynamically optimize the crawl period by tying it to how fast stock changes on shopping-mall product pages. Suppressing redundant crawls minimizes waste of in-house collection infrastructure, and not missing stock-change moments yields accurate market demand estimates.\nCore mission\n\nAnalyze the limits and inefficiency of the existing fixed-period (score-based) crawler (As-Is vs To-Be)\nDefine the target variable for applying the page-change model (Poisson process) and validate it by simulation\nClean outliers in raw unstructured collection data, engineer features from EDA, and build the pipeline\nBuild a period-control engine that combines a statistical model (Poisson) with an ML classification model"
-  },
-  {
-    "objectID": "en/projects/project-c.html#problem-definition-infrastructure-load-and-data-gaps-from-fixed-interval-crawling",
-    "href": "en/projects/project-c.html#problem-definition-infrastructure-load-and-data-gaps-from-fixed-interval-crawling",
-    "title": "Scheduling Poisson Machine for Adaptive Crawling",
-    "section": "Problem Definition Infrastructure load and data gaps from fixed-interval crawling",
-    "text": "Problem Definition Infrastructure load and data gaps from fixed-interval crawling\n\nLimits of fixed-period collection: a vicious cycle of wasted infrastructure and lost business opportunity\n\n\nAs-Is: Over-crawling (resource inefficiency) — Static pages with almost no stock change (unpopular products, etc.) were crawled mechanically and often, driving up networking resources and processing storage cost.\nAs-Is: Under-crawling (data loss) — Fast-selling hot-deal pages were not collected in time, so the precision of demand-change estimates stalled. Per-platform traffic thresholds (Lotte, Hmall, GS, 11st, Coupang, G-market, SSG, etc.) were also not reflected."
-  },
-  {
-    "objectID": "en/projects/project-c.html#theoretical-modeling-finding-the-optimal-crawl-period-with-a-poisson-process",
-    "href": "en/projects/project-c.html#theoretical-modeling-finding-the-optimal-crawl-period-with-a-poisson-process",
-    "title": "Scheduling Poisson Machine for Adaptive Crawling",
-    "section": "Theoretical Modeling Finding the optimal crawl period with a Poisson process",
-    "text": "Theoretical Modeling Finding the optimal crawl period with a Poisson process\n\nModeling dynamic web page change detection with the Poisson process\n\nTheoretical background (Cho & Garcia-Molina, 1999)\n\\[P(N(t)=k) = \\frac{(\\lambda t)^k e^{-\\lambda t}}{k!}\\]\nBased on the theory that page-change intervals are independent and follow an exponential distribution.\nBreaking through practical limits — The classic Poisson change rate (\\(\\lambda\\)) is a fixed constant, so it cannot predict the varying cycle of each product. Instead, I collected change/no-change data per time unit (0.2H, 0.5H, 1H, 4H, 8H, 12H, 24H, 48H, etc.), simulated a local \\(\\lambda\\) and change probability for each interval, and turned the interval with the maximum probability into the target variable."
-  },
-  {
-    "objectID": "en/projects/project-c.html#target-variable-engineering-validating-the-target-variable-by-excel-simulation",
-    "href": "en/projects/project-c.html#target-variable-engineering-validating-the-target-variable-by-excel-simulation",
-    "title": "Scheduling Poisson Machine for Adaptive Crawling",
-    "section": "Target Variable Engineering Validating the target variable by Excel simulation",
-    "text": "Target Variable Engineering Validating the target variable by Excel simulation\n\nTarget variable simulation and validation of data cleansing (preprocessing)\n\n\nWindow slicing and quantification: From the current time, sampled change/no-change data per time unit, such as 4H (last 24 hours) and 12H (last 72 hours), aggregated it, and computed \\(\\lambda\\).\nTarget labeling and tie-breaking: The interval with the highest change probability becomes the next crawl target. When a tie occurs, the conservative safeguard forces the faster period to prevent data loss."
-  },
-  {
-    "objectID": "en/projects/project-c.html#data-profiling-eda-predictors-versus-target-distribution-and-correlation",
-    "href": "en/projects/project-c.html#data-profiling-eda-predictors-versus-target-distribution-and-correlation",
-    "title": "Scheduling Poisson Machine for Adaptive Crawling",
-    "section": "Data Profiling & EDA Predictors versus target distribution and correlation",
-    "text": "Data Profiling & EDA Predictors versus target distribution and correlation\n\nStatistical noise and hypothesis checks between collection predictors and the next crawl period (target)\n\n\n\n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  SELL_RANK_log (lower rank)\n  No-change ratio\n\n\nNo-change ratio versus popularity rank (conceptual diagram)\n\n\nEDA findings\n\nHypothesis 1. Product popularity: Products with a lower sales rank (higher SELL_RANK_log) and less popular categories showed markedly lower information-update frequency.\n\n\nHypothesis 2. Listing duration: Newly registered product pages are edited often, but the longer the exposure period (period increases), the more stock change rate converges to 0, a stationarity-like behavior.\n\nBecause the survival-length distribution of collected pages was multimodal and differed by change/no-change class, that feature was selected as a key variable."
-  },
-  {
-    "objectID": "en/projects/project-c.html#solution-architecture-end-to-end-crawl-manager-data-and-model-pipeline",
-    "href": "en/projects/project-c.html#solution-architecture-end-to-end-crawl-manager-data-and-model-pipeline",
-    "title": "Scheduling Poisson Machine for Adaptive Crawling",
-    "section": "Solution Architecture End-to-end crawl manager data and model pipeline",
-    "text": "Solution Architecture End-to-end crawl manager data and model pipeline\n\nEnd-to-end dynamic crawling data pipeline and decision architecture\n\nCORE FLOW\n\n\n\n\n\n\nflowchart LR\n  A[\"Retrieve\"] --&gt; B[\"Preprocess\"] --&gt; C[\"Predict\"] --&gt; D[\"Transform\"] --&gt; E[\"Insert\"]\n\n\n\n\n\n\n\nHybrid branch 1 (products with enough history): When change history is sufficient (# data &gt; 3), the product enters the Poisson \\(\\lambda\\) stage. If many changes are detected it is handed to the ML classification model for period prediction; if no change is observed, the crawl period is extended to two days later.\nHybrid branch 2 (new products): Products with very little history, such as new arrivals, go to a “fixed collection every 6 hours” pipeline to secure a stable cold start and build up history."
-  },
-  {
-    "objectID": "en/projects/project-c.html#modeling-optimization-classification-ml-and-statistical-model-optimization",
-    "href": "en/projects/project-c.html#modeling-optimization-classification-ml-and-statistical-model-optimization",
-    "title": "Scheduling Poisson Machine for Adaptive Crawling",
-    "section": "Modeling & Optimization Classification ML and statistical model optimization",
-    "text": "Modeling & Optimization Classification ML and statistical model optimization\n\nOptimizing and tuning the hybrid crawl-period classification model\n\nHybrid engine strategy\n\nML classification model: Predicts the next period by combining static metadata such as text (product keywords, category tags), TV shopping schedules, and exposure placement\nPoisson statistical model: A lightweight dedicated module that closely monitors time-series stock-change patterns from live collected data\n\nRefined evaluation metrics — To overcome the limits of plain accuracy under class imbalance, I designed a recall-centered error table and applied Cohen’s Kappa to evaluate agreement between models."
-  },
-  {
-    "objectID": "en/projects/project-c.html#business-impact-infrastructure-savings-and-more-accurate-stock-estimation",
-    "href": "en/projects/project-c.html#business-impact-infrastructure-savings-and-more-accurate-stock-estimation",
-    "title": "Scheduling Poisson Machine for Adaptive Crawling",
-    "section": "Business Impact Infrastructure savings and more accurate stock estimation",
-    "text": "Business Impact Infrastructure savings and more accurate stock estimation\n\nInfrastructure innovation and data value from running the smart-crawler Poisson engine (expected impact)\n\n\n\nInfrastructure savings 5–6% reduction Suppressing redundant crawls of no-change pages cut network bandwidth and traffic cost\n\n\nData consistency Real-time error convergence Crawl resources redistributed to fast-moving popular shelves, minimizing sold-out lag time\n\n\nStability Fewer outages Optimal periods across multiple platforms avoid IP-block risk on target servers and enable a safe automated pipeline"
-  },
-  {
-    "objectID": "en/projects.html",
-    "href": "en/projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Gen-AI B2C App Growth Analytics\n\n\nAn end-to-end case study of real business growth strategy and data validation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nScheduling Poisson Machine for Adaptive Crawling\n\n\nIntelligent data acquisition (crawl period optimization) combining statistical page-change detection and machine learning\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVideo Data Curation and MLOps PoC\n\n\nML pipeline engineering for a vision model that improves infrastructure efficiency and data quality\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "en/experience.html",
-    "href": "en/experience.html",
-    "title": "Experience",
-    "section": "",
-    "text": "A career that runs from data analytics through data curation and MLOps to statistical predictive modeling, and on to leading teams."
-  },
-  {
-    "objectID": "en/experience.html#klleon",
-    "href": "en/experience.html#klleon",
-    "title": "Experience",
-    "section": "Klleon R&D — Data Part Lead",
-    "text": "Klleon R&D — Data Part Lead\nMar 2021 – Nov 2023 (2 yrs 9 mos)\nBuilt and led the MLOps team and data part for an effective research environment\n\nDeveloped Korean TTS technology based on Data-Centric AI (DCAI)\nBuilt and optimized a computer-vision data curation system covering data collection, processing, and screening\nSupported engineering with Kubeflow and DVC\n\n→ Details: Video Data Curation and MLOps PoC\nSupported data-driven decisions for a Gen-AI based B2C service\n\nAnalyzed users with Firebase, Appsflyer, Amplitude, Tableau, and statistical modeling\nLed the beta launch (App Store, Google Play)\nLed digital marketing (Meta, Google Ads)\n\n→ Details: Gen-AI B2C App Service Growth Analytics"
-  },
-  {
-    "objectID": "en/experience.html#freewheelin",
-    "href": "en/experience.html#freewheelin",
-    "title": "Experience",
-    "section": "freewheelin — Data Analyst",
-    "text": "freewheelin — Data Analyst\nApr 2019 – Jul 2020 (1 yr 4 mos) · Gwanak-gu, Seoul\nBuilt a dashboard for promotion performance analysis\n\nAnalyzed the correlation between promotions and user properties (price, free-trial period)\nAnalyzed retention trends of user groups by promotion\nDefined and calculated KPIs to measure performance\n\nReorganized the data management system\n\nCentralized data in BigQuery\nReduced inefficient storage cost\nOversaw data quality"
-  },
-  {
-    "objectID": "en/experience.html#epopcon",
-    "href": "en/experience.html#epopcon",
-    "title": "Experience",
-    "section": "Epopcon — Data Scientist",
-    "text": "Epopcon — Data Scientist\nDec 2017 – Mar 2019 (1 yr 4 mos)\nBuilt stochastic scheduling models that predict when product stock levels change (Poisson process)\n\nImputed missing inventory values and handled outliers (clustering, anomaly detection)\n\n→ Details: Predictive Scheduling Machine for Elastic Collection Management\nCreated standardized keys for the same product listed across multiple shopping malls\n\nPreprocessed image and natural-language data, then applied the MinHash-LSH algorithm\n\nAnalyzed hidden customer behavior patterns\n\nUsed geographical data\nCleaned store addresses and categories using open data\nVisualized the distribution of target features and compared it with a control group"
-  },
-  {
-    "objectID": "en/experience.html#education",
-    "href": "en/experience.html#education",
-    "title": "Experience",
-    "section": "Education",
-    "text": "Education\nYonsei University — Bachelor’s degree, Applied Statistics and Economics"
-  },
-  {
-    "objectID": "en/experience.html#certifications",
-    "href": "en/experience.html#certifications",
-    "title": "Experience",
-    "section": "Certifications",
-    "text": "Certifications\n\nTensorFlow Developer Professional Certificate\nUsing Machine Learning in Trading and Finance\nFinancial Engineering and Risk Management Part I"
-  },
-  {
-    "objectID": "en/experience.html#core-skills",
-    "href": "en/experience.html#core-skills",
-    "title": "Experience",
-    "section": "Core Skills",
-    "text": "Core Skills\nMathematics · Problem Management · Analytical Skills"
-  },
-  {
-    "objectID": "en/experience.html#links",
-    "href": "en/experience.html#links",
-    "title": "Experience",
-    "section": "Links",
-    "text": "Links\n\nLinkedIn\nMedium Blog"
-  },
-  {
     "objectID": "projects/project-b.html",
     "href": "projects/project-b.html",
     "title": "영상 데이터 큐레이션 및 MLOps PoC",
@@ -700,6 +133,258 @@
     "text": "Business Impact 프로젝트 A의 정량적/정성적 성과\n\n데이터 중심 비즈니스 개선 활동이 가져온 정량적 임팩트\n\n\n\n영상생성 전환율 향상 24.2% → 39.8% AI 영상 생성 전환율 개선\n\n\n재생성 성공률 개선 18% → 33% 생성화면 도달 유저의 재생성 성공률 개선\n\n\n마케팅 효율화 ▼ 12% 절감 비효율 광고 세그먼트 오프타겟 조정 및 매체 통합 CAC 절감\n\n\n소통 체계 혁신 데이터 기반 소통 태블로 대시보드를 기반으로 매일 아침 비즈니스/콘텐츠팀 간 가설 검정 회의 진행 환경 조성"
   },
   {
+    "objectID": "en/projects/project-b.html",
+    "href": "en/projects/project-b.html",
+    "title": "Video Data Curation and MLOps PoC",
+    "section": "",
+    "text": "AI-driven data curation (MLOps) for training a FaceSwap vision model\n\n\nProject context: Semi-automate the cycle of training-data collection, processing, screening, training, and storage to raise data quality itself, improve model performance, and speed up work from model research to deployment.\nCore mission: Run EDA on the metadata of raw unstructured datasets and set cleansing criteria, speed up processing, build a DL screening model, connect the pipeline, and set up an MVP-level MLOps validation environment that guarantees experiment reproducibility under resource constraints."
+  },
+  {
+    "objectID": "en/projects/project-b.html#overview-optimizing-the-dl-model-training-cycle",
+    "href": "en/projects/project-b.html#overview-optimizing-the-dl-model-training-cycle",
+    "title": "Video Data Curation and MLOps PoC",
+    "section": "",
+    "text": "AI-driven data curation (MLOps) for training a FaceSwap vision model\n\n\nProject context: Semi-automate the cycle of training-data collection, processing, screening, training, and storage to raise data quality itself, improve model performance, and speed up work from model research to deployment.\nCore mission: Run EDA on the metadata of raw unstructured datasets and set cleansing criteria, speed up processing, build a DL screening model, connect the pipeline, and set up an MVP-level MLOps validation environment that guarantees experiment reproducibility under resource constraints."
+  },
+  {
+    "objectID": "en/projects/project-b.html#problem-definition-soaring-infrastructure-cost-and-inefficient-model-training",
+    "href": "en/projects/project-b.html#problem-definition-soaring-infrastructure-cost-and-inefficient-model-training",
+    "title": "Video Data Curation and MLOps PoC",
+    "section": "Problem Definition Soaring infrastructure cost and inefficient model training",
+    "text": "Problem Definition Soaring infrastructure cost and inefficient model training\n\nCompute limits and stalled model performance caused by disorderly data intake (Garbage In)\n\n\nNoisy raw data: Video and image datasets collected in bulk by crawling and similar means carried heavy noise (audio clipping, low-resolution bias).\nWasted resources and cost: Training on unrefined data indiscriminately caused GPU resource consumption and training cost to balloon.\nAccuracy ceiling: Even with more sophisticated model parameters, data bias kept inference accuracy on the evaluation set stalled."
+  },
+  {
+    "objectID": "en/projects/project-b.html#data-profile-eda-in-depth-metadata-eda-of-raw-unstructured-datasets",
+    "href": "en/projects/project-b.html#data-profile-eda-in-depth-metadata-eda-of-raw-unstructured-datasets",
+    "title": "Video Data Curation and MLOps PoC",
+    "section": "Data Profile EDA In-depth metadata EDA of raw unstructured datasets",
+    "text": "Data Profile EDA In-depth metadata EDA of raw unstructured datasets\n\nDetecting statistical noise in raw unstructured data and establishing quality criteria\n\nAction (exploratory data analysis): Combined SQL and Python (Pandas, Librosa, OpenCV) to extract metadata attributes at scale (MFCC, objects, brightness, etc.).\n\n💡 Key findings\n\n20% of the videos already on hand were in access denied state, inconsistent with their public metadata.\nAsian faces made up under 5% of the data, revealing a strong Western bias.\n4% of collected audio files exceeded the allowed noise level (SNR), and 15% of vision images showed face-detection failure along with bias in certain brightness ranges.\n\n\n\n✅ Cleansing guideline design: Set model parameters that affect face recognition (crop size, similarity, etc.), plus thresholds for minimum SNR and minimum image resolution for data purification."
+  },
+  {
+    "objectID": "en/projects/project-b.html#solution-architecture-data-curation-mlops-pipeline-design",
+    "href": "en/projects/project-b.html#solution-architecture-data-curation-mlops-pipeline-design",
+    "title": "Video Data Curation and MLOps PoC",
+    "section": "Solution Architecture Data curation MLOps pipeline design",
+    "text": "Solution Architecture Data curation MLOps pipeline design\n\nEnd-to-end AI-driven data curation MLOps pipeline (automated vision and data processing)\n\n\n\n\n\n\n\nflowchart LR\n  A[\"Raw Data\"] --&gt; B[\"Preprocessing\"] --&gt; C[\"Quality Filter\"] --&gt; D[\"Labeling\"] --&gt; E[\"Training\"] --&gt; F[\"Registry\"]\n\n\n\n\n\n\nStage components\n\nRaw: Metadata extraction and schema normalization at collection, then storage\nPreprocessing: Face detection, landmark extraction, and face alignment; on-demand functions such as smoothing and re-alignment\nQuality filtering: Combines EDA-based threshold rules with ML-based anomaly detection\nLabeling / Training: Labeling uses a semi-automated human-in-the-loop design for efficiency. The training pipeline builds a reproducible environment on versioned datasets, with registry-based lineage tracking"
+  },
+  {
+    "objectID": "en/projects/project-b.html#automated-data-quality-scoring-dl-based-data-screening-system",
+    "href": "en/projects/project-b.html#automated-data-quality-scoring-dl-based-data-screening-system",
+    "title": "Video Data Curation and MLOps PoC",
+    "section": "Automated Data Quality Scoring DL-based data screening system",
+    "text": "Automated Data Quality Scoring DL-based data screening system\n\nAI-based automatic data quality evaluation and filtering (core component)\n\nCore integration — Applied a hybrid rule-based + deep learning screening engine to go beyond simple criteria filtering.\n\nFace detection confidence check\nVector analysis of image resolution and blur score\n\n3-tier triage system\n\nAccept Review Reject\n\nQuality scoring with a lightweight CNN / vision encoder adds active filtering that cuts human labeling cost."
+  },
+  {
+    "objectID": "en/projects/project-b.html#infrastructure-optimization-gpu-cost-reduction-and-training-efficiency",
+    "href": "en/projects/project-b.html#infrastructure-optimization-gpu-cost-reduction-and-training-efficiency",
+    "title": "Video Data Curation and MLOps PoC",
+    "section": "Infrastructure Optimization GPU cost reduction and training efficiency",
+    "text": "Infrastructure Optimization GPU cost reduction and training efficiency\n\nInfrastructure cost optimization through data refinement (impact)\n\n\n\nEpoch sample optimization 20–30% fewer Blocks unnecessary noisy data\n\n\nGPU training time Up to 40% shorter Resource efficiency from refined datasets\n\n\nEarly rejection Minimized allocation Avoids wasted compute resources\n\n\nThe result is infra cost curve flattening at the same model performance."
+  },
+  {
+    "objectID": "en/projects/project-b.html#mlops-mvp-system-reproducible-experiments-and-model-operations",
+    "href": "en/projects/project-b.html#mlops-mvp-system-reproducible-experiments-and-model-operations",
+    "title": "Video Data Curation and MLOps PoC",
+    "section": "MLOps MVP System Reproducible experiments and model operations",
+    "text": "MLOps MVP System Reproducible experiments and model operations\n\nAn MLOps environment that guarantees experiment reproducibility and model operations (MVP)\n\n\nExperiment unit management: Dataset versioning guarantees reproducibility per experiment (data hash tracking), tightly integrated with MLflow experiment tracking and model registry.\nStandardized operations pipeline: Training configuration (seed, hyperparameters, dataset version) is fully fixed, and pipeline orchestration cleanly isolates research resources from service operation resources."
+  },
+  {
+    "objectID": "en/projects/project-b.html#expected-outcome-model-performance-gains-from-better-data-quality",
+    "href": "en/projects/project-b.html#expected-outcome-model-performance-gains-from-better-data-quality",
+    "title": "Video Data Curation and MLOps PoC",
+    "section": "Expected Outcome Model performance gains from better data quality",
+    "text": "Expected Outcome Model performance gains from better data quality\n\nPerformance and efficiency gains from the shift to data-centric MLOps (outcome)\n\n\nAccuracy uplift: Visible accuracy gains with refined data on the same model architecture\nConvergence stability: Excluding noisy data improves training stability and reduces overfitting\nEstablished correlation: Demonstrated a quantitative causal link between data-quality metrics and actual performance\nShorter lead time: Shortened the end-to-end research-development-deployment cycle\n\n\n“A full paradigm shift from model-centric to data-centric AI pipelines”"
+  },
+  {
+    "objectID": "en/projects/project-a.html",
+    "href": "en/projects/project-a.html",
+    "title": "Gen-AI B2C App Growth Analytics",
+    "section": "",
+    "text": "Beta launch and user-acquisition (UA) growth project for a generative-AI B2C app\n\n\nContext: Market launch of a mobile app offering face/voice generation AI built on images, audio, and video, together with the business data pipeline.\nTarget KPI: Reach PMF and maximize retention — build real-time user activation infrastructure.\nBeta launch milestones:\n\n\n\n\n\n\n\nflowchart LR\n  A[\"1 Planning\"] --&gt; B[\"2 Infra integration\"] --&gt; C[\"3 Beta launch\"] --&gt; D[\"4 UA growth\"]\n  style C fill:#ff1b4a,color:#fff,stroke:#ff1b4a"
+  },
+  {
+    "objectID": "en/projects/project-a.html#overview-data-analytics-for-service-growth",
+    "href": "en/projects/project-a.html#overview-data-analytics-for-service-growth",
+    "title": "Gen-AI B2C App Growth Analytics",
+    "section": "",
+    "text": "Beta launch and user-acquisition (UA) growth project for a generative-AI B2C app\n\n\nContext: Market launch of a mobile app offering face/voice generation AI built on images, audio, and video, together with the business data pipeline.\nTarget KPI: Reach PMF and maximize retention — build real-time user activation infrastructure.\nBeta launch milestones:\n\n\n\n\n\n\n\nflowchart LR\n  A[\"1 Planning\"] --&gt; B[\"2 Infra integration\"] --&gt; C[\"3 Beta launch\"] --&gt; D[\"4 UA growth\"]\n  style C fill:#ff1b4a,color:#fff,stroke:#ff1b4a"
+  },
+  {
+    "objectID": "en/projects/project-a.html#problem-definition-retention-cvr-bottleneck-versus-user-inflow",
+    "href": "en/projects/project-a.html#problem-definition-retention-cvr-bottleneck-versus-user-inflow",
+    "title": "Gen-AI B2C App Growth Analytics",
+    "section": "Problem Definition Retention (CVR) bottleneck versus user inflow",
+    "text": "Problem Definition Retention (CVR) bottleneck versus user inflow\n\nDiagnosing the bottleneck between UA marketing spend and conversion\n\nProblems on the ground\n\nUA ads brought large inflow, but drop-off surged at the generative-AI experience step right after sign-up.\nAmong users who reached the video-source screen, the rate of actually generating an AI video stalled, delaying the aha-moment.\nMarketing cost (CAC) kept rising while first-day churn after sign-up spiked.\n\nUser funnel breakdown\n\nAd click & Install100%\n\n\nSign Up65%\n\n\nAI Generation (drop-off hotspot)12%\n\n\nShare/Download2.5%\n\n\nBetween in-app sign-up and the first AI generation attempt, more than 80% of users leak out."
+  },
+  {
+    "objectID": "en/projects/project-a.html#log-infrastructure-user-behavior-log-architecture",
+    "href": "en/projects/project-a.html#log-infrastructure-user-behavior-log-architecture",
+    "title": "Gen-AI B2C App Growth Analytics",
+    "section": "Log Infrastructure User Behavior Log Architecture",
+    "text": "Log Infrastructure User Behavior Log Architecture\n\nUser behavior log tracking architecture for real-time decision making\n\n\n\n\n\n\n\nflowchart LR\n  A[\"Client App&lt;br/&gt;Flutter / iOS / AOS\"] --&gt; B[\"Firebase SDK&lt;br/&gt;Behavior log tracking\"] --&gt; C[\"Appsflyer&lt;br/&gt;Attribution\"] --&gt; D[\"Amplitude&lt;br/&gt;Cohort analysis\"]\n\n\n\n\n\n\n\nCollection and integration: Integrated a Firebase-based front-end action-log SDK and established unique user-ID mapping and sync.\nAcquisition-source tracking: Designed Appsflyer parameters for ad-channel attribution and built the Amplitude cohort integration pipeline.\nCore action-log schema:\n\n\napp_open video_view face_swap face_swap_result_view share download like"
+  },
+  {
+    "objectID": "en/projects/project-a.html#eda-identifying-churn-patterns-through-data-exploration",
+    "href": "en/projects/project-a.html#eda-identifying-churn-patterns-through-data-exploration",
+    "title": "Gen-AI B2C App Growth Analytics",
+    "section": "EDA Identifying churn patterns through data exploration",
+    "text": "EDA Identifying churn patterns through data exploration\n\nData-driven hypotheses on churn drivers from multidimensional user-log analysis\n\n\n\n  \n  \n  \n  Wait time (sec)\n  Critical zone (8s)\n  Drop-out\n\n\nDrop-out versus wait time (conceptual diagram)\n\n\nHypotheses\n\nHypothesis 1 — When latency before the AI result exceeds 8 seconds, immediate user drop-out rises exponentially.\n\n\nHypothesis 2 — The higher the image-generation failure rate (face distortion), the faster customers churn, proportionally.\n\n\n💡 SQL result: A user-segment analysis with SQL window functions showed that users who successfully received AI results twice had a 7-day retention rate 3.5x higher than users who had not."
+  },
+  {
+    "objectID": "en/projects/project-a.html#metric-definition-ltv-model-business-metric-optimization",
+    "href": "en/projects/project-a.html#metric-definition-ltv-model-business-metric-optimization",
+    "title": "Gen-AI B2C App Growth Analytics",
+    "section": "Metric Definition & LTV Model Business Metric Optimization",
+    "text": "Metric Definition & LTV Model Business Metric Optimization\n\nFormulating lifetime value (LTV) and the North Star Metric\n\nMetric formulation\n\nProxy LTV: \\(\\text{proxy LTV} = 1 / \\text{GPU cost}\\)\nNorth Star Metric: ‘Number of users who download (or share) a generated AI result at least once within 24 hours of sign-up’\n\nUnit economics growth strategy — Keep the proxy LTV/CAC ratio at 3.0 or higher to stabilize unit economics."
+  },
+  {
+    "objectID": "en/projects/project-a.html#hypothesis-testing-ab-test-scenario-design",
+    "href": "en/projects/project-a.html#hypothesis-testing-ab-test-scenario-design",
+    "title": "Gen-AI B2C App Growth Analytics",
+    "section": "Hypothesis Testing A/B test scenario design",
+    "text": "Hypothesis Testing A/B test scenario design\n\nA practical A/B test scenario and statistical design for hypothesis testing\n\n\n\n\n\n\n\n\nSegment\nContent hypothesis\n\n\n\n\nControl (Group A)\nExisting random content (80% user-uploaded, 20% in-house)\n\n\nTreatment (Group B)\nGenre-curated content (cinematic, Y2K, cartoon, meme, etc.)\n\n\n\n\nPrimary metric: Video conversion rate = share of users exposed to content who successfully generate an AI video (baseline 14.2%)\nAssignment / duration: New users randomly assigned 50:50 with Firebase Remote Config (A/B Testing), branching the content-exposure policy value; 14 days (two weekly cycles). The group is logged as a user property and on action logs for per-group analysis in BigQuery and Amplitude.\nSample size: With significance level \\(\\alpha = 0.05\\), power \\(1-\\beta = 0.80\\), and a minimum detectable effect (MDE) of +6.5 pp (14.2% → 20.7%), at least 532 users per group, i.e. at least 38 users per segment per day over 14 days."
+  },
+  {
+    "objectID": "en/projects/project-a.html#ab-test-execution-statistical-significance",
+    "href": "en/projects/project-a.html#ab-test-execution-statistical-significance",
+    "title": "Gen-AI B2C App Growth Analytics",
+    "section": "A/B Test Execution Statistical significance",
+    "text": "A/B Test Execution Statistical significance\n\nAnalyzing the A/B test and verifying significance at the 95% confidence level\n\nConversion proportions were tested with an independent-samples t-test and a chi-square test (576 users per group, about 41 per day).\n\n\n  \n  \n  \n  \n  A (14.2%)\n  B (19.8%)\n\n\nConversion distributions, control A vs treatment B (conceptual diagram)\n\n\n\n\nTreatment (B) video conversion lift +5.6 pp (about +39%) A 14.2% → B 19.8% (82 → 114 of 576 per group)\n\n\nTest statistic p = 0.012 &lt; 0.05 95% CI of the difference: +1.2 to +9.9 pp\n\n\nConclusion: The difference was verified as statistically significant, not due to chance, and the new service scenario was decided for full rollout. The observed difference (+5.6 pp) is smaller than the design MDE (+6.5 pp), so power is about 71%; the effect size will be re-checked through post-rollout monitoring.\n\nA detailed reproduction is in Report: A/B Test Analysis Note."
+  },
+  {
+    "objectID": "en/projects/project-a.html#tableau-real-time-business-growth-dashboard",
+    "href": "en/projects/project-a.html#tableau-real-time-business-growth-dashboard",
+    "title": "Gen-AI B2C App Growth Analytics",
+    "section": "Tableau Real-time business growth dashboard",
+    "text": "Tableau Real-time business growth dashboard\n\nReal-time Tableau dashboard architecture to speed up business decisions\n\n\nDashboard spec — data sources: Real-time join of refined BigQuery logs and Appsflyer marketing performance tables.\nKey charts\n\nGenerations per session and dwell time by content category [adjustable period]\nFunnel chart by acquisition cohort with drop-off alerts\nRetention versus GPU cost monitoring by marketing channel"
+  },
+  {
+    "objectID": "en/projects/project-a.html#business-impact-quantitative-and-qualitative-results",
+    "href": "en/projects/project-a.html#business-impact-quantitative-and-qualitative-results",
+    "title": "Gen-AI B2C App Growth Analytics",
+    "section": "Business Impact Quantitative and qualitative results",
+    "text": "Business Impact Quantitative and qualitative results\n\nQuantitative impact of data-driven business improvement\n\n\n\nVideo generation conversion lift 24.2% → 39.8% Improved AI video generation conversion\n\n\nRegeneration success rate 18% → 33% Regeneration success among users who reached the generation screen\n\n\nMarketing efficiency ▼ 12% cost CAC reduced by retargeting inefficient ad segments and consolidating channels\n\n\nCommunication culture Data-driven Daily morning hypothesis-testing meetings between business and content teams, based on the Tableau dashboard"
+  },
+  {
+    "objectID": "en/projects.html",
+    "href": "en/projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "en/posts/2026-11-sample-analysis/index.html",
+    "href": "en/posts/2026-11-sample-analysis/index.html",
+    "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
+    "section": "",
+    "text": "NoteBefore you read\n\n\n\nThe design and result figures here match Project A. The per-group conversion counts (A: 82, B: 114 of 576 per group) are values arranged to match the reported conversion rates (14.2%, 19.8%) and p-value (0.012); replace them with values re-aggregated from the real logs if available."
+  },
+  {
+    "objectID": "en/posts/2026-11-sample-analysis/index.html#background-and-objective",
+    "href": "en/posts/2026-11-sample-analysis/index.html#background-and-objective",
+    "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
+    "section": "1. Background and objective",
+    "text": "1. Background and objective\nUA ads brought large inflow, but drop-off surged at the AI generation step right after sign-up. We test the hypothesis that switching content exposure from random content (A) to genre-curated content (B) improves the video conversion rate.\n\nH0: The video conversion rates of the two groups are equal (\\(p_A = p_B\\))\nH1: The video conversion rates differ (\\(p_A \\neq p_B\\)), significance level \\(\\alpha = 0.05\\)"
+  },
+  {
+    "objectID": "en/posts/2026-11-sample-analysis/index.html#diagnosis-where-users-leak",
+    "href": "en/posts/2026-11-sample-analysis/index.html#diagnosis-where-users-leak",
+    "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
+    "section": "2. Diagnosis: where users leak",
+    "text": "2. Diagnosis: where users leak\n\n\n\nShare of installs by step. More than 80% leak out between sign-up (65%) and AI generation (12%)\n\n\nAd click & Install (100%) → Sign Up (65%) → AI Generation (12%) → Share/Download (2.5%). The sign-up → AI generation step loses more than 80% of users and is the largest leak, so the video conversion rate was chosen as the experiment metric."
+  },
+  {
+    "objectID": "en/posts/2026-11-sample-analysis/index.html#experiment-design-and-sample-sizing",
+    "href": "en/posts/2026-11-sample-analysis/index.html#experiment-design-and-sample-sizing",
+    "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
+    "section": "3. Experiment design and sample sizing",
+    "text": "3. Experiment design and sample sizing\n\n\n\n\n\n\n\nItem\nDetail\n\n\n\n\nControl (Group A)\nExisting random content (80% user-uploaded, 20% in-house)\n\n\nTreatment (Group B)\nGenre-curated content (cinematic, Y2K, cartoon, meme, etc.)\n\n\nPrimary metric\nVideo conversion rate (users who successfully generate an AI video among exposed users), baseline 14.2%\n\n\nAssignment / duration\nNew users randomly assigned 50:50 with Firebase Remote Config (A/B Testing), 14 days\n\n\nSignificance / power\n\\(\\alpha = 0.05\\) / \\(1-\\beta = 0.80\\)\n\n\nMinimum detectable effect (MDE)\n+6.5 pp (14.2% → 20.7%)\n\n\n\nHow groups are assigned: Remote Config serves a different content-exposure policy parameter per group. The group is recorded as a user property on the exposure event, logged when the app activates the value. These logs flow from Firebase into BigQuery and Amplitude, where per-group funnels and conversion are aggregated. Firebase randomizes per app installation (instance), so users who reinstall or use several devices may land in different groups and need to be checked in analysis.\nThe required sample size per group for comparing two proportions is:\n\\[n = \\frac{(z_{1-\\alpha/2}+z_{1-\\beta})^2\\,[p_1(1-p_1)+p_2(1-p_2)]}{(p_2-p_1)^2}\\]\nfrom scipy import stats\n\ndef n_per_group(p1, p2, alpha=0.05, power=0.80):\n    k = (stats.norm.ppf(1 - alpha/2) + stats.norm.ppf(power)) ** 2\n    return k * (p1*(1-p1) + p2*(1-p2)) / (p2 - p1) ** 2\n\nn_per_group(0.142, 0.142 + 0.065)   # 531.3 -&gt; at least 532 per group\nAt least 532 per group, or 38 per segment per day over 14 days. The actual sample was 576 per group (about 41 per day), meeting the design requirement.\n\n\n\nThe larger the difference to detect, the fewer samples are needed"
+  },
+  {
+    "objectID": "en/posts/2026-11-sample-analysis/index.html#test-results",
+    "href": "en/posts/2026-11-sample-analysis/index.html#test-results",
+    "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
+    "section": "4. Test results",
+    "text": "4. Test results\n\n\n\nItem\nControl A\nTreatment B\n\n\n\n\nSample size\n576\n576\n\n\nSuccessful video generations\n82\n114\n\n\nVideo conversion rate\n14.2%\n19.8%\n\n\nDifference\n+5.6 pp (about +39% relative)\n\n\n\n\nimport numpy as np\nfrom scipy import stats\n\nn, a, b = 576, 82, 114\nchi2, p_chi, *_ = stats.chi2_contingency([[a, n-a], [b, n-b]], correction=False)\nt, p_t = stats.ttest_ind(np.r_[np.ones(b), np.zeros(n-b)],\n                         np.r_[np.ones(a), np.zeros(n-a)])\n\n\n\nTest\nStatistic\np-value\n\n\n\n\nChi-square test\nχ² = 6.30 (df=1)\n0.012\n\n\nIndependent-samples t-test\nt = 2.51 (df=1150)\n0.012\n\n\n\nThe 95% confidence interval of the difference is +1.2 to +9.9 pp, which excludes 0.\n\n\n\nA/B video conversion with 95% confidence intervals\n\n\nConclusion: Since p = 0.012 &lt; 0.05, we reject H0 and decided to roll out genre-curated content."
+  },
+  {
+    "objectID": "en/posts/2026-11-sample-analysis/index.html#key-takeaways",
+    "href": "en/posts/2026-11-sample-analysis/index.html#key-takeaways",
+    "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
+    "section": "5. Key takeaways",
+    "text": "5. Key takeaways\n\nInsight 1: Video conversion for genre-curated content (B) is 19.8%, 5.6 pp (about +39% relative) above control (14.2%), and significant at the 5% level (p = 0.012).\nInsight 2: The observed difference (+5.6 pp) is smaller than the design MDE (+6.5 pp), so power on this sample is about 71%. The direction is reliable, but the confidence interval of the effect size (+1.2 to +9.9 pp) is wide, so it should be re-estimated through post-rollout monitoring.\nNext actions: Break down the effect by genre (cinematic, Y2K, etc.), and verify 7-day retention and proxy LTV/CAC ≥ 3.0 including GPU cost."
+  },
+  {
+    "objectID": "en/posts/2026-11-sample-analysis/index.html#limitations",
+    "href": "en/posts/2026-11-sample-analysis/index.html#limitations",
+    "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
+    "section": "6. Limitations",
+    "text": "6. Limitations\n\nAssignment is per installation, so users who reinstall or use several devices may switch groups; check with the user_id mapping in the logs.\nThis is a single-period, single-metric test, so novelty effects are to be checked through post-rollout monitoring.\nSubgroup effects by genre need multiple-comparison correction and were not covered in this test."
+  },
+  {
+    "objectID": "en/experience.html",
+    "href": "en/experience.html",
+    "title": "Experience",
+    "section": "",
+    "text": "A career that runs from data analytics through data curation and MLOps to statistical predictive modeling, and on to leading teams."
+  },
+  {
+    "objectID": "en/experience.html#klleon",
+    "href": "en/experience.html#klleon",
+    "title": "Experience",
+    "section": "Klleon R&D — Data Part Lead",
+    "text": "Klleon R&D — Data Part Lead\nMar 2021 – Nov 2023 (2 yrs 9 mos)\nBuilt and led the MLOps team and data part for an effective research environment\n\nDeveloped Korean TTS technology based on Data-Centric AI (DCAI)\nBuilt and optimized a computer-vision data curation system covering data collection, processing, and screening\nSupported engineering with Kubeflow and DVC\n\n→ Details: Project B. Video Data Curation and MLOps PoC\nSupported data-driven decisions for a Gen-AI based B2C service\n\nAnalyzed users with Firebase, Appsflyer, Amplitude, Tableau, and statistical modeling\nLed the beta launch (App Store, Google Play)\nLed digital marketing (Meta, Google Ads)\n\n→ Details: Project A. Gen-AI B2C App Growth Analytics"
+  },
+  {
+    "objectID": "en/experience.html#freewheelin",
+    "href": "en/experience.html#freewheelin",
+    "title": "Experience",
+    "section": "freewheelin — Data Analyst",
+    "text": "freewheelin — Data Analyst\nApr 2019 – Jul 2020 (1 yr 4 mos) · Gwanak-gu, Seoul\nBuilt a dashboard for promotion performance analysis\n\nAnalyzed the correlation between promotions and user properties (price, free-trial period)\nAnalyzed retention trends of user groups by promotion\nDefined and calculated KPIs to measure performance\n\nReorganized the data management system\n\nCentralized data in BigQuery\nReduced inefficient storage cost\nOversaw data quality"
+  },
+  {
+    "objectID": "en/experience.html#epopcon",
+    "href": "en/experience.html#epopcon",
+    "title": "Experience",
+    "section": "Epopcon — Data Scientist",
+    "text": "Epopcon — Data Scientist\nDec 2017 – Mar 2019 (1 yr 4 mos)\nBuilt stochastic scheduling models that predict when product stock levels change (Poisson process)\n\nImputed missing inventory values and handled outliers (clustering, anomaly detection)\n\n→ Details: Project C. Scheduling Poisson Machine for Adaptive Crawling\nCreated standardized keys for the same product listed across multiple shopping malls\n\nPreprocessed image and natural-language data, then applied the MinHash-LSH algorithm\n\nAnalyzed hidden customer behavior patterns\n\nUsed geographical data\nCleaned store addresses and categories using open data\nVisualized the distribution of target features and compared it with a control group"
+  },
+  {
+    "objectID": "en/experience.html#army",
+    "href": "en/experience.html#army",
+    "title": "Experience",
+    "section": "Republic of Korea Army — Operations Assistant",
+    "text": "Republic of Korea Army — Operations Assistant\n2015 – 2017 (2 yrs)"
+  },
+  {
+    "objectID": "en/experience.html#education",
+    "href": "en/experience.html#education",
+    "title": "Experience",
+    "section": "Education",
+    "text": "Education\nYonsei University — Bachelor’s degree, Applied Statistics and Economics"
+  },
+  {
+    "objectID": "en/experience.html#certifications",
+    "href": "en/experience.html#certifications",
+    "title": "Experience",
+    "section": "Certifications",
+    "text": "Certifications\n\nTensorFlow Developer Professional Certificate\nUsing Machine Learning in Trading and Finance\nFinancial Engineering and Risk Management Part I"
+  },
+  {
+    "objectID": "en/experience.html#core-skills",
+    "href": "en/experience.html#core-skills",
+    "title": "Experience",
+    "section": "Core Skills",
+    "text": "Core Skills\nMathematics · Problem Management · Analytical Skills"
+  },
+  {
+    "objectID": "en/experience.html#links",
+    "href": "en/experience.html#links",
+    "title": "Experience",
+    "section": "Links",
+    "text": "Links\n\nLinkedIn\nMedium Blog"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "",
@@ -719,5 +404,383 @@
     "title": "",
     "section": "소개",
     "text": "소개\n스타트업 데이터 분석가, 데이터 사이언티스트부터 AI 데이터 파트 리드까지 경험하며, 데이터 기반 의사결정과 재현 가능한 분석·ML 파이프라인을 구축해 왔습니다. 유저 그로스 분석, 비전 모델 학습 데이터 큐레이션(MLOps), 통계·ML 하이브리드 예측 모델링을 다룹니다.\n경력 보기 · 프로젝트 보기\n\n주요 기술 스택\n\n언어 & 데이터: Python, SQL (DuckDB, PostgreSQL, MySQL, BigQuery)\n분석 & 시각화: Pandas, NumPy, SciPy, 통계·시계열 분석, Tableau\n그로스 & 로그 분석: Firebase, Appsflyer, Amplitude, A/B 테스트 설계\nML & MLOps: Kubeflow, DVC, MLflow, OpenCV, Librosa\n워크플로우 & 인프라: Git, GitHub Actions, Docker, AWS, Quarto\n\n\n\n학력 & 자격\n\n연세대학교 응용통계학·경제학 학사\nTensorFlow Developer Professional Certificate"
+  },
+  {
+    "objectID": "posts/sample/index.html",
+    "href": "posts/sample/index.html",
+    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
+    "section": "",
+    "text": "노트읽기 전 안내\n\n\n\n이 글의 설계·결과 수치는 Project A와 동일합니다. 군별 전환 수(A 82명, B 114명 / 군당 576명)는 보고된 전환율(14.2%, 19.8%)과 p-value(0.012)에 맞춰 정리한 값이므로, 실제 로그로 재집계한 값이 있다면 그 값으로 교체해야 합니다."
+  },
+  {
+    "objectID": "posts/sample/index.html#분석-배경-및-목적",
+    "href": "posts/sample/index.html#분석-배경-및-목적",
+    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
+    "section": "1. 분석 배경 및 목적",
+    "text": "1. 분석 배경 및 목적\nUA 광고로 대규모 유입이 발생했지만 가입 후 AI 생성 체험 단계에서 이탈이 급증했습니다. 콘텐츠 노출 방식을 랜덤 콘텐츠(A) → 장르 기획 콘텐츠(B) 로 바꾸면 영상 변환율이 개선된다는 가설을 검증합니다.\n\nH0: 두 군의 영상 변환율은 같다 (\\(p_A = p_B\\))\nH1: 두 군의 영상 변환율은 다르다 (\\(p_A \\neq p_B\\)), 유의수준 \\(\\alpha = 0.05\\)"
+  },
+  {
+    "objectID": "posts/sample/index.html#문제-진단-어디서-새는가",
+    "href": "posts/sample/index.html#문제-진단-어디서-새는가",
+    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
+    "section": "2. 문제 진단: 어디서 새는가",
+    "text": "2. 문제 진단: 어디서 새는가\n\n\n\n설치 대비 단계별 비율. 가입(65%) 대비 AI 생성 시도(12%) 구간에서 약 80% 이상 누수\n\n\nAD click & Install(100%) → Sign Up(65%) → AI Generation(12%) → Share/Download(2.5%) 중 가입 → AI 생성 시도 구간에서 약 80% 이상이 이탈합니다. 이 구간이 가장 큰 누수이므로 실험의 대상 지표를 영상 변환율로 정했습니다."
+  },
+  {
+    "objectID": "posts/sample/index.html#실험-설계와-표본-산정",
+    "href": "posts/sample/index.html#실험-설계와-표본-산정",
+    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
+    "section": "3. 실험 설계와 표본 산정",
+    "text": "3. 실험 설계와 표본 산정\n\n\n\n\n\n\n\n구분\n내용\n\n\n\n\n대조군 (Group A)\n기존 랜덤 콘텐츠 (80% 개인 업로드, 20% 내부)\n\n\n실험군 (Group B)\n장르 기획 콘텐츠 (시네마틱, Y2K, 만화, 병맛 등)\n\n\n주지표\n영상 변환율 (노출 유저 중 AI 영상 생성 성공 비율), 기준 14.2%\n\n\n배정 / 기간\nFirebase Remote Config(A/B Testing)로 신규 유저 무작위 50:50, 14일\n\n\n유의수준 / 검정력\n\\(\\alpha = 0.05\\) / \\(1-\\beta = 0.80\\)\n\n\n최소 검출 효과 (MDE)\n+6.5%p (14.2% → 20.7%)\n\n\n\n군 배정 방식: Remote Config 파라미터(콘텐츠 노출 정책)를 군별로 다르게 내려주고, 앱이 값을 적용(activate)한 시점의 노출 이벤트에 군 정보를 user property로 남깁니다. 이 로그가 Firebase → BigQuery / Amplitude로 연동되어 군별 퍼널과 변환율을 집계합니다. Firebase의 무작위 배정은 앱 설치(instance) 단위이므로, 재설치나 다기기 사용 유저는 다른 군에 배정될 수 있어 분석 시 확인이 필요합니다.\n두 비율 비교의 군당 필요 표본 수는 다음과 같습니다.\n\\[n = \\frac{(z_{1-\\alpha/2}+z_{1-\\beta})^2\\,[p_1(1-p_1)+p_2(1-p_2)]}{(p_2-p_1)^2}\\]\nfrom scipy import stats\n\ndef n_per_group(p1, p2, alpha=0.05, power=0.80):\n    k = (stats.norm.ppf(1 - alpha/2) + stats.norm.ppf(power)) ** 2\n    return k * (p1*(1-p1) + p2*(1-p2)) / (p2 - p1) ** 2\n\nn_per_group(0.142, 0.142 + 0.065)   # 531.3 -&gt; 군당 최소 532명\n군당 최소 532명, 14일 기준 일일 세그먼트당 최소 38명입니다. 실제 수집된 표본은 군당 576명(일일 약 41명)으로 설계 기준을 충족했습니다.\n\n\n\n검출하려는 차이가 클수록 필요 표본 수는 급격히 줄어든다"
+  },
+  {
+    "objectID": "posts/sample/index.html#검정-결과",
+    "href": "posts/sample/index.html#검정-결과",
+    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
+    "section": "4. 검정 결과",
+    "text": "4. 검정 결과\n\n\n\n항목\n대조군 A\n실험군 B\n\n\n\n\n표본 수\n576\n576\n\n\n영상 생성 성공\n82\n114\n\n\n영상 변환율\n14.2%\n19.8%\n\n\n차이\n+5.6%p (상대 약 +39%)\n\n\n\n\nimport numpy as np\nfrom scipy import stats\n\nn, a, b = 576, 82, 114\nchi2, p_chi, *_ = stats.chi2_contingency([[a, n-a], [b, n-b]], correction=False)\nt, p_t = stats.ttest_ind(np.r_[np.ones(b), np.zeros(n-b)],\n                         np.r_[np.ones(a), np.zeros(n-a)])\n\n\n\n검정\n통계량\np-value\n\n\n\n\n카이제곱 검정\nχ² = 6.30 (df=1)\n0.012\n\n\n독립표본 t-검정\nt = 2.51 (df=1150)\n0.012\n\n\n\n차이의 95% 신뢰구간은 +1.2 ~ +9.9%p로 0을 포함하지 않습니다.\n\n\n\nA/B 영상 변환율과 95% 신뢰구간\n\n\n결론: p-value 0.012 &lt; 0.05이므로 H0를 기각합니다. 장르 기획 콘텐츠를 정식 롤아웃하기로 결정했습니다."
+  },
+  {
+    "objectID": "posts/sample/index.html#핵심-요약",
+    "href": "posts/sample/index.html#핵심-요약",
+    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
+    "section": "5. 핵심 요약",
+    "text": "5. 핵심 요약\n\n인사이트 1: 장르 기획 콘텐츠(B)의 영상 변환율은 19.8%로 대조군(14.2%)보다 5.6%p(상대 약 +39%) 높고, 5% 유의수준에서 유의합니다 (p = 0.012).\n인사이트 2: 관측 차이(+5.6%p)는 설계 MDE(+6.5%p)보다 작아 이 표본에서의 검정력은 약 71%입니다. 방향은 신뢰할 수 있으나 효과 크기의 신뢰구간(+1.2 ~ +9.9%p)이 넓어, 롤아웃 후 모니터링으로 재추정이 필요합니다.\n후속 액션: 장르별(시네마틱, Y2K 등) 효과 분해, 7-day 잔존율 및 GPU cost를 함께 보는 proxy LTV/CAC ≥ 3.0 검증."
+  },
+  {
+    "objectID": "posts/sample/index.html#한계",
+    "href": "posts/sample/index.html#한계",
+    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
+    "section": "6. 한계",
+    "text": "6. 한계\n\n배정이 설치 단위이므로 재설치·다기기 유저의 군 이탈 가능성은 로그의 user_id 매핑으로 점검해야 합니다.\n단일 기간·단일 지표 검정이므로 신기성 효과(novelty effect)는 롤아웃 후 모니터링으로 확인합니다.\n장르별 하위 그룹 효과는 다중 비교 보정이 필요해 이번 검정에서 다루지 않았습니다."
+  },
+  {
+    "objectID": "experience.html",
+    "href": "experience.html",
+    "title": "Experience",
+    "section": "",
+    "text": "데이터 분석, 데이터 큐레이션·MLOps, 통계 기반 예측 모델링을 거쳐 팀을 이끄는 역할까지 이어온 경력입니다."
+  },
+  {
+    "objectID": "experience.html#klleon",
+    "href": "experience.html#klleon",
+    "title": "Experience",
+    "section": "Klleon R&D — 데이터 파트 리드",
+    "text": "Klleon R&D — 데이터 파트 리드\n2021.03 ~ 2023.11 (2년 9개월)\n연구 환경 효율화를 위한 MLOps 팀·데이터 파트 구축 및 리딩\n\n데이터 중심 AI(Data-Centric AI, DCAI) 접근으로 한국어 TTS 기술 개발\n데이터 수집, 가공, 검수까지 아우르는 컴퓨터 비전 맞춤형 데이터 큐레이션 시스템 구축 및 최적화\nKubeflow, DVC를 활용해 엔지니어링 지원\n\n→ 상세: Project B. 영상 데이터 큐레이션 및 MLOps PoC\n생성형 AI 기반 B2C 서비스의 데이터 의사결정 지원\n\nFirebase, Appsflyer, Amplitude, Tableau, 통계 모델링을 활용한 유저 분석\n앱스토어·구글 플레이 베타 서비스 런칭 리딩\n디지털 마케팅(Meta, Google Ads) 리딩\n\n→ 상세: Project A. Gen-AI B2C 앱 서비스 그로스 분석"
+  },
+  {
+    "objectID": "experience.html#freewheelin",
+    "href": "experience.html#freewheelin",
+    "title": "Experience",
+    "section": "freewheelin — 데이터 분석가",
+    "text": "freewheelin — 데이터 분석가\n2019.04 ~ 2020.07 (1년 4개월) · 서울 관악구\n프로모션 성과 분석 대시보드 제작\n\n프로모션과 유저 속성(가격, 무료 체험 기간) 간 상관관계 분석\n프로모션별 유저 그룹의 리텐션 추이 분석\n성과 측정을 위한 KPI 정의 및 산출\n\n데이터 관리 체계 재정비\n\nBigQuery로 데이터 중앙화\n비효율적인 저장 비용 절감\n데이터 품질 관리 총괄"
+  },
+  {
+    "objectID": "experience.html#epopcon",
+    "href": "experience.html#epopcon",
+    "title": "Experience",
+    "section": "이팝콘 (Epopcon) — 데이터 사이언티스트",
+    "text": "이팝콘 (Epopcon) — 데이터 사이언티스트\n2017.12 ~ 2019.03 (1년 4개월)\n상품 재고량 변화 시점을 예측하는 확률적 스케줄링 모델 개발 (포아송 과정)\n\n재고량 결측치 보정 및 이상치 처리 (클러스터링, 이상 탐지)\n\n→ 상세: Project C. 탄력적 수집 관리를 위한 스케줄링 포아송 머신\n여러 쇼핑몰에 흩어진 동일 상품의 표준 키 생성\n\n이미지와 자연어 데이터를 전처리한 뒤 minhash-LSH 알고리즘 적용\n\n숨은 고객 행동 패턴 분석\n\n지리 데이터 활용\n공공 데이터를 활용해 상점 주소와 업종 카테고리 정제\n관심 대상 특성의 분포를 시각화하고 대조군과 비교"
+  },
+  {
+    "objectID": "experience.html#army",
+    "href": "experience.html#army",
+    "title": "Experience",
+    "section": "대한민국 육군 — 작전 보조",
+    "text": "대한민국 육군 — 작전 보조\n2015 ~ 2017 (2년)"
+  },
+  {
+    "objectID": "experience.html#학력",
+    "href": "experience.html#학력",
+    "title": "Experience",
+    "section": "학력",
+    "text": "학력\n연세대학교 — 학사, 응용통계학 · 경제학"
+  },
+  {
+    "objectID": "experience.html#자격증",
+    "href": "experience.html#자격증",
+    "title": "Experience",
+    "section": "자격증",
+    "text": "자격증\n\nTensorFlow Developer Professional Certificate\nUsing Machine Learning in Trading and Finance\nFinancial Engineering and Risk Management Part I"
+  },
+  {
+    "objectID": "experience.html#보유-기술",
+    "href": "experience.html#보유-기술",
+    "title": "Experience",
+    "section": "보유 기술",
+    "text": "보유 기술\n수학 · 문제 관리 · 분석 능력"
+  },
+  {
+    "objectID": "experience.html#링크",
+    "href": "experience.html#링크",
+    "title": "Experience",
+    "section": "링크",
+    "text": "링크\n\nLinkedIn\nMedium Blog"
+  },
+  {
+    "objectID": "posts/2026-11-sample-analysis/index.html",
+    "href": "posts/2026-11-sample-analysis/index.html",
+    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
+    "section": "",
+    "text": "노트읽기 전 안내\n\n\n\n이 글의 설계·결과 수치는 Project A와 동일합니다. 군별 전환 수(A 82명, B 114명 / 군당 576명)는 보고된 전환율(14.2%, 19.8%)과 p-value(0.012)에 맞춰 정리한 값이므로, 실제 로그로 재집계한 값이 있다면 그 값으로 교체해야 합니다."
+  },
+  {
+    "objectID": "posts/2026-11-sample-analysis/index.html#분석-배경-및-목적",
+    "href": "posts/2026-11-sample-analysis/index.html#분석-배경-및-목적",
+    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
+    "section": "1. 분석 배경 및 목적",
+    "text": "1. 분석 배경 및 목적\nUA 광고로 대규모 유입이 발생했지만 가입 후 AI 생성 체험 단계에서 이탈이 급증했습니다. 콘텐츠 노출 방식을 랜덤 콘텐츠(A) → 장르 기획 콘텐츠(B) 로 바꾸면 영상 변환율이 개선된다는 가설을 검증합니다.\n\nH0: 두 군의 영상 변환율은 같다 (\\(p_A = p_B\\))\nH1: 두 군의 영상 변환율은 다르다 (\\(p_A \\neq p_B\\)), 유의수준 \\(\\alpha = 0.05\\)"
+  },
+  {
+    "objectID": "posts/2026-11-sample-analysis/index.html#문제-진단-어디서-새는가",
+    "href": "posts/2026-11-sample-analysis/index.html#문제-진단-어디서-새는가",
+    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
+    "section": "2. 문제 진단: 어디서 새는가",
+    "text": "2. 문제 진단: 어디서 새는가\n\n\n\n설치 대비 단계별 비율. 가입(65%) 대비 AI 생성 시도(12%) 구간에서 약 80% 이상 누수\n\n\nAD click & Install(100%) → Sign Up(65%) → AI Generation(12%) → Share/Download(2.5%) 중 가입 → AI 생성 시도 구간에서 약 80% 이상이 이탈합니다. 이 구간이 가장 큰 누수이므로 실험의 대상 지표를 영상 변환율로 정했습니다."
+  },
+  {
+    "objectID": "posts/2026-11-sample-analysis/index.html#실험-설계와-표본-산정",
+    "href": "posts/2026-11-sample-analysis/index.html#실험-설계와-표본-산정",
+    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
+    "section": "3. 실험 설계와 표본 산정",
+    "text": "3. 실험 설계와 표본 산정\n\n\n\n\n\n\n\n구분\n내용\n\n\n\n\n대조군 (Group A)\n기존 랜덤 콘텐츠 (80% 개인 업로드, 20% 내부)\n\n\n실험군 (Group B)\n장르 기획 콘텐츠 (시네마틱, Y2K, 만화, 병맛 등)\n\n\n주지표\n영상 변환율 (노출 유저 중 AI 영상 생성 성공 비율), 기준 14.2%\n\n\n배정 / 기간\nFirebase Remote Config(A/B Testing)로 신규 유저 무작위 50:50, 14일\n\n\n유의수준 / 검정력\n\\(\\alpha = 0.05\\) / \\(1-\\beta = 0.80\\)\n\n\n최소 검출 효과 (MDE)\n+6.5%p (14.2% → 20.7%)\n\n\n\n군 배정 방식: Remote Config 파라미터(콘텐츠 노출 정책)를 군별로 다르게 내려주고, 앱이 값을 적용(activate)한 시점의 노출 이벤트에 군 정보를 user property로 남깁니다. 이 로그가 Firebase → BigQuery / Amplitude로 연동되어 군별 퍼널과 변환율을 집계합니다. Firebase의 무작위 배정은 앱 설치(instance) 단위이므로, 재설치나 다기기 사용 유저는 다른 군에 배정될 수 있어 분석 시 확인이 필요합니다.\n두 비율 비교의 군당 필요 표본 수는 다음과 같습니다.\n\\[n = \\frac{(z_{1-\\alpha/2}+z_{1-\\beta})^2\\,[p_1(1-p_1)+p_2(1-p_2)]}{(p_2-p_1)^2}\\]\nfrom scipy import stats\n\ndef n_per_group(p1, p2, alpha=0.05, power=0.80):\n    k = (stats.norm.ppf(1 - alpha/2) + stats.norm.ppf(power)) ** 2\n    return k * (p1*(1-p1) + p2*(1-p2)) / (p2 - p1) ** 2\n\nn_per_group(0.142, 0.142 + 0.065)   # 531.3 -&gt; 군당 최소 532명\n군당 최소 532명, 14일 기준 일일 세그먼트당 최소 38명입니다. 실제 수집된 표본은 군당 576명(일일 약 41명)으로 설계 기준을 충족했습니다.\n\n\n\n검출하려는 차이가 클수록 필요 표본 수는 급격히 줄어든다"
+  },
+  {
+    "objectID": "posts/2026-11-sample-analysis/index.html#검정-결과",
+    "href": "posts/2026-11-sample-analysis/index.html#검정-결과",
+    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
+    "section": "4. 검정 결과",
+    "text": "4. 검정 결과\n\n\n\n항목\n대조군 A\n실험군 B\n\n\n\n\n표본 수\n576\n576\n\n\n영상 생성 성공\n82\n114\n\n\n영상 변환율\n14.2%\n19.8%\n\n\n차이\n+5.6%p (상대 약 +39%)\n\n\n\n\nimport numpy as np\nfrom scipy import stats\n\nn, a, b = 576, 82, 114\nchi2, p_chi, *_ = stats.chi2_contingency([[a, n-a], [b, n-b]], correction=False)\nt, p_t = stats.ttest_ind(np.r_[np.ones(b), np.zeros(n-b)],\n                         np.r_[np.ones(a), np.zeros(n-a)])\n\n\n\n검정\n통계량\np-value\n\n\n\n\n카이제곱 검정\nχ² = 6.30 (df=1)\n0.012\n\n\n독립표본 t-검정\nt = 2.51 (df=1150)\n0.012\n\n\n\n차이의 95% 신뢰구간은 +1.2 ~ +9.9%p로 0을 포함하지 않습니다.\n\n\n\nA/B 영상 변환율과 95% 신뢰구간\n\n\n결론: p-value 0.012 &lt; 0.05이므로 H0를 기각합니다. 장르 기획 콘텐츠를 정식 롤아웃하기로 결정했습니다."
+  },
+  {
+    "objectID": "posts/2026-11-sample-analysis/index.html#핵심-요약",
+    "href": "posts/2026-11-sample-analysis/index.html#핵심-요약",
+    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
+    "section": "5. 핵심 요약",
+    "text": "5. 핵심 요약\n\n인사이트 1: 장르 기획 콘텐츠(B)의 영상 변환율은 19.8%로 대조군(14.2%)보다 5.6%p(상대 약 +39%) 높고, 5% 유의수준에서 유의합니다 (p = 0.012).\n인사이트 2: 관측 차이(+5.6%p)는 설계 MDE(+6.5%p)보다 작아 이 표본에서의 검정력은 약 71%입니다. 방향은 신뢰할 수 있으나 효과 크기의 신뢰구간(+1.2 ~ +9.9%p)이 넓어, 롤아웃 후 모니터링으로 재추정이 필요합니다.\n후속 액션: 장르별(시네마틱, Y2K 등) 효과 분해, 7-day 잔존율 및 GPU cost를 함께 보는 proxy LTV/CAC ≥ 3.0 검증."
+  },
+  {
+    "objectID": "posts/2026-11-sample-analysis/index.html#한계",
+    "href": "posts/2026-11-sample-analysis/index.html#한계",
+    "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
+    "section": "6. 한계",
+    "text": "6. 한계\n\n배정이 설치 단위이므로 재설치·다기기 유저의 군 이탈 가능성은 로그의 user_id 매핑으로 점검해야 합니다.\n단일 기간·단일 지표 검정이므로 신기성 효과(novelty effect)는 롤아웃 후 모니터링으로 확인합니다.\n장르별 하위 그룹 효과는 다중 비교 보정이 필요해 이번 검정에서 다루지 않았습니다."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Gen-AI B2C App Growth Analytics\n\n\nAn end-to-end case study of real business growth strategy and data validation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGen-AI B2C 앱 서비스 그로스 분석\n\n\n실제 비즈니스 성장 전략 설계와 데이터 검증의 엔드투엔드(End-to-End) 케이스 스터디\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nScheduling Poisson Machine for Adaptive Crawling\n\n\nIntelligent data acquisition (crawl period optimization) combining statistical page-change detection and machine learning\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVideo Data Curation and MLOps PoC\n\n\nML pipeline engineering for a vision model that improves infrastructure efficiency and data quality\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n영상 데이터 큐레이션 및 MLOps PoC\n\n\n인프라 리소스 효율화 및 데이터 품질 강화를 구현한 비전 모델 ML Pipeline 엔지니어링\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n탄력적 수집 관리를 위한 스케줄링 포아송 머신\n\n\n통계적 웹페이지 변화 감지 및 기계학습 모델을 결합한 지능형 데이터 획득(Crawl Period Optimization)\n\n\n\n\n\n\n\n일치 없음"
+  },
+  {
+    "objectID": "en/posts/sample/index.html",
+    "href": "en/posts/sample/index.html",
+    "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
+    "section": "",
+    "text": "NoteBefore you read\n\n\n\nThe design and result figures here match Project A. The per-group conversion counts (A: 82, B: 114 of 576 per group) are values arranged to match the reported conversion rates (14.2%, 19.8%) and p-value (0.012); replace them with values re-aggregated from the real logs if available."
+  },
+  {
+    "objectID": "en/posts/sample/index.html#background-and-objective",
+    "href": "en/posts/sample/index.html#background-and-objective",
+    "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
+    "section": "1. Background and objective",
+    "text": "1. Background and objective\nUA ads brought large inflow, but drop-off surged at the AI generation step right after sign-up. We test the hypothesis that switching content exposure from random content (A) to genre-curated content (B) improves the video conversion rate.\n\nH0: The video conversion rates of the two groups are equal (\\(p_A = p_B\\))\nH1: The video conversion rates differ (\\(p_A \\neq p_B\\)), significance level \\(\\alpha = 0.05\\)"
+  },
+  {
+    "objectID": "en/posts/sample/index.html#diagnosis-where-users-leak",
+    "href": "en/posts/sample/index.html#diagnosis-where-users-leak",
+    "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
+    "section": "2. Diagnosis: where users leak",
+    "text": "2. Diagnosis: where users leak\n\n\n\nShare of installs by step. More than 80% leak out between sign-up (65%) and AI generation (12%)\n\n\nAd click & Install (100%) → Sign Up (65%) → AI Generation (12%) → Share/Download (2.5%). The sign-up → AI generation step loses more than 80% of users and is the largest leak, so the video conversion rate was chosen as the experiment metric."
+  },
+  {
+    "objectID": "en/posts/sample/index.html#experiment-design-and-sample-sizing",
+    "href": "en/posts/sample/index.html#experiment-design-and-sample-sizing",
+    "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
+    "section": "3. Experiment design and sample sizing",
+    "text": "3. Experiment design and sample sizing\n\n\n\n\n\n\n\nItem\nDetail\n\n\n\n\nControl (Group A)\nExisting random content (80% user-uploaded, 20% in-house)\n\n\nTreatment (Group B)\nGenre-curated content (cinematic, Y2K, cartoon, meme, etc.)\n\n\nPrimary metric\nVideo conversion rate (users who successfully generate an AI video among exposed users), baseline 14.2%\n\n\nAssignment / duration\nNew users randomly assigned 50:50 with Firebase Remote Config (A/B Testing), 14 days\n\n\nSignificance / power\n\\(\\alpha = 0.05\\) / \\(1-\\beta = 0.80\\)\n\n\nMinimum detectable effect (MDE)\n+6.5 pp (14.2% → 20.7%)\n\n\n\nHow groups are assigned: Remote Config serves a different content-exposure policy parameter per group. The group is recorded as a user property on the exposure event, logged when the app activates the value. These logs flow from Firebase into BigQuery and Amplitude, where per-group funnels and conversion are aggregated. Firebase randomizes per app installation (instance), so users who reinstall or use several devices may land in different groups and need to be checked in analysis.\nThe required sample size per group for comparing two proportions is:\n\\[n = \\frac{(z_{1-\\alpha/2}+z_{1-\\beta})^2\\,[p_1(1-p_1)+p_2(1-p_2)]}{(p_2-p_1)^2}\\]\nfrom scipy import stats\n\ndef n_per_group(p1, p2, alpha=0.05, power=0.80):\n    k = (stats.norm.ppf(1 - alpha/2) + stats.norm.ppf(power)) ** 2\n    return k * (p1*(1-p1) + p2*(1-p2)) / (p2 - p1) ** 2\n\nn_per_group(0.142, 0.142 + 0.065)   # 531.3 -&gt; at least 532 per group\nAt least 532 per group, or 38 per segment per day over 14 days. The actual sample was 576 per group (about 41 per day), meeting the design requirement.\n\n\n\nThe larger the difference to detect, the fewer samples are needed"
+  },
+  {
+    "objectID": "en/posts/sample/index.html#test-results",
+    "href": "en/posts/sample/index.html#test-results",
+    "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
+    "section": "4. Test results",
+    "text": "4. Test results\n\n\n\nItem\nControl A\nTreatment B\n\n\n\n\nSample size\n576\n576\n\n\nSuccessful video generations\n82\n114\n\n\nVideo conversion rate\n14.2%\n19.8%\n\n\nDifference\n+5.6 pp (about +39% relative)\n\n\n\n\nimport numpy as np\nfrom scipy import stats\n\nn, a, b = 576, 82, 114\nchi2, p_chi, *_ = stats.chi2_contingency([[a, n-a], [b, n-b]], correction=False)\nt, p_t = stats.ttest_ind(np.r_[np.ones(b), np.zeros(n-b)],\n                         np.r_[np.ones(a), np.zeros(n-a)])\n\n\n\nTest\nStatistic\np-value\n\n\n\n\nChi-square test\nχ² = 6.30 (df=1)\n0.012\n\n\nIndependent-samples t-test\nt = 2.51 (df=1150)\n0.012\n\n\n\nThe 95% confidence interval of the difference is +1.2 to +9.9 pp, which excludes 0.\n\n\n\nA/B video conversion with 95% confidence intervals\n\n\nConclusion: Since p = 0.012 &lt; 0.05, we reject H0 and decided to roll out genre-curated content."
+  },
+  {
+    "objectID": "en/posts/sample/index.html#key-takeaways",
+    "href": "en/posts/sample/index.html#key-takeaways",
+    "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
+    "section": "5. Key takeaways",
+    "text": "5. Key takeaways\n\nInsight 1: Video conversion for genre-curated content (B) is 19.8%, 5.6 pp (about +39% relative) above control (14.2%), and significant at the 5% level (p = 0.012).\nInsight 2: The observed difference (+5.6 pp) is smaller than the design MDE (+6.5 pp), so power on this sample is about 71%. The direction is reliable, but the confidence interval of the effect size (+1.2 to +9.9 pp) is wide, so it should be re-estimated through post-rollout monitoring.\nNext actions: Break down the effect by genre (cinematic, Y2K, etc.), and verify 7-day retention and proxy LTV/CAC ≥ 3.0 including GPU cost."
+  },
+  {
+    "objectID": "en/posts/sample/index.html#limitations",
+    "href": "en/posts/sample/index.html#limitations",
+    "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
+    "section": "6. Limitations",
+    "text": "6. Limitations\n\nAssignment is per installation, so users who reinstall or use several devices may switch groups; check with the user_id mapping in the logs.\nThis is a single-period, single-metric test, so novelty effects are to be checked through post-rollout monitoring.\nSubgroup effects by genre need multiple-comparison correction and were not covered in this test."
+  },
+  {
+    "objectID": "en/index.html",
+    "href": "en/index.html",
+    "title": "",
+    "section": "",
+    "text": "Code\nThrough experience as a team lead and startup team lead, I think beyond memorizing formulas and code: how should technology be learned, designed, and applied in real business, from the perspective of revenue and service growth?"
+  },
+  {
+    "objectID": "en/index.html#turning-vision-into-concrete-business-results.",
+    "href": "en/index.html#turning-vision-into-concrete-business-results.",
+    "title": "",
+    "section": "Turning vision into concrete business results.",
+    "text": "Turning vision into concrete business results.\n\n\n“I’m ben kim, who brings together the languages of different fields to deliver results.”\n\nAcross stakeholders with different interests, I set goals and requirements, and draw on hands-on analytics and data engineering experience to improve business metrics and build a team that grows together.\n\nData Scientist AI Data Engineer"
+  },
+  {
+    "objectID": "en/index.html#about",
+    "href": "en/index.html#about",
+    "title": "",
+    "section": "About",
+    "text": "About\nStarting as a data analyst and data scientist at startups and growing into an AI data part lead, I have built data-driven decision-making and reproducible analytics and ML pipelines. My work spans user growth analytics, training-data curation (MLOps) for vision models, and hybrid statistical + ML predictive modeling.\nExperience · Projects\n\nTech Stack\n\nLanguages & Data: Python, SQL (DuckDB, PostgreSQL, MySQL, BigQuery)\nAnalytics & Visualization: Pandas, NumPy, SciPy, statistics and time-series analysis, Tableau\nGrowth & Log Analytics: Firebase, Appsflyer, Amplitude, A/B test design\nML & MLOps: Kubeflow, DVC, MLflow, OpenCV, Librosa\nWorkflow & Infrastructure: Git, GitHub Actions, Docker, AWS, Quarto\n\n\n\nEducation & Certification\n\nYonsei University, B.A. in Applied Statistics and Economics\nTensorFlow Developer Professional Certificate"
+  },
+  {
+    "objectID": "en/report.html",
+    "href": "en/report.html",
+    "title": "Report",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "en/projects/project-c.html",
+    "href": "en/projects/project-c.html",
+    "title": "Scheduling Poisson Machine for Adaptive Crawling",
+    "section": "",
+    "text": "A smart crawler manager built on a Poisson process and ML\n\n\nProject context: Dynamically optimize the crawl period by tying it to how fast stock changes on shopping-mall product pages. Suppressing redundant crawls minimizes waste of in-house collection infrastructure, and not missing stock-change moments yields accurate market demand estimates.\nCore mission\n\nAnalyze the limits and inefficiency of the existing fixed-period (score-based) crawler (As-Is vs To-Be)\nDefine the target variable for applying the page-change model (Poisson process) and validate it by simulation\nClean outliers in raw unstructured collection data, engineer features from EDA, and build the pipeline\nBuild a period-control engine that combines a statistical model (Poisson) with an ML classification model"
+  },
+  {
+    "objectID": "en/projects/project-c.html#overview-poisson-process-based-adaptive-crawl-manager",
+    "href": "en/projects/project-c.html#overview-poisson-process-based-adaptive-crawl-manager",
+    "title": "Scheduling Poisson Machine for Adaptive Crawling",
+    "section": "",
+    "text": "A smart crawler manager built on a Poisson process and ML\n\n\nProject context: Dynamically optimize the crawl period by tying it to how fast stock changes on shopping-mall product pages. Suppressing redundant crawls minimizes waste of in-house collection infrastructure, and not missing stock-change moments yields accurate market demand estimates.\nCore mission\n\nAnalyze the limits and inefficiency of the existing fixed-period (score-based) crawler (As-Is vs To-Be)\nDefine the target variable for applying the page-change model (Poisson process) and validate it by simulation\nClean outliers in raw unstructured collection data, engineer features from EDA, and build the pipeline\nBuild a period-control engine that combines a statistical model (Poisson) with an ML classification model"
+  },
+  {
+    "objectID": "en/projects/project-c.html#problem-definition-infrastructure-load-and-data-gaps-from-fixed-interval-crawling",
+    "href": "en/projects/project-c.html#problem-definition-infrastructure-load-and-data-gaps-from-fixed-interval-crawling",
+    "title": "Scheduling Poisson Machine for Adaptive Crawling",
+    "section": "Problem Definition Infrastructure load and data gaps from fixed-interval crawling",
+    "text": "Problem Definition Infrastructure load and data gaps from fixed-interval crawling\n\nLimits of fixed-period collection: a vicious cycle of wasted infrastructure and lost business opportunity\n\n\nAs-Is: Over-crawling (resource inefficiency) — Static pages with almost no stock change (unpopular products, etc.) were crawled mechanically and often, driving up networking resources and processing storage cost.\nAs-Is: Under-crawling (data loss) — Fast-selling hot-deal pages were not collected in time, so the precision of demand-change estimates stalled. Per-platform traffic thresholds (Lotte, Hmall, GS, 11st, Coupang, G-market, SSG, etc.) were also not reflected."
+  },
+  {
+    "objectID": "en/projects/project-c.html#theoretical-modeling-finding-the-optimal-crawl-period-with-a-poisson-process",
+    "href": "en/projects/project-c.html#theoretical-modeling-finding-the-optimal-crawl-period-with-a-poisson-process",
+    "title": "Scheduling Poisson Machine for Adaptive Crawling",
+    "section": "Theoretical Modeling Finding the optimal crawl period with a Poisson process",
+    "text": "Theoretical Modeling Finding the optimal crawl period with a Poisson process\n\nModeling dynamic web page change detection with the Poisson process\n\nTheoretical background (Cho & Garcia-Molina, 1999)\n\\[P(N(t)=k) = \\frac{(\\lambda t)^k e^{-\\lambda t}}{k!}\\]\nBased on the theory that page-change intervals are independent and follow an exponential distribution.\nBreaking through practical limits — The classic Poisson change rate (\\(\\lambda\\)) is a fixed constant, so it cannot predict the varying cycle of each product. Instead, I collected change/no-change data per time unit (0.2H, 0.5H, 1H, 4H, 8H, 12H, 24H, 48H, etc.), simulated a local \\(\\lambda\\) and change probability for each interval, and turned the interval with the maximum probability into the target variable."
+  },
+  {
+    "objectID": "en/projects/project-c.html#target-variable-engineering-validating-the-target-variable-by-excel-simulation",
+    "href": "en/projects/project-c.html#target-variable-engineering-validating-the-target-variable-by-excel-simulation",
+    "title": "Scheduling Poisson Machine for Adaptive Crawling",
+    "section": "Target Variable Engineering Validating the target variable by Excel simulation",
+    "text": "Target Variable Engineering Validating the target variable by Excel simulation\n\nTarget variable simulation and validation of data cleansing (preprocessing)\n\n\nWindow slicing and quantification: From the current time, sampled change/no-change data per time unit, such as 4H (last 24 hours) and 12H (last 72 hours), aggregated it, and computed \\(\\lambda\\).\nTarget labeling and tie-breaking: The interval with the highest change probability becomes the next crawl target. When a tie occurs, the conservative safeguard forces the faster period to prevent data loss."
+  },
+  {
+    "objectID": "en/projects/project-c.html#data-profiling-eda-predictors-versus-target-distribution-and-correlation",
+    "href": "en/projects/project-c.html#data-profiling-eda-predictors-versus-target-distribution-and-correlation",
+    "title": "Scheduling Poisson Machine for Adaptive Crawling",
+    "section": "Data Profiling & EDA Predictors versus target distribution and correlation",
+    "text": "Data Profiling & EDA Predictors versus target distribution and correlation\n\nStatistical noise and hypothesis checks between collection predictors and the next crawl period (target)\n\n\n\n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  SELL_RANK_log (lower rank)\n  No-change ratio\n\n\nNo-change ratio versus popularity rank (conceptual diagram)\n\n\nEDA findings\n\nHypothesis 1. Product popularity: Products with a lower sales rank (higher SELL_RANK_log) and less popular categories showed markedly lower information-update frequency.\n\n\nHypothesis 2. Listing duration: Newly registered product pages are edited often, but the longer the exposure period (period increases), the more stock change rate converges to 0, a stationarity-like behavior.\n\nBecause the survival-length distribution of collected pages was multimodal and differed by change/no-change class, that feature was selected as a key variable."
+  },
+  {
+    "objectID": "en/projects/project-c.html#solution-architecture-end-to-end-crawl-manager-data-and-model-pipeline",
+    "href": "en/projects/project-c.html#solution-architecture-end-to-end-crawl-manager-data-and-model-pipeline",
+    "title": "Scheduling Poisson Machine for Adaptive Crawling",
+    "section": "Solution Architecture End-to-end crawl manager data and model pipeline",
+    "text": "Solution Architecture End-to-end crawl manager data and model pipeline\n\nEnd-to-end dynamic crawling data pipeline and decision architecture\n\nCORE FLOW\n\n\n\n\n\n\nflowchart LR\n  A[\"Retrieve\"] --&gt; B[\"Preprocess\"] --&gt; C[\"Predict\"] --&gt; D[\"Transform\"] --&gt; E[\"Insert\"]\n\n\n\n\n\n\n\nHybrid branch 1 (products with enough history): When change history is sufficient (# data &gt; 3), the product enters the Poisson \\(\\lambda\\) stage. If many changes are detected it is handed to the ML classification model for period prediction; if no change is observed, the crawl period is extended to two days later.\nHybrid branch 2 (new products): Products with very little history, such as new arrivals, go to a “fixed collection every 6 hours” pipeline to secure a stable cold start and build up history."
+  },
+  {
+    "objectID": "en/projects/project-c.html#modeling-optimization-classification-ml-and-statistical-model-optimization",
+    "href": "en/projects/project-c.html#modeling-optimization-classification-ml-and-statistical-model-optimization",
+    "title": "Scheduling Poisson Machine for Adaptive Crawling",
+    "section": "Modeling & Optimization Classification ML and statistical model optimization",
+    "text": "Modeling & Optimization Classification ML and statistical model optimization\n\nOptimizing and tuning the hybrid crawl-period classification model\n\nHybrid engine strategy\n\nML classification model: Predicts the next period by combining static metadata such as text (product keywords, category tags), TV shopping schedules, and exposure placement\nPoisson statistical model: A lightweight dedicated module that closely monitors time-series stock-change patterns from live collected data\n\nRefined evaluation metrics — To overcome the limits of plain accuracy under class imbalance, I designed a recall-centered error table and applied Cohen’s Kappa to evaluate agreement between models."
+  },
+  {
+    "objectID": "en/projects/project-c.html#business-impact-infrastructure-savings-and-more-accurate-stock-estimation",
+    "href": "en/projects/project-c.html#business-impact-infrastructure-savings-and-more-accurate-stock-estimation",
+    "title": "Scheduling Poisson Machine for Adaptive Crawling",
+    "section": "Business Impact Infrastructure savings and more accurate stock estimation",
+    "text": "Business Impact Infrastructure savings and more accurate stock estimation\n\nInfrastructure innovation and data value from running the smart-crawler Poisson engine (expected impact)\n\n\n\nInfrastructure savings 5–6% reduction Suppressing redundant crawls of no-change pages cut network bandwidth and traffic cost\n\n\nData consistency Real-time error convergence Crawl resources redistributed to fast-moving popular shelves, minimizing sold-out lag time\n\n\nStability Fewer outages Optimal periods across multiple platforms avoid IP-block risk on target servers and enable a safe automated pipeline"
+  },
+  {
+    "objectID": "report.html",
+    "href": "report.html",
+    "title": "Report",
+    "section": "",
+    "text": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion\n\n\n\nAnalysis Note\n\nA/B Test\n\nProject A\n\n\n\nA sample report on the Project A A/B test, organized as funnel diagnosis, sample sizing, and significance testing.\n\n\n\n\n\n23.\n\n\n\n\n:::\n\n:::\n\n\n\n\n\n\n\n\nA/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선\n\n\n\n분석노트\n\nA/B테스트\n\nProject A\n\n\n\nProject A의 A/B 테스트를 퍼널 진단 → 표본 산정 → 유의성 검정 순서로 정리한 샘플 리포트입니다.\n\n\n\n\n\n23.\n\n\n\n\n:::\n\n:::\n:::\n일치 없음\n:::\n:::"
+  },
+  {
+    "objectID": "projects/project-c.html",
+    "href": "projects/project-c.html",
+    "title": "탄력적 수집 관리를 위한 스케줄링 포아송 머신",
+    "section": "",
+    "text": "Poisson Process & ML 기반 스마트 크롤러 매니저 구축\n\n\nProject Context: 쇼핑몰 상품 페이지의 실시간 재고 변화 속도와 연동하여 수집 주기(Crawl Period)를 동적으로 최적화하는 프로젝트. 불필요한 중복 수집을 억제하여 사내 수집 인프라 자원의 낭비를 최소화하고, 재고 변화 순간을 놓치지 않아 정확한 시장 수요 추정치를 제공함.\nCore Mission\n\n기존 고정 주기(Score-based) 크롤러의 한계와 비효율 분석 (As-Is vs To-Be)\n웹페이지 변화 모델(Poisson Process) 이론 적용을 위한 타겟 변수(Target Variable) 정의 및 시뮬레이션 검증\n비정형 원천 수집 데이터의 이상치 정제, EDA 기반 파생변수 생성 및 파이프라인 구축\n통계 모델(Poisson)과 기계학습 분류 모델(Classification)을 하이브리드 결합한 주기 제어 엔진 구축"
+  },
+  {
+    "objectID": "projects/project-c.html#overview-poisson-process-기반-탄력적-수집-매니저-개요",
+    "href": "projects/project-c.html#overview-poisson-process-기반-탄력적-수집-매니저-개요",
+    "title": "탄력적 수집 관리를 위한 스케줄링 포아송 머신",
+    "section": "",
+    "text": "Poisson Process & ML 기반 스마트 크롤러 매니저 구축\n\n\nProject Context: 쇼핑몰 상품 페이지의 실시간 재고 변화 속도와 연동하여 수집 주기(Crawl Period)를 동적으로 최적화하는 프로젝트. 불필요한 중복 수집을 억제하여 사내 수집 인프라 자원의 낭비를 최소화하고, 재고 변화 순간을 놓치지 않아 정확한 시장 수요 추정치를 제공함.\nCore Mission\n\n기존 고정 주기(Score-based) 크롤러의 한계와 비효율 분석 (As-Is vs To-Be)\n웹페이지 변화 모델(Poisson Process) 이론 적용을 위한 타겟 변수(Target Variable) 정의 및 시뮬레이션 검증\n비정형 원천 수집 데이터의 이상치 정제, EDA 기반 파생변수 생성 및 파이프라인 구축\n통계 모델(Poisson)과 기계학습 분류 모델(Classification)을 하이브리드 결합한 주기 제어 엔진 구축"
+  },
+  {
+    "objectID": "projects/project-c.html#problem-definition-고정형-크롤링으로-인한-인프라-부하-및-데이터-결손-문제",
+    "href": "projects/project-c.html#problem-definition-고정형-크롤링으로-인한-인프라-부하-및-데이터-결손-문제",
+    "title": "탄력적 수집 관리를 위한 스케줄링 포아송 머신",
+    "section": "Problem Definition 고정형 크롤링으로 인한 인프라 부하 및 데이터 결손 문제",
+    "text": "Problem Definition 고정형 크롤링으로 인한 인프라 부하 및 데이터 결손 문제\n\n고정주기 수집 방식의 한계 — 인프라 자원 낭비와 비즈니스 기회 손실의 악순환\n\n\nAs-Is: Over-crawling (자원 비효율) — 재고 변동이 거의 없는 정적 페이지(인기 없는 상품 등)를 기계적으로 빈번하게 크롤링하면서 수집 네트워킹 리소스 및 가공 스토리지 비용이 급증.\nAs-Is: Under-crawling (데이터 유실) — 재고가 빠르게 소진되는 동적 핫딜 페이지를 적시에 수집하지 못해 실제 수요 변화 추정의 정밀도 정체. 플랫폼(Lotte, Hmall, GS, 11st, Coupang, G-market, SSG 등)별 트래픽 임계치 미반영 한계 직면."
+  },
+  {
+    "objectID": "projects/project-c.html#theoretical-modeling-poisson-process-기반-최적-수집-주기-탐색-기법",
+    "href": "projects/project-c.html#theoretical-modeling-poisson-process-기반-최적-수집-주기-탐색-기법",
+    "title": "탄력적 수집 관리를 위한 스케줄링 포아송 머신",
+    "section": "Theoretical Modeling Poisson Process 기반 최적 수집 주기 탐색 기법",
+    "text": "Theoretical Modeling Poisson Process 기반 최적 수집 주기 탐색 기법\n\n포아송 확률 과정(Poisson Process)을 응용한 동적 웹페이지 변화 감지 모델링\n\nTheoretical Background (Cho & Garcia-Molina, 1999)\n\\[P(N(t)=k) = \\frac{(\\lambda t)^k e^{-\\lambda t}}{k!}\\]\n웹페이지 변화 간격이 독립적이며 지수 분포(Exponential Distribution)를 따른다는 이론에 기반함.\n현업 적용 한계 돌파 전략 — 전통적인 포아송 변화율(\\(\\lambda\\))은 고정 상수여서 개별 상품의 가변 주기를 예측하기 어렵습니다. 이를 위해 시간 단위별(0.2H, 0.5H, 1H, 4H, 8H, 12H, 24H, 48H 등) 변화 유무 데이터를 수집해 단위 구간별 국소 \\(\\lambda\\) 및 변화 확률을 시뮬레이션 계산하고, 최대값(Max Probability)을 보이는 최적 예측 구간을 타겟 변수로 전환하여 활용했습니다."
+  },
+  {
+    "objectID": "projects/project-c.html#target-variable-engineering-엑셀-시뮬레이션을-통한-타겟-변수-효용성-검증",
+    "href": "projects/project-c.html#target-variable-engineering-엑셀-시뮬레이션을-통한-타겟-변수-효용성-검증",
+    "title": "탄력적 수집 관리를 위한 스케줄링 포아송 머신",
+    "section": "Target Variable Engineering 엑셀 시뮬레이션을 통한 타겟 변수 효용성 검증",
+    "text": "Target Variable Engineering 엑셀 시뮬레이션을 통한 타겟 변수 효용성 검증\n\n타겟 변수(Target Variable) 시뮬레이션 및 데이터 정제 유효성 검증 (Preprocessing)\n\n\n윈도우 슬라이싱 & 정량화: 현 시점 기준으로 4H(최근 24시간), 12H(최근 72시간) 등 시간 단위별 변화 유무 원천 데이터를 샘플링하여 집합화 및 \\(\\lambda\\) 계산 수행.\n타겟 레이블링 & 타이 브레이킹: 계산된 변화 확률 중 가장 높은 구간을 다음 크롤링 타겟으로 설정합니다. 동률(Tie)이 발생할 경우 데이터 유실 방지를 위해 ’더 빠른 주기’를 강제 선택하는 보수적 안전 장치를 수립했습니다."
+  },
+  {
+    "objectID": "projects/project-c.html#data-profiling-eda-예측-변수와-타겟-변수-간-상관관계-및-분포-분석",
+    "href": "projects/project-c.html#data-profiling-eda-예측-변수와-타겟-변수-간-상관관계-및-분포-분석",
+    "title": "탄력적 수집 관리를 위한 스케줄링 포아송 머신",
+    "section": "Data Profiling & EDA 예측 변수와 타겟 변수 간 상관관계 및 분포 분석",
+    "text": "Data Profiling & EDA 예측 변수와 타겟 변수 간 상관관계 및 분포 분석\n\n수집 예측 변수(Predictors)와 차기 수집 주기(Target) 간 통계적 노이즈 및 가설 검증\n\n\n\n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  SELL_RANK_log (순위 낮아짐)\n  무변화비율\n\n\n인기 순위(Rank) 대비 무변화 비율 분포 (개념도)\n\n\nEDA 검증 결과 및 발견 사실\n\n가설 1. 인기 상품성 검증: 상품 판매 순위가 낮고(SELL_RANK_log 증가) 인기가 적은 상품 카테고리일수록 정보 수정 빈도가 현저히 감소하는 경향 검증.\n\n\n가설 2. 상품 노출 기간 검증: 신규 등록 상품 페이지일수록 빈번한 수정 작업을 거치나, 노출 기간이 오래 지날수록(period 증가) 재고 변화율이 0에 수렴하는 정상성(Stationarity) 관찰.\n\n수집 페이지 생존길이 분포가 변화 유무 클래스에 따라 상이한 다봉형(Multimodal) 양상을 띔에 따라 해당 피처를 핵심 변수로 선정."
+  },
+  {
+    "objectID": "projects/project-c.html#solution-architecture-크롤-매니저-엔드투엔드-데이터-및-모델-파이프라인-구축",
+    "href": "projects/project-c.html#solution-architecture-크롤-매니저-엔드투엔드-데이터-및-모델-파이프라인-구축",
+    "title": "탄력적 수집 관리를 위한 스케줄링 포아송 머신",
+    "section": "Solution Architecture 크롤 매니저 엔드투엔드 데이터 및 모델 파이프라인 구축",
+    "text": "Solution Architecture 크롤 매니저 엔드투엔드 데이터 및 모델 파이프라인 구축\n\nEnd-to-End Dynamic Crawling Data Pipeline & Decision Architecture\n\nCORE FLOW\n\n\n\n\n\n\nflowchart LR\n  A[\"Retrieve\"] --&gt; B[\"Preprocess\"] --&gt; C[\"Predict\"] --&gt; D[\"Transform\"] --&gt; E[\"Insert\"]\n\n\n\n\n\n\n\n하이브리드 분기 조건 1 (충분 이력 상품): 과거 변화 이력이 충분한 경우(# data &gt; 3) 포아송 \\(\\lambda\\) 연산부로 진입합니다. 변화 다수 감지 시 ML 분류 모델로 토스하여 주기 예측을 진행하고, 변화 유실 시에는 수집 주기를 2일 뒤로 대폭 연장합니다.\n하이브리드 분기 조건 2 (신규 상품): 신규 유입 등 수집 이력이 극히 부족한 신상품은 안정적 콜드 스타트를 보장하기 위해 ‘6시간 마다 초기 고정 수집’ 파이프라인으로 안전 분기 및 이력을 확보합니다."
+  },
+  {
+    "objectID": "projects/project-c.html#modeling-optimization-분류-기반-ml-및-통계-모델-최적화-실험",
+    "href": "projects/project-c.html#modeling-optimization-분류-기반-ml-및-통계-모델-최적화-실험",
+    "title": "탄력적 수집 관리를 위한 스케줄링 포아송 머신",
+    "section": "Modeling & Optimization 분류 기반 ML 및 통계 모델 최적화 실험",
+    "text": "Modeling & Optimization 분류 기반 ML 및 통계 모델 최적화 실험\n\n하이브리드 수집 주기 분류 모델 최적화 및 튜닝 (Modeling)\n\n하이브리드 엔진 최적화 전략\n\nML 분류 모델: 텍스트 정보(상품 키워드, 카테고리 태그), TV 쇼핑 편성표, 노출 지면 등의 정적 메타데이터를 결합해 차기 주기 예측\n포아송 통계 모델: 실시간 수집 데이터 기반 시계열적 재고 변화 유형만을 정밀 모니터링하는 경량 전용 통계 모듈\n\n평가 지표의 정교화 — 불균형 클래스 편향에 따른 단순 정확도(Accuracy) 필터의 한계를 극복하기 위해 참값을 보정하는 재현율(Recall) 중심의 오차 테이블을 설계하고, 모델 간 일치 신뢰도 평가를 위한 Cohen’s Kappa 계수를 적용했습니다."
+  },
+  {
+    "objectID": "projects/project-c.html#business-impact-인프라-비용-절감-및-상품-재고-추정-정확성-극대화-효과",
+    "href": "projects/project-c.html#business-impact-인프라-비용-절감-및-상품-재고-추정-정확성-극대화-효과",
+    "title": "탄력적 수집 관리를 위한 스케줄링 포아송 머신",
+    "section": "Business Impact 인프라 비용 절감 및 상품 재고 추정 정확성 극대화 효과",
+    "text": "Business Impact 인프라 비용 절감 및 상품 재고 추정 정확성 극대화 효과\n\n스마트 크롤러 포아송 엔진 가동을 통한 인프라 혁신 및 데이터 가치 극대화 (Expected Impact)\n\n\n\n인프라 자원 절감 5 ~ 6% 감축 무변화 유실 페이지의 중복 크롤링 억제를 통해 네트워킹 대역폭 및 트래픽 비용 대폭 감축\n\n\n데이터 정합성 개선 실시간 오차 수렴 재고가 급변하는 인기 매대에 크롤 리소스를 정교하게 재분배하여 품절 Lag-time 극소화\n\n\n안정성 확보 장애 오버헤드 해소 다중 플랫폼 최적 주기를 보장함으로써 타겟 서버의 IP 블락 리스크 회피 및 안전 파이프라인 자동화 구축"
   }
 ]
