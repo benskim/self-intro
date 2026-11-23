@@ -1,75 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://benskim.github.io/self-intro/projects/project-b.html</loc>
-    <lastmod>2026-11-23T05:31:32.833Z</lastmod>
+    <loc>https://benskim.github.io/self-intro/ko/projects/project-b.html</loc>
+    <lastmod>2026-11-23T06:36:12.079Z</lastmod>
   </url>
   <url>
-    <loc>https://benskim.github.io/self-intro/projects/project-a.html</loc>
-    <lastmod>2026-11-23T05:31:32.833Z</lastmod>
+    <loc>https://benskim.github.io/self-intro/ko/projects/project-a.html</loc>
+    <lastmod>2026-11-23T06:36:12.079Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/ko/projects.html</loc>
+    <lastmod>2026-11-23T06:36:12.058Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/ko/posts/index.html</loc>
+    <lastmod>2026-11-23T06:36:12.058Z</lastmod>
   </url>
   <url>
     <loc>https://benskim.github.io/self-intro/en/projects/project-b.html</loc>
-    <lastmod>2026-11-23T05:31:32.816Z</lastmod>
+    <lastmod>2026-11-23T06:36:12.057Z</lastmod>
   </url>
   <url>
     <loc>https://benskim.github.io/self-intro/en/projects/project-a.html</loc>
-    <lastmod>2026-11-23T05:31:32.816Z</lastmod>
+    <lastmod>2026-11-23T06:36:12.056Z</lastmod>
   </url>
   <url>
     <loc>https://benskim.github.io/self-intro/en/projects.html</loc>
-    <lastmod>2026-11-23T05:31:32.816Z</lastmod>
+    <lastmod>2026-11-23T06:36:12.056Z</lastmod>
   </url>
   <url>
     <loc>https://benskim.github.io/self-intro/en/posts/2026-11-sample-analysis/index.html</loc>
-    <lastmod>2026-11-23T05:31:32.814Z</lastmod>
+    <lastmod>2026-11-23T06:36:12.056Z</lastmod>
   </url>
   <url>
     <loc>https://benskim.github.io/self-intro/en/experience.html</loc>
-    <lastmod>2026-11-23T05:31:32.814Z</lastmod>
-  </url>
-  <url>
-    <loc>https://benskim.github.io/self-intro/index.html</loc>
-    <lastmod>2026-11-23T05:31:32.816Z</lastmod>
-  </url>
-  <url>
-    <loc>https://benskim.github.io/self-intro/posts/sample/index.html</loc>
-    <lastmod>2026-11-23T05:31:32.818Z</lastmod>
-  </url>
-  <url>
-    <loc>https://benskim.github.io/self-intro/experience.html</loc>
-    <lastmod>2026-11-23T05:31:32.816Z</lastmod>
-  </url>
-  <url>
-    <loc>https://benskim.github.io/self-intro/posts/2026-11-sample-analysis/index.html</loc>
-    <lastmod>2026-11-23T05:31:32.817Z</lastmod>
-  </url>
-  <url>
-    <loc>https://benskim.github.io/self-intro/projects.html</loc>
-    <lastmod>2026-11-23T05:31:32.818Z</lastmod>
-  </url>
-  <url>
-    <loc>https://benskim.github.io/self-intro/en/posts/sample/index.html</loc>
-    <lastmod>2026-11-23T05:31:32.816Z</lastmod>
+    <lastmod>2026-11-23T06:36:12.055Z</lastmod>
   </url>
   <url>
     <loc>https://benskim.github.io/self-intro/en/index.html</loc>
-    <lastmod>2026-11-23T05:31:32.814Z</lastmod>
+    <lastmod>2026-11-23T06:36:12.055Z</lastmod>
   </url>
   <url>
     <loc>https://benskim.github.io/self-intro/en/report.html</loc>
-    <lastmod>2026-11-23T05:31:32.816Z</lastmod>
+    <lastmod>2026-11-23T06:36:12.057Z</lastmod>
   </url>
   <url>
     <loc>https://benskim.github.io/self-intro/en/projects/project-c.html</loc>
-    <lastmod>2026-11-23T05:31:32.816Z</lastmod>
+    <lastmod>2026-11-23T06:36:12.057Z</lastmod>
   </url>
   <url>
-    <loc>https://benskim.github.io/self-intro/report.html</loc>
-    <lastmod>2026-11-23T05:31:32.833Z</lastmod>
+    <loc>https://benskim.github.io/self-intro/ko/experience.html</loc>
+    <lastmod>2026-11-23T06:36:12.057Z</lastmod>
   </url>
   <url>
-    <loc>https://benskim.github.io/self-intro/projects/project-c.html</loc>
-    <lastmod>2026-11-23T05:31:32.833Z</lastmod>
+    <loc>https://benskim.github.io/self-intro/ko/index.html</loc>
+    <lastmod>2026-11-23T06:36:12.057Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/ko/report.html</loc>
+    <lastmod>2026-11-23T06:36:12.079Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/ko/projects/project-c.html</loc>
+    <lastmod>2026-11-23T06:36:12.079Z</lastmod>
   </url>
 </urlset>

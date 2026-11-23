@@ -125,9 +125,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-description','listing-date','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -139,8 +139,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   });
   </script>
 <script>
-/* KO | EN switch: points each link at the same page in the other language,
-   and keeps English pages navigating inside /en/. */
+/* Keep navigation and language switching at the repository root. */
 document.addEventListener("DOMContentLoaded", function () {
   try {
     var meta = document.querySelector('meta[name="quarto:offset"]');
@@ -148,17 +147,31 @@ document.addEventListener("DOMContentLoaded", function () {
     if (root.slice(-1) !== "/") root += "/";
     var rel = location.pathname.slice(root.length);
     if (rel === "" || rel.slice(-1) === "/") rel += "index.html";
+    var isKo = rel.indexOf("ko/") === 0;
     var isEn = rel.indexOf("en/") === 0;
-    var ko = isEn ? rel.slice(3) : rel;
-    var en = isEn ? rel : "en/" + rel;
+    var page = isKo ? rel.slice(3) : isEn ? rel.slice(3) : rel;
+    var ko = "ko/" + page;
+    var en = "en/" + page;
+    var leftNav = {
+      "About": "index",
+      "Report": "report",
+      "Projects": "projects",
+      "Experience": "experience"
+    };
     document.querySelectorAll(".navbar a[href]").forEach(function (a) {
       var label = a.textContent.trim();
-      var u = new URL(a.getAttribute("href"), location.href);
-      if (label === "KO") { a.href = root + ko + location.hash; if (!isEn) a.classList.add("active"); return; }
-      if (label === "EN") { a.href = root + en + location.hash; if (isEn) a.classList.add("active"); return; }
-      if (isEn && u.origin === location.origin && u.pathname.indexOf(root) === 0 &&
-          u.pathname.indexOf(root + "en/") !== 0) {
-        a.href = root + "en/" + u.pathname.slice(root.length) + u.search + u.hash;
+      if (label === "KO") {
+        a.href = root + ko + location.hash;
+        if (isKo) a.classList.add("active");
+        return;
+      }
+      if (label === "EN") {
+        a.href = root + en + location.hash;
+        if (isEn) a.classList.add("active");
+        return;
+      }
+      if (Object.prototype.hasOwnProperty.call(leftNav, label)) {
+        a.href = root + (isEn ? "en/" : "ko/") + leftNav[label] + ".html";
       }
     });
   } catch (e) {}
@@ -385,25 +398,25 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../ko/index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../report.html"> 
+    <a class="nav-link" href="../ko/report.html"> 
 <span class="menu-text">Report</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../projects.html"> 
+    <a class="nav-link" href="../ko/projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../experience.html"> 
+    <a class="nav-link" href="../ko/experience.html"> 
 <span class="menu-text">Experience</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../ko/index.html"> 
 <span class="menu-text">KO</span></a>
   </li>  
   <li class="nav-item">
@@ -428,11 +441,11 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QSUyRkIlMjBUZXN0">A/B Test <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QW5hbHlzaXMlMjBOb3Rl">Analysis Note <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHJvamVjdCUyMEE=">Project A <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content" tabindex="-1">
+<main class="content column-page-left" id="quarto-document-content" tabindex="-1">
 
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -442,7 +455,7 @@ window.Quarto = {
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -460,9 +473,41 @@ window.Quarto = {
 <!-- -->
 
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-1">
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="QW5hbHlzaXMlMjBOb3RlJTJDQSUyRkIlMjBUZXN0JTJDUHJvamVjdCUyMEE=" data-listing-date-sort="1795392000000" data-listing-file-modified-sort="1795415772056" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="758">
+<div class="thumbnail"><a href="../en/posts/2026-11-sample-analysis/index.html" class="no-external-icon">
 
+<img loading="lazy" src="../en/posts/2026-11-sample-analysis/images/ab-result.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../en/posts/2026-11-sample-analysis/index.html" class="no-external-icon">A/B Test Analysis Note: Genre-Curated Content and Video Conversion</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('QW5hbHlzaXMlMjBOb3Rl'); return false;">Analysis Note</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QSUyRkIlMjBUZXN0'); return false;">A/B Test</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UHJvamVjdCUyMEE='); return false;">Project A</div>
+
+</div>
+<div class="listing-description">
+<a href="../en/posts/2026-11-sample-analysis/index.html" class="no-external-icon">
+<p>A sample report on the Project A A/B test, organized as funnel diagnosis, sample sizing, and significance testing.</p>
+</a>
+</div>
+</div>
+<div class="metadata">
+<a href="../en/posts/2026-11-sample-analysis/index.html" class="no-external-icon">
+<div class="listing-date">
+Nov 23, 2026
+</div>
+</a>
+</div>
+</div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div></main> <!-- /main -->
@@ -1044,18 +1089,15 @@ window.Quarto = {
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Report"</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">listing:</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">  contents:</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">    - en/posts/2026-11-sample-analysis/index.qmd</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">  sort: "date desc"</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">  type: grid</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">  grid-columns: 1</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">  fields: [image, title, description, date, categories]</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">  categories: false</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">  sort-ui: false</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">  filter-ui: false</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="an">page-layout:</span><span class="co"> full</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="an">title-block-banner:</span><span class="co"> false</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">  contents: posts</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">  sort: "date desc"</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">  type: default</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">  categories: true</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">  sort-ui: false</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">  filter-ui: false</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="an">page-layout:</span><span class="co"> full</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="an">title-block-banner:</span><span class="co"> false</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

@@ -114,8 +114,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 <script>
-/* KO | EN switch: points each link at the same page in the other language,
-   and keeps English pages navigating inside /en/. */
+/* Keep navigation and language switching at the repository root. */
 document.addEventListener("DOMContentLoaded", function () {
   try {
     var meta = document.querySelector('meta[name="quarto:offset"]');
@@ -123,17 +122,31 @@ document.addEventListener("DOMContentLoaded", function () {
     if (root.slice(-1) !== "/") root += "/";
     var rel = location.pathname.slice(root.length);
     if (rel === "" || rel.slice(-1) === "/") rel += "index.html";
+    var isKo = rel.indexOf("ko/") === 0;
     var isEn = rel.indexOf("en/") === 0;
-    var ko = isEn ? rel.slice(3) : rel;
-    var en = isEn ? rel : "en/" + rel;
+    var page = isKo ? rel.slice(3) : isEn ? rel.slice(3) : rel;
+    var ko = "ko/" + page;
+    var en = "en/" + page;
+    var leftNav = {
+      "About": "index",
+      "Report": "report",
+      "Projects": "projects",
+      "Experience": "experience"
+    };
     document.querySelectorAll(".navbar a[href]").forEach(function (a) {
       var label = a.textContent.trim();
-      var u = new URL(a.getAttribute("href"), location.href);
-      if (label === "KO") { a.href = root + ko + location.hash; if (!isEn) a.classList.add("active"); return; }
-      if (label === "EN") { a.href = root + en + location.hash; if (isEn) a.classList.add("active"); return; }
-      if (isEn && u.origin === location.origin && u.pathname.indexOf(root) === 0 &&
-          u.pathname.indexOf(root + "en/") !== 0) {
-        a.href = root + "en/" + u.pathname.slice(root.length) + u.search + u.hash;
+      if (label === "KO") {
+        a.href = root + ko + location.hash;
+        if (isKo) a.classList.add("active");
+        return;
+      }
+      if (label === "EN") {
+        a.href = root + en + location.hash;
+        if (isEn) a.classList.add("active");
+        return;
+      }
+      if (Object.prototype.hasOwnProperty.call(leftNav, label)) {
+        a.href = root + (isEn ? "en/" : "ko/") + leftNav[label] + ".html";
       }
     });
   } catch (e) {}
@@ -363,25 +376,25 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="../../ko/index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../report.html"> 
+    <a class="nav-link" href="../../ko/report.html"> 
 <span class="menu-text">Report</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../projects.html"> 
+    <a class="nav-link" href="../../ko/projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../experience.html"> 
+    <a class="nav-link" href="../../ko/experience.html"> 
 <span class="menu-text">Experience</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="../../ko/index.html"> 
 <span class="menu-text">KO</span></a>
   </li>  
   <li class="nav-item">
@@ -1163,7 +1176,7 @@ No-change ratio versus popularity rank (conceptual diagram)
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Scheduling Poisson Machine for Adaptive Crawling"</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "Intelligent data acquisition (crawl period optimization) combining statistical page-change detection and machine learning"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">image:</span><span class="co"> ../../projects/images/project-c.png</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">image:</span><span class="co"> ../../ko/projects/images/project-c.png</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">toc:</span><span class="co"> true</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
