@@ -9,4 +9,5 @@ listing:
   filter-ui: false
 page-layout: full
 title-block-banner: false
+date-format: "YYYY년 M월 D일"
 ---
