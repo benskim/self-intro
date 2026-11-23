@@ -9,7 +9,7 @@ website:
   navbar:
     left:
       - text: "About"
-        href: ko/index.qmd
+        href: index.qmd
       - text: "Report"
         href: ko/report.qmd
       - text: "Projects"
