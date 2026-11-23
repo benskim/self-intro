@@ -4,5 +4,5 @@ listing:
   contents: projects/*.qmd
   sort: "title"
   type: default
-  fields: [title, subtitle]
+  fields: [image,title, subtitle]
 ---

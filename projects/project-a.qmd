@@ -1,6 +1,7 @@
 ---
 title: "합성영상 B2C 앱 서비스 그로스 분석"
 subtitle: "실제 비즈니스 성장 전략 설계와 데이터 검증의 엔드투엔드(End-to-End) 케이스 스터디"
+image: images/project-a.png
 toc: true
 ---
 

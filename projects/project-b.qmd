@@ -1,6 +1,7 @@
 ---
 title: "AI 훈련데이터 큐레이션 및 MLOps 시스템 구축"
 subtitle: "인프라 리소스 효율화 및 데이터 품질 강화를 구현한 비전 모델 ML Pipeline 엔지니어링"
+image: images/project-b.png
 toc: true
 ---
 
