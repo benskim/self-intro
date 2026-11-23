@@ -1,84 +1,79 @@
-# Ben's Notes
 
-**인사이트를 쌓고 분석하고 다시 쓸 수 있도록 남기는 개인 분석 아카이브입니다.**
+# 🚀 Data & AI Engineer Portfolio WebApp
 
-이 저장소는 특정 회사나 채용 포트폴리오를 위한 사이트가 아니라, 문제를 정의하고 데이터를 탐색하며 분석 과정과 의사결정을 기록하는 개인 웹사이트입니다.
+> 스파르타코딩클럽 디자인 시스템을 기반으로 빌드된 **데이터 분석, Data curation, Prediction Model** 프로젝트 포트폴리오 웹 어플리케이션입니다. 
+> 인위적인 페이지 구분을 없애고 웹 서비스에 최적화된 인터페이스로 각 프로젝트의 핵심 케이스 스터디를 명확하게 전달합니다.
 
-웹사이트: https://benskim.github.io/self-intro/
+---
 
-## 목적
+## 🛠️ Tech Stack
 
-- 분석 과정과 근거를 재현 가능한 형태로 기록
-- 데이터 기반 의사결정이 실제 문제 해결로 이어지는 과정 정리
-- 통계 분석, 데이터 엔지니어링, 모델링 실험을 계속 쌓아가는 작업 기록
-- 특정 결론보다 실험 설계, 해석, 한계까지 함께 남기는 기술 노트
+*   **Frontend / UI**: React, Tailwind CSS
+*   **Icons & Assets**: Lucide React
+*   **Deployment**: GitHub Pages 
 
-## 기록 주제
+---
 
-### Product & Growth Analytics
+## 📌 Key Projects & Structure
 
-- 서비스 성장 지표와 유저 퍼널 분석
-- 로그 인프라 및 데이터 수집 설계
-- EDA와 가설 도출
-- A/B 테스트 표본 산정과 유의성 검정
-- North Star Metric과 재현 가능한 분석 리포트
+포트폴리오는 크게 3개의 핵심 프로젝트 탭으로 구성되어 있으며, 각 장표는 성격에 맞는 직관적인 인라인 배지 태그(`[---]`, `(---)`)로 구조화되어 있습니다.
 
-### Data Curation & MLOps
+### 📂 Project A: 데이터 분석 (Product Analytics)
+*   **Overview**: 서비스 성장을 위한 데이터 분석  
+*   **Core Metrics**: 유저 행동 로그 분석 및 비즈니스 임팩트 측정
+*   **Key Deliverables**: 데이터 기반 문제 정의 및 개선 방향 도출
 
-- 비정형 데이터셋의 메타데이터 탐색과 품질 기준 설계
-- 데이터 큐레이션과 품질 필터링
-- 데이터셋 버전 관리 및 실험 재현성
-- GPU 자원과 학습 효율 개선
-- MLflow 기반 실험 추적과 모델 레지스트리
+### 📂 Project B: AI-Driven 가공 &  ML옵스 (Training Data curation)
+*   **Overview**: AI 모델 학습사이클 최적화  
+*   **Challenges**: AI 모델 학습 데이터의 품질 상태 미확인 및 비효율적인 반복 가공
+*   **Key Deliverables**: 파이프라인 자동화 및 자원 최적화 아키텍처 설계
 
-### Statistical & Machine Learning Modeling
+### 📂 Project C: 재고변화 예측모델 (통계+ML)
+*   **Overview**: 탄력적 수집 관리를 위한 스케줄링 포아송 머신
+*   **Challenges**: AI 모델 학습 및 서빙 과정에서의 인프라 병목 해결
+*   **Key Deliverables**: 대용량 데이터 파이프라인 구축 및 안정적인 인프라 설계
 
-- 포아송 과정을 활용한 변화 감지
-- 시계열 변수를 이용한 예측 구조 설계
-- 분류 모델과 통계 모델의 하이브리드 엔진
-- 불균형 데이터 평가 지표 설계
-- 크롤링 주기 최적화와 인프라 비용 절감
+---
 
-## 주요 프로젝트
+## 🎨 UI/UX Features
 
-| 항목 | 핵심 내용 |
-| --- | --- |
-| [Gen-AI B2C 앱 서비스 그로스 분석](projects/project-a.qmd) | 로그 기반 퍼널 진단, North Star Metric 설계, A/B 테스트 |
-| [영상 데이터 큐레이션 및 MLOps PoC](projects/project-b.qmd) | 비정형 데이터 품질 개선, DL 검수 모델, 재현 가능한 학습 파이프라인 |
-| [탄력적 수집 관리를 위한 스케줄링 포아송 머신](projects/project-c.qmd) | 포아송 과정과 ML을 결합한 동적 크롤링 주기 최적화 |
+*   **SPA 디자인 시스템**: 톤앤매너(`spartaRed`)를 유지한 일관성 있는 컴포넌트 설계
+*   **배지 기반 네비게이션**: `Slide 1, 2`와 같은 인위적인 요소를 제거하고, 콘텐츠의 속성(`[Problem Definition]`, `[EDA]`, `(로그 인프라 설계)` 등)을 직관적인 텍스트 배지로 시각화
+*   **반응형 탭 시스템**: 각 프로젝트 간 전환이 매끄러운 탭 레이아웃 구현
 
-## 분석 노트
+---
 
-현재 보고서에는 [A/B 테스트 장르 기획 콘텐츠의 영상 변환율 개선](posts/sample/index.qmd) 분석을 포함합니다. 이 노트는 퍼널 진단부터 실험 설계, 표본 산정, 검정, 해석과 한계까지 재현 가능한 흐름으로 정리합니다.
+## 💻 Getting Started
 
-## 기술 스택
-
-- **Analysis:** Python, SQL, Pandas, NumPy, SciPy
-- **Statistics & ML:** 가설 검정, 시계열 분석, 분류 모델, Poisson Process
-- **Data:** DuckDB, PostgreSQL, MySQL, BigQuery
-- **Data/ML Workflow:** Git, Docker, MLflow, GitHub Actions
-- **Publishing:** Quarto, GitHub Pages
-
-## 로컬 실행
-
-Quarto를 설치한 뒤 저장소 루트에서 다음 명령을 실행합니다.
-
+### 1. Repository Clone
 ```bash
-quarto preview
+git clone [https://github.com/](https://github.com/)benskim/self-intro.git
+cd self-intro
+
 ```
 
-정적 사이트를 생성하려면 다음 명령을 사용합니다.
+### 2. Dependencies Install
 
 ```bash
-quarto render
+npm install
+# or
+yarn install
+
 ```
 
-생성된 결과는 `_site/` 폴더에 저장됩니다.
+### 3. Local Development
 
-## 기록 원칙
+```bash
+npm run start
+# or
+yarn start
 
-- 분석의 가정과 데이터 범위를 명확히 남깁니다.
-- 결과뿐 아니라 실험 설계와 표본 산정 근거를 기록합니다.
-- 재현에 필요한 수식, 코드와 검정 과정을 함께 제공합니다.
-- 유의한 결과와 한계, 후속 검증 방향을 구분해 작성합니다.
-- 정리된 결론보다 갱신 가능한 분석 기록을 지향합니다.
+```
+
+---
+
+## 📄 License
+
+이 프로젝트는 MIT 라이선스를 따릅니다.
+
+```

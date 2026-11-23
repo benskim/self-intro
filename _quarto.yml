@@ -18,9 +18,15 @@ website:
         href: experience.qmd
 
     right:
+      - text: "KO"
+        href: index.qmd
+      - text: "EN"
+        href: en/index.qmd
       - icon: github
         href: https://github.com/benskim
   search: true
+
+lang: ko
 
 execute:
   freeze: auto
@@ -31,6 +37,7 @@ format:
       light: cosmo
       dark: darkly
     css: styles.css
+    include-in-header: lang-switch.html
     toc: true
     code-fold: true
     code-tools: true

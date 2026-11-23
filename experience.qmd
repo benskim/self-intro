@@ -1,10 +1,85 @@
 ---
 title: "Experience"
+toc: true
 ---
 
-## 주요 경력 요약
+데이터 분석, 데이터 큐레이션·MLOps, 통계 기반 예측 모델링을 거쳐 팀을 이끄는 역할까지 이어온 경력입니다.
 
-### 역할 / 조직명 (`YYYY.MM` ~ `YYYY.MM`)
-* **핵심 역할:** 데이터 파이프라인 설계, 분석 모델링, PM/리드 등 담당 업무 요약
-* **해결한 문제:** 기존 프로세스의 병목이나 데이터 품질 이슈 기술
-* **주요 성과:** 정량적 개선 수치 및 비즈니스 임팩트 기재
+## Klleon R&D — 데이터 파트 리드 {#klleon}
+
+`2021.03 ~ 2023.11` (2년 9개월)
+
+**연구 환경 효율화를 위한 MLOps 팀·데이터 파트 구축 및 리딩**
+
+* 데이터 중심 AI(Data-Centric AI, DCAI) 접근으로 한국어 TTS 기술 개발
+* 데이터 수집, 가공, 검수까지 아우르는 컴퓨터 비전 맞춤형 데이터 큐레이션 시스템 구축 및 최적화
+* Kubeflow, DVC를 활용해 엔지니어링 지원
+
+→ 상세: [Project B. 영상 데이터 큐레이션 및 MLOps PoC](projects/project-b.qmd)
+
+**생성형 AI 기반 B2C 서비스의 데이터 의사결정 지원**
+
+* Firebase, Appsflyer, Amplitude, Tableau, 통계 모델링을 활용한 유저 분석
+* 앱스토어·구글 플레이 베타 서비스 런칭 리딩
+* 디지털 마케팅(Meta, Google Ads) 리딩
+
+→ 상세: [Project A. Gen-AI B2C 앱 서비스 그로스 분석](projects/project-a.qmd)
+
+## freewheelin — 데이터 분석가 {#freewheelin}
+
+`2019.04 ~ 2020.07` (1년 4개월) · 서울 관악구
+
+**프로모션 성과 분석 대시보드 제작**
+
+* 프로모션과 유저 속성(가격, 무료 체험 기간) 간 상관관계 분석
+* 프로모션별 유저 그룹의 리텐션 추이 분석
+* 성과 측정을 위한 KPI 정의 및 산출
+
+**데이터 관리 체계 재정비**
+
+* BigQuery로 데이터 중앙화
+* 비효율적인 저장 비용 절감
+* 데이터 품질 관리 총괄
+
+## 이팝콘 (Epopcon) — 데이터 사이언티스트 {#epopcon}
+
+`2017.12 ~ 2019.03` (1년 4개월)
+
+**상품 재고량 변화 시점을 예측하는 확률적 스케줄링 모델 개발** (포아송 과정)
+
+* 재고량 결측치 보정 및 이상치 처리 (클러스터링, 이상 탐지)
+
+→ 상세: [Project C. 탄력적 수집 관리를 위한 스케줄링 포아송 머신](projects/project-c.qmd)
+
+**여러 쇼핑몰에 흩어진 동일 상품의 표준 키 생성**
+
+* 이미지와 자연어 데이터를 전처리한 뒤 minhash-LSH 알고리즘 적용
+
+**숨은 고객 행동 패턴 분석**
+
+* 지리 데이터 활용
+* 공공 데이터를 활용해 상점 주소와 업종 카테고리 정제
+* 관심 대상 특성의 분포를 시각화하고 대조군과 비교
+
+## 대한민국 육군 — 작전 보조 {#army}
+
+`2015 ~ 2017` (2년)
+
+## 학력
+
+**연세대학교** — 학사, 응용통계학 · 경제학
+
+## 자격증
+
+* TensorFlow Developer Professional Certificate
+* Using Machine Learning in Trading and Finance
+* Financial Engineering and Risk Management Part I
+
+## 보유 기술
+
+수학 · 문제 관리 · 분석 능력
+
+## 링크
+
+* [LinkedIn](https://www.linkedin.com/in/benjamin-s-k)
+* [Medium Blog](https://medium.com/@benskim915)

@@ -37,9 +37,17 @@ WHO ?
 
 ## 소개
 
-데이터 기반 의사결정과 재현 가능한 분석 파이프라인 구축에 집중하고 있습니다.
+스타트업 데이터 분석가, 데이터 사이언티스트부터 AI 데이터 파트 리드까지 경험하며, 데이터 기반 의사결정과 재현 가능한 분석·ML 파이프라인을 구축해 왔습니다. 유저 그로스 분석, 비전 모델 학습 데이터 큐레이션(MLOps), 통계·ML 하이브리드 예측 모델링을 다룹니다.
+
+[경력 보기](experience.qmd) · [프로젝트 보기](projects.qmd)
 
 ### 주요 기술 스택
-* **언어 & 데이터:** Python, SQL (DuckDB, PostgreSQL, MySQL)
-* **분석 & 시각화:** Pandas, NumPy, SciPy, 통계·시계열 분석, 시각화 도구
+* **언어 & 데이터:** Python, SQL (DuckDB, PostgreSQL, MySQL, BigQuery)
+* **분석 & 시각화:** Pandas, NumPy, SciPy, 통계·시계열 분석, Tableau
+* **그로스 & 로그 분석:** Firebase, Appsflyer, Amplitude, A/B 테스트 설계
+* **ML & MLOps:** Kubeflow, DVC, MLflow, OpenCV, Librosa
 * **워크플로우 & 인프라:** Git, GitHub Actions, Docker, AWS, Quarto
+
+### 학력 & 자격
+* 연세대학교 응용통계학·경제학 학사
+* TensorFlow Developer Professional Certificate

@@ -1,0 +1,202 @@
+---
+title: "Gen-AI B2C App Growth Analytics"
+subtitle: "An end-to-end case study of real business growth strategy and data validation"
+image: ../../projects/images/project-a.png
+toc: true
+---
+
+## [Overview]{.tag} Data analytics for service growth
+
+::: {.lead-line}
+Beta launch and user-acquisition (UA) growth project for a generative-AI B2C app
+:::
+
+* **Context:** Market launch of a mobile app offering face/voice generation AI built on images, audio, and video, together with the business data pipeline.
+* **Target KPI:** Reach PMF and maximize retention — build real-time user activation infrastructure.
+* **Beta launch milestones:**
+
+```{mermaid}
+%%| fig-align: center
+flowchart LR
+  A["1 Planning"] --> B["2 Infra integration"] --> C["3 Beta launch"] --> D["4 UA growth"]
+  style C fill:#ff1b4a,color:#fff,stroke:#ff1b4a
+```
+
+## [Problem Definition]{.tag} Retention (CVR) bottleneck versus user inflow
+
+::: {.lead-line}
+Diagnosing the bottleneck between UA marketing spend and conversion
+:::
+
+**Problems on the ground**
+
+* UA ads brought large inflow, but drop-off surged at the generative-AI experience step right after sign-up.
+* Among users who reached the video-source screen, the rate of actually generating an AI video stalled, delaying the aha-moment.
+* Marketing cost (CAC) kept rising while first-day churn after sign-up spiked.
+
+**User funnel breakdown**
+
+::: {.funnel-bar}
+<span>Ad click & Install</span><span>100%</span>
+:::
+::: {.funnel-bar style="width:75%"}
+<span>Sign Up</span><span>65%</span>
+:::
+::: {.funnel-bar .hot style="width:35%"}
+<span>AI Generation (drop-off hotspot)</span><span>12%</span>
+:::
+::: {.funnel-bar style="width:15%; min-width:200px"}
+<span>Share/Download</span><span>2.5%</span>
+:::
+
+::: {.callout-card .accent}
+Between in-app sign-up and the first AI generation attempt, **more than 80% of users leak out**.
+:::
+
+## [Log Infrastructure]{.tag} User Behavior Log Architecture
+
+::: {.lead-line}
+User behavior log tracking architecture for real-time decision making
+:::
+
+```{mermaid}
+%%| fig-align: center
+flowchart LR
+  A["Client App<br/>Flutter / iOS / AOS"] --> B["Firebase SDK<br/>Behavior log tracking"] --> C["Appsflyer<br/>Attribution"] --> D["Amplitude<br/>Cohort analysis"]
+```
+
+* **Collection and integration:** Integrated a Firebase-based front-end action-log SDK and established unique user-ID mapping and sync.
+* **Acquisition-source tracking:** Designed Appsflyer parameters for ad-channel attribution and built the Amplitude cohort integration pipeline.
+* **Core action-log schema:**
+
+::: {.chip-row}
+[app_open]{.chip} [video_view]{.chip} [face_swap]{.chip} [face_swap_result_view]{.chip} [share]{.chip} [download]{.chip} [like]{.chip}
+:::
+
+## [EDA]{.tag} Identifying churn patterns through data exploration
+
+::: {.lead-line}
+Data-driven hypotheses on churn drivers from multidimensional user-log analysis
+:::
+
+::: {.project-fig}
+```{=html}
+<svg viewBox="0 0 100 60" style="max-width:420px;width:100%">
+  <line x1="0" y1="50" x2="100" y2="50" stroke="#E2E8F0" stroke-width="0.5"/>
+  <line x1="60" y1="0" x2="60" y2="60" stroke="#FF1B4A" stroke-width="0.5" stroke-dasharray="1,1"/>
+  <path d="M 10 45 Q 50 40 60 20 T 100 5" fill="none" stroke="#FF1B4A" stroke-width="1.5"/>
+  <text x="50" y="58" font-size="4" fill="#64748B" text-anchor="middle">Wait time (sec)</text>
+  <text x="62" y="25" font-size="4" fill="#FF1B4A" font-weight="bold">Critical zone (8s)</text>
+  <text x="5" y="10" font-size="4" fill="#64748B">Drop-out</text>
+</svg>
+```
+<figcaption>Drop-out versus wait time (conceptual diagram)</figcaption>
+:::
+
+**Hypotheses**
+
+::: {.callout-card}
+**Hypothesis 1** — When latency before the AI result exceeds 8 seconds, immediate user drop-out rises exponentially.
+:::
+::: {.callout-card}
+**Hypothesis 2** — The higher the image-generation failure rate (face distortion), the faster customers churn, proportionally.
+:::
+::: {.callout-card .accent}
+💡 **SQL result:** A user-segment analysis with SQL window functions showed that users who successfully received AI results twice had a 7-day retention rate **3.5x** higher than users who had not.
+:::
+
+## [Metric Definition & LTV Model]{.tag} Business Metric Optimization
+
+::: {.lead-line}
+Formulating lifetime value (LTV) and the North Star Metric
+:::
+
+**Metric formulation**
+
+* **Proxy LTV:** $\text{proxy LTV} = 1 / \text{GPU cost}$
+* **North Star Metric:** 'Number of users who download (or share) a generated AI result at least once within 24 hours of sign-up'
+
+**Unit economics growth strategy** — Keep the proxy LTV/CAC ratio at 3.0 or higher to stabilize unit economics.
+
+## [Hypothesis Testing]{.tag} A/B test scenario design
+
+::: {.lead-line}
+A practical A/B test scenario and statistical design for hypothesis testing
+:::
+
+| Segment | Content hypothesis |
+|---|---|
+| Control (Group A) | Existing random content (80% user-uploaded, 20% in-house) |
+| **Treatment (Group B)** | **Genre-curated content (cinematic, Y2K, cartoon, meme, etc.)** |
+
+* **Primary metric:** Video conversion rate = share of users exposed to content who successfully generate an AI video (baseline 14.2%)
+* **Assignment / duration:** New users randomly assigned 50:50 with Firebase Remote Config (A/B Testing), branching the content-exposure policy value; 14 days (two weekly cycles). The group is logged as a user property and on action logs for per-group analysis in BigQuery and Amplitude.
+* **Sample size:** With significance level $\alpha = 0.05$, power $1-\beta = 0.80$, and a minimum detectable effect (MDE) of **+6.5 pp** (14.2% → 20.7%), at least **532 users per group**, i.e. at least **38 users per segment per day** over 14 days.
+
+## [A/B Test Execution]{.tag} Statistical significance
+
+::: {.lead-line}
+Analyzing the A/B test and verifying significance at the 95% confidence level
+:::
+
+Conversion proportions were tested with an independent-samples t-test and a chi-square test (576 users per group, about 41 per day).
+
+::: {.project-fig}
+```{=html}
+<svg viewBox="0 0 100 50" style="max-width:420px;width:100%">
+  <path d="M 10 45 C 30 45, 40 10, 50 45" fill="none" stroke="#94A3B8" stroke-width="1"/>
+  <path d="M 30 45 C 50 45, 60 5, 70 45" fill="none" stroke="#FF1B4A" stroke-width="1.5"/>
+  <line x1="42" y1="10" x2="42" y2="45" stroke="#94A3B8" stroke-width="0.5" stroke-dasharray="1,1"/>
+  <line x1="58" y1="5" x2="58" y2="45" stroke="#FF1B4A" stroke-width="0.5" stroke-dasharray="1,1"/>
+  <text x="35" y="49" font-size="3" fill="#64748B">A (14.2%)</text>
+  <text x="65" y="49" font-size="3" fill="#FF1B4A" font-weight="bold">B (19.8%)</text>
+</svg>
+```
+<figcaption>Conversion distributions, control A vs treatment B (conceptual diagram)</figcaption>
+:::
+
+::: {.kpi-grid}
+::: {.kpi .red}
+[Treatment (B) video conversion lift]{.kpi-label} [+5.6 pp (about +39%)]{.kpi-value} [A 14.2% → B 19.8% (82 → 114 of 576 per group)]{.kpi-desc}
+:::
+::: {.kpi}
+[Test statistic]{.kpi-label} [p = 0.012 < 0.05]{.kpi-value} [95% CI of the difference: +1.2 to +9.9 pp]{.kpi-desc}
+:::
+:::
+
+**Conclusion:** The difference was verified as statistically significant, not due to chance, and the new service scenario was decided for full rollout. The observed difference (+5.6 pp) is smaller than the design MDE (+6.5 pp), so power is about 71%; the effect size will be re-checked through post-rollout monitoring.
+
+> A detailed reproduction is in [Report: A/B Test Analysis Note](../posts/2026-11-sample-analysis/index.qmd).
+
+## [Tableau]{.tag} Real-time business growth dashboard
+
+::: {.lead-line}
+Real-time Tableau dashboard architecture to speed up business decisions
+:::
+
+* **Dashboard spec — data sources:** Real-time join of refined BigQuery logs and Appsflyer marketing performance tables.
+* **Key charts**
+    * Generations per session and dwell time by content category [adjustable period]
+    * Funnel chart by acquisition cohort with drop-off alerts
+    * Retention versus GPU cost monitoring by marketing channel
+
+## [Business Impact]{.tag} Quantitative and qualitative results
+
+::: {.lead-line}
+Quantitative impact of data-driven business improvement
+:::
+
+::: {.kpi-grid}
+::: {.kpi .red}
+[Video generation conversion lift]{.kpi-label} [24.2% → 39.8%]{.kpi-value} [Improved AI video generation conversion]{.kpi-desc}
+:::
+::: {.kpi .red}
+[Regeneration success rate]{.kpi-label} [18% → 33%]{.kpi-value} [Regeneration success among users who reached the generation screen]{.kpi-desc}
+:::
+::: {.kpi}
+[Marketing efficiency]{.kpi-label} [▼ 12% cost]{.kpi-value} [CAC reduced by retargeting inefficient ad segments and consolidating channels]{.kpi-desc}
+:::
+::: {.kpi}
+[Communication culture]{.kpi-label} [Data-driven]{.kpi-value} [Daily morning hypothesis-testing meetings between business and content teams, based on the Tableau dashboard]{.kpi-desc}
+:::
+:::

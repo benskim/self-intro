@@ -1,0 +1,127 @@
+---
+title: "Video Data Curation and MLOps PoC"
+subtitle: "ML pipeline engineering for a vision model that improves infrastructure efficiency and data quality"
+image: ../../projects/images/project-b.png
+toc: true
+---
+
+## [Overview]{.tag} Optimizing the DL model training cycle
+
+::: {.lead-line}
+AI-driven data curation (MLOps) for training a FaceSwap vision model
+:::
+
+* **Project context:** Semi-automate the cycle of training-data collection, processing, screening, training, and storage to raise data quality itself, improve model performance, and speed up work from model research to deployment.
+* **Core mission:** Run EDA on the metadata of raw unstructured datasets and set cleansing criteria, speed up processing, build a DL screening model, connect the pipeline, and set up an MVP-level MLOps validation environment that guarantees experiment reproducibility under resource constraints.
+
+## [Problem Definition]{.tag} Soaring infrastructure cost and inefficient model training
+
+::: {.lead-line}
+Compute limits and stalled model performance caused by disorderly data intake (Garbage In)
+:::
+
+* **Noisy raw data:** Video and image datasets collected in bulk by crawling and similar means carried heavy noise (audio clipping, low-resolution bias).
+* **Wasted resources and cost:** Training on unrefined data indiscriminately caused GPU resource consumption and training cost to balloon.
+* **Accuracy ceiling:** Even with more sophisticated model parameters, data bias kept inference accuracy on the evaluation set stalled.
+
+## [Data Profile EDA]{.tag} In-depth metadata EDA of raw unstructured datasets
+
+::: {.lead-line}
+Detecting statistical noise in raw unstructured data and establishing quality criteria
+:::
+
+**Action (exploratory data analysis):** Combined SQL and Python (Pandas, Librosa, OpenCV) to extract metadata attributes at scale (MFCC, objects, brightness, etc.).
+
+::: {.callout-card}
+💡 **Key findings**
+
+* 20% of the videos already on hand were in `access denied` state, inconsistent with their public metadata.
+* Asian faces made up under 5% of the data, revealing a strong Western bias.
+* 4% of collected audio files exceeded the allowed noise level (SNR), and 15% of vision images showed face-detection failure along with bias in certain brightness ranges.
+:::
+
+::: {.callout-card .accent}
+✅ **Cleansing guideline design:** Set model parameters that affect face recognition (crop size, similarity, etc.), plus thresholds for minimum SNR and minimum image resolution for data purification.
+:::
+
+## [Solution Architecture]{.tag} Data curation MLOps pipeline design
+
+::: {.lead-line}
+End-to-end AI-driven data curation MLOps pipeline (automated vision and data processing)
+:::
+
+```{mermaid}
+%%| fig-align: center
+flowchart LR
+  A["Raw Data"] --> B["Preprocessing"] --> C["Quality Filter"] --> D["Labeling"] --> E["Training"] --> F["Registry"]
+```
+
+**Stage components**
+
+1. **Raw:** Metadata extraction and schema normalization at collection, then storage
+2. **Preprocessing:** Face detection, landmark extraction, and face alignment; on-demand functions such as smoothing and re-alignment
+3. **Quality filtering:** Combines EDA-based threshold rules with ML-based anomaly detection
+4. **Labeling / Training:** Labeling uses a semi-automated human-in-the-loop design for efficiency. The training pipeline builds a reproducible environment on versioned datasets, with registry-based lineage tracking
+
+## [Automated Data Quality Scoring]{.tag} DL-based data screening system
+
+::: {.lead-line}
+AI-based automatic data quality evaluation and filtering (core component)
+:::
+
+**Core integration** — Applied a hybrid rule-based + deep learning screening engine to go beyond simple criteria filtering.
+
+* Face detection confidence check
+* Vector analysis of image resolution and blur score
+
+**3-tier triage system**
+
+::: {.triage}
+[Accept]{.accept} [Review]{.review} [Reject]{.reject}
+:::
+
+Quality scoring with a lightweight CNN / vision encoder adds active filtering that cuts human labeling cost.
+
+## [Infrastructure Optimization]{.tag} GPU cost reduction and training efficiency
+
+::: {.lead-line}
+Infrastructure cost optimization through data refinement (impact)
+:::
+
+::: {.kpi-grid}
+::: {.kpi}
+[Epoch sample optimization]{.kpi-label} [20–30% fewer]{.kpi-value} [Blocks unnecessary noisy data]{.kpi-desc}
+:::
+::: {.kpi .red}
+[GPU training time]{.kpi-label} [Up to 40% shorter]{.kpi-value} [Resource efficiency from refined datasets]{.kpi-desc}
+:::
+::: {.kpi}
+[Early rejection]{.kpi-label} [Minimized allocation]{.kpi-value} [Avoids wasted compute resources]{.kpi-desc}
+:::
+:::
+
+The result is **infra cost curve flattening** at the same model performance.
+
+## [MLOps MVP System]{.tag} Reproducible experiments and model operations
+
+::: {.lead-line}
+An MLOps environment that guarantees experiment reproducibility and model operations (MVP)
+:::
+
+* **Experiment unit management:** Dataset versioning guarantees reproducibility per experiment (data hash tracking), tightly integrated with MLflow experiment tracking and model registry.
+* **Standardized operations pipeline:** Training configuration (seed, hyperparameters, dataset version) is fully fixed, and pipeline orchestration cleanly isolates research resources from service operation resources.
+
+## [Expected Outcome]{.tag} Model performance gains from better data quality
+
+::: {.lead-line}
+Performance and efficiency gains from the shift to data-centric MLOps (outcome)
+:::
+
+* **Accuracy uplift:** Visible accuracy gains with refined data on the same model architecture
+* **Convergence stability:** Excluding noisy data improves training stability and reduces overfitting
+* **Established correlation:** Demonstrated a quantitative causal link between data-quality metrics and actual performance
+* **Shorter lead time:** Shortened the end-to-end research-development-deployment cycle
+
+::: {.callout-card .final}
+"A full paradigm shift from model-centric to data-centric AI pipelines"
+:::

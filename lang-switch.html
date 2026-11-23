@@ -1,0 +1,26 @@
+<script>
+/* KO | EN switch: points each link at the same page in the other language,
+   and keeps English pages navigating inside /en/. */
+document.addEventListener("DOMContentLoaded", function () {
+  try {
+    var meta = document.querySelector('meta[name="quarto:offset"]');
+    var root = new URL(meta ? meta.content : "./", location.href).pathname;
+    if (root.slice(-1) !== "/") root += "/";
+    var rel = location.pathname.slice(root.length);
+    if (rel === "" || rel.slice(-1) === "/") rel += "index.html";
+    var isEn = rel.indexOf("en/") === 0;
+    var ko = isEn ? rel.slice(3) : rel;
+    var en = isEn ? rel : "en/" + rel;
+    document.querySelectorAll(".navbar a[href]").forEach(function (a) {
+      var label = a.textContent.trim();
+      var u = new URL(a.getAttribute("href"), location.href);
+      if (label === "KO") { a.href = root + ko + location.hash; if (!isEn) a.classList.add("active"); return; }
+      if (label === "EN") { a.href = root + en + location.hash; if (isEn) a.classList.add("active"); return; }
+      if (isEn && u.origin === location.origin && u.pathname.indexOf(root) === 0 &&
+          u.pathname.indexOf(root + "en/") !== 0) {
+        a.href = root + "en/" + u.pathname.slice(root.length) + u.search + u.hash;
+      }
+    });
+  } catch (e) {}
+});
+</script>

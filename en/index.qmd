@@ -1,0 +1,53 @@
+---
+title: ""
+page-layout: full
+toc: false
+---
+
+::: {.badge-vision}
+VISION
+:::
+
+::: {.hero-quote}
+"Find the path of least resistance that still gets things done within the constraints."
+:::
+
+Through experience as a team lead and startup team lead, I think beyond memorizing formulas and code: how should technology be learned, designed, and applied in real business, from the perspective of revenue and service growth?
+
+---
+
+::: {.badge-who}
+WHO ?
+:::
+
+## Turning vision into concrete business results.
+
+::: {.highlight-box}
+::: {.lead-title}
+"I'm [ben kim]{.accent-red}, who brings together the languages of different fields to deliver results."
+:::
+
+Across stakeholders with different interests, I set goals and requirements, and draw on hands-on analytics and data engineering experience to improve business metrics and build **a team that grows together**.
+
+::: {.role-pill-group}
+[ [Data Scientist]{.role-pill} ]{.bi .bi-briefcase-fill}
+[ [AI Data Engineer]{.role-pill} ]{.bi .bi-briefcase-fill}
+:::
+:::
+
+## About
+
+Starting as a data analyst and data scientist at startups and growing into an AI data part lead, I have built data-driven decision-making and reproducible analytics and ML pipelines. My work spans user growth analytics, training-data curation (MLOps) for vision models, and hybrid statistical + ML predictive modeling.
+
+[Experience](experience.qmd) · [Projects](projects.qmd)
+
+### Tech Stack
+* **Languages & Data:** Python, SQL (DuckDB, PostgreSQL, MySQL, BigQuery)
+* **Analytics & Visualization:** Pandas, NumPy, SciPy, statistics and time-series analysis, Tableau
+* **Growth & Log Analytics:** Firebase, Appsflyer, Amplitude, A/B test design
+* **ML & MLOps:** Kubeflow, DVC, MLflow, OpenCV, Librosa
+* **Workflow & Infrastructure:** Git, GitHub Actions, Docker, AWS, Quarto
+
+### Education & Certification
+* Yonsei University, B.A. in Applied Statistics and Economics
+* TensorFlow Developer Professional Certificate

@@ -1,0 +1,85 @@
+---
+title: "Experience"
+toc: true
+---
+
+A career that runs from data analytics through data curation and MLOps to statistical predictive modeling, and on to leading teams.
+
+## Klleon R&D — Data Part Lead {#klleon}
+
+`Mar 2021 – Nov 2023` (2 yrs 9 mos)
+
+**Built and led the MLOps team and data part for an effective research environment**
+
+* Developed Korean TTS technology based on Data-Centric AI (DCAI)
+* Built and optimized a computer-vision data curation system covering data collection, processing, and screening
+* Supported engineering with Kubeflow and DVC
+
+→ Details: [Project B. Video Data Curation and MLOps PoC](projects/project-b.qmd)
+
+**Supported data-driven decisions for a Gen-AI based B2C service**
+
+* Analyzed users with Firebase, Appsflyer, Amplitude, Tableau, and statistical modeling
+* Led the beta launch (App Store, Google Play)
+* Led digital marketing (Meta, Google Ads)
+
+→ Details: [Project A. Gen-AI B2C App Growth Analytics](projects/project-a.qmd)
+
+## freewheelin — Data Analyst {#freewheelin}
+
+`Apr 2019 – Jul 2020` (1 yr 4 mos) · Gwanak-gu, Seoul
+
+**Built a dashboard for promotion performance analysis**
+
+* Analyzed the correlation between promotions and user properties (price, free-trial period)
+* Analyzed retention trends of user groups by promotion
+* Defined and calculated KPIs to measure performance
+
+**Reorganized the data management system**
+
+* Centralized data in BigQuery
+* Reduced inefficient storage cost
+* Oversaw data quality
+
+## Epopcon — Data Scientist {#epopcon}
+
+`Dec 2017 – Mar 2019` (1 yr 4 mos)
+
+**Built stochastic scheduling models that predict when product stock levels change** (Poisson process)
+
+* Imputed missing inventory values and handled outliers (clustering, anomaly detection)
+
+→ Details: [Project C. Scheduling Poisson Machine for Adaptive Crawling](projects/project-c.qmd)
+
+**Created standardized keys for the same product listed across multiple shopping malls**
+
+* Preprocessed image and natural-language data, then applied the MinHash-LSH algorithm
+
+**Analyzed hidden customer behavior patterns**
+
+* Used geographical data
+* Cleaned store addresses and categories using open data
+* Visualized the distribution of target features and compared it with a control group
+
+## Republic of Korea Army — Operations Assistant {#army}
+
+`2015 – 2017` (2 yrs)
+
+## Education
+
+**Yonsei University** — Bachelor's degree, Applied Statistics and Economics
+
+## Certifications
+
+* TensorFlow Developer Professional Certificate
+* Using Machine Learning in Trading and Finance
+* Financial Engineering and Risk Management Part I
+
+## Core Skills
+
+Mathematics · Problem Management · Analytical Skills
+
+## Links
+
+* [LinkedIn](https://www.linkedin.com/in/benjamin-s-k)
+* [Medium Blog](https://medium.com/@benskim915)

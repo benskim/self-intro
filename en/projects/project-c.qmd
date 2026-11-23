@@ -1,0 +1,136 @@
+---
+title: "Scheduling Poisson Machine for Adaptive Crawling"
+subtitle: "Intelligent data acquisition (crawl period optimization) combining statistical page-change detection and machine learning"
+image: ../../projects/images/project-c.png
+toc: true
+---
+
+## [Overview]{.tag} Poisson-process-based adaptive crawl manager
+
+::: {.lead-line}
+A smart crawler manager built on a Poisson process and ML
+:::
+
+* **Project context:** Dynamically optimize the crawl period by tying it to how fast stock changes on shopping-mall product pages. Suppressing redundant crawls minimizes waste of in-house collection infrastructure, and not missing stock-change moments yields accurate market demand estimates.
+* **Core mission**
+    * Analyze the limits and inefficiency of the existing fixed-period (score-based) crawler (As-Is vs To-Be)
+    * Define the target variable for applying the page-change model (Poisson process) and validate it by simulation
+    * Clean outliers in raw unstructured collection data, engineer features from EDA, and build the pipeline
+    * Build a period-control engine that combines a statistical model (Poisson) with an ML classification model
+
+## [Problem Definition]{.tag} Infrastructure load and data gaps from fixed-interval crawling
+
+::: {.lead-line}
+Limits of fixed-period collection: a vicious cycle of wasted infrastructure and lost business opportunity
+:::
+
+* **As-Is: Over-crawling (resource inefficiency)** — Static pages with almost no stock change (unpopular products, etc.) were crawled mechanically and often, driving up networking resources and processing storage cost.
+* **As-Is: Under-crawling (data loss)** — Fast-selling hot-deal pages were not collected in time, so the precision of demand-change estimates stalled. Per-platform traffic thresholds (Lotte, Hmall, GS, 11st, Coupang, G-market, SSG, etc.) were also not reflected.
+
+## [Theoretical Modeling]{.tag} Finding the optimal crawl period with a Poisson process
+
+::: {.lead-line}
+Modeling dynamic web page change detection with the Poisson process
+:::
+
+**Theoretical background (Cho & Garcia-Molina, 1999)**
+
+$$P(N(t)=k) = \frac{(\lambda t)^k e^{-\lambda t}}{k!}$$
+
+Based on the theory that page-change intervals are independent and follow an exponential distribution.
+
+**Breaking through practical limits** — The classic Poisson change rate ($\lambda$) is a fixed constant, so it cannot predict the varying cycle of each product. Instead, I collected change/no-change data per time unit (0.2H, 0.5H, 1H, 4H, 8H, 12H, 24H, 48H, etc.), simulated a local $\lambda$ and change probability for each interval, and turned the interval with the maximum probability into the target variable.
+
+## [Target Variable Engineering]{.tag} Validating the target variable by Excel simulation
+
+::: {.lead-line}
+Target variable simulation and validation of data cleansing (preprocessing)
+:::
+
+1. **Window slicing and quantification:** From the current time, sampled change/no-change data per time unit, such as 4H (last 24 hours) and 12H (last 72 hours), aggregated it, and computed $\lambda$.
+2. **Target labeling and tie-breaking:** The interval with the highest change probability becomes the next crawl target. When a tie occurs, the conservative safeguard **forces the faster period** to prevent data loss.
+
+## [Data Profiling & EDA]{.tag} Predictors versus target distribution and correlation
+
+::: {.lead-line}
+Statistical noise and hypothesis checks between collection predictors and the next crawl period (target)
+:::
+
+::: {.project-fig}
+```{=html}
+<svg viewBox="0 0 100 60" style="max-width:420px;width:100%">
+  <line x1="10" y1="50" x2="90" y2="50" stroke="#E2E8F0" stroke-width="0.5"/>
+  <line x1="10" y1="10" x2="10" y2="50" stroke="#E2E8F0" stroke-width="0.5"/>
+  <circle cx="20" cy="45" r="1" fill="#FF1B4A" opacity="0.6"/>
+  <circle cx="30" cy="42" r="1.2" fill="#FF1B4A" opacity="0.6"/>
+  <circle cx="40" cy="35" r="1" fill="#FF1B4A" opacity="0.6"/>
+  <circle cx="50" cy="30" r="1.5" fill="#FF1B4A" opacity="0.6"/>
+  <circle cx="60" cy="22" r="1" fill="#FF1B4A" opacity="0.6"/>
+  <circle cx="70" cy="18" r="1" fill="#FF1B4A" opacity="0.6"/>
+  <circle cx="80" cy="15" r="1.3" fill="#FF1B4A" opacity="0.6"/>
+  <line x1="15" y1="48" x2="85" y2="12" stroke="#FF1B4A" stroke-width="1" stroke-dasharray="1,1"/>
+  <text x="50" y="58" font-size="4" fill="#64748B" text-anchor="middle">SELL_RANK_log (lower rank)</text>
+  <text x="8" y="30" font-size="4" fill="#64748B" text-anchor="middle" transform="rotate(-90 8 30)">No-change ratio</text>
+</svg>
+```
+<figcaption>No-change ratio versus popularity rank (conceptual diagram)</figcaption>
+:::
+
+**EDA findings**
+
+::: {.callout-card}
+**Hypothesis 1. Product popularity:** Products with a lower sales rank (higher `SELL_RANK_log`) and less popular categories showed markedly lower information-update frequency.
+:::
+::: {.callout-card}
+**Hypothesis 2. Listing duration:** Newly registered product pages are edited often, but the longer the exposure period (`period` increases), the more stock change rate converges to 0, a stationarity-like behavior.
+:::
+
+Because the survival-length distribution of collected pages was multimodal and differed by change/no-change class, that feature was selected as a key variable.
+
+## [Solution Architecture]{.tag} End-to-end crawl manager data and model pipeline
+
+::: {.lead-line}
+End-to-end dynamic crawling data pipeline and decision architecture
+:::
+
+**CORE FLOW**
+
+```{mermaid}
+%%| fig-align: center
+flowchart LR
+  A["Retrieve"] --> B["Preprocess"] --> C["Predict"] --> D["Transform"] --> E["Insert"]
+```
+
+* **Hybrid branch 1 (products with enough history):** When change history is sufficient (`# data > 3`), the product enters the Poisson $\lambda$ stage. If many changes are detected it is handed to the ML classification model for period prediction; if no change is observed, the crawl period is extended to two days later.
+* **Hybrid branch 2 (new products):** Products with very little history, such as new arrivals, go to a "fixed collection every 6 hours" pipeline to secure a stable cold start and build up history.
+
+## [Modeling & Optimization]{.tag} Classification ML and statistical model optimization
+
+::: {.lead-line}
+Optimizing and tuning the hybrid crawl-period classification model
+:::
+
+**Hybrid engine strategy**
+
+* **ML classification model:** Predicts the next period by combining static metadata such as text (product keywords, category tags), TV shopping schedules, and exposure placement
+* **Poisson statistical model:** A lightweight dedicated module that closely monitors time-series stock-change patterns from live collected data
+
+**Refined evaluation metrics** — To overcome the limits of plain accuracy under class imbalance, I designed a **recall**-centered error table and applied **Cohen's Kappa** to evaluate agreement between models.
+
+## [Business Impact]{.tag} Infrastructure savings and more accurate stock estimation
+
+::: {.lead-line}
+Infrastructure innovation and data value from running the smart-crawler Poisson engine (expected impact)
+:::
+
+::: {.kpi-grid}
+::: {.kpi .red}
+[Infrastructure savings]{.kpi-label} [5–6% reduction]{.kpi-value} [Suppressing redundant crawls of no-change pages cut network bandwidth and traffic cost]{.kpi-desc}
+:::
+::: {.kpi}
+[Data consistency]{.kpi-label} [Real-time error convergence]{.kpi-value} [Crawl resources redistributed to fast-moving popular shelves, minimizing sold-out lag time]{.kpi-desc}
+:::
+::: {.kpi}
+[Stability]{.kpi-label} [Fewer outages]{.kpi-value} [Optimal periods across multiple platforms avoid IP-block risk on target servers and enable a safe automated pipeline]{.kpi-desc}
+:::
+:::
