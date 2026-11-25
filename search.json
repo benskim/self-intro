@@ -1,66 +1,73 @@
 [
   {
-    "objectID": "ko/projects/project-b.html",
-    "href": "ko/projects/project-b.html",
-    "title": "영상 데이터 큐레이션 및 MLOps PoC",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ben's Notes",
     "section": "",
-    "text": "FaceSwap 비전 모델학습을 위한 AI-driven 데이터 큐레이션(MLOps)\n\n\nProject Context: 학습데이터 수집-가공–검수-학습-저장의 주기를 준자동화하여 학습데이터의 품질 자체를 향상시켜 모델성능을 향상시키고 동시에 모델연구부터 모델배포까지의 업무속도를 개선하는 프로젝트.\nCore Mission: 원천 비정형 데이터셋의 메타데이터 탐색(EDA) 및 클렌징 기준 수립, 가공 속도 효율화, 검수 DL머신 생성, 파이프라인 연결, 리소스 제약 하에서 실험 재현성을 보장하는 MVP 수준의 MLOps 검증 환경 구축."
+    "text": "데이터로 사람들의 건강에 보탬이 되려는 분석가, Ben Kim입니다.\n\n\n스타트업에서 5년 넘게 데이터 분석가, 데이터 사이언티스트, AI 데이터 파트 리드로 일했습니다. 지금은 의사, 약사, 제약사, 유통사처럼 약을 다루는 사람들이 더 나은 결정을 내리도록 공개 의약품 데이터를 분석하고 있습니다.\n\n\n보고서 읽기 경력 보기\n\n\n\n\n\n환자를 직접 만나지 않아도, 환자에게 약을 처방하고 건네고 만들고 공급하는 사람들의 결정을 도우면 건강에 보탬이 될 수 있다고 봅니다.\n\n\n  처방하려는 성분의 급여 변경과 공급 변화를 미리 확인합니다.\n  약값 인하와 급여정지 예고를 미리 알아 재고를 계획합니다.\n  자사 성분의 시장 흐름과 경쟁 제품의 가격 변화를 한눈에 봅니다.\n  성분별 수요 흐름을 공급 계획과 약국 알림의 기준으로 씁니다.\n\n\n\n\n\n\n공개 의약품 데이터로 답할 수 있는 질문을 다룹니다. 결과만큼 “이 숫자를 얼마나 믿을 수 있는가”를 자세히 적었습니다.\n\n\n\n\n\n\n\n공개 의약품 데이터로 약값·급여 변화를 미리 잡고, 성분 처방 수요를 6개월 앞까지 내다보기\n\n\n\n\n\n2026-11-24\n\n\n\n\n\n일치 없음\n\n\n\n\n\n\n제약조건 안에서 가장 저항이 적고 실행 가능한 행동을 찾는다.\n\n복잡한 방법이 단순한 방법보다 낫다는 근거가 없으면 단순한 방법을 고릅니다. 결과를 보기 전에 판정 기준을 먼저 정하고, 불리한 결과도 그대로 적습니다.\n\n\n\n\n  \n    2021.03 – 2023.11\n    Klleon R&D · 데이터 파트 리드\n      MLOps 팀과 데이터 파트를 만들고 이끌었습니다. 생성형 AI 앱의 그로스 분석과 A/B 테스트, 학습 데이터 큐레이션을 맡았습니다.\n      그로스 분석 · 데이터 큐레이션\n  \n  \n    2019.04 – 2020.07\n    Freewheelin · 데이터 분석가\n      프로모션 성과 대시보드를 만들고, BigQuery로 데이터를 모아 품질 관리를 맡았습니다.\n  \n  \n    2017.12 – 2019.03\n    Epopcon · 데이터 사이언티스트\n      포아송 과정으로 쇼핑몰 상품 재고가 바뀌는 시점을 예측해 수집 주기를 최적화했습니다.\n      스케줄링 모델\n  \n\n연세대학교 응용통계학·경제학 학사 · Python, SQL, 통계·시계열 분석, LightGBM, BigQuery, MLflow\n전체 경력 · 프로젝트 · LinkedIn · Medium · GitHub"
   },
   {
-    "objectID": "ko/projects/project-b.html#overview-dl모델-학습사이클-최적화-개요",
-    "href": "ko/projects/project-b.html#overview-dl모델-학습사이클-최적화-개요",
-    "title": "영상 데이터 큐레이션 및 MLOps PoC",
+    "objectID": "index.html#누구를-돕는-분석인가",
+    "href": "index.html#누구를-돕는-분석인가",
+    "title": "Ben's Notes",
     "section": "",
-    "text": "FaceSwap 비전 모델학습을 위한 AI-driven 데이터 큐레이션(MLOps)\n\n\nProject Context: 학습데이터 수집-가공–검수-학습-저장의 주기를 준자동화하여 학습데이터의 품질 자체를 향상시켜 모델성능을 향상시키고 동시에 모델연구부터 모델배포까지의 업무속도를 개선하는 프로젝트.\nCore Mission: 원천 비정형 데이터셋의 메타데이터 탐색(EDA) 및 클렌징 기준 수립, 가공 속도 효율화, 검수 DL머신 생성, 파이프라인 연결, 리소스 제약 하에서 실험 재현성을 보장하는 MVP 수준의 MLOps 검증 환경 구축."
+    "text": "환자를 직접 만나지 않아도, 환자에게 약을 처방하고 건네고 만들고 공급하는 사람들의 결정을 도우면 건강에 보탬이 될 수 있다고 봅니다.\n\n\n  처방하려는 성분의 급여 변경과 공급 변화를 미리 확인합니다.\n  약값 인하와 급여정지 예고를 미리 알아 재고를 계획합니다.\n  자사 성분의 시장 흐름과 경쟁 제품의 가격 변화를 한눈에 봅니다.\n  성분별 수요 흐름을 공급 계획과 약국 알림의 기준으로 씁니다."
   },
   {
-    "objectID": "ko/projects/project-b.html#problem-definition-인프라-비용-급증-및-모델-학습-비효율",
-    "href": "ko/projects/project-b.html#problem-definition-인프라-비용-급증-및-모델-학습-비효율",
-    "title": "영상 데이터 큐레이션 및 MLOps PoC",
-    "section": "Problem Definition 인프라 비용 급증 및 모델 학습 비효율",
-    "text": "Problem Definition 인프라 비용 급증 및 모델 학습 비효율\n\n무질서한 데이터 적재(Garbage In)로 인한 연산 한계 및 모델 성능 정체\n\n\n원천 데이터의 노이즈: 크롤링 등을 통해 대량 적재된 영상 및 이미지 원천 데이터 세트의 극심한 노이즈(오디오 클리핑 현상, 저해상도 편향) 존재.\n리소스 및 비용 낭비: 정제되지 않은 데이터를 무조건 모델에 학습시키면서 GPU 인프라 리소스 소모 급증 및 학습 비용 기하급수적 낭비.\n추론 정확도 한계: 모델 파라미터를 고도화해도 정제되지 않은 데이터 편향으로 인해 평가 셋에서의 최종 추론 정확도 성능 정체."
+    "objectID": "index.html#보고서",
+    "href": "index.html#보고서",
+    "title": "Ben's Notes",
+    "section": "",
+    "text": "공개 의약품 데이터로 답할 수 있는 질문을 다룹니다. 결과만큼 “이 숫자를 얼마나 믿을 수 있는가”를 자세히 적었습니다.\n\n\n\n\n\n\n\n공개 의약품 데이터로 약값·급여 변화를 미리 잡고, 성분 처방 수요를 6개월 앞까지 내다보기\n\n\n\n\n\n2026-11-24\n\n\n\n\n\n일치 없음"
   },
   {
-    "objectID": "ko/projects/project-b.html#data-profile-eda-원천-비정형-데이터셋-메타데이터-심층-eda",
-    "href": "ko/projects/project-b.html#data-profile-eda-원천-비정형-데이터셋-메타데이터-심층-eda",
-    "title": "영상 데이터 큐레이션 및 MLOps PoC",
-    "section": "Data Profile EDA 원천 비정형 데이터셋 메타데이터 심층 EDA",
-    "text": "Data Profile EDA 원천 비정형 데이터셋 메타데이터 심층 EDA\n\n비정형 원천 데이터의 통계적 노이즈 감지 및 품질 기준 정립\n\nAction (Exploratory Data Analysis): SQL과 Python(Pandas, Librosa, OpenCV)을 결합하여 대량의 비정형 데이터 메타 속성 추출(MFCC, Object, Brightness, etc).\n\n💡 주요 발견 사실\n\n기존 확보 영상의 20%가 access denied 상태로 공개 메타데이터와의 불일치를 탐지.\n아시아인 분포가 5% 미만으로 서구권 인종에 크게 편향되어 있음을 규명.\n수집 음성 파일 중 4%가 노이즈 레벨(SNR) 허용 한계를 초과하고, 비전 이미지의 15%에서 face detection failed 상태 및 특정 밝기 영역 편향 발견.\n\n\n\n✅ 정제 가이드라인 설계: 얼굴 인식에 영향을 주는 crop size, similarity 등의 모델 인자값 그리고 최소 SNR, 이미지 최소 해상도의 데이터 정화 임계값(Threshold) 수립."
+    "objectID": "index.html#일하는-방식",
+    "href": "index.html#일하는-방식",
+    "title": "Ben's Notes",
+    "section": "",
+    "text": "제약조건 안에서 가장 저항이 적고 실행 가능한 행동을 찾는다.\n\n복잡한 방법이 단순한 방법보다 낫다는 근거가 없으면 단순한 방법을 고릅니다. 결과를 보기 전에 판정 기준을 먼저 정하고, 불리한 결과도 그대로 적습니다."
   },
   {
-    "objectID": "ko/projects/project-b.html#solution-architecture-데이터-큐레이션-mlops-파이프라인-설계",
-    "href": "ko/projects/project-b.html#solution-architecture-데이터-큐레이션-mlops-파이프라인-설계",
-    "title": "영상 데이터 큐레이션 및 MLOps PoC",
-    "section": "Solution Architecture 데이터 큐레이션 MLOps 파이프라인 설계",
-    "text": "Solution Architecture 데이터 큐레이션 MLOps 파이프라인 설계\n\nEnd-to-End AI-driven Data Curation MLOps Pipeline (비전 및 데이터 가공 자동화 구조)\n\n\n\n\n\n\n\nflowchart LR\n  A[\"Raw Data\"] --&gt; B[\"Preprocessing\"] --&gt; C[\"Quality Filter\"] --&gt; D[\"Labeling\"] --&gt; E[\"Training\"] --&gt; F[\"Registry\"]\n\n\n\n\n\n\n단계별 구성 컴포넌트\n\nRaw: 데이터 수집 단계에서 metadata extraction 및 schema normalization 수행 + 저장\nPreprocessing: 얼굴인식/특징점추출/얼굴정렬 수행 — On-demand 함수 적용: smoothing, re-alignment 등\nQuality Filtering: EDA 기반 threshold rule + ML 기반 anomaly detection 결합\nLabeling / Training: Labeling 단계는 semi-automated human-in-the-loop 구조로 효율성 확보. Training Pipeline은 versioned dataset 기반으로 재현 가능한 학습 환경 구성 및 registry 기반의 lineage tracking 구현"
+    "objectID": "index.html#경력",
+    "href": "index.html#경력",
+    "title": "Ben's Notes",
+    "section": "",
+    "text": "2021.03 – 2023.11\n    Klleon R&D · 데이터 파트 리드\n      MLOps 팀과 데이터 파트를 만들고 이끌었습니다. 생성형 AI 앱의 그로스 분석과 A/B 테스트, 학습 데이터 큐레이션을 맡았습니다.\n      그로스 분석 · 데이터 큐레이션\n  \n  \n    2019.04 – 2020.07\n    Freewheelin · 데이터 분석가\n      프로모션 성과 대시보드를 만들고, BigQuery로 데이터를 모아 품질 관리를 맡았습니다.\n  \n  \n    2017.12 – 2019.03\n    Epopcon · 데이터 사이언티스트\n      포아송 과정으로 쇼핑몰 상품 재고가 바뀌는 시점을 예측해 수집 주기를 최적화했습니다.\n      스케줄링 모델\n  \n\n연세대학교 응용통계학·경제학 학사 · Python, SQL, 통계·시계열 분석, LightGBM, BigQuery, MLflow\n전체 경력 · 프로젝트 · LinkedIn · Medium · GitHub"
   },
   {
-    "objectID": "ko/projects/project-b.html#automated-data-quality-scoring-dl-기반-데이터-검수-시스템",
-    "href": "ko/projects/project-b.html#automated-data-quality-scoring-dl-기반-데이터-검수-시스템",
-    "title": "영상 데이터 큐레이션 및 MLOps PoC",
-    "section": "Automated Data Quality Scoring DL 기반 데이터 검수 시스템",
-    "text": "Automated Data Quality Scoring DL 기반 데이터 검수 시스템\n\nAI 기반 데이터 품질 자동 평가 및 필터링 시스템 (Core Component)\n\nCore Integration — Rule-based + Deep Learning hybrid 방식의 데이터 검수 엔진을 적용하여 단순 기준 필터링을 고도화했습니다.\n\nFace detection confidence 검사\nImage resolution 및 blur score 벡터 분석\n\n3-Tier Triage System\n\nAccept Review Reject\n\nLightweight CNN / Vision encoder 기반 Quality Scoring을 통해 Human labeling 비용을 줄이는 active filtering을 접목."
+    "objectID": "ko/index.html",
+    "href": "ko/index.html",
+    "title": "Ben's Notes",
+    "section": "",
+    "text": "데이터로 사람들의 건강에 보탬이 되려는 분석가, Ben Kim입니다.\n\n\n스타트업에서 5년 넘게 데이터 분석가, 데이터 사이언티스트, AI 데이터 파트 리드로 일했습니다. 지금은 의사, 약사, 제약사, 유통사처럼 약을 다루는 사람들이 더 나은 결정을 내리도록 공개 의약품 데이터를 분석하고 있습니다.\n\n\n보고서 읽기 경력 보기\n\n\n\n\n\n환자를 직접 만나지 않아도, 환자에게 약을 처방하고 건네고 만들고 공급하는 사람들의 결정을 도우면 건강에 보탬이 될 수 있다고 봅니다.\n\n\n  처방하려는 성분의 급여 변경과 공급 변화를 미리 확인합니다.\n  약값 인하와 급여정지 예고를 미리 알아 재고를 계획합니다.\n  자사 성분의 시장 흐름과 경쟁 제품의 가격 변화를 한눈에 봅니다.\n  성분별 수요 흐름을 공급 계획과 약국 알림의 기준으로 씁니다.\n\n\n\n\n\n\n공개 의약품 데이터로 답할 수 있는 질문을 다룹니다. 결과만큼 “이 숫자를 얼마나 믿을 수 있는가”를 자세히 적었습니다.\n\n\n\n\n\n\n\n공개 의약품 데이터로 약값·급여 변화를 미리 잡고, 성분 처방 수요를 6개월 앞까지 내다보기\n\n\n\n\n\n2026-11-24\n\n\n\n\n\n일치 없음\n\n\n\n\n\n\n제약조건 안에서 가장 저항이 적고 실행 가능한 행동을 찾는다.\n\n복잡한 방법이 단순한 방법보다 낫다는 근거가 없으면 단순한 방법을 고릅니다. 결과를 보기 전에 판정 기준을 먼저 정하고, 불리한 결과도 그대로 적습니다.\n\n\n\n\n  \n    2021.03 – 2023.11\n    Klleon R&D · 데이터 파트 리드\n      MLOps 팀과 데이터 파트를 만들고 이끌었습니다. 생성형 AI 앱의 그로스 분석과 A/B 테스트, 학습 데이터 큐레이션을 맡았습니다.\n      그로스 분석 · 데이터 큐레이션\n  \n  \n    2019.04 – 2020.07\n    Freewheelin · 데이터 분석가\n      프로모션 성과 대시보드를 만들고, BigQuery로 데이터를 모아 품질 관리를 맡았습니다.\n  \n  \n    2017.12 – 2019.03\n    Epopcon · 데이터 사이언티스트\n      포아송 과정으로 쇼핑몰 상품 재고가 바뀌는 시점을 예측해 수집 주기를 최적화했습니다.\n      스케줄링 모델\n  \n\n연세대학교 응용통계학·경제학 학사 · Python, SQL, 통계·시계열 분석, LightGBM, BigQuery, MLflow\n전체 경력 · 프로젝트 · LinkedIn · Medium · GitHub"
   },
   {
-    "objectID": "ko/projects/project-b.html#infrastructure-optimization-gpu-비용-절감-및-학습-효율화-전략",
-    "href": "ko/projects/project-b.html#infrastructure-optimization-gpu-비용-절감-및-학습-효율화-전략",
-    "title": "영상 데이터 큐레이션 및 MLOps PoC",
-    "section": "Infrastructure Optimization GPU 비용 절감 및 학습 효율화 전략",
-    "text": "Infrastructure Optimization GPU 비용 절감 및 학습 효율화 전략\n\n데이터 정제 기반 인프라 비용 최적화 전략 (Impact)\n\n\n\nEpoch 샘플 최적화 20 ~ 30% 감소 불필요 노이즈 데이터 차단\n\n\nGPU Training Time 최대 40% 단축 정제 데이터셋 기반 리소스 효율화\n\n\nEarly Rejection Allocation 최소화 불필요한 Compute 자원 낭비 방지\n\n\n결과적으로 동일 모델 성능 대비 Infra cost curve flattening(기하급수적 비용 평탄화) 효과 달성."
+    "objectID": "ko/index.html#누구를-돕는-분석인가",
+    "href": "ko/index.html#누구를-돕는-분석인가",
+    "title": "Ben's Notes",
+    "section": "",
+    "text": "환자를 직접 만나지 않아도, 환자에게 약을 처방하고 건네고 만들고 공급하는 사람들의 결정을 도우면 건강에 보탬이 될 수 있다고 봅니다.\n\n\n  처방하려는 성분의 급여 변경과 공급 변화를 미리 확인합니다.\n  약값 인하와 급여정지 예고를 미리 알아 재고를 계획합니다.\n  자사 성분의 시장 흐름과 경쟁 제품의 가격 변화를 한눈에 봅니다.\n  성분별 수요 흐름을 공급 계획과 약국 알림의 기준으로 씁니다."
   },
   {
-    "objectID": "ko/projects/project-b.html#mlops-mvp-system-재현-가능한-실험-환경-및-모델-운영-구조",
-    "href": "ko/projects/project-b.html#mlops-mvp-system-재현-가능한-실험-환경-및-모델-운영-구조",
-    "title": "영상 데이터 큐레이션 및 MLOps PoC",
-    "section": "MLOps MVP System 재현 가능한 실험 환경 및 모델 운영 구조",
-    "text": "MLOps MVP System 재현 가능한 실험 환경 및 모델 운영 구조\n\n실험 재현성과 모델 운영을 보장하는 MLOps 환경 (MVP)\n\n\n실험 유닛 완벽 관리: Dataset versioning을 통한 실험 단위 재현성 보장(data hash tracking) 및 MLflow 기반의 experiment tracking 및 model registry를 정교하게 연동하였습니다.\n운영 파이프라인 정형화: Training configuration(seed, hyperparameter, dataset version) 완전 고정 및 pipeline orchestration에 입각하여 연구 자원과 서비스 운영 자원을 명확히 격리했습니다."
+    "objectID": "ko/index.html#보고서",
+    "href": "ko/index.html#보고서",
+    "title": "Ben's Notes",
+    "section": "",
+    "text": "공개 의약품 데이터로 답할 수 있는 질문을 다룹니다. 결과만큼 “이 숫자를 얼마나 믿을 수 있는가”를 자세히 적었습니다.\n\n\n\n\n\n\n\n공개 의약품 데이터로 약값·급여 변화를 미리 잡고, 성분 처방 수요를 6개월 앞까지 내다보기\n\n\n\n\n\n2026-11-24\n\n\n\n\n\n일치 없음"
   },
   {
-    "objectID": "ko/projects/project-b.html#expected-outcome-데이터-품질-개선-기반-모델-성능-향상-효과",
-    "href": "ko/projects/project-b.html#expected-outcome-데이터-품질-개선-기반-모델-성능-향상-효과",
-    "title": "영상 데이터 큐레이션 및 MLOps PoC",
-    "section": "Expected Outcome 데이터 품질 개선 기반 모델 성능 향상 효과",
-    "text": "Expected Outcome 데이터 품질 개선 기반 모델 성능 향상 효과\n\n데이터 중심 MLOps 전환을 통한 성능 및 효율 개선 (Outcome)\n\n\nAccuracy Uplift: 동일 모델 구조 대비 정제 데이터 적용 시 정확도 가시적 향상\nConvergence 안정성: noisy dataset 배제로 학습 안정성 향상 및 오버피팅 감소\n상관관계 확보: 데이터 품질 지표와 실제 성능 간의 정량적 인과관계 입증\n리드타임 대폭 단축: 연구-개발-배포 단계의 전체 사이클 리드타임 감축 실현\n\n\n“Model-centric에서 Data-centric AI pipeline으로의 완벽한 패러다임 전환 완료”"
+    "objectID": "ko/index.html#일하는-방식",
+    "href": "ko/index.html#일하는-방식",
+    "title": "Ben's Notes",
+    "section": "",
+    "text": "제약조건 안에서 가장 저항이 적고 실행 가능한 행동을 찾는다.\n\n복잡한 방법이 단순한 방법보다 낫다는 근거가 없으면 단순한 방법을 고릅니다. 결과를 보기 전에 판정 기준을 먼저 정하고, 불리한 결과도 그대로 적습니다."
+  },
+  {
+    "objectID": "ko/index.html#경력",
+    "href": "ko/index.html#경력",
+    "title": "Ben's Notes",
+    "section": "",
+    "text": "2021.03 – 2023.11\n    Klleon R&D · 데이터 파트 리드\n      MLOps 팀과 데이터 파트를 만들고 이끌었습니다. 생성형 AI 앱의 그로스 분석과 A/B 테스트, 학습 데이터 큐레이션을 맡았습니다.\n      그로스 분석 · 데이터 큐레이션\n  \n  \n    2019.04 – 2020.07\n    Freewheelin · 데이터 분석가\n      프로모션 성과 대시보드를 만들고, BigQuery로 데이터를 모아 품질 관리를 맡았습니다.\n  \n  \n    2017.12 – 2019.03\n    Epopcon · 데이터 사이언티스트\n      포아송 과정으로 쇼핑몰 상품 재고가 바뀌는 시점을 예측해 수집 주기를 최적화했습니다.\n      스케줄링 모델\n  \n\n연세대학교 응용통계학·경제학 학사 · Python, SQL, 통계·시계열 분석, LightGBM, BigQuery, MLflow\n전체 경력 · 프로젝트 · LinkedIn · Medium · GitHub"
   },
   {
     "objectID": "ko/projects/project-a.html",
@@ -133,11 +140,67 @@
     "text": "Business Impact 프로젝트 A의 정량적/정성적 성과\n\n데이터 중심 비즈니스 개선 활동이 가져온 정량적 임팩트\n\n\n\nA/B 테스트 영상 변환율 14.2% → 19.8% 장르 기획 콘텐츠 적용, +5.6%p, p = 0.012 (군당 576명)\n\n\n재생성 성공률 개선 18% → 33% 생성화면 도달 유저의 재생성 성공률 개선\n\n\n마케팅 효율화 CAC 12% 절감 비효율 광고 세그먼트 조정 및 매체 통합\n\n\n태블로 대시보드를 기준으로 매일 아침 비즈니스팀과 콘텐츠팀이 가설 검정 결과를 함께 보는 회의를 운영했습니다."
   },
   {
-    "objectID": "ko/projects.html",
-    "href": "ko/projects.html",
-    "title": "Projects",
+    "objectID": "ko/projects/project-b.html",
+    "href": "ko/projects/project-b.html",
+    "title": "영상 데이터 큐레이션 및 MLOps PoC",
     "section": "",
-    "text": "Gen-AI B2C 앱 서비스 그로스 분석\n\n\n실제 비즈니스 성장 전략 설계와 데이터 검증의 엔드투엔드(End-to-End) 케이스 스터디\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n영상 데이터 큐레이션 및 MLOps PoC\n\n\n인프라 리소스 효율화 및 데이터 품질 강화를 구현한 비전 모델 ML Pipeline 엔지니어링\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n탄력적 수집 관리를 위한 스케줄링 포아송 머신\n\n\n통계적 웹페이지 변화 감지 및 기계학습 모델을 결합한 지능형 데이터 획득(Crawl Period Optimization)\n\n\n\n\n\n\n\n일치 없음"
+    "text": "FaceSwap 비전 모델학습을 위한 AI-driven 데이터 큐레이션(MLOps)\n\n\nProject Context: 학습데이터 수집-가공–검수-학습-저장의 주기를 준자동화하여 학습데이터의 품질 자체를 향상시켜 모델성능을 향상시키고 동시에 모델연구부터 모델배포까지의 업무속도를 개선하는 프로젝트.\nCore Mission: 원천 비정형 데이터셋의 메타데이터 탐색(EDA) 및 클렌징 기준 수립, 가공 속도 효율화, 검수 DL머신 생성, 파이프라인 연결, 리소스 제약 하에서 실험 재현성을 보장하는 MVP 수준의 MLOps 검증 환경 구축."
+  },
+  {
+    "objectID": "ko/projects/project-b.html#overview-dl모델-학습사이클-최적화-개요",
+    "href": "ko/projects/project-b.html#overview-dl모델-학습사이클-최적화-개요",
+    "title": "영상 데이터 큐레이션 및 MLOps PoC",
+    "section": "",
+    "text": "FaceSwap 비전 모델학습을 위한 AI-driven 데이터 큐레이션(MLOps)\n\n\nProject Context: 학습데이터 수집-가공–검수-학습-저장의 주기를 준자동화하여 학습데이터의 품질 자체를 향상시켜 모델성능을 향상시키고 동시에 모델연구부터 모델배포까지의 업무속도를 개선하는 프로젝트.\nCore Mission: 원천 비정형 데이터셋의 메타데이터 탐색(EDA) 및 클렌징 기준 수립, 가공 속도 효율화, 검수 DL머신 생성, 파이프라인 연결, 리소스 제약 하에서 실험 재현성을 보장하는 MVP 수준의 MLOps 검증 환경 구축."
+  },
+  {
+    "objectID": "ko/projects/project-b.html#problem-definition-인프라-비용-급증-및-모델-학습-비효율",
+    "href": "ko/projects/project-b.html#problem-definition-인프라-비용-급증-및-모델-학습-비효율",
+    "title": "영상 데이터 큐레이션 및 MLOps PoC",
+    "section": "Problem Definition 인프라 비용 급증 및 모델 학습 비효율",
+    "text": "Problem Definition 인프라 비용 급증 및 모델 학습 비효율\n\n무질서한 데이터 적재(Garbage In)로 인한 연산 한계 및 모델 성능 정체\n\n\n원천 데이터의 노이즈: 크롤링 등을 통해 대량 적재된 영상 및 이미지 원천 데이터 세트의 극심한 노이즈(오디오 클리핑 현상, 저해상도 편향) 존재.\n리소스 및 비용 낭비: 정제되지 않은 데이터를 무조건 모델에 학습시키면서 GPU 인프라 리소스 소모 급증 및 학습 비용 기하급수적 낭비.\n추론 정확도 한계: 모델 파라미터를 고도화해도 정제되지 않은 데이터 편향으로 인해 평가 셋에서의 최종 추론 정확도 성능 정체."
+  },
+  {
+    "objectID": "ko/projects/project-b.html#data-profile-eda-원천-비정형-데이터셋-메타데이터-심층-eda",
+    "href": "ko/projects/project-b.html#data-profile-eda-원천-비정형-데이터셋-메타데이터-심층-eda",
+    "title": "영상 데이터 큐레이션 및 MLOps PoC",
+    "section": "Data Profile EDA 원천 비정형 데이터셋 메타데이터 심층 EDA",
+    "text": "Data Profile EDA 원천 비정형 데이터셋 메타데이터 심층 EDA\n\n비정형 원천 데이터의 통계적 노이즈 감지 및 품질 기준 정립\n\nAction (Exploratory Data Analysis): SQL과 Python(Pandas, Librosa, OpenCV)을 결합하여 대량의 비정형 데이터 메타 속성 추출(MFCC, Object, Brightness, etc).\n\n💡 주요 발견 사실\n\n기존 확보 영상의 20%가 access denied 상태로 공개 메타데이터와의 불일치를 탐지.\n아시아인 분포가 5% 미만으로 서구권 인종에 크게 편향되어 있음을 규명.\n수집 음성 파일 중 4%가 노이즈 레벨(SNR) 허용 한계를 초과하고, 비전 이미지의 15%에서 face detection failed 상태 및 특정 밝기 영역 편향 발견.\n\n\n\n✅ 정제 가이드라인 설계: 얼굴 인식에 영향을 주는 crop size, similarity 등의 모델 인자값 그리고 최소 SNR, 이미지 최소 해상도의 데이터 정화 임계값(Threshold) 수립."
+  },
+  {
+    "objectID": "ko/projects/project-b.html#solution-architecture-데이터-큐레이션-mlops-파이프라인-설계",
+    "href": "ko/projects/project-b.html#solution-architecture-데이터-큐레이션-mlops-파이프라인-설계",
+    "title": "영상 데이터 큐레이션 및 MLOps PoC",
+    "section": "Solution Architecture 데이터 큐레이션 MLOps 파이프라인 설계",
+    "text": "Solution Architecture 데이터 큐레이션 MLOps 파이프라인 설계\n\nEnd-to-End AI-driven Data Curation MLOps Pipeline (비전 및 데이터 가공 자동화 구조)\n\n\n\n\n\n\n\nflowchart LR\n  A[\"Raw Data\"] --&gt; B[\"Preprocessing\"] --&gt; C[\"Quality Filter\"] --&gt; D[\"Labeling\"] --&gt; E[\"Training\"] --&gt; F[\"Registry\"]\n\n\n\n\n\n\n단계별 구성 컴포넌트\n\nRaw: 데이터 수집 단계에서 metadata extraction 및 schema normalization 수행 + 저장\nPreprocessing: 얼굴인식/특징점추출/얼굴정렬 수행 — On-demand 함수 적용: smoothing, re-alignment 등\nQuality Filtering: EDA 기반 threshold rule + ML 기반 anomaly detection 결합\nLabeling / Training: Labeling 단계는 semi-automated human-in-the-loop 구조로 효율성 확보. Training Pipeline은 versioned dataset 기반으로 재현 가능한 학습 환경 구성 및 registry 기반의 lineage tracking 구현"
+  },
+  {
+    "objectID": "ko/projects/project-b.html#automated-data-quality-scoring-dl-기반-데이터-검수-시스템",
+    "href": "ko/projects/project-b.html#automated-data-quality-scoring-dl-기반-데이터-검수-시스템",
+    "title": "영상 데이터 큐레이션 및 MLOps PoC",
+    "section": "Automated Data Quality Scoring DL 기반 데이터 검수 시스템",
+    "text": "Automated Data Quality Scoring DL 기반 데이터 검수 시스템\n\nAI 기반 데이터 품질 자동 평가 및 필터링 시스템 (Core Component)\n\nCore Integration — Rule-based + Deep Learning hybrid 방식의 데이터 검수 엔진을 적용하여 단순 기준 필터링을 고도화했습니다.\n\nFace detection confidence 검사\nImage resolution 및 blur score 벡터 분석\n\n3-Tier Triage System\n\nAccept Review Reject\n\nLightweight CNN / Vision encoder 기반 Quality Scoring을 통해 Human labeling 비용을 줄이는 active filtering을 접목."
+  },
+  {
+    "objectID": "ko/projects/project-b.html#infrastructure-optimization-gpu-비용-절감-및-학습-효율화-전략",
+    "href": "ko/projects/project-b.html#infrastructure-optimization-gpu-비용-절감-및-학습-효율화-전략",
+    "title": "영상 데이터 큐레이션 및 MLOps PoC",
+    "section": "Infrastructure Optimization GPU 비용 절감 및 학습 효율화 전략",
+    "text": "Infrastructure Optimization GPU 비용 절감 및 학습 효율화 전략\n\n데이터 정제 기반 인프라 비용 최적화 전략 (Impact)\n\n\n\nEpoch 샘플 최적화 20 ~ 30% 감소 불필요 노이즈 데이터 차단\n\n\nGPU Training Time 최대 40% 단축 정제 데이터셋 기반 리소스 효율화\n\n\nEarly Rejection Allocation 최소화 불필요한 Compute 자원 낭비 방지\n\n\n결과적으로 동일 모델 성능 대비 Infra cost curve flattening(기하급수적 비용 평탄화) 효과 달성."
+  },
+  {
+    "objectID": "ko/projects/project-b.html#mlops-mvp-system-재현-가능한-실험-환경-및-모델-운영-구조",
+    "href": "ko/projects/project-b.html#mlops-mvp-system-재현-가능한-실험-환경-및-모델-운영-구조",
+    "title": "영상 데이터 큐레이션 및 MLOps PoC",
+    "section": "MLOps MVP System 재현 가능한 실험 환경 및 모델 운영 구조",
+    "text": "MLOps MVP System 재현 가능한 실험 환경 및 모델 운영 구조\n\n실험 재현성과 모델 운영을 보장하는 MLOps 환경 (MVP)\n\n\n실험 유닛 완벽 관리: Dataset versioning을 통한 실험 단위 재현성 보장(data hash tracking) 및 MLflow 기반의 experiment tracking 및 model registry를 정교하게 연동하였습니다.\n운영 파이프라인 정형화: Training configuration(seed, hyperparameter, dataset version) 완전 고정 및 pipeline orchestration에 입각하여 연구 자원과 서비스 운영 자원을 명확히 격리했습니다."
+  },
+  {
+    "objectID": "ko/projects/project-b.html#expected-outcome-데이터-품질-개선-기반-모델-성능-향상-효과",
+    "href": "ko/projects/project-b.html#expected-outcome-데이터-품질-개선-기반-모델-성능-향상-효과",
+    "title": "영상 데이터 큐레이션 및 MLOps PoC",
+    "section": "Expected Outcome 데이터 품질 개선 기반 모델 성능 향상 효과",
+    "text": "Expected Outcome 데이터 품질 개선 기반 모델 성능 향상 효과\n\n데이터 중심 MLOps 전환을 통한 성능 및 효율 개선 (Outcome)\n\n\nAccuracy Uplift: 동일 모델 구조 대비 정제 데이터 적용 시 정확도 가시적 향상\nConvergence 안정성: noisy dataset 배제로 학습 안정성 향상 및 오버피팅 감소\n상관관계 확보: 데이터 품질 지표와 실제 성능 간의 정량적 인과관계 입증\n리드타임 대폭 단축: 연구-개발-배포 단계의 전체 사이클 리드타임 감축 실현\n\n\n“Model-centric에서 Data-centric AI pipeline으로의 완벽한 패러다임 전환 완료”"
   },
   {
     "objectID": "ko/posts/2026-11-drug-benefit-demand/index.html",
@@ -238,60 +301,67 @@
     "text": "부록 D. 용어집\n\n\n\n\n\n\n\n용어\n한 줄 풀이\n\n\n\n\n급여목록\n건강보험이 적용되는 약과 그 상한가격의 공식 목록. 심평원이 매달 새 파일로 낸다\n\n\n비고\n급여목록의 메모 칸. “’25.7.1. 인하”처럼 앞으로의 처분이 미리 적힌다\n\n\n예고\n아직 시행되지 않은 처분 예정. 연기·취소될 수 있다\n\n\n실현율\n예고 중 실제로 시행된 비율\n\n\n일괄 인하\n정부가 여러 성분의 상한가를 한꺼번에 내리는 것. 2023-09 제네릭 재평가가 대표적이다\n\n\n급여정지·중지\n건강보험 적용을 멈추는 처분. 제재에 따른 정지와 허가 관련 중지가 있다\n\n\n집행정지\n처분에 불복한 쪽의 신청으로 법원이 처분의 효력을 일정 기간 멈추는 것\n\n\n원외 처방\n병원 밖 약국에서 조제되는 처방\n\n\n성분(코드 4자리)\n같은 성분을 가진 여러 회사 제품을 묶는 단위\n\n\n사용통계 비공개\n업체·품목이 2개 이하라 공개되지 않는 칸. 0이 아니라 “모름”이다\n\n\n분류군\n약효나 부위가 비슷한 성분끼리의 묶음. 이 보고서는 약효분류와 ATC 두 가지를 썼다\n\n\n약효분류\n급여목록에 적힌 국내 약효 분류 번호. 이 보고서는 앞 2자리를 썼다\n\n\nATC 코드\n국제 표준 의약품 분류. 1단계는 알파벳 한 글자(예: C), 2단계는 세 자리(예: C10)\n\n\nWAPE\n빗나간 양의 합 ÷ 실제량의 합. 6.5%면 100개를 예상했을 때 평균 6.5개씩 빗나간다는 뜻\n\n\n%p\n비율끼리의 차. 7.11%와 6.46%의 차는 0.65%p\n\n\nETS\n최근 값에 더 큰 무게를 주고 계절 패턴을 더해 앞을 내다보는 전통 통계 모형\n\n\nLightGBM\n여러 개의 결정 트리를 쌓아 예측하는 기계학습 모델\n\n\n섞기(결합)\n두 방법의 예측을 정한 비율로 더하는 것. 예: 기계학습 70% + ETS 30%\n\n\n백테스트\n과거 시점으로 돌아가 그때 자료만으로 예측하고, 이미 아는 실제값과 맞춰 보는 검증\n\n\n사전등록\n결과를 보기 전에 분석 방법과 판정 기준을 고정해 두는 것\n\n\n맹검 평가\n방법을 정할 때 보지 않은 자료로 채점하는 것\n\n\np값\n실제로 차이가 없는데도 이만큼의 차이가 우연히 나올 가능성. 0.05보다 작으면 “유의하다”고 본다\n\n\n신뢰구간\n진짜 값이 있을 법한 범위. 표본이 작을수록 넓다\n\n\n동등\n두 방법의 차이가 미리 정한 실무 허용폭(±0.5%p) 안이라고 말할 수 있는 경우\n\n\n\n자료 출처: 건강보험심사평가원 급여목록·대체조제 목록 2022-01 ~ 2025-12, 국민건강보험공단 의약품 사용통계 2018-01 ~ 2025-12와 2026-01 ~ 06(2026-10-28 공개본), 2026 약가정보(ATC 코드, 속성으로만). 모두 공개 데이터다. 숫자는 분석 코드의 결과 파일에서 왔다. 이전 판은 2026-11-19에 냈다."
   },
   {
-    "objectID": "ko/experience.html",
-    "href": "ko/experience.html",
+    "objectID": "en/experience.html",
+    "href": "en/experience.html",
     "title": "Experience",
     "section": "",
-    "text": "데이터 분석, 데이터 큐레이션·MLOps, 통계 기반 예측 모델링을 거쳐 팀을 이끄는 역할까지 이어온 경력입니다."
+    "text": "A career that runs from data analytics through data curation and MLOps to statistical predictive modeling, and on to leading teams."
   },
   {
-    "objectID": "ko/experience.html#klleon",
-    "href": "ko/experience.html#klleon",
+    "objectID": "en/experience.html#klleon",
+    "href": "en/experience.html#klleon",
     "title": "Experience",
-    "section": "Klleon R&D — 데이터 파트 리드",
-    "text": "Klleon R&D — 데이터 파트 리드\n2021.03 ~ 2023.11 (2년 9개월)\n연구 환경 효율화를 위한 MLOps 팀·데이터 파트 구축 및 리딩\n\n데이터 중심 AI(Data-Centric AI, DCAI) 접근으로 한국어 TTS 기술 개발\n데이터 수집, 가공, 검수까지 아우르는 컴퓨터 비전 맞춤형 데이터 큐레이션 시스템 구축 및 최적화\nKubeflow, DVC를 활용해 엔지니어링 지원\n\n→ 상세: 영상 데이터 큐레이션 및 MLOps PoC\n생성형 AI 기반 B2C 서비스의 데이터 의사결정 지원\n\nFirebase, Appsflyer, Amplitude, Tableau, 통계 모델링을 활용한 유저 분석\n앱스토어·구글 플레이 베타 서비스 런칭 리딩\n디지털 마케팅(Meta, Google Ads) 리딩\n\n→ 상세: 생성형AI B2C 앱 서비스 그로스 분석"
+    "section": "Klleon R&D — Data Part Lead",
+    "text": "Klleon R&D — Data Part Lead\nMar 2021 – Nov 2023 (2 yrs 9 mos)\nBuilt and led the MLOps team and data part for an effective research environment\n\nDeveloped Korean TTS technology based on Data-Centric AI (DCAI)\nBuilt and optimized a computer-vision data curation system covering data collection, processing, and screening\nSupported engineering with Kubeflow and DVC\n\n→ Details: Video Data Curation and MLOps PoC\nSupported data-driven decisions for a Gen-AI based B2C service\n\nAnalyzed users with Firebase, Appsflyer, Amplitude, Tableau, and statistical modeling\nLed the beta launch (App Store, Google Play)\nLed digital marketing (Meta, Google Ads)\n\n→ Details: Gen-AI B2C App Service Growth Analytics"
   },
   {
-    "objectID": "ko/experience.html#freewheelin",
-    "href": "ko/experience.html#freewheelin",
+    "objectID": "en/experience.html#freewheelin",
+    "href": "en/experience.html#freewheelin",
     "title": "Experience",
-    "section": "Freewheelin — 데이터 분석가",
-    "text": "Freewheelin — 데이터 분석가\n2019.04 ~ 2020.07 (1년 4개월) · 서울 관악구\n프로모션 성과 분석 대시보드 제작\n\n프로모션과 유저 속성(가격, 무료 체험 기간) 간 상관관계 분석\n프로모션별 유저 그룹의 리텐션 추이 분석\n성과 측정을 위한 KPI 정의 및 산출\n\n데이터 관리 체계 재정비\n\nBigQuery로 데이터 중앙화\n비효율적인 저장 비용 절감\n데이터 품질 관리 총괄"
+    "section": "freewheelin — Data Analyst",
+    "text": "freewheelin — Data Analyst\nApr 2019 – Jul 2020 (1 yr 4 mos) · Gwanak-gu, Seoul\nBuilt a dashboard for promotion performance analysis\n\nAnalyzed the correlation between promotions and user properties (price, free-trial period)\nAnalyzed retention trends of user groups by promotion\nDefined and calculated KPIs to measure performance\n\nReorganized the data management system\n\nCentralized data in BigQuery\nReduced inefficient storage cost\nOversaw data quality"
   },
   {
-    "objectID": "ko/experience.html#epopcon",
-    "href": "ko/experience.html#epopcon",
+    "objectID": "en/experience.html#epopcon",
+    "href": "en/experience.html#epopcon",
     "title": "Experience",
-    "section": "Epopcon — 데이터 사이언티스트",
-    "text": "Epopcon — 데이터 사이언티스트\n2017.12 ~ 2019.03 (1년 4개월)\n상품 재고량 변화 시점을 예측하는 확률적 스케줄링 모델 개발 (포아송 과정)\n\n재고량 결측치 보정 및 이상치 처리 (클러스터링, 이상 탐지)\n\n→ 상세: 탄력적 수집 관리를 위한 스케줄링 예측 머신\n여러 쇼핑몰에 흩어진 동일 상품의 표준 키 생성\n\n이미지와 자연어 데이터를 전처리한 뒤 minhash-LSH 알고리즘 적용\n\n숨은 고객 행동 패턴 분석\n\n지리 데이터 활용\n공공 데이터를 활용해 상점 주소와 업종 카테고리 정제\n관심 대상 특성의 분포를 시각화하고 대조군과 비교"
+    "section": "Epopcon — Data Scientist",
+    "text": "Epopcon — Data Scientist\nDec 2017 – Mar 2019 (1 yr 4 mos)\nBuilt stochastic scheduling models that predict when product stock levels change (Poisson process)\n\nImputed missing inventory values and handled outliers (clustering, anomaly detection)\n\n→ Details: Predictive Scheduling Machine for Elastic Collection Management\nCreated standardized keys for the same product listed across multiple shopping malls\n\nPreprocessed image and natural-language data, then applied the MinHash-LSH algorithm\n\nAnalyzed hidden customer behavior patterns\n\nUsed geographical data\nCleaned store addresses and categories using open data\nVisualized the distribution of target features and compared it with a control group"
   },
   {
-    "objectID": "ko/experience.html#학력",
-    "href": "ko/experience.html#학력",
+    "objectID": "en/experience.html#education",
+    "href": "en/experience.html#education",
     "title": "Experience",
-    "section": "학력",
-    "text": "학력\n연세대학교 — 학사, 응용통계학 · 경제학"
+    "section": "Education",
+    "text": "Education\nYonsei University — Bachelor’s degree, Applied Statistics and Economics"
   },
   {
-    "objectID": "ko/experience.html#자격증",
-    "href": "ko/experience.html#자격증",
+    "objectID": "en/experience.html#certifications",
+    "href": "en/experience.html#certifications",
     "title": "Experience",
-    "section": "자격증",
-    "text": "자격증\n\nTensorFlow Developer Professional Certificate\nUsing Machine Learning in Trading and Finance\nFinancial Engineering and Risk Management Part I"
+    "section": "Certifications",
+    "text": "Certifications\n\nTensorFlow Developer Professional Certificate\nUsing Machine Learning in Trading and Finance\nFinancial Engineering and Risk Management Part I"
   },
   {
-    "objectID": "ko/experience.html#보유-기술",
-    "href": "ko/experience.html#보유-기술",
+    "objectID": "en/experience.html#core-skills",
+    "href": "en/experience.html#core-skills",
     "title": "Experience",
-    "section": "보유 기술",
-    "text": "보유 기술\n수학 · 문제 관리 · 분석 능력"
+    "section": "Core Skills",
+    "text": "Core Skills\nMathematics · Problem Management · Analytical Skills"
   },
   {
-    "objectID": "ko/experience.html#링크",
-    "href": "ko/experience.html#링크",
+    "objectID": "en/experience.html#links",
+    "href": "en/experience.html#links",
     "title": "Experience",
-    "section": "링크",
-    "text": "링크\n\nLinkedIn\nMedium Blog"
+    "section": "Links",
+    "text": "Links\n\nLinkedIn\nMedium Blog"
+  },
+  {
+    "objectID": "en/projects.html",
+    "href": "en/projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Gen-AI B2C App Growth Analytics\n\n\nAn end-to-end case study of real business growth strategy and data validation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nScheduling Poisson Machine for Adaptive Crawling\n\n\nIntelligent data acquisition (crawl period optimization) combining statistical page-change detection and machine learning\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVideo Data Curation and MLOps PoC\n\n\nML pipeline engineering for a vision model that improves infrastructure efficiency and data quality\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "en/projects/project-c.html",
@@ -364,41 +434,6 @@
     "text": "Analysis reports that look at the medicine market and health services through public data. Each report records its questions, data, checks, and limits.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMonitoring reimbursement changes and demand\n\n\nUsing public medicine data to catch price and reimbursement changes early and forecast ingredient demand six months ahead\n\n\n\nMedicine data\n\nTime-series forecasting\n\nPre-registration\n\n\n\n\nEnglish summary of a report that checks how often announced price cuts come true, how many price changes have no advance note, and how well ingredient-level prescription demand can be forecast six months ahead.\n\n\n\n\n\n\nNov 24, 2026\n\n\nBen Kim\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "en/index.html",
-    "href": "en/index.html",
-    "title": "Ben's Notes",
-    "section": "",
-    "text": "I’m Ben Kim, an analyst who wants data to help people stay healthy.\n\n\nI spent more than five years at startups as a data analyst, data scientist, and AI data part lead. Now I analyze public medicine data to help the people who handle medicines, such as doctors, pharmacists, drug makers, and distributors, make better decisions.\n\n\nRead the reports See experience\n\n\n\n\n\nEven without meeting patients directly, helping the people who prescribe, dispense, make, and supply medicines can contribute to people’s health.\n\n\n  See reimbursement and supply changes for an ingredient before prescribing.\n  Know about announced price cuts and suspensions early and plan stock.\n  Follow the market for their ingredients and competitors' price changes in one view.\n  Use ingredient demand trends as a baseline for supply planning and pharmacy alerts.\n\n\n\n\n\n\nThese reports take on questions that public medicine data can answer. Each report spends as much space on how far the numbers can be trusted as on the results.\n\n\n\n\n\n\n\nUsing public medicine data to catch price and reimbursement changes early and forecast ingredient demand six months ahead\n\n\n\n\n\nNov 24, 2026\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\nFind the action with the least resistance that can still be carried out within the constraints.\n\nIf there is no evidence that a complex method beats a simple one, I choose the simple one. I fix decision rules before seeing results, and I report unfavorable results as they are.\n\n\n\n\n  \n    2021.03 – 2023.11\n    Klleon R&D · Data part lead\n      Built and led the MLOps team and data part. Ran growth analytics, A/B testing, and training-data curation for a generative AI app.\n      Growth analytics · Data curation\n  \n  \n    2019.04 – 2020.07\n    Freewheelin · Data analyst\n      Built promotion performance dashboards, centralized data in BigQuery, and managed data quality.\n  \n  \n    2017.12 – 2019.03\n    Epopcon · Data scientist\n      Predicted when online-store inventory changes with a Poisson process to optimize crawling schedules.\n      Scheduling model\n  \n\nYonsei University, B.A. in Applied Statistics and Economics · Python, SQL, statistics and time series, LightGBM, BigQuery, MLflow\nFull experience · Projects · LinkedIn · Medium · GitHub"
-  },
-  {
-    "objectID": "en/index.html#who-the-analysis-helps",
-    "href": "en/index.html#who-the-analysis-helps",
-    "title": "Ben's Notes",
-    "section": "",
-    "text": "Even without meeting patients directly, helping the people who prescribe, dispense, make, and supply medicines can contribute to people’s health.\n\n\n  See reimbursement and supply changes for an ingredient before prescribing.\n  Know about announced price cuts and suspensions early and plan stock.\n  Follow the market for their ingredients and competitors' price changes in one view.\n  Use ingredient demand trends as a baseline for supply planning and pharmacy alerts."
-  },
-  {
-    "objectID": "en/index.html#reports",
-    "href": "en/index.html#reports",
-    "title": "Ben's Notes",
-    "section": "",
-    "text": "These reports take on questions that public medicine data can answer. Each report spends as much space on how far the numbers can be trusted as on the results.\n\n\n\n\n\n\n\nUsing public medicine data to catch price and reimbursement changes early and forecast ingredient demand six months ahead\n\n\n\n\n\nNov 24, 2026\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "en/index.html#how-i-work",
-    "href": "en/index.html#how-i-work",
-    "title": "Ben's Notes",
-    "section": "",
-    "text": "Find the action with the least resistance that can still be carried out within the constraints.\n\nIf there is no evidence that a complex method beats a simple one, I choose the simple one. I fix decision rules before seeing results, and I report unfavorable results as they are."
-  },
-  {
-    "objectID": "en/index.html#experience",
-    "href": "en/index.html#experience",
-    "title": "Ben's Notes",
-    "section": "",
-    "text": "2021.03 – 2023.11\n    Klleon R&D · Data part lead\n      Built and led the MLOps team and data part. Ran growth analytics, A/B testing, and training-data curation for a generative AI app.\n      Growth analytics · Data curation\n  \n  \n    2019.04 – 2020.07\n    Freewheelin · Data analyst\n      Built promotion performance dashboards, centralized data in BigQuery, and managed data quality.\n  \n  \n    2017.12 – 2019.03\n    Epopcon · Data scientist\n      Predicted when online-store inventory changes with a Poisson process to optimize crawling schedules.\n      Scheduling model\n  \n\nYonsei University, B.A. in Applied Statistics and Economics · Python, SQL, statistics and time series, LightGBM, BigQuery, MLflow\nFull experience · Projects · LinkedIn · Medium · GitHub"
-  },
-  {
     "objectID": "en/posts/2026-11-sample-analysis/index.html",
     "href": "en/posts/2026-11-sample-analysis/index.html",
     "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
@@ -446,97 +481,6 @@
     "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
     "section": "6. Limitations",
     "text": "6. Limitations\n\nAssignment is per installation, so users who reinstall or use several devices may switch groups; check with the user_id mapping in the logs.\nThis is a single-period, single-metric test, so novelty effects are to be checked through post-rollout monitoring.\nSubgroup effects by genre need multiple-comparison correction and were not covered in this test."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Ben's Notes",
-    "section": "",
-    "text": "데이터로 사람들의 건강에 보탬이 되려는 분석가, Ben Kim입니다.\n\n\n스타트업에서 5년 넘게 데이터 분석가, 데이터 사이언티스트, AI 데이터 파트 리드로 일했습니다. 지금은 의사, 약사, 제약사, 유통사처럼 약을 다루는 사람들이 더 나은 결정을 내리도록 공개 의약품 데이터를 분석하고 있습니다.\n\n\n보고서 읽기 경력 보기\n\n\n\n\n\n환자를 직접 만나지 않아도, 환자에게 약을 처방하고 건네고 만들고 공급하는 사람들의 결정을 도우면 건강에 보탬이 될 수 있다고 봅니다.\n\n\n  처방하려는 성분의 급여 변경과 공급 변화를 미리 확인합니다.\n  약값 인하와 급여정지 예고를 미리 알아 재고를 계획합니다.\n  자사 성분의 시장 흐름과 경쟁 제품의 가격 변화를 한눈에 봅니다.\n  성분별 수요 흐름을 공급 계획과 약국 알림의 기준으로 씁니다.\n\n\n\n\n\n\n공개 의약품 데이터로 답할 수 있는 질문을 다룹니다. 결과만큼 “이 숫자를 얼마나 믿을 수 있는가”를 자세히 적었습니다.\n\n\n\n\n\n\n\n공개 의약품 데이터로 약값·급여 변화를 미리 잡고, 성분 처방 수요를 6개월 앞까지 내다보기\n\n\n\n\n\n2026-11-24\n\n\n\n\n\n일치 없음\n\n\n\n\n\n\n제약조건 안에서 가장 저항이 적고 실행 가능한 행동을 찾는다.\n\n복잡한 방법이 단순한 방법보다 낫다는 근거가 없으면 단순한 방법을 고릅니다. 결과를 보기 전에 판정 기준을 먼저 정하고, 불리한 결과도 그대로 적습니다.\n\n\n\n\n  \n    2021.03 – 2023.11\n    Klleon R&D · 데이터 파트 리드\n      MLOps 팀과 데이터 파트를 만들고 이끌었습니다. 생성형 AI 앱의 그로스 분석과 A/B 테스트, 학습 데이터 큐레이션을 맡았습니다.\n      그로스 분석 · 데이터 큐레이션\n  \n  \n    2019.04 – 2020.07\n    Freewheelin · 데이터 분석가\n      프로모션 성과 대시보드를 만들고, BigQuery로 데이터를 모아 품질 관리를 맡았습니다.\n  \n  \n    2017.12 – 2019.03\n    Epopcon · 데이터 사이언티스트\n      포아송 과정으로 쇼핑몰 상품 재고가 바뀌는 시점을 예측해 수집 주기를 최적화했습니다.\n      스케줄링 모델\n  \n\n연세대학교 응용통계학·경제학 학사 · Python, SQL, 통계·시계열 분석, LightGBM, BigQuery, MLflow\n전체 경력 · 프로젝트 · LinkedIn · Medium · GitHub"
-  },
-  {
-    "objectID": "index.html#누구를-돕는-분석인가",
-    "href": "index.html#누구를-돕는-분석인가",
-    "title": "Ben's Notes",
-    "section": "",
-    "text": "환자를 직접 만나지 않아도, 환자에게 약을 처방하고 건네고 만들고 공급하는 사람들의 결정을 도우면 건강에 보탬이 될 수 있다고 봅니다.\n\n\n  처방하려는 성분의 급여 변경과 공급 변화를 미리 확인합니다.\n  약값 인하와 급여정지 예고를 미리 알아 재고를 계획합니다.\n  자사 성분의 시장 흐름과 경쟁 제품의 가격 변화를 한눈에 봅니다.\n  성분별 수요 흐름을 공급 계획과 약국 알림의 기준으로 씁니다."
-  },
-  {
-    "objectID": "index.html#보고서",
-    "href": "index.html#보고서",
-    "title": "Ben's Notes",
-    "section": "",
-    "text": "공개 의약품 데이터로 답할 수 있는 질문을 다룹니다. 결과만큼 “이 숫자를 얼마나 믿을 수 있는가”를 자세히 적었습니다.\n\n\n\n\n\n\n\n공개 의약품 데이터로 약값·급여 변화를 미리 잡고, 성분 처방 수요를 6개월 앞까지 내다보기\n\n\n\n\n\n2026-11-24\n\n\n\n\n\n일치 없음"
-  },
-  {
-    "objectID": "index.html#일하는-방식",
-    "href": "index.html#일하는-방식",
-    "title": "Ben's Notes",
-    "section": "",
-    "text": "제약조건 안에서 가장 저항이 적고 실행 가능한 행동을 찾는다.\n\n복잡한 방법이 단순한 방법보다 낫다는 근거가 없으면 단순한 방법을 고릅니다. 결과를 보기 전에 판정 기준을 먼저 정하고, 불리한 결과도 그대로 적습니다."
-  },
-  {
-    "objectID": "index.html#경력",
-    "href": "index.html#경력",
-    "title": "Ben's Notes",
-    "section": "",
-    "text": "2021.03 – 2023.11\n    Klleon R&D · 데이터 파트 리드\n      MLOps 팀과 데이터 파트를 만들고 이끌었습니다. 생성형 AI 앱의 그로스 분석과 A/B 테스트, 학습 데이터 큐레이션을 맡았습니다.\n      그로스 분석 · 데이터 큐레이션\n  \n  \n    2019.04 – 2020.07\n    Freewheelin · 데이터 분석가\n      프로모션 성과 대시보드를 만들고, BigQuery로 데이터를 모아 품질 관리를 맡았습니다.\n  \n  \n    2017.12 – 2019.03\n    Epopcon · 데이터 사이언티스트\n      포아송 과정으로 쇼핑몰 상품 재고가 바뀌는 시점을 예측해 수집 주기를 최적화했습니다.\n      스케줄링 모델\n  \n\n연세대학교 응용통계학·경제학 학사 · Python, SQL, 통계·시계열 분석, LightGBM, BigQuery, MLflow\n전체 경력 · 프로젝트 · LinkedIn · Medium · GitHub"
-  },
-  {
-    "objectID": "en/experience.html",
-    "href": "en/experience.html",
-    "title": "Experience",
-    "section": "",
-    "text": "A career that runs from data analytics through data curation and MLOps to statistical predictive modeling, and on to leading teams."
-  },
-  {
-    "objectID": "en/experience.html#klleon",
-    "href": "en/experience.html#klleon",
-    "title": "Experience",
-    "section": "Klleon R&D — Data Part Lead",
-    "text": "Klleon R&D — Data Part Lead\nMar 2021 – Nov 2023 (2 yrs 9 mos)\nBuilt and led the MLOps team and data part for an effective research environment\n\nDeveloped Korean TTS technology based on Data-Centric AI (DCAI)\nBuilt and optimized a computer-vision data curation system covering data collection, processing, and screening\nSupported engineering with Kubeflow and DVC\n\n→ Details: Video Data Curation and MLOps PoC\nSupported data-driven decisions for a Gen-AI based B2C service\n\nAnalyzed users with Firebase, Appsflyer, Amplitude, Tableau, and statistical modeling\nLed the beta launch (App Store, Google Play)\nLed digital marketing (Meta, Google Ads)\n\n→ Details: Gen-AI B2C App Service Growth Analytics"
-  },
-  {
-    "objectID": "en/experience.html#freewheelin",
-    "href": "en/experience.html#freewheelin",
-    "title": "Experience",
-    "section": "freewheelin — Data Analyst",
-    "text": "freewheelin — Data Analyst\nApr 2019 – Jul 2020 (1 yr 4 mos) · Gwanak-gu, Seoul\nBuilt a dashboard for promotion performance analysis\n\nAnalyzed the correlation between promotions and user properties (price, free-trial period)\nAnalyzed retention trends of user groups by promotion\nDefined and calculated KPIs to measure performance\n\nReorganized the data management system\n\nCentralized data in BigQuery\nReduced inefficient storage cost\nOversaw data quality"
-  },
-  {
-    "objectID": "en/experience.html#epopcon",
-    "href": "en/experience.html#epopcon",
-    "title": "Experience",
-    "section": "Epopcon — Data Scientist",
-    "text": "Epopcon — Data Scientist\nDec 2017 – Mar 2019 (1 yr 4 mos)\nBuilt stochastic scheduling models that predict when product stock levels change (Poisson process)\n\nImputed missing inventory values and handled outliers (clustering, anomaly detection)\n\n→ Details: Predictive Scheduling Machine for Elastic Collection Management\nCreated standardized keys for the same product listed across multiple shopping malls\n\nPreprocessed image and natural-language data, then applied the MinHash-LSH algorithm\n\nAnalyzed hidden customer behavior patterns\n\nUsed geographical data\nCleaned store addresses and categories using open data\nVisualized the distribution of target features and compared it with a control group"
-  },
-  {
-    "objectID": "en/experience.html#education",
-    "href": "en/experience.html#education",
-    "title": "Experience",
-    "section": "Education",
-    "text": "Education\nYonsei University — Bachelor’s degree, Applied Statistics and Economics"
-  },
-  {
-    "objectID": "en/experience.html#certifications",
-    "href": "en/experience.html#certifications",
-    "title": "Experience",
-    "section": "Certifications",
-    "text": "Certifications\n\nTensorFlow Developer Professional Certificate\nUsing Machine Learning in Trading and Finance\nFinancial Engineering and Risk Management Part I"
-  },
-  {
-    "objectID": "en/experience.html#core-skills",
-    "href": "en/experience.html#core-skills",
-    "title": "Experience",
-    "section": "Core Skills",
-    "text": "Core Skills\nMathematics · Problem Management · Analytical Skills"
-  },
-  {
-    "objectID": "en/experience.html#links",
-    "href": "en/experience.html#links",
-    "title": "Experience",
-    "section": "Links",
-    "text": "Links\n\nLinkedIn\nMedium Blog"
   },
   {
     "objectID": "en/posts/2026-11-drug-benefit-demand/index.html",
@@ -595,11 +539,67 @@
     "text": "Next analyses\n\nGeneric-substitution list and prescription shifts: check whether the average unit price per ingredient (claimed amount ÷ volume) falls after products enter or leave the substitution incentive list.\nPrice cuts by type: separate patent-expiry, price-volume, actual-transaction-price, and re-evaluation cuts, and measure each type’s realization rate and market response.\nPatent expiry and generic entry: compare ingredient market value and unit price before and after new same-ingredient products are listed.\nShortage and supply-interruption data: match official shortage reports with sudden demand changes to explain large errors for respiratory drugs and antibiotics.\nRegion and facility type: break national totals down by province and type of care institution.\nOne pharmacy alert, end to end: show what a single pharmacy would receive (announced cut, effective date, chance of a court block).\nStrength and dosage-form aggregation: check how combining different strengths and forms under one ingredient code affects forecast error.\nPrice increases for essential drugs: track whether prescriptions recover after price-ceiling increases.\n\nFollow-up directions by class (R05, J01, R03, S01) are in the table under “High-error drug classes”."
   },
   {
-    "objectID": "en/projects.html",
-    "href": "en/projects.html",
-    "title": "Projects",
+    "objectID": "en/projects/project-b.html",
+    "href": "en/projects/project-b.html",
+    "title": "Video Data Curation and MLOps PoC",
     "section": "",
-    "text": "Gen-AI B2C App Growth Analytics\n\n\nAn end-to-end case study of real business growth strategy and data validation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nScheduling Poisson Machine for Adaptive Crawling\n\n\nIntelligent data acquisition (crawl period optimization) combining statistical page-change detection and machine learning\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVideo Data Curation and MLOps PoC\n\n\nML pipeline engineering for a vision model that improves infrastructure efficiency and data quality\n\n\n\n\n\n\n\nNo matching items"
+    "text": "AI-driven data curation (MLOps) for training a FaceSwap vision model\n\n\nProject context: Semi-automate the cycle of training-data collection, processing, screening, training, and storage to raise data quality itself, improve model performance, and speed up work from model research to deployment.\nCore mission: Run EDA on the metadata of raw unstructured datasets and set cleansing criteria, speed up processing, build a DL screening model, connect the pipeline, and set up an MVP-level MLOps validation environment that guarantees experiment reproducibility under resource constraints."
+  },
+  {
+    "objectID": "en/projects/project-b.html#overview-optimizing-the-dl-model-training-cycle",
+    "href": "en/projects/project-b.html#overview-optimizing-the-dl-model-training-cycle",
+    "title": "Video Data Curation and MLOps PoC",
+    "section": "",
+    "text": "AI-driven data curation (MLOps) for training a FaceSwap vision model\n\n\nProject context: Semi-automate the cycle of training-data collection, processing, screening, training, and storage to raise data quality itself, improve model performance, and speed up work from model research to deployment.\nCore mission: Run EDA on the metadata of raw unstructured datasets and set cleansing criteria, speed up processing, build a DL screening model, connect the pipeline, and set up an MVP-level MLOps validation environment that guarantees experiment reproducibility under resource constraints."
+  },
+  {
+    "objectID": "en/projects/project-b.html#problem-definition-soaring-infrastructure-cost-and-inefficient-model-training",
+    "href": "en/projects/project-b.html#problem-definition-soaring-infrastructure-cost-and-inefficient-model-training",
+    "title": "Video Data Curation and MLOps PoC",
+    "section": "Problem Definition Soaring infrastructure cost and inefficient model training",
+    "text": "Problem Definition Soaring infrastructure cost and inefficient model training\n\nCompute limits and stalled model performance caused by disorderly data intake (Garbage In)\n\n\nNoisy raw data: Video and image datasets collected in bulk by crawling and similar means carried heavy noise (audio clipping, low-resolution bias).\nWasted resources and cost: Training on unrefined data indiscriminately caused GPU resource consumption and training cost to balloon.\nAccuracy ceiling: Even with more sophisticated model parameters, data bias kept inference accuracy on the evaluation set stalled."
+  },
+  {
+    "objectID": "en/projects/project-b.html#data-profile-eda-in-depth-metadata-eda-of-raw-unstructured-datasets",
+    "href": "en/projects/project-b.html#data-profile-eda-in-depth-metadata-eda-of-raw-unstructured-datasets",
+    "title": "Video Data Curation and MLOps PoC",
+    "section": "Data Profile EDA In-depth metadata EDA of raw unstructured datasets",
+    "text": "Data Profile EDA In-depth metadata EDA of raw unstructured datasets\n\nDetecting statistical noise in raw unstructured data and establishing quality criteria\n\nAction (exploratory data analysis): Combined SQL and Python (Pandas, Librosa, OpenCV) to extract metadata attributes at scale (MFCC, objects, brightness, etc.).\n\n💡 Key findings\n\n20% of the videos already on hand were in access denied state, inconsistent with their public metadata.\nAsian faces made up under 5% of the data, revealing a strong Western bias.\n4% of collected audio files exceeded the allowed noise level (SNR), and 15% of vision images showed face-detection failure along with bias in certain brightness ranges.\n\n\n\n✅ Cleansing guideline design: Set model parameters that affect face recognition (crop size, similarity, etc.), plus thresholds for minimum SNR and minimum image resolution for data purification."
+  },
+  {
+    "objectID": "en/projects/project-b.html#solution-architecture-data-curation-mlops-pipeline-design",
+    "href": "en/projects/project-b.html#solution-architecture-data-curation-mlops-pipeline-design",
+    "title": "Video Data Curation and MLOps PoC",
+    "section": "Solution Architecture Data curation MLOps pipeline design",
+    "text": "Solution Architecture Data curation MLOps pipeline design\n\nEnd-to-end AI-driven data curation MLOps pipeline (automated vision and data processing)\n\n\n\n\n\n\n\nflowchart LR\n  A[\"Raw Data\"] --&gt; B[\"Preprocessing\"] --&gt; C[\"Quality Filter\"] --&gt; D[\"Labeling\"] --&gt; E[\"Training\"] --&gt; F[\"Registry\"]\n\n\n\n\n\n\nStage components\n\nRaw: Metadata extraction and schema normalization at collection, then storage\nPreprocessing: Face detection, landmark extraction, and face alignment; on-demand functions such as smoothing and re-alignment\nQuality filtering: Combines EDA-based threshold rules with ML-based anomaly detection\nLabeling / Training: Labeling uses a semi-automated human-in-the-loop design for efficiency. The training pipeline builds a reproducible environment on versioned datasets, with registry-based lineage tracking"
+  },
+  {
+    "objectID": "en/projects/project-b.html#automated-data-quality-scoring-dl-based-data-screening-system",
+    "href": "en/projects/project-b.html#automated-data-quality-scoring-dl-based-data-screening-system",
+    "title": "Video Data Curation and MLOps PoC",
+    "section": "Automated Data Quality Scoring DL-based data screening system",
+    "text": "Automated Data Quality Scoring DL-based data screening system\n\nAI-based automatic data quality evaluation and filtering (core component)\n\nCore integration — Applied a hybrid rule-based + deep learning screening engine to go beyond simple criteria filtering.\n\nFace detection confidence check\nVector analysis of image resolution and blur score\n\n3-tier triage system\n\nAccept Review Reject\n\nQuality scoring with a lightweight CNN / vision encoder adds active filtering that cuts human labeling cost."
+  },
+  {
+    "objectID": "en/projects/project-b.html#infrastructure-optimization-gpu-cost-reduction-and-training-efficiency",
+    "href": "en/projects/project-b.html#infrastructure-optimization-gpu-cost-reduction-and-training-efficiency",
+    "title": "Video Data Curation and MLOps PoC",
+    "section": "Infrastructure Optimization GPU cost reduction and training efficiency",
+    "text": "Infrastructure Optimization GPU cost reduction and training efficiency\n\nInfrastructure cost optimization through data refinement (impact)\n\n\n\nEpoch sample optimization 20–30% fewer Blocks unnecessary noisy data\n\n\nGPU training time Up to 40% shorter Resource efficiency from refined datasets\n\n\nEarly rejection Minimized allocation Avoids wasted compute resources\n\n\nThe result is infra cost curve flattening at the same model performance."
+  },
+  {
+    "objectID": "en/projects/project-b.html#mlops-mvp-system-reproducible-experiments-and-model-operations",
+    "href": "en/projects/project-b.html#mlops-mvp-system-reproducible-experiments-and-model-operations",
+    "title": "Video Data Curation and MLOps PoC",
+    "section": "MLOps MVP System Reproducible experiments and model operations",
+    "text": "MLOps MVP System Reproducible experiments and model operations\n\nAn MLOps environment that guarantees experiment reproducibility and model operations (MVP)\n\n\nExperiment unit management: Dataset versioning guarantees reproducibility per experiment (data hash tracking), tightly integrated with MLflow experiment tracking and model registry.\nStandardized operations pipeline: Training configuration (seed, hyperparameters, dataset version) is fully fixed, and pipeline orchestration cleanly isolates research resources from service operation resources."
+  },
+  {
+    "objectID": "en/projects/project-b.html#expected-outcome-model-performance-gains-from-better-data-quality",
+    "href": "en/projects/project-b.html#expected-outcome-model-performance-gains-from-better-data-quality",
+    "title": "Video Data Curation and MLOps PoC",
+    "section": "Expected Outcome Model performance gains from better data quality",
+    "text": "Expected Outcome Model performance gains from better data quality\n\nPerformance and efficiency gains from the shift to data-centric MLOps (outcome)\n\n\nAccuracy uplift: Visible accuracy gains with refined data on the same model architecture\nConvergence stability: Excluding noisy data improves training stability and reduces overfitting\nEstablished correlation: Demonstrated a quantitative causal link between data-quality metrics and actual performance\nShorter lead time: Shortened the end-to-end research-development-deployment cycle\n\n\n“A full paradigm shift from model-centric to data-centric AI pipelines”"
   },
   {
     "objectID": "en/projects/project-a.html",
@@ -672,67 +672,39 @@
     "text": "Business Impact Quantitative and qualitative results\n\nQuantitative impact of data-driven business improvement\n\n\n\nA/B test video conversion 14.2% → 19.8% Curated genre content, +5.6 pp, p = 0.012 (576 per group)\n\n\nRegeneration success rate 18% → 33% Regeneration success among users who reached the generation screen\n\n\nMarketing efficiency CAC down 12% Retargeted inefficient ad segments and consolidated channels\n\n\nBusiness and content teams met every morning to review hypothesis-test results on the Tableau dashboard."
   },
   {
-    "objectID": "en/projects/project-b.html",
-    "href": "en/projects/project-b.html",
-    "title": "Video Data Curation and MLOps PoC",
+    "objectID": "en/index.html",
+    "href": "en/index.html",
+    "title": "Ben's Notes",
     "section": "",
-    "text": "AI-driven data curation (MLOps) for training a FaceSwap vision model\n\n\nProject context: Semi-automate the cycle of training-data collection, processing, screening, training, and storage to raise data quality itself, improve model performance, and speed up work from model research to deployment.\nCore mission: Run EDA on the metadata of raw unstructured datasets and set cleansing criteria, speed up processing, build a DL screening model, connect the pipeline, and set up an MVP-level MLOps validation environment that guarantees experiment reproducibility under resource constraints."
+    "text": "I’m Ben Kim, an analyst who wants data to help people stay healthy.\n\n\nI spent more than five years at startups as a data analyst, data scientist, and AI data part lead. Now I analyze public medicine data to help the people who handle medicines, such as doctors, pharmacists, drug makers, and distributors, make better decisions.\n\n\nRead the reports See experience\n\n\n\n\n\nEven without meeting patients directly, helping the people who prescribe, dispense, make, and supply medicines can contribute to people’s health.\n\n\n  See reimbursement and supply changes for an ingredient before prescribing.\n  Know about announced price cuts and suspensions early and plan stock.\n  Follow the market for their ingredients and competitors' price changes in one view.\n  Use ingredient demand trends as a baseline for supply planning and pharmacy alerts.\n\n\n\n\n\n\nThese reports take on questions that public medicine data can answer. Each report spends as much space on how far the numbers can be trusted as on the results.\n\n\n\n\n\n\n\nUsing public medicine data to catch price and reimbursement changes early and forecast ingredient demand six months ahead\n\n\n\n\n\nNov 24, 2026\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\nFind the action with the least resistance that can still be carried out within the constraints.\n\nIf there is no evidence that a complex method beats a simple one, I choose the simple one. I fix decision rules before seeing results, and I report unfavorable results as they are.\n\n\n\n\n  \n    2021.03 – 2023.11\n    Klleon R&D · Data part lead\n      Built and led the MLOps team and data part. Ran growth analytics, A/B testing, and training-data curation for a generative AI app.\n      Growth analytics · Data curation\n  \n  \n    2019.04 – 2020.07\n    Freewheelin · Data analyst\n      Built promotion performance dashboards, centralized data in BigQuery, and managed data quality.\n  \n  \n    2017.12 – 2019.03\n    Epopcon · Data scientist\n      Predicted when online-store inventory changes with a Poisson process to optimize crawling schedules.\n      Scheduling model\n  \n\nYonsei University, B.A. in Applied Statistics and Economics · Python, SQL, statistics and time series, LightGBM, BigQuery, MLflow\nFull experience · Projects · LinkedIn · Medium · GitHub"
   },
   {
-    "objectID": "en/projects/project-b.html#overview-optimizing-the-dl-model-training-cycle",
-    "href": "en/projects/project-b.html#overview-optimizing-the-dl-model-training-cycle",
-    "title": "Video Data Curation and MLOps PoC",
+    "objectID": "en/index.html#who-the-analysis-helps",
+    "href": "en/index.html#who-the-analysis-helps",
+    "title": "Ben's Notes",
     "section": "",
-    "text": "AI-driven data curation (MLOps) for training a FaceSwap vision model\n\n\nProject context: Semi-automate the cycle of training-data collection, processing, screening, training, and storage to raise data quality itself, improve model performance, and speed up work from model research to deployment.\nCore mission: Run EDA on the metadata of raw unstructured datasets and set cleansing criteria, speed up processing, build a DL screening model, connect the pipeline, and set up an MVP-level MLOps validation environment that guarantees experiment reproducibility under resource constraints."
+    "text": "Even without meeting patients directly, helping the people who prescribe, dispense, make, and supply medicines can contribute to people’s health.\n\n\n  See reimbursement and supply changes for an ingredient before prescribing.\n  Know about announced price cuts and suspensions early and plan stock.\n  Follow the market for their ingredients and competitors' price changes in one view.\n  Use ingredient demand trends as a baseline for supply planning and pharmacy alerts."
   },
   {
-    "objectID": "en/projects/project-b.html#problem-definition-soaring-infrastructure-cost-and-inefficient-model-training",
-    "href": "en/projects/project-b.html#problem-definition-soaring-infrastructure-cost-and-inefficient-model-training",
-    "title": "Video Data Curation and MLOps PoC",
-    "section": "Problem Definition Soaring infrastructure cost and inefficient model training",
-    "text": "Problem Definition Soaring infrastructure cost and inefficient model training\n\nCompute limits and stalled model performance caused by disorderly data intake (Garbage In)\n\n\nNoisy raw data: Video and image datasets collected in bulk by crawling and similar means carried heavy noise (audio clipping, low-resolution bias).\nWasted resources and cost: Training on unrefined data indiscriminately caused GPU resource consumption and training cost to balloon.\nAccuracy ceiling: Even with more sophisticated model parameters, data bias kept inference accuracy on the evaluation set stalled."
+    "objectID": "en/index.html#reports",
+    "href": "en/index.html#reports",
+    "title": "Ben's Notes",
+    "section": "",
+    "text": "These reports take on questions that public medicine data can answer. Each report spends as much space on how far the numbers can be trusted as on the results.\n\n\n\n\n\n\n\nUsing public medicine data to catch price and reimbursement changes early and forecast ingredient demand six months ahead\n\n\n\n\n\nNov 24, 2026\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "en/projects/project-b.html#data-profile-eda-in-depth-metadata-eda-of-raw-unstructured-datasets",
-    "href": "en/projects/project-b.html#data-profile-eda-in-depth-metadata-eda-of-raw-unstructured-datasets",
-    "title": "Video Data Curation and MLOps PoC",
-    "section": "Data Profile EDA In-depth metadata EDA of raw unstructured datasets",
-    "text": "Data Profile EDA In-depth metadata EDA of raw unstructured datasets\n\nDetecting statistical noise in raw unstructured data and establishing quality criteria\n\nAction (exploratory data analysis): Combined SQL and Python (Pandas, Librosa, OpenCV) to extract metadata attributes at scale (MFCC, objects, brightness, etc.).\n\n💡 Key findings\n\n20% of the videos already on hand were in access denied state, inconsistent with their public metadata.\nAsian faces made up under 5% of the data, revealing a strong Western bias.\n4% of collected audio files exceeded the allowed noise level (SNR), and 15% of vision images showed face-detection failure along with bias in certain brightness ranges.\n\n\n\n✅ Cleansing guideline design: Set model parameters that affect face recognition (crop size, similarity, etc.), plus thresholds for minimum SNR and minimum image resolution for data purification."
+    "objectID": "en/index.html#how-i-work",
+    "href": "en/index.html#how-i-work",
+    "title": "Ben's Notes",
+    "section": "",
+    "text": "Find the action with the least resistance that can still be carried out within the constraints.\n\nIf there is no evidence that a complex method beats a simple one, I choose the simple one. I fix decision rules before seeing results, and I report unfavorable results as they are."
   },
   {
-    "objectID": "en/projects/project-b.html#solution-architecture-data-curation-mlops-pipeline-design",
-    "href": "en/projects/project-b.html#solution-architecture-data-curation-mlops-pipeline-design",
-    "title": "Video Data Curation and MLOps PoC",
-    "section": "Solution Architecture Data curation MLOps pipeline design",
-    "text": "Solution Architecture Data curation MLOps pipeline design\n\nEnd-to-end AI-driven data curation MLOps pipeline (automated vision and data processing)\n\n\n\n\n\n\n\nflowchart LR\n  A[\"Raw Data\"] --&gt; B[\"Preprocessing\"] --&gt; C[\"Quality Filter\"] --&gt; D[\"Labeling\"] --&gt; E[\"Training\"] --&gt; F[\"Registry\"]\n\n\n\n\n\n\nStage components\n\nRaw: Metadata extraction and schema normalization at collection, then storage\nPreprocessing: Face detection, landmark extraction, and face alignment; on-demand functions such as smoothing and re-alignment\nQuality filtering: Combines EDA-based threshold rules with ML-based anomaly detection\nLabeling / Training: Labeling uses a semi-automated human-in-the-loop design for efficiency. The training pipeline builds a reproducible environment on versioned datasets, with registry-based lineage tracking"
-  },
-  {
-    "objectID": "en/projects/project-b.html#automated-data-quality-scoring-dl-based-data-screening-system",
-    "href": "en/projects/project-b.html#automated-data-quality-scoring-dl-based-data-screening-system",
-    "title": "Video Data Curation and MLOps PoC",
-    "section": "Automated Data Quality Scoring DL-based data screening system",
-    "text": "Automated Data Quality Scoring DL-based data screening system\n\nAI-based automatic data quality evaluation and filtering (core component)\n\nCore integration — Applied a hybrid rule-based + deep learning screening engine to go beyond simple criteria filtering.\n\nFace detection confidence check\nVector analysis of image resolution and blur score\n\n3-tier triage system\n\nAccept Review Reject\n\nQuality scoring with a lightweight CNN / vision encoder adds active filtering that cuts human labeling cost."
-  },
-  {
-    "objectID": "en/projects/project-b.html#infrastructure-optimization-gpu-cost-reduction-and-training-efficiency",
-    "href": "en/projects/project-b.html#infrastructure-optimization-gpu-cost-reduction-and-training-efficiency",
-    "title": "Video Data Curation and MLOps PoC",
-    "section": "Infrastructure Optimization GPU cost reduction and training efficiency",
-    "text": "Infrastructure Optimization GPU cost reduction and training efficiency\n\nInfrastructure cost optimization through data refinement (impact)\n\n\n\nEpoch sample optimization 20–30% fewer Blocks unnecessary noisy data\n\n\nGPU training time Up to 40% shorter Resource efficiency from refined datasets\n\n\nEarly rejection Minimized allocation Avoids wasted compute resources\n\n\nThe result is infra cost curve flattening at the same model performance."
-  },
-  {
-    "objectID": "en/projects/project-b.html#mlops-mvp-system-reproducible-experiments-and-model-operations",
-    "href": "en/projects/project-b.html#mlops-mvp-system-reproducible-experiments-and-model-operations",
-    "title": "Video Data Curation and MLOps PoC",
-    "section": "MLOps MVP System Reproducible experiments and model operations",
-    "text": "MLOps MVP System Reproducible experiments and model operations\n\nAn MLOps environment that guarantees experiment reproducibility and model operations (MVP)\n\n\nExperiment unit management: Dataset versioning guarantees reproducibility per experiment (data hash tracking), tightly integrated with MLflow experiment tracking and model registry.\nStandardized operations pipeline: Training configuration (seed, hyperparameters, dataset version) is fully fixed, and pipeline orchestration cleanly isolates research resources from service operation resources."
-  },
-  {
-    "objectID": "en/projects/project-b.html#expected-outcome-model-performance-gains-from-better-data-quality",
-    "href": "en/projects/project-b.html#expected-outcome-model-performance-gains-from-better-data-quality",
-    "title": "Video Data Curation and MLOps PoC",
-    "section": "Expected Outcome Model performance gains from better data quality",
-    "text": "Expected Outcome Model performance gains from better data quality\n\nPerformance and efficiency gains from the shift to data-centric MLOps (outcome)\n\n\nAccuracy uplift: Visible accuracy gains with refined data on the same model architecture\nConvergence stability: Excluding noisy data improves training stability and reduces overfitting\nEstablished correlation: Demonstrated a quantitative causal link between data-quality metrics and actual performance\nShorter lead time: Shortened the end-to-end research-development-deployment cycle\n\n\n“A full paradigm shift from model-centric to data-centric AI pipelines”"
+    "objectID": "en/index.html#experience",
+    "href": "en/index.html#experience",
+    "title": "Ben's Notes",
+    "section": "",
+    "text": "2021.03 – 2023.11\n    Klleon R&D · Data part lead\n      Built and led the MLOps team and data part. Ran growth analytics, A/B testing, and training-data curation for a generative AI app.\n      Growth analytics · Data curation\n  \n  \n    2019.04 – 2020.07\n    Freewheelin · Data analyst\n      Built promotion performance dashboards, centralized data in BigQuery, and managed data quality.\n  \n  \n    2017.12 – 2019.03\n    Epopcon · Data scientist\n      Predicted when online-store inventory changes with a Poisson process to optimize crawling schedules.\n      Scheduling model\n  \n\nYonsei University, B.A. in Applied Statistics and Economics · Python, SQL, statistics and time series, LightGBM, BigQuery, MLflow\nFull experience · Projects · LinkedIn · Medium · GitHub"
   },
   {
     "objectID": "ko/posts/2026-11-sample-analysis/index.html",
@@ -782,41 +754,6 @@
     "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
     "section": "6. 한계",
     "text": "6. 한계\n\n배정이 설치 단위이므로 재설치·다기기 유저의 군 이탈 가능성은 로그의 user_id 매핑으로 점검해야 합니다.\n단일 기간·단일 지표 검정이므로 신기성 효과(novelty effect)는 롤아웃 후 모니터링으로 확인합니다.\n장르별 하위 그룹 효과는 다중 비교 보정이 필요해 이번 검정에서 다루지 않았습니다."
-  },
-  {
-    "objectID": "ko/index.html",
-    "href": "ko/index.html",
-    "title": "Ben's Notes",
-    "section": "",
-    "text": "데이터로 사람들의 건강에 보탬이 되려는 분석가, Ben Kim입니다.\n\n\n스타트업에서 5년 넘게 데이터 분석가, 데이터 사이언티스트, AI 데이터 파트 리드로 일했습니다. 지금은 의사, 약사, 제약사, 유통사처럼 약을 다루는 사람들이 더 나은 결정을 내리도록 공개 의약품 데이터를 분석하고 있습니다.\n\n\n보고서 읽기 경력 보기\n\n\n\n\n\n환자를 직접 만나지 않아도, 환자에게 약을 처방하고 건네고 만들고 공급하는 사람들의 결정을 도우면 건강에 보탬이 될 수 있다고 봅니다.\n\n\n  처방하려는 성분의 급여 변경과 공급 변화를 미리 확인합니다.\n  약값 인하와 급여정지 예고를 미리 알아 재고를 계획합니다.\n  자사 성분의 시장 흐름과 경쟁 제품의 가격 변화를 한눈에 봅니다.\n  성분별 수요 흐름을 공급 계획과 약국 알림의 기준으로 씁니다.\n\n\n\n\n\n\n공개 의약품 데이터로 답할 수 있는 질문을 다룹니다. 결과만큼 “이 숫자를 얼마나 믿을 수 있는가”를 자세히 적었습니다.\n\n\n\n\n\n\n\n공개 의약품 데이터로 약값·급여 변화를 미리 잡고, 성분 처방 수요를 6개월 앞까지 내다보기\n\n\n\n\n\n2026-11-24\n\n\n\n\n\n일치 없음\n\n\n\n\n\n\n제약조건 안에서 가장 저항이 적고 실행 가능한 행동을 찾는다.\n\n복잡한 방법이 단순한 방법보다 낫다는 근거가 없으면 단순한 방법을 고릅니다. 결과를 보기 전에 판정 기준을 먼저 정하고, 불리한 결과도 그대로 적습니다.\n\n\n\n\n  \n    2021.03 – 2023.11\n    Klleon R&D · 데이터 파트 리드\n      MLOps 팀과 데이터 파트를 만들고 이끌었습니다. 생성형 AI 앱의 그로스 분석과 A/B 테스트, 학습 데이터 큐레이션을 맡았습니다.\n      그로스 분석 · 데이터 큐레이션\n  \n  \n    2019.04 – 2020.07\n    Freewheelin · 데이터 분석가\n      프로모션 성과 대시보드를 만들고, BigQuery로 데이터를 모아 품질 관리를 맡았습니다.\n  \n  \n    2017.12 – 2019.03\n    Epopcon · 데이터 사이언티스트\n      포아송 과정으로 쇼핑몰 상품 재고가 바뀌는 시점을 예측해 수집 주기를 최적화했습니다.\n      스케줄링 모델\n  \n\n연세대학교 응용통계학·경제학 학사 · Python, SQL, 통계·시계열 분석, LightGBM, BigQuery, MLflow\n전체 경력 · 프로젝트 · LinkedIn · Medium · GitHub"
-  },
-  {
-    "objectID": "ko/index.html#누구를-돕는-분석인가",
-    "href": "ko/index.html#누구를-돕는-분석인가",
-    "title": "Ben's Notes",
-    "section": "",
-    "text": "환자를 직접 만나지 않아도, 환자에게 약을 처방하고 건네고 만들고 공급하는 사람들의 결정을 도우면 건강에 보탬이 될 수 있다고 봅니다.\n\n\n  처방하려는 성분의 급여 변경과 공급 변화를 미리 확인합니다.\n  약값 인하와 급여정지 예고를 미리 알아 재고를 계획합니다.\n  자사 성분의 시장 흐름과 경쟁 제품의 가격 변화를 한눈에 봅니다.\n  성분별 수요 흐름을 공급 계획과 약국 알림의 기준으로 씁니다."
-  },
-  {
-    "objectID": "ko/index.html#보고서",
-    "href": "ko/index.html#보고서",
-    "title": "Ben's Notes",
-    "section": "",
-    "text": "공개 의약품 데이터로 답할 수 있는 질문을 다룹니다. 결과만큼 “이 숫자를 얼마나 믿을 수 있는가”를 자세히 적었습니다.\n\n\n\n\n\n\n\n공개 의약품 데이터로 약값·급여 변화를 미리 잡고, 성분 처방 수요를 6개월 앞까지 내다보기\n\n\n\n\n\n2026-11-24\n\n\n\n\n\n일치 없음"
-  },
-  {
-    "objectID": "ko/index.html#일하는-방식",
-    "href": "ko/index.html#일하는-방식",
-    "title": "Ben's Notes",
-    "section": "",
-    "text": "제약조건 안에서 가장 저항이 적고 실행 가능한 행동을 찾는다.\n\n복잡한 방법이 단순한 방법보다 낫다는 근거가 없으면 단순한 방법을 고릅니다. 결과를 보기 전에 판정 기준을 먼저 정하고, 불리한 결과도 그대로 적습니다."
-  },
-  {
-    "objectID": "ko/index.html#경력",
-    "href": "ko/index.html#경력",
-    "title": "Ben's Notes",
-    "section": "",
-    "text": "2021.03 – 2023.11\n    Klleon R&D · 데이터 파트 리드\n      MLOps 팀과 데이터 파트를 만들고 이끌었습니다. 생성형 AI 앱의 그로스 분석과 A/B 테스트, 학습 데이터 큐레이션을 맡았습니다.\n      그로스 분석 · 데이터 큐레이션\n  \n  \n    2019.04 – 2020.07\n    Freewheelin · 데이터 분석가\n      프로모션 성과 대시보드를 만들고, BigQuery로 데이터를 모아 품질 관리를 맡았습니다.\n  \n  \n    2017.12 – 2019.03\n    Epopcon · 데이터 사이언티스트\n      포아송 과정으로 쇼핑몰 상품 재고가 바뀌는 시점을 예측해 수집 주기를 최적화했습니다.\n      스케줄링 모델\n  \n\n연세대학교 응용통계학·경제학 학사 · Python, SQL, 통계·시계열 분석, LightGBM, BigQuery, MLflow\n전체 경력 · 프로젝트 · LinkedIn · Medium · GitHub"
   },
   {
     "objectID": "ko/report.html",
@@ -887,5 +824,68 @@
     "title": "탄력적 수집 관리를 위한 스케줄링 포아송 머신",
     "section": "Business Impact 인프라 비용 절감 및 상품 재고 추정 정확성 극대화 효과",
     "text": "Business Impact 인프라 비용 절감 및 상품 재고 추정 정확성 극대화 효과\n\n스마트 크롤러 포아송 엔진 가동을 통한 인프라 혁신 및 데이터 가치 극대화 (Expected Impact)\n\n\n\n인프라 자원 절감 5 ~ 6% 감축 무변화 유실 페이지의 중복 크롤링 억제를 통해 네트워킹 대역폭 및 트래픽 비용 대폭 감축\n\n\n데이터 정합성 개선 실시간 오차 수렴 재고가 급변하는 인기 매대에 크롤 리소스를 정교하게 재분배하여 품절 Lag-time 극소화\n\n\n안정성 확보 장애 오버헤드 해소 다중 플랫폼 최적 주기를 보장함으로써 타겟 서버의 IP 블락 리스크 회피 및 안전 파이프라인 자동화 구축"
+  },
+  {
+    "objectID": "ko/projects.html",
+    "href": "ko/projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Gen-AI B2C 앱 서비스 그로스 분석\n\n\n실제 비즈니스 성장 전략 설계와 데이터 검증의 엔드투엔드(End-to-End) 케이스 스터디\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n영상 데이터 큐레이션 및 MLOps PoC\n\n\n인프라 리소스 효율화 및 데이터 품질 강화를 구현한 비전 모델 ML Pipeline 엔지니어링\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n탄력적 수집 관리를 위한 스케줄링 포아송 머신\n\n\n통계적 웹페이지 변화 감지 및 기계학습 모델을 결합한 지능형 데이터 획득(Crawl Period Optimization)\n\n\n\n\n\n\n\n일치 없음"
+  },
+  {
+    "objectID": "ko/experience.html",
+    "href": "ko/experience.html",
+    "title": "Experience",
+    "section": "",
+    "text": "데이터 분석, 데이터 큐레이션·MLOps, 통계 기반 예측 모델링을 거쳐 팀을 이끄는 역할까지 이어온 경력입니다."
+  },
+  {
+    "objectID": "ko/experience.html#klleon",
+    "href": "ko/experience.html#klleon",
+    "title": "Experience",
+    "section": "Klleon R&D — 데이터 파트 리드",
+    "text": "Klleon R&D — 데이터 파트 리드\n2021.03 ~ 2023.11 (2년 9개월)\n연구 환경 효율화를 위한 MLOps 팀·데이터 파트 구축 및 리딩\n\n데이터 중심 AI(Data-Centric AI, DCAI) 접근으로 한국어 TTS 기술 개발\n데이터 수집, 가공, 검수까지 아우르는 컴퓨터 비전 맞춤형 데이터 큐레이션 시스템 구축 및 최적화\nKubeflow, DVC를 활용해 엔지니어링 지원\n\n→ 상세: 영상 데이터 큐레이션 및 MLOps PoC\n생성형 AI 기반 B2C 서비스의 데이터 의사결정 지원\n\nFirebase, Appsflyer, Amplitude, Tableau, 통계 모델링을 활용한 유저 분석\n앱스토어·구글 플레이 베타 서비스 런칭 리딩\n디지털 마케팅(Meta, Google Ads) 리딩\n\n→ 상세: 생성형AI B2C 앱 서비스 그로스 분석"
+  },
+  {
+    "objectID": "ko/experience.html#freewheelin",
+    "href": "ko/experience.html#freewheelin",
+    "title": "Experience",
+    "section": "Freewheelin — 데이터 분석가",
+    "text": "Freewheelin — 데이터 분석가\n2019.04 ~ 2020.07 (1년 4개월) · 서울 관악구\n프로모션 성과 분석 대시보드 제작\n\n프로모션과 유저 속성(가격, 무료 체험 기간) 간 상관관계 분석\n프로모션별 유저 그룹의 리텐션 추이 분석\n성과 측정을 위한 KPI 정의 및 산출\n\n데이터 관리 체계 재정비\n\nBigQuery로 데이터 중앙화\n비효율적인 저장 비용 절감\n데이터 품질 관리 총괄"
+  },
+  {
+    "objectID": "ko/experience.html#epopcon",
+    "href": "ko/experience.html#epopcon",
+    "title": "Experience",
+    "section": "Epopcon — 데이터 사이언티스트",
+    "text": "Epopcon — 데이터 사이언티스트\n2017.12 ~ 2019.03 (1년 4개월)\n상품 재고량 변화 시점을 예측하는 확률적 스케줄링 모델 개발 (포아송 과정)\n\n재고량 결측치 보정 및 이상치 처리 (클러스터링, 이상 탐지)\n\n→ 상세: 탄력적 수집 관리를 위한 스케줄링 예측 머신\n여러 쇼핑몰에 흩어진 동일 상품의 표준 키 생성\n\n이미지와 자연어 데이터를 전처리한 뒤 minhash-LSH 알고리즘 적용\n\n숨은 고객 행동 패턴 분석\n\n지리 데이터 활용\n공공 데이터를 활용해 상점 주소와 업종 카테고리 정제\n관심 대상 특성의 분포를 시각화하고 대조군과 비교"
+  },
+  {
+    "objectID": "ko/experience.html#학력",
+    "href": "ko/experience.html#학력",
+    "title": "Experience",
+    "section": "학력",
+    "text": "학력\n연세대학교 — 학사, 응용통계학 · 경제학"
+  },
+  {
+    "objectID": "ko/experience.html#자격증",
+    "href": "ko/experience.html#자격증",
+    "title": "Experience",
+    "section": "자격증",
+    "text": "자격증\n\nTensorFlow Developer Professional Certificate\nUsing Machine Learning in Trading and Finance\nFinancial Engineering and Risk Management Part I"
+  },
+  {
+    "objectID": "ko/experience.html#보유-기술",
+    "href": "ko/experience.html#보유-기술",
+    "title": "Experience",
+    "section": "보유 기술",
+    "text": "보유 기술\n수학 · 문제 관리 · 분석 능력"
+  },
+  {
+    "objectID": "ko/experience.html#링크",
+    "href": "ko/experience.html#링크",
+    "title": "Experience",
+    "section": "링크",
+    "text": "링크\n\nLinkedIn\nMedium Blog"
   }
 ]
