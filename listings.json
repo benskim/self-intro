@@ -1,22 +1,10 @@
 [
   {
-    "listing": "/index.html",
+    "listing": "/ko/projects.html",
     "items": [
-      "/ko/posts/2026-11-drug-benefit-demand/index.html"
-    ]
-  },
-  {
-    "listing": "/ko/index.html",
-    "items": [
-      "/ko/posts/2026-11-drug-benefit-demand/index.html"
-    ]
-  },
-  {
-    "listing": "/en/projects.html",
-    "items": [
-      "/en/projects/project-a.html",
-      "/en/projects/project-c.html",
-      "/en/projects/project-b.html"
+      "/ko/projects/project-c.html",
+      "/ko/projects/project-b.html",
+      "/ko/projects/project-a.html"
     ]
   },
   {
@@ -32,17 +20,29 @@
     ]
   },
   {
-    "listing": "/ko/report.html",
+    "listing": "/index.html",
     "items": [
       "/ko/posts/2026-11-drug-benefit-demand/index.html"
     ]
   },
   {
-    "listing": "/ko/projects.html",
+    "listing": "/en/projects.html",
     "items": [
-      "/ko/projects/project-a.html",
-      "/ko/projects/project-b.html",
-      "/ko/projects/project-c.html"
+      "/en/projects/project-c.html",
+      "/en/projects/project-b.html",
+      "/en/projects/project-a.html"
+    ]
+  },
+  {
+    "listing": "/ko/index.html",
+    "items": [
+      "/ko/posts/2026-11-drug-benefit-demand/index.html"
+    ]
+  },
+  {
+    "listing": "/ko/report.html",
+    "items": [
+      "/ko/posts/2026-11-drug-benefit-demand/index.html"
     ]
   }
 ]
