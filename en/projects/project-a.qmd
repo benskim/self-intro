@@ -22,7 +22,7 @@ flowchart LR
   style C fill:#0E5A43,color:#fff,stroke:#0E5A43
 ```
 
-## [Problem Definition]{.tag} Drop-off concentrated at the AI video generation step after sign-up
+## [Problem Definition]{.tag} Drop-off concentrated at the AI video generation step after Watch
 
 ::: {.lead-line}
 Diagnosing the bottleneck between UA marketing spend and conversion
@@ -30,17 +30,17 @@ Diagnosing the bottleneck between UA marketing spend and conversion
 
 **Problems on the ground**
 
-* UA ads brought large inflow, but drop-off surged at the generative-AI experience step right after sign-up.
+* UA ads brought large inflow, but drop-off surged at the generative-AI experience step right after Watch.
 * Among users who reached the video-source screen, the rate of actually generating an AI video stalled, delaying the aha-moment.
-* Marketing cost (CAC) kept rising while first-day churn after sign-up spiked.
+* Marketing cost (CAC) kept rising while first-day churn after login spiked.
 
-**User funnel breakdown**
+**User funnel breakdown** — unique users as a share of installs
 
 ::: {.funnel-bar}
 <span>Ad click & Install</span><span>100%</span>
 :::
 ::: {.funnel-bar style="width:75%"}
-<span>Sign Up</span><span>65%</span>
+<span>Watch (exposure to content)</span><span>65%</span>
 :::
 ::: {.funnel-bar .hot style="width:35%"}
 <span>AI Generation (drop-off hotspot)</span><span>12%</span>
@@ -50,7 +50,7 @@ Diagnosing the bottleneck between UA marketing spend and conversion
 :::
 
 ::: {.callout-card .accent}
-Between in-app sign-up and the first AI generation attempt, **more than 80% of users leak out**.
+Users who attempt AI generation are **12%** of installs and **18.5%** of Watch users (12 ÷ 65). Between Watch and the first AI generation attempt, **81.5% of users leak out**.
 :::
 
 ## [Log Infrastructure]{.tag} User Behavior Log Architecture
@@ -114,7 +114,7 @@ Formulating lifetime value (LTV) and the North Star Metric
 **Metric formulation**
 
 * **Proxy LTV:** $\text{proxy LTV} = 1 / \text{GPU cost}$
-* **North Star Metric:** 'Number of users who download (or share) a generated AI result at least once within 24 hours of sign-up'
+* **North Star Metric:** 'Number of users who download (or share) a generated AI result at least once within 24 hours of login'
 
 **Unit economics growth strategy** — Keep the proxy LTV/CAC ratio at 3.0 or higher to stabilize unit economics.
 
@@ -129,7 +129,7 @@ A practical A/B test scenario and statistical design for hypothesis testing
 | Control (Group A) | Existing random content (80% user-uploaded, 20% in-house) |
 | **Treatment (Group B)** | **Genre-curated content (cinematic, Y2K, cartoon, meme, etc.)** |
 
-* **Primary metric:** Video conversion rate = share of users exposed to content who successfully generate an AI video (baseline 14.2%)
+* **Primary metric:** Video conversion rate = share of users exposed to content who successfully generate an AI video (baseline 14.2%). This differs from the funnel's 18.5% (generation **attempts** among Watch users): it counts **successful** generation, and the experiment covers new users
 * **Assignment / duration:** New users randomly assigned 50:50 with Firebase Remote Config (A/B Testing), branching the content-exposure policy value; 14 days (two weekly cycles). The group is logged as a user property and on action logs for per-group analysis in BigQuery and Amplitude.
 * **Sample size:** With significance level $\alpha = 0.05$, power $1-\beta = 0.80$, and a minimum detectable effect (MDE) of **+6.5 pp** (14.2% → 20.7%), at least **532 users per group**, i.e. at least **38 users per segment per day** over 14 days.
 

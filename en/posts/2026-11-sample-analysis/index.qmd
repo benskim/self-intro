@@ -14,16 +14,18 @@ The design and result figures here match [Project A](../../projects/project-a.qm
 
 ## 1. Background and objective
 
-UA ads brought large inflow, but drop-off surged at the AI generation step right after sign-up. We test the hypothesis that switching content exposure from **random content (A) to genre-curated content (B)** improves the video conversion rate.
+UA ads brought large inflow, but drop-off surged at the AI generation step right after Watch. We test the hypothesis that switching content exposure from **random content (A) to genre-curated content (B)** improves the video conversion rate.
 
 * **H0:** The video conversion rates of the two groups are equal ($p_A = p_B$)
 * **H1:** The video conversion rates differ ($p_A \neq p_B$), significance level $\alpha = 0.05$
 
 ## 2. Diagnosis: where users leak
 
-![Share of installs by step. More than 80% leak out between sign-up (65%) and AI generation (12%)](images/funnel.png){fig-alt="Funnel bar chart"}
+![Unique users as a share of installs by step. 81.5% leak out between Watch (65%) and AI generation (12%)](images/funnel.png){fig-alt="Funnel bar chart"}
 
-Ad click & Install (100%) → Sign Up (65%) → AI Generation (12%) → Share/Download (2.5%). The **sign-up → AI generation** step loses more than 80% of users and is the largest leak, so the video conversion rate was chosen as the experiment metric.
+Ad click & Install (100%) → Watch (exposure to content) (65%) → AI Generation (12%) → Share/Download (2.5%). The **Watch → AI generation** step loses 81.5% of users and is the largest leak, so the video conversion rate was chosen as the experiment metric. Each figure counts unique users as a share of installs. Users who attempt AI generation are 12% of installs and 18.5% of Watch users (12 ÷ 65).
+
+The video conversion rate (baseline 14.2%) is a different metric from the 18.5% above. The 18.5% is the share of Watch users who **attempt** AI generation; the 14.2% is the share of content-exposed new users in the experiment who **successfully** generate a video.
 
 ## 3. Experiment design and sample sizing
 
