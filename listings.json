@@ -10,22 +10,19 @@
   {
     "listing": "/en/report.html",
     "items": [
-      "/en/posts/2026-11-drug-benefit-demand/index.html",
-      "/en/posts/2026-11-sample-analysis/index.html"
+      "/en/posts/2026-11-drug-benefit-demand/index.html"
     ]
   },
   {
     "listing": "/en/index.html",
     "items": [
-      "/en/posts/2026-11-drug-benefit-demand/index.html",
-      "/en/posts/2026-11-sample-analysis/index.html"
+      "/en/posts/2026-11-drug-benefit-demand/index.html"
     ]
   },
   {
     "listing": "/index.html",
     "items": [
-      "/ko/posts/2026-11-drug-benefit-demand/index.html",
-      "/ko/posts/2026-11-sample-analysis/index.html"
+      "/ko/posts/2026-11-drug-benefit-demand/index.html"
     ]
   },
   {
@@ -39,15 +36,13 @@
   {
     "listing": "/ko/index.html",
     "items": [
-      "/ko/posts/2026-11-drug-benefit-demand/index.html",
-      "/ko/posts/2026-11-sample-analysis/index.html"
+      "/ko/posts/2026-11-drug-benefit-demand/index.html"
     ]
   },
   {
     "listing": "/ko/report.html",
     "items": [
-      "/ko/posts/2026-11-drug-benefit-demand/index.html",
-      "/ko/posts/2026-11-sample-analysis/index.html"
+      "/ko/posts/2026-11-drug-benefit-demand/index.html"
     ]
   }
 ]
