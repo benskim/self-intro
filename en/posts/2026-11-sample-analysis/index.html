@@ -311,7 +311,7 @@ window.Quarto = {
 </div>
 <section id="background-and-objective" class="level2">
 <h2 class="anchored" data-anchor-id="background-and-objective">1. Background and objective</h2>
-<p>UA ads brought large inflow, but drop-off surged at the AI generation step right after sign-up. We test the hypothesis that switching content exposure from <strong>random content (A) to genre-curated content (B)</strong> improves the video conversion rate.</p>
+<p>UA ads brought large inflow, but drop-off surged at the AI generation step right after Watch. We test the hypothesis that switching content exposure from <strong>random content (A) to genre-curated content (B)</strong> improves the video conversion rate.</p>
 <ul>
 <li><strong>H0:</strong> The video conversion rates of the two groups are equal (<span class="math inline">\(p_A = p_B\)</span>)</li>
 <li><strong>H1:</strong> The video conversion rates differ (<span class="math inline">\(p_A \neq p_B\)</span>), significance level <span class="math inline">\(\alpha = 0.05\)</span></li>
@@ -322,10 +322,11 @@ window.Quarto = {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/funnel.png" class="img-fluid figure-img" alt="Funnel bar chart"></p>
-<figcaption>Share of installs by step. More than 80% leak out between sign-up (65%) and AI generation (12%)</figcaption>
+<figcaption>Unique users as a share of installs by step. 81.5% leak out between Watch (65%) and AI generation (12%)</figcaption>
 </figure>
 </div>
-<p>Ad click &amp; Install (100%) → Sign Up (65%) → AI Generation (12%) → Share/Download (2.5%). The <strong>sign-up → AI generation</strong> step loses more than 80% of users and is the largest leak, so the video conversion rate was chosen as the experiment metric.</p>
+<p>Ad click &amp; Install (100%) → Watch (exposure to content) (65%) → AI Generation (12%) → Share/Download (2.5%). The <strong>Watch → AI generation</strong> step loses 81.5% of users and is the largest leak, so the video conversion rate was chosen as the experiment metric. Each figure counts unique users as a share of installs. Users who attempt AI generation are 12% of installs and 18.5% of Watch users (12 ÷ 65).</p>
+<p>The video conversion rate (baseline 14.2%) is a different metric from the 18.5% above. The 18.5% is the share of Watch users who <strong>attempt</strong> AI generation; the 14.2% is the share of content-exposed new users in the experiment who <strong>successfully</strong> generate a video.</p>
 </section>
 <section id="experiment-design-and-sample-sizing" class="level2">
 <h2 class="anchored" data-anchor-id="experiment-design-and-sample-sizing">3. Experiment design and sample sizing</h2>
@@ -1020,89 +1021,91 @@ window.Quarto = {
 <span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="fu">## 1. Background and objective</span></span>
 <span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>UA ads brought large inflow, but drop-off surged at the AI generation step right after sign-up. We test the hypothesis that switching content exposure from **random content (A) to genre-curated content (B)** improves the video conversion rate.</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>UA ads brought large inflow, but drop-off surged at the AI generation step right after Watch. We test the hypothesis that switching content exposure from **random content (A) to genre-curated content (B)** improves the video conversion rate.</span>
 <span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**H0:** The video conversion rates of the two groups are equal ($p_A = p_B$)</span>
 <span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**H1:** The video conversion rates differ ($p_A \neq p_B$), significance level $\alpha = 0.05$</span>
 <span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="fu">## 2. Diagnosis: where users leak</span></span>
 <span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="al">![Share of installs by step. More than 80% leak out between sign-up (65%) and AI generation (12%)](images/funnel.png)</span>{fig-alt="Funnel bar chart"}</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="al">![Unique users as a share of installs by step. 81.5% leak out between Watch (65%) and AI generation (12%)](images/funnel.png)</span>{fig-alt="Funnel bar chart"}</span>
 <span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>Ad click &amp; Install (100%) → Sign Up (65%) → AI Generation (12%) → Share/Download (2.5%). The **sign-up → AI generation** step loses more than 80% of users and is the largest leak, so the video conversion rate was chosen as the experiment metric.</span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>Ad click &amp; Install (100%) → Watch (exposure to content) (65%) → AI Generation (12%) → Share/Download (2.5%). The **Watch → AI generation** step loses 81.5% of users and is the largest leak, so the video conversion rate was chosen as the experiment metric. Each figure counts unique users as a share of installs. Users who attempt AI generation are 12% of installs and 18.5% of Watch users (12 ÷ 65).</span>
 <span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a><span class="fu">## 3. Experiment design and sample sizing</span></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>The video conversion rate (baseline 14.2%) is a different metric from the 18.5% above. The 18.5% is the share of Watch users who **attempt** AI generation; the 14.2% is the share of content-exposed new users in the experiment who **successfully** generate a video.</span>
 <span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Item <span class="pp">|</span> Detail <span class="pp">|</span></span>
-<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|</span></span>
-<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Control (Group A) <span class="pp">|</span> Existing random content (80% user-uploaded, 20% in-house) <span class="pp">|</span></span>
-<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Treatment (Group B) <span class="pp">|</span> Genre-curated content (cinematic, Y2K, cartoon, meme, etc.) <span class="pp">|</span></span>
-<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Primary metric <span class="pp">|</span> Video conversion rate (users who successfully generate an AI video among exposed users), baseline 14.2% <span class="pp">|</span></span>
-<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Assignment / duration <span class="pp">|</span> New users randomly assigned 50:50 with Firebase Remote Config (A/B Testing), 14 days <span class="pp">|</span></span>
-<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Significance / power <span class="pp">|</span> $\alpha = 0.05$ / $1-\beta = 0.80$ <span class="pp">|</span></span>
-<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Minimum detectable effect (MDE) <span class="pp">|</span> +6.5 pp (14.2% → 20.7%) <span class="pp">|</span></span>
-<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>**How groups are assigned:** Remote Config serves a different content-exposure policy parameter per group. The group is recorded as a user property on the exposure event, logged when the app activates the value. These logs flow from Firebase into BigQuery and Amplitude, where per-group funnels and conversion are aggregated. Firebase randomizes per app installation (instance), so users who reinstall or use several devices may land in different groups and need to be checked in analysis.</span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a><span class="fu">## 3. Experiment design and sample sizing</span></span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Item <span class="pp">|</span> Detail <span class="pp">|</span></span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|</span></span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Control (Group A) <span class="pp">|</span> Existing random content (80% user-uploaded, 20% in-house) <span class="pp">|</span></span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Treatment (Group B) <span class="pp">|</span> Genre-curated content (cinematic, Y2K, cartoon, meme, etc.) <span class="pp">|</span></span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Primary metric <span class="pp">|</span> Video conversion rate (users who successfully generate an AI video among exposed users), baseline 14.2% <span class="pp">|</span></span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Assignment / duration <span class="pp">|</span> New users randomly assigned 50:50 with Firebase Remote Config (A/B Testing), 14 days <span class="pp">|</span></span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Significance / power <span class="pp">|</span> $\alpha = 0.05$ / $1-\beta = 0.80$ <span class="pp">|</span></span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Minimum detectable effect (MDE) <span class="pp">|</span> +6.5 pp (14.2% → 20.7%) <span class="pp">|</span></span>
 <span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a>The required sample size per group for comparing two proportions is:</span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a>**How groups are assigned:** Remote Config serves a different content-exposure policy parameter per group. The group is recorded as a user property on the exposure event, logged when the app activates the value. These logs flow from Firebase into BigQuery and Amplitude, where per-group funnels and conversion are aggregated. Firebase randomizes per app installation (instance), so users who reinstall or use several devices may land in different groups and need to be checked in analysis.</span>
 <span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a>$$n = \frac{(z_{1-\alpha/2}+z_{1-\beta})^2\,<span class="co">[</span><span class="ot">p_1(1-p_1)+p_2(1-p_2)</span><span class="co">]</span>}{(p_2-p_1)^2}$$</span>
+<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a>The required sample size per group for comparing two proportions is:</span>
 <span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy <span class="im">import</span> stats</span>
-<span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> n_per_group(p1, p2, alpha<span class="op">=</span><span class="fl">0.05</span>, power<span class="op">=</span><span class="fl">0.80</span>):</span>
-<span id="cb3-49"><a href="#cb3-49" aria-hidden="true" tabindex="-1"></a>    k <span class="op">=</span> (stats.norm.ppf(<span class="dv">1</span> <span class="op">-</span> alpha<span class="op">/</span><span class="dv">2</span>) <span class="op">+</span> stats.norm.ppf(power)) <span class="op">**</span> <span class="dv">2</span></span>
-<span id="cb3-50"><a href="#cb3-50" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> k <span class="op">*</span> (p1<span class="op">*</span>(<span class="dv">1</span><span class="op">-</span>p1) <span class="op">+</span> p2<span class="op">*</span>(<span class="dv">1</span><span class="op">-</span>p2)) <span class="op">/</span> (p2 <span class="op">-</span> p1) <span class="op">**</span> <span class="dv">2</span></span>
-<span id="cb3-51"><a href="#cb3-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-52"><a href="#cb3-52" aria-hidden="true" tabindex="-1"></a>n_per_group(<span class="fl">0.142</span>, <span class="fl">0.142</span> <span class="op">+</span> <span class="fl">0.065</span>)   <span class="co"># 531.3 -&gt; at least 532 per group</span></span>
-<span id="cb3-53"><a href="#cb3-53" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb3-54"><a href="#cb3-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-55"><a href="#cb3-55" aria-hidden="true" tabindex="-1"></a>At least **532 per group**, or **38 per segment per day** over 14 days. The actual sample was 576 per group (about 41 per day), meeting the design requirement.</span>
+<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a>$$n = \frac{(z_{1-\alpha/2}+z_{1-\beta})^2\,<span class="co">[</span><span class="ot">p_1(1-p_1)+p_2(1-p_2)</span><span class="co">]</span>}{(p_2-p_1)^2}$$</span>
+<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy <span class="im">import</span> stats</span>
+<span id="cb3-49"><a href="#cb3-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-50"><a href="#cb3-50" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> n_per_group(p1, p2, alpha<span class="op">=</span><span class="fl">0.05</span>, power<span class="op">=</span><span class="fl">0.80</span>):</span>
+<span id="cb3-51"><a href="#cb3-51" aria-hidden="true" tabindex="-1"></a>    k <span class="op">=</span> (stats.norm.ppf(<span class="dv">1</span> <span class="op">-</span> alpha<span class="op">/</span><span class="dv">2</span>) <span class="op">+</span> stats.norm.ppf(power)) <span class="op">**</span> <span class="dv">2</span></span>
+<span id="cb3-52"><a href="#cb3-52" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> k <span class="op">*</span> (p1<span class="op">*</span>(<span class="dv">1</span><span class="op">-</span>p1) <span class="op">+</span> p2<span class="op">*</span>(<span class="dv">1</span><span class="op">-</span>p2)) <span class="op">/</span> (p2 <span class="op">-</span> p1) <span class="op">**</span> <span class="dv">2</span></span>
+<span id="cb3-53"><a href="#cb3-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-54"><a href="#cb3-54" aria-hidden="true" tabindex="-1"></a>n_per_group(<span class="fl">0.142</span>, <span class="fl">0.142</span> <span class="op">+</span> <span class="fl">0.065</span>)   <span class="co"># 531.3 -&gt; at least 532 per group</span></span>
+<span id="cb3-55"><a href="#cb3-55" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb3-56"><a href="#cb3-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-57"><a href="#cb3-57" aria-hidden="true" tabindex="-1"></a><span class="al">![The larger the difference to detect, the fewer samples are needed](images/sample-size.png)</span></span>
+<span id="cb3-57"><a href="#cb3-57" aria-hidden="true" tabindex="-1"></a>At least **532 per group**, or **38 per segment per day** over 14 days. The actual sample was 576 per group (about 41 per day), meeting the design requirement.</span>
 <span id="cb3-58"><a href="#cb3-58" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-59"><a href="#cb3-59" aria-hidden="true" tabindex="-1"></a><span class="fu">## 4. Test results</span></span>
+<span id="cb3-59"><a href="#cb3-59" aria-hidden="true" tabindex="-1"></a><span class="al">![The larger the difference to detect, the fewer samples are needed](images/sample-size.png)</span></span>
 <span id="cb3-60"><a href="#cb3-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-61"><a href="#cb3-61" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Item <span class="pp">|</span> Control A <span class="pp">|</span> Treatment B <span class="pp">|</span></span>
-<span id="cb3-62"><a href="#cb3-62" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|</span></span>
-<span id="cb3-63"><a href="#cb3-63" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Sample size <span class="pp">|</span> 576 <span class="pp">|</span> 576 <span class="pp">|</span></span>
-<span id="cb3-64"><a href="#cb3-64" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Successful video generations <span class="pp">|</span> 82 <span class="pp">|</span> 114 <span class="pp">|</span></span>
-<span id="cb3-65"><a href="#cb3-65" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Video conversion rate <span class="pp">|</span> 14.2% <span class="pp">|</span> 19.8% <span class="pp">|</span></span>
-<span id="cb3-66"><a href="#cb3-66" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Difference <span class="pp">|</span> +5.6 pp (about +39% relative) <span class="pp">|</span> <span class="pp">|</span></span>
-<span id="cb3-67"><a href="#cb3-67" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-68"><a href="#cb3-68" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb3-69"><a href="#cb3-69" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb3-70"><a href="#cb3-70" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy <span class="im">import</span> stats</span>
-<span id="cb3-71"><a href="#cb3-71" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-72"><a href="#cb3-72" aria-hidden="true" tabindex="-1"></a>n, a, b <span class="op">=</span> <span class="dv">576</span>, <span class="dv">82</span>, <span class="dv">114</span></span>
-<span id="cb3-73"><a href="#cb3-73" aria-hidden="true" tabindex="-1"></a>chi2, p_chi, <span class="op">*</span>_ <span class="op">=</span> stats.chi2_contingency([[a, n<span class="op">-</span>a], [b, n<span class="op">-</span>b]], correction<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb3-74"><a href="#cb3-74" aria-hidden="true" tabindex="-1"></a>t, p_t <span class="op">=</span> stats.ttest_ind(np.r_[np.ones(b), np.zeros(n<span class="op">-</span>b)],</span>
-<span id="cb3-75"><a href="#cb3-75" aria-hidden="true" tabindex="-1"></a>                         np.r_[np.ones(a), np.zeros(n<span class="op">-</span>a)])</span>
-<span id="cb3-76"><a href="#cb3-76" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb3-77"><a href="#cb3-77" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-78"><a href="#cb3-78" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Test <span class="pp">|</span> Statistic <span class="pp">|</span> p-value <span class="pp">|</span></span>
-<span id="cb3-79"><a href="#cb3-79" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|</span></span>
-<span id="cb3-80"><a href="#cb3-80" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Chi-square test <span class="pp">|</span> χ² = 6.30 (df=1) <span class="pp">|</span> 0.012 <span class="pp">|</span></span>
-<span id="cb3-81"><a href="#cb3-81" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Independent-samples t-test <span class="pp">|</span> t = 2.51 (df=1150) <span class="pp">|</span> 0.012 <span class="pp">|</span></span>
-<span id="cb3-82"><a href="#cb3-82" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-83"><a href="#cb3-83" aria-hidden="true" tabindex="-1"></a>The 95% confidence interval of the difference is **+1.2 to +9.9 pp**, which excludes 0.</span>
+<span id="cb3-61"><a href="#cb3-61" aria-hidden="true" tabindex="-1"></a><span class="fu">## 4. Test results</span></span>
+<span id="cb3-62"><a href="#cb3-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-63"><a href="#cb3-63" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Item <span class="pp">|</span> Control A <span class="pp">|</span> Treatment B <span class="pp">|</span></span>
+<span id="cb3-64"><a href="#cb3-64" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|</span></span>
+<span id="cb3-65"><a href="#cb3-65" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Sample size <span class="pp">|</span> 576 <span class="pp">|</span> 576 <span class="pp">|</span></span>
+<span id="cb3-66"><a href="#cb3-66" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Successful video generations <span class="pp">|</span> 82 <span class="pp">|</span> 114 <span class="pp">|</span></span>
+<span id="cb3-67"><a href="#cb3-67" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Video conversion rate <span class="pp">|</span> 14.2% <span class="pp">|</span> 19.8% <span class="pp">|</span></span>
+<span id="cb3-68"><a href="#cb3-68" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Difference <span class="pp">|</span> +5.6 pp (about +39% relative) <span class="pp">|</span> <span class="pp">|</span></span>
+<span id="cb3-69"><a href="#cb3-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-70"><a href="#cb3-70" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb3-71"><a href="#cb3-71" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb3-72"><a href="#cb3-72" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy <span class="im">import</span> stats</span>
+<span id="cb3-73"><a href="#cb3-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-74"><a href="#cb3-74" aria-hidden="true" tabindex="-1"></a>n, a, b <span class="op">=</span> <span class="dv">576</span>, <span class="dv">82</span>, <span class="dv">114</span></span>
+<span id="cb3-75"><a href="#cb3-75" aria-hidden="true" tabindex="-1"></a>chi2, p_chi, <span class="op">*</span>_ <span class="op">=</span> stats.chi2_contingency([[a, n<span class="op">-</span>a], [b, n<span class="op">-</span>b]], correction<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb3-76"><a href="#cb3-76" aria-hidden="true" tabindex="-1"></a>t, p_t <span class="op">=</span> stats.ttest_ind(np.r_[np.ones(b), np.zeros(n<span class="op">-</span>b)],</span>
+<span id="cb3-77"><a href="#cb3-77" aria-hidden="true" tabindex="-1"></a>                         np.r_[np.ones(a), np.zeros(n<span class="op">-</span>a)])</span>
+<span id="cb3-78"><a href="#cb3-78" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb3-79"><a href="#cb3-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-80"><a href="#cb3-80" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Test <span class="pp">|</span> Statistic <span class="pp">|</span> p-value <span class="pp">|</span></span>
+<span id="cb3-81"><a href="#cb3-81" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|</span></span>
+<span id="cb3-82"><a href="#cb3-82" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Chi-square test <span class="pp">|</span> χ² = 6.30 (df=1) <span class="pp">|</span> 0.012 <span class="pp">|</span></span>
+<span id="cb3-83"><a href="#cb3-83" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Independent-samples t-test <span class="pp">|</span> t = 2.51 (df=1150) <span class="pp">|</span> 0.012 <span class="pp">|</span></span>
 <span id="cb3-84"><a href="#cb3-84" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-85"><a href="#cb3-85" aria-hidden="true" tabindex="-1"></a><span class="al">![A/B video conversion with 95% confidence intervals](images/ab-result.png)</span></span>
+<span id="cb3-85"><a href="#cb3-85" aria-hidden="true" tabindex="-1"></a>The 95% confidence interval of the difference is **+1.2 to +9.9 pp**, which excludes 0.</span>
 <span id="cb3-86"><a href="#cb3-86" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-87"><a href="#cb3-87" aria-hidden="true" tabindex="-1"></a>**Conclusion:** Since p = 0.012 &lt; 0.05, we reject H0 and decided to roll out genre-curated content.</span>
+<span id="cb3-87"><a href="#cb3-87" aria-hidden="true" tabindex="-1"></a><span class="al">![A/B video conversion with 95% confidence intervals](images/ab-result.png)</span></span>
 <span id="cb3-88"><a href="#cb3-88" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-89"><a href="#cb3-89" aria-hidden="true" tabindex="-1"></a><span class="fu">## 5. Key takeaways</span></span>
+<span id="cb3-89"><a href="#cb3-89" aria-hidden="true" tabindex="-1"></a>**Conclusion:** Since p = 0.012 &lt; 0.05, we reject H0 and decided to roll out genre-curated content.</span>
 <span id="cb3-90"><a href="#cb3-90" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-91"><a href="#cb3-91" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Insight 1:** Video conversion for genre-curated content (B) is 19.8%, 5.6 pp (about +39% relative) above control (14.2%), and significant at the 5% level (p = 0.012).</span>
-<span id="cb3-92"><a href="#cb3-92" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Insight 2:** The observed difference (+5.6 pp) is smaller than the design MDE (+6.5 pp), so power on this sample is about 71%. The direction is reliable, but the confidence interval of the effect size (+1.2 to +9.9 pp) is wide, so it should be re-estimated through post-rollout monitoring.</span>
-<span id="cb3-93"><a href="#cb3-93" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Next actions:** Break down the effect by genre (cinematic, Y2K, etc.), and verify 7-day retention and proxy LTV/CAC ≥ 3.0 including GPU cost.</span>
-<span id="cb3-94"><a href="#cb3-94" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-95"><a href="#cb3-95" aria-hidden="true" tabindex="-1"></a><span class="fu">## 6. Limitations</span></span>
+<span id="cb3-91"><a href="#cb3-91" aria-hidden="true" tabindex="-1"></a><span class="fu">## 5. Key takeaways</span></span>
+<span id="cb3-92"><a href="#cb3-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-93"><a href="#cb3-93" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Insight 1:** Video conversion for genre-curated content (B) is 19.8%, 5.6 pp (about +39% relative) above control (14.2%), and significant at the 5% level (p = 0.012).</span>
+<span id="cb3-94"><a href="#cb3-94" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Insight 2:** The observed difference (+5.6 pp) is smaller than the design MDE (+6.5 pp), so power on this sample is about 71%. The direction is reliable, but the confidence interval of the effect size (+1.2 to +9.9 pp) is wide, so it should be re-estimated through post-rollout monitoring.</span>
+<span id="cb3-95"><a href="#cb3-95" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Next actions:** Break down the effect by genre (cinematic, Y2K, etc.), and verify 7-day retention and proxy LTV/CAC ≥ 3.0 including GPU cost.</span>
 <span id="cb3-96"><a href="#cb3-96" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-97"><a href="#cb3-97" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Assignment is per installation, so users who reinstall or use several devices may switch groups; check with the user_id mapping in the logs.</span>
-<span id="cb3-98"><a href="#cb3-98" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>This is a single-period, single-metric test, so novelty effects are to be checked through post-rollout monitoring.</span>
-<span id="cb3-99"><a href="#cb3-99" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Subgroup effects by genre need multiple-comparison correction and were not covered in this test.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb3-97"><a href="#cb3-97" aria-hidden="true" tabindex="-1"></a><span class="fu">## 6. Limitations</span></span>
+<span id="cb3-98"><a href="#cb3-98" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-99"><a href="#cb3-99" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Assignment is per installation, so users who reinstall or use several devices may switch groups; check with the user_id mapping in the logs.</span>
+<span id="cb3-100"><a href="#cb3-100" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>This is a single-period, single-metric test, so novelty effects are to be checked through post-rollout monitoring.</span>
+<span id="cb3-101"><a href="#cb3-101" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Subgroup effects by genre need multiple-comparison correction and were not covered in this test.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

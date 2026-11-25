@@ -77,11 +77,11 @@
     "text": "생성형 AI 기반 B2C 앱 서비스 베타 런칭 및 유저 획득(UA) 그로스 프로젝트\n\n\nContext: 이미지, 음성, 영상을 활용한 얼굴/음성 생성 AI 기능의 모바일 앱 서비스 마켓 런칭 및 비즈니스 데이터 파이프라인 구축.\nTarget KPI: PMF 달성 & 잔존율 극대화 — 실시간 유저 활성화(Activation) 인프라 수립.\n앱 베타 출시 마일스톤:\n\n\n\n\n\n\n\nflowchart LR\n  A[\"1 기획\"] --&gt; B[\"2 인프라 연동\"] --&gt; C[\"3 베타 출시\"] --&gt; D[\"4 UA 그로스\"]\n  style C fill:#0E5A43,color:#fff,stroke:#0E5A43"
   },
   {
-    "objectID": "ko/projects/project-a.html#problem-definition-가입-후-ai-영상-생성-단계의-이탈-집중",
-    "href": "ko/projects/project-a.html#problem-definition-가입-후-ai-영상-생성-단계의-이탈-집중",
+    "objectID": "ko/projects/project-a.html#problem-definition-영상-시청watch-후-ai-영상-생성-단계의-이탈-집중",
+    "href": "ko/projects/project-a.html#problem-definition-영상-시청watch-후-ai-영상-생성-단계의-이탈-집중",
     "title": "Gen-AI B2C 앱 서비스 그로스 분석",
-    "section": "Problem Definition 가입 후 AI 영상 생성 단계의 이탈 집중",
-    "text": "Problem Definition 가입 후 AI 영상 생성 단계의 이탈 집중\n\nUA 마케팅 리소스 투입 대비 구독 전환율의 보틀넥 진단\n\n현업의 문제\n\n유저 획득(UA) 광고를 통해 대규모 유입이 발생했으나, 실제 앱 가입 후 생성형 AI 체험 단계에서 이탈율 급증.\n영상소스화면 도달 유저 중 실제 AI영상 생성으로 이어지는 전환율이 정체되며 Aha-moment 도달 정체.\n마케팅 비용(CAC)은 증가하나 가입 첫날 이탈율이 급증하는 위기 직면.\n\nUser Funnel Breakdown\n\nAD click & Install100%\n\n\nSign Up65%\n\n\nAI Generation (이탈집중구간)12%\n\n\nShare/Download2.5%\n\n\n인앱 가입 대비 AI 생성 시도 전환 구간에서 약 80% 이상의 극단적 누수 발생"
+    "section": "Problem Definition 영상 시청(Watch) 후 AI 영상 생성 단계의 이탈 집중",
+    "text": "Problem Definition 영상 시청(Watch) 후 AI 영상 생성 단계의 이탈 집중\n\nUA 마케팅 리소스 투입 대비 구독 전환율의 보틀넥 진단\n\n현업의 문제\n\n유저 획득(UA) 광고를 통해 대규모 유입이 발생했으나, 실제 영상 시청(Watch) 후 생성형 AI 체험 단계에서 이탈율 급증.\n영상소스화면 도달 유저 중 실제 AI영상 생성으로 이어지는 전환율이 정체되며 Aha-moment 도달 정체.\n마케팅 비용(CAC)은 증가하나 로그인 첫날 이탈율이 급증하는 위기 직면.\n\nUser Funnel Breakdown — 설치(Install) 대비 고유 유저수 비율\n\nAD click & Install100%\n\n\nWatch (exposure to content)65%\n\n\nAI Generation (이탈집중구간)12%\n\n\nShare/Download2.5%\n\n\nAI 생성 시도 유저는 설치 대비 12%, Watch 유저 중에서는 18.5%(12 ÷ 65). Watch → AI 생성 시도 구간에서 81.5%의 극단적 누수 발생"
   },
   {
     "objectID": "ko/projects/project-a.html#로그-인프라-설계-user-behavior-log-architecture",
@@ -102,14 +102,14 @@
     "href": "ko/projects/project-a.html#지표-정의-및-ltv-모델-business-metric-optimization",
     "title": "Gen-AI B2C 앱 서비스 그로스 분석",
     "section": "지표 정의 및 LTV 모델 Business Metric Optimization",
-    "text": "지표 정의 및 LTV 모델 Business Metric Optimization\n\n유저 평생 가치(LTV) 및 북극성 지표(North Star Metric) 수식 정립\n\nMetric Formulation\n\nProxy LTV: \\(\\text{proxy LTV} = 1 / \\text{GPU cost}\\)\nNorth Star Metric: ‘가입 후 24시간 이내에 생성형 AI 결과물 다운로드(또는 공유) 1회 이상 달성 수치’\n\nUnit Economics 그로스 전략 — proxy LTV/CAC 비율을 3.0 이상으로 유지하여 유닛 이코노믹스(Unit Economics) 안정화를 달성하는 그로스 전략 수립."
+    "text": "지표 정의 및 LTV 모델 Business Metric Optimization\n\n유저 평생 가치(LTV) 및 북극성 지표(North Star Metric) 수식 정립\n\nMetric Formulation\n\nProxy LTV: \\(\\text{proxy LTV} = 1 / \\text{GPU cost}\\)\nNorth Star Metric: ‘로그인 후 24시간 이내에 생성형 AI 결과물 다운로드(또는 공유) 1회 이상 달성 수치’\n\nUnit Economics 그로스 전략 — proxy LTV/CAC 비율을 3.0 이상으로 유지하여 유닛 이코노믹스(Unit Economics) 안정화를 달성하는 그로스 전략 수립."
   },
   {
     "objectID": "ko/projects/project-a.html#hypothesis-testing-ab-테스팅-시나리오-설계",
     "href": "ko/projects/project-a.html#hypothesis-testing-ab-테스팅-시나리오-설계",
     "title": "Gen-AI B2C 앱 서비스 그로스 분석",
     "section": "Hypothesis Testing A/B 테스팅 시나리오 설계",
-    "text": "Hypothesis Testing A/B 테스팅 시나리오 설계\n\n가설 검정을 위한 실무형 A/B 테스트 시나리오 및 통계적 설계\n\n\n\n\n\n\n\n\n실험 세그먼트\n콘텐츠 기획 가설\n\n\n\n\n대조군 (Group A)\n기존 랜덤 콘텐츠 (80% 개인 업로드 콘텐츠, 20% 내부)\n\n\n실험군 (Group B)\n장르 기획 콘텐츠 (시네마틱, Y2K, 만화, 병맛 등)\n\n\n\n\n주지표: 영상 변환율 = 콘텐츠 노출 유저 중 AI 영상 생성에 성공한 유저 비율 (기준 14.2%)\n배정 방식 / 기간: Firebase Remote Config(A/B Testing)로 신규 유저를 무작위 50:50 배정(콘텐츠 노출 정책 값 분기), 14일 (요일 효과 2주기). 군 정보는 user property와 액션 로그에 함께 기록해 BigQuery·Amplitude에서 군별 분석.\n샘플 사이즈 산정: 유의수준 \\(\\alpha = 0.05\\), 검정력 \\(1-\\beta = 0.80\\), 최소 검출 효과(MDE) +6.5%p(14.2% → 20.7%) 기준 군당 최소 532명, 14일 기준 일일 세그먼트당 최소 38명."
+    "text": "Hypothesis Testing A/B 테스팅 시나리오 설계\n\n가설 검정을 위한 실무형 A/B 테스트 시나리오 및 통계적 설계\n\n\n\n\n\n\n\n\n실험 세그먼트\n콘텐츠 기획 가설\n\n\n\n\n대조군 (Group A)\n기존 랜덤 콘텐츠 (80% 개인 업로드 콘텐츠, 20% 내부)\n\n\n실험군 (Group B)\n장르 기획 콘텐츠 (시네마틱, Y2K, 만화, 병맛 등)\n\n\n\n\n주지표: 영상 변환율 = 콘텐츠 노출 유저 중 AI 영상 생성에 성공한 유저 비율 (기준 14.2%). 퍼널의 18.5%(Watch 유저 중 생성 시도)와는 다른 지표로, 생성 성공을 세며 실험 대상은 신규 유저임\n배정 방식 / 기간: Firebase Remote Config(A/B Testing)로 신규 유저를 무작위 50:50 배정(콘텐츠 노출 정책 값 분기), 14일 (요일 효과 2주기). 군 정보는 user property와 액션 로그에 함께 기록해 BigQuery·Amplitude에서 군별 분석.\n샘플 사이즈 산정: 유의수준 \\(\\alpha = 0.05\\), 검정력 \\(1-\\beta = 0.80\\), 최소 검출 효과(MDE) +6.5%p(14.2% → 20.7%) 기준 군당 최소 532명, 14일 기준 일일 세그먼트당 최소 38명."
   },
   {
     "objectID": "ko/projects/project-a.html#실전-ab-test-수행-통계적-유의성-검정",
@@ -410,14 +410,14 @@
     "href": "en/posts/2026-11-sample-analysis/index.html#background-and-objective",
     "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
     "section": "1. Background and objective",
-    "text": "1. Background and objective\nUA ads brought large inflow, but drop-off surged at the AI generation step right after sign-up. We test the hypothesis that switching content exposure from random content (A) to genre-curated content (B) improves the video conversion rate.\n\nH0: The video conversion rates of the two groups are equal (\\(p_A = p_B\\))\nH1: The video conversion rates differ (\\(p_A \\neq p_B\\)), significance level \\(\\alpha = 0.05\\)"
+    "text": "1. Background and objective\nUA ads brought large inflow, but drop-off surged at the AI generation step right after Watch. We test the hypothesis that switching content exposure from random content (A) to genre-curated content (B) improves the video conversion rate.\n\nH0: The video conversion rates of the two groups are equal (\\(p_A = p_B\\))\nH1: The video conversion rates differ (\\(p_A \\neq p_B\\)), significance level \\(\\alpha = 0.05\\)"
   },
   {
     "objectID": "en/posts/2026-11-sample-analysis/index.html#diagnosis-where-users-leak",
     "href": "en/posts/2026-11-sample-analysis/index.html#diagnosis-where-users-leak",
     "title": "A/B Test Analysis Note: Genre-Curated Content and Video Conversion",
     "section": "2. Diagnosis: where users leak",
-    "text": "2. Diagnosis: where users leak\n\n\n\nShare of installs by step. More than 80% leak out between sign-up (65%) and AI generation (12%)\n\n\nAd click & Install (100%) → Sign Up (65%) → AI Generation (12%) → Share/Download (2.5%). The sign-up → AI generation step loses more than 80% of users and is the largest leak, so the video conversion rate was chosen as the experiment metric."
+    "text": "2. Diagnosis: where users leak\n\n\n\nUnique users as a share of installs by step. 81.5% leak out between Watch (65%) and AI generation (12%)\n\n\nAd click & Install (100%) → Watch (exposure to content) (65%) → AI Generation (12%) → Share/Download (2.5%). The Watch → AI generation step loses 81.5% of users and is the largest leak, so the video conversion rate was chosen as the experiment metric. Each figure counts unique users as a share of installs. Users who attempt AI generation are 12% of installs and 18.5% of Watch users (12 ÷ 65).\nThe video conversion rate (baseline 14.2%) is a different metric from the 18.5% above. The 18.5% is the share of Watch users who attempt AI generation; the 14.2% is the share of content-exposed new users in the experiment who successfully generate a video."
   },
   {
     "objectID": "en/posts/2026-11-sample-analysis/index.html#experiment-design-and-sample-sizing",
@@ -616,11 +616,11 @@
     "text": "Beta launch and user-acquisition (UA) growth project for a generative-AI B2C app\n\n\nContext: Market launch of a mobile app offering face/voice generation AI built on images, audio, and video, together with the business data pipeline.\nTarget KPI: Reach PMF and maximize retention — build real-time user activation infrastructure.\nBeta launch milestones:\n\n\n\n\n\n\n\nflowchart LR\n  A[\"1 Planning\"] --&gt; B[\"2 Infra integration\"] --&gt; C[\"3 Beta launch\"] --&gt; D[\"4 UA growth\"]\n  style C fill:#0E5A43,color:#fff,stroke:#0E5A43"
   },
   {
-    "objectID": "en/projects/project-a.html#problem-definition-drop-off-concentrated-at-the-ai-video-generation-step-after-sign-up",
-    "href": "en/projects/project-a.html#problem-definition-drop-off-concentrated-at-the-ai-video-generation-step-after-sign-up",
+    "objectID": "en/projects/project-a.html#problem-definition-drop-off-concentrated-at-the-ai-video-generation-step-after-watch",
+    "href": "en/projects/project-a.html#problem-definition-drop-off-concentrated-at-the-ai-video-generation-step-after-watch",
     "title": "Gen-AI B2C App Growth Analytics",
-    "section": "Problem Definition Drop-off concentrated at the AI video generation step after sign-up",
-    "text": "Problem Definition Drop-off concentrated at the AI video generation step after sign-up\n\nDiagnosing the bottleneck between UA marketing spend and conversion\n\nProblems on the ground\n\nUA ads brought large inflow, but drop-off surged at the generative-AI experience step right after sign-up.\nAmong users who reached the video-source screen, the rate of actually generating an AI video stalled, delaying the aha-moment.\nMarketing cost (CAC) kept rising while first-day churn after sign-up spiked.\n\nUser funnel breakdown\n\nAd click & Install100%\n\n\nSign Up65%\n\n\nAI Generation (drop-off hotspot)12%\n\n\nShare/Download2.5%\n\n\nBetween in-app sign-up and the first AI generation attempt, more than 80% of users leak out."
+    "section": "Problem Definition Drop-off concentrated at the AI video generation step after Watch",
+    "text": "Problem Definition Drop-off concentrated at the AI video generation step after Watch\n\nDiagnosing the bottleneck between UA marketing spend and conversion\n\nProblems on the ground\n\nUA ads brought large inflow, but drop-off surged at the generative-AI experience step right after Watch.\nAmong users who reached the video-source screen, the rate of actually generating an AI video stalled, delaying the aha-moment.\nMarketing cost (CAC) kept rising while first-day churn after login spiked.\n\nUser funnel breakdown — unique users as a share of installs\n\nAd click & Install100%\n\n\nWatch (exposure to content)65%\n\n\nAI Generation (drop-off hotspot)12%\n\n\nShare/Download2.5%\n\n\nUsers who attempt AI generation are 12% of installs and 18.5% of Watch users (12 ÷ 65). Between Watch and the first AI generation attempt, 81.5% of users leak out."
   },
   {
     "objectID": "en/projects/project-a.html#log-infrastructure-user-behavior-log-architecture",
@@ -641,14 +641,14 @@
     "href": "en/projects/project-a.html#metric-definition-ltv-model-business-metric-optimization",
     "title": "Gen-AI B2C App Growth Analytics",
     "section": "Metric Definition & LTV Model Business Metric Optimization",
-    "text": "Metric Definition & LTV Model Business Metric Optimization\n\nFormulating lifetime value (LTV) and the North Star Metric\n\nMetric formulation\n\nProxy LTV: \\(\\text{proxy LTV} = 1 / \\text{GPU cost}\\)\nNorth Star Metric: ‘Number of users who download (or share) a generated AI result at least once within 24 hours of sign-up’\n\nUnit economics growth strategy — Keep the proxy LTV/CAC ratio at 3.0 or higher to stabilize unit economics."
+    "text": "Metric Definition & LTV Model Business Metric Optimization\n\nFormulating lifetime value (LTV) and the North Star Metric\n\nMetric formulation\n\nProxy LTV: \\(\\text{proxy LTV} = 1 / \\text{GPU cost}\\)\nNorth Star Metric: ‘Number of users who download (or share) a generated AI result at least once within 24 hours of login’\n\nUnit economics growth strategy — Keep the proxy LTV/CAC ratio at 3.0 or higher to stabilize unit economics."
   },
   {
     "objectID": "en/projects/project-a.html#hypothesis-testing-ab-test-scenario-design",
     "href": "en/projects/project-a.html#hypothesis-testing-ab-test-scenario-design",
     "title": "Gen-AI B2C App Growth Analytics",
     "section": "Hypothesis Testing A/B test scenario design",
-    "text": "Hypothesis Testing A/B test scenario design\n\nA practical A/B test scenario and statistical design for hypothesis testing\n\n\n\n\n\n\n\n\nSegment\nContent hypothesis\n\n\n\n\nControl (Group A)\nExisting random content (80% user-uploaded, 20% in-house)\n\n\nTreatment (Group B)\nGenre-curated content (cinematic, Y2K, cartoon, meme, etc.)\n\n\n\n\nPrimary metric: Video conversion rate = share of users exposed to content who successfully generate an AI video (baseline 14.2%)\nAssignment / duration: New users randomly assigned 50:50 with Firebase Remote Config (A/B Testing), branching the content-exposure policy value; 14 days (two weekly cycles). The group is logged as a user property and on action logs for per-group analysis in BigQuery and Amplitude.\nSample size: With significance level \\(\\alpha = 0.05\\), power \\(1-\\beta = 0.80\\), and a minimum detectable effect (MDE) of +6.5 pp (14.2% → 20.7%), at least 532 users per group, i.e. at least 38 users per segment per day over 14 days."
+    "text": "Hypothesis Testing A/B test scenario design\n\nA practical A/B test scenario and statistical design for hypothesis testing\n\n\n\n\n\n\n\n\nSegment\nContent hypothesis\n\n\n\n\nControl (Group A)\nExisting random content (80% user-uploaded, 20% in-house)\n\n\nTreatment (Group B)\nGenre-curated content (cinematic, Y2K, cartoon, meme, etc.)\n\n\n\n\nPrimary metric: Video conversion rate = share of users exposed to content who successfully generate an AI video (baseline 14.2%). This differs from the funnel’s 18.5% (generation attempts among Watch users): it counts successful generation, and the experiment covers new users\nAssignment / duration: New users randomly assigned 50:50 with Firebase Remote Config (A/B Testing), branching the content-exposure policy value; 14 days (two weekly cycles). The group is logged as a user property and on action logs for per-group analysis in BigQuery and Amplitude.\nSample size: With significance level \\(\\alpha = 0.05\\), power \\(1-\\beta = 0.80\\), and a minimum detectable effect (MDE) of +6.5 pp (14.2% → 20.7%), at least 532 users per group, i.e. at least 38 users per segment per day over 14 days."
   },
   {
     "objectID": "en/projects/project-a.html#ab-test-execution-statistical-significance",
@@ -746,14 +746,14 @@
     "href": "ko/posts/2026-11-sample-analysis/index.html#분석-배경-및-목적",
     "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
     "section": "1. 분석 배경 및 목적",
-    "text": "1. 분석 배경 및 목적\nUA 광고로 대규모 유입이 발생했지만 가입 후 AI 생성 체험 단계에서 이탈이 급증했습니다. 콘텐츠 노출 방식을 랜덤 콘텐츠(A) → 장르 기획 콘텐츠(B) 로 바꾸면 영상 변환율이 개선된다는 가설을 검증합니다.\n\nH0: 두 군의 영상 변환율은 같다 (\\(p_A = p_B\\))\nH1: 두 군의 영상 변환율은 다르다 (\\(p_A \\neq p_B\\)), 유의수준 \\(\\alpha = 0.05\\)"
+    "text": "1. 분석 배경 및 목적\nUA 광고로 대규모 유입이 발생했지만 영상 시청(Watch) 후 AI 생성 체험 단계에서 이탈이 급증했습니다. 콘텐츠 노출 방식을 랜덤 콘텐츠(A) → 장르 기획 콘텐츠(B) 로 바꾸면 영상 변환율이 개선된다는 가설을 검증합니다.\n\nH0: 두 군의 영상 변환율은 같다 (\\(p_A = p_B\\))\nH1: 두 군의 영상 변환율은 다르다 (\\(p_A \\neq p_B\\)), 유의수준 \\(\\alpha = 0.05\\)"
   },
   {
     "objectID": "ko/posts/2026-11-sample-analysis/index.html#문제-진단-어디서-새는가",
     "href": "ko/posts/2026-11-sample-analysis/index.html#문제-진단-어디서-새는가",
     "title": "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선",
     "section": "2. 문제 진단: 어디서 새는가",
-    "text": "2. 문제 진단: 어디서 새는가\n\n\n\n설치 대비 단계별 비율. 가입(65%) 대비 AI 생성 시도(12%) 구간에서 약 80% 이상 누수\n\n\nAD click & Install(100%) → Sign Up(65%) → AI Generation(12%) → Share/Download(2.5%) 중 가입 → AI 생성 시도 구간에서 약 80% 이상이 이탈합니다. 이 구간이 가장 큰 누수이므로 실험의 대상 지표를 영상 변환율로 정했습니다."
+    "text": "2. 문제 진단: 어디서 새는가\n\n\n\n설치 대비 단계별 고유 유저수 비율. Watch(65%) → AI 생성 시도(12%) 구간에서 81.5% 누수\n\n\nAD click & Install(100%) → Watch (exposure to content)(65%) → AI Generation(12%) → Share/Download(2.5%) 중 Watch → AI 생성 시도 구간에서 81.5%가 이탈합니다. 각 비율은 설치 대비 고유 유저수 기준입니다. AI 생성 시도 유저는 설치 대비 12%, Watch 유저 중에서는 18.5%(12 ÷ 65)입니다. 이 구간이 가장 큰 누수이므로 실험의 대상 지표를 영상 변환율로 정했습니다.\n영상 변환율(기준 14.2%)은 위의 18.5%와 다른 지표입니다. 18.5%는 Watch 유저 중 AI 생성을 시도한 비율이고, 14.2%는 실험의 콘텐츠 노출 신규 유저 중 AI 영상 생성에 성공한 비율입니다."
   },
   {
     "objectID": "ko/posts/2026-11-sample-analysis/index.html#실험-설계와-표본-산정",
