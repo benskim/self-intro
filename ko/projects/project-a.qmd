@@ -36,16 +36,16 @@ UA 마케팅 리소스 투입 대비 구독 전환율의 보틀넥 진단
 
 **User Funnel Breakdown** — 설치(Install) 대비 고유 유저수 비율
 
-::: {.funnel-bar}
+::: {.funnel-bar style="--w:100%"}
 <span>AD click & Install</span><span>100%</span>
 :::
-::: {.funnel-bar style="width:75%"}
+::: {.funnel-bar style="--w:65%"}
 <span>Watch (exposure to content)</span><span>65%</span>
 :::
-::: {.funnel-bar .hot style="width:35%"}
+::: {.funnel-bar .hot style="--w:12%"}
 <span>AI Generation (이탈집중구간)</span><span>12%</span>
 :::
-::: {.funnel-bar style="width:15%; min-width:200px"}
+::: {.funnel-bar style="--w:2.5%"}
 <span>Share/Download</span><span>2.5%</span>
 :::
 

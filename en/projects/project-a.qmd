@@ -36,16 +36,16 @@ Diagnosing the bottleneck between UA marketing spend and conversion
 
 **User funnel breakdown** — unique users as a share of installs
 
-::: {.funnel-bar}
+::: {.funnel-bar style="--w:100%"}
 <span>Ad click & Install</span><span>100%</span>
 :::
-::: {.funnel-bar style="width:75%"}
+::: {.funnel-bar style="--w:65%"}
 <span>Watch (exposure to content)</span><span>65%</span>
 :::
-::: {.funnel-bar .hot style="width:35%"}
+::: {.funnel-bar .hot style="--w:12%"}
 <span>AI Generation (drop-off hotspot)</span><span>12%</span>
 :::
-::: {.funnel-bar style="width:15%; min-width:200px"}
+::: {.funnel-bar style="--w:2.5%"}
 <span>Share/Download</span><span>2.5%</span>
 :::
 
