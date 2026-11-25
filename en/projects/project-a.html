@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Gen-AI B2C App Growth Analytics – Bens Notes</title>
+<title>Gen-AI B2C App Growth Analytics – Ben’s Notes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -78,14 +78,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-447e42e69aaa9833c0ba1b986f430b20.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-cb61c712ca1a7fe70a83faed8e4da2d7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-b348d5b559a602027a1f18095d1d555f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-cb61c712ca1a7fe70a83faed8e4da2d7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-cb61c712ca1a7fe70a83faed8e4da2d7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -189,177 +185,7 @@ window.Quarto = {
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          toggle.setAttribute("aria-checked", alternate ? "true" : "false");
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-    }
-    // Hack to workaround the fact that safari doesn't
-    // properly recolor the scrollbar when toggling (#1455).
-    // Not run on load: stylesheets are set before first paint there, and
-    // scrolling would undo the scroll to a URL fragment (#14973).
-    // The one pixel nudge keeps the reader where they were.
-    const refreshSafariScrollbar = () => {
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        const scrollY = window.scrollY;
-        window.scrollTo(0, scrollY > 0 ? scrollY - 1 : 1);
-        setTimeout(() => {
-          window.scrollTo(0, scrollY);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      refreshSafariScrollbar();
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -367,7 +193,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Bens Notes</span>
+    <span class="navbar-title">Ben’s Notes</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -409,7 +235,6 @@ window.Quarto = {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <button type="button" role="switch" aria-checked="false" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode" aria-label="Toggle dark mode"><i class="bi"></i></button>
 </div>
             <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
@@ -425,7 +250,7 @@ window.Quarto = {
    
   <ul>
   <li><a href="#overview-data-analytics-for-service-growth" id="toc-overview-data-analytics-for-service-growth" class="nav-link active" data-scroll-target="#overview-data-analytics-for-service-growth"><span class="tag">Overview</span> Data analytics for service growth</a></li>
-  <li><a href="#problem-definition-retention-cvr-bottleneck-versus-user-inflow" id="toc-problem-definition-retention-cvr-bottleneck-versus-user-inflow" class="nav-link" data-scroll-target="#problem-definition-retention-cvr-bottleneck-versus-user-inflow"><span class="tag">Problem Definition</span> Retention (CVR) bottleneck versus user inflow</a></li>
+  <li><a href="#problem-definition-drop-off-concentrated-at-the-ai-video-generation-step-after-sign-up" id="toc-problem-definition-drop-off-concentrated-at-the-ai-video-generation-step-after-sign-up" class="nav-link" data-scroll-target="#problem-definition-drop-off-concentrated-at-the-ai-video-generation-step-after-sign-up"><span class="tag">Problem Definition</span> Drop-off concentrated at the AI video generation step after sign-up</a></li>
   <li><a href="#log-infrastructure-user-behavior-log-architecture" id="toc-log-infrastructure-user-behavior-log-architecture" class="nav-link" data-scroll-target="#log-infrastructure-user-behavior-log-architecture"><span class="tag">Log Infrastructure</span> User Behavior Log Architecture</a></li>
   <li><a href="#eda-identifying-churn-patterns-through-data-exploration" id="toc-eda-identifying-churn-patterns-through-data-exploration" class="nav-link" data-scroll-target="#eda-identifying-churn-patterns-through-data-exploration"><span class="tag">EDA</span> Identifying churn patterns through data exploration</a></li>
   <li><a href="#metric-definition-ltv-model-business-metric-optimization" id="toc-metric-definition-ltv-model-business-metric-optimization" class="nav-link" data-scroll-target="#metric-definition-ltv-model-business-metric-optimization"><span class="tag">Metric Definition &amp; LTV Model</span> Business Metric Optimization</a></li>
@@ -438,7 +263,6 @@ window.Quarto = {
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content" tabindex="-1">
-
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -478,7 +302,7 @@ window.Quarto = {
 
 <pre class="mermaid mermaid-js">flowchart LR
   A["1 Planning"] --&gt; B["2 Infra integration"] --&gt; C["3 Beta launch"] --&gt; D["4 UA growth"]
-  style C fill:#ff1b4a,color:#fff,stroke:#ff1b4a
+  style C fill:#0E5A43,color:#fff,stroke:#0E5A43
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -486,8 +310,8 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="problem-definition-retention-cvr-bottleneck-versus-user-inflow" class="level2">
-<h2 class="anchored" data-anchor-id="problem-definition-retention-cvr-bottleneck-versus-user-inflow"><span class="tag">Problem Definition</span> Retention (CVR) bottleneck versus user inflow</h2>
+<section id="problem-definition-drop-off-concentrated-at-the-ai-video-generation-step-after-sign-up" class="level2">
+<h2 class="anchored" data-anchor-id="problem-definition-drop-off-concentrated-at-the-ai-video-generation-step-after-sign-up"><span class="tag">Problem Definition</span> Drop-off concentrated at the AI video generation step after sign-up</h2>
 <div class="lead-line">
 <p>Diagnosing the bottleneck between UA marketing spend and conversion</p>
 </div>
@@ -550,10 +374,10 @@ window.Quarto = {
 <div class="project-fig">
 <svg viewbox="0 0 100 60" style="max-width:420px;width:100%">
   <line x1="0" y1="50" x2="100" y2="50" stroke="#E2E8F0" stroke-width="0.5"></line>
-  <line x1="60" y1="0" x2="60" y2="60" stroke="#FF1B4A" stroke-width="0.5" stroke-dasharray="1,1"></line>
-  <path d="M 10 45 Q 50 40 60 20 T 100 5" fill="none" stroke="#FF1B4A" stroke-width="1.5"></path>
+  <line x1="60" y1="0" x2="60" y2="60" stroke="#0E5A43" stroke-width="0.5" stroke-dasharray="1,1"></line>
+  <path d="M 10 45 Q 50 40 60 20 T 100 5" fill="none" stroke="#0E5A43" stroke-width="1.5"></path>
   <text x="50" y="58" font-size="4" fill="#64748B" text-anchor="middle">Wait time (sec)</text>
-  <text x="62" y="25" font-size="4" fill="#FF1B4A" font-weight="bold">Critical zone (8s)</text>
+  <text x="62" y="25" font-size="4" fill="#0E5A43" font-weight="bold">Critical zone (8s)</text>
   <text x="5" y="10" font-size="4" fill="#64748B">Drop-out</text>
 </svg>
 <figcaption>
@@ -625,11 +449,11 @@ Drop-out versus wait time (conceptual diagram)
 <div class="project-fig">
 <svg viewbox="0 0 100 50" style="max-width:420px;width:100%">
   <path d="M 10 45 C 30 45, 40 10, 50 45" fill="none" stroke="#94A3B8" stroke-width="1"></path>
-  <path d="M 30 45 C 50 45, 60 5, 70 45" fill="none" stroke="#FF1B4A" stroke-width="1.5"></path>
+  <path d="M 30 45 C 50 45, 60 5, 70 45" fill="none" stroke="#0E5A43" stroke-width="1.5"></path>
   <line x1="42" y1="10" x2="42" y2="45" stroke="#94A3B8" stroke-width="0.5" stroke-dasharray="1,1"></line>
-  <line x1="58" y1="5" x2="58" y2="45" stroke="#FF1B4A" stroke-width="0.5" stroke-dasharray="1,1"></line>
+  <line x1="58" y1="5" x2="58" y2="45" stroke="#0E5A43" stroke-width="0.5" stroke-dasharray="1,1"></line>
   <text x="35" y="49" font-size="3" fill="#64748B">A (14.2%)</text>
-  <text x="65" y="49" font-size="3" fill="#FF1B4A" font-weight="bold">B (19.8%)</text>
+  <text x="65" y="49" font-size="3" fill="#0E5A43" font-weight="bold">B (19.8%)</text>
 </svg>
 <figcaption>
 Conversion distributions, control A vs treatment B (conceptual diagram)
@@ -670,18 +494,16 @@ Conversion distributions, control A vs treatment B (conceptual diagram)
 </div>
 <div class="kpi-grid">
 <div class="kpi red">
-<p><span class="kpi-label">Video generation conversion lift</span> <span class="kpi-value">24.2% → 39.8%</span> <span class="kpi-desc">Improved AI video generation conversion</span></p>
+<p><span class="kpi-label">A/B test video conversion</span> <span class="kpi-value">14.2% → 19.8%</span> <span class="kpi-desc">Curated genre content, +5.6 pp, p = 0.012 (576 per group)</span></p>
 </div>
-<div class="kpi red">
+<div class="kpi">
 <p><span class="kpi-label">Regeneration success rate</span> <span class="kpi-value">18% → 33%</span> <span class="kpi-desc">Regeneration success among users who reached the generation screen</span></p>
 </div>
 <div class="kpi">
-<p><span class="kpi-label">Marketing efficiency</span> <span class="kpi-value">▼ 12% cost</span> <span class="kpi-desc">CAC reduced by retargeting inefficient ad segments and consolidating channels</span></p>
-</div>
-<div class="kpi">
-<p><span class="kpi-label">Communication culture</span> <span class="kpi-value">Data-driven</span> <span class="kpi-desc">Daily morning hypothesis-testing meetings between business and content teams, based on the Tableau dashboard</span></p>
+<p><span class="kpi-label">Marketing efficiency</span> <span class="kpi-value">CAC down 12%</span> <span class="kpi-desc">Retargeted inefficient ad segments and consolidated channels</span></p>
 </div>
 </div>
+<p>Business and content teams met every morning to review hypothesis-test results on the Tableau dashboard.</p>
 
 
 <!-- -->
@@ -691,54 +513,6 @@ Conversion distributions, control A vs treatment B (conceptual diagram)
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const toggle = window.document.createElement('button');
-      toggle.type = "button";
-      toggle.setAttribute("role", "switch");
-      toggle.setAttribute("aria-checked", "false");
-      toggle.classList.add('top-right');
-      toggle.classList.add('quarto-color-scheme-toggle');
-      toggle.setAttribute("aria-label", "Toggle dark mode");
-      toggle.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      toggle.appendChild(i);
-      // Put the toggle in a landmark of its own, so that landmark navigation
-      // can reach it.
-      //
-      // The container is always a fresh direct child of body, and the toggle is
-      // never moved into page furniture that the theme or the author controls.
-      // The toggle is positioned against the page, so any ancestor that
-      // establishes a containing block captures it: a positioned element or a
-      // grid for position: absolute, and transform, filter, will-change or
-      // contain for position: fixed. A direct child of body has none of these
-      // to inherit, and the shift when one appears is silent and visual.
-      //
-      // ARIA says a document should have at most one banner, and axe reports a
-      // duplicate whether or not the banners carry distinct labels. So use a
-      // header when the page has no banner yet, and a named region otherwise.
-      //
-      // A header is a banner wherever it sits, unless it is inside sectioning
-      // content, so this cannot just look at the children of body: a custom
-      // page layout wraps the title block header in a plain div. An explicit
-      // role="banner" always counts.
-      const sectioning = 'article, aside, main, nav, section, [role="article"], [role="complementary"], [role="main"], [role="navigation"], [role="region"]';
-      const hasBanner = Array.from(
-        window.document.querySelectorAll('header:not([role]), [role="banner"]')
-      ).some(function(el) {
-        return el.hasAttribute("role") || el.closest(sectioning) === null;
-      });
-      const container = window.document.createElement(hasBanner ? "div" : "header");
-      if (hasBanner) {
-        container.setAttribute("role", "region");
-        container.setAttribute("aria-label", "Toggle dark mode");
-      }
-      container.classList.add('quarto-color-scheme-toggle-container');
-      container.appendChild(toggle);
-      window.document.body.appendChild(container);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -1285,10 +1059,10 @@ Conversion distributions, control A vs treatment B (conceptual diagram)
 <span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>%%| fig-align: center</span>
 <span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>flowchart LR</span>
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>  A[<span class="ot">"</span><span class="st">1 Planning</span><span class="ot">"</span>] --&gt; B[<span class="ot">"</span><span class="st">2 Infra integration</span><span class="ot">"</span>] --&gt; C[<span class="ot">"</span><span class="st">3 Beta launch</span><span class="ot">"</span>] --&gt; D[<span class="ot">"</span><span class="st">4 UA growth</span><span class="ot">"</span>]</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  style C fill:<span class="co">#ff1b4a,color:#fff,stroke:#ff1b4a</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  style C fill:<span class="co">#0E5A43,color:#fff,stroke:#0E5A43</span></span>
 <span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="fu">## [Problem Definition]{.tag} Retention (CVR) bottleneck versus user inflow</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="fu">## [Problem Definition]{.tag} Drop-off concentrated at the AI video generation step after sign-up</span></span>
 <span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>::: {.lead-line}</span>
 <span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>Diagnosing the bottleneck between UA marketing spend and conversion</span>
@@ -1349,10 +1123,10 @@ Conversion distributions, control A vs treatment B (conceptual diagram)
 <span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
 <span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;svg viewBox="0 0 100 60" style="max-width:420px;width:100%"&gt;</span></span>
 <span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;line x1="0" y1="50" x2="100" y2="50" stroke="#E2E8F0" stroke-width="0.5"/&gt;</span></span>
-<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;line x1="60" y1="0" x2="60" y2="60" stroke="#FF1B4A" stroke-width="0.5" stroke-dasharray="1,1"/&gt;</span></span>
-<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;path d="M 10 45 Q 50 40 60 20 T 100 5" fill="none" stroke="#FF1B4A" stroke-width="1.5"/&gt;</span></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;line x1="60" y1="0" x2="60" y2="60" stroke="#0E5A43" stroke-width="0.5" stroke-dasharray="1,1"/&gt;</span></span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;path d="M 10 45 Q 50 40 60 20 T 100 5" fill="none" stroke="#0E5A43" stroke-width="1.5"/&gt;</span></span>
 <span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;text x="50" y="58" font-size="4" fill="#64748B" text-anchor="middle"&gt;Wait time (sec)&lt;/text&gt;</span></span>
-<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;text x="62" y="25" font-size="4" fill="#FF1B4A" font-weight="bold"&gt;Critical zone (8s)&lt;/text&gt;</span></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;text x="62" y="25" font-size="4" fill="#0E5A43" font-weight="bold"&gt;Critical zone (8s)&lt;/text&gt;</span></span>
 <span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;text x="5" y="10" font-size="4" fill="#64748B"&gt;Drop-out&lt;/text&gt;</span></span>
 <span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/svg&gt;</span></span>
 <span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
@@ -1411,11 +1185,11 @@ Conversion distributions, control A vs treatment B (conceptual diagram)
 <span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
 <span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;svg viewBox="0 0 100 50" style="max-width:420px;width:100%"&gt;</span></span>
 <span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;path d="M 10 45 C 30 45, 40 10, 50 45" fill="none" stroke="#94A3B8" stroke-width="1"/&gt;</span></span>
-<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;path d="M 30 45 C 50 45, 60 5, 70 45" fill="none" stroke="#FF1B4A" stroke-width="1.5"/&gt;</span></span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;path d="M 30 45 C 50 45, 60 5, 70 45" fill="none" stroke="#0E5A43" stroke-width="1.5"/&gt;</span></span>
 <span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;line x1="42" y1="10" x2="42" y2="45" stroke="#94A3B8" stroke-width="0.5" stroke-dasharray="1,1"/&gt;</span></span>
-<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;line x1="58" y1="5" x2="58" y2="45" stroke="#FF1B4A" stroke-width="0.5" stroke-dasharray="1,1"/&gt;</span></span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;line x1="58" y1="5" x2="58" y2="45" stroke="#0E5A43" stroke-width="0.5" stroke-dasharray="1,1"/&gt;</span></span>
 <span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;text x="35" y="49" font-size="3" fill="#64748B"&gt;A (14.2%)&lt;/text&gt;</span></span>
-<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;text x="65" y="49" font-size="3" fill="#FF1B4A" font-weight="bold"&gt;B (19.8%)&lt;/text&gt;</span></span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;text x="65" y="49" font-size="3" fill="#0E5A43" font-weight="bold"&gt;B (19.8%)&lt;/text&gt;</span></span>
 <span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/svg&gt;</span></span>
 <span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">figcaption</span><span class="dt">&gt;</span>Conversion distributions, control A vs treatment B (conceptual diagram)<span class="dt">&lt;/</span><span class="kw">figcaption</span><span class="dt">&gt;</span></span>
@@ -1454,18 +1228,17 @@ Conversion distributions, control A vs treatment B (conceptual diagram)
 <span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a>::: {.kpi-grid}</span>
 <span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a>::: {.kpi .red}</span>
-<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Video generation conversion lift</span><span class="co">]</span>{.kpi-label} <span class="co">[</span><span class="ot">24.2% → 39.8%</span><span class="co">]</span>{.kpi-value} <span class="co">[</span><span class="ot">Improved AI video generation conversion</span><span class="co">]</span>{.kpi-desc}</span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">A/B test video conversion</span><span class="co">]</span>{.kpi-label} <span class="co">[</span><span class="ot">14.2% → 19.8%</span><span class="co">]</span>{.kpi-value} <span class="co">[</span><span class="ot">Curated genre content, +5.6 pp, p = 0.012 (576 per group)</span><span class="co">]</span>{.kpi-desc}</span>
 <span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>::: {.kpi .red}</span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>::: {.kpi}</span>
 <span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Regeneration success rate</span><span class="co">]</span>{.kpi-label} <span class="co">[</span><span class="ot">18% → 33%</span><span class="co">]</span>{.kpi-value} <span class="co">[</span><span class="ot">Regeneration success among users who reached the generation screen</span><span class="co">]</span>{.kpi-desc}</span>
 <span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>::: {.kpi}</span>
-<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Marketing efficiency</span><span class="co">]</span>{.kpi-label} <span class="co">[</span><span class="ot">▼ 12% cost</span><span class="co">]</span>{.kpi-value} <span class="co">[</span><span class="ot">CAC reduced by retargeting inefficient ad segments and consolidating channels</span><span class="co">]</span>{.kpi-desc}</span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Marketing efficiency</span><span class="co">]</span>{.kpi-label} <span class="co">[</span><span class="ot">CAC down 12%</span><span class="co">]</span>{.kpi-value} <span class="co">[</span><span class="ot">Retargeted inefficient ad segments and consolidated channels</span><span class="co">]</span>{.kpi-desc}</span>
 <span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>::: {.kpi}</span>
-<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Communication culture</span><span class="co">]</span>{.kpi-label} <span class="co">[</span><span class="ot">Data-driven</span><span class="co">]</span>{.kpi-value} <span class="co">[</span><span class="ot">Daily morning hypothesis-testing meetings between business and content teams, based on the Tableau dashboard</span><span class="co">]</span>{.kpi-desc}</span>
-<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>Business and content teams met every morning to review hypothesis-test results on the Tableau dashboard.</span>
 </code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

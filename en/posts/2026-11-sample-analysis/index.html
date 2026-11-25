@@ -9,7 +9,7 @@
 <meta name="dcterms.date" content="2026-11-23">
 <meta name="description" content="A sample report on the Project A A/B test, organized as funnel diagnosis, sample sizing, and significance testing.">
 
-<title>A/B Test Analysis Note: Genre-Curated Content and Video Conversion – Bens Notes</title>
+<title>A/B Test Analysis Note: Genre-Curated Content and Video Conversion – Ben’s Notes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -80,14 +80,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-447e42e69aaa9833c0ba1b986f430b20.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-cb61c712ca1a7fe70a83faed8e4da2d7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/bootstrap/bootstrap-dark-b348d5b559a602027a1f18095d1d555f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../../site_libs/bootstrap/bootstrap-cb61c712ca1a7fe70a83faed8e4da2d7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-cb61c712ca1a7fe70a83faed8e4da2d7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -188,177 +184,7 @@ window.Quarto = {
 <link rel="stylesheet" href="../../../styles.css">
 </head>
 
-<body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          toggle.setAttribute("aria-checked", alternate ? "true" : "false");
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-    }
-    // Hack to workaround the fact that safari doesn't
-    // properly recolor the scrollbar when toggling (#1455).
-    // Not run on load: stylesheets are set before first paint there, and
-    // scrolling would undo the scroll to a URL fragment (#14973).
-    // The one pixel nudge keeps the reader where they were.
-    const refreshSafariScrollbar = () => {
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        const scrollY = window.scrollY;
-        window.scrollTo(0, scrollY > 0 ? scrollY - 1 : 1);
-        setTimeout(() => {
-          window.scrollTo(0, scrollY);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      refreshSafariScrollbar();
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -366,7 +192,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../../index.html">
-    <span class="navbar-title">Bens Notes</span>
+    <span class="navbar-title">Ben’s Notes</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -408,7 +234,6 @@ window.Quarto = {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <button type="button" role="switch" aria-checked="false" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode" aria-label="Toggle dark mode"><i class="bi"></i></button>
 </div>
             <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
@@ -435,10 +260,10 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content" tabindex="-1">
 
-
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <div class="quarto-title-block"><div><h1 class="title">A/B Test Analysis Note: Genre-Curated Content and Video Conversion</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<p class="subtitle lead">An experiment note from funnel diagnosis to sample sizing and significance testing</p>
   <div class="quarto-categories">
     <div class="quarto-category">Analysis Note</div>
     <div class="quarto-category">A/B Test</div>
@@ -654,54 +479,6 @@ window.Quarto = {
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const toggle = window.document.createElement('button');
-      toggle.type = "button";
-      toggle.setAttribute("role", "switch");
-      toggle.setAttribute("aria-checked", "false");
-      toggle.classList.add('top-right');
-      toggle.classList.add('quarto-color-scheme-toggle');
-      toggle.setAttribute("aria-label", "Toggle dark mode");
-      toggle.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      toggle.appendChild(i);
-      // Put the toggle in a landmark of its own, so that landmark navigation
-      // can reach it.
-      //
-      // The container is always a fresh direct child of body, and the toggle is
-      // never moved into page furniture that the theme or the author controls.
-      // The toggle is positioned against the page, so any ancestor that
-      // establishes a containing block captures it: a positioned element or a
-      // grid for position: absolute, and transform, filter, will-change or
-      // contain for position: fixed. A direct child of body has none of these
-      // to inherit, and the shift when one appears is silent and visual.
-      //
-      // ARIA says a document should have at most one banner, and axe reports a
-      // duplicate whether or not the banners carry distinct labels. So use a
-      // header when the page has no banner yet, and a named region otherwise.
-      //
-      // A header is a banner wherever it sits, unless it is inside sectioning
-      // content, so this cannot just look at the children of body: a custom
-      // page layout wraps the title block header in a plain div. An explicit
-      // role="banner" always counts.
-      const sectioning = 'article, aside, main, nav, section, [role="article"], [role="complementary"], [role="main"], [role="navigation"], [role="region"]';
-      const hasBanner = Array.from(
-        window.document.querySelectorAll('header:not([role]), [role="banner"]')
-      ).some(function(el) {
-        return el.hasAttribute("role") || el.closest(sectioning) === null;
-      });
-      const container = window.document.createElement(hasBanner ? "div" : "header");
-      if (hasBanner) {
-        container.setAttribute("role", "region");
-        container.setAttribute("aria-label", "Toggle dark mode");
-      }
-      container.classList.add('quarto-color-scheme-toggle-container');
-      container.appendChild(toggle);
-      window.document.body.appendChild(container);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -1229,102 +1006,103 @@ window.Quarto = {
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "A/B Test Analysis Note: Genre-Curated Content and Video Conversion"</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "A sample report on the Project A A/B test, organized as funnel diagnosis, sample sizing, and significance testing."</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2026-11-23"</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [Analysis Note, A/B Test, Project A]</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="an">image:</span><span class="co"> images/ab-result.png</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="fu">## Before you read</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>The design and result figures here match <span class="co">[</span><span class="ot">Project A</span><span class="co">](../../projects/project-a.qmd)</span>. The per-group conversion counts (A: 82, B: 114 of 576 per group) are values arranged to match the reported conversion rates (14.2%, 19.8%) and p-value (0.012); replace them with values re-aggregated from the real logs if available.</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="fu">## 1. Background and objective</span></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>UA ads brought large inflow, but drop-off surged at the AI generation step right after sign-up. We test the hypothesis that switching content exposure from **random content (A) to genre-curated content (B)** improves the video conversion rate.</span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**H0:** The video conversion rates of the two groups are equal ($p_A = p_B$)</span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**H1:** The video conversion rates differ ($p_A \neq p_B$), significance level $\alpha = 0.05$</span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="fu">## 2. Diagnosis: where users leak</span></span>
-<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="al">![Share of installs by step. More than 80% leak out between sign-up (65%) and AI generation (12%)](images/funnel.png)</span>{fig-alt="Funnel bar chart"}</span>
-<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>Ad click &amp; Install (100%) → Sign Up (65%) → AI Generation (12%) → Share/Download (2.5%). The **sign-up → AI generation** step loses more than 80% of users and is the largest leak, so the video conversion rate was chosen as the experiment metric.</span>
-<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a><span class="fu">## 3. Experiment design and sample sizing</span></span>
-<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Item <span class="pp">|</span> Detail <span class="pp">|</span></span>
-<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|</span></span>
-<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Control (Group A) <span class="pp">|</span> Existing random content (80% user-uploaded, 20% in-house) <span class="pp">|</span></span>
-<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Treatment (Group B) <span class="pp">|</span> Genre-curated content (cinematic, Y2K, cartoon, meme, etc.) <span class="pp">|</span></span>
-<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Primary metric <span class="pp">|</span> Video conversion rate (users who successfully generate an AI video among exposed users), baseline 14.2% <span class="pp">|</span></span>
-<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Assignment / duration <span class="pp">|</span> New users randomly assigned 50:50 with Firebase Remote Config (A/B Testing), 14 days <span class="pp">|</span></span>
-<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Significance / power <span class="pp">|</span> $\alpha = 0.05$ / $1-\beta = 0.80$ <span class="pp">|</span></span>
-<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Minimum detectable effect (MDE) <span class="pp">|</span> +6.5 pp (14.2% → 20.7%) <span class="pp">|</span></span>
-<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a>**How groups are assigned:** Remote Config serves a different content-exposure policy parameter per group. The group is recorded as a user property on the exposure event, logged when the app activates the value. These logs flow from Firebase into BigQuery and Amplitude, where per-group funnels and conversion are aggregated. Firebase randomizes per app installation (instance), so users who reinstall or use several devices may land in different groups and need to be checked in analysis.</span>
-<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a>The required sample size per group for comparing two proportions is:</span>
-<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a>$$n = \frac{(z_{1-\alpha/2}+z_{1-\beta})^2\,<span class="co">[</span><span class="ot">p_1(1-p_1)+p_2(1-p_2)</span><span class="co">]</span>}{(p_2-p_1)^2}$$</span>
-<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy <span class="im">import</span> stats</span>
-<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> n_per_group(p1, p2, alpha<span class="op">=</span><span class="fl">0.05</span>, power<span class="op">=</span><span class="fl">0.80</span>):</span>
-<span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a>    k <span class="op">=</span> (stats.norm.ppf(<span class="dv">1</span> <span class="op">-</span> alpha<span class="op">/</span><span class="dv">2</span>) <span class="op">+</span> stats.norm.ppf(power)) <span class="op">**</span> <span class="dv">2</span></span>
-<span id="cb3-49"><a href="#cb3-49" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> k <span class="op">*</span> (p1<span class="op">*</span>(<span class="dv">1</span><span class="op">-</span>p1) <span class="op">+</span> p2<span class="op">*</span>(<span class="dv">1</span><span class="op">-</span>p2)) <span class="op">/</span> (p2 <span class="op">-</span> p1) <span class="op">**</span> <span class="dv">2</span></span>
-<span id="cb3-50"><a href="#cb3-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-51"><a href="#cb3-51" aria-hidden="true" tabindex="-1"></a>n_per_group(<span class="fl">0.142</span>, <span class="fl">0.142</span> <span class="op">+</span> <span class="fl">0.065</span>)   <span class="co"># 531.3 -&gt; at least 532 per group</span></span>
-<span id="cb3-52"><a href="#cb3-52" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb3-53"><a href="#cb3-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-54"><a href="#cb3-54" aria-hidden="true" tabindex="-1"></a>At least **532 per group**, or **38 per segment per day** over 14 days. The actual sample was 576 per group (about 41 per day), meeting the design requirement.</span>
-<span id="cb3-55"><a href="#cb3-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-56"><a href="#cb3-56" aria-hidden="true" tabindex="-1"></a><span class="al">![The larger the difference to detect, the fewer samples are needed](images/sample-size.png)</span></span>
-<span id="cb3-57"><a href="#cb3-57" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-58"><a href="#cb3-58" aria-hidden="true" tabindex="-1"></a><span class="fu">## 4. Test results</span></span>
-<span id="cb3-59"><a href="#cb3-59" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-60"><a href="#cb3-60" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Item <span class="pp">|</span> Control A <span class="pp">|</span> Treatment B <span class="pp">|</span></span>
-<span id="cb3-61"><a href="#cb3-61" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|</span></span>
-<span id="cb3-62"><a href="#cb3-62" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Sample size <span class="pp">|</span> 576 <span class="pp">|</span> 576 <span class="pp">|</span></span>
-<span id="cb3-63"><a href="#cb3-63" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Successful video generations <span class="pp">|</span> 82 <span class="pp">|</span> 114 <span class="pp">|</span></span>
-<span id="cb3-64"><a href="#cb3-64" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Video conversion rate <span class="pp">|</span> 14.2% <span class="pp">|</span> 19.8% <span class="pp">|</span></span>
-<span id="cb3-65"><a href="#cb3-65" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Difference <span class="pp">|</span> +5.6 pp (about +39% relative) <span class="pp">|</span> <span class="pp">|</span></span>
-<span id="cb3-66"><a href="#cb3-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-67"><a href="#cb3-67" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb3-68"><a href="#cb3-68" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb3-69"><a href="#cb3-69" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy <span class="im">import</span> stats</span>
-<span id="cb3-70"><a href="#cb3-70" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-71"><a href="#cb3-71" aria-hidden="true" tabindex="-1"></a>n, a, b <span class="op">=</span> <span class="dv">576</span>, <span class="dv">82</span>, <span class="dv">114</span></span>
-<span id="cb3-72"><a href="#cb3-72" aria-hidden="true" tabindex="-1"></a>chi2, p_chi, <span class="op">*</span>_ <span class="op">=</span> stats.chi2_contingency([[a, n<span class="op">-</span>a], [b, n<span class="op">-</span>b]], correction<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb3-73"><a href="#cb3-73" aria-hidden="true" tabindex="-1"></a>t, p_t <span class="op">=</span> stats.ttest_ind(np.r_[np.ones(b), np.zeros(n<span class="op">-</span>b)],</span>
-<span id="cb3-74"><a href="#cb3-74" aria-hidden="true" tabindex="-1"></a>                         np.r_[np.ones(a), np.zeros(n<span class="op">-</span>a)])</span>
-<span id="cb3-75"><a href="#cb3-75" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb3-76"><a href="#cb3-76" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-77"><a href="#cb3-77" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Test <span class="pp">|</span> Statistic <span class="pp">|</span> p-value <span class="pp">|</span></span>
-<span id="cb3-78"><a href="#cb3-78" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|</span></span>
-<span id="cb3-79"><a href="#cb3-79" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Chi-square test <span class="pp">|</span> χ² = 6.30 (df=1) <span class="pp">|</span> 0.012 <span class="pp">|</span></span>
-<span id="cb3-80"><a href="#cb3-80" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Independent-samples t-test <span class="pp">|</span> t = 2.51 (df=1150) <span class="pp">|</span> 0.012 <span class="pp">|</span></span>
-<span id="cb3-81"><a href="#cb3-81" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-82"><a href="#cb3-82" aria-hidden="true" tabindex="-1"></a>The 95% confidence interval of the difference is **+1.2 to +9.9 pp**, which excludes 0.</span>
-<span id="cb3-83"><a href="#cb3-83" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-84"><a href="#cb3-84" aria-hidden="true" tabindex="-1"></a><span class="al">![A/B video conversion with 95% confidence intervals](images/ab-result.png)</span></span>
-<span id="cb3-85"><a href="#cb3-85" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-86"><a href="#cb3-86" aria-hidden="true" tabindex="-1"></a>**Conclusion:** Since p = 0.012 &lt; 0.05, we reject H0 and decided to roll out genre-curated content.</span>
-<span id="cb3-87"><a href="#cb3-87" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-88"><a href="#cb3-88" aria-hidden="true" tabindex="-1"></a><span class="fu">## 5. Key takeaways</span></span>
-<span id="cb3-89"><a href="#cb3-89" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-90"><a href="#cb3-90" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Insight 1:** Video conversion for genre-curated content (B) is 19.8%, 5.6 pp (about +39% relative) above control (14.2%), and significant at the 5% level (p = 0.012).</span>
-<span id="cb3-91"><a href="#cb3-91" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Insight 2:** The observed difference (+5.6 pp) is smaller than the design MDE (+6.5 pp), so power on this sample is about 71%. The direction is reliable, but the confidence interval of the effect size (+1.2 to +9.9 pp) is wide, so it should be re-estimated through post-rollout monitoring.</span>
-<span id="cb3-92"><a href="#cb3-92" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Next actions:** Break down the effect by genre (cinematic, Y2K, etc.), and verify 7-day retention and proxy LTV/CAC ≥ 3.0 including GPU cost.</span>
-<span id="cb3-93"><a href="#cb3-93" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-94"><a href="#cb3-94" aria-hidden="true" tabindex="-1"></a><span class="fu">## 6. Limitations</span></span>
-<span id="cb3-95"><a href="#cb3-95" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-96"><a href="#cb3-96" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Assignment is per installation, so users who reinstall or use several devices may switch groups; check with the user_id mapping in the logs.</span>
-<span id="cb3-97"><a href="#cb3-97" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>This is a single-period, single-metric test, so novelty effects are to be checked through post-rollout monitoring.</span>
-<span id="cb3-98"><a href="#cb3-98" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Subgroup effects by genre need multiple-comparison correction and were not covered in this test.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "An experiment note from funnel diagnosis to sample sizing and significance testing"</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "A sample report on the Project A A/B test, organized as funnel diagnosis, sample sizing, and significance testing."</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2026-11-23"</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [Analysis Note, A/B Test, Project A]</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="an">image:</span><span class="co"> images/ab-result.png</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="fu">## Before you read</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>The design and result figures here match <span class="co">[</span><span class="ot">Project A</span><span class="co">](../../projects/project-a.qmd)</span>. The per-group conversion counts (A: 82, B: 114 of 576 per group) are values arranged to match the reported conversion rates (14.2%, 19.8%) and p-value (0.012); replace them with values re-aggregated from the real logs if available.</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="fu">## 1. Background and objective</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>UA ads brought large inflow, but drop-off surged at the AI generation step right after sign-up. We test the hypothesis that switching content exposure from **random content (A) to genre-curated content (B)** improves the video conversion rate.</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**H0:** The video conversion rates of the two groups are equal ($p_A = p_B$)</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**H1:** The video conversion rates differ ($p_A \neq p_B$), significance level $\alpha = 0.05$</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="fu">## 2. Diagnosis: where users leak</span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="al">![Share of installs by step. More than 80% leak out between sign-up (65%) and AI generation (12%)](images/funnel.png)</span>{fig-alt="Funnel bar chart"}</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>Ad click &amp; Install (100%) → Sign Up (65%) → AI Generation (12%) → Share/Download (2.5%). The **sign-up → AI generation** step loses more than 80% of users and is the largest leak, so the video conversion rate was chosen as the experiment metric.</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a><span class="fu">## 3. Experiment design and sample sizing</span></span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Item <span class="pp">|</span> Detail <span class="pp">|</span></span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|</span></span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Control (Group A) <span class="pp">|</span> Existing random content (80% user-uploaded, 20% in-house) <span class="pp">|</span></span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Treatment (Group B) <span class="pp">|</span> Genre-curated content (cinematic, Y2K, cartoon, meme, etc.) <span class="pp">|</span></span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Primary metric <span class="pp">|</span> Video conversion rate (users who successfully generate an AI video among exposed users), baseline 14.2% <span class="pp">|</span></span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Assignment / duration <span class="pp">|</span> New users randomly assigned 50:50 with Firebase Remote Config (A/B Testing), 14 days <span class="pp">|</span></span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Significance / power <span class="pp">|</span> $\alpha = 0.05$ / $1-\beta = 0.80$ <span class="pp">|</span></span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Minimum detectable effect (MDE) <span class="pp">|</span> +6.5 pp (14.2% → 20.7%) <span class="pp">|</span></span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>**How groups are assigned:** Remote Config serves a different content-exposure policy parameter per group. The group is recorded as a user property on the exposure event, logged when the app activates the value. These logs flow from Firebase into BigQuery and Amplitude, where per-group funnels and conversion are aggregated. Firebase randomizes per app installation (instance), so users who reinstall or use several devices may land in different groups and need to be checked in analysis.</span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a>The required sample size per group for comparing two proportions is:</span>
+<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a>$$n = \frac{(z_{1-\alpha/2}+z_{1-\beta})^2\,<span class="co">[</span><span class="ot">p_1(1-p_1)+p_2(1-p_2)</span><span class="co">]</span>}{(p_2-p_1)^2}$$</span>
+<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy <span class="im">import</span> stats</span>
+<span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> n_per_group(p1, p2, alpha<span class="op">=</span><span class="fl">0.05</span>, power<span class="op">=</span><span class="fl">0.80</span>):</span>
+<span id="cb3-49"><a href="#cb3-49" aria-hidden="true" tabindex="-1"></a>    k <span class="op">=</span> (stats.norm.ppf(<span class="dv">1</span> <span class="op">-</span> alpha<span class="op">/</span><span class="dv">2</span>) <span class="op">+</span> stats.norm.ppf(power)) <span class="op">**</span> <span class="dv">2</span></span>
+<span id="cb3-50"><a href="#cb3-50" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> k <span class="op">*</span> (p1<span class="op">*</span>(<span class="dv">1</span><span class="op">-</span>p1) <span class="op">+</span> p2<span class="op">*</span>(<span class="dv">1</span><span class="op">-</span>p2)) <span class="op">/</span> (p2 <span class="op">-</span> p1) <span class="op">**</span> <span class="dv">2</span></span>
+<span id="cb3-51"><a href="#cb3-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-52"><a href="#cb3-52" aria-hidden="true" tabindex="-1"></a>n_per_group(<span class="fl">0.142</span>, <span class="fl">0.142</span> <span class="op">+</span> <span class="fl">0.065</span>)   <span class="co"># 531.3 -&gt; at least 532 per group</span></span>
+<span id="cb3-53"><a href="#cb3-53" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb3-54"><a href="#cb3-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-55"><a href="#cb3-55" aria-hidden="true" tabindex="-1"></a>At least **532 per group**, or **38 per segment per day** over 14 days. The actual sample was 576 per group (about 41 per day), meeting the design requirement.</span>
+<span id="cb3-56"><a href="#cb3-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-57"><a href="#cb3-57" aria-hidden="true" tabindex="-1"></a><span class="al">![The larger the difference to detect, the fewer samples are needed](images/sample-size.png)</span></span>
+<span id="cb3-58"><a href="#cb3-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-59"><a href="#cb3-59" aria-hidden="true" tabindex="-1"></a><span class="fu">## 4. Test results</span></span>
+<span id="cb3-60"><a href="#cb3-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-61"><a href="#cb3-61" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Item <span class="pp">|</span> Control A <span class="pp">|</span> Treatment B <span class="pp">|</span></span>
+<span id="cb3-62"><a href="#cb3-62" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|</span></span>
+<span id="cb3-63"><a href="#cb3-63" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Sample size <span class="pp">|</span> 576 <span class="pp">|</span> 576 <span class="pp">|</span></span>
+<span id="cb3-64"><a href="#cb3-64" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Successful video generations <span class="pp">|</span> 82 <span class="pp">|</span> 114 <span class="pp">|</span></span>
+<span id="cb3-65"><a href="#cb3-65" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Video conversion rate <span class="pp">|</span> 14.2% <span class="pp">|</span> 19.8% <span class="pp">|</span></span>
+<span id="cb3-66"><a href="#cb3-66" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Difference <span class="pp">|</span> +5.6 pp (about +39% relative) <span class="pp">|</span> <span class="pp">|</span></span>
+<span id="cb3-67"><a href="#cb3-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-68"><a href="#cb3-68" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb3-69"><a href="#cb3-69" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb3-70"><a href="#cb3-70" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy <span class="im">import</span> stats</span>
+<span id="cb3-71"><a href="#cb3-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-72"><a href="#cb3-72" aria-hidden="true" tabindex="-1"></a>n, a, b <span class="op">=</span> <span class="dv">576</span>, <span class="dv">82</span>, <span class="dv">114</span></span>
+<span id="cb3-73"><a href="#cb3-73" aria-hidden="true" tabindex="-1"></a>chi2, p_chi, <span class="op">*</span>_ <span class="op">=</span> stats.chi2_contingency([[a, n<span class="op">-</span>a], [b, n<span class="op">-</span>b]], correction<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb3-74"><a href="#cb3-74" aria-hidden="true" tabindex="-1"></a>t, p_t <span class="op">=</span> stats.ttest_ind(np.r_[np.ones(b), np.zeros(n<span class="op">-</span>b)],</span>
+<span id="cb3-75"><a href="#cb3-75" aria-hidden="true" tabindex="-1"></a>                         np.r_[np.ones(a), np.zeros(n<span class="op">-</span>a)])</span>
+<span id="cb3-76"><a href="#cb3-76" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb3-77"><a href="#cb3-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-78"><a href="#cb3-78" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Test <span class="pp">|</span> Statistic <span class="pp">|</span> p-value <span class="pp">|</span></span>
+<span id="cb3-79"><a href="#cb3-79" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|</span></span>
+<span id="cb3-80"><a href="#cb3-80" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Chi-square test <span class="pp">|</span> χ² = 6.30 (df=1) <span class="pp">|</span> 0.012 <span class="pp">|</span></span>
+<span id="cb3-81"><a href="#cb3-81" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Independent-samples t-test <span class="pp">|</span> t = 2.51 (df=1150) <span class="pp">|</span> 0.012 <span class="pp">|</span></span>
+<span id="cb3-82"><a href="#cb3-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-83"><a href="#cb3-83" aria-hidden="true" tabindex="-1"></a>The 95% confidence interval of the difference is **+1.2 to +9.9 pp**, which excludes 0.</span>
+<span id="cb3-84"><a href="#cb3-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-85"><a href="#cb3-85" aria-hidden="true" tabindex="-1"></a><span class="al">![A/B video conversion with 95% confidence intervals](images/ab-result.png)</span></span>
+<span id="cb3-86"><a href="#cb3-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-87"><a href="#cb3-87" aria-hidden="true" tabindex="-1"></a>**Conclusion:** Since p = 0.012 &lt; 0.05, we reject H0 and decided to roll out genre-curated content.</span>
+<span id="cb3-88"><a href="#cb3-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-89"><a href="#cb3-89" aria-hidden="true" tabindex="-1"></a><span class="fu">## 5. Key takeaways</span></span>
+<span id="cb3-90"><a href="#cb3-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-91"><a href="#cb3-91" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Insight 1:** Video conversion for genre-curated content (B) is 19.8%, 5.6 pp (about +39% relative) above control (14.2%), and significant at the 5% level (p = 0.012).</span>
+<span id="cb3-92"><a href="#cb3-92" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Insight 2:** The observed difference (+5.6 pp) is smaller than the design MDE (+6.5 pp), so power on this sample is about 71%. The direction is reliable, but the confidence interval of the effect size (+1.2 to +9.9 pp) is wide, so it should be re-estimated through post-rollout monitoring.</span>
+<span id="cb3-93"><a href="#cb3-93" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Next actions:** Break down the effect by genre (cinematic, Y2K, etc.), and verify 7-day retention and proxy LTV/CAC ≥ 3.0 including GPU cost.</span>
+<span id="cb3-94"><a href="#cb3-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-95"><a href="#cb3-95" aria-hidden="true" tabindex="-1"></a><span class="fu">## 6. Limitations</span></span>
+<span id="cb3-96"><a href="#cb3-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-97"><a href="#cb3-97" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Assignment is per installation, so users who reinstall or use several devices may switch groups; check with the user_id mapping in the logs.</span>
+<span id="cb3-98"><a href="#cb3-98" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>This is a single-period, single-metric test, so novelty effects are to be checked through post-rollout monitoring.</span>
+<span id="cb3-99"><a href="#cb3-99" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Subgroup effects by genre need multiple-comparison correction and were not covered in this test.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

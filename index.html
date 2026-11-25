@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Bens Notes</title>
+<title>Ben Kim · 건강 데이터 분석 – Ben's Notes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,41 +26,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -71,6 +36,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
@@ -78,14 +45,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-447e42e69aaa9833c0ba1b986f430b20.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-cb61c712ca1a7fe70a83faed8e4da2d7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-b348d5b559a602027a1f18095d1d555f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-cb61c712ca1a7fe70a83faed8e4da2d7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-cb61c712ca1a7fe70a83faed8e4da2d7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -113,6 +76,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "검색"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-reports .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-reports'] = new List('listing-reports', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+  </script>
 <script>
 /* Keep navigation and language switching at the repository root. */
 document.addEventListener("DOMContentLoaded", function () {
@@ -153,181 +139,40 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          toggle.setAttribute("aria-checked", alternate ? "true" : "false");
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-    }
-    // Hack to workaround the fact that safari doesn't
-    // properly recolor the scrollbar when toggling (#1455).
-    // Not run on load: stylesheets are set before first paint there, and
-    // scrolling would undo the scroll to a URL fragment (#14973).
-    // The one pixel nudge keeps the reader where they were.
-    const refreshSafariScrollbar = () => {
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        const scrollY = window.scrollY;
-        window.scrollTo(0, scrollY > 0 ? scrollY - 1 : 1);
-        setTimeout(() => {
-          window.scrollTo(0, scrollY);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      refreshSafariScrollbar();
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -335,7 +180,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Bens Notes</span>
+    <span class="navbar-title">Ben’s Notes</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="탐색 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -377,7 +222,6 @@ document.addEventListener("DOMContentLoaded", function () {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <button type="button" role="switch" aria-checked="false" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="다크 모드 전환" aria-label="다크 모드 전환"><i class="bi"></i></button>
 </div>
             <div id="quarto-search" class="" title="검색"></div>
       </div> <!-- /container-fluid -->
@@ -389,113 +233,138 @@ document.addEventListener("DOMContentLoaded", function () {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content" tabindex="-1"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7"></h1></header><div class="quarto-title-block"><div class="quarto-title-tools-only"><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> 코드</button></div></div>
+<main class="content column-page" id="quarto-document-content" tabindex="-1"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
-
-<div class="badge-vision">
-<p>VISION</p>
+<div class="home">
+<div class="hero">
+<div class="hero-title">
+<p>데이터로 사람들의 건강에 보탬이 되려는 분석가, Ben Kim입니다.</p>
 </div>
-<div class="hero-quote">
-<p>“제약조건 안에서 가장 저항이 적고 실행가능한 행동을 발견하자”</p>
+<div class="hero-lede">
+<p>스타트업에서 5년 넘게 데이터 분석가, 데이터 사이언티스트, AI 데이터 파트 리드로 일했습니다. 지금은 의사, 약사, 제약사, 유통사처럼 약을 다루는 사람들이 더 나은 결정을 내리도록 공개 의약품 데이터를 분석하고 있습니다.</p>
 </div>
-<p><strong>팀리드, 창업팀 리드 경험</strong>을 통해 단순 수식 학습과 코딩 암기를 넘어, 매출 및 서비스 성장 관점에서 기술을 어떻게 학습하고 설계하며 현업 비즈니스에 적용해야 하는지 고민합니다.</p>
-<hr>
-<div class="badge-who">
-<p>WHO ?</p>
+<div class="hero-actions">
+<p><a href="#reports-section">보고서 읽기</a> <a href="./ko/experience.html">경력 보기</a></p>
 </div>
-<section id="비전을-확실한-비즈니스-성과로-실현한다." class="level2">
-<h2 class="anchored" data-anchor-id="비전을-확실한-비즈니스-성과로-실현한다.">비전을 확실한 비즈니스 성과로 실현한다.</h2>
-<div class="highlight-box">
-<div class="lead-title">
-<p>“서로 다른 현장의 언어를 통합해서 결과를 만드는, <span class="accent-red">ben kim</span>입니다.”</p>
 </div>
-<p>서로 다른 이해관계자 속에서 목표와 요구사항을 정하고, 비즈니스 지표 개선에 필요한 분석 및 데이터 엔지니어링 실전 경험을 바탕으로 <strong>‘함께 성장하는 팀’</strong>을 만들겠습니다.</p>
-<div class="role-pill-group">
-<p><span class="bi bi-briefcase-fill"><span class="role-pill">Data Scientist</span></span> <span class="bi bi-briefcase-fill"><span class="role-pill">AI Data Engineer</span></span></p>
+<section id="누구를-돕는-분석인가" class="level2 home-section">
+<h2 class="anchored" data-anchor-id="누구를-돕는-분석인가">누구를 돕는 분석인가</h2>
+<div class="section-lede">
+<p>환자를 직접 만나지 않아도, 환자에게 약을 처방하고 건네고 만들고 공급하는 사람들의 결정을 도우면 건강에 보탬이 될 수 있다고 봅니다.</p>
+</div>
+<div class="audience">
+  <div><h3 class="anchored">의사</h3><p>처방하려는 성분의 급여 변경과 공급 변화를 미리 확인합니다.</p></div>
+  <div><h3 class="anchored">약사</h3><p>약값 인하와 급여정지 예고를 미리 알아 재고를 계획합니다.</p></div>
+  <div><h3 class="anchored">제약사</h3><p>자사 성분의 시장 흐름과 경쟁 제품의 가격 변화를 한눈에 봅니다.</p></div>
+  <div><h3 class="anchored">유통사</h3><p>성분별 수요 흐름을 공급 계획과 약국 알림의 기준으로 씁니다.</p></div>
+</div>
+</section>
+<div id="reports-section" class="home-section">
+<section id="보고서" class="level2">
+<h2 class="anchored" data-anchor-id="보고서">보고서</h2>
+<div class="section-lede">
+<p>바로팜 같은 의약품 유통 서비스에서 데이터 사이언티스트가 맡는 일을 기준으로 질문을 골랐습니다. 결과만큼 “이 숫자를 얼마나 믿을 수 있는가”를 자세히 적었습니다.</p>
+</div>
+<div id="listing-reports" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="JUVDJTlEJTk4JUVDJTk1JUJEJUVEJTkyJTg4JTIwJUVCJThEJUIwJUVDJTlEJUI0JUVEJTg0JUIwJTJDJUVDJThCJTlDJUVBJUIzJTg0JUVDJTk3JUI0JTIwJUVDJTk4JTg4JUVDJUI4JUExJTJDJUVDJTgyJUFDJUVDJUEwJTg0JUVCJTkzJUIxJUVCJUExJTlE" data-listing-date-sort="1795478400000" data-listing-file-modified-sort="1795569359446" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="22" data-listing-word-count-sort="4291">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./ko/posts/2026-11-drug-benefit-demand/index.html" class="no-external-icon">급여 변동과 수요 모니터링</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./ko/posts/2026-11-drug-benefit-demand/index.html" class="no-external-icon">공개 의약품 데이터로 약값·급여 변화를 미리 잡고, 성분 처방 수요를 6개월 앞까지 내다보기</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./ko/posts/2026-11-drug-benefit-demand/index.html" class="no-external-icon">
+<div class="listing-date">
+<ol start="2026" type="1">
+<li><ol start="11" type="1">
+<li>24.
+</li></ol></li></ol></div>
+
+
+</a>
+<p>:::</p>
+<p>:::</p>
+<div class="quarto-post image-right" data-index="1" data-categories="JUVCJUI2JTg0JUVDJTg0JTlEJUVCJTg1JUI4JUVEJThBJUI4JTJDQSUyRkIlRUQlODUlOEMlRUMlOEElQTQlRUQlOEElQjglMkNQcm9qZWN0JTIwQQ==" data-listing-date-sort="1795392000000" data-listing-file-modified-sort="1795569359446" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="606">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./ko/posts/2026-11-sample-analysis/index.html" class="no-external-icon">A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./ko/posts/2026-11-sample-analysis/index.html" class="no-external-icon">퍼널 진단부터 표본 산정, 유의성 검정까지 정리한 실험 노트</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./ko/posts/2026-11-sample-analysis/index.html" class="no-external-icon">
+<div class="listing-date">
+<ol start="2026" type="1">
+<li><ol start="11" type="1">
+<li>23.
+</li></ol></li></ol></div>
+
+
+</a>
+<p>:::</p>
+<p>:::</p>
+<p>:::</p>
+<div class="listing-no-matching d-none">일치 없음</div>
+<p>:::</p>
+<p>:::</p>
+
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </section>
-<section id="소개" class="level2">
-<h2 class="anchored" data-anchor-id="소개">소개</h2>
-<p>스타트업 데이터 분석가, 데이터 사이언티스트부터 AI 데이터 파트 리드까지 경험하며, 데이터 기반 의사결정과 재현 가능한 분석·ML 파이프라인을 구축해 왔습니다. 유저 그로스 분석, 비전 모델 학습 데이터 큐레이션(MLOps), 통계·ML 하이브리드 예측 모델링을 다룹니다.</p>
-<p><a href="./ko/experience.html">경력 보기</a> · <a href="./ko/projects.html">프로젝트 보기</a></p>
-<section id="주요-기술-스택" class="level3">
-<h3 class="anchored" data-anchor-id="주요-기술-스택">주요 기술 스택</h3>
-<ul>
-<li><strong>언어 &amp; 데이터:</strong> Python, SQL (DuckDB, PostgreSQL, MySQL, BigQuery)</li>
-<li><strong>분석 &amp; 시각화:</strong> Pandas, NumPy, SciPy, 통계·시계열 분석, Tableau</li>
-<li><strong>그로스 &amp; 로그 분석:</strong> Firebase, Appsflyer, Amplitude, A/B 테스트 설계</li>
-<li><strong>ML &amp; MLOps:</strong> Kubeflow, DVC, MLflow, OpenCV, Librosa</li>
-<li><strong>워크플로우 &amp; 인프라:</strong> Git, GitHub Actions, Docker, AWS, Quarto</li>
-</ul>
+</div>
+<section id="일하는-방식" class="level2 home-section">
+<h2 class="anchored" data-anchor-id="일하는-방식">일하는 방식</h2>
+<div class="principle">
+<p>제약조건 안에서 가장 저항이 적고 실행 가능한 행동을 찾는다.</p>
+</div>
+<p>복잡한 방법이 단순한 방법보다 낫다는 근거가 없으면 단순한 방법을 고릅니다. 결과를 보기 전에 판정 기준을 먼저 정하고, 불리한 결과도 그대로 적습니다.</p>
 </section>
-<section id="학력-자격" class="level3">
-<h3 class="anchored" data-anchor-id="학력-자격">학력 &amp; 자격</h3>
-<ul>
-<li>연세대학교 응용통계학·경제학 학사</li>
-<li>TensorFlow Developer Professional Certificate</li>
-</ul>
-
-
-<!-- -->
-
+<section id="경력" class="level2 home-section">
+<h2 class="anchored" data-anchor-id="경력">경력</h2>
+<ol class="timeline">
+  <li>
+    <span class="when">2021.03 – 2023.11</span>
+    <div><strong>Klleon R&amp;D</strong> · 데이터 파트 리드
+      <p>MLOps 팀과 데이터 파트를 만들고 이끌었습니다. 생성형 AI 앱의 그로스 분석과 A/B 테스트, 학습 데이터 큐레이션을 맡았습니다.
+      <a href="ko/projects/project-a.html">그로스 분석</a> · <a href="ko/projects/project-b.html">데이터 큐레이션</a></p></div>
+  </li>
+  <li>
+    <span class="when">2019.04 – 2020.07</span>
+    <div><strong>Freewheelin</strong> · 데이터 분석가
+      <p>프로모션 성과 대시보드를 만들고, BigQuery로 데이터를 모아 품질 관리를 맡았습니다.</p></div>
+  </li>
+  <li>
+    <span class="when">2017.12 – 2019.03</span>
+    <div><strong>Epopcon</strong> · 데이터 사이언티스트
+      <p>포아송 과정으로 쇼핑몰 상품 재고가 바뀌는 시점을 예측해 수집 주기를 최적화했습니다.
+      <a href="ko/projects/project-c.html">스케줄링 모델</a></p></div>
+  </li>
+</ol>
+<p>연세대학교 응용통계학·경제학 학사 · Python, SQL, 통계·시계열 분석, LightGBM, BigQuery, MLflow</p>
+<p><a href="./ko/experience.html">전체 경력</a> · <a href="./ko/projects.html">프로젝트</a> · <a href="https://www.linkedin.com/in/benjamin-s-k">LinkedIn</a> · <a href="https://medium.com/@benskim915">Medium</a> · <a href="https://github.com/benskim">GitHub</a></p>
 </section>
-</section>
+</div>
 
-</main> <!-- /main -->
+
+</main></div>
+
+
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const toggle = window.document.createElement('button');
-      toggle.type = "button";
-      toggle.setAttribute("role", "switch");
-      toggle.setAttribute("aria-checked", "false");
-      toggle.classList.add('top-right');
-      toggle.classList.add('quarto-color-scheme-toggle');
-      toggle.setAttribute("aria-label", "다크 모드 전환");
-      toggle.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      toggle.appendChild(i);
-      // Put the toggle in a landmark of its own, so that landmark navigation
-      // can reach it.
-      //
-      // The container is always a fresh direct child of body, and the toggle is
-      // never moved into page furniture that the theme or the author controls.
-      // The toggle is positioned against the page, so any ancestor that
-      // establishes a containing block captures it: a positioned element or a
-      // grid for position: absolute, and transform, filter, will-change or
-      // contain for position: fixed. A direct child of body has none of these
-      // to inherit, and the shift when one appears is silent and visual.
-      //
-      // ARIA says a document should have at most one banner, and axe reports a
-      // duplicate whether or not the banners carry distinct labels. So use a
-      // header when the page has no banner yet, and a named region otherwise.
-      //
-      // A header is a banner wherever it sits, unless it is inside sectioning
-      // content, so this cannot just look at the children of body: a custom
-      // page layout wraps the title block header in a plain div. An explicit
-      // role="banner" always counts.
-      const sectioning = 'article, aside, main, nav, section, [role="article"], [role="complementary"], [role="main"], [role="navigation"], [role="region"]';
-      const hasBanner = Array.from(
-        window.document.querySelectorAll('header:not([role]), [role="banner"]')
-      ).some(function(el) {
-        return el.hasAttribute("role") || el.closest(sectioning) === null;
-      });
-      const container = window.document.createElement(hasBanner ? "div" : "header");
-      if (hasBanner) {
-        container.setAttribute("role", "region");
-        container.setAttribute("aria-label", "다크 모드 전환");
-      }
-      container.classList.add('quarto-color-scheme-toggle-container');
-      container.appendChild(toggle);
-      window.document.body.appendChild(container);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -564,57 +433,6 @@ document.addEventListener("DOMContentLoaded", function () {
         container: window.document.getElementById('quarto-embedded-source-code-modal')
       });
       clipboardModal.on('success', onCopySuccess);
-    }
-    const viewSource = window.document.getElementById('quarto-view-source') ||
-                       window.document.getElementById('quarto-code-tools-source');
-    if (viewSource) {
-      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
-      viewSource.addEventListener("click", function(e) {
-        if (sourceUrl) {
-          // rstudio viewer pane
-          if (/\bcapabilities=\b/.test(window.location)) {
-            window.open(sourceUrl);
-          } else {
-            window.location.href = sourceUrl;
-          }
-        } else {
-          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
-          modal.show();
-        }
-        return false;
-      });
-    }
-    function toggleCodeHandler(show) {
-      return function(e) {
-        const cellDetails = window.document.querySelectorAll(".cell details.code-fold");
-        for (let i=0; i<cellDetails.length; i++) {
-          const details = cellDetails[i];
-          if (show) {
-            details.open = true;
-          } else {
-            details.removeAttribute("open");
-          }
-        }
-        const cellCodeDivs = window.document.querySelectorAll(".cell div.sourceCode.cell-code");
-        const fromCls = show ? "hidden" : "unhidden";
-        const toCls = show ? "unhidden" : "hidden";
-        for (let i=0; i<cellCodeDivs.length; i++) {
-          const codeDiv = cellCodeDivs[i];
-          if (codeDiv.classList.contains(fromCls)) {
-            codeDiv.classList.remove(fromCls);
-            codeDiv.classList.add(toCls);
-          } 
-        }
-        return false;
-      }
-    }
-    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
-    if (hideAllCode) {
-      hideAllCode.addEventListener("click", toggleCodeHandler(false));
-    }
-    const showAllCode = window.document.getElementById("quarto-show-all-code");
-    if (showAllCode) {
-      showAllCode.addEventListener("click", toggleCodeHandler(true));
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
@@ -1020,62 +838,8 @@ document.addEventListener("DOMContentLoaded", function () {
   </script>
   <script type="application/javascript">
   window.quartoScrollableRegionsLabels = {"code":"스크롤 가능한 코드","output":"스크롤 가능한 출력"};
-  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">소스 코드</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> ""</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">page-layout:</span><span class="co"> full</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">toc:</span><span class="co"> false</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>::: {.badge-vision}</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>VISION</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>::: {.hero-quote}</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>"제약조건 안에서 가장 저항이 적고 실행가능한 행동을 발견하자"</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>**팀리드, 창업팀 리드 경험**을 통해 단순 수식 학습과 코딩 암기를 넘어, 매출 및 서비스 성장 관점에서 기술을 어떻게 학습하고 설계하며 현업 비즈니스에 적용해야 하는지 고민합니다.</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>::: {.badge-who}</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>WHO ?</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">## 비전을 확실한 비즈니스 성과로 실현한다.</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>::: {.highlight-box}</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>::: {.lead-title}</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>"서로 다른 현장의 언어를 통합해서 결과를 만드는, <span class="co">[</span><span class="ot">ben kim</span><span class="co">]</span>{.accent-red}입니다."</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>서로 다른 이해관계자 속에서 목표와 요구사항을 정하고, 비즈니스 지표 개선에 필요한 분석 및 데이터 엔지니어링 실전 경험을 바탕으로 **'함께 성장하는 팀'**을 만들겠습니다.</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>::: {.role-pill-group}</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>[ <span class="co">[</span><span class="ot">Data Scientist</span><span class="co">]</span>{.role-pill} ]{.bi .bi-briefcase-fill}</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>[ <span class="co">[</span><span class="ot">AI Data Engineer</span><span class="co">]</span>{.role-pill} ]{.bi .bi-briefcase-fill}</span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="fu">## 소개</span></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>스타트업 데이터 분석가, 데이터 사이언티스트부터 AI 데이터 파트 리드까지 경험하며, 데이터 기반 의사결정과 재현 가능한 분석·ML 파이프라인을 구축해 왔습니다. 유저 그로스 분석, 비전 모델 학습 데이터 큐레이션(MLOps), 통계·ML 하이브리드 예측 모델링을 다룹니다.</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">경력 보기</span><span class="co">](ko/experience.qmd)</span> · <span class="co">[</span><span class="ot">프로젝트 보기</span><span class="co">](ko/projects.qmd)</span></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="fu">### 주요 기술 스택</span></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**언어 &amp; 데이터:** Python, SQL (DuckDB, PostgreSQL, MySQL, BigQuery)</span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**분석 &amp; 시각화:** Pandas, NumPy, SciPy, 통계·시계열 분석, Tableau</span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**그로스 &amp; 로그 분석:** Firebase, Appsflyer, Amplitude, A/B 테스트 설계</span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**ML &amp; MLOps:** Kubeflow, DVC, MLflow, OpenCV, Librosa</span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**워크플로우 &amp; 인프라:** Git, GitHub Actions, Docker, AWS, Quarto</span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="fu">### 학력 &amp; 자격</span></span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>연세대학교 응용통계학·경제학 학사</span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>TensorFlow Developer Professional Certificate</span></code></pre></div><button title="클립보드 복사" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
-</div></div></div></div></div>
-</div> <!-- /content -->
+  </script>
+ <!-- /content -->
 
 
 

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Gen-AI B2C 앱 서비스 그로스 분석 – Bens Notes</title>
+<title>Gen-AI B2C 앱 서비스 그로스 분석 – Ben’s Notes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -78,14 +78,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-447e42e69aaa9833c0ba1b986f430b20.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-cb61c712ca1a7fe70a83faed8e4da2d7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-b348d5b559a602027a1f18095d1d555f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-cb61c712ca1a7fe70a83faed8e4da2d7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-cb61c712ca1a7fe70a83faed8e4da2d7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -189,177 +185,7 @@ window.Quarto = {
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          toggle.setAttribute("aria-checked", alternate ? "true" : "false");
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-    }
-    // Hack to workaround the fact that safari doesn't
-    // properly recolor the scrollbar when toggling (#1455).
-    // Not run on load: stylesheets are set before first paint there, and
-    // scrolling would undo the scroll to a URL fragment (#14973).
-    // The one pixel nudge keeps the reader where they were.
-    const refreshSafariScrollbar = () => {
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        const scrollY = window.scrollY;
-        window.scrollTo(0, scrollY > 0 ? scrollY - 1 : 1);
-        setTimeout(() => {
-          window.scrollTo(0, scrollY);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      refreshSafariScrollbar();
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -367,7 +193,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Bens Notes</span>
+    <span class="navbar-title">Ben’s Notes</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="탐색 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -409,7 +235,6 @@ window.Quarto = {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <button type="button" role="switch" aria-checked="false" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="다크 모드 전환" aria-label="다크 모드 전환"><i class="bi"></i></button>
 </div>
             <div id="quarto-search" class="" title="검색"></div>
       </div> <!-- /container-fluid -->
@@ -425,7 +250,7 @@ window.Quarto = {
    
   <ul>
   <li><a href="#overview-서비스-성장을-위한-데이터-분석-개요" id="toc-overview-서비스-성장을-위한-데이터-분석-개요" class="nav-link active" data-scroll-target="#overview-서비스-성장을-위한-데이터-분석-개요"><span class="tag">Overview</span> 서비스 성장을 위한 데이터 분석 개요</a></li>
-  <li><a href="#problem-definition-유저-유입량-대비-잔존율cvr의-보틀넥-발생" id="toc-problem-definition-유저-유입량-대비-잔존율cvr의-보틀넥-발생" class="nav-link" data-scroll-target="#problem-definition-유저-유입량-대비-잔존율cvr의-보틀넥-발생"><span class="tag">Problem Definition</span> 유저 유입량 대비 잔존율(CVR)의 보틀넥 발생</a></li>
+  <li><a href="#problem-definition-가입-후-ai-영상-생성-단계의-이탈-집중" id="toc-problem-definition-가입-후-ai-영상-생성-단계의-이탈-집중" class="nav-link" data-scroll-target="#problem-definition-가입-후-ai-영상-생성-단계의-이탈-집중"><span class="tag">Problem Definition</span> 가입 후 AI 영상 생성 단계의 이탈 집중</a></li>
   <li><a href="#로그-인프라-설계-user-behavior-log-architecture" id="toc-로그-인프라-설계-user-behavior-log-architecture" class="nav-link" data-scroll-target="#로그-인프라-설계-user-behavior-log-architecture"><span class="tag">로그 인프라 설계</span> User Behavior Log Architecture</a></li>
   <li><a href="#eda-데이터-탐색을-통한-이탈-유저-패턴-규명" id="toc-eda-데이터-탐색을-통한-이탈-유저-패턴-규명" class="nav-link" data-scroll-target="#eda-데이터-탐색을-통한-이탈-유저-패턴-규명"><span class="tag">EDA</span> 데이터 탐색을 통한 이탈 유저 패턴 규명</a></li>
   <li><a href="#지표-정의-및-ltv-모델-business-metric-optimization" id="toc-지표-정의-및-ltv-모델-business-metric-optimization" class="nav-link" data-scroll-target="#지표-정의-및-ltv-모델-business-metric-optimization"><span class="tag">지표 정의 및 LTV 모델</span> Business Metric Optimization</a></li>
@@ -438,7 +263,6 @@ window.Quarto = {
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content" tabindex="-1">
-
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -478,7 +302,7 @@ window.Quarto = {
 
 <pre class="mermaid mermaid-js">flowchart LR
   A["1 기획"] --&gt; B["2 인프라 연동"] --&gt; C["3 베타 출시"] --&gt; D["4 UA 그로스"]
-  style C fill:#ff1b4a,color:#fff,stroke:#ff1b4a
+  style C fill:#0E5A43,color:#fff,stroke:#0E5A43
 </pre>
 </div>
 <p></p></figure><p></p>
@@ -486,8 +310,8 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="problem-definition-유저-유입량-대비-잔존율cvr의-보틀넥-발생" class="level2">
-<h2 class="anchored" data-anchor-id="problem-definition-유저-유입량-대비-잔존율cvr의-보틀넥-발생"><span class="tag">Problem Definition</span> 유저 유입량 대비 잔존율(CVR)의 보틀넥 발생</h2>
+<section id="problem-definition-가입-후-ai-영상-생성-단계의-이탈-집중" class="level2">
+<h2 class="anchored" data-anchor-id="problem-definition-가입-후-ai-영상-생성-단계의-이탈-집중"><span class="tag">Problem Definition</span> 가입 후 AI 영상 생성 단계의 이탈 집중</h2>
 <div class="lead-line">
 <p>UA 마케팅 리소스 투입 대비 구독 전환율의 보틀넥 진단</p>
 </div>
@@ -550,10 +374,10 @@ window.Quarto = {
 <div class="project-fig">
 <svg viewbox="0 0 100 60" style="max-width:420px;width:100%">
   <line x1="0" y1="50" x2="100" y2="50" stroke="#E2E8F0" stroke-width="0.5"></line>
-  <line x1="60" y1="0" x2="60" y2="60" stroke="#FF1B4A" stroke-width="0.5" stroke-dasharray="1,1"></line>
-  <path d="M 10 45 Q 50 40 60 20 T 100 5" fill="none" stroke="#FF1B4A" stroke-width="1.5"></path>
+  <line x1="60" y1="0" x2="60" y2="60" stroke="#0E5A43" stroke-width="0.5" stroke-dasharray="1,1"></line>
+  <path d="M 10 45 Q 50 40 60 20 T 100 5" fill="none" stroke="#0E5A43" stroke-width="1.5"></path>
   <text x="50" y="58" font-size="4" fill="#64748B" text-anchor="middle">대기시간 (초)</text>
-  <text x="62" y="25" font-size="4" fill="#FF1B4A" font-weight="bold">임계 영역 (8초)</text>
+  <text x="62" y="25" font-size="4" fill="#0E5A43" font-weight="bold">임계 영역 (8초)</text>
   <text x="5" y="10" font-size="4" fill="#64748B">이탈율</text>
 </svg>
 <figcaption>
@@ -625,11 +449,11 @@ window.Quarto = {
 <div class="project-fig">
 <svg viewbox="0 0 100 50" style="max-width:420px;width:100%">
   <path d="M 10 45 C 30 45, 40 10, 50 45" fill="none" stroke="#94A3B8" stroke-width="1"></path>
-  <path d="M 30 45 C 50 45, 60 5, 70 45" fill="none" stroke="#FF1B4A" stroke-width="1.5"></path>
+  <path d="M 30 45 C 50 45, 60 5, 70 45" fill="none" stroke="#0E5A43" stroke-width="1.5"></path>
   <line x1="42" y1="10" x2="42" y2="45" stroke="#94A3B8" stroke-width="0.5" stroke-dasharray="1,1"></line>
-  <line x1="58" y1="5" x2="58" y2="45" stroke="#FF1B4A" stroke-width="0.5" stroke-dasharray="1,1"></line>
+  <line x1="58" y1="5" x2="58" y2="45" stroke="#0E5A43" stroke-width="0.5" stroke-dasharray="1,1"></line>
   <text x="35" y="49" font-size="3" fill="#64748B">A (14.2%)</text>
-  <text x="65" y="49" font-size="3" fill="#FF1B4A" font-weight="bold">B (19.8%)</text>
+  <text x="65" y="49" font-size="3" fill="#0E5A43" font-weight="bold">B (19.8%)</text>
 </svg>
 <figcaption>
 전환율 분포 가시성 (대조군 A vs 실험군 B, 개념도)
@@ -645,7 +469,7 @@ window.Quarto = {
 </div>
 <p><strong>결론:</strong> 우연에 의한 차이가 아님을 통계적 유의도 수준에서 검증하여 새로운 서비스 시나리오로 정식 롤아웃 의사결정. 관측 차이(+5.6%p)는 설계 MDE(+6.5%p)보다 작아 검정력은 약 71%이므로, 롤아웃 후 모니터링으로 효과 크기를 재확인.</p>
 <blockquote class="blockquote">
-<p>상세 재현 분석은 <a href="../../ko/posts/index.html">Report: A/B 테스트 분석 노트</a>에서 확인할 수 있습니다.</p>
+<p>상세 재현 분석은 <a href="../../ko/posts/2026-11-sample-analysis/index.html">Report: A/B 테스트 분석 노트</a>에서 확인할 수 있습니다.</p>
 </blockquote>
 </section>
 <section id="tableau-실시간-비즈니스-그로스-대시보드-구축" class="level2">
@@ -670,18 +494,16 @@ window.Quarto = {
 </div>
 <div class="kpi-grid">
 <div class="kpi red">
-<p><span class="kpi-label">영상생성 전환율 향상</span> <span class="kpi-value">24.2% → 39.8%</span> <span class="kpi-desc">AI 영상 생성 전환율 개선</span></p>
+<p><span class="kpi-label">A/B 테스트 영상 변환율</span> <span class="kpi-value">14.2% → 19.8%</span> <span class="kpi-desc">장르 기획 콘텐츠 적용, +5.6%p, p = 0.012 (군당 576명)</span></p>
 </div>
-<div class="kpi red">
+<div class="kpi">
 <p><span class="kpi-label">재생성 성공률 개선</span> <span class="kpi-value">18% → 33%</span> <span class="kpi-desc">생성화면 도달 유저의 재생성 성공률 개선</span></p>
 </div>
 <div class="kpi">
-<p><span class="kpi-label">마케팅 효율화</span> <span class="kpi-value">▼ 12% 절감</span> <span class="kpi-desc">비효율 광고 세그먼트 오프타겟 조정 및 매체 통합 CAC 절감</span></p>
-</div>
-<div class="kpi">
-<p><span class="kpi-label">소통 체계 혁신</span> <span class="kpi-value">데이터 기반 소통</span> <span class="kpi-desc">태블로 대시보드를 기반으로 매일 아침 비즈니스/콘텐츠팀 간 가설 검정 회의 진행 환경 조성</span></p>
+<p><span class="kpi-label">마케팅 효율화</span> <span class="kpi-value">CAC 12% 절감</span> <span class="kpi-desc">비효율 광고 세그먼트 조정 및 매체 통합</span></p>
 </div>
 </div>
+<p>태블로 대시보드를 기준으로 매일 아침 비즈니스팀과 콘텐츠팀이 가설 검정 결과를 함께 보는 회의를 운영했습니다.</p>
 
 
 <!-- -->
@@ -691,54 +513,6 @@ window.Quarto = {
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const toggle = window.document.createElement('button');
-      toggle.type = "button";
-      toggle.setAttribute("role", "switch");
-      toggle.setAttribute("aria-checked", "false");
-      toggle.classList.add('top-right');
-      toggle.classList.add('quarto-color-scheme-toggle');
-      toggle.setAttribute("aria-label", "다크 모드 전환");
-      toggle.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      toggle.appendChild(i);
-      // Put the toggle in a landmark of its own, so that landmark navigation
-      // can reach it.
-      //
-      // The container is always a fresh direct child of body, and the toggle is
-      // never moved into page furniture that the theme or the author controls.
-      // The toggle is positioned against the page, so any ancestor that
-      // establishes a containing block captures it: a positioned element or a
-      // grid for position: absolute, and transform, filter, will-change or
-      // contain for position: fixed. A direct child of body has none of these
-      // to inherit, and the shift when one appears is silent and visual.
-      //
-      // ARIA says a document should have at most one banner, and axe reports a
-      // duplicate whether or not the banners carry distinct labels. So use a
-      // header when the page has no banner yet, and a named region otherwise.
-      //
-      // A header is a banner wherever it sits, unless it is inside sectioning
-      // content, so this cannot just look at the children of body: a custom
-      // page layout wraps the title block header in a plain div. An explicit
-      // role="banner" always counts.
-      const sectioning = 'article, aside, main, nav, section, [role="article"], [role="complementary"], [role="main"], [role="navigation"], [role="region"]';
-      const hasBanner = Array.from(
-        window.document.querySelectorAll('header:not([role]), [role="banner"]')
-      ).some(function(el) {
-        return el.hasAttribute("role") || el.closest(sectioning) === null;
-      });
-      const container = window.document.createElement(hasBanner ? "div" : "header");
-      if (hasBanner) {
-        container.setAttribute("role", "region");
-        container.setAttribute("aria-label", "다크 모드 전환");
-      }
-      container.classList.add('quarto-color-scheme-toggle-container');
-      container.appendChild(toggle);
-      window.document.body.appendChild(container);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -1285,10 +1059,10 @@ window.Quarto = {
 <span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>%%| fig-align: center</span>
 <span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>flowchart LR</span>
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>  A[<span class="ot">"</span><span class="st">1 기획</span><span class="ot">"</span>] --&gt; B[<span class="ot">"</span><span class="st">2 인프라 연동</span><span class="ot">"</span>] --&gt; C[<span class="ot">"</span><span class="st">3 베타 출시</span><span class="ot">"</span>] --&gt; D[<span class="ot">"</span><span class="st">4 UA 그로스</span><span class="ot">"</span>]</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  style C fill:<span class="co">#ff1b4a,color:#fff,stroke:#ff1b4a</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  style C fill:<span class="co">#0E5A43,color:#fff,stroke:#0E5A43</span></span>
 <span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="fu">## [Problem Definition]{.tag} 유저 유입량 대비 잔존율(CVR)의 보틀넥 발생</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="fu">## [Problem Definition]{.tag} 가입 후 AI 영상 생성 단계의 이탈 집중</span></span>
 <span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>::: {.lead-line}</span>
 <span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>UA 마케팅 리소스 투입 대비 구독 전환율의 보틀넥 진단</span>
@@ -1349,10 +1123,10 @@ window.Quarto = {
 <span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
 <span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;svg viewBox="0 0 100 60" style="max-width:420px;width:100%"&gt;</span></span>
 <span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;line x1="0" y1="50" x2="100" y2="50" stroke="#E2E8F0" stroke-width="0.5"/&gt;</span></span>
-<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;line x1="60" y1="0" x2="60" y2="60" stroke="#FF1B4A" stroke-width="0.5" stroke-dasharray="1,1"/&gt;</span></span>
-<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;path d="M 10 45 Q 50 40 60 20 T 100 5" fill="none" stroke="#FF1B4A" stroke-width="1.5"/&gt;</span></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;line x1="60" y1="0" x2="60" y2="60" stroke="#0E5A43" stroke-width="0.5" stroke-dasharray="1,1"/&gt;</span></span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;path d="M 10 45 Q 50 40 60 20 T 100 5" fill="none" stroke="#0E5A43" stroke-width="1.5"/&gt;</span></span>
 <span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;text x="50" y="58" font-size="4" fill="#64748B" text-anchor="middle"&gt;대기시간 (초)&lt;/text&gt;</span></span>
-<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;text x="62" y="25" font-size="4" fill="#FF1B4A" font-weight="bold"&gt;임계 영역 (8초)&lt;/text&gt;</span></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;text x="62" y="25" font-size="4" fill="#0E5A43" font-weight="bold"&gt;임계 영역 (8초)&lt;/text&gt;</span></span>
 <span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;text x="5" y="10" font-size="4" fill="#64748B"&gt;이탈율&lt;/text&gt;</span></span>
 <span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/svg&gt;</span></span>
 <span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
@@ -1411,11 +1185,11 @@ window.Quarto = {
 <span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
 <span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;svg viewBox="0 0 100 50" style="max-width:420px;width:100%"&gt;</span></span>
 <span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;path d="M 10 45 C 30 45, 40 10, 50 45" fill="none" stroke="#94A3B8" stroke-width="1"/&gt;</span></span>
-<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;path d="M 30 45 C 50 45, 60 5, 70 45" fill="none" stroke="#FF1B4A" stroke-width="1.5"/&gt;</span></span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;path d="M 30 45 C 50 45, 60 5, 70 45" fill="none" stroke="#0E5A43" stroke-width="1.5"/&gt;</span></span>
 <span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;line x1="42" y1="10" x2="42" y2="45" stroke="#94A3B8" stroke-width="0.5" stroke-dasharray="1,1"/&gt;</span></span>
-<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;line x1="58" y1="5" x2="58" y2="45" stroke="#FF1B4A" stroke-width="0.5" stroke-dasharray="1,1"/&gt;</span></span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;line x1="58" y1="5" x2="58" y2="45" stroke="#0E5A43" stroke-width="0.5" stroke-dasharray="1,1"/&gt;</span></span>
 <span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;text x="35" y="49" font-size="3" fill="#64748B"&gt;A (14.2%)&lt;/text&gt;</span></span>
-<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;text x="65" y="49" font-size="3" fill="#FF1B4A" font-weight="bold"&gt;B (19.8%)&lt;/text&gt;</span></span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;text x="65" y="49" font-size="3" fill="#0E5A43" font-weight="bold"&gt;B (19.8%)&lt;/text&gt;</span></span>
 <span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/svg&gt;</span></span>
 <span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">figcaption</span><span class="dt">&gt;</span>전환율 분포 가시성 (대조군 A vs 실험군 B, 개념도)<span class="dt">&lt;/</span><span class="kw">figcaption</span><span class="dt">&gt;</span></span>
@@ -1432,7 +1206,7 @@ window.Quarto = {
 <span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a>**결론:** 우연에 의한 차이가 아님을 통계적 유의도 수준에서 검증하여 새로운 서비스 시나리오로 정식 롤아웃 의사결정. 관측 차이(+5.6%p)는 설계 MDE(+6.5%p)보다 작아 검정력은 약 71%이므로, 롤아웃 후 모니터링으로 효과 크기를 재확인.</span>
 <span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; 상세 재현 분석은 </span><span class="co">[</span><span class="ot">Report: A/B 테스트 분석 노트</span><span class="co">](../posts/index.qmd)</span><span class="at">에서 확인할 수 있습니다.</span></span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; 상세 재현 분석은 </span><span class="co">[</span><span class="ot">Report: A/B 테스트 분석 노트</span><span class="co">](../posts/2026-11-sample-analysis/index.qmd)</span><span class="at">에서 확인할 수 있습니다.</span></span>
 <span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a><span class="fu">## [Tableau]{.tag} 실시간 비즈니스 그로스 대시보드 구축</span></span>
 <span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a></span>
@@ -1454,18 +1228,17 @@ window.Quarto = {
 <span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a>::: {.kpi-grid}</span>
 <span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a>::: {.kpi .red}</span>
-<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">영상생성 전환율 향상</span><span class="co">]</span>{.kpi-label} <span class="co">[</span><span class="ot">24.2% → 39.8%</span><span class="co">]</span>{.kpi-value} <span class="co">[</span><span class="ot">AI 영상 생성 전환율 개선</span><span class="co">]</span>{.kpi-desc}</span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">A/B 테스트 영상 변환율</span><span class="co">]</span>{.kpi-label} <span class="co">[</span><span class="ot">14.2% → 19.8%</span><span class="co">]</span>{.kpi-value} <span class="co">[</span><span class="ot">장르 기획 콘텐츠 적용, +5.6%p, p = 0.012 (군당 576명)</span><span class="co">]</span>{.kpi-desc}</span>
 <span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>::: {.kpi .red}</span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>::: {.kpi}</span>
 <span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">재생성 성공률 개선</span><span class="co">]</span>{.kpi-label} <span class="co">[</span><span class="ot">18% → 33%</span><span class="co">]</span>{.kpi-value} <span class="co">[</span><span class="ot">생성화면 도달 유저의 재생성 성공률 개선</span><span class="co">]</span>{.kpi-desc}</span>
 <span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>::: {.kpi}</span>
-<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">마케팅 효율화</span><span class="co">]</span>{.kpi-label} <span class="co">[</span><span class="ot">▼ 12% 절감</span><span class="co">]</span>{.kpi-value} <span class="co">[</span><span class="ot">비효율 광고 세그먼트 오프타겟 조정 및 매체 통합 CAC 절감</span><span class="co">]</span>{.kpi-desc}</span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">마케팅 효율화</span><span class="co">]</span>{.kpi-label} <span class="co">[</span><span class="ot">CAC 12% 절감</span><span class="co">]</span>{.kpi-value} <span class="co">[</span><span class="ot">비효율 광고 세그먼트 조정 및 매체 통합</span><span class="co">]</span>{.kpi-desc}</span>
 <span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>::: {.kpi}</span>
-<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">소통 체계 혁신</span><span class="co">]</span>{.kpi-label} <span class="co">[</span><span class="ot">데이터 기반 소통</span><span class="co">]</span>{.kpi-value} <span class="co">[</span><span class="ot">태블로 대시보드를 기반으로 매일 아침 비즈니스/콘텐츠팀 간 가설 검정 회의 진행 환경 조성</span><span class="co">]</span>{.kpi-desc}</span>
-<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>태블로 대시보드를 기준으로 매일 아침 비즈니스팀과 콘텐츠팀이 가설 검정 결과를 함께 보는 회의를 운영했습니다.</span>
 </code></pre></div><button title="클립보드 복사" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
