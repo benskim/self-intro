@@ -6,7 +6,9 @@ toc: false
 code-tools: false
 listing:
   id: reports
-  contents: posts
+  contents:
+    - "posts/*/index.qmd"
+    - "!posts/2026-11-sample-analysis/index.qmd"
   sort: "date desc"
   type: default
   fields: [date, title, subtitle]
@@ -53,7 +55,7 @@ Even without meeting patients directly, helping the people who prescribe, dispen
 ## Reports
 
 ::: {.section-lede}
-I chose the questions from what a data scientist does at a pharmaceutical distribution service such as Baropharm. Each report spends as much space on how far the numbers can be trusted as on the results.
+These reports take on questions that public medicine data can answer. Each report spends as much space on how far the numbers can be trusted as on the results.
 :::
 
 ::: {#reports}

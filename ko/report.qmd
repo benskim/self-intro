@@ -1,7 +1,9 @@
 ---
 title: "Report"
 listing:
-  contents: posts
+  contents:
+    - "posts/*/index.qmd"
+    - "!posts/2026-11-sample-analysis/index.qmd"
   sort: "date desc"
   type: default
   categories: true
