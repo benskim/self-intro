@@ -19,10 +19,10 @@ toc: true
 %%| fig-align: center
 flowchart LR
   A["1 기획"] --> B["2 인프라 연동"] --> C["3 베타 출시"] --> D["4 UA 그로스"]
-  style C fill:#ff1b4a,color:#fff,stroke:#ff1b4a
+  style C fill:#0E5A43,color:#fff,stroke:#0E5A43
 ```
 
-## [Problem Definition]{.tag} 유저 유입량 대비 잔존율(CVR)의 보틀넥 발생
+## [Problem Definition]{.tag} 가입 후 AI 영상 생성 단계의 이탈 집중
 
 ::: {.lead-line}
 UA 마케팅 리소스 투입 대비 구독 전환율의 보틀넥 진단
@@ -83,10 +83,10 @@ flowchart LR
 ```{=html}
 <svg viewBox="0 0 100 60" style="max-width:420px;width:100%">
   <line x1="0" y1="50" x2="100" y2="50" stroke="#E2E8F0" stroke-width="0.5"/>
-  <line x1="60" y1="0" x2="60" y2="60" stroke="#FF1B4A" stroke-width="0.5" stroke-dasharray="1,1"/>
-  <path d="M 10 45 Q 50 40 60 20 T 100 5" fill="none" stroke="#FF1B4A" stroke-width="1.5"/>
+  <line x1="60" y1="0" x2="60" y2="60" stroke="#0E5A43" stroke-width="0.5" stroke-dasharray="1,1"/>
+  <path d="M 10 45 Q 50 40 60 20 T 100 5" fill="none" stroke="#0E5A43" stroke-width="1.5"/>
   <text x="50" y="58" font-size="4" fill="#64748B" text-anchor="middle">대기시간 (초)</text>
-  <text x="62" y="25" font-size="4" fill="#FF1B4A" font-weight="bold">임계 영역 (8초)</text>
+  <text x="62" y="25" font-size="4" fill="#0E5A43" font-weight="bold">임계 영역 (8초)</text>
   <text x="5" y="10" font-size="4" fill="#64748B">이탈율</text>
 </svg>
 ```
@@ -145,11 +145,11 @@ A/B 테스트 수행 결과 분석 및 신뢰도 95% 수준에서의 유의성 �
 ```{=html}
 <svg viewBox="0 0 100 50" style="max-width:420px;width:100%">
   <path d="M 10 45 C 30 45, 40 10, 50 45" fill="none" stroke="#94A3B8" stroke-width="1"/>
-  <path d="M 30 45 C 50 45, 60 5, 70 45" fill="none" stroke="#FF1B4A" stroke-width="1.5"/>
+  <path d="M 30 45 C 50 45, 60 5, 70 45" fill="none" stroke="#0E5A43" stroke-width="1.5"/>
   <line x1="42" y1="10" x2="42" y2="45" stroke="#94A3B8" stroke-width="0.5" stroke-dasharray="1,1"/>
-  <line x1="58" y1="5" x2="58" y2="45" stroke="#FF1B4A" stroke-width="0.5" stroke-dasharray="1,1"/>
+  <line x1="58" y1="5" x2="58" y2="45" stroke="#0E5A43" stroke-width="0.5" stroke-dasharray="1,1"/>
   <text x="35" y="49" font-size="3" fill="#64748B">A (14.2%)</text>
-  <text x="65" y="49" font-size="3" fill="#FF1B4A" font-weight="bold">B (19.8%)</text>
+  <text x="65" y="49" font-size="3" fill="#0E5A43" font-weight="bold">B (19.8%)</text>
 </svg>
 ```
 <figcaption>전환율 분포 가시성 (대조군 A vs 실험군 B, 개념도)</figcaption>
@@ -166,7 +166,7 @@ A/B 테스트 수행 결과 분석 및 신뢰도 95% 수준에서의 유의성 �
 
 **결론:** 우연에 의한 차이가 아님을 통계적 유의도 수준에서 검증하여 새로운 서비스 시나리오로 정식 롤아웃 의사결정. 관측 차이(+5.6%p)는 설계 MDE(+6.5%p)보다 작아 검정력은 약 71%이므로, 롤아웃 후 모니터링으로 효과 크기를 재확인.
 
-> 상세 재현 분석은 [Report: A/B 테스트 분석 노트](../posts/index.qmd)에서 확인할 수 있습니다.
+> 상세 재현 분석은 [Report: A/B 테스트 분석 노트](../posts/2026-11-sample-analysis/index.qmd)에서 확인할 수 있습니다.
 
 ## [Tableau]{.tag} 실시간 비즈니스 그로스 대시보드 구축
 
@@ -188,15 +188,14 @@ A/B 테스트 수행 결과 분석 및 신뢰도 95% 수준에서의 유의성 �
 
 ::: {.kpi-grid}
 ::: {.kpi .red}
-[영상생성 전환율 향상]{.kpi-label} [24.2% → 39.8%]{.kpi-value} [AI 영상 생성 전환율 개선]{.kpi-desc}
+[A/B 테스트 영상 변환율]{.kpi-label} [14.2% → 19.8%]{.kpi-value} [장르 기획 콘텐츠 적용, +5.6%p, p = 0.012 (군당 576명)]{.kpi-desc}
 :::
-::: {.kpi .red}
+::: {.kpi}
 [재생성 성공률 개선]{.kpi-label} [18% → 33%]{.kpi-value} [생성화면 도달 유저의 재생성 성공률 개선]{.kpi-desc}
 :::
 ::: {.kpi}
-[마케팅 효율화]{.kpi-label} [▼ 12% 절감]{.kpi-value} [비효율 광고 세그먼트 오프타겟 조정 및 매체 통합 CAC 절감]{.kpi-desc}
-:::
-::: {.kpi}
-[소통 체계 혁신]{.kpi-label} [데이터 기반 소통]{.kpi-value} [태블로 대시보드를 기반으로 매일 아침 비즈니스/콘텐츠팀 간 가설 검정 회의 진행 환경 조성]{.kpi-desc}
+[마케팅 효율화]{.kpi-label} [CAC 12% 절감]{.kpi-value} [비효율 광고 세그먼트 조정 및 매체 통합]{.kpi-desc}
 :::
 :::
+
+태블로 대시보드를 기준으로 매일 아침 비즈니스팀과 콘텐츠팀이 가설 검정 결과를 함께 보는 회의를 운영했습니다.

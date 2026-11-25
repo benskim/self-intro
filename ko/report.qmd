@@ -10,4 +10,7 @@ listing:
 page-layout: full
 title-block-banner: false
 date-format: "YYYY년 M월 D일"
+code-tools: false
 ---
+
+공개 데이터로 의약품 시장과 건강 서비스를 들여다본 분석 보고서입니다. 각 보고서는 질문, 자료, 검증 방식, 한계를 함께 적습니다.

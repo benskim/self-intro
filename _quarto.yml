@@ -3,7 +3,7 @@ project:
   output-dir: _site
 
 website:
-  title: "Bens Notes"
+  title: "Ben's Notes"
   site-url: "https://benskim.github.io/self-intro/"
   repo-url: "https://github.com/benskim/self-intro"
   navbar:
@@ -33,9 +33,7 @@ execute:
 
 format:
   html:
-    theme:
-      light: cosmo
-      dark: darkly
+    theme: cosmo
     css: styles.css
     include-in-header: lang-switch.html
     toc: true

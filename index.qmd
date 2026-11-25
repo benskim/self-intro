@@ -1,53 +1,103 @@
 ---
 title: ""
+pagetitle: "Ben Kim · 건강 데이터 분석"
 page-layout: full
 toc: false
+code-tools: false
+listing:
+  id: reports
+  contents: ko/posts
+  sort: "date desc"
+  type: default
+  fields: [date, title, subtitle]
+  date-format: "YYYY. M. D."
+  sort-ui: false
+  filter-ui: false
 ---
 
-::: {.badge-vision}
-VISION
+:::: {.home}
+
+::: {.hero}
+::: {.hero-title}
+데이터로 사람들의 건강에 보탬이 되려는 분석가, Ben Kim입니다.
 :::
 
-::: {.hero-quote}
-"제약조건 안에서 가장 저항이 적고 실행가능한 행동을 발견하자"
+::: {.hero-lede}
+스타트업에서 5년 넘게 데이터 분석가, 데이터 사이언티스트, AI 데이터 파트 리드로 일했습니다. 지금은 의사, 약사, 제약사, 유통사처럼 약을 다루는 사람들이 더 나은 결정을 내리도록 공개 의약품 데이터를 분석하고 있습니다.
 :::
 
-**팀리드, 창업팀 리드 경험**을 통해 단순 수식 학습과 코딩 암기를 넘어, 매출 및 서비스 성장 관점에서 기술을 어떻게 학습하고 설계하며 현업 비즈니스에 적용해야 하는지 고민합니다.
-
----
-
-::: {.badge-who}
-WHO ?
-:::
-
-## 비전을 확실한 비즈니스 성과로 실현한다.
-
-::: {.highlight-box}
-::: {.lead-title}
-"서로 다른 현장의 언어를 통합해서 결과를 만드는, [ben kim]{.accent-red}입니다."
-:::
-
-서로 다른 이해관계자 속에서 목표와 요구사항을 정하고, 비즈니스 지표 개선에 필요한 분석 및 데이터 엔지니어링 실전 경험을 바탕으로 **'함께 성장하는 팀'**을 만들겠습니다.
-
-::: {.role-pill-group}
-[ [Data Scientist]{.role-pill} ]{.bi .bi-briefcase-fill}
-[ [AI Data Engineer]{.role-pill} ]{.bi .bi-briefcase-fill}
+::: {.hero-actions}
+[보고서 읽기](#reports-section)
+[경력 보기](ko/experience.qmd)
 :::
 :::
 
-## 소개
+::: {.home-section}
+## 누구를 돕는 분석인가
 
-스타트업 데이터 분석가, 데이터 사이언티스트부터 AI 데이터 파트 리드까지 경험하며, 데이터 기반 의사결정과 재현 가능한 분석·ML 파이프라인을 구축해 왔습니다. 유저 그로스 분석, 비전 모델 학습 데이터 큐레이션(MLOps), 통계·ML 하이브리드 예측 모델링을 다룹니다.
+::: {.section-lede}
+환자를 직접 만나지 않아도, 환자에게 약을 처방하고 건네고 만들고 공급하는 사람들의 결정을 도우면 건강에 보탬이 될 수 있다고 봅니다.
+:::
 
-[경력 보기](ko/experience.qmd) · [프로젝트 보기](ko/projects.qmd)
+```{=html}
+<div class="audience">
+  <div><h3>의사</h3><p>처방하려는 성분의 급여 변경과 공급 변화를 미리 확인합니다.</p></div>
+  <div><h3>약사</h3><p>약값 인하와 급여정지 예고를 미리 알아 재고를 계획합니다.</p></div>
+  <div><h3>제약사</h3><p>자사 성분의 시장 흐름과 경쟁 제품의 가격 변화를 한눈에 봅니다.</p></div>
+  <div><h3>유통사</h3><p>성분별 수요 흐름을 공급 계획과 약국 알림의 기준으로 씁니다.</p></div>
+</div>
+```
+:::
 
-### 주요 기술 스택
-* **언어 & 데이터:** Python, SQL (DuckDB, PostgreSQL, MySQL, BigQuery)
-* **분석 & 시각화:** Pandas, NumPy, SciPy, 통계·시계열 분석, Tableau
-* **그로스 & 로그 분석:** Firebase, Appsflyer, Amplitude, A/B 테스트 설계
-* **ML & MLOps:** Kubeflow, DVC, MLflow, OpenCV, Librosa
-* **워크플로우 & 인프라:** Git, GitHub Actions, Docker, AWS, Quarto
+::: {.home-section #reports-section}
+## 보고서
 
-### 학력 & 자격
-* 연세대학교 응용통계학·경제학 학사
-* TensorFlow Developer Professional Certificate
+::: {.section-lede}
+바로팜 같은 의약품 유통 서비스에서 데이터 사이언티스트가 맡는 일을 기준으로 질문을 골랐습니다. 결과만큼 "이 숫자를 얼마나 믿을 수 있는가"를 자세히 적었습니다.
+:::
+
+::: {#reports}
+:::
+:::
+
+::: {.home-section}
+## 일하는 방식
+
+::: {.principle}
+제약조건 안에서 가장 저항이 적고 실행 가능한 행동을 찾는다.
+:::
+
+복잡한 방법이 단순한 방법보다 낫다는 근거가 없으면 단순한 방법을 고릅니다. 결과를 보기 전에 판정 기준을 먼저 정하고, 불리한 결과도 그대로 적습니다.
+:::
+
+::: {.home-section}
+## 경력
+
+```{=html}
+<ol class="timeline">
+  <li>
+    <span class="when">2021.03 – 2023.11</span>
+    <div><strong>Klleon R&amp;D</strong> · 데이터 파트 리드
+      <p>MLOps 팀과 데이터 파트를 만들고 이끌었습니다. 생성형 AI 앱의 그로스 분석과 A/B 테스트, 학습 데이터 큐레이션을 맡았습니다.
+      <a href="ko/projects/project-a.html">그로스 분석</a> · <a href="ko/projects/project-b.html">데이터 큐레이션</a></p></div>
+  </li>
+  <li>
+    <span class="when">2019.04 – 2020.07</span>
+    <div><strong>Freewheelin</strong> · 데이터 분석가
+      <p>프로모션 성과 대시보드를 만들고, BigQuery로 데이터를 모아 품질 관리를 맡았습니다.</p></div>
+  </li>
+  <li>
+    <span class="when">2017.12 – 2019.03</span>
+    <div><strong>Epopcon</strong> · 데이터 사이언티스트
+      <p>포아송 과정으로 쇼핑몰 상품 재고가 바뀌는 시점을 예측해 수집 주기를 최적화했습니다.
+      <a href="ko/projects/project-c.html">스케줄링 모델</a></p></div>
+  </li>
+</ol>
+```
+
+연세대학교 응용통계학·경제학 학사 · Python, SQL, 통계·시계열 분석, LightGBM, BigQuery, MLflow
+
+[전체 경력](ko/experience.qmd) · [프로젝트](ko/projects.qmd) · [LinkedIn](https://www.linkedin.com/in/benjamin-s-k) · [Medium](https://medium.com/@benskim915) · [GitHub](https://github.com/benskim)
+:::
+
+::::

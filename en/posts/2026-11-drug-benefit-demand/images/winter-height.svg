@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 368" role="img" aria-label="How far winter exceeded summer differed from year to year" font-family="Pretendard, 'Noto Sans CJK KR', 'Apple SD Gothic Neo', sans-serif">
+<rect width="760" height="368" fill="#ffffff"/>
+<text x="20.0" y="28.0" font-size="17" fill="#14231E" text-anchor="start" font-weight="700">How far winter exceeded summer differed from year to year</text><text x="20.0" y="50.0" font-size="13" fill="#5A6B64" text-anchor="start" font-weight="400">Nov-Mar mean ÷ preceding Jun-Aug mean (geometric, amount-weighted). Observed only; cause not examined</text>
+<rect x="200.5" y="76" width="174.0" height="254" fill="#F3F6F4"/>
+<text x="287.5" y="322.0" font-size="12" fill="#5A6B64" text-anchor="middle" font-weight="400">Winters in the COVID-19 period</text>
+<line x1="60" x2="610" y1="295.0" y2="295.0" stroke="#5A6B64"/>
+<text x="52.0" y="299.0" font-size="12" fill="#5A6B64" text-anchor="end" font-weight="400">1×</text>
+<line x1="60" x2="610" y1="225.0" y2="225.0" stroke="#E1EAE5"/>
+<text x="52.0" y="229.0" font-size="12" fill="#5A6B64" text-anchor="end" font-weight="400">1.5×</text>
+<line x1="60" x2="610" y1="155.0" y2="155.0" stroke="#E1EAE5"/>
+<text x="52.0" y="159.0" font-size="12" fill="#5A6B64" text-anchor="end" font-weight="400">2×</text>
+<line x1="60" x2="610" y1="85.0" y2="85.0" stroke="#E1EAE5"/>
+<text x="52.0" y="89.0" font-size="12" fill="#5A6B64" text-anchor="end" font-weight="400">2.5×</text>
+<text x="66.0" y="311.0" font-size="11" fill="#5A6B64" text-anchor="start" font-weight="400">1× = winter equals summer</text>
+<text x="70.0" y="352.0" font-size="12" fill="#5A6B64" text-anchor="middle" font-weight="400">18/19</text>
+<text x="157.0" y="352.0" font-size="12" fill="#5A6B64" text-anchor="middle" font-weight="400">19/20</text>
+<text x="244.0" y="352.0" font-size="12" fill="#5A6B64" text-anchor="middle" font-weight="400">20/21</text>
+<text x="331.0" y="352.0" font-size="12" fill="#5A6B64" text-anchor="middle" font-weight="400">21/22</text>
+<text x="418.0" y="352.0" font-size="12" fill="#5A6B64" text-anchor="middle" font-weight="400">22/23</text>
+<text x="505.0" y="352.0" font-size="12" fill="#5A6B64" text-anchor="middle" font-weight="400">23/24</text>
+<text x="592.0" y="352.0" font-size="12" fill="#5A6B64" text-anchor="middle" font-weight="400">24/25</text>
+<polyline fill="none" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round" points="70.0,181.8 157.0,222.3 244.0,284.7 331.0,104.5 418.0,229.8 505.0,236.2 592.0,260.8"/>
+<circle cx="70.0" cy="181.8" r="4.5" fill="#2a78d6" stroke="#fff" stroke-width="2"/>
+<circle cx="157.0" cy="222.3" r="4.5" fill="#2a78d6" stroke="#fff" stroke-width="2"/>
+<circle cx="244.0" cy="284.7" r="4.5" fill="#2a78d6" stroke="#fff" stroke-width="2"/>
+<circle cx="331.0" cy="104.5" r="4.5" fill="#2a78d6" stroke="#fff" stroke-width="2"/>
+<circle cx="418.0" cy="229.8" r="4.5" fill="#2a78d6" stroke="#fff" stroke-width="2"/>
+<circle cx="505.0" cy="236.2" r="4.5" fill="#2a78d6" stroke="#fff" stroke-width="2"/>
+<circle cx="592.0" cy="260.8" r="4.5" fill="#2a78d6" stroke="#fff" stroke-width="2"/>
+<circle cx="612" cy="252.8" r="4" fill="#2a78d6"/>
+<text x="622.0" y="256.8" font-size="13" fill="#14231E" text-anchor="start" font-weight="600">R05 1.24×</text>
+<text x="331.0" y="94.5" font-size="12" fill="#14231E" text-anchor="middle" font-weight="600">2.36</text>
+<text x="78.0" y="173.8" font-size="12" fill="#14231E" text-anchor="start" font-weight="600">1.81</text>
+<polyline fill="none" stroke="#1baf7a" stroke-width="2" stroke-linejoin="round" points="70.0,224.4 157.0,253.2 244.0,279.7 331.0,224.9 418.0,242.3 505.0,246.6 592.0,261.7"/>
+<circle cx="70.0" cy="224.4" r="4.5" fill="#1baf7a" stroke="#fff" stroke-width="2"/>
+<circle cx="157.0" cy="253.2" r="4.5" fill="#1baf7a" stroke="#fff" stroke-width="2"/>
+<circle cx="244.0" cy="279.7" r="4.5" fill="#1baf7a" stroke="#fff" stroke-width="2"/>
+<circle cx="331.0" cy="224.9" r="4.5" fill="#1baf7a" stroke="#fff" stroke-width="2"/>
+<circle cx="418.0" cy="242.3" r="4.5" fill="#1baf7a" stroke="#fff" stroke-width="2"/>
+<circle cx="505.0" cy="246.6" r="4.5" fill="#1baf7a" stroke="#fff" stroke-width="2"/>
+<circle cx="592.0" cy="261.7" r="4.5" fill="#1baf7a" stroke="#fff" stroke-width="2"/>
+<circle cx="612" cy="269.7" r="4" fill="#1baf7a"/>
+<text x="622.0" y="273.7" font-size="13" fill="#14231E" text-anchor="start" font-weight="600">R03 1.24×</text>
+<polyline fill="none" stroke="#eb6834" stroke-width="2" stroke-linejoin="round" points="70.0,246.5 157.0,271.2 244.0,305.2 331.0,206.1 418.0,249.1 505.0,266.0 592.0,285.0"/>
+<circle cx="70.0" cy="246.5" r="4.5" fill="#eb6834" stroke="#fff" stroke-width="2"/>
+<circle cx="157.0" cy="271.2" r="4.5" fill="#eb6834" stroke="#fff" stroke-width="2"/>
+<circle cx="244.0" cy="305.2" r="4.5" fill="#eb6834" stroke="#fff" stroke-width="2"/>
+<circle cx="331.0" cy="206.1" r="4.5" fill="#eb6834" stroke="#fff" stroke-width="2"/>
+<circle cx="418.0" cy="249.1" r="4.5" fill="#eb6834" stroke="#fff" stroke-width="2"/>
+<circle cx="505.0" cy="266.0" r="4.5" fill="#eb6834" stroke="#fff" stroke-width="2"/>
+<circle cx="592.0" cy="285.0" r="4.5" fill="#eb6834" stroke="#fff" stroke-width="2"/>
+<circle cx="612" cy="293.0" r="4" fill="#eb6834"/>
+<text x="622.0" y="297.0" font-size="13" fill="#14231E" text-anchor="start" font-weight="600">J01 1.07×</text>
+</svg>

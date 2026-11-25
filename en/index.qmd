@@ -1,53 +1,103 @@
 ---
 title: ""
+pagetitle: "Ben Kim · Health data analysis"
 page-layout: full
 toc: false
+code-tools: false
+listing:
+  id: reports
+  contents: posts
+  sort: "date desc"
+  type: default
+  fields: [date, title, subtitle]
+  date-format: "MMM D, YYYY"
+  sort-ui: false
+  filter-ui: false
 ---
 
-::: {.badge-vision}
-VISION
+:::: {.home}
+
+::: {.hero}
+::: {.hero-title}
+I'm Ben Kim, an analyst who wants data to help people stay healthy.
 :::
 
-::: {.hero-quote}
-"Find the path of least resistance that still gets things done within the constraints."
+::: {.hero-lede}
+I spent more than five years at startups as a data analyst, data scientist, and AI data part lead. Now I analyze public medicine data to help the people who handle medicines, such as doctors, pharmacists, drug makers, and distributors, make better decisions.
 :::
 
-Through experience as a team lead and startup team lead, I think beyond memorizing formulas and code: how should technology be learned, designed, and applied in real business, from the perspective of revenue and service growth?
-
----
-
-::: {.badge-who}
-WHO ?
-:::
-
-## Turning vision into concrete business results.
-
-::: {.highlight-box}
-::: {.lead-title}
-"I'm [ben kim]{.accent-red}, who brings together the languages of different fields to deliver results."
-:::
-
-Across stakeholders with different interests, I set goals and requirements, and draw on hands-on analytics and data engineering experience to improve business metrics and build **a team that grows together**.
-
-::: {.role-pill-group}
-[ [Data Scientist]{.role-pill} ]{.bi .bi-briefcase-fill}
-[ [AI Data Engineer]{.role-pill} ]{.bi .bi-briefcase-fill}
+::: {.hero-actions}
+[Read the reports](#reports-section)
+[See experience](experience.qmd)
 :::
 :::
 
-## About
+::: {.home-section}
+## Who the analysis helps
 
-Starting as a data analyst and data scientist at startups and growing into an AI data part lead, I have built data-driven decision-making and reproducible analytics and ML pipelines. My work spans user growth analytics, training-data curation (MLOps) for vision models, and hybrid statistical + ML predictive modeling.
+::: {.section-lede}
+Even without meeting patients directly, helping the people who prescribe, dispense, make, and supply medicines can contribute to people's health.
+:::
 
-[Experience](experience.qmd) · [Projects](projects.qmd)
+```{=html}
+<div class="audience">
+  <div><h3>Doctors</h3><p>See reimbursement and supply changes for an ingredient before prescribing.</p></div>
+  <div><h3>Pharmacists</h3><p>Know about announced price cuts and suspensions early and plan stock.</p></div>
+  <div><h3>Drug makers</h3><p>Follow the market for their ingredients and competitors' price changes in one view.</p></div>
+  <div><h3>Distributors</h3><p>Use ingredient demand trends as a baseline for supply planning and pharmacy alerts.</p></div>
+</div>
+```
+:::
 
-### Tech Stack
-* **Languages & Data:** Python, SQL (DuckDB, PostgreSQL, MySQL, BigQuery)
-* **Analytics & Visualization:** Pandas, NumPy, SciPy, statistics and time-series analysis, Tableau
-* **Growth & Log Analytics:** Firebase, Appsflyer, Amplitude, A/B test design
-* **ML & MLOps:** Kubeflow, DVC, MLflow, OpenCV, Librosa
-* **Workflow & Infrastructure:** Git, GitHub Actions, Docker, AWS, Quarto
+::: {.home-section #reports-section}
+## Reports
 
-### Education & Certification
-* Yonsei University, B.A. in Applied Statistics and Economics
-* TensorFlow Developer Professional Certificate
+::: {.section-lede}
+I chose the questions from what a data scientist does at a pharmaceutical distribution service such as Baropharm. Each report spends as much space on how far the numbers can be trusted as on the results.
+:::
+
+::: {#reports}
+:::
+:::
+
+::: {.home-section}
+## How I work
+
+::: {.principle}
+Find the action with the least resistance that can still be carried out within the constraints.
+:::
+
+If there is no evidence that a complex method beats a simple one, I choose the simple one. I fix decision rules before seeing results, and I report unfavorable results as they are.
+:::
+
+::: {.home-section}
+## Experience
+
+```{=html}
+<ol class="timeline">
+  <li>
+    <span class="when">2021.03 – 2023.11</span>
+    <div><strong>Klleon R&amp;D</strong> · Data part lead
+      <p>Built and led the MLOps team and data part. Ran growth analytics, A/B testing, and training-data curation for a generative AI app.
+      <a href="projects/project-a.html">Growth analytics</a> · <a href="projects/project-b.html">Data curation</a></p></div>
+  </li>
+  <li>
+    <span class="when">2019.04 – 2020.07</span>
+    <div><strong>Freewheelin</strong> · Data analyst
+      <p>Built promotion performance dashboards, centralized data in BigQuery, and managed data quality.</p></div>
+  </li>
+  <li>
+    <span class="when">2017.12 – 2019.03</span>
+    <div><strong>Epopcon</strong> · Data scientist
+      <p>Predicted when online-store inventory changes with a Poisson process to optimize crawling schedules.
+      <a href="projects/project-c.html">Scheduling model</a></p></div>
+  </li>
+</ol>
+```
+
+Yonsei University, B.A. in Applied Statistics and Economics · Python, SQL, statistics and time series, LightGBM, BigQuery, MLflow
+
+[Full experience](experience.qmd) · [Projects](projects.qmd) · [LinkedIn](https://www.linkedin.com/in/benjamin-s-k) · [Medium](https://medium.com/@benskim915) · [GitHub](https://github.com/benskim)
+:::
+
+::::

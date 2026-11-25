@@ -19,10 +19,10 @@ Beta launch and user-acquisition (UA) growth project for a generative-AI B2C app
 %%| fig-align: center
 flowchart LR
   A["1 Planning"] --> B["2 Infra integration"] --> C["3 Beta launch"] --> D["4 UA growth"]
-  style C fill:#ff1b4a,color:#fff,stroke:#ff1b4a
+  style C fill:#0E5A43,color:#fff,stroke:#0E5A43
 ```
 
-## [Problem Definition]{.tag} Retention (CVR) bottleneck versus user inflow
+## [Problem Definition]{.tag} Drop-off concentrated at the AI video generation step after sign-up
 
 ::: {.lead-line}
 Diagnosing the bottleneck between UA marketing spend and conversion
@@ -83,10 +83,10 @@ Data-driven hypotheses on churn drivers from multidimensional user-log analysis
 ```{=html}
 <svg viewBox="0 0 100 60" style="max-width:420px;width:100%">
   <line x1="0" y1="50" x2="100" y2="50" stroke="#E2E8F0" stroke-width="0.5"/>
-  <line x1="60" y1="0" x2="60" y2="60" stroke="#FF1B4A" stroke-width="0.5" stroke-dasharray="1,1"/>
-  <path d="M 10 45 Q 50 40 60 20 T 100 5" fill="none" stroke="#FF1B4A" stroke-width="1.5"/>
+  <line x1="60" y1="0" x2="60" y2="60" stroke="#0E5A43" stroke-width="0.5" stroke-dasharray="1,1"/>
+  <path d="M 10 45 Q 50 40 60 20 T 100 5" fill="none" stroke="#0E5A43" stroke-width="1.5"/>
   <text x="50" y="58" font-size="4" fill="#64748B" text-anchor="middle">Wait time (sec)</text>
-  <text x="62" y="25" font-size="4" fill="#FF1B4A" font-weight="bold">Critical zone (8s)</text>
+  <text x="62" y="25" font-size="4" fill="#0E5A43" font-weight="bold">Critical zone (8s)</text>
   <text x="5" y="10" font-size="4" fill="#64748B">Drop-out</text>
 </svg>
 ```
@@ -145,11 +145,11 @@ Conversion proportions were tested with an independent-samples t-test and a chi-
 ```{=html}
 <svg viewBox="0 0 100 50" style="max-width:420px;width:100%">
   <path d="M 10 45 C 30 45, 40 10, 50 45" fill="none" stroke="#94A3B8" stroke-width="1"/>
-  <path d="M 30 45 C 50 45, 60 5, 70 45" fill="none" stroke="#FF1B4A" stroke-width="1.5"/>
+  <path d="M 30 45 C 50 45, 60 5, 70 45" fill="none" stroke="#0E5A43" stroke-width="1.5"/>
   <line x1="42" y1="10" x2="42" y2="45" stroke="#94A3B8" stroke-width="0.5" stroke-dasharray="1,1"/>
-  <line x1="58" y1="5" x2="58" y2="45" stroke="#FF1B4A" stroke-width="0.5" stroke-dasharray="1,1"/>
+  <line x1="58" y1="5" x2="58" y2="45" stroke="#0E5A43" stroke-width="0.5" stroke-dasharray="1,1"/>
   <text x="35" y="49" font-size="3" fill="#64748B">A (14.2%)</text>
-  <text x="65" y="49" font-size="3" fill="#FF1B4A" font-weight="bold">B (19.8%)</text>
+  <text x="65" y="49" font-size="3" fill="#0E5A43" font-weight="bold">B (19.8%)</text>
 </svg>
 ```
 <figcaption>Conversion distributions, control A vs treatment B (conceptual diagram)</figcaption>
@@ -188,15 +188,14 @@ Quantitative impact of data-driven business improvement
 
 ::: {.kpi-grid}
 ::: {.kpi .red}
-[Video generation conversion lift]{.kpi-label} [24.2% → 39.8%]{.kpi-value} [Improved AI video generation conversion]{.kpi-desc}
+[A/B test video conversion]{.kpi-label} [14.2% → 19.8%]{.kpi-value} [Curated genre content, +5.6 pp, p = 0.012 (576 per group)]{.kpi-desc}
 :::
-::: {.kpi .red}
+::: {.kpi}
 [Regeneration success rate]{.kpi-label} [18% → 33%]{.kpi-value} [Regeneration success among users who reached the generation screen]{.kpi-desc}
 :::
 ::: {.kpi}
-[Marketing efficiency]{.kpi-label} [▼ 12% cost]{.kpi-value} [CAC reduced by retargeting inefficient ad segments and consolidating channels]{.kpi-desc}
-:::
-::: {.kpi}
-[Communication culture]{.kpi-label} [Data-driven]{.kpi-value} [Daily morning hypothesis-testing meetings between business and content teams, based on the Tableau dashboard]{.kpi-desc}
+[Marketing efficiency]{.kpi-label} [CAC down 12%]{.kpi-value} [Retargeted inefficient ad segments and consolidated channels]{.kpi-desc}
 :::
 :::
+
+Business and content teams met every morning to review hypothesis-test results on the Tableau dashboard.

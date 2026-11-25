@@ -1,5 +1,6 @@
 ---
 title: "A/B Test Analysis Note: Genre-Curated Content and Video Conversion"
+subtitle: "An experiment note from funnel diagnosis to sample sizing and significance testing"
 description: "A sample report on the Project A A/B test, organized as funnel diagnosis, sample sizing, and significance testing."
 date: "2026-11-23"
 categories: [Analysis Note, A/B Test, Project A]
