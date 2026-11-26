@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 210" role="img" aria-label="오늘 볼 수 있는 자료는 5개월 전까지라, 다음 달을 보려면 6개월 앞을 맞혀야 한다" font-family="Pretendard, 'Noto Sans CJK KR', 'Apple SD Gothic Neo', sans-serif">
+<rect width="760" height="210" fill="#ffffff"/>
+<text x="20.0" y="28.0" font-size="17" fill="#14231E" text-anchor="start" font-weight="700">오늘 볼 수 있는 자료는 5개월 전까지라, 다음 달을 보려면 6개월 앞을 맞혀야 한다</text><text x="20.0" y="50.0" font-size="13" fill="#5A6B64" text-anchor="start" font-weight="400">예: 오늘이 2025년 11월이면 마지막 공개 자료는 6월, 예측 대상(다음 달)은 12월이다</text>
+<rect x="32.0" y="96" width="54" height="34" rx="4" fill="#6E8079" stroke="#6E8079"/>
+<text x="59.0" y="118.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="600">1월</text>
+<rect x="90.0" y="96" width="54" height="34" rx="4" fill="#6E8079" stroke="#6E8079"/>
+<text x="117.0" y="118.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="600">2월</text>
+<rect x="148.0" y="96" width="54" height="34" rx="4" fill="#6E8079" stroke="#6E8079"/>
+<text x="175.0" y="118.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="600">3월</text>
+<rect x="206.0" y="96" width="54" height="34" rx="4" fill="#6E8079" stroke="#6E8079"/>
+<text x="233.0" y="118.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="600">4월</text>
+<rect x="264.0" y="96" width="54" height="34" rx="4" fill="#6E8079" stroke="#6E8079"/>
+<text x="291.0" y="118.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="600">5월</text>
+<rect x="322.0" y="96" width="54" height="34" rx="4" fill="#6E8079" stroke="#6E8079"/>
+<text x="349.0" y="118.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="600">6월</text>
+<rect x="380.0" y="96" width="54" height="34" rx="4" fill="#F3F6F4" stroke="#A9B9B1" stroke-dasharray="4 3"/>
+<text x="407.0" y="118.0" font-size="13" fill="#5A6B64" text-anchor="middle" font-weight="600">7월</text>
+<rect x="438.0" y="96" width="54" height="34" rx="4" fill="#F3F6F4" stroke="#A9B9B1" stroke-dasharray="4 3"/>
+<text x="465.0" y="118.0" font-size="13" fill="#5A6B64" text-anchor="middle" font-weight="600">8월</text>
+<rect x="496.0" y="96" width="54" height="34" rx="4" fill="#F3F6F4" stroke="#A9B9B1" stroke-dasharray="4 3"/>
+<text x="523.0" y="118.0" font-size="13" fill="#5A6B64" text-anchor="middle" font-weight="600">9월</text>
+<rect x="554.0" y="96" width="54" height="34" rx="4" fill="#F3F6F4" stroke="#A9B9B1" stroke-dasharray="4 3"/>
+<text x="581.0" y="118.0" font-size="13" fill="#5A6B64" text-anchor="middle" font-weight="600">10월</text>
+<rect x="612.0" y="96" width="54" height="34" rx="4" fill="#F3F6F4" stroke="#A9B9B1" stroke-dasharray="4 3"/>
+<text x="639.0" y="118.0" font-size="13" fill="#5A6B64" text-anchor="middle" font-weight="600">11월</text>
+<rect x="670.0" y="96" width="54" height="34" rx="4" fill="#2a78d6" stroke="#2a78d6"/>
+<text x="697.0" y="118.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="600">12월</text>
+<line x1="639.0" x2="639.0" y1="76" y2="94" stroke="#14231E" stroke-width="1.5"/>
+<path d="M634.0 87 L644.0 87 L639.0 94 Z" fill="#14231E"/>
+<text x="639.0" y="72.0" font-size="12" fill="#14231E" text-anchor="middle" font-weight="700">오늘</text>
+<path d="M34.0 138 v6 H374.0 v-6" fill="none" stroke="#6E8079" stroke-width="1.5"/>
+<text x="204.0" y="162.0" font-size="13" fill="#14231E" text-anchor="middle" font-weight="600">공개된 자료로 학습·예측</text>
+<text x="204.0" y="180.0" font-size="12" fill="#5A6B64" text-anchor="middle" font-weight="400">마지막 관측월 a = 6월</text>
+<path d="M382.0 138 v6 H664.0 v-6" fill="none" stroke="#A9B9B1" stroke-width="1.5"/>
+<text x="523.0" y="162.0" font-size="13" fill="#14231E" text-anchor="middle" font-weight="600">아직 공개 전 (약 5개월)</text>
+<text x="523.0" y="180.0" font-size="12" fill="#5A6B64" text-anchor="middle" font-weight="400">예측에 쓸 수 없음</text>
+<path d="M672.0 138 v6 H722.0 v-6" fill="none" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="697.0" y="162.0" font-size="13" fill="#14231E" text-anchor="middle" font-weight="600">예측 대상</text>
+<text x="697.0" y="180.0" font-size="12" fill="#5A6B64" text-anchor="middle" font-weight="400">a + 6</text>
+</svg>
