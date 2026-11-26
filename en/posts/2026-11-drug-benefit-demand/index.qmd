@@ -34,7 +34,7 @@ The analysis uses two public monthly datasets to answer three questions: Will a 
 
 ## Demand forecasting six months ahead
 
-**Why six months:** usage statistics are published about five months late. The latest month available today is five months back, so forecasting "next month" means forecasting six months past the data.
+**Why six months:** usage statistics are published about five months late. The latest month available today is five months back, so forecasting "next month" means forecasting six months past the data. In other words, "six months ahead" is not the distant future: it is **next month** as seen on the day of the forecast.
 
 ![Publication lag and the target month. The target is six months after the last observed month a.](images/lag-timeline.svg){fig-alt="Twelve cells from January to December 2025. January to June are published (last observed month a = June); July to November are not yet published and cannot be used; today is November; the target is December (a + 6)."}
 
@@ -59,6 +59,7 @@ Four methods were compared on 501 ingredients (93.8% of outpatient claimed amoun
 
 - The share of the gain over last year was 40% in 2023, 31% in 2024 and 29% in 2025; the first half of 2023 alone was 23%.
 - Against ETS the months were mixed; in the first half of 2023 machine learning was 0.13 pp worse.
+- The model's COVID-19 indicators cover only 2020–2021. Forecasts for 2023, whose base year is the incompletely recovered 2022, are not flagged (see "Model specification"). In the previous edition (2026-11-19), most of the machine learning gain came from this period; in this edition it was 23%.
 - The figure uses a slightly simplified set of ingredient-months, so its totals differ a little from the official values (−3.30 pp, −0.65 pp).
 
 ### Does reimbursement-list price information help?
@@ -160,10 +161,19 @@ The analysis does more than measure error: prescription volume varies in differe
 
 ### Forecasting approach
 
-- **Direct six-month forecast:** from the last observed month a, the month six months later is forecast in one step, not by chaining one-month forecasts.
-- **Retrained at every forecast origin:** the model is refit from scratch at each of the 36 origins, with a separate model for each horizon (1 to 12 months).
+- **"Six months ahead" = next month:** if the last observed month is a, the forecast is made in month a + 5, when that month's data is published, and the target a + 6 is next month as of that day. The main results use this six-month model; the 1–12-month models are used only for the horizon comparison figure.
+- **Direct six-month forecast:** from a, the month six months later is forecast in one step, not by chaining one-month forecasts.
+- **Retrained at every forecast origin:** the model is refit from scratch at each of the 36 origins (target months 2023-01 to 2025-12, last observed months 2022-07 to 2025-06), with a separate model for each horizon. Each origin trains on 17,535 to 33,897 rows.
 - **One model for all 501 ingredients:** the target is the year-on-year log change, log y(t) − log y(t−12), which removes scale differences between ingredients. Forecasts are converted back as y(t−12) × exp(predicted change).
 - **No ingredient ID:** ingredients are told apart only by the features below (size, class, own recent history).
+- **Training and evaluation weight things differently:** training minimizes absolute error in log change with every row weighted equally, so small and large ingredients count the same. The evaluation metric (WAPE) puts more weight on ingredients with a large amount share. Leaving out training weights was decided before results were seen.
+- **No reimbursement-list information:** the main model's features contain no list price or listing information. Results with that information added are reported separately under "Does reimbursement-list price information help?".
+
+### Rows that cannot be forecast, and zero months
+
+- **Rows without features are not filled:** if any feature is undefined for a target ingredient-month, no machine learning forecast is made, and no other method fills the gap.
+- **All four methods are scored on the same rows:** the evaluation set contains only ingredient-months with a usable actual and forecasts from all four methods. Of 16,591 ingredient-months with a usable actual in the evaluation period, 105 (0.6%) were dropped because at least one method had no forecast, leaving 16,486 scored identically for all four.
+- **There were no zero months:** zero-volume months were set to be excluded as unusable, but none occurred among the 501 ingredients' observed months in 2018–2025, so the log change is always defined for observed months. What drops out are suppressed months and 13 first months after a suppressed gap.
 
 ### Features and importance
 
@@ -172,12 +182,12 @@ All features use data up to the last observed month a only, so the five unpublis
 | Feature | Meaning |
 |---|---|
 | g3 | Year-on-year log change of the last three months' total |
-| seas | Same month 12 months earlier ÷ mean of the last 12 months (log), seasonal level |
+| seas | Same month 12 months earlier ÷ mean of the 12 months ending at a (log), seasonal level |
 | g1 | Year-on-year log change of the last observed month |
-| mon | Calendar month of the target (1–12) |
-| dwork | Workday difference between the target month and 12 months earlier |
-| cls2 | First two digits of the domestic drug-efficacy class |
-| size | Last 12 months' claimed amount (log), ingredient size |
+| mon | Calendar month of the target (1–12), categorical |
+| dwork | Workday difference between the target month and 12 months earlier. Workdays exclude weekends and public holidays, so months with Lunar New Year or Chuseok have fewer workdays and partly overlap with the holiday flags below |
+| cls2 | First two digits of the domestic drug-efficacy class, categorical (the code number is not used as an order) |
+| size | Claimed amount over the 12 months ending at a (log), ingredient size. Amount is used because volume units differ by ingredient |
 | cov_base | Whether the same month 12 months earlier fell in the COVID-19 period (2020-01 to 2021-12) |
 | cov_anchor | Whether the last observed month fell in the COVID-19 period |
 | lunar_b | Lunar New Year or Chuseok in the same month 12 months earlier |
@@ -185,7 +195,8 @@ All features use data up to the last observed month a only, so the five unpublis
 
 ![Feature importance of the main machine learning model. Bars show training gain; dots show prediction contribution.](images/feature-importance.svg){fig-alt="Training gain and prediction contribution for 11 features. Last-3-month growth 37.6% and 27.4%; seasonal level 15.3% and 22.9%; last-month growth 12.0% and 19.0%; calendar month 11.0% and 6.4%; workday difference 10.2% and 8.5%; drug class 7.4% and 4.9%; ingredient size 1.9% and 3.0%; base month in COVID 1.8% and 4.0%; last month in COVID 1.7% and 1.8%; holiday 12 months before 0.9% and 2.0%; holiday in target month 0.2% and 0.3%."}
 
-- **Training gain** is each feature's share of the loss reduction from tree splits, averaged over the 36 origins. **Prediction contribution** is each feature's share of the mean absolute SHAP value on the actual forecast rows.
+- These are importances for the main six-month model, averaged over the 36 origins (target months 2023-01 to 2025-12).
+- **Training gain** is each feature's share of the loss reduction from tree splits. **Prediction contribution** is each feature's share of the mean absolute SHAP value over the ingredient rows of each origin's target month that had all features defined. SHAP values are in the target's unit, log change.
 - **Recent growth (g3, g1) and seasonal level (seas) account for 65% of training gain.** The ranking barely changed across origins; g3's share ranged from 35% to 41%. The two COVID-19 indicators together account for 3.5%.
 - Importance shows what the model relied on, not what drives prescriptions.
 - Computed after the fact by refitting the locked training code at all 36 origins; the refitted forecasts matched the main results to within a relative difference of 3×10⁻¹⁶.
@@ -194,6 +205,7 @@ All features use data up to the last observed month a only, so the five unpublis
 
 - **Training window:** 2018-01 to the last observed month. Features need 24 months of history, so for the six-month horizon training target months start in 2019-09.
 - **COVID-19 period:** kept in, flagged by the two indicator features above.
+- **What the COVID-19 flags miss:** they cover only 2020-01 to 2021-12. Because the target is the change from 12 months earlier, an unusual base year inflates the target itself, and 2023 forecasts whose base year is the incompletely recovered 2022 are not flagged. This period is examined in "Which years the gain came from".
 - **LightGBM settings (fixed, no tuning):** L1 (absolute error) loss, 500 trees, learning rate 0.03, 15 leaves, minimum 100 samples per leaf, no depth limit, no row or feature subsampling, L2 regularization 1, no row weights, deterministic mode, seed 20261114.
 
 ### Comparison methods
