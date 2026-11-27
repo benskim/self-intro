@@ -1,6 +1,6 @@
 ---
-title: "How many days ahead can a pharmacy know about a price cut?"
-subtitle: "Down to 1-won cuts: checking what pharmacists say against the public reimbursement list and government notices"
+title: "Only in 2024 could most price cuts be seen a month ahead"
+subtitle: "Pharmacies reading the reimbursement list mostly learn of cuts in the month they take effect, and a fifth of the January 2026 cuts were 1 won"
 description: "English summary. A pharmacist said cuts become known only days ahead, so checking stock is abandoned, and 1-won cuts are absorbed as a loss. HIRA reimbursement lists 2022–2026 and Ministry of Health and Welfare notices are used to check when cuts can be known, how small they are, and whether announced cuts can be trusted."
 date: "2026-11-27"
 categories: [Medicine data, Reimbursement list, Public medicine data series]
