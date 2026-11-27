@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Ben Kim">
+<meta name="description" content="심평원 급여목록과 건보공단 의약품 사용통계로 약값·급여 변동의 예고와 성분별 처방 수요를 본 시리즈의 안내 글입니다. 각 글이 무엇에 답하는지와 다음 분석 계획을 정리했습니다.">
+
+<title>공개 의약품 데이터 시리즈: 약값 변동과 처방 수요 – Ben’s Notes</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-cb61c712ca1a7fe70a83faed8e4da2d7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "일치 없음",
+    "search-matching-documents-text": "일치된 문서",
+    "search-copy-link-title": "검색 링크 복사",
+    "search-hide-matches-text": "추가 검색 결과 숨기기",
+    "search-more-match-text": "추가 검색결과",
+    "search-more-matches-text": "추가 검색결과",
+    "search-clear-button-title": "제거",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "취소",
+    "search-submit-button-title": "검색",
+    "search-label": "검색"
+  }
+}</script>
+<script>
+/* Keep navigation and language switching at the repository root. */
+document.addEventListener("DOMContentLoaded", function () {
+  try {
+    var meta = document.querySelector('meta[name="quarto:offset"]');
+    var root = new URL(meta ? meta.content : "./", location.href).pathname;
+    if (root.slice(-1) !== "/") root += "/";
+    var rel = location.pathname.slice(root.length);
+    if (rel === "" || rel.slice(-1) === "/") rel += "index.html";
+    var isKo = rel.indexOf("ko/") === 0;
+    var isEn = rel.indexOf("en/") === 0;
+    var page = isKo ? rel.slice(3) : isEn ? rel.slice(3) : rel;
+    var ko = "ko/" + page;
+    var en = "en/" + page;
+    var leftNav = {
+      "About": "index",
+      "Report": "report",
+      "Projects": "projects",
+      "Experience": "experience"
+    };
+    document.querySelectorAll(".navbar a[href]").forEach(function (a) {
+      var label = a.textContent.trim();
+      if (label === "KO") {
+        a.href = root + ko + location.hash;
+        if (isKo) a.classList.add("active");
+        return;
+      }
+      if (label === "EN") {
+        a.href = root + en + location.hash;
+        if (isEn) a.classList.add("active");
+        return;
+      }
+      if (Object.prototype.hasOwnProperty.call(leftNav, label)) {
+        a.href = root + (isEn ? "en/" : "ko/") + leftNav[label] + ".html";
+      }
+    });
+  } catch (e) {}
+});
+</script>
+
+
+<link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="웹사이트">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">Ben’s Notes</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="탐색 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../ko/report.html"> 
+<span class="menu-text">Report</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../ko/projects.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../ko/experience.html"> 
+<span class="menu-text">Experience</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../ko/index.html"> 
+<span class="menu-text">KO</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../en/index.html"> 
+<span class="menu-text">EN</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/benskim"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+            <div id="quarto-search" class="" title="검색"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">목차</h2>
+   
+  <ul class="collapse">
+  <li><a href="#why" id="toc-why" class="nav-link active" data-scroll-target="#why">왜 이 질문인가</a></li>
+  <li><a href="#list-price" id="toc-list-price" class="nav-link" data-scroll-target="#list-price">두 자료를 합치면 나아지나</a></li>
+  <li><a href="#쓴-자료" id="toc-쓴-자료" class="nav-link" data-scroll-target="#쓴-자료">쓴 자료</a></li>
+  <li><a href="#읽을-때의-약속" id="toc-읽을-때의-약속" class="nav-link" data-scroll-target="#읽을-때의-약속">읽을 때의 약속</a></li>
+  <li><a href="#next" id="toc-next" class="nav-link" data-scroll-target="#next">다음 분석</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content" tabindex="-1">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">공개 의약품 데이터 시리즈: 약값 변동과 처방 수요</h1>
+<p class="subtitle lead">급여목록과 의약품 사용통계로 묻는 두 질문, 그리고 두 자료를 합쳐 본 결과</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">의약품 데이터</div>
+    <div class="quarto-category">공개 의약품 데이터 시리즈</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    심평원 급여목록과 건보공단 의약품 사용통계로 약값·급여 변동의 예고와 성분별 처방 수요를 본 시리즈의 안내 글입니다. 각 글이 무엇에 답하는지와 다음 분석 계획을 정리했습니다.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">저자</div>
+    <div class="quarto-title-meta-contents">
+             <p>Ben Kim </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">공개</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2026년 11월 27일</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>공개 의약품 데이터 두 가지로 약국과 제약·유통 실무가 묻는 질문에 답해 보는 시리즈다. 2026-11-24에 한 편으로 냈던 「급여 변동과 수요 모니터링」을 2026-11-27에 아래처럼 나눴다.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>질문</th>
+<th>자료</th>
+<th>읽을 글</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>다음 달 약값이나 급여가 바뀌는가. 비고의 예고는 얼마나 실현되나</td>
+<td>심평원 급여목록 2022-01 ~ 2025-12</td>
+<td><a href="../../../ko/posts/2026-11-benefit-change-lead/index.html">약값 인하 예고, 얼마나 믿을 수 있나</a></td>
+</tr>
+<tr class="even">
+<td>성분별 처방 수요는 어느 쪽으로 가나. 6개월 앞을 얼마나 맞히나</td>
+<td>건보공단 의약품 사용통계 2018-01 ~ 2025-12</td>
+<td><a href="../../../ko/posts/2026-11-drug-demand-forecast/index.html">성분 처방 수요, 6개월 앞을 얼마나 맞힐 수 있나</a></td>
+</tr>
+<tr class="odd">
+<td>그 숫자를 어떻게 검증했나</td>
+<td>같은 자료</td>
+<td><a href="../../../ko/posts/2026-11-drug-demand-tech-note/index.html">수요 예측 기술 노트</a></td>
+</tr>
+</tbody>
+</table>
+<section id="why" class="level2">
+<h2 class="anchored" data-anchor-id="why">왜 이 질문인가</h2>
+<p>출발점은 약국이 겪는 고충이다. 약이 약국을 지나가는 순서대로 나누면 네 단계가 된다.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>단계</th>
+<th>고충</th>
+<th>공개 데이터로 다룰 수 있나</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A. 들여오기</td>
+<td>필요한 약을 제때 구하지 못한다(품절, 배분, 배송 차질)</td>
+<td>일부. 대체할 제품이 적은 성분, 공급 불안의 신호</td>
+</tr>
+<tr class="even">
+<td>B. 쌓아두기</td>
+<td>사둔 약의 가치가 약가 인하와 불용재고로 깎인다. 2027년부터 기등재약 재평가로 더 나빠질 전망이다</td>
+<td><strong>가장 많이.</strong> 무엇이 언제 인하되는지</td>
+</tr>
+<tr class="odd">
+<td>C. 내주기</td>
+<td>장기처방이 늘어도 조제료는 고정이고 소모품 부담이 커진다</td>
+<td>약하게. 처방 건당 수량 추세</td>
+</tr>
+<tr class="even">
+<td>D. 벌기</td>
+<td>창고형 약국 인근 매출이 줄고 약국당 조제료가 줄었다</td>
+<td>없음. 약국·상권 단위 자료가 없다</td>
+</tr>
+</tbody>
+</table>
+<p>처방, 약가, 생산은 바꿀 수 없다. 공개 데이터가 줄일 수 있는 것은 <strong>약국이 늦게 알거나 혼자 대조하느라 생기는 손실</strong>이고, A·B단계가 여기에 해당한다. 다만 공개 데이터로는 “무엇이 언제 바뀌는가”까지만 답할 수 있다. “그래서 이 약국이 얼마를 잃는가”는 약국의 구매·재고 기록이 있어야 답할 수 있다. 고충의 근거는 대부분 약업 전문지 보도와 약사 단체 설문이라, 응답이 피해 쪽으로 쏠렸을 수 있다.</p>
+</section>
+<section id="list-price" class="level2">
+<h2 class="anchored" data-anchor-id="list-price">두 자료를 합치면 나아지나</h2>
+<p><strong>급여목록의 가격 정보를 수요 예측에 넣어도 나아졌다는 근거는 없었다.</strong> 예측 시점에 목록에 보이던 가격 변화를 넣으면 성분 단가 예측 오차가 0.0186 대 0.0217로 약 15% 작았지만, p = 0.252로 우연과 구분되지 않았고 가격 변화 시점을 일부러 어긋나게 넣은 예측과도 구분되지 않았다. 처방량 예측에서는 일부러 넣은 20% 효과도 찾지 못해, 이 시험으로는 효과를 잴 수 없었다. 목록 가격이 바뀐 만큼 실제 청구 단가가 바뀐 비율도 중앙값 0.55에 그쳤다. 그래서 이 시리즈는 급여목록을 가격·급여정지 알림에 쓰고, 수요는 사용통계로 본다. 판정 기준은 결과를 보기 전에 정했고, 표는 <a href="../../../ko/posts/2026-11-drug-demand-tech-note/index.html#list-price-test">기술 노트</a>에 있다.</p>
+<p>2026-06부터는 약가유연계약이 적용된 일부 제품의 목록 금액이 실제 청구 기준과 다를 수 있다(목록에는 표시 금액이 적히고, 별도로 합의한 금액은 인가된 요양기관·청구 프로그램 업체만 본다). 이 시리즈의 숫자는 2025년까지라 영향이 없다. 2026 이후로 늘릴 때는 해당 제품을 빼고, 뺀 비중을 함께 적는다.</p>
+</section>
+<section id="쓴-자료" class="level2">
+<h2 class="anchored" data-anchor-id="쓴-자료">쓴 자료</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>급여목록</th>
+<th>의약품 사용통계</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>내는 곳</td>
+<td>건강보험심사평가원(심평원)</td>
+<td>국민건강보험공단(건보공단)</td>
+</tr>
+<tr class="even">
+<td>보여주는 것</td>
+<td><strong>가격</strong>: 급여 적용 약, 상한가격, 비고, 약효분류 번호</td>
+<td><strong>처방량</strong>: 성분별 처방 수량·청구건수·청구금액</td>
+</tr>
+<tr class="odd">
+<td>단위</td>
+<td>제품</td>
+<td>성분(주성분 코드 4자리) × 월</td>
+</tr>
+<tr class="even">
+<td>쓴 기간</td>
+<td>2022-01 ~ 2025-12 (48개월)</td>
+<td>2018-01 ~ 2025-12, 잠정 평가용 2026-01 ~ 06</td>
+</tr>
+<tr class="odd">
+<td>공개 시차</td>
+<td>매달 1일 기준 파일</td>
+<td>약 4 ~ 5개월 뒤 공개</td>
+</tr>
+</tbody>
+</table>
+<p>분류군 분석에는 2026 약가정보의 ATC 분류 코드를 속성으로만 더했다. 모두 공개 데이터다.</p>
+<p><strong>이 자료에 없는 것</strong>: 제품별 판매량, 약국별 구매·재고, 도매 유통, 급여 삭제 예정일. 이것들에 대한 결론은 이 시리즈에 없다.</p>
+</section>
+<section id="읽을-때의-약속" class="level2">
+<h2 class="anchored" data-anchor-id="읽을-때의-약속">읽을 때의 약속</h2>
+<ul>
+<li>비고의 미래 날짜는 변화가 아니라 <strong>예고</strong>다. “인하 예고가 있었다”, “실현율 99.7%”처럼 쓰고 “인하됐다”라고 쓰지 않는다.</li>
+<li>가격 변화와 처방량의 관계는 전후 변화와 연관으로만 본다. “인하 때문에 처방이 늘었다” 같은 인과 주장은 하지 않는다.</li>
+<li>수요 예측은 전국 성분 단위다. 특정 약국·제품의 발주량이 아니다.</li>
+<li>절감액·장려금 금액은 계산하지 않는다.</li>
+</ul>
+</section>
+<section id="next" class="level2">
+<h2 class="anchored" data-anchor-id="next">다음 분석</h2>
+<p>위 고충 순위에, 정보로 줄일 수 있는 정도와 앞으로의 추세(2027 기등재약 재평가)를 더해 순서를 정했다. “지금 가능”은 이미 가진 공개 자료로 할 수 있다는 뜻이다.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>순서</th>
+<th>분석</th>
+<th>고충</th>
+<th>왜</th>
+<th>지금 할 수 있나</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><strong>인하를 얼마나 미리 알 수 있나</strong>: 인하를 비고 예고, 일괄 인하, 그 밖의 비고 없는 인하로 나누고, 급여목록만 보는 사람이 시행 1개월 이상 전에 알 수 있는 비율과 인하 폭(원·비율)을 본다</td>
+<td>B</td>
+<td>“시행 며칠 전에야 알아 대조를 포기한다”, “1원 단위 인하는 손해를 안고 간다”는 현장의 말에 숫자로 답한다</td>
+<td>지금 가능. <a href="../../../ko/posts/2026-11-benefit-change-lead/index.html">급여 변동 편</a>의 다음 판이다. 급여목록 2026-01 ~ 11을 확장 구간으로 따로 더한다</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><strong>재평가 노출 지도</strong>: 2023-09 제네릭 일괄 재평가에서 어떤 조건의 제품이 인하됐는지 정리하고, 지금 목록에서 비슷한 조건의 제품이 얼마나 되는지 센다</td>
+<td>B</td>
+<td>가장 빠르게 나빠질 고충이다</td>
+<td>지금 가능(기술 통계). 일괄 재평가가 사실상 한 번뿐이라 예측 모델은 만들지 않는다</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td><strong>공급 취약 성분 지도</strong>: 성분별 급여 제품·업체 수의 추이, 목록 이탈, 급여정지, 상한가 인상을 모아 대체할 제품이 적은 성분을 찾는다</td>
+<td>A</td>
+<td>품절 고충 가운데 공개 정보로 다룰 수 있는 부분은 “대체 가능성”이다</td>
+<td>지도는 지금 가능. 실제 품절과 맞춰 보려면 공급중단·부족 보고 자료가 필요하다. 그전까지는 “취약 후보”로만 쓴다</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><strong>목록 이탈·급여정지와 불용재고 위험</strong>: 빠지거나 정지되기 전에 신호가 있었는지, 그때 같은 성분의 대체 제품이 몇 개였는지 본다</td>
+<td>B</td>
+<td>반품이 막히는 재고가 생기는 경로를 미리 알릴 수 있다</td>
+<td>지금 가능. 급여 삭제 예정일은 자료에 없다</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td><strong>품절 보도 품목 사례</strong>: 보도된 품절 품목의 성분 처방량이 품절 전후로 급변했는지 본다</td>
+<td>A</td>
+<td>현장의 고충과 데이터를 잇는 사례가 된다</td>
+<td>조건부. 업체가 2곳 이하인 성분은 사용통계에서 비공개라 안 보일 수 있다. 3번의 검증 사례로 붙인다</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td><strong>겨울 호흡기·항생제 수요의 선행 신호</strong>: 검색 지수, 소아·청소년 진료 흐름, 달력이 처방 증가보다 앞서 움직이는지 본다</td>
+<td>A</td>
+<td>해열제·항생제 품절이 겨울에 몰렸고, 수요 예측 오차가 가장 큰 군과 겹친다</td>
+<td>진행 중. 결과는 선행 상관이며 원인이나 품절 자체의 예측이 아니다</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td><strong>장기처방 추세</strong>: 청구 1건당 처방량을 시도·요양기관·연령별로 본다</td>
+<td>C</td>
+<td>장기처방이 재고와 소모품 부담을 함께 키운다</td>
+<td>지금 가능하지만 지표가 약하다. 처방량이 투약 일수가 아니라 제품 개수 단위다</td>
+</tr>
+</tbody>
+</table>
+<p>창고형 약국 영향과 약국당 조제료(D단계)는 약국·상권 단위 자료가 없어 다루지 않는다.</p>
+<p><strong>그 밖의 후보</strong>: 대체조제 목록 변화 전후의 성분 평균 단가, 특허만료와 제네릭 진입 전후의 성분 시장, 시도·요양기관 종류별 처방 흐름, 함량·제형 합산이 예측 오차에 주는 영향, 제품별 변화 기록표로 만든 약국 알림 한 건의 화면 예시.</p>
+<p>분석 코드는 사전등록 문서의 커밋 시각, 예측 파일 지문과 함께 공개할 예정이다.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "복사완료!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "복사완료!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/benskim\.github\.io\/self-intro\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"스크롤 가능한 코드","output":"스크롤 가능한 출력"};
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

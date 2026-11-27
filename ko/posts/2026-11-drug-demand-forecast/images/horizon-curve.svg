@@ -34,20 +34,20 @@
 <circle cx="551.3" cy="109.5" r="3.2" fill="#A9B9B1"><title>작년 같은 달 값, 11개월 앞: 9.05%</title></circle>
 <circle cx="600.0" cy="105.8" r="3.2" fill="#A9B9B1"><title>작년 같은 달 값, 12개월 앞: 9.14%</title></circle>
 <text x="610" y="109.8" fill="#5A6B64" font-weight="400">작년 같은 달 값 9.1%</text>
-<polyline fill="none" stroke="#5F7A6F" stroke-width="2" points="64.0,290.8 112.7,245.0 161.5,226.9 210.2,213.4 258.9,217.6 307.6,205.3 356.4,187.7 405.1,181.4 453.8,178.9 502.5,160.0 551.3,159.3 600.0,141.7"/>
-<circle cx="64.0" cy="290.8" r="3.2" fill="#5F7A6F"><title>ETS, 1개월 앞: 4.70%</title></circle>
-<circle cx="112.7" cy="245.0" r="3.2" fill="#5F7A6F"><title>ETS, 2개월 앞: 5.80%</title></circle>
-<circle cx="161.5" cy="226.9" r="3.2" fill="#5F7A6F"><title>ETS, 3개월 앞: 6.23%</title></circle>
-<circle cx="210.2" cy="213.4" r="3.2" fill="#5F7A6F"><title>ETS, 4개월 앞: 6.56%</title></circle>
-<circle cx="258.9" cy="217.6" r="3.2" fill="#5F7A6F"><title>ETS, 5개월 앞: 6.46%</title></circle>
-<circle cx="307.6" cy="205.3" r="3.2" fill="#5F7A6F"><title>ETS, 6개월 앞: 6.75%</title></circle>
-<circle cx="356.4" cy="187.7" r="3.2" fill="#5F7A6F"><title>ETS, 7개월 앞: 7.18%</title></circle>
-<circle cx="405.1" cy="181.4" r="3.2" fill="#5F7A6F"><title>ETS, 8개월 앞: 7.33%</title></circle>
-<circle cx="453.8" cy="178.9" r="3.2" fill="#5F7A6F"><title>ETS, 9개월 앞: 7.39%</title></circle>
-<circle cx="502.5" cy="160.0" r="3.2" fill="#5F7A6F"><title>ETS, 10개월 앞: 7.84%</title></circle>
-<circle cx="551.3" cy="159.3" r="3.2" fill="#5F7A6F"><title>ETS, 11개월 앞: 7.86%</title></circle>
-<circle cx="600.0" cy="141.7" r="3.2" fill="#5F7A6F"><title>ETS, 12개월 앞: 8.28%</title></circle>
-<text x="610" y="135.7" fill="#5A6B64" font-weight="500">ETS 8.3%</text>
+<polyline fill="none" stroke="#eb6834" stroke-width="2" points="64.0,290.8 112.7,245.0 161.5,226.9 210.2,213.4 258.9,217.6 307.6,205.3 356.4,187.7 405.1,181.4 453.8,178.9 502.5,160.0 551.3,159.3 600.0,141.7"/>
+<circle cx="64.0" cy="290.8" r="3.2" fill="#eb6834"><title>ETS, 1개월 앞: 4.70%</title></circle>
+<circle cx="112.7" cy="245.0" r="3.2" fill="#eb6834"><title>ETS, 2개월 앞: 5.80%</title></circle>
+<circle cx="161.5" cy="226.9" r="3.2" fill="#eb6834"><title>ETS, 3개월 앞: 6.23%</title></circle>
+<circle cx="210.2" cy="213.4" r="3.2" fill="#eb6834"><title>ETS, 4개월 앞: 6.56%</title></circle>
+<circle cx="258.9" cy="217.6" r="3.2" fill="#eb6834"><title>ETS, 5개월 앞: 6.46%</title></circle>
+<circle cx="307.6" cy="205.3" r="3.2" fill="#eb6834"><title>ETS, 6개월 앞: 6.75%</title></circle>
+<circle cx="356.4" cy="187.7" r="3.2" fill="#eb6834"><title>ETS, 7개월 앞: 7.18%</title></circle>
+<circle cx="405.1" cy="181.4" r="3.2" fill="#eb6834"><title>ETS, 8개월 앞: 7.33%</title></circle>
+<circle cx="453.8" cy="178.9" r="3.2" fill="#eb6834"><title>ETS, 9개월 앞: 7.39%</title></circle>
+<circle cx="502.5" cy="160.0" r="3.2" fill="#eb6834"><title>ETS, 10개월 앞: 7.84%</title></circle>
+<circle cx="551.3" cy="159.3" r="3.2" fill="#eb6834"><title>ETS, 11개월 앞: 7.86%</title></circle>
+<circle cx="600.0" cy="141.7" r="3.2" fill="#eb6834"><title>ETS, 12개월 앞: 8.28%</title></circle>
+<text x="610" y="135.7" fill="#eb6834" font-weight="600">ETS 8.3%</text>
 <polyline fill="none" stroke="#0E5A43" stroke-width="3" points="64.0,288.8 112.7,274.6 161.5,258.9 210.2,263.8 258.9,253.2 307.6,231.2 356.4,209.7 405.1,180.2 453.8,188.6 502.5,161.1 551.3,155.8 600.0,160.4"/>
 <circle cx="64.0" cy="288.8" r="3.2" fill="#0E5A43"><title>기계학습, 1개월 앞: 4.75%</title></circle>
 <circle cx="112.7" cy="274.6" r="3.2" fill="#0E5A43"><title>기계학습, 2개월 앞: 5.09%</title></circle>

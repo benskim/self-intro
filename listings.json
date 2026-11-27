@@ -8,24 +8,6 @@
     ]
   },
   {
-    "listing": "/en/report.html",
-    "items": [
-      "/en/posts/2026-11-drug-benefit-demand/index.html"
-    ]
-  },
-  {
-    "listing": "/en/index.html",
-    "items": [
-      "/en/posts/2026-11-drug-benefit-demand/index.html"
-    ]
-  },
-  {
-    "listing": "/index.html",
-    "items": [
-      "/ko/posts/2026-11-drug-benefit-demand/index.html"
-    ]
-  },
-  {
     "listing": "/en/projects.html",
     "items": [
       "/en/projects/project-c.html",
@@ -34,15 +16,45 @@
     ]
   },
   {
+    "listing": "/index.html",
+    "items": [
+      "/ko/posts/2026-11-benefit-change-lead/index.html",
+      "/ko/posts/2026-11-pharm-data-series/index.html",
+      "/ko/posts/2026-11-drug-demand-forecast/index.html"
+    ]
+  },
+  {
+    "listing": "/en/index.html",
+    "items": [
+      "/en/posts/2026-11-benefit-change-lead/index.html",
+      "/en/posts/2026-11-pharm-data-series/index.html",
+      "/en/posts/2026-11-drug-demand-forecast/index.html",
+      "/en/posts/2025-11-kamelo-analysis/index.html"
+    ]
+  },
+  {
+    "listing": "/en/report.html",
+    "items": [
+      "/en/posts/2026-11-benefit-change-lead/index.html",
+      "/en/posts/2026-11-pharm-data-series/index.html",
+      "/en/posts/2026-11-drug-demand-forecast/index.html",
+      "/en/posts/2025-11-kamelo-analysis/index.html"
+    ]
+  },
+  {
     "listing": "/ko/index.html",
     "items": [
-      "/ko/posts/2026-11-drug-benefit-demand/index.html"
+      "/ko/posts/2026-11-benefit-change-lead/index.html",
+      "/ko/posts/2026-11-pharm-data-series/index.html",
+      "/ko/posts/2026-11-drug-demand-forecast/index.html"
     ]
   },
   {
     "listing": "/ko/report.html",
     "items": [
-      "/ko/posts/2026-11-drug-benefit-demand/index.html"
+      "/ko/posts/2026-11-benefit-change-lead/index.html",
+      "/ko/posts/2026-11-pharm-data-series/index.html",
+      "/ko/posts/2026-11-drug-demand-forecast/index.html"
     ]
   }
 ]
