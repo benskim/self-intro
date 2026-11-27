@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 158" role="img" aria-label="가격 변경 세 건 중 두 건은 비고에 예고가 없었다" font-family="Pretendard, 'Noto Sans CJK KR', 'Apple SD Gothic Neo', sans-serif">
 <rect width="760" height="158" fill="#ffffff"/>
 <text x="20.0" y="28.0" font-size="17" fill="#14231E" text-anchor="start" font-weight="700">가격 변경 세 건 중 두 건은 비고에 예고가 없었다</text><text x="20.0" y="50.0" font-size="13" fill="#5A6B64" text-anchor="start" font-weight="400">가격이 바뀐 제품별 변경 14,041건, 2022-01 ~ 2025-12</text>
-<rect x="20.0" y="74" width="237.5" height="24" fill="#0E5A43"/>
-<rect x="20.0" y="110" width="10" height="10" fill="#0E5A43"/>
+<rect x="20.0" y="74" width="237.5" height="24" fill="#2a78d6"/>
+<rect x="20.0" y="110" width="10" height="10" fill="#2a78d6"/>
 <text x="35.0" y="120.0" font-size="12" fill="#14231E" text-anchor="start" font-weight="400">비고에 예고됨</text>
 <text x="20.0" y="140.0" font-size="13" fill="#14231E" text-anchor="start" font-weight="600">4,671건 (33.3%)</text>
-<rect x="259.5" y="74" width="390.6" height="24" fill="#eb6834"/>
-<rect x="259.5" y="110" width="10" height="10" fill="#eb6834"/>
+<rect x="259.5" y="74" width="390.6" height="24" fill="#6E8079"/>
+<rect x="259.5" y="110" width="10" height="10" fill="#6E8079"/>
 <text x="274.5" y="120.0" font-size="12" fill="#14231E" text-anchor="start" font-weight="400">일괄 인하 세 달, 비고 없음</text>
 <text x="259.5" y="140.0" font-size="13" fill="#14231E" text-anchor="start" font-weight="600">7,657건 (54.5%)</text>
 <rect x="652.2" y="74" width="85.8" height="24" fill="#A9B9B1"/>

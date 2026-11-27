@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 210" role="img" aria-label="Data lag 5 months, so forecasting next month means forecasting 6 months ahead" font-family="Pretendard, 'Noto Sans CJK KR', 'Apple SD Gothic Neo', sans-serif">
+<rect width="760" height="210" fill="#ffffff"/>
+<text x="20.0" y="28.0" font-size="17" fill="#14231E" text-anchor="start" font-weight="700">Data lag 5 months, so forecasting next month means forecasting 6 months ahead</text><text x="20.0" y="50.0" font-size="13" fill="#5A6B64" text-anchor="start" font-weight="400">Example: in Nov 2025 the latest published month is Jun; the target (next month) is Dec</text>
+<rect x="32.0" y="96" width="54" height="34" rx="4" fill="#6E8079" stroke="#6E8079"/>
+<text x="59.0" y="118.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="600">Jan</text>
+<rect x="90.0" y="96" width="54" height="34" rx="4" fill="#6E8079" stroke="#6E8079"/>
+<text x="117.0" y="118.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="600">Feb</text>
+<rect x="148.0" y="96" width="54" height="34" rx="4" fill="#6E8079" stroke="#6E8079"/>
+<text x="175.0" y="118.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="600">Mar</text>
+<rect x="206.0" y="96" width="54" height="34" rx="4" fill="#6E8079" stroke="#6E8079"/>
+<text x="233.0" y="118.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="600">Apr</text>
+<rect x="264.0" y="96" width="54" height="34" rx="4" fill="#6E8079" stroke="#6E8079"/>
+<text x="291.0" y="118.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="600">May</text>
+<rect x="322.0" y="96" width="54" height="34" rx="4" fill="#6E8079" stroke="#6E8079"/>
+<text x="349.0" y="118.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="600">Jun</text>
+<rect x="380.0" y="96" width="54" height="34" rx="4" fill="#F3F6F4" stroke="#A9B9B1" stroke-dasharray="4 3"/>
+<text x="407.0" y="118.0" font-size="13" fill="#5A6B64" text-anchor="middle" font-weight="600">Jul</text>
+<rect x="438.0" y="96" width="54" height="34" rx="4" fill="#F3F6F4" stroke="#A9B9B1" stroke-dasharray="4 3"/>
+<text x="465.0" y="118.0" font-size="13" fill="#5A6B64" text-anchor="middle" font-weight="600">Aug</text>
+<rect x="496.0" y="96" width="54" height="34" rx="4" fill="#F3F6F4" stroke="#A9B9B1" stroke-dasharray="4 3"/>
+<text x="523.0" y="118.0" font-size="13" fill="#5A6B64" text-anchor="middle" font-weight="600">Sep</text>
+<rect x="554.0" y="96" width="54" height="34" rx="4" fill="#F3F6F4" stroke="#A9B9B1" stroke-dasharray="4 3"/>
+<text x="581.0" y="118.0" font-size="13" fill="#5A6B64" text-anchor="middle" font-weight="600">Oct</text>
+<rect x="612.0" y="96" width="54" height="34" rx="4" fill="#F3F6F4" stroke="#A9B9B1" stroke-dasharray="4 3"/>
+<text x="639.0" y="118.0" font-size="13" fill="#5A6B64" text-anchor="middle" font-weight="600">Nov</text>
+<rect x="670.0" y="96" width="54" height="34" rx="4" fill="#2a78d6" stroke="#2a78d6"/>
+<text x="697.0" y="118.0" font-size="13" fill="#ffffff" text-anchor="middle" font-weight="600">Dec</text>
+<line x1="639.0" x2="639.0" y1="76" y2="94" stroke="#14231E" stroke-width="1.5"/>
+<path d="M634.0 87 L644.0 87 L639.0 94 Z" fill="#14231E"/>
+<text x="639.0" y="72.0" font-size="12" fill="#14231E" text-anchor="middle" font-weight="700">Today</text>
+<path d="M34.0 138 v6 H374.0 v-6" fill="none" stroke="#6E8079" stroke-width="1.5"/>
+<text x="204.0" y="162.0" font-size="13" fill="#14231E" text-anchor="middle" font-weight="600">Published data used</text>
+<text x="204.0" y="180.0" font-size="12" fill="#5A6B64" text-anchor="middle" font-weight="400">Last observed month a = Jun</text>
+<path d="M382.0 138 v6 H664.0 v-6" fill="none" stroke="#A9B9B1" stroke-width="1.5"/>
+<text x="523.0" y="162.0" font-size="13" fill="#14231E" text-anchor="middle" font-weight="600">Not yet published (~5 months)</text>
+<text x="523.0" y="180.0" font-size="12" fill="#5A6B64" text-anchor="middle" font-weight="400">Cannot be used</text>
+<path d="M672.0 138 v6 H722.0 v-6" fill="none" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="697.0" y="162.0" font-size="13" fill="#14231E" text-anchor="middle" font-weight="600">Target</text>
+<text x="697.0" y="180.0" font-size="12" fill="#5A6B64" text-anchor="middle" font-weight="400">a + 6</text>
+</svg>

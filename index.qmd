@@ -8,7 +8,8 @@ listing:
   id: reports
   contents:
     - "ko/posts/*/index.qmd"
-    - "!ko/posts/2026-11-sample-analysis/index.qmd"
+    - "!ko/posts/2025-11-kamelo-analysis/index.qmd"
+    - "!ko/posts/2026-11-drug-demand-tech-note/index.qmd"
   sort: "date desc"
   type: default
   fields: [date, title, subtitle]

@@ -1,0 +1,41 @@
+---
+title: "Public medicine data series: price changes and prescription demand"
+subtitle: "Two questions asked of the reimbursement list and drug usage statistics, and what happened when the two were combined"
+description: "Overview of a series that uses the HIRA reimbursement list and NHIS drug usage statistics to look at announced price and reimbursement changes and at ingredient-level prescription demand."
+date: "2026-11-27"
+categories: [Medicine data, Public medicine data series]
+author: "Ben Kim"
+toc: true
+code-tools: false
+---
+
+This series uses two public datasets to answer questions that pharmacies and pharmaceutical and distribution teams ask. "Monitoring reimbursement changes and demand", published as one report on 2026-11-24, was split into the pages below on 2026-11-27. The full Korean version of this overview is [here](../../../ko/posts/2026-11-pharm-data-series/index.qmd).
+
+| Question | Data | Page |
+|---|---|---|
+| Will a price or reimbursement status change next month? How often do announced notes come true? | HIRA reimbursement list 2022-01 to 2025-12 | [How far can announced price cuts be trusted?](../2026-11-benefit-change-lead/index.qmd) |
+| Which way is demand for each ingredient heading? How well can six months ahead be forecast? | NHIS drug usage statistics 2018-01 to 2025-12 | [Ingredient prescription demand](../2026-11-drug-demand-forecast/index.qmd) |
+| How were those numbers checked? | Same data | [Demand forecasting technical note](../2026-11-drug-demand-tech-note/index.qmd) |
+
+## Does combining the two datasets help? {#list-price}
+
+**Adding reimbursement-list price information to demand forecasts did not show an improvement.** With the price changes visible in the list at forecast time, unit-price forecast error was 0.0186 vs 0.0217, about 15% lower, but p = 0.252 could not be told apart from chance, nor from forecasts with the timing deliberately shifted. For prescription volume, the test could not even detect a deliberately injected 20% effect, so it could not measure an effect. The median pass-through from list price change to claimed unit price was only 0.55. The series therefore uses the reimbursement list for price and suspension alerts and the usage statistics for demand. The criteria were fixed before results were seen; the table is in the [technical note](../2026-11-drug-demand-tech-note/index.qmd#list-price-test).
+
+## Ground rules
+
+- A future date in the remarks is an **announcement**, not a change. Pages say "a cut was announced" or "realization rate 99.7%", never "the price was cut".
+- Price changes and prescription volume are compared only as before-and-after changes and associations, not as causes.
+- Demand forecasts are national and per ingredient, not order quantities for a pharmacy or product.
+- No savings or incentive amounts are computed.
+- The data contain no product-level sales, pharmacy purchases or stock, wholesale distribution, or planned delisting dates.
+
+## Next analyses {#next}
+
+1. **Price cuts by type:** separate patent-expiry, price-volume, actual-transaction-price, and re-evaluation cuts, and measure each type's realization rate, lead time, size of cut, and market response. This becomes the next edition of the [reimbursement-change page](../2026-11-benefit-change-lead/index.qmd).
+2. **Generic-substitution list and prescription shifts:** check whether the average unit price per ingredient (claimed amount ÷ volume) falls after products enter or leave the substitution incentive list.
+3. **Patent expiry and generic entry:** compare ingredient market value and unit price before and after new same-ingredient products are listed.
+4. **Shortage and supply-interruption data:** match official shortage reports with sudden demand changes to explain large errors for respiratory drugs and antibiotics.
+5. **Region and facility type:** break national totals down by province and type of care institution.
+6. **One pharmacy alert, end to end:** show what a single pharmacy would receive (announced cut, effective date, chance of a court block).
+7. **Strength and dosage-form aggregation:** check how combining different strengths and forms under one ingredient code affects forecast error.
+8. **Price increases for essential drugs:** track whether prescriptions recover after price-ceiling increases.
