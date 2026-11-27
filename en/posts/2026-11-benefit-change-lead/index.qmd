@@ -23,6 +23,10 @@ Demand forecasting is in the [demand report](../2026-11-drug-demand-forecast/ind
 **Full page (Korean)** [Read the Korean version](../../../ko/posts/2026-11-benefit-change-lead/index.qmd)
 :::
 
+## Why this question {#why}
+
+The series sorts pharmacy pain points by the path a drug takes through a pharmacy: procuring, holding, dispensing, earning. This page is about holding stock whose value is cut by price reductions. The starting point is a pharmacist quoted in the trade press: cuts become known only days before they take effect, so pharmacies give up checking stock against them, and absorb 1-won cuts as a loss. Against the data, the first part holds: most cuts first appear in the list in the month they take effect, and notices and association guidance came 4–13 days ahead (the exception is the noted cuts of 2024, posted one month ahead). The second part held in 2026-01 (19.6% of bulk cuts were exactly 1 won) but not in every year (5 won or less was 10.2% across 2022–2025). Pharmacy-level losses need pharmacy stock records and are not computed.
+
 ## Questions
 
 Will a drug's price or reimbursement status change next month? How often do the notes in the reimbursement list come true? How far ahead can a reader of the list alone see a price cut, and how small are the cuts?
