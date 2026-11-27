@@ -85,7 +85,7 @@ Lead time is the gap between the month a cut first appeared in the list and the 
 - **2022-09 and 2024-05:** no reason is stated in the notices, and the cuts were not 10–20% (medians 6.2% and 1.9%).
 - In won, 19.6% of the 2026-01 bulk cuts were exactly 1 won and 39.9% were 5 won or less (10.2% across 2022–2025). Won amounts are per unit (tablet, mL), so package sizes mix; percentages are less affected.
 
-Reasons are taken only from the wording of documents; no reason was inferred. Products under flexible pricing contracts (from 2026-06) had no cuts, so they do not affect these figures.
+Reasons are taken only from the wording of documents; no reason was inferred. Products under flexible pricing contracts (from 2026-06) had no cuts, so they do not affect these figures. (Sources on flexible contracts: HIRA guidance and Ministry of Health and Welfare notices. Delisting reasons for injunction cases: Ministry of Food and Drug Safety drug information and Cashdoc.)
 
 ## How the classification was checked {#checks}
 
