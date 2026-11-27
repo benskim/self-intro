@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Ben Kim">
-<meta name="description" content="심평원 급여목록 2022~2025 스냅샷을 이어 붙여, 비고에 적힌 약값 인하·신규 등재·급여정지 예고가 얼마나 실현됐는지와 비고 없이 바뀐 가격 변경이 얼마나 되는지 셌습니다.">
+<meta name="description" content="심평원 급여목록 2022~2025 스냅샷을 이어 붙여, 비고에 적힌 약값 인하 예고가 얼마나 실현됐는지, 목록만 보는 사람이 인하를 얼마나 미리 알 수 있었는지, 인하 폭이 얼마나 작았는지 셌습니다.">
 
 <title>약값 인하 예고, 얼마나 믿을 수 있나 – Ben’s Notes</title>
 <style>
@@ -186,13 +186,15 @@ document.addEventListener("DOMContentLoaded", function () {
   <ul class="collapse">
   <li><a href="#한-쪽-요약" id="toc-한-쪽-요약" class="nav-link active" data-scroll-target="#한-쪽-요약">한 쪽 요약</a></li>
   <li><a href="#자료-소개" id="toc-자료-소개" class="nav-link" data-scroll-target="#자료-소개">자료 소개</a></li>
-  <li><a href="#예고는-얼마나-실현되나" id="toc-예고는-얼마나-실현되나" class="nav-link" data-scroll-target="#예고는-얼마나-실현되나">예고는 얼마나 실현되나</a></li>
+  <li><a href="#realization" id="toc-realization" class="nav-link" data-scroll-target="#realization">예고는 얼마나 실현되나</a></li>
   <li><a href="#비고에-없는-가격-변경이-더-많다" id="toc-비고에-없는-가격-변경이-더-많다" class="nav-link" data-scroll-target="#비고에-없는-가격-변경이-더-많다">비고에 없는 가격 변경이 더 많다</a></li>
+  <li><a href="#lead" id="toc-lead" class="nav-link" data-scroll-target="#lead">목록만 보면 인하를 얼마나 미리 알 수 있나</a></li>
+  <li><a href="#size" id="toc-size" class="nav-link" data-scroll-target="#size">인하는 얼마나 작은가</a></li>
   <li><a href="#who-uses" id="toc-who-uses" class="nav-link" data-scroll-target="#who-uses">누가 어떻게 쓸까</a></li>
   <li><a href="#checks" id="toc-checks" class="nav-link" data-scroll-target="#checks">판정을 어떻게 확인했나</a></li>
   <li><a href="#한계" id="toc-한계" class="nav-link" data-scroll-target="#한계">한계</a></li>
-  <li><a href="#next-edition" id="toc-next-edition" class="nav-link" data-scroll-target="#next-edition">다음 판에서 더할 것</a></li>
   <li><a href="#용어" id="toc-용어" class="nav-link" data-scroll-target="#용어">용어</a></li>
+  <li><a href="#부록" id="toc-부록" class="nav-link" data-scroll-target="#부록">부록</a></li>
   </ul>
 </nav>
     </div>
@@ -202,7 +204,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">약값 인하 예고, 얼마나 믿을 수 있나</h1>
-<p class="subtitle lead">급여목록 48개월 스냅샷으로 본 예고의 실현율과 비고에 없는 가격 변경</p>
+<p class="subtitle lead">급여목록 스냅샷으로 본 예고의 실현율, 인하를 미리 알 수 있는 정도, 그리고 인하의 폭</p>
   <div class="quarto-categories">
     <div class="quarto-category">의약품 데이터</div>
     <div class="quarto-category">급여목록</div>
@@ -212,7 +214,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <div>
   <div class="description">
-    심평원 급여목록 2022~2025 스냅샷을 이어 붙여, 비고에 적힌 약값 인하·신규 등재·급여정지 예고가 얼마나 실현됐는지와 비고 없이 바뀐 가격 변경이 얼마나 되는지 셌습니다.
+    심평원 급여목록 2022~2025 스냅샷을 이어 붙여, 비고에 적힌 약값 인하 예고가 얼마나 실현됐는지, 목록만 보는 사람이 인하를 얼마나 미리 알 수 있었는지, 인하 폭이 얼마나 작았는지 셌습니다.
   </div>
 </div>
 
@@ -247,11 +249,11 @@ document.addEventListener("DOMContentLoaded", function () {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">노트</span>이 글에 대해
+<span class="screen-reader-only">노트</span>이 글에 대해 (2판, 2026-11-27)
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>2026-11-24에 낸 「급여 변동과 수요 모니터링」의 급여 변동 부분을 옮긴 글이다. 숫자는 그 판과 같다. 다음 판에서는 “급여목록만 보는 사람이 인하를 얼마나 미리 알 수 있나”를 인하 유형별로 나눠 보고, 인하 폭을 더한다(<a href="#next-edition">다음 판에서 더할 것</a>). 그때 숫자는 새로 실행해 다시 계산한다.</p>
+<p>1판은 2026-11-24에 낸 「급여 변동과 수요 모니터링」의 급여 변동 부분이었다. 2판에서는 <strong>“급여목록만 보는 사람이 인하를 얼마나 미리 알 수 있나”</strong>와 <strong>인하 폭</strong>을 더했다. 새로 더한 숫자는 새로 실행해 계산했다. 예고 실현율은 집행정지 뒤 목록에서 빠진 제품을 분모에서 빼는 규칙으로 다시 셌다(<a href="#realization">아래</a>). 비고 없는 가격 변경의 숫자는 1판과 같다.</p>
 <p>수요 예측은 <a href="../../../ko/posts/2026-11-drug-demand-forecast/index.html">수요 보고서</a>에, 시리즈 전체는 <a href="../../../ko/posts/2026-11-pharm-data-series/index.html">시리즈 안내</a>에 있다.</p>
 </div>
 </div>
@@ -259,28 +261,30 @@ document.addEventListener("DOMContentLoaded", function () {
 <div class="leaflet-row">
 <p><span class="k">묻는 것</span></p>
 <div class="v">
-<p>다음 달 약값이나 급여가 바뀌는가. 급여목록 비고에 적힌 예고는 얼마나 실현되나. 비고만 보면 가격 변경을 얼마나 미리 알 수 있나.</p>
+<p>급여목록 비고의 예고는 얼마나 실현되나. 목록만 보는 사람은 약값 인하를 시행 몇 달 전에 알 수 있나. 그 인하는 얼마나 작은가.</p>
 </div>
 </div>
 <div class="leaflet-row">
 <p><span class="k">쓴 자료</span></p>
 <div class="v">
-<p>심평원 급여목록 2022-01~2025-12(48개월 스냅샷). 공개 데이터다.</p>
+<p>심평원 급여목록 2022-01~2025-12(주 결과), 2026-01~11(확장 구간, 따로 표시). 일괄 인하의 사유는 보건복지부 고시와 대한병원협회·대한약사회 안내 문서에서 확인했다. 모두 공개 자료다.</p>
 </div>
 </div>
 <div class="leaflet-row caution">
 <p><span class="k">주의</span></p>
 <div class="v">
-<p>예고는 아직 일어난 변화가 아니다. 급여정지 예정은 법원 집행정지로 막힐 수 있다.</p>
+<p>예고는 아직 일어난 변화가 아니다. 급여정지 예정과 일부 인하 예고는 법원 집행정지로 막힐 수 있다.</p>
 </div>
 </div>
 </div>
 <section id="한-쪽-요약" class="level2">
 <h2 class="anchored" data-anchor-id="한-쪽-요약">한 쪽 요약</h2>
-<p><strong>결론 두 가지</strong></p>
+<p><strong>결론 네 가지</strong></p>
 <ol type="1">
-<li><strong>급여목록에 미리 적힌 약값 인하 예고는 거의 다 실현됐다.</strong> 결과가 난 제품 4,669개 중 99.7%다. 급여정지·중지 예정은 처분 91건 중 3건이 법원 집행정지로 막혔다.</li>
-<li><strong>하지만 비고(메모 칸)만 보면 가격 변경의 약 3분의 1만 미리 알 수 있다.</strong> 가격이 바뀐 제품의 66.7%는 비고 예고 없이 목록 고시로 바뀌었다. 대부분 정부의 일괄 인하다.</li>
+<li><strong>비고에 적힌 약값 인하 예고는 거의 다 실현됐다.</strong> 결과가 난 제품 4,659개 중 99.96%다.</li>
+<li><strong>하지만 목록만 보고 인하를 한 달 이상 미리 안 것은 2024년뿐이다.</strong> 2022~2025 인하 13,708건 중 31.6%가 시행 1개월 이상 전에 목록에 보였는데, 그 거의 전부가 2024년의 두 달이다. 다른 해는 0~0.35%다. 미리 보인 인하도 대부분 <strong>정확히 한 달 전</strong>이었다.</li>
+<li><strong>정부의 일괄 인하는 목록에서는 시행되는 달에 처음 보인다.</strong> 고시와 단체 안내로는 4~13일 먼저 알 수 있었다.</li>
+<li><strong>일괄 인하의 폭은 그때그때 달랐다.</strong> 2023-09 기준요건 재평가 인하는 대부분 10~20%였고, 2026-01 실거래가 조정 인하는 60%가 1% 미만이었다. 2026-01 인하의 19.6%는 정확히 1원이었다.</li>
 </ol>
 <table class="caption-top table">
 <colgroup>
@@ -299,8 +303,12 @@ document.addEventListener("DOMContentLoaded", function () {
 <td>비고만 보고 “이번 달 가격 변동 없음”이라고 판단한다</td>
 </tr>
 <tr class="even">
-<td>매달 목록을 전달과 비교해 가격 변경을 찾는다</td>
-<td>급여정지 예정을 확정된 일로 안내한다</td>
+<td>매달 목록을 전달과 비교하고, 고시·단체 안내를 함께 본다</td>
+<td>“목록에 미리 나온다”고 기대한다. 대부분의 인하는 시행되는 달에 처음 보인다</td>
+</tr>
+<tr class="odd">
+<td>인하 폭을 원 단위와 비율로 함께 본다</td>
+<td>한 해의 비율 하나로 “늘 이렇다”고 말한다</td>
 </tr>
 </tbody>
 </table>
@@ -333,7 +341,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </tr>
 <tr class="even">
 <td>쓴 기간</td>
-<td>2022-01 ~ 2025-12 (48개월)</td>
+<td>주 결과 2022-01 ~ 2025-12 (48개월), 확장 구간 2026-01 ~ 11</td>
 </tr>
 <tr class="odd">
 <td>공개 시차</td>
@@ -345,11 +353,12 @@ document.addEventListener("DOMContentLoaded", function () {
 </tr>
 </tbody>
 </table>
-<p>급여목록은 매달의 스냅샷이다. 그래서 48개 파일을 이어 붙여 <strong>제품별 변화 기록표</strong>(언제 무엇이 바뀌었는지)를 만들었다. 비고에 적힌 “’25.7.1. 인하” 같은 미래 날짜는 아직 일어난 변화가 아니라 <strong>예고</strong>로 따로 적고, 뒤 파일로 실현 여부를 확인했다.</p>
+<p>급여목록은 매달의 스냅샷이다. 그래서 파일을 이어 붙여 <strong>제품별 변화 기록표</strong>(언제 무엇이 바뀌었는지)를 만들었다. 비고에 적힌 “’25.7.1. 인하” 같은 미래 날짜는 아직 일어난 변화가 아니라 <strong>예고</strong>로 따로 적고, 뒤 파일로 실현 여부를 확인했다.</p>
+<p>일괄 인하의 사유는 목록에 없다. 그래서 보건복지부 「약제 급여 목록 및 급여 상한금액표」 개정 고시 네 건과 그 변경대비표, 대한병원협회 공문, 대한약사회 안내 자료를 제품 단위로 맞춰 봤다(<a href="#appendix-c">부록 C</a>).</p>
 <p><strong>이 자료에 없는 것</strong>: 제품별 판매량, 약국별 구매·재고, 도매 유통, 급여 삭제 예정일. 이것들에 대한 결론은 이 글에 없다.</p>
 </section>
-<section id="예고는-얼마나-실현되나" class="level2">
-<h2 class="anchored" data-anchor-id="예고는-얼마나-실현되나">예고는 얼마나 실현되나</h2>
+<section id="realization" class="level2">
+<h2 class="anchored" data-anchor-id="realization">예고는 얼마나 실현되나</h2>
 <p><strong>약값 인하와 신규 등재 예고는 거의 그대로 실현됐다. 급여정지·중지 예정은 법원에서 막히는 경우가 있어 날짜가 자주 밀렸다.</strong> 비고의 예고는 이미 발표된 고시를 옮겨 적은 것이라 실현율이 높은 것이 자연스럽다.</p>
 <table class="caption-top table">
 <colgroup>
@@ -372,8 +381,8 @@ document.addEventListener("DOMContentLoaded", function () {
 <tr class="odd">
 <td>약값 인하 (비고)</td>
 <td>4,683</td>
-<td>99.7%</td>
-<td>98.3%</td>
+<td>99.96%</td>
+<td>98.5%</td>
 <td>30일</td>
 </tr>
 <tr class="even">
@@ -386,21 +395,30 @@ document.addEventListener("DOMContentLoaded", function () {
 <tr class="odd">
 <td>급여정지·중지 예정</td>
 <td>203</td>
-<td>89.3%</td>
-<td>32.0%</td>
+<td>100.0%</td>
+<td>35.8%</td>
 <td>23일</td>
 </tr>
 </tbody>
 </table>
 <ul>
-<li><strong>실현</strong>에는 조금 늦게 또는 다른 금액으로 실현된 것도 들어 있다. ’결과가 난 것’은 아직 법원 집행정지로 결과가 안 난 것을 뺀 것이다.</li>
-<li><strong>급여정지·중지 예정은 처분 단위(같은 회사의 같은 처분을 제품 수와 관계없이 한 건으로 셈)로 보면 91건 중 88건(96.7%)이 실현됐다.</strong> 막힌 3건에 제품이 몰려 있어(한 회사 72개) 제품 기준 숫자가 낮아 보인다.</li>
-<li>급여정지 예정을 안내할 때는 “법원 결정으로 막힐 수 있음”을 함께 표시하는 편이 맞다.</li>
+<li><strong>실현</strong>에는 조금 늦게, 다른 금액으로, 또는 급여정지 대신 삭제로 실현된 것도 들어 있다. ’결과가 난 것’은 아직 법원 집행정지로 결과가 안 난 것과 <strong>집행정지 뒤 목록에서 빠진 것</strong>을 뺀 것이다. 목록에서 빠지면 예고가 실현됐는지 판단할 대상이 사라진다. 아래 집행정지 결말 표와 같은 규칙이다.</li>
+<li><strong>1판과 숫자가 다른 이유</strong>: 1판은 집행정지 뒤 목록에서 빠진 제품(인하 예고 10개, 급여정지·중지 예정 13개)을 미실현으로 세어 99.7%, 89.3%였다. 2판에서 분모에서 뺐다.</li>
+<li><strong>급여정지·중지 예정은 결과가 난 109개 제품이 모두 실현됐다.</strong> 처분 단위(같은 회사의 같은 처분을 제품 수와 관계없이 한 건으로 셈)로도 91건 중 결과가 난 89건이 모두 실현됐다. 결과가 아직 없는 81개 제품은 집행정지가 이어지는 두 회사의 처분이다(59개, 22개).</li>
 </ul>
+<section id="집행정지에-막힌-인하-예고는-어떻게-끝났나" class="level3">
+<h3 class="anchored" data-anchor-id="집행정지에-막힌-인하-예고는-어떻게-끝났나">집행정지에 막힌 인하 예고는 어떻게 끝났나</h3>
+<p><strong>집행정지에 막혔던 인하 예고 151개 제품을 2026-11까지 따라가 보니, 결말이 난 88개 중 75.0%가 예고대로, 12.5%가 다른 금액으로 실현됐고 12.5%는 실현되지 않았다.</strong> 예고가 처음 실린 때부터 결말까지는 중앙값 27개월이 걸렸다. 아직 결말이 나지 않은 47개는 이미 25~33개월이 지났다.</p>
+<ul>
+<li>이 숫자는 몇 개 회사의 처분 사례다. 실현된 66개 중 62개가 한 회사 제품이다. 집행정지의 일반적인 성질로 읽으면 안 된다.</li>
+<li>목록에서 빠진 16개(허가취하 7, 유효기간 만료 3, 미청구 정비 6)는 인하 여부를 판단할 대상이 사라진 것이라 분모에서 뺐다. 삭제 사유는 필자가 식품의약품안전처 의약품 정보와 캐시닥에서 따로 확인했다.</li>
+<li>표는 <a href="#appendix-d">부록 D</a>에 있다.</li>
+</ul>
+</section>
 </section>
 <section id="비고에-없는-가격-변경이-더-많다" class="level2">
 <h2 class="anchored" data-anchor-id="비고에-없는-가격-변경이-더-많다">비고에 없는 가격 변경이 더 많다</h2>
-<p><strong>가격이 바뀐 제품별 변경 14,041건 중 9,370건(66.7%)은 비고에 미리 적히지 않았다.</strong> 이 변경들은 목록 고시 자체로 시행됐다. 미리 알려지지 않았다는 뜻은 아니고, 비고만 봐서는 못 찾는다는 뜻이다.</p>
+<p><strong>가격이 바뀐 제품별 변경 14,041건 중 9,370건(66.7%)은 비고에 미리 적히지 않았다.</strong> 이 변경들은 목록 고시 자체로 시행됐다.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/price-notes.svg" class="img-fluid figure-img" alt="가격 변경 14,041건 가운데 비고에 예고된 것 4,671건(33.3%), 일괄 인하 세 달의 비고 없는 변경 7,657건(54.5%), 그 밖의 비고 없는 변경 1,713건(12.2%)."></p>
@@ -408,14 +426,118 @@ document.addEventListener("DOMContentLoaded", function () {
 </figure>
 </div>
 <ul>
-<li>그중 7,657건은 정부가 여러 성분의 상한가를 한꺼번에 내린 <strong>일괄 인하</strong> 세 달에 몰려 있다. 2023-09 제네릭 재평가 한 번이 7,371건이다. 나머지는 2022-09의 175건, 2024-05의 111건이다.</li>
+<li>그중 7,657건은 정부가 여러 성분의 상한가를 한꺼번에 내린 <strong>일괄 인하</strong> 세 달에 몰려 있다. 2023-09 「기준요건 재평가」 인하 한 번이 7,371건이다. 나머지는 2022-09의 175건, 2024-05의 111건이다.</li>
 <li>일괄 인하 달을 빼도 26.8%는 비고 없이 바뀌었다.</li>
-<li>그래서 가격 알림은 <strong>비고 예고 + 매달 목록을 전달과 비교</strong>, 두 가지를 함께 써야 빠짐이 없다.</li>
+</ul>
+</section>
+<section id="lead" class="level2">
+<h2 class="anchored" data-anchor-id="lead">목록만 보면 인하를 얼마나 미리 알 수 있나</h2>
+<p><strong>한 달 이상 미리 알 수 있었던 인하는 거의 2024년에만 있었다.</strong> 인하를 처음 목록에 보인 달과 시행된 달의 차이로 셌다. 파일의 실제 공개일을 알 수 없어 “며칠 전”이 아니라 달 단위로 셌다.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lead-by-year.svg" class="img-fluid figure-img" alt="2022년 0.0%, 2023년 0.05%, 2024년 80.8%, 2025년 0.35%, 2026년 1~11월 0.0%. 2024년은 4,332건 중 거의 전부가 2024-03과 2024-07 두 달이다."></p>
+<figcaption>연도별, 시행 1개월 이상 전에 목록에 보인 인하의 비율</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>전체 기간으로 합치면 31.6%</strong>(13,708건 중 4,337건)지만, 이 숫자 하나로 쓰면 오해를 낳는다. 2024-03과 2024-07 두 달의 비고 예고가 거의 전부다.</li>
+<li><strong>미리 보인 인하는 모두 비고 예고였고, 대부분 정확히 한 달 전이었다.</strong> 4,337건 중 4,334건이 시행 전달 목록에 처음 실렸다(목록 기준일부터 시행일까지 29~31일). 두 달 이상 앞서 보인 것은 3건이다.</li>
+<li><strong>일괄 인하와 그 밖의 비고 없는 인하는 모두 시행되는 달 목록에 처음 보였다.</strong> “1개월 미만”은 “시행 당일에야 안다”는 뜻이 아니라 “시행되는 달의 목록에서 처음 보였다”는 뜻이다.</li>
+<li>집행정지에 막혔던 예고는 집행정지가 풀린 것이 목록에 보인 달부터 다시 쟀다. 처음 예고된 달부터 재면 두 달 이상 앞선 것처럼 보이지만, 그동안은 시행될지 알 수 없었다.</li>
+</ul>
+<section id="목록-밖에서는-며칠-먼저-알려졌나" class="level3">
+<h3 class="anchored" data-anchor-id="목록-밖에서는-며칠-먼저-알려졌나">목록 밖에서는 며칠 먼저 알려졌나</h3>
+<p><strong>일괄 인하는 고시와 단체 안내로 시행 4~13일 전에 알 수 있었다.</strong> 목록만 보는 사람보다는 빠르지만, 한 달에는 못 미친다.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>인하</th>
+<th>경로</th>
+<th>문서</th>
+<th>시행 며칠 전</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2022-09</td>
+<td>고시</td>
+<td>보건복지부 고시 제2022-199호 (2022-08-25)</td>
+<td>7일</td>
+</tr>
+<tr class="even">
+<td>2022-09</td>
+<td>병원</td>
+<td>대한병원협회 공문 (2022-08-26)</td>
+<td>6일</td>
+</tr>
+<tr class="odd">
+<td>2023-09</td>
+<td>고시</td>
+<td>보건복지부 고시 제2023-166호 (2023-09-01)</td>
+<td>4일</td>
+</tr>
+<tr class="even">
+<td>2023-09</td>
+<td>병원</td>
+<td>대한병원협회 사전 안내 (인하 품목 목록, 인하 후 금액 없음)</td>
+<td>문서에 날짜 없음</td>
+</tr>
+<tr class="odd">
+<td>2026-01</td>
+<td>고시</td>
+<td>보건복지부 고시 제2025-218호 (2025-12-24)</td>
+<td>8일</td>
+</tr>
+<tr class="even">
+<td>2026-01</td>
+<td>약국</td>
+<td>대한약사회 「실거래가 상한금액 조정」 품목 표 (2025-12-19 공유 추정)</td>
+<td>13일</td>
+</tr>
+<tr class="odd">
+<td>2026-02</td>
+<td>약국</td>
+<td>대한약사회 「급여적정성 재평가에 따른 자진인하」 품목 표 (같은 자료)</td>
+<td>44일</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>날짜는 문서 본문에 적힌 것만 썼다. 대한약사회 자료의 날짜는 약사 전문지에 공유된 날로, 추정이다.</li>
+<li>병원 경로 문서는 병원을 위한 안내다. 약국 경로 자료는 2026년 것 하나뿐이라, 다른 해에도 약국에 미리 알려졌는지는 이 자료로 알 수 없다.</li>
+</ul>
+</section>
+</section>
+<section id="size" class="level2">
+<h2 class="anchored" data-anchor-id="size">인하는 얼마나 작은가</h2>
+<p><strong>일괄 인하의 폭은 그때그때 달랐다. 문서로 확인한 사유도 달랐다.</strong></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/bulk-width.svg" class="img-fluid figure-img" alt="2022-09 170건 중앙값 6.2%, 2023-09 7,363건 중앙값 15.0%이고 90%가 10~20%, 2024-05 111건 중앙값 1.9%, 2026-01 3,865건 중앙값 0.6%이고 60%가 1% 미만."></p>
+<figcaption>일괄 인하 달별 인하율 구간</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>2023-09</strong>: 7,363건 중 7,231건(98.2%)이 「기준요건 1차 재평가」 인하 목록에 있다. 이 인하는 92.0%가 10~20% 폭이었다(중앙값 15.0%).</li>
+<li><strong>2026-01</strong>: 3,865건 중 2,405건(62.2%)이 「실거래가 상한금액 조정」 품목 표에 있다. 이 인하는 67.9%가 1% 미만이었다(중앙값 0.47%). 나머지 1,441건은 같은 고시로 시행됐지만 품목 표에서 확인되지 않았다. 대한약사회 안내 자료는 이 고시를 실거래가 조사에 따른 조정 일정으로 안내했지만, 품목 목록은 없다.</li>
+<li><strong>2022-09, 2024-05</strong>: 고시에 사유가 적혀 있지 않다. 폭도 10~20%가 아니었다(중앙값 6.2%, 1.9%).</li>
+<li>“2022~2025 일괄 인하는 대부분 10~20%”라고 합쳐 말하면 틀리지는 않지만, 그것은 2023-09 한 번의 성질이다.</li>
+</ul>
+<p><strong>원 단위로 보면 2026-01 인하가 특히 작았다.</strong> 3,865건 중 정확히 1원이 19.6%, 5원 이내가 39.9%다. 1원 이하 인하 대부분(759건 중 718건)이 실거래가 조정 품목 표에 있다. 2022~2025 전체로는 5원 이내가 10.2%다.</p>
+<ul>
+<li><strong>미리 알 수 있었던 인하일수록 작았다.</strong> 2022~2025에 1개월 이상 전에 보인 인하 중 5원 이내는 27.2%, 그 밖의 인하는 2.2%다.</li>
+<li>원 단위는 단위(1정, 1mL 등)당 금액 차라 규격이 다른 제품이 섞인다. 비율이 이 차이를 덜 탄다. 정산·손실 금액은 계산하지 않았다.</li>
 </ul>
 </section>
 <section id="who-uses" class="level2">
 <h2 class="anchored" data-anchor-id="who-uses">누가 어떻게 쓸까</h2>
-<p><strong>가격 예고는 “언제 무엇이 바뀔지” 알림에 맞다.</strong> 아래는 모두 이 분석에서 시험하지 않은 활용 제안이다. 수요 쪽 활용은 <a href="../../../ko/posts/2026-11-drug-demand-forecast/index.html">수요 보고서</a>에 있다.</p>
+<p><strong>가격 예고는 “언제 무엇이 바뀔지” 알림에 맞다.</strong> 아래는 모두 이 분석에서 시험하지 않은 활용 제안이다.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -424,17 +546,17 @@ document.addEventListener("DOMContentLoaded", function () {
 <thead>
 <tr class="header">
 <th>실무</th>
-<th>가격 알림으로</th>
+<th>쓸 수 있는 것</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>제약 영업·마케팅</td>
-<td>자사·경쟁 제품의 인하 예고와 시행일을 한 표로 확인</td>
+<td>약국</td>
+<td>비고 예고는 한 달 전 알림으로 쓰고, 일괄 인하는 고시·단체 안내 일정(시행 1~2주 전)에 맞춰 대조를 준비한다</td>
 </tr>
 <tr class="even">
 <td>제약 약가·대관</td>
-<td>급여정지 예정과 법원 집행정지 여부, 비고 없이 바뀐 가격 점검</td>
+<td>급여정지 예정과 집행정지 여부, 비고 없이 바뀐 가격 점검</td>
 </tr>
 <tr class="odd">
 <td>유통 운영</td>
@@ -442,7 +564,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </tr>
 <tr class="even">
 <td>유통 데이터팀</td>
-<td>매달 목록을 전달과 비교하는 자동 점검</td>
+<td>매달 목록을 전달과 비교하는 자동 점검, 고시 변경대비표와 맞춰 보기</td>
 </tr>
 </tbody>
 </table>
@@ -450,7 +572,11 @@ document.addEventListener("DOMContentLoaded", function () {
 </section>
 <section id="checks" class="level2">
 <h2 class="anchored" data-anchor-id="checks">판정을 어떻게 확인했나</h2>
-<p>비고 문구를 예고 유형으로 나누는 자동 판정을 사람이 만든 정답 30건과 맞춰 봤고, 유형 일치는 83.3%였다. 외부 사실과도 대조했다. 동아에스티 급여정지 사례에서 목록에 적힌 집행정지 날짜가 법원 결정일(2022-05-09)과 같았다.</p>
+<ul>
+<li><strong>비고 판정</strong>: 비고 문구를 예고 유형으로 나누는 자동 판정을 사람이 만든 정답 30건과 맞춰 봤고, 유형 일치는 83.3%였다. 동아에스티 급여정지 사례에서 목록에 적힌 집행정지 날짜가 법원 결정일(2022-05-09)과 같았다.</li>
+<li><strong>일괄 인하와 고시 대조</strong>: 네 달 일괄 인하 11,509건 중 11,460건(99.6%)이 고시 변경대비표와 제품코드·인하 전후 금액까지 같았다.</li>
+<li><strong>확장 구간</strong>: 2026 목록을 더해 다시 만든 기록표에서 2022~2025 가격 변경 14,041건이 기존 기록표와 모두 같았다.</li>
+</ul>
 </section>
 <section id="한계" class="level2">
 <h2 class="anchored" data-anchor-id="한계">한계</h2>
@@ -467,44 +593,37 @@ document.addEventListener("DOMContentLoaded", function () {
 </thead>
 <tbody>
 <tr class="odd">
-<td>자동 판정의 정답을 한 사람이 정했다</td>
-<td>30건 표본이라 범위가 넓다(83.3%의 95% 구간 66.4 ~ 92.7%)</td>
+<td>사전 인지를 달 단위로 쟀다</td>
+<td>파일의 실제 공개일을 모른다. 파일은 기준일보다 먼저 공개되기도 해서 실제로 먼저 보인 기간은 조금 길 수 있다</td>
 </tr>
 <tr class="even">
-<td>목록에 표시되지 않은 집행정지는 놓친다</td>
-<td>외부 자료로 넣은 것은 1건뿐이다</td>
+<td>한 달 이상 미리 보인 인하가 두 달에 몰려 있다</td>
+<td>전체 비율 31.6%를 “보통 이 정도”로 읽으면 안 된다. 연도별로 함께 본다</td>
 </tr>
 <tr class="odd">
-<td>급여정지와 급여중지가 섞여 있다</td>
-<td>제재와 허가 관련 사유를 비고만으로는 나눌 수 없다</td>
+<td>2026-01 인하의 37.3%는 품목 단위 사유를 확인하지 못했다</td>
+<td>같은 고시·같은 일정이지만 품목 표에 없다. 다른 사유가 섞였을 수 있다</td>
 </tr>
 <tr class="even">
-<td>“얼마나 먼저 보이나”는 파일 기준일로 쟀다</td>
-<td>예고가 처음 실린 파일의 기준일(그 달 1일)부터 예정일까지다. 파일은 기준일보다 먼저 공개되기도 해서(예: 2025-06 파일은 5월 20일 공개), 실제로 먼저 보인 기간은 이보다 조금 길 수 있다</td>
+<td>목록 밖 경로의 날짜 일부는 추정이다</td>
+<td>대한약사회 자료의 공유일은 추정이다. 2023-09 병원협회 안내는 날짜가 없다</td>
+</tr>
+<tr class="odd">
+<td>집행정지 결말은 몇 회사의 사례다</td>
+<td>회사 하나가 실현 건의 대부분이다</td>
+</tr>
+<tr class="even">
+<td>원 단위 폭은 규격이 섞인다</td>
+<td>비율과 함께 본다</td>
 </tr>
 <tr class="odd">
 <td>비고에는 인하 사유가 없다</td>
-<td>특허만료·사용량-약가 연동·실거래가·재평가 같은 사유별 구분은 비고만으로 할 수 없다</td>
-</tr>
-<tr class="even">
-<td>목록 밖 경로는 보지 않았다</td>
-<td>일괄 인하처럼 비고 없이 바뀐 가격도 고시나 단체 안내로 먼저 알려졌을 수 있다. 이 글은 급여목록만 본 사람의 기준이다</td>
+<td>사유는 고시·단체 안내 문서로만 붙였다. 문서에 없는 사유는 붙이지 않았다</td>
 </tr>
 </tbody>
 </table>
-<p>가격 변화와 처방량의 관계는 이 글에서 다루지 않는다. 절감액·장려금 금액은 계산하지 않았다.</p>
-</section>
-<section id="next-edition" class="level2">
-<h2 class="anchored" data-anchor-id="next-edition">다음 판에서 더할 것</h2>
-<p><strong>질문</strong>: 급여목록만 보는 사람이 시행 1개월 이상 전에 알 수 있는 인하는 몇 %이고, 그 인하의 폭은 얼마나 작은가. “시행 며칠 전에야 알아 대조를 포기한다”, “1원 단위 인하는 손해를 안고 간다”는 약국 현장의 말에 대응하는 질문이다.</p>
-<ul>
-<li><strong>인하 유형 세 가지</strong>: 비고 예고, 일괄 인하, 그 밖의 비고 없는 인하. 비고에 사유가 없어 특허만료·사용량-약가 연동 같은 사유별 구분은 하지 않는다.</li>
-<li><strong>월 단위로 센다</strong>: 파일의 실제 공개일을 알 수 없어 “며칠 전”이 아니라 “2개월 이상 / 1개월 / 1개월 미만 전”으로 나눈다. 1개월 미만은 “시행 당일에야 안다”는 뜻이 아니라 “시행되는 달의 목록에서 처음 보였다”는 뜻이다.</li>
-<li><strong>일괄 인하는 빼지 않는다</strong>: 목록 안에서는 1개월 미만으로 세고, 목록 밖 안내가 있었을 수 있다고 따로 표시한다. 빼면 놓치는 비율이 작아 보인다.</li>
-<li><strong>인하 폭</strong>: 원 단위와 비율 두 가지로 보고, 미리 알 수 있었던 인하와 아닌 인하를 나눠 비교한다. 정산 금액은 계산하지 않고 제품 수 비중으로만 쓴다.</li>
-<li><strong>2026년은 따로 본다</strong>: 주 결과는 이 글과 같은 2022-01 ~ 2025-12로 두고, 급여목록 2026-01 ~ 11은 확장 구간으로 따로 적는다. 2025년 말 예고의 실현 여부도 2026 목록으로 확인한다. 2026-06부터 약가유연계약이 적용된 제품은 목록 금액이 표시 금액이라 인하 폭에서 뺀다.</li>
-</ul>
-<p>시리즈 전체의 다음 분석 목록은 <a href="../../../ko/posts/2026-11-pharm-data-series/index.html#next">시리즈 안내</a>에 있다.</p>
+<p>2026-06부터 약가유연계약이 적용된 제품은 목록에 실제 청구 기준과 다른 금액이 적힐 수 있다. 이 제품의 인하는 0건이라 이번 숫자에는 영향이 없다(<a href="#appendix-e">부록 E</a>). 가격 변화와 처방량의 관계는 이 글에서 다루지 않는다. 절감액·장려금 금액은 계산하지 않았다.</p>
+<p>시리즈의 다음 분석은 <a href="../../../ko/posts/2026-11-pharm-data-series/index.html#next">시리즈 안내</a>에 있다.</p>
 </section>
 <section id="용어" class="level2">
 <h2 class="anchored" data-anchor-id="용어">용어</h2>
@@ -538,25 +657,367 @@ document.addEventListener("DOMContentLoaded", function () {
 </tr>
 <tr class="odd">
 <td>일괄 인하</td>
-<td>정부가 여러 성분의 상한가를 한꺼번에 내리는 것. 2023-09 제네릭 재평가가 대표적이다</td>
+<td>정부가 여러 성분의 상한가를 한꺼번에 내리는 것. 같은 달 비고 없이 바뀐 성분이 50개 이상인 경우로 셌다</td>
 </tr>
 <tr class="even">
-<td>급여정지·중지</td>
-<td>건강보험 적용을 멈추는 처분. 제재에 따른 정지와 허가 관련 중지가 있다</td>
+<td>기준요건 재평가</td>
+<td>문서 표현으로 “기등재 의약품 상한금액(기준요건) 재평가”. 2023-09 일괄 인하의 사유</td>
 </tr>
 <tr class="odd">
+<td>실거래가 조정</td>
+<td>문서 표현으로 “실거래가 조사에 따른 약제 상한금액 조정”. 2026-01 일괄 인하의 사유</td>
+</tr>
+<tr class="even">
 <td>집행정지</td>
 <td>처분에 불복한 쪽의 신청으로 법원이 처분의 효력을 일정 기간 멈추는 것</td>
 </tr>
-<tr class="even">
-<td>신뢰구간</td>
-<td>진짜 값이 있을 법한 범위. 표본이 작을수록 넓다</td>
+<tr class="odd">
+<td>확장 구간</td>
+<td>2026-01 ~ 11 목록. 주 결과(2022 ~ 2025)와 섞지 않고 따로 적었다</td>
 </tr>
 </tbody>
 </table>
-<p>자료 출처: 건강보험심사평가원 급여목록·대체조제 목록 2022-01 ~ 2025-12. 공개 데이터다. 숫자는 분석 코드의 결과 파일에서 왔다(2026-11-24 판).</p>
+</section>
+<section id="부록" class="level2">
+<h2 class="anchored" data-anchor-id="부록">부록</h2>
+<section id="appendix-a" class="level3">
+<h3 class="anchored" data-anchor-id="appendix-a">A. 인하 유형별로 처음 보인 시점</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>구간</th>
+<th>유형</th>
+<th>인하</th>
+<th>2개월 이상</th>
+<th>1개월</th>
+<th>1개월 미만</th>
+<th>시행 뒤 보임</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2022 ~ 2025</td>
+<td>비고 예고</td>
+<td>4,671</td>
+<td>3</td>
+<td>4,334</td>
+<td>327</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td>2022 ~ 2025</td>
+<td>일괄 인하</td>
+<td>7,644</td>
+<td>0</td>
+<td>0</td>
+<td>7,644</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>2022 ~ 2025</td>
+<td>그 밖의 비고 없는 인하</td>
+<td>1,393</td>
+<td>0</td>
+<td>0</td>
+<td>1,393</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>2026 (1 ~ 11월)</td>
+<td>비고 예고</td>
+<td>22</td>
+<td>0</td>
+<td>0</td>
+<td>22</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>2026 (1 ~ 11월)</td>
+<td>일괄 인하</td>
+<td>3,865</td>
+<td>0</td>
+<td>0</td>
+<td>3,865</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>2026 (1 ~ 11월)</td>
+<td>그 밖의 비고 없는 인하</td>
+<td>242</td>
+<td>0</td>
+<td>0</td>
+<td>242</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>연도</th>
+<th>인하</th>
+<th>1개월 이상 전</th>
+<th>비율</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2022</td>
+<td>444</td>
+<td>0</td>
+<td>0.0%</td>
+</tr>
+<tr class="even">
+<td>2023</td>
+<td>7,621</td>
+<td>4</td>
+<td>0.05%</td>
+</tr>
+<tr class="odd">
+<td>2024</td>
+<td>5,359</td>
+<td>4,332</td>
+<td>80.8%</td>
+</tr>
+<tr class="even">
+<td>2025</td>
+<td>284</td>
+<td>1</td>
+<td>0.35%</td>
+</tr>
+<tr class="odd">
+<td>2026 (1 ~ 11월)</td>
+<td>4,129</td>
+<td>0</td>
+<td>0.0%</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="appendix-b" class="level3">
+<h3 class="anchored" data-anchor-id="appendix-b">B. 인하 폭, 원 단위</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>구간</th>
+<th>유형</th>
+<th>1원 이하</th>
+<th>2 ~ 5원</th>
+<th>6 ~ 10원</th>
+<th>11 ~ 50원</th>
+<th>51 ~ 100원</th>
+<th>101 ~ 1,000원</th>
+<th>1,000원 초과</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2022 ~ 2025</td>
+<td>전체 13,708</td>
+<td>4.4%</td>
+<td>5.7%</td>
+<td>4.2%</td>
+<td>29.3%</td>
+<td>21.4%</td>
+<td>28.0%</td>
+<td>6.9%</td>
+</tr>
+<tr class="even">
+<td>2022 ~ 2025</td>
+<td>비고 예고</td>
+<td>12.1%</td>
+<td>13.4%</td>
+<td>8.1%</td>
+<td>28.0%</td>
+<td>9.1%</td>
+<td>20.3%</td>
+<td>9.0%</td>
+</tr>
+<tr class="odd">
+<td>2022 ~ 2025</td>
+<td>일괄 인하</td>
+<td>0.2%</td>
+<td>1.3%</td>
+<td>1.2%</td>
+<td>29.7%</td>
+<td>31.0%</td>
+<td>35.0%</td>
+<td>1.7%</td>
+</tr>
+<tr class="even">
+<td>2026-01</td>
+<td>일괄 인하 3,865</td>
+<td>19.6%</td>
+<td>20.2%</td>
+<td>8.8%</td>
+<td>19.2%</td>
+<td>6.7%</td>
+<td>17.1%</td>
+<td>8.4%</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="appendix-c" class="level3">
+<h3 class="anchored" data-anchor-id="appendix-c">C. 일괄 인하의 사유와 폭</h3>
+<p>사유는 문서에 적힌 문구만 썼고, 근거의 강도를 나눠 적었다. “품목 확인”은 사유가 적힌 품목 목록에 제품코드가 있다는 뜻이고, “고시분(품목 미확인)”은 같은 고시로 시행됐지만 그 목록에는 없다는 뜻이다.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>인하</th>
+<th>사유</th>
+<th>건수</th>
+<th>인하율 중앙값</th>
+<th>1% 미만</th>
+<th>10 ~ 20%</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2022-09</td>
+<td>고시에 사유 기재 없음</td>
+<td>169</td>
+<td>6.23%</td>
+<td>8.3%</td>
+<td>1.2%</td>
+</tr>
+<tr class="even">
+<td>2023-09</td>
+<td>기준요건 1차 재평가 (품목 확인)</td>
+<td>7,231</td>
+<td>14.98%</td>
+<td>0.4%</td>
+<td>92.0%</td>
+</tr>
+<tr class="odd">
+<td>2023-09</td>
+<td>기준요건 1차 재평가 고시분 (품목 미확인)</td>
+<td>115</td>
+<td>3.15%</td>
+<td>6.1%</td>
+<td>2.6%</td>
+</tr>
+<tr class="even">
+<td>2024-05</td>
+<td>고시에 사유 기재 없음</td>
+<td>111</td>
+<td>1.85%</td>
+<td>34.2%</td>
+<td>10.8%</td>
+</tr>
+<tr class="odd">
+<td>2026-01</td>
+<td>실거래가 조정 (품목 확인)</td>
+<td>2,405</td>
+<td>0.47%</td>
+<td>67.9%</td>
+<td>0.6%</td>
+</tr>
+<tr class="even">
+<td>2026-01</td>
+<td>실거래가 조정 고시분 (품목 미확인)</td>
+<td>1,441</td>
+<td>1.09%</td>
+<td>48.2%</td>
+<td>0.0%</td>
+</tr>
+<tr class="odd">
+<td>2026-02</td>
+<td>급여적정성 재평가에 따른 자진인하 (품목 확인, 참고)</td>
+<td>76</td>
+<td>—</td>
+<td>0.0%</td>
+<td>97.4%</td>
+</tr>
+</tbody>
+</table>
+<p>고시 변경대비표에 없는 일괄 인하(2022-09 1건, 2023-09 17건, 2026-01 19건)는 표에서 뺐다. 2026-02의 76건은 일괄 인하가 아니라 “그 밖의 비고 없는 인하”로 센 것이다.</p>
+</section>
+<section id="appendix-d" class="level3">
+<h3 class="anchored" data-anchor-id="appendix-d">D. 집행정지에 막힌 인하 예고의 결말</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>결말</th>
+<th>실현율 분모</th>
+<th>제품</th>
+<th>비중</th>
+<th>예고 → 결말 개월, 중앙값 [최소 ~ 최대]</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>실현</td>
+<td>넣음</td>
+<td>66</td>
+<td>75.0%</td>
+<td>27 [22 ~ 27]</td>
+</tr>
+<tr class="even">
+<td>다른 금액으로 실현</td>
+<td>넣음</td>
+<td>11</td>
+<td>12.5%</td>
+<td>27 [22 ~ 27]</td>
+</tr>
+<tr class="odd">
+<td>실현 안 됨</td>
+<td>넣음</td>
+<td>11</td>
+<td>12.5%</td>
+<td>27 [26 ~ 32]</td>
+</tr>
+<tr class="even">
+<td>목록 이탈 (허가취하·유효기간 만료·미청구 정비)</td>
+<td>뺌</td>
+<td>16</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>진행 중</td>
+<td>뺌</td>
+<td>47</td>
+<td>—</td>
+<td>2026-11까지 25 [25 ~ 33] 경과</td>
+</tr>
+</tbody>
+</table>
+<p>2022 ~ 2025에 처음 실린 예고를 2026-11 목록까지 따라갔다.</p>
+</section>
+<section id="appendix-e" class="level3">
+<h3 class="anchored" data-anchor-id="appendix-e">E. 약가유연계약 표시</h3>
+<p>목록 비고에 <code>약가유연계약 적용 약제</code>가 붙은 제품은 2026-06 12개에서 2026-11 52개로 늘었다. 처음 표시된 달에 목록 금액이 오른 제품이 16개였다(전달 대비 중앙값 3.03배). 목록에 적히는 금액(상한금액표 금액)과 별도로 합의한 금액은 다를 수 있고, 별도합의 금액은 공개되지 않는다. 제도 설명의 출처는 건강보험심사평가원 안내와 보건복지부 고시다.</p>
+<p>자료 출처: 건강보험심사평가원 급여목록·대체조제 목록 2022-01 ~ 2025-12, 급여목록 2026-01 ~ 11. 보건복지부 고시 제2022-199호·제2023-166호·제2024-67호·제2025-218호와 변경대비표. 대한병원협회 공문(2022, 2023), 대한약사회 안내 자료(2025-12). 목록 이탈 사유는 식품의약품안전처 의약품 정보·캐시닥, 약가유연계약 설명은 건강보험심사평가원 안내·보건복지부 고시. 숫자는 분석 코드의 결과 파일에서 왔다(비고 없는 가격 변경과 예정일까지의 일수는 2026-11-24 판, 나머지는 2026-11-27 판).</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

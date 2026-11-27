@@ -186,9 +186,11 @@ document.addEventListener("DOMContentLoaded", function () {
    
   <ul>
   <li><a href="#questions" id="toc-questions" class="nav-link active" data-scroll-target="#questions">Questions</a></li>
-  <li><a href="#two-conclusions" id="toc-two-conclusions" class="nav-link" data-scroll-target="#two-conclusions">Two conclusions</a></li>
+  <li><a href="#four-conclusions" id="toc-four-conclusions" class="nav-link" data-scroll-target="#four-conclusions">Four conclusions</a></li>
   <li><a href="#how-often-notes-come-true" id="toc-how-often-notes-come-true" class="nav-link" data-scroll-target="#how-often-notes-come-true">How often notes come true</a></li>
   <li><a href="#price-changes-without-a-note" id="toc-price-changes-without-a-note" class="nav-link" data-scroll-target="#price-changes-without-a-note">Price changes without a note</a></li>
+  <li><a href="#lead" id="toc-lead" class="nav-link" data-scroll-target="#lead">How far ahead can a cut be seen?</a></li>
+  <li><a href="#size" id="toc-size" class="nav-link" data-scroll-target="#size">How small are the cuts?</a></li>
   <li><a href="#checks" id="toc-checks" class="nav-link" data-scroll-target="#checks">How the classification was checked</a></li>
   <li><a href="#limits" id="toc-limits" class="nav-link" data-scroll-target="#limits">Limits</a></li>
   </ul>
@@ -200,7 +202,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">How far can announced price cuts be trusted?</h1>
-<p class="subtitle lead">Realization of notes in 48 monthly snapshots of the reimbursement list, and price changes that came without a note</p>
+<p class="subtitle lead">Realization of notes in the reimbursement list, how far ahead a cut can be seen, and how small cuts are</p>
   <div class="quarto-categories">
     <div class="quarto-category">Medicine data</div>
     <div class="quarto-category">Reimbursement list</div>
@@ -249,22 +251,24 @@ document.addEventListener("DOMContentLoaded", function () {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This is the reimbursement-change part of “Monitoring reimbursement changes and demand” (2026-11-24), moved to its own page on 2026-11-27. The numbers are unchanged from that edition. The next edition will split “how many days ahead can a cut be known?” by type of price cut, adding lead time and size of cut per type, with every number recomputed in a new run.</p>
+<p>Second edition (2026-11-27). The first edition was the reimbursement-change part of “Monitoring reimbursement changes and demand” (2026-11-24). This edition adds <strong>how far ahead a reader of the list alone can see a price cut</strong> and <strong>the size of cuts</strong>, computed in a new run. Realization rates were recounted with products that left the list after an injunction removed from the denominator; price changes without a note are unchanged from the first edition.</p>
 <p>Demand forecasting is in the <a href="../../../en/posts/2026-11-drug-demand-forecast/index.html">demand report</a>, and the whole series in the <a href="../../../en/posts/2026-11-pharm-data-series/index.html">series overview</a>.</p>
 </div>
 </div>
 <div class="report-meta">
-<p><strong>Edition</strong> November 27, 2026 (numbers from the November 24, 2026 edition) <strong>Data</strong> HIRA reimbursement list 2022-01 to 2025-12 (48 monthly snapshots) <strong>Full page (Korean)</strong> <a href="../../../ko/posts/2026-11-benefit-change-lead/index.html">Read the Korean version</a></p>
+<p><strong>Edition</strong> 2nd, November 27, 2026 <strong>Data</strong> HIRA reimbursement list 2022-01 to 2025-12 (main), 2026-01 to 11 (extension, reported separately); Ministry of Health and Welfare notices and association guidance for the reasons behind bulk cuts <strong>Full page (Korean)</strong> <a href="../../../ko/posts/2026-11-benefit-change-lead/index.html">Read the Korean version</a></p>
 </div>
 <section id="questions" class="level2">
 <h2 class="anchored" data-anchor-id="questions">Questions</h2>
-<p>Will a drug’s price or reimbursement status change next month? How often do the notes in the reimbursement list come true? How many price changes can be known in advance from the remarks column alone?</p>
+<p>Will a drug’s price or reimbursement status change next month? How often do the notes in the reimbursement list come true? How far ahead can a reader of the list alone see a price cut, and how small are the cuts?</p>
 </section>
-<section id="two-conclusions" class="level2">
-<h2 class="anchored" data-anchor-id="two-conclusions">Two conclusions</h2>
+<section id="four-conclusions" class="level2">
+<h2 class="anchored" data-anchor-id="four-conclusions">Four conclusions</h2>
 <ol type="1">
-<li><strong>Price cuts announced in the reimbursement list almost always came true.</strong> Of 4,669 products with a known outcome, 99.7% were cut. Among planned suspensions, 3 of 91 decisions were blocked by court injunctions.</li>
-<li><strong>The remarks column alone gives advance notice of only about a third of price changes.</strong> 66.7% of products whose price changed had no advance note; most were government-wide price cuts published in the list itself.</li>
+<li><strong>Price cuts announced in the reimbursement list almost always came true.</strong> Of 4,659 products with a known outcome, 99.96% were cut. Among planned suspensions, 3 of 91 decisions were blocked by court injunctions.</li>
+<li><strong>Seeing a cut at least a month ahead in the list happened almost only in 2024.</strong> Of 13,708 cuts in 2022–2025, 31.6% were visible a month or more before taking effect, but nearly all came from two months in 2024 (80.8% that year; 0–0.35% in other years). Those cuts were mostly posted exactly one month ahead.</li>
+<li><strong>Government bulk cuts first appear in the list in the month they take effect.</strong> Notices and association guidance made them known 4–13 days earlier.</li>
+<li><strong>Bulk cuts differed in size.</strong> The 2023-09 base-requirement re-evaluation cuts were mostly 10–20%; 60% of the 2026-01 actual-transaction-price cuts were under 1%, and 19.6% were exactly 1 won.</li>
 </ol>
 <table class="caption-top table">
 <colgroup>
@@ -283,7 +287,11 @@ document.addEventListener("DOMContentLoaded", function () {
 <td>Conclude “no price change this month” from the remarks alone</td>
 </tr>
 <tr class="even">
-<td>Compare each month’s list with the previous month to find price changes</td>
+<td>Compare each month’s list with the previous month, and read notices and association guidance</td>
+<td>Expect cuts to appear in the list in advance; most first appear in the month they take effect</td>
+</tr>
+<tr class="odd">
+<td>Look at cut size in won and in percent</td>
 <td>Present planned suspensions as certain</td>
 </tr>
 </tbody>
@@ -313,8 +321,8 @@ document.addEventListener("DOMContentLoaded", function () {
 <tr class="odd">
 <td>Price cut (remarks)</td>
 <td>4,683</td>
-<td>99.7%</td>
-<td>98.3%</td>
+<td>99.96%</td>
+<td>98.5%</td>
 <td>30 days</td>
 </tr>
 <tr class="even">
@@ -327,15 +335,16 @@ document.addEventListener("DOMContentLoaded", function () {
 <tr class="odd">
 <td>Planned suspension</td>
 <td>203</td>
-<td>89.3%</td>
-<td>32.0%</td>
+<td>100.0%</td>
+<td>35.8%</td>
 <td>23 days</td>
 </tr>
 </tbody>
 </table>
 <ul>
-<li><strong>Realized</strong> includes cuts that came slightly late or at a different amount. “Known outcomes” excludes notes still on hold under a court injunction.</li>
-<li><strong>Counted per decision</strong> (one company’s one decision, however many products), 88 of 91 planned suspensions (96.7%) were realized. The 3 blocked decisions cover many products (72 from one company), which pulls the product-level figure down.</li>
+<li><strong>Realized</strong> includes changes that came slightly late, at a different amount, or as delisting instead of suspension. “Known outcomes” excludes notes still on hold under a court injunction and products that <strong>left the list after an injunction</strong> (nothing left to judge), the same rule as the injunction-outcome table.</li>
+<li>The first edition counted those delisted products (10 price-cut notes, 13 planned suspensions) as not realized, giving 99.7% and 89.3%.</li>
+<li><strong>Counted per decision</strong> (one company’s one decision, however many products), all 89 of the 91 planned suspensions with an outcome were realized. The 81 products still without an outcome belong to two companies’ decisions under continuing injunctions (59 and 22).</li>
 <li>Notices of a planned suspension should say that a court decision may block it.</li>
 </ul>
 </section>
@@ -349,18 +358,50 @@ document.addEventListener("DOMContentLoaded", function () {
 </figure>
 </div>
 <ul>
-<li>7,657 of them fall in three months of government-wide bulk cuts. The 2023-09 generic re-evaluation alone accounts for 7,371; 2022-09 had 175 and 2024-05 had 111.</li>
+<li>7,657 of them fall in three months of government-wide bulk cuts. The 2023-09 base-requirement re-evaluation alone accounts for 7,371; 2022-09 had 175 and 2024-05 had 111.</li>
 <li>Even outside the bulk-cut months, 26.8% changed without a note.</li>
 <li>Price alerts therefore need both the remarks and a month-on-month comparison of the list.</li>
 </ul>
 </section>
+<section id="lead" class="level2">
+<h2 class="anchored" data-anchor-id="lead">How far ahead can a cut be seen?</h2>
+<p>Lead time is the gap between the month a cut first appeared in the list and the month it took effect, counted in months because the actual release date of each file is unknown.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lead-by-year.svg" class="img-fluid figure-img" alt="2022 0.0%, 2023 0.05%, 2024 80.8%, 2025 0.35%, 2026 Jan–Nov 0.0%."></p>
+<figcaption>Share of cuts visible at least one month ahead, by year</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Pooled over 2022–2025 the share is 31.6%</strong> (4,337 of 13,708), but a single pooled figure misleads: almost all of it is the noted cuts of 2024-03 and 2024-07.</li>
+<li>All cuts visible in advance were noted in the remarks; 4,334 of 4,337 first appeared in the list of the month before (29–31 days ahead). Only 3 appeared two or more months ahead.</li>
+<li>Notes held by a court injunction were re-timed from the month the lifting of the injunction appeared in the list.</li>
+</ul>
+<p><strong>Outside the list</strong>, bulk cuts were known 4–13 days ahead: notice No.&nbsp;2022-199 (7 days), Korean Hospital Association letter (6 days), notice No.&nbsp;2023-166 (4 days), notice No.&nbsp;2025-218 (8 days), and a Korean Pharmaceutical Association item table (13 days; shared on 2025-12-19, estimated). The same table listed voluntary cuts after the reimbursement-appropriateness re-evaluation that took effect 44 days later (2026-02). Hospital-route documents are guidance for hospitals; the pharmacy-route document exists only for 2026.</p>
+</section>
+<section id="size" class="level2">
+<h2 class="anchored" data-anchor-id="size">How small are the cuts?</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/bulk-width.svg" class="img-fluid figure-img" alt="2022-09 median 6.2%; 2023-09 median 15.0%, 90% between 10 and 20%; 2024-05 median 1.9%; 2026-01 median 0.6%, 60% under 1%."></p>
+<figcaption>Cut size by bulk-cut month</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>2023-09:</strong> 7,231 of 7,363 cuts (98.2%) are on the list of “base-requirement re-evaluation, round 1” cuts; 92.0% of them were 10–20% (median 15.0%).</li>
+<li><strong>2026-01:</strong> 2,405 of 3,865 (62.2%) are on the “actual-transaction-price adjustment” item table; 67.9% of them were under 1% (median 0.47%). The other 1,441 took effect under the same notice but are not on the item table.</li>
+<li><strong>2022-09 and 2024-05:</strong> no reason is stated in the notices, and the cuts were not 10–20% (medians 6.2% and 1.9%).</li>
+<li>In won, 19.6% of the 2026-01 bulk cuts were exactly 1 won and 39.9% were 5 won or less (10.2% across 2022–2025). Won amounts are per unit (tablet, mL), so package sizes mix; percentages are less affected.</li>
+</ul>
+<p>Reasons are taken only from the wording of documents; no reason was inferred. Products under flexible pricing contracts (from 2026-06) had no cuts, so they do not affect these figures. (Sources on flexible contracts: HIRA guidance and Ministry of Health and Welfare notices. Delisting reasons for injunction cases: Ministry of Food and Drug Safety drug information and Cashdoc.)</p>
+</section>
 <section id="checks" class="level2">
 <h2 class="anchored" data-anchor-id="checks">How the classification was checked</h2>
-<p>The automated classification of notes was compared with 30 hand-labelled cases; the type matched in 83.3% (95% interval 66.4–92.7%, one labeller). In the Dong-A ST suspension case, the injunction date recorded in the list matched the court’s decision date (2022-05-09).</p>
+<p>Of 11,509 bulk cuts in the four months, 11,460 (99.6%) matched the notices’ change tables on product code and before/after price. The automated classification of notes was compared with 30 hand-labelled cases; the type matched in 83.3% (95% interval 66.4–92.7%, one labeller). In the Dong-A ST suspension case, the injunction date recorded in the list matched the court’s decision date (2022-05-09).</p>
 </section>
 <section id="limits" class="level2">
 <h2 class="anchored" data-anchor-id="limits">Limits</h2>
-<p>Injunctions not shown in the list are missed; only one was added from outside data. Suspensions for sanctions and for licensing reasons cannot be told apart from the remarks alone. This page does not look at price changes and prescription volume, and computes no savings or incentive amounts.</p>
+<p>Injunctions not shown in the list are missed; only one was added from outside data. Suspensions for sanctions and for licensing reasons cannot be told apart from the remarks alone. Lead time is measured in months. 37.3% of the 2026-01 bulk cuts have no item-level reason. Some outside-list dates are estimates. Injunction outcomes come from a few companies’ cases. This page does not look at price changes and prescription volume, and computes no savings or incentive amounts.</p>
 
 
 </section>

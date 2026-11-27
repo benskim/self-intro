@@ -246,7 +246,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </thead>
 <tbody>
 <tr class="odd">
-<td>Will a price or reimbursement status change next month? How often do announced notes come true?</td>
+<td>Will a price or reimbursement status change next month? How often do announced notes come true? How far ahead can a cut be seen?</td>
 <td>HIRA reimbursement list 2022-01 to 2025-12</td>
 <td><a href="../../../en/posts/2026-11-benefit-change-lead/index.html">How far can announced price cuts be trusted?</a></td>
 </tr>
@@ -269,7 +269,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <section id="ground-rules" class="level2">
 <h2 class="anchored" data-anchor-id="ground-rules">Ground rules</h2>
 <ul>
-<li>A future date in the remarks is an <strong>announcement</strong>, not a change. Pages say “a cut was announced” or “realization rate 99.7%”, never “the price was cut”.</li>
+<li>A future date in the remarks is an <strong>announcement</strong>, not a change. Pages say “a cut was announced” or “realization rate 99.96%”, never “the price was cut”.</li>
 <li>Price changes and prescription volume are compared only as before-and-after changes and associations, not as causes.</li>
 <li>Demand forecasts are national and per ingredient, not order quantities for a pharmacy or product.</li>
 <li>No savings or incentive amounts are computed.</li>
@@ -278,16 +278,71 @@ document.addEventListener("DOMContentLoaded", function () {
 </section>
 <section id="next" class="level2">
 <h2 class="anchored" data-anchor-id="next">Next analyses</h2>
-<ol type="1">
-<li><strong>Price cuts by type:</strong> separate patent-expiry, price-volume, actual-transaction-price, and re-evaluation cuts, and measure each type’s realization rate, lead time, size of cut, and market response. This becomes the next edition of the <a href="../../../en/posts/2026-11-benefit-change-lead/index.html">reimbursement-change page</a>.</li>
-<li><strong>Generic-substitution list and prescription shifts:</strong> check whether the average unit price per ingredient (claimed amount ÷ volume) falls after products enter or leave the substitution incentive list.</li>
-<li><strong>Patent expiry and generic entry:</strong> compare ingredient market value and unit price before and after new same-ingredient products are listed.</li>
-<li><strong>Shortage and supply-interruption data:</strong> match official shortage reports with sudden demand changes to explain large errors for respiratory drugs and antibiotics.</li>
-<li><strong>Region and facility type:</strong> break national totals down by province and type of care institution.</li>
-<li><strong>One pharmacy alert, end to end:</strong> show what a single pharmacy would receive (announced cut, effective date, chance of a court block).</li>
-<li><strong>Strength and dosage-form aggregation:</strong> check how combining different strengths and forms under one ingredient code affects forecast error.</li>
-<li><strong>Price increases for essential drugs:</strong> track whether prescriptions recover after price-ceiling increases.</li>
-</ol>
+<p>The order follows the pharmacy pain points in the Korean overview, weighted by how much information can reduce them and by what is coming (re-evaluation of listed drugs from 2027). “Possible now” means the public data already in hand are enough.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Analysis</th>
+<th>Pain point</th>
+<th>Why</th>
+<th>Possible now?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><strong>How far ahead can a cut be known:</strong> split cuts into noted cuts, bulk cuts and other cuts without a note; measure the share visible in the list at least a month ahead and the size of cuts (won and percent)</td>
+<td>Stock value</td>
+<td>Answers “we only learn days before, so we give up checking” and “1-won cuts are a loss we just absorb” with numbers</td>
+<td><strong>Done (2026-11-27).</strong> Seeing a cut a month ahead happened mostly in 2024 (80.8%; 0–0.35% in other years). Bulk cuts were known 4–13 days ahead through notices and association guidance; 19.6% of the 2026-01 actual-transaction-price cuts were 1 won. <a href="../../../en/posts/2026-11-benefit-change-lead/index.html#lead">2nd edition</a></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><strong>Re-evaluation exposure map:</strong> describe which products were cut in the 2023-09 base-requirement re-evaluation, and count products in today’s list with similar characteristics</td>
+<td>Stock value</td>
+<td>The pain point expected to worsen fastest</td>
+<td>Possible now (descriptive). There has been essentially one bulk re-evaluation, so no predictive model</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td><strong>Supply-vulnerability map:</strong> trend of listed products and companies per ingredient, delistings, suspensions and price-ceiling increases, to find ingredients with few substitutes</td>
+<td>Procurement</td>
+<td>The part of shortages that public data can address is “can it be substituted?”</td>
+<td>Map possible now. Matching with actual shortages needs supply-interruption reports; until then results are “vulnerability candidates”</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><strong>Delisting, suspension and unsellable stock:</strong> was there a signal before a product left the list or was suspended, and how many same-ingredient substitutes existed then</td>
+<td>Stock value</td>
+<td>Can warn about stock that may become unreturnable</td>
+<td>Possible now. Planned delisting dates are not in the data</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td><strong>Reported shortage cases:</strong> did ingredient prescriptions change sharply around reported shortages</td>
+<td>Procurement</td>
+<td>Links field complaints to data</td>
+<td>Conditional. Ingredients with two or fewer companies are suppressed in the usage statistics; used as validation cases for #3</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td><strong>Leading signals for winter respiratory and antibiotic demand:</strong> do search indices, paediatric care flows and the calendar move ahead of prescription increases</td>
+<td>Procurement</td>
+<td>Fever-reducer and antibiotic shortages cluster in winter and overlap with the largest forecast errors</td>
+<td>In progress. Results are leading correlations, not causes or shortage forecasts</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td><strong>Long-term prescribing trend:</strong> volume per claim by province, care-institution type and age</td>
+<td>Dispensing</td>
+<td>Long prescriptions add to stock and consumable burden</td>
+<td>Possible but the indicator is weak: volume is in product units, not days supplied</td>
+</tr>
+</tbody>
+</table>
+<p>Warehouse-style pharmacies and dispensing fees per pharmacy are not covered: there are no pharmacy- or area-level data.</p>
+<p><strong>Other candidates:</strong> ingredient unit price around changes in the generic-substitution list, ingredient markets around patent expiry and generic entry, prescription flows by province and facility type, how combining strengths and forms affects forecast error, and an example of a single pharmacy alert built from the change log.</p>
 
 
 </section>
