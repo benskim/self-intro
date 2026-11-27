@@ -1,0 +1,70 @@
+---
+title: "How far can announced price cuts be trusted?"
+subtitle: "Realization of notes in 48 monthly snapshots of the reimbursement list, and price changes that came without a note"
+description: "English summary of a page that chains HIRA reimbursement-list snapshots from 2022 to 2025 to count how often announced price cuts, new listings and suspensions came true, and how many price changes had no advance note."
+date: "2026-11-27"
+categories: [Medicine data, Reimbursement list, Public medicine data series]
+image: images/price-notes.svg
+author: "Ben Kim"
+toc: true
+code-tools: false
+---
+
+::: {.callout-note}
+## About this page
+This is the reimbursement-change part of "Monitoring reimbursement changes and demand" (2026-11-24), moved to its own page on 2026-11-27. The numbers are unchanged from that edition. The next edition will split "how many days ahead can a cut be known?" by type of price cut, adding lead time and size of cut per type, with every number recomputed in a new run.
+
+Demand forecasting is in the [demand report](../2026-11-drug-demand-forecast/index.qmd), and the whole series in the [series overview](../2026-11-pharm-data-series/index.qmd).
+:::
+
+::: {.report-meta}
+**Edition** November 27, 2026 (numbers from the November 24, 2026 edition)
+**Data** HIRA reimbursement list 2022-01 to 2025-12 (48 monthly snapshots)
+**Full page (Korean)** [Read the Korean version](../../../ko/posts/2026-11-benefit-change-lead/index.qmd)
+:::
+
+## Questions
+
+Will a drug's price or reimbursement status change next month? How often do the notes in the reimbursement list come true? How many price changes can be known in advance from the remarks column alone?
+
+## Two conclusions
+
+1. **Price cuts announced in the reimbursement list almost always came true.** Of 4,669 products with a known outcome, 99.7% were cut. Among planned suspensions, 3 of 91 decisions were blocked by court injunctions.
+2. **The remarks column alone gives advance notice of only about a third of price changes.** 66.7% of products whose price changed had no advance note; most were government-wide price cuts published in the list itself.
+
+| Do | Don't |
+|---|---|
+| Use price-cut notes in the remarks for alerts | Conclude "no price change this month" from the remarks alone |
+| Compare each month's list with the previous month to find price changes | Present planned suspensions as certain |
+
+## How often notes come true
+
+The monthly snapshots were chained into a per-product change log. A future date in the remarks, such as "cut on 25.7.1", was recorded as an announcement, not as a change, and checked against later snapshots.
+
+| Type of note | Products | Realized, among known outcomes | On the planned date | Median lead time |
+|---|---|---|---|---|
+| Price cut (remarks) | 4,683 | 99.7% | 98.3% | 30 days |
+| New listing | 342 | 100.0% | 100.0% | 8 days |
+| Planned suspension | 203 | 89.3% | 32.0% | 23 days |
+
+- **Realized** includes cuts that came slightly late or at a different amount. "Known outcomes" excludes notes still on hold under a court injunction.
+- **Counted per decision** (one company's one decision, however many products), 88 of 91 planned suspensions (96.7%) were realized. The 3 blocked decisions cover many products (72 from one company), which pulls the product-level figure down.
+- Notices of a planned suspension should say that a court decision may block it.
+
+## Price changes without a note
+
+**Of 14,041 product price changes, 9,370 (66.7%) had no note in the remarks.** They took effect through the list itself. This does not mean they were unannounced, only that the remarks column does not show them.
+
+![Price changes with and without a note in the remarks. The bulk-cut months are 2022-09, 2023-09 and 2024-05.](images/price-notes.svg){fig-alt="Of 14,041 price changes, 4,671 (33.3%) were noted, 7,657 (54.5%) came without a note in three bulk-cut months, and 1,713 (12.2%) were other changes without a note."}
+
+- 7,657 of them fall in three months of government-wide bulk cuts. The 2023-09 generic re-evaluation alone accounts for 7,371; 2022-09 had 175 and 2024-05 had 111.
+- Even outside the bulk-cut months, 26.8% changed without a note.
+- Price alerts therefore need both the remarks and a month-on-month comparison of the list.
+
+## How the classification was checked {#checks}
+
+The automated classification of notes was compared with 30 hand-labelled cases; the type matched in 83.3% (95% interval 66.4–92.7%, one labeller). In the Dong-A ST suspension case, the injunction date recorded in the list matched the court's decision date (2022-05-09).
+
+## Limits
+
+Injunctions not shown in the list are missed; only one was added from outside data. Suspensions for sanctions and for licensing reasons cannot be told apart from the remarks alone. This page does not look at price changes and prescription volume, and computes no savings or incentive amounts.

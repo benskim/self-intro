@@ -5,6 +5,8 @@ description: "Project A의 A/B 테스트를 퍼널 진단 → 표본 산정 → 
 date: "2026-11-23"
 categories: [분석노트, A/B테스트, Project A]
 image: images/ab-result.png
+aliases:
+  - ../2026-11-sample-analysis/index.html
 ---
 
 ::: {.callout-note}

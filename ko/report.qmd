@@ -3,7 +3,8 @@ title: "Report"
 listing:
   contents:
     - "posts/*/index.qmd"
-    - "!posts/2026-11-sample-analysis/index.qmd"
+    - "!posts/2025-11-kamelo-analysis/index.qmd"
+    - "!posts/2026-11-drug-demand-tech-note/index.qmd"
   sort: "date desc"
   type: default
   categories: true

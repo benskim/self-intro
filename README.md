@@ -51,8 +51,11 @@
 
 | 보고서 | 핵심 내용 |
 | --- | --- |
-| [급여 변동과 수요 모니터링](ko/posts/2026-11-drug-benefit-demand/index.qmd) (2026-11-24) | 급여목록 48개월 스냅샷으로 약값 인하·급여정지 예고의 실현율 검증, 성분별 6개월 앞 처방량 예측(ETS·LightGBM), 분류군(약효분류·ATC)별 차이 실험 |
-| [A/B 테스트 분석 노트](ko/posts/2026-11-sample-analysis/index.qmd) | 퍼널 진단, 표본 산정, 유의성 검정까지 정리한 Project A 실험 노트 |
+| [공개 의약품 데이터 시리즈: 약값 변동과 처방 수요](ko/posts/2026-11-pharm-data-series/index.qmd) (2026-11-27) | 시리즈 안내. 급여목록 가격 정보를 수요 예측에 넣어 본 결과, 다음 분석 계획 |
+| [약값 인하 예고, 얼마나 믿을 수 있나](ko/posts/2026-11-benefit-change-lead/index.qmd) (2026-11-27) | 급여목록 48개월 스냅샷으로 약값 인하·급여정지 예고의 실현율, 비고에 없는 가격 변경 검증 |
+| [성분 처방 수요, 6개월 앞을 얼마나 맞힐 수 있나](ko/posts/2026-11-drug-demand-forecast/index.qmd) (2026-11-24, 2026-11-27 개정) | 성분별 6개월 앞 처방량 예측(ETS·LightGBM), 고변동 성분, 분류군(약효분류·ATC)별 차이 |
+| [수요 예측 기술 노트](ko/posts/2026-11-drug-demand-tech-note/index.qmd) (2026-11-27) | 분류군 실험, 사전등록·예측 봉인, 예측 모델 명세 |
+| [A/B 테스트 분석 노트](ko/posts/2025-11-kamelo-analysis/index.qmd) | 퍼널 진단, 표본 산정, 유의성 검정까지 정리한 Project A 실험 노트 |
 
 ## 기술 스택
 
