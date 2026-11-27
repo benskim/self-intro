@@ -1,6 +1,6 @@
 ---
-title: "Price cuts: when can a pharmacy know, and how small are they?"
-subtitle: "Checking pharmacy case B-1 (loss of stock value) against the public reimbursement list and government notices"
+title: "How many days ahead can a pharmacy know about a price cut?"
+subtitle: "Down to 1-won cuts: checking what pharmacists say against the public reimbursement list and government notices"
 description: "English summary. A pharmacist said cuts become known only days ahead, so checking stock is abandoned, and 1-won cuts are absorbed as a loss. HIRA reimbursement lists 2022–2026 and Ministry of Health and Welfare notices are used to check when cuts can be known, how small they are, and whether announced cuts can be trusted."
 date: "2026-11-27"
 categories: [Medicine data, Reimbursement list, Public medicine data series]
@@ -12,7 +12,9 @@ code-tools: false
 
 ::: {.callout-note}
 ## About this page
-Second edition (2026-11-27), rewritten to start from pharmacy case B-1. The first edition (2026-11-24) centred on how often notes in the list come true. Analyses and figures are reused; lead time, size of cuts and a match against government notices are new. Realization rates were recounted with products that left the list after an injunction removed from the denominator.
+Second edition (2026-11-27), rewritten to start from what pharmacists say. The first edition (2026-11-24) centred on how often announcements in the list come true. Analyses and figures are reused; lead time, size of cuts and a match against government notices are new.
+
+One number changed: products that left the list after a court injunction (10 price-cut announcements, 13 planned suspensions) were counted as "not carried out" in the first edition and are now left out, because there is nothing left to judge. Price cuts went from 99.7% to 99.96% and planned suspensions from 89.3% to 100.0%.
 
 The whole series is in the [series overview](../2026-11-pharm-data-series/index.qmd); demand forecasting is in the [demand report](../2026-11-drug-demand-forecast/index.qmd).
 :::
@@ -25,20 +27,25 @@ The whole series is in the [series overview](../2026-11-pharm-data-series/index.
 
 ## Summary
 
-**The field account mostly holds, but not always.**
+**What pharmacists say mostly holds, but not every year.**
 
 | What pharmacists say | What the data show |
 |---|---|
-| "We learn of price cuts only days before" | **True.** In the list, most cuts first appear in the month they take effect; notices and association guidance came 4–13 days ahead. 31.6% of 2022–2025 cuts were visible a month or more ahead, almost all from noted cuts in two months of 2024 |
-| "1-won cuts are a loss we just absorb" | **True in 2026-01.** 19.6% of that month's bulk cuts were exactly 1 won and 39.9% were 5 won or less. Across 2022–2025, 5 won or less was 10.2%, so it varies by year |
-| (Can announced cuts be trusted?) | **Yes.** 99.96% of price cuts announced in the remarks came true, but only a third of price changes are announced there |
-| (Why are some cuts large and others small?) | **Different reasons.** The 2023-09 base-requirement re-evaluation cuts were mostly 10–20%; the 2026-01 actual-transaction-price cuts were mostly under 1% |
+| "We learn of price cuts only days before" | **True.** In the list, most cuts first appear in the month they take effect; government notices and association guidance came 4–13 days ahead. 31.6% of 2022–2025 cuts were visible a month or more ahead, almost all in two months of 2024 |
+| "1-won cuts are a loss we just absorb" | **True in January 2026.** 19.6% of that month's government bulk cuts were exactly 1 won and 39.9% were 5 won or less. Across 2022–2025, 5 won or less was 10.2%, so it varies by year |
 
-## 1. Perspective and case {#perspective}
+| What an alert builder asks | What the data show |
+|---|---|
+| Can announced cuts be trusted? | **Yes.** Nearly all (99.96%) cuts announced in the list's remarks column were carried out, but only a third of price changes are announced there |
+| Which cuts were large and which small? | **The documented reasons differed.** The September 2023 base-requirement re-evaluation cuts were mostly 10–20%; the January 2026 actual-transaction-price cuts were mostly under 1% |
+
+## 1. Whose problem, and who can help {#perspective}
 
 The page takes the view of those who could ease pharmacy burdens with ordering, stock and return information (distributors, pharmacy support services). Pharmacy pain points are sorted by the path a drug takes through a pharmacy: procuring (A), **holding stock (B)**, dispensing (C), earning (D). Stage B is expected to worsen fastest as listed drugs are re-evaluated from 2027, and it is the stage public data cover best.
 
-**Case B-1** (trade press): a pharmacist learns of cuts only days ahead, gives up checking stock against them for settlement, and absorbs 1-won cuts. Two constraints can be measured with public data: **time** (when a cut first becomes visible) and **small amounts** (size of cuts). A third, shrinking compensation and return terms from manufacturers and wholesalers, is not in public data.
+**What a pharmacist said** (trade press): cuts become known only days ahead, so checking stock against them to claim the price difference from suppliers is given up, and 1-won cuts are absorbed as a loss. Two of the reasons behind this can be measured with public data: **no time** (when a cut first becomes visible) and **small amounts** (size of cuts). A third, shrinking compensation and return terms from manufacturers and wholesalers, is not in public data.
+
+Cuts are grouped as: cuts announced in advance in the list's remarks column; government bulk cuts (months when 50 or more ingredients changed price without a note); and other cuts without a note.
 
 **Not in the data**: pharmacy purchases and stock, product sales, wholesale flows, compensation and return terms, planned delisting dates. Pharmacy-level losses are not computed.
 
@@ -46,8 +53,8 @@ The page takes the view of those who could ease pharmacy burdens with ordering, 
 
 ![Share of cuts visible at least one month ahead, by year](images/lead-by-year.svg){fig-alt="2022 0.0%, 2023 0.05%, 2024 80.8%, 2025 0.35%, 2026 Jan–Nov 0.0%."}
 
-- Pooled, 31.6% (4,337 of 13,708) were visible a month or more ahead, but almost all of it is the noted cuts of 2024-03 and 2024-07. 4,334 of the 4,337 first appeared in the previous month's list (29–31 days ahead).
-- Bulk cuts and other cuts without a note all first appeared in the list of the month they took effect. An alert built on the list catches 99.95% of cuts by that month (7 appeared only afterwards): the problem is lateness, not misses.
+- Pooled, 31.6% (4,337 of 13,708) were visible a month or more ahead, but almost all of it is announced cuts in March and July 2024. 4,334 of the 4,337 first appeared in the previous month's list (29–31 days ahead).
+- Government bulk cuts and other cuts without a note all first appeared in the list of the month they took effect. For an alert built on the list, only 7 cuts appeared after taking effect: the problem is lateness, not misses.
 - 9,370 of 14,041 product price changes (66.7%) had no note in the remarks.
 - **Outside the list**, bulk cuts were known 4–13 days ahead: notice No. 2022-199 (7 days), Korean Hospital Association letter (6), notice No. 2023-166 (4), notice No. 2025-218 (8), Korean Pharmaceutical Association item table (13; shared 2025-12-19, estimated). The same table listed voluntary cuts effective 44 days later (2026-02). Only one pharmacy-route document is available (2026).
 
@@ -56,20 +63,22 @@ The page takes the view of those who could ease pharmacy burdens with ordering, 
 - 19.6% of the 2026-01 bulk cuts were exactly 1 won and 39.9% were 5 won or less; 718 of the 759 1-won cuts are on the actual-transaction-price item table.
 - Across 2022–2025, 5 won or less was 10.2%.
 - Cuts visible a month ahead were smaller: 27.2% were 5 won or less, vs 2.2% for other cuts.
-- Won amounts are per unit (tablet, mL), so package sizes mix; percentages are shown in §5.
+- Won amounts are per unit (one tablet, one mL); the drop per box is larger, and package sizes mix, so percentages are shown in section 5.
 
 ## 4. Can announced cuts be trusted? {#realization}
 
-| Type of note | Products | Realized, among known outcomes | On the planned date | Median lead time |
+The exception is a court injunction: a company contesting a decision can have a court suspend it, and the announced cut or suspension does not take effect meanwhile.
+
+| Announcement | Products | Carried out, among those that can be judged | On the planned date | Median lead time |
 |---|---|---|---|---|
 | Price cut (remarks) | 4,683 | 99.96% | 98.5% | 30 days |
 | New listing | 342 | 100.0% | 100.0% | 8 days |
 | Planned suspension | 203 | 100.0% | 35.8% | 23 days |
 
-- Known outcomes exclude notes still held by a court injunction and products that left the list after an injunction. The first edition counted the latter (10 and 13 products) as not realized, giving 99.7% and 89.3%.
+- "Can be judged" leaves out announcements still held by an injunction and products that left the list after one.
 - Of 151 price-cut notes held by injunctions, followed to 2026-11, 75.0% of the 88 with an outcome came true as announced, 12.5% at a different amount and 12.5% not; the median time to outcome was 27 months. These are a few companies' cases.
 
-## 5. Why are some cuts large and others small? {#reasons}
+## 5. Which cuts were large, and which small? {#reasons}
 
 ![Cut size by bulk-cut month](images/bulk-width.svg){fig-alt="2022-09 median 6.2%; 2023-09 median 15.0%, 90% between 10 and 20%; 2024-05 median 1.9%; 2026-01 median 0.6%, 60% under 1%."}
 
@@ -80,7 +89,7 @@ The page takes the view of those who could ease pharmacy burdens with ordering, 
 
 ## 6. Implications {#implications}
 
-Untested suggestions for alerts: noted cuts as one-month-ahead alerts; bulk cuts tracked through notice and association schedules (1–2 weeks ahead) with item tables turned into checklists; a monthly list-to-list comparison for other cuts; injunction cases flagged as possibly years from an outcome. Showing the size of each cut lets pharmacies decide which items are worth checking. Pharmacy-level expected losses need the pharmacy's own stock records.
+Untested suggestions for alerts: cuts announced in the remarks as one-month-ahead alerts; bulk cuts tracked through notice and association schedules (1–2 weeks ahead) with item tables turned into checklists; a monthly list-to-list comparison for other cuts; injunction cases flagged as possibly years from an outcome. Showing the size of each cut lets pharmacies decide which items are worth checking. Pharmacy-level expected losses need the pharmacy's own stock records.
 
 ## Checks and limits {#checks}
 

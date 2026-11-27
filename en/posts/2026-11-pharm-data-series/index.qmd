@@ -13,7 +13,7 @@ This series uses two public datasets to answer questions that pharmacies and pha
 
 | Question | Data | Page |
 |---|---|---|
-| (Stock value, case B-1) When can a price cut be known, and how small is it? Can announced cuts be trusted? | HIRA reimbursement list 2022-01 to 2025-12 | [Price cuts: when can a pharmacy know, and how small are they?](../2026-11-benefit-change-lead/index.qmd) |
+| (Stock value) How many days ahead can a pharmacy know about a price cut, and how small is it? Can announced cuts be trusted? | HIRA reimbursement list 2022-01 to 2025-12 | [How many days ahead can a pharmacy know about a price cut?](../2026-11-benefit-change-lead/index.qmd) |
 | Which way is demand for each ingredient heading? How well can six months ahead be forecast? | NHIS drug usage statistics 2018-01 to 2025-12 | [Ingredient prescription demand](../2026-11-drug-demand-forecast/index.qmd) |
 | How were those numbers checked? | Same data | [Demand forecasting technical note](../2026-11-drug-demand-tech-note/index.qmd) |
 
