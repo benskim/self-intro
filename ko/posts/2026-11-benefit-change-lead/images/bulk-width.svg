@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 346" role="img" aria-label="일괄 인하의 폭은 달마다 달랐다" font-family="Pretendard, 'Noto Sans CJK KR', 'Apple SD Gothic Neo', sans-serif">
+<rect width="760" height="346" fill="#ffffff"/>
+<text x="20.0" y="28.0" font-size="17" fill="#14231E" text-anchor="start" font-weight="700">일괄 인하의 폭은 달마다 달랐다</text><text x="20.0" y="50.0" font-size="13" fill="#5A6B64" text-anchor="start" font-weight="400">일괄 인하 달별 인하율(인하 전 상한금액 대비) 구간의 제품 비중. 사유는 고시·단체 안내 문서의 문구</text>
+<rect x="20" y="64" width="12" height="12" fill="#dbe9f7"/>
+<text x="36.0" y="75.0" font-size="12" fill="#14231E" text-anchor="start" font-weight="400">1% 미만</text>
+<rect x="112" y="64" width="12" height="12" fill="#a9cbee"/>
+<text x="128.0" y="75.0" font-size="12" fill="#14231E" text-anchor="start" font-weight="400">1~5%</text>
+<rect x="204" y="64" width="12" height="12" fill="#6fa6df"/>
+<text x="220.0" y="75.0" font-size="12" fill="#14231E" text-anchor="start" font-weight="400">5~10%</text>
+<rect x="296" y="64" width="12" height="12" fill="#2a78d6"/>
+<text x="312.0" y="75.0" font-size="12" fill="#14231E" text-anchor="start" font-weight="400">10~20%</text>
+<rect x="388" y="64" width="12" height="12" fill="#1d5aa3"/>
+<text x="404.0" y="75.0" font-size="12" fill="#14231E" text-anchor="start" font-weight="400">20~30%</text>
+<rect x="480" y="64" width="12" height="12" fill="#123c6e"/>
+<text x="496.0" y="75.0" font-size="12" fill="#14231E" text-anchor="start" font-weight="400">30% 이상</text>
+<text x="20.0" y="110.0" font-size="13" fill="#14231E" text-anchor="start" font-weight="600">2022-09  (170건)</text>
+<text x="20.0" y="128.0" font-size="11" fill="#5A6B64" text-anchor="start" font-weight="400">고시에 사유 없음</text>
+<rect x="250.0" y="100" width="39.4" height="24" fill="#dbe9f7"/>
+<rect x="290.4" y="100" width="154.6" height="24" fill="#a9cbee"/>
+<text x="368.2" y="117.0" font-size="11" fill="#14231E" text-anchor="middle" font-weight="600">32%</text>
+<rect x="446.0" y="100" width="281.5" height="24" fill="#6fa6df"/>
+<text x="587.2" y="117.0" font-size="11" fill="#14231E" text-anchor="middle" font-weight="600">58%</text>
+<rect x="728.5" y="100" width="4.8" height="24" fill="#2a78d6"/>
+<rect x="734.2" y="100" width="4.8" height="24" fill="#1d5aa3"/>
+<text x="250.0" y="140.0" font-size="11" fill="#5A6B64" text-anchor="start" font-weight="400">중앙값 6.2%</text>
+<text x="20.0" y="170.0" font-size="13" fill="#14231E" text-anchor="start" font-weight="600">2023-09  (7,363건)</text>
+<text x="20.0" y="188.0" font-size="11" fill="#5A6B64" text-anchor="start" font-weight="400">기준요건 1차 재평가</text>
+<text x="20.0" y="203.0" font-size="11" fill="#5A6B64" text-anchor="start" font-weight="400">품목 확인 98%</text>
+<rect x="250.0" y="160" width="1.5" height="24" fill="#dbe9f7"/>
+<rect x="252.5" y="160" width="13.0" height="24" fill="#a9cbee"/>
+<rect x="266.6" y="160" width="22.1" height="24" fill="#6fa6df"/>
+<rect x="289.7" y="160" width="442.1" height="24" fill="#2a78d6"/>
+<text x="511.2" y="177.0" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="600">90%</text>
+<rect x="732.8" y="160" width="5.9" height="24" fill="#1d5aa3"/>
+<rect x="739.7" y="160" width="0.5" height="24" fill="#123c6e"/>
+<text x="250.0" y="200.0" font-size="11" fill="#5A6B64" text-anchor="start" font-weight="400">중앙값 15.0%</text>
+<text x="20.0" y="230.0" font-size="13" fill="#14231E" text-anchor="start" font-weight="600">2024-05  (111건)</text>
+<text x="20.0" y="248.0" font-size="11" fill="#5A6B64" text-anchor="start" font-weight="400">고시에 사유 없음</text>
+<rect x="250.0" y="220" width="166.7" height="24" fill="#dbe9f7"/>
+<text x="333.9" y="237.0" font-size="11" fill="#14231E" text-anchor="middle" font-weight="600">34%</text>
+<rect x="417.7" y="220" width="153.5" height="24" fill="#a9cbee"/>
+<text x="495.0" y="237.0" font-size="11" fill="#14231E" text-anchor="middle" font-weight="600">32%</text>
+<rect x="572.3" y="220" width="74.0" height="24" fill="#6fa6df"/>
+<text x="609.8" y="237.0" font-size="11" fill="#14231E" text-anchor="middle" font-weight="600">15%</text>
+<rect x="647.3" y="220" width="52.0" height="24" fill="#2a78d6"/>
+<rect x="700.3" y="220" width="38.7" height="24" fill="#1d5aa3"/>
+<text x="250.0" y="260.0" font-size="11" fill="#5A6B64" text-anchor="start" font-weight="400">중앙값 1.9%</text>
+<text x="20.0" y="290.0" font-size="13" fill="#14231E" text-anchor="start" font-weight="600">2026-01  (3,865건)</text>
+<text x="20.0" y="308.0" font-size="11" fill="#5A6B64" text-anchor="start" font-weight="400">실거래가 조정</text>
+<text x="20.0" y="323.0" font-size="11" fill="#5A6B64" text-anchor="start" font-weight="400">품목 확인 62%</text>
+<rect x="250.0" y="280" width="294.0" height="24" fill="#dbe9f7"/>
+<text x="397.5" y="297.0" font-size="11" fill="#14231E" text-anchor="middle" font-weight="600">60%</text>
+<rect x="545.0" y="280" width="152.9" height="24" fill="#a9cbee"/>
+<text x="622.0" y="297.0" font-size="11" fill="#14231E" text-anchor="middle" font-weight="600">31%</text>
+<rect x="698.9" y="280" width="37.4" height="24" fill="#6fa6df"/>
+<rect x="737.3" y="280" width="0.9" height="24" fill="#2a78d6"/>
+<rect x="739.2" y="280" width="0.5" height="24" fill="#1d5aa3"/>
+<rect x="739.6" y="280" width="0.5" height="24" fill="#123c6e"/>
+<text x="250.0" y="320.0" font-size="11" fill="#5A6B64" text-anchor="start" font-weight="400">중앙값 0.6%</text>
+</svg>

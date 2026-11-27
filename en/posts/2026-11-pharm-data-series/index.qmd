@@ -13,7 +13,7 @@ This series uses two public datasets to answer questions that pharmacies and pha
 
 | Question | Data | Page |
 |---|---|---|
-| Will a price or reimbursement status change next month? How often do announced notes come true? | HIRA reimbursement list 2022-01 to 2025-12 | [How far can announced price cuts be trusted?](../2026-11-benefit-change-lead/index.qmd) |
+| Will a price or reimbursement status change next month? How often do announced notes come true? How far ahead can a cut be seen? | HIRA reimbursement list 2022-01 to 2025-12 | [How far can announced price cuts be trusted?](../2026-11-benefit-change-lead/index.qmd) |
 | Which way is demand for each ingredient heading? How well can six months ahead be forecast? | NHIS drug usage statistics 2018-01 to 2025-12 | [Ingredient prescription demand](../2026-11-drug-demand-forecast/index.qmd) |
 | How were those numbers checked? | Same data | [Demand forecasting technical note](../2026-11-drug-demand-tech-note/index.qmd) |
 
@@ -23,7 +23,7 @@ This series uses two public datasets to answer questions that pharmacies and pha
 
 ## Ground rules
 
-- A future date in the remarks is an **announcement**, not a change. Pages say "a cut was announced" or "realization rate 99.7%", never "the price was cut".
+- A future date in the remarks is an **announcement**, not a change. Pages say "a cut was announced" or "realization rate 99.96%", never "the price was cut".
 - Price changes and prescription volume are compared only as before-and-after changes and associations, not as causes.
 - Demand forecasts are national and per ingredient, not order quantities for a pharmacy or product.
 - No savings or incentive amounts are computed.
@@ -31,11 +31,18 @@ This series uses two public datasets to answer questions that pharmacies and pha
 
 ## Next analyses {#next}
 
-1. **Price cuts by type:** separate patent-expiry, price-volume, actual-transaction-price, and re-evaluation cuts, and measure each type's realization rate, lead time, size of cut, and market response. This becomes the next edition of the [reimbursement-change page](../2026-11-benefit-change-lead/index.qmd).
-2. **Generic-substitution list and prescription shifts:** check whether the average unit price per ingredient (claimed amount ÷ volume) falls after products enter or leave the substitution incentive list.
-3. **Patent expiry and generic entry:** compare ingredient market value and unit price before and after new same-ingredient products are listed.
-4. **Shortage and supply-interruption data:** match official shortage reports with sudden demand changes to explain large errors for respiratory drugs and antibiotics.
-5. **Region and facility type:** break national totals down by province and type of care institution.
-6. **One pharmacy alert, end to end:** show what a single pharmacy would receive (announced cut, effective date, chance of a court block).
-7. **Strength and dosage-form aggregation:** check how combining different strengths and forms under one ingredient code affects forecast error.
-8. **Price increases for essential drugs:** track whether prescriptions recover after price-ceiling increases.
+The order follows the pharmacy pain points in the Korean overview, weighted by how much information can reduce them and by what is coming (re-evaluation of listed drugs from 2027). "Possible now" means the public data already in hand are enough.
+
+| # | Analysis | Pain point | Why | Possible now? |
+|---|---|---|---|---|
+| 1 | **How far ahead can a cut be known:** split cuts into noted cuts, bulk cuts and other cuts without a note; measure the share visible in the list at least a month ahead and the size of cuts (won and percent) | Stock value | Answers "we only learn days before, so we give up checking" and "1-won cuts are a loss we just absorb" with numbers | **Done (2026-11-27).** Seeing a cut a month ahead happened mostly in 2024 (80.8%; 0–0.35% in other years). Bulk cuts were known 4–13 days ahead through notices and association guidance; 19.6% of the 2026-01 actual-transaction-price cuts were 1 won. [2nd edition](../2026-11-benefit-change-lead/index.qmd#lead) |
+| 2 | **Re-evaluation exposure map:** describe which products were cut in the 2023-09 base-requirement re-evaluation, and count products in today's list with similar characteristics | Stock value | The pain point expected to worsen fastest | Possible now (descriptive). There has been essentially one bulk re-evaluation, so no predictive model |
+| 3 | **Supply-vulnerability map:** trend of listed products and companies per ingredient, delistings, suspensions and price-ceiling increases, to find ingredients with few substitutes | Procurement | The part of shortages that public data can address is "can it be substituted?" | Map possible now. Matching with actual shortages needs supply-interruption reports; until then results are "vulnerability candidates" |
+| 4 | **Delisting, suspension and unsellable stock:** was there a signal before a product left the list or was suspended, and how many same-ingredient substitutes existed then | Stock value | Can warn about stock that may become unreturnable | Possible now. Planned delisting dates are not in the data |
+| 5 | **Reported shortage cases:** did ingredient prescriptions change sharply around reported shortages | Procurement | Links field complaints to data | Conditional. Ingredients with two or fewer companies are suppressed in the usage statistics; used as validation cases for #3 |
+| 6 | **Leading signals for winter respiratory and antibiotic demand:** do search indices, paediatric care flows and the calendar move ahead of prescription increases | Procurement | Fever-reducer and antibiotic shortages cluster in winter and overlap with the largest forecast errors | In progress. Results are leading correlations, not causes or shortage forecasts |
+| 7 | **Long-term prescribing trend:** volume per claim by province, care-institution type and age | Dispensing | Long prescriptions add to stock and consumable burden | Possible but the indicator is weak: volume is in product units, not days supplied |
+
+Warehouse-style pharmacies and dispensing fees per pharmacy are not covered: there are no pharmacy- or area-level data.
+
+**Other candidates:** ingredient unit price around changes in the generic-substitution list, ingredient markets around patent expiry and generic entry, prescription flows by province and facility type, how combining strengths and forms affects forecast error, and an example of a single pharmacy alert built from the change log.
