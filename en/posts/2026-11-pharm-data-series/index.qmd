@@ -23,7 +23,7 @@ This series uses two public datasets to answer questions that pharmacies and pha
 
 ## Ground rules
 
-- A future date in the remarks is an **announcement**, not a change. Pages say "a cut was announced" or "realization rate 99.7%", never "the price was cut".
+- A future date in the remarks is an **announcement**, not a change. Pages say "a cut was announced" or "realization rate 99.96%", never "the price was cut".
 - Price changes and prescription volume are compared only as before-and-after changes and associations, not as causes.
 - Demand forecasts are national and per ingredient, not order quantities for a pharmacy or product.
 - No savings or incentive amounts are computed.
