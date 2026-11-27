@@ -17,7 +17,7 @@ aliases:
 ## This report was split into a series
 "Monitoring reimbursement changes and demand" (2026-11-24) was split into four pages on 2026-11-27. This page is the **demand forecasting** part; the numbers are unchanged from the 2026-11-24 edition.
 
-- Realization of announced price cuts and suspensions, and price changes without a note: [How far can announced price cuts be trusted?](../2026-11-benefit-change-lead/index.qmd)
+- Realization of announced price cuts and suspensions, and price changes without a note: [Price cuts: when can a pharmacy know, and how small are they?](../2026-11-benefit-change-lead/index.qmd)
 - Drug-class diagnostics, verification, and model specification: [Demand forecasting technical note](../2026-11-drug-demand-tech-note/index.qmd)
 - The whole series, and whether reimbursement-list prices help: [Series overview](../2026-11-pharm-data-series/index.qmd)
 :::
