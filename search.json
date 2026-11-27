@@ -233,86 +233,100 @@
   {
     "objectID": "ko/posts/2026-11-benefit-change-lead/index.html",
     "href": "ko/posts/2026-11-benefit-change-lead/index.html",
-    "title": "약값 인하 예고, 얼마나 믿을 수 있나",
+    "title": "한 달 전에 알 수 있었던 약가인하는 2024년뿐이었다",
     "section": "",
-    "text": "노트이 글에 대해 (2판, 2026-11-27)\n\n\n\n1판은 2026-11-24에 낸 「급여 변동과 수요 모니터링」의 급여 변동 부분이었다. 2판에서는 “급여목록만 보는 사람이 인하를 얼마나 미리 알 수 있나”와 인하 폭을 더했다. 새로 더한 숫자는 새로 실행해 계산했다. 예고 실현율은 집행정지 뒤 목록에서 빠진 제품을 분모에서 빼는 규칙으로 다시 셌다(아래). 비고 없는 가격 변경의 숫자는 1판과 같다.\n수요 예측은 수요 보고서에, 시리즈 전체는 시리즈 안내에 있다."
+    "text": "노트이 글에 대해 (2판, 2026-11-27)\n\n\n\n1판(2026-11-24)은 “급여목록 메모 칸에 적힌 예고가 얼마나 실현되나”를 중심으로 썼다. 2판은 약국 현장의 말에서 출발하도록 새로 썼다. 1판의 분석과 그림은 다시 쓰고, 언제 알 수 있는지·인하 폭·정부 고시와의 대조를 더했다.\n1판과 달라진 숫자가 하나 있다. 실현율을 셀 때 집행정지 뒤 목록에서 빠진 제품(인하 예고 10개, 급여정지·중지 예정 13개)을 1판은 “실현 안 됨”으로 셌고, 2판은 판단할 대상이 사라진 것으로 보고 뺐다. 그래서 인하 예고는 99.7% → 99.96%, 급여정지·중지 예정은 89.3% → 100.0%가 됐다.\n시리즈 전체와 다른 고충(약을 구하지 못하는 문제 등)은 시리즈 안내에, 수요 예측은 수요 보고서에 있다."
   },
   {
     "objectID": "ko/posts/2026-11-benefit-change-lead/index.html#한-쪽-요약",
     "href": "ko/posts/2026-11-benefit-change-lead/index.html#한-쪽-요약",
-    "title": "약값 인하 예고, 얼마나 믿을 수 있나",
+    "title": "한 달 전에 알 수 있었던 약가인하는 2024년뿐이었다",
     "section": "한 쪽 요약",
-    "text": "한 쪽 요약\n결론 네 가지\n\n비고에 적힌 약값 인하 예고는 거의 다 실현됐다. 결과가 난 제품 4,659개 중 99.96%다.\n하지만 목록만 보고 인하를 한 달 이상 미리 안 것은 2024년뿐이다. 2022~2025 인하 13,708건 중 31.6%가 시행 1개월 이상 전에 목록에 보였는데, 그 거의 전부가 2024년의 두 달이다. 다른 해는 0~0.35%다. 미리 보인 인하도 대부분 정확히 한 달 전이었다.\n정부의 일괄 인하는 목록에서는 시행되는 달에 처음 보인다. 고시와 단체 안내로는 4~13일 먼저 알 수 있었다.\n일괄 인하의 폭은 그때그때 달랐다. 2023-09 기준요건 재평가 인하는 대부분 10~20%였고, 2026-01 실거래가 조정 인하는 60%가 1% 미만이었다. 2026-01 인하의 19.6%는 정확히 1원이었다.\n\n\n\n\n\n\n\n\n할 것\n하지 말 것\n\n\n\n\n비고의 인하 예고를 알림에 쓴다\n비고만 보고 “이번 달 가격 변동 없음”이라고 판단한다\n\n\n매달 목록을 전달과 비교하고, 고시·단체 안내를 함께 본다\n“목록에 미리 나온다”고 기대한다. 대부분의 인하는 시행되는 달에 처음 보인다\n\n\n인하 폭을 원 단위와 비율로 함께 본다\n한 해의 비율 하나로 “늘 이렇다”고 말한다"
+    "text": "한 쪽 요약\n약국 현장의 말은 대체로 맞았다. 다만 해마다 같지는 않았다.\n\n\n\n\n\n\n\n약국이 하는 말\n데이터로 본 것\n\n\n\n\n“약가인하를 시행 며칠 전에야 안다”\n맞다. 급여목록만 보면 대부분의 인하가 시행되는 달에 처음 보인다. 정부 고시와 단체 안내로도 4~13일 전이다. 한 달 이상 미리 보인 인하는 2022~2025년 인하의 31.6%인데, 거의 전부가 2024년 두 달에 몰려 있다\n\n\n“1원 단위로 내려가는 품목은 손해를 안고 간다”\n2026년 1월에는 맞다. 그달 정부가 한꺼번에 내린 인하의 19.6%가 정확히 1원, 39.9%가 5원 이내였다. 2022~2025년 전체로는 5원 이내가 10.2%라 해마다 같지 않다\n\n\n\n\n\n\n\n\n\n\n알림을 만드는 쪽이 묻는 것\n데이터로 본 것\n\n\n\n\n미리 알려진 인하는 믿을 만한가\n그렇다. 목록 메모 칸에 미리 적힌 인하는 거의 전부(99.96%) 실제로 내렸다. 다만 미리 적히는 것은 가격 변경의 3분의 1뿐이다\n\n\n어떤 인하가 크고 어떤 인하가 작았나\n문서에 적힌 사유가 달랐다. 2023년 9월 기준요건 재평가 인하는 대부분 10~20%, 2026년 1월 실거래가 조정 인하는 대부분 1% 미만이었다\n\n\n\n그래서 약국을 돕는 쪽이 할 수 있는 것: 메모 칸에 적힌 인하는 한 달 전 알림으로, 정부가 한꺼번에 내리는 인하는 고시·단체 안내 일정(시행 1~2주 전)에 맞춘 알림으로 나눠 보낸다. 인하 폭을 함께 보여 줘서 대조할 품목의 순서를 정하게 돕는다(7장)."
   },
   {
-    "objectID": "ko/posts/2026-11-benefit-change-lead/index.html#자료-소개",
-    "href": "ko/posts/2026-11-benefit-change-lead/index.html#자료-소개",
-    "title": "약값 인하 예고, 얼마나 믿을 수 있나",
-    "section": "자료 소개",
-    "text": "자료 소개\n\n\n\n\n\n\n\n항목\n내용\n\n\n\n\n내는 곳\n건강보험심사평가원(심평원)\n\n\n무엇이 들었나\n건강보험이 적용되는 약과 상한가격, 메모 칸(비고), 약효분류 번호\n\n\n단위\n제품\n\n\n쓴 기간\n주 결과 2022-01 ~ 2025-12 (48개월), 확장 구간 2026-01 ~ 11\n\n\n공개 시차\n매달 1일 기준 파일\n\n\n주의할 점\n한 장만 봐서는 언제 바뀌었는지 알 수 없음\n\n\n\n급여목록은 매달의 스냅샷이다. 그래서 파일을 이어 붙여 제품별 변화 기록표(언제 무엇이 바뀌었는지)를 만들었다. 비고에 적힌 “’25.7.1. 인하” 같은 미래 날짜는 아직 일어난 변화가 아니라 예고로 따로 적고, 뒤 파일로 실현 여부를 확인했다.\n일괄 인하의 사유는 목록에 없다. 그래서 보건복지부 「약제 급여 목록 및 급여 상한금액표」 개정 고시 네 건과 그 변경대비표, 대한병원협회 공문, 대한약사회 안내 자료를 제품 단위로 맞춰 봤다(부록 C).\n이 자료에 없는 것: 제품별 판매량, 약국별 구매·재고, 도매 유통, 급여 삭제 예정일. 이것들에 대한 결론은 이 글에 없다."
+    "objectID": "ko/posts/2026-11-benefit-change-lead/index.html#perspective",
+    "href": "ko/posts/2026-11-benefit-change-lead/index.html#perspective",
+    "title": "한 달 전에 알 수 있었던 약가인하는 2024년뿐이었다",
+    "section": "1. 관점: 누구의 문제를, 누가 덜어 주나",
+    "text": "1. 관점: 누구의 문제를, 누가 덜어 주나\n이 글은 약국의 고충을 다루되, 주문·재고·반품 정보로 그 고충을 덜어 줄 수 있는 쪽(의약품 유통, 약국 지원 서비스)의 관점에서 본다. 그래서 “약국이 무엇 때문에 힘든가”와 함께 “공개 정보로 무엇을 미리 알려 줄 수 있는가”를 묻는다.\n약국의 고충은 약이 약국을 지나가는 순서대로 네 단계로 나눌 수 있다(시리즈 안내).\n\n\n\n\n\n\n\n\n\n단계\n질문\n무엇이 새는가\n이 글\n\n\n\n\nA. 들여오기\n필요한 약을 제때 구할 수 있는가\n시간, 조제 기회\n—\n\n\nB. 쌓아두기\n이미 사둔 약의 가치가 지켜지는가\n돈\n여기\n\n\nC. 내주기\n조제 과정이 감당 가능한가\n시간, 소모품, 분쟁\n—\n\n\nD. 벌기\n매출과 마진이 유지되는가\n매출\n—\n\n\n\n쌓아두기 단계는 지금 체감으로는 품절(들여오기) 다음이지만, 이미 등재된 약을 2027년부터 차례로 재평가할 예정이라 가장 빠르게 나빠질 고충으로 꼽힌다. 그리고 공개 데이터로 가장 많이 다룰 수 있는 단계다. 무엇이 언제 얼마나 인하되는지가 급여목록과 고시에 나오기 때문이다."
   },
   {
-    "objectID": "ko/posts/2026-11-benefit-change-lead/index.html#realization",
-    "href": "ko/posts/2026-11-benefit-change-lead/index.html#realization",
-    "title": "약값 인하 예고, 얼마나 믿을 수 있나",
-    "section": "예고는 얼마나 실현되나",
-    "text": "예고는 얼마나 실현되나\n약값 인하와 신규 등재 예고는 거의 그대로 실현됐다. 급여정지·중지 예정은 법원에서 막히는 경우가 있어 날짜가 자주 밀렸다. 비고의 예고는 이미 발표된 고시를 옮겨 적은 것이라 실현율이 높은 것이 자연스럽다.\n\n\n\n\n\n\n\n\n\n\n예고 종류\n제품 수\n결과가 난 것 중 실현\n예정일에 그대로\n얼마나 먼저 보이나 (중앙값)\n\n\n\n\n약값 인하 (비고)\n4,683\n99.96%\n98.5%\n30일\n\n\n신규 등재\n342\n100.0%\n100.0%\n8일\n\n\n급여정지·중지 예정\n203\n100.0%\n35.8%\n23일\n\n\n\n\n실현에는 조금 늦게, 다른 금액으로, 또는 급여정지 대신 삭제로 실현된 것도 들어 있다. ’결과가 난 것’은 아직 법원 집행정지로 결과가 안 난 것과 집행정지 뒤 목록에서 빠진 것을 뺀 것이다. 목록에서 빠지면 예고가 실현됐는지 판단할 대상이 사라진다. 아래 집행정지 결말 표와 같은 규칙이다.\n1판과 숫자가 다른 이유: 1판은 집행정지 뒤 목록에서 빠진 제품(인하 예고 10개, 급여정지·중지 예정 13개)을 미실현으로 세어 99.7%, 89.3%였다. 2판에서 분모에서 뺐다.\n급여정지·중지 예정은 결과가 난 109개 제품이 모두 실현됐다. 처분 단위(같은 회사의 같은 처분을 제품 수와 관계없이 한 건으로 셈)로도 91건 중 결과가 난 89건이 모두 실현됐다. 결과가 아직 없는 81개 제품은 집행정지가 이어지는 두 회사의 처분이다(59개, 22개).\n\n\n집행정지에 막힌 인하 예고는 어떻게 끝났나\n집행정지에 막혔던 인하 예고 151개 제품을 2026-11까지 따라가 보니, 결말이 난 88개 중 75.0%가 예고대로, 12.5%가 다른 금액으로 실현됐고 12.5%는 실현되지 않았다. 예고가 처음 실린 때부터 결말까지는 중앙값 27개월이 걸렸다. 아직 결말이 나지 않은 47개는 이미 25~33개월이 지났다.\n\n이 숫자는 몇 개 회사의 처분 사례다. 실현된 66개 중 62개가 한 회사 제품이다. 집행정지의 일반적인 성질로 읽으면 안 된다.\n목록에서 빠진 16개(허가취하 7, 유효기간 만료 3, 미청구 정비 6)는 인하 여부를 판단할 대상이 사라진 것이라 분모에서 뺐다. 삭제 사유는 필자가 식품의약품안전처 의약품 정보와 캐시닥에서 따로 확인했다.\n표는 부록 D에 있다."
+    "objectID": "ko/posts/2026-11-benefit-change-lead/index.html#case",
+    "href": "ko/posts/2026-11-benefit-change-lead/index.html#case",
+    "title": "한 달 전에 알 수 있었던 약가인하는 2024년뿐이었다",
+    "section": "2. 현장의 말과 그 뒤의 사정",
+    "text": "2. 현장의 말과 그 뒤의 사정\n상황: 한 약사는 약가인하 대상 품목을 시행 며칠 전에야 알 수 있고, 약국 일을 하면서 며칠 동안 대조해 차액정산(약가가 내리기 전에 산 재고의 가격 차이를 제약사·도매에서 돌려받는 것)을 받기는 너무 힘들어 포기한다고 말했다. 1원 단위로 내려가는 품목은 그냥 손해를 안고 간다고 했다(약업 전문지 보도).\n이 말 뒤에는 세 가지 사정이 있다.\n\n\n\n사정\n내용\n공개 데이터로 볼 수 있나\n\n\n\n\n시간이 없다\n인하를 미리 알 시간이 부족하다\n있다. 인하가 처음 보인 때와 시행일의 차이를 잴 수 있다 → 3장\n\n\n금액이 작다\n인하 폭이 작을수록 정산에 드는 시간이 받을 돈보다 크다\n있다. 인하 폭(원·비율)을 잴 수 있다 → 4장\n\n\n보상이 줄었다\n제약사·도매가 재고 보상과 반품 조건을 줄인다\n없다. 보상·반품 조건은 공개 자료에 없다\n\n\n\n여기에 알림을 만들 쪽이 꼭 알아야 할 두 가지를 더했다. 미리 알려진 인하가 실제로 일어나는지(5장), 그리고 어떤 인하가 크고 어떤 인하가 작았는지(6장)다."
   },
   {
-    "objectID": "ko/posts/2026-11-benefit-change-lead/index.html#비고에-없는-가격-변경이-더-많다",
-    "href": "ko/posts/2026-11-benefit-change-lead/index.html#비고에-없는-가격-변경이-더-많다",
-    "title": "약값 인하 예고, 얼마나 믿을 수 있나",
-    "section": "비고에 없는 가격 변경이 더 많다",
-    "text": "비고에 없는 가격 변경이 더 많다\n가격이 바뀐 제품별 변경 14,041건 중 9,370건(66.7%)은 비고에 미리 적히지 않았다. 이 변경들은 목록 고시 자체로 시행됐다.\n\n\n\n가격 변경의 비고 예고 유무. 일괄 인하 세 달은 2022-09, 2023-09, 2024-05다.\n\n\n\n그중 7,657건은 정부가 여러 성분의 상한가를 한꺼번에 내린 일괄 인하 세 달에 몰려 있다. 2023-09 「기준요건 재평가」 인하 한 번이 7,371건이다. 나머지는 2022-09의 175건, 2024-05의 111건이다.\n일괄 인하 달을 빼도 26.8%는 비고 없이 바뀌었다."
+    "objectID": "ko/posts/2026-11-benefit-change-lead/index.html#자료",
+    "href": "ko/posts/2026-11-benefit-change-lead/index.html#자료",
+    "title": "한 달 전에 알 수 있었던 약가인하는 2024년뿐이었다",
+    "section": "자료",
+    "text": "자료\n\n\n\n\n\n\n\n\n자료\n내는 곳\n쓴 것\n\n\n\n\n급여목록\n건강보험심사평가원\n매달 1일 기준 파일. 약과 상한금액, 메모 칸(비고). 2022-01 ~ 2025-12, 그리고 따로 표시한 2026-01 ~ 11\n\n\n「약제 급여 목록 및 급여 상한금액표」 개정 고시와 변경대비표\n보건복지부\n정부가 한꺼번에 인하한 네 달(제2022-199호, 제2023-166호, 제2024-67호, 제2025-218호)\n\n\n공문·안내 자료\n대한병원협회(2022, 2023), 대한약사회(2025-12)\n인하 사유와 사전 안내 시점\n\n\n\n급여목록은 매달 찍은 사진과 같아서 한 장만 봐서는 언제 바뀌었는지 알 수 없다. 그래서 파일을 이어 붙여 제품별 변화 기록표를 만들었다. 메모 칸에 적힌 “’25.7.1. 인하” 같은 미래 날짜는 아직 일어난 변화가 아니라 예고로 따로 적고, 뒤 파일로 실제로 내렸는지 확인했다.\n인하는 세 가지로 나눴다.\n\n\n\n\n\n\n\n이 글의 이름\n뜻\n\n\n\n\n메모 칸에 미리 적힌 인하\n시행 전 목록의 메모 칸(비고)에 날짜와 금액이 적힌 인하\n\n\n정부가 한꺼번에 내린 인하\n같은 달 메모 없이 상한금액이 바뀐 성분이 50개 이상인 달의 인하\n\n\n예고 없이 바뀐 그 밖의 인하\n위 둘에 들지 않는, 메모 없이 바뀐 인하\n\n\n\n이 자료에 없는 것: 약국별 구매·재고, 제품별 판매량, 도매 유통, 제약사·도매의 보상·반품 조건, 급여 삭제 예정일. 그래서 약국이 실제로 얼마를 잃는지는 이 글에서 답하지 않는다."
   },
   {
-    "objectID": "ko/posts/2026-11-benefit-change-lead/index.html#lead",
-    "href": "ko/posts/2026-11-benefit-change-lead/index.html#lead",
-    "title": "약값 인하 예고, 얼마나 믿을 수 있나",
-    "section": "목록만 보면 인하를 얼마나 미리 알 수 있나",
-    "text": "목록만 보면 인하를 얼마나 미리 알 수 있나\n한 달 이상 미리 알 수 있었던 인하는 거의 2024년에만 있었다. 인하를 처음 목록에 보인 달과 시행된 달의 차이로 셌다. 파일의 실제 공개일을 알 수 없어 “며칠 전”이 아니라 달 단위로 셌다.\n\n\n\n연도별, 시행 1개월 이상 전에 목록에 보인 인하의 비율\n\n\n\n전체 기간으로 합치면 31.6%(13,708건 중 4,337건)지만, 이 숫자 하나로 쓰면 오해를 낳는다. 2024-03과 2024-07 두 달의 비고 예고가 거의 전부다.\n미리 보인 인하는 모두 비고 예고였고, 대부분 정확히 한 달 전이었다. 4,337건 중 4,334건이 시행 전달 목록에 처음 실렸다(목록 기준일부터 시행일까지 29~31일). 두 달 이상 앞서 보인 것은 3건이다.\n일괄 인하와 그 밖의 비고 없는 인하는 모두 시행되는 달 목록에 처음 보였다. “1개월 미만”은 “시행 당일에야 안다”는 뜻이 아니라 “시행되는 달의 목록에서 처음 보였다”는 뜻이다.\n집행정지에 막혔던 예고는 집행정지가 풀린 것이 목록에 보인 달부터 다시 쟀다. 처음 예고된 달부터 재면 두 달 이상 앞선 것처럼 보이지만, 그동안은 시행될지 알 수 없었다.\n\n\n목록 밖에서는 며칠 먼저 알려졌나\n일괄 인하는 고시와 단체 안내로 시행 4~13일 전에 알 수 있었다. 목록만 보는 사람보다는 빠르지만, 한 달에는 못 미친다.\n\n\n\n\n\n\n\n\n\n인하\n경로\n문서\n시행 며칠 전\n\n\n\n\n2022-09\n고시\n보건복지부 고시 제2022-199호 (2022-08-25)\n7일\n\n\n2022-09\n병원\n대한병원협회 공문 (2022-08-26)\n6일\n\n\n2023-09\n고시\n보건복지부 고시 제2023-166호 (2023-09-01)\n4일\n\n\n2023-09\n병원\n대한병원협회 사전 안내 (인하 품목 목록, 인하 후 금액 없음)\n문서에 날짜 없음\n\n\n2026-01\n고시\n보건복지부 고시 제2025-218호 (2025-12-24)\n8일\n\n\n2026-01\n약국\n대한약사회 「실거래가 상한금액 조정」 품목 표 (2025-12-19 공유 추정)\n13일\n\n\n2026-02\n약국\n대한약사회 「급여적정성 재평가에 따른 자진인하」 품목 표 (같은 자료)\n44일\n\n\n\n\n날짜는 문서 본문에 적힌 것만 썼다. 대한약사회 자료의 날짜는 약사 전문지에 공유된 날로, 추정이다.\n병원 경로 문서는 병원을 위한 안내다. 약국 경로 자료는 2026년 것 하나뿐이라, 다른 해에도 약국에 미리 알려졌는지는 이 자료로 알 수 없다."
+    "objectID": "ko/posts/2026-11-benefit-change-lead/index.html#q1",
+    "href": "ko/posts/2026-11-benefit-change-lead/index.html#q1",
+    "title": "한 달 전에 알 수 있었던 약가인하는 2024년뿐이었다",
+    "section": "3. 인하를 언제 알 수 있나",
+    "text": "3. 인하를 언제 알 수 있나\n급여목록만 보면, 한 달 이상 미리 알 수 있었던 인하는 거의 2024년에만 있었다. 인하가 목록에 처음 보인 달과 시행된 달의 차이로 셌다. 파일의 실제 공개일을 알 수 없어 “며칠 전”이 아니라 달 단위로 셌다.\n\n\n\n연도별, 시행 1개월 이상 전에 목록에 보인 인하의 비율\n\n\n\n네 해를 합치면 31.6%(2022~2025년 인하 13,708건 중 4,337건)지만, 이 숫자 하나로 쓰면 오해를 낳는다. 2024년 3월과 7월 두 달의 메모 칸 인하가 거의 전부다.\n미리 보인 인하는 모두 메모 칸에 적힌 인하였고, 대부분 정확히 한 달 전이었다. 4,337건 중 4,334건이 시행 전달 목록에 처음 실렸다(29~31일 전). 두 달 이상 앞선 것은 3건이다.\n정부가 한꺼번에 내린 인하와 예고 없이 바뀐 그 밖의 인하는 모두 시행되는 달의 목록에 처음 보였다. “시행 당일에야 안다”는 뜻은 아니다. 시행일이 그달 중순이면 며칠 여유가 있다.\n목록으로 알림을 만들면 시행 뒤에야 처음 보인 인하는 7건뿐이다. 놓치는 것이 아니라 늦게 잡는 것이 문제다.\n\n애초에 메모 칸에 미리 적히는 가격 변경이 적다. 가격이 바뀐 제품별 변경 14,041건 중 9,370건(66.7%)은 메모 없이 목록 고시로 바로 시행됐다.\n\n\n\n가격 변경의 메모 칸 예고 유무. 정부가 한꺼번에 내린 달은 2022-09, 2023-09, 2024-05다.\n\n\n\n목록 밖에서는 며칠 먼저 알려졌나\n정부가 한꺼번에 내린 인하는 고시와 단체 안내로 시행 4~13일 전에 알 수 있었다. 현장의 “며칠 전”과 맞는다.\n\n\n\n\n\n\n\n\n\n인하\n경로\n문서\n시행 며칠 전\n\n\n\n\n2022년 9월\n고시\n보건복지부 고시 제2022-199호 (2022-08-25)\n7일\n\n\n2022년 9월\n병원\n대한병원협회 공문 (2022-08-26)\n6일\n\n\n2023년 9월\n고시\n보건복지부 고시 제2023-166호 (2023-09-01)\n4일\n\n\n2023년 9월\n병원\n대한병원협회 사전 안내 (인하 품목 목록, 인하 후 금액 없음)\n문서에 날짜 없음\n\n\n2026년 1월\n고시\n보건복지부 고시 제2025-218호 (2025-12-24)\n8일\n\n\n2026년 1월\n약국\n대한약사회 「실거래가 상한금액 조정」 품목 표 (2025-12-19 공유 추정)\n13일\n\n\n2026년 2월\n약국\n대한약사회 「급여적정성 재평가에 따른 자진인하」 품목 표 (같은 자료)\n44일\n\n\n\n\n날짜는 문서 본문에 적힌 것만 썼다. 대한약사회 자료의 날짜는 약사 전문지에 공유된 날로, 추정이다.\n병원 경로 문서는 병원을 위한 안내다. 약국 경로 자료는 2026년 것 하나뿐이라, 다른 해에도 약국에 미리 알려졌는지는 알 수 없다."
   },
   {
-    "objectID": "ko/posts/2026-11-benefit-change-lead/index.html#size",
-    "href": "ko/posts/2026-11-benefit-change-lead/index.html#size",
-    "title": "약값 인하 예고, 얼마나 믿을 수 있나",
-    "section": "인하는 얼마나 작은가",
-    "text": "인하는 얼마나 작은가\n일괄 인하의 폭은 그때그때 달랐다. 문서로 확인한 사유도 달랐다.\n\n\n\n일괄 인하 달별 인하율 구간\n\n\n\n2023-09: 7,363건 중 7,231건(98.2%)이 「기준요건 1차 재평가」 인하 목록에 있다. 이 인하는 92.0%가 10~20% 폭이었다(중앙값 15.0%).\n2026-01: 3,865건 중 2,405건(62.2%)이 「실거래가 상한금액 조정」 품목 표에 있다. 이 인하는 67.9%가 1% 미만이었다(중앙값 0.47%). 나머지 1,441건은 같은 고시로 시행됐지만 품목 표에서 확인되지 않았다. 대한약사회 안내 자료는 이 고시를 실거래가 조사에 따른 조정 일정으로 안내했지만, 품목 목록은 없다.\n2022-09, 2024-05: 고시에 사유가 적혀 있지 않다. 폭도 10~20%가 아니었다(중앙값 6.2%, 1.9%).\n“2022~2025 일괄 인하는 대부분 10~20%”라고 합쳐 말하면 틀리지는 않지만, 그것은 2023-09 한 번의 성질이다.\n\n원 단위로 보면 2026-01 인하가 특히 작았다. 3,865건 중 정확히 1원이 19.6%, 5원 이내가 39.9%다. 1원 이하 인하 대부분(759건 중 718건)이 실거래가 조정 품목 표에 있다. 2022~2025 전체로는 5원 이내가 10.2%다.\n\n미리 알 수 있었던 인하일수록 작았다. 2022~2025에 1개월 이상 전에 보인 인하 중 5원 이내는 27.2%, 그 밖의 인하는 2.2%다.\n원 단위는 단위(1정, 1mL 등)당 금액 차라 규격이 다른 제품이 섞인다. 비율이 이 차이를 덜 탄다. 정산·손실 금액은 계산하지 않았다."
+    "objectID": "ko/posts/2026-11-benefit-change-lead/index.html#q2",
+    "href": "ko/posts/2026-11-benefit-change-lead/index.html#q2",
+    "title": "한 달 전에 알 수 있었던 약가인하는 2024년뿐이었다",
+    "section": "4. 인하는 얼마나 작은가",
+    "text": "4. 인하는 얼마나 작은가\n2026년 1월 인하는 아주 작았다. 그 전의 큰 일괄 인하는 그렇지 않았다.\n\n2026년 1월 정부가 한꺼번에 내린 인하 3,865건 중 정확히 1원이 19.6%, 5원 이내가 39.9%다. 1원 인하 759건 중 718건이 실거래가 조정 품목 표에 있다.\n2022~2025년 전체 인하로는 5원 이내가 10.2%(1원 이하 4.4%)다. 2023년 9월 인하에는 1원 이하가 거의 없었다.\n미리 알 수 있었던 인하일수록 작았다. 2022~2025년에 한 달 이상 전에 보인 인하 중 5원 이내는 27.2%, 그 밖의 인하는 2.2%다. 미리 알아도 정산할 만한 금액이 아닌 경우가 많았다.\n여기서 원은 1정·1mL 같은 단위 하나에서 내린 금액이다. 한 상자에서 줄어드는 금액은 이보다 크고, 규격이 다른 제품이 섞여 있다. 그래서 비율로도 함께 봤다(6장, 부록 B). 정산·손실 금액은 계산하지 않았다."
   },
   {
-    "objectID": "ko/posts/2026-11-benefit-change-lead/index.html#who-uses",
-    "href": "ko/posts/2026-11-benefit-change-lead/index.html#who-uses",
-    "title": "약값 인하 예고, 얼마나 믿을 수 있나",
-    "section": "누가 어떻게 쓸까",
-    "text": "누가 어떻게 쓸까\n가격 예고는 “언제 무엇이 바뀔지” 알림에 맞다. 아래는 모두 이 분석에서 시험하지 않은 활용 제안이다.\n\n\n\n\n\n\n\n실무\n쓸 수 있는 것\n\n\n\n\n약국\n비고 예고는 한 달 전 알림으로 쓰고, 일괄 인하는 고시·단체 안내 일정(시행 1~2주 전)에 맞춰 대조를 준비한다\n\n\n제약 약가·대관\n급여정지 예정과 집행정지 여부, 비고 없이 바뀐 가격 점검\n\n\n유통 운영\n약국에 인하·급여정지 예고 알림. 급여정지는 “막힐 수 있음” 표시\n\n\n유통 데이터팀\n매달 목록을 전달과 비교하는 자동 점검, 고시 변경대비표와 맞춰 보기\n\n\n\n기억할 것: 예고는 아직 일어난 일이 아니다. “인하 예고가 있다”라고 쓰고, “인하됐다”라고 쓰지 않는다."
+    "objectID": "ko/posts/2026-11-benefit-change-lead/index.html#q3",
+    "href": "ko/posts/2026-11-benefit-change-lead/index.html#q3",
+    "title": "한 달 전에 알 수 있었던 약가인하는 2024년뿐이었다",
+    "section": "5. 미리 알려진 인하는 믿을 수 있나",
+    "text": "5. 미리 알려진 인하는 믿을 수 있나\n메모 칸에 미리 적힌 인하는 거의 그대로 실제로 내렸다. 그래서 알림으로 쓸 만하다. 메모 칸의 예고는 이미 발표된 고시를 옮겨 적은 것이라 실현율이 높은 것이 자연스럽다.\n예외는 집행정지다. 처분에 불복한 회사가 신청하면 법원이 처분의 효력을 일정 기간 멈출 수 있고, 그동안 예고된 인하나 급여정지는 시행되지 않는다.\n\n\n\n\n\n\n\n\n\n\n예고 종류\n제품 수\n확인 가능한 것 중 실제로 시행\n예정일에 그대로\n얼마나 먼저 보이나 (중앙값)\n\n\n\n\n약값 인하 (메모 칸)\n4,683\n99.96%\n98.5%\n30일\n\n\n신규 등재\n342\n100.0%\n100.0%\n8일\n\n\n급여정지·중지 예정\n203\n100.0%\n35.8%\n23일\n\n\n\n\n실제로 시행에는 조금 늦게, 다른 금액으로, 또는 급여정지 대신 삭제로 시행된 것도 들어 있다. ’확인 가능한 것’에서는 아직 집행정지로 결과가 안 난 것과, 집행정지 뒤 목록에서 빠져 판단할 수 없게 된 것을 뺐다.\n급여정지·중지 예정은 날짜가 자주 밀렸다(예정일에 그대로 35.8%). 회사의 처분 하나를 한 건으로 세면 91건 중 결과가 난 89건이 모두 시행됐다. 결과가 없는 81개 제품은 집행정지가 이어지는 두 회사의 처분이다(59개, 22개).\n\n집행정지에 막힌 인하 예고는 오래 걸렸다. 막혔던 인하 예고 151개 제품을 2026년 11월까지 따라가 보니, 결말이 난 88개 중 75.0%가 예고대로, 12.5%가 다른 금액으로 시행됐고 12.5%는 시행되지 않았다. 예고부터 결말까지 중앙값 27개월이었다. 몇 개 회사의 처분 사례라 일반적인 성질로 읽으면 안 된다(부록 D). 그래서 3장에서는 집행정지가 풀린 것이 목록에 보인 달부터 다시 쟀다."
+  },
+  {
+    "objectID": "ko/posts/2026-11-benefit-change-lead/index.html#q4",
+    "href": "ko/posts/2026-11-benefit-change-lead/index.html#q4",
+    "title": "한 달 전에 알 수 있었던 약가인하는 2024년뿐이었다",
+    "section": "6. 어떤 인하가 컸고, 어떤 인하가 작았나",
+    "text": "6. 어떤 인하가 컸고, 어떤 인하가 작았나\n정부가 한꺼번에 내린 인하의 폭은 그때그때 달랐고, 고시·안내 문서에 적힌 사유도 달랐다. 아래는 문서의 사유와 폭을 나란히 놓은 것이다.\n\n\n\n정부가 한꺼번에 내린 달별 인하율 구간\n\n\n\n2023년 9월 「기준요건 1차 재평가」: 7,363건 중 7,231건(98.2%)이 재평가 인하 목록에 있다. 이 인하는 92.0%가 10~20% 폭이었다(중앙값 15.0%). 이 기간에 한 번 있었던 재평가 인하로, 한 번에 수천 품목이 크게 내려갔다.\n2026년 1월 「실거래가 조정」: 3,865건 중 2,405건(62.2%)이 실거래가 상한금액 조정 품목 표에 있다. 이 인하는 67.9%가 1% 미만이었다(중앙값 0.47%). 나머지 1,441건은 같은 고시로 내렸지만 사유가 적힌 품목 표에는 없다.\n2022년 9월, 2024년 5월: 고시에 사유가 적혀 있지 않다. 폭은 중앙값 6.2%, 1.9%였다.\n약국이 겪는 부담의 모양도 다르다. 재평가 인하는 품목당 금액이 커서 정산할 가치가 크지만 품목이 많다. 실거래가 조정 인하는 품목당 금액이 작아 “대조할 가치가 없는” 품목이 많다. 2027년부터의 재평가가 어느 쪽에 가까울지는 이 자료로 알 수 없다."
+  },
+  {
+    "objectID": "ko/posts/2026-11-benefit-change-lead/index.html#implications",
+    "href": "ko/posts/2026-11-benefit-change-lead/index.html#implications",
+    "title": "한 달 전에 알 수 있었던 약가인하는 2024년뿐이었다",
+    "section": "7. 이 관점에서 할 수 있는 것",
+    "text": "7. 이 관점에서 할 수 있는 것\n공개 정보로 약국의 처방·약가·보상 조건을 바꿀 수는 없다. 줄일 수 있는 것은 약국이 늦게 알거나 혼자 대조하느라 생기는 손실이다. 이 글의 결과로 알림을 설계하면 다음과 같다. 모두 이 분석에서 시험하지 않은 제안이다.\n\n\n\n\n\n\n\n\n인하\n언제 알 수 있나\n알림\n\n\n\n\n메모 칸에 미리 적힌 인하\n시행 한 달 전 목록\n한 달 전 알림. 거의 그대로 시행돼 믿을 만하다\n\n\n정부가 한꺼번에 내린 인하\n목록은 시행 달. 고시·단체 안내는 4~13일 전\n고시·단체 안내 일정을 따라가는 알림. 품목 표가 나오면 바로 대조 목록으로\n\n\n예고 없이 바뀐 그 밖의 인하\n시행 달 목록\n매달 목록을 전달과 비교하는 점검\n\n\n집행정지에 막힌 예고\n해제가 목록에 보인 달\n“막혀 있음, 결말까지 수년 걸릴 수 있음” 표시\n\n\n\n\n인하 폭을 함께 보여 준다. 1~5원 인하가 많은 달에는 약국이 대조 시간과 정산액을 비교해 품목 순서를 정할 수 있다.\n약국별 예상 손실은 이 알림을 약국의 재고 기록과 합쳐야 계산할 수 있다. 그 단계는 공개 데이터 밖이다.\n보상·반품 조건이 줄어드는 문제는 이 자료로 다룰 수 없다."
   },
   {
     "objectID": "ko/posts/2026-11-benefit-change-lead/index.html#checks",
     "href": "ko/posts/2026-11-benefit-change-lead/index.html#checks",
-    "title": "약값 인하 예고, 얼마나 믿을 수 있나",
-    "section": "판정을 어떻게 확인했나",
-    "text": "판정을 어떻게 확인했나\n\n비고 판정: 비고 문구를 예고 유형으로 나누는 자동 판정을 사람이 만든 정답 30건과 맞춰 봤고, 유형 일치는 83.3%였다. 동아에스티 급여정지 사례에서 목록에 적힌 집행정지 날짜가 법원 결정일(2022-05-09)과 같았다.\n일괄 인하와 고시 대조: 네 달 일괄 인하 11,509건 중 11,460건(99.6%)이 고시 변경대비표와 제품코드·인하 전후 금액까지 같았다.\n확장 구간: 2026 목록을 더해 다시 만든 기록표에서 2022~2025 가격 변경 14,041건이 기존 기록표와 모두 같았다."
+    "title": "한 달 전에 알 수 있었던 약가인하는 2024년뿐이었다",
+    "section": "8. 판정을 어떻게 확인했나",
+    "text": "8. 판정을 어떻게 확인했나\n\n메모 칸 판정: 메모 문구를 예고 유형으로 나누는 자동 판정을 사람이 만든 정답 30건과 맞춰 봤고, 유형 일치는 83.3%였다. 동아에스티 급여정지 사례에서 목록에 적힌 집행정지 날짜가 법원 결정일(2022-05-09)과 같았다.\n정부 고시와 대조: 네 달의 일괄 인하 11,509건 중 11,460건(99.6%)이 고시 변경대비표와 제품코드·인하 전후 금액까지 같았다.\n2026년 목록을 더한 기록표: 2022~2025년 가격 변경 14,041건이 기존 기록표와 모두 같았다."
   },
   {
-    "objectID": "ko/posts/2026-11-benefit-change-lead/index.html#한계",
-    "href": "ko/posts/2026-11-benefit-change-lead/index.html#한계",
-    "title": "약값 인하 예고, 얼마나 믿을 수 있나",
-    "section": "한계",
-    "text": "한계\n\n\n\n\n\n\n\n한계\n무엇을 조심해야 하나\n\n\n\n\n사전 인지를 달 단위로 쟀다\n파일의 실제 공개일을 모른다. 파일은 기준일보다 먼저 공개되기도 해서 실제로 먼저 보인 기간은 조금 길 수 있다\n\n\n한 달 이상 미리 보인 인하가 두 달에 몰려 있다\n전체 비율 31.6%를 “보통 이 정도”로 읽으면 안 된다. 연도별로 함께 본다\n\n\n2026-01 인하의 37.3%는 품목 단위 사유를 확인하지 못했다\n같은 고시·같은 일정이지만 품목 표에 없다. 다른 사유가 섞였을 수 있다\n\n\n목록 밖 경로의 날짜 일부는 추정이다\n대한약사회 자료의 공유일은 추정이다. 2023-09 병원협회 안내는 날짜가 없다\n\n\n집행정지 결말은 몇 회사의 사례다\n회사 하나가 실현 건의 대부분이다\n\n\n원 단위 폭은 규격이 섞인다\n비율과 함께 본다\n\n\n비고에는 인하 사유가 없다\n사유는 고시·단체 안내 문서로만 붙였다. 문서에 없는 사유는 붙이지 않았다\n\n\n\n2026-06부터 약가유연계약이 적용된 제품은 목록에 실제 청구 기준과 다른 금액이 적힐 수 있다. 이 제품의 인하는 0건이라 이번 숫자에는 영향이 없다(부록 E). 가격 변화와 처방량의 관계는 이 글에서 다루지 않는다. 절감액·장려금 금액은 계산하지 않았다.\n시리즈의 다음 분석은 시리즈 안내에 있다."
+    "objectID": "ko/posts/2026-11-benefit-change-lead/index.html#limits",
+    "href": "ko/posts/2026-11-benefit-change-lead/index.html#limits",
+    "title": "한 달 전에 알 수 있었던 약가인하는 2024년뿐이었다",
+    "section": "9. 한계",
+    "text": "9. 한계\n\n\n\n\n\n\n\n한계\n무엇을 조심해야 하나\n\n\n\n\n현장의 말과 고충 순위의 근거\n대부분 약업 전문지 보도와 약사 단체 설문이다. 피해를 호소하는 설문은 응답이 피해 쪽으로 쏠릴 수 있다\n\n\n달 단위로 쟀다\n파일의 실제 공개일을 모른다. 파일은 기준일보다 먼저 공개되기도 해서 실제로 먼저 보인 기간은 조금 길 수 있다\n\n\n한 달 이상 미리 보인 인하가 두 달에 몰려 있다\n합친 비율 31.6%를 “보통 이 정도”로 읽으면 안 된다\n\n\n2026년 1월 인하의 37.3%는 품목별 사유를 확인하지 못했다\n같은 고시·같은 일정이지만 사유가 적힌 품목 표에 없다. 다른 사유가 섞였을 수 있다\n\n\n목록 밖 경로의 날짜 일부는 추정이다\n대한약사회 자료의 공유일은 추정이고, 2023년 9월 병원협회 안내는 날짜가 없다\n\n\n집행정지 결말은 몇 회사의 사례다\n회사 하나가 시행 건의 대부분이다\n\n\n약국별 손실은 계산하지 않았다\n약국 재고·구매 기록이 없다. 정산 금액, 절감액·장려금 금액도 계산하지 않았다\n\n\n\n2026년 6월부터 약가유연계약이 적용된 제품은 목록에 실제 청구 기준과 다른 금액이 적힐 수 있다. 이 제품의 인하는 0건이라 이번 숫자에는 영향이 없다(부록 E)."
   },
   {
     "objectID": "ko/posts/2026-11-benefit-change-lead/index.html#용어",
     "href": "ko/posts/2026-11-benefit-change-lead/index.html#용어",
-    "title": "약값 인하 예고, 얼마나 믿을 수 있나",
+    "title": "한 달 전에 알 수 있었던 약가인하는 2024년뿐이었다",
     "section": "용어",
-    "text": "용어\n\n\n\n\n\n\n\n용어\n한 줄 풀이\n\n\n\n\n급여목록\n건강보험이 적용되는 약과 그 상한가격의 공식 목록. 심평원이 매달 새 파일로 낸다\n\n\n비고\n급여목록의 메모 칸. “’25.7.1. 인하”처럼 앞으로의 처분이 미리 적힌다\n\n\n예고\n아직 시행되지 않은 처분 예정. 연기·취소될 수 있다\n\n\n실현율\n예고 중 실제로 시행된 비율\n\n\n일괄 인하\n정부가 여러 성분의 상한가를 한꺼번에 내리는 것. 같은 달 비고 없이 바뀐 성분이 50개 이상인 경우로 셌다\n\n\n기준요건 재평가\n문서 표현으로 “기등재 의약품 상한금액(기준요건) 재평가”. 2023-09 일괄 인하의 사유\n\n\n실거래가 조정\n문서 표현으로 “실거래가 조사에 따른 약제 상한금액 조정”. 2026-01 일괄 인하의 사유\n\n\n집행정지\n처분에 불복한 쪽의 신청으로 법원이 처분의 효력을 일정 기간 멈추는 것\n\n\n확장 구간\n2026-01 ~ 11 목록. 주 결과(2022 ~ 2025)와 섞지 않고 따로 적었다"
+    "text": "용어\n\n\n\n\n\n\n\n용어\n한 줄 풀이\n\n\n\n\n급여목록\n건강보험이 적용되는 약과 그 상한가격의 공식 목록. 심평원이 매달 새 파일로 낸다\n\n\n메모 칸(비고)\n급여목록의 메모 칸. “’25.7.1. 인하”처럼 앞으로의 처분이 미리 적힌다\n\n\n예고\n아직 시행되지 않은 처분 예정. 연기·취소될 수 있다\n\n\n차액정산\n약가가 내리기 전에 산 재고의 가격 차이를 제약사·도매에서 돌려받는 것\n\n\n일괄 인하\n정부가 여러 성분의 상한가를 한꺼번에 내리는 것\n\n\n기준요건 재평가\n문서 표현으로 “기등재 의약품 상한금액(기준요건) 재평가”. 2023년 9월 일괄 인하의 사유\n\n\n실거래가 조정\n문서 표현으로 “실거래가 조사에 따른 약제 상한금액 조정”. 2026년 1월 일괄 인하의 사유\n\n\n집행정지\n처분에 불복한 쪽의 신청으로 법원이 처분의 효력을 일정 기간 멈추는 것"
   },
   {
     "objectID": "ko/posts/2026-11-benefit-change-lead/index.html#부록",
     "href": "ko/posts/2026-11-benefit-change-lead/index.html#부록",
-    "title": "약값 인하 예고, 얼마나 믿을 수 있나",
+    "title": "한 달 전에 알 수 있었던 약가인하는 2024년뿐이었다",
     "section": "부록",
-    "text": "부록\n\nA. 인하 유형별로 처음 보인 시점\n\n\n\n구간\n유형\n인하\n2개월 이상\n1개월\n1개월 미만\n시행 뒤 보임\n\n\n\n\n2022 ~ 2025\n비고 예고\n4,671\n3\n4,334\n327\n7\n\n\n2022 ~ 2025\n일괄 인하\n7,644\n0\n0\n7,644\n0\n\n\n2022 ~ 2025\n그 밖의 비고 없는 인하\n1,393\n0\n0\n1,393\n0\n\n\n2026 (1 ~ 11월)\n비고 예고\n22\n0\n0\n22\n0\n\n\n2026 (1 ~ 11월)\n일괄 인하\n3,865\n0\n0\n3,865\n0\n\n\n2026 (1 ~ 11월)\n그 밖의 비고 없는 인하\n242\n0\n0\n242\n0\n\n\n\n\n\n\n연도\n인하\n1개월 이상 전\n비율\n\n\n\n\n2022\n444\n0\n0.0%\n\n\n2023\n7,621\n4\n0.05%\n\n\n2024\n5,359\n4,332\n80.8%\n\n\n2025\n284\n1\n0.35%\n\n\n2026 (1 ~ 11월)\n4,129\n0\n0.0%\n\n\n\n\n\nB. 인하 폭, 원 단위\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n구간\n유형\n1원 이하\n2 ~ 5원\n6 ~ 10원\n11 ~ 50원\n51 ~ 100원\n101 ~ 1,000원\n1,000원 초과\n\n\n\n\n2022 ~ 2025\n전체 13,708\n4.4%\n5.7%\n4.2%\n29.3%\n21.4%\n28.0%\n6.9%\n\n\n2022 ~ 2025\n비고 예고\n12.1%\n13.4%\n8.1%\n28.0%\n9.1%\n20.3%\n9.0%\n\n\n2022 ~ 2025\n일괄 인하\n0.2%\n1.3%\n1.2%\n29.7%\n31.0%\n35.0%\n1.7%\n\n\n2026-01\n일괄 인하 3,865\n19.6%\n20.2%\n8.8%\n19.2%\n6.7%\n17.1%\n8.4%\n\n\n\n\n\nC. 일괄 인하의 사유와 폭\n사유는 문서에 적힌 문구만 썼고, 근거의 강도를 나눠 적었다. “품목 확인”은 사유가 적힌 품목 목록에 제품코드가 있다는 뜻이고, “고시분(품목 미확인)”은 같은 고시로 시행됐지만 그 목록에는 없다는 뜻이다.\n\n\n\n\n\n\n\n\n\n\n\n인하\n사유\n건수\n인하율 중앙값\n1% 미만\n10 ~ 20%\n\n\n\n\n2022-09\n고시에 사유 기재 없음\n169\n6.23%\n8.3%\n1.2%\n\n\n2023-09\n기준요건 1차 재평가 (품목 확인)\n7,231\n14.98%\n0.4%\n92.0%\n\n\n2023-09\n기준요건 1차 재평가 고시분 (품목 미확인)\n115\n3.15%\n6.1%\n2.6%\n\n\n2024-05\n고시에 사유 기재 없음\n111\n1.85%\n34.2%\n10.8%\n\n\n2026-01\n실거래가 조정 (품목 확인)\n2,405\n0.47%\n67.9%\n0.6%\n\n\n2026-01\n실거래가 조정 고시분 (품목 미확인)\n1,441\n1.09%\n48.2%\n0.0%\n\n\n2026-02\n급여적정성 재평가에 따른 자진인하 (품목 확인, 참고)\n76\n—\n0.0%\n97.4%\n\n\n\n고시 변경대비표에 없는 일괄 인하(2022-09 1건, 2023-09 17건, 2026-01 19건)는 표에서 뺐다. 2026-02의 76건은 일괄 인하가 아니라 “그 밖의 비고 없는 인하”로 센 것이다.\n\n\nD. 집행정지에 막힌 인하 예고의 결말\n\n\n\n\n\n\n\n\n\n\n결말\n실현율 분모\n제품\n비중\n예고 → 결말 개월, 중앙값 [최소 ~ 최대]\n\n\n\n\n실현\n넣음\n66\n75.0%\n27 [22 ~ 27]\n\n\n다른 금액으로 실현\n넣음\n11\n12.5%\n27 [22 ~ 27]\n\n\n실현 안 됨\n넣음\n11\n12.5%\n27 [26 ~ 32]\n\n\n목록 이탈 (허가취하·유효기간 만료·미청구 정비)\n뺌\n16\n—\n—\n\n\n진행 중\n뺌\n47\n—\n2026-11까지 25 [25 ~ 33] 경과\n\n\n\n2022 ~ 2025에 처음 실린 예고를 2026-11 목록까지 따라갔다.\n\n\nE. 약가유연계약 표시\n목록 비고에 약가유연계약 적용 약제가 붙은 제품은 2026-06 12개에서 2026-11 52개로 늘었다. 처음 표시된 달에 목록 금액이 오른 제품이 16개였다(전달 대비 중앙값 3.03배). 목록에 적히는 금액(상한금액표 금액)과 별도로 합의한 금액은 다를 수 있고, 별도합의 금액은 공개되지 않는다. 제도 설명의 출처는 건강보험심사평가원 안내와 보건복지부 고시다.\n자료 출처: 건강보험심사평가원 급여목록·대체조제 목록 2022-01 ~ 2025-12, 급여목록 2026-01 ~ 11. 보건복지부 고시 제2022-199호·제2023-166호·제2024-67호·제2025-218호와 변경대비표. 대한병원협회 공문(2022, 2023), 대한약사회 안내 자료(2025-12). 목록 이탈 사유는 식품의약품안전처 의약품 정보·캐시닥, 약가유연계약 설명은 건강보험심사평가원 안내·보건복지부 고시. 숫자는 분석 코드의 결과 파일에서 왔다(비고 없는 가격 변경과 예정일까지의 일수는 2026-11-24 판, 나머지는 2026-11-27 판)."
+    "text": "부록\n\nA. 인하 종류별로 처음 보인 시점\n\n\n\n\n\n\n\n\n\n\n\n\n기간\n인하\n건수\n2개월 이상 전\n1개월 전\n시행되는 달\n시행 뒤\n\n\n\n\n2022 ~ 2025\n메모 칸에 미리 적힌 인하\n4,671\n3\n4,334\n327\n7\n\n\n2022 ~ 2025\n정부가 한꺼번에 내린 인하\n7,644\n0\n0\n7,644\n0\n\n\n2022 ~ 2025\n예고 없이 바뀐 그 밖의 인하\n1,393\n0\n0\n1,393\n0\n\n\n2026 (1 ~ 11월)\n메모 칸에 미리 적힌 인하\n22\n0\n0\n22\n0\n\n\n2026 (1 ~ 11월)\n정부가 한꺼번에 내린 인하\n3,865\n0\n0\n3,865\n0\n\n\n2026 (1 ~ 11월)\n예고 없이 바뀐 그 밖의 인하\n242\n0\n0\n242\n0\n\n\n\n\n\n\n연도\n인하\n1개월 이상 전에 보임\n비율\n\n\n\n\n2022\n444\n0\n0.0%\n\n\n2023\n7,621\n4\n0.05%\n\n\n2024\n5,359\n4,332\n80.8%\n\n\n2025\n284\n1\n0.35%\n\n\n2026 (1 ~ 11월)\n4,129\n0\n0.0%\n\n\n\n\n\nB. 인하 폭, 단위 하나당 원\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n기간\n인하\n1원 이하\n2 ~ 5원\n6 ~ 10원\n11 ~ 50원\n51 ~ 100원\n101 ~ 1,000원\n1,000원 초과\n\n\n\n\n2022 ~ 2025\n전체 13,708\n4.4%\n5.7%\n4.2%\n29.3%\n21.4%\n28.0%\n6.9%\n\n\n2022 ~ 2025\n메모 칸에 미리 적힌 인하\n12.1%\n13.4%\n8.1%\n28.0%\n9.1%\n20.3%\n9.0%\n\n\n2022 ~ 2025\n정부가 한꺼번에 내린 인하\n0.2%\n1.3%\n1.2%\n29.7%\n31.0%\n35.0%\n1.7%\n\n\n2026년 1월\n정부가 한꺼번에 내린 인하 3,865\n19.6%\n20.2%\n8.8%\n19.2%\n6.7%\n17.1%\n8.4%\n\n\n\n\n\nC. 정부가 한꺼번에 내린 인하의 사유와 폭\n사유는 문서에 적힌 문구만 썼고, 근거가 얼마나 직접적인지 나눠 적었다. “품목 확인”은 사유가 적힌 품목 목록에 그 제품이 있다는 뜻이고, “같은 고시, 목록에 없음”은 같은 고시로 내렸지만 그 목록에는 없다는 뜻이다.\n\n\n\n\n\n\n\n\n\n\n\n인하\n사유\n건수\n인하율 중앙값\n1% 미만\n10 ~ 20%\n\n\n\n\n2022년 9월\n고시에 사유 기재 없음\n169\n6.23%\n8.3%\n1.2%\n\n\n2023년 9월\n기준요건 1차 재평가 (품목 확인)\n7,231\n14.98%\n0.4%\n92.0%\n\n\n2023년 9월\n기준요건 1차 재평가 (같은 고시, 목록에 없음)\n115\n3.15%\n6.1%\n2.6%\n\n\n2024년 5월\n고시에 사유 기재 없음\n111\n1.85%\n34.2%\n10.8%\n\n\n2026년 1월\n실거래가 조정 (품목 확인)\n2,405\n0.47%\n67.9%\n0.6%\n\n\n2026년 1월\n실거래가 조정 (같은 고시, 목록에 없음)\n1,441\n1.09%\n48.2%\n0.0%\n\n\n2026년 2월\n급여적정성 재평가에 따른 자진인하 (품목 확인, 참고)\n76\n—\n0.0%\n97.4%\n\n\n\n고시 변경대비표에 없는 인하(2022년 9월 1건, 2023년 9월 17건, 2026년 1월 19건)는 표에서 뺐다. 2026년 2월의 76건은 정부가 한꺼번에 내린 인하가 아니라 “예고 없이 바뀐 그 밖의 인하”로 센 것이다.\n\n\nD. 집행정지에 막힌 인하 예고의 결말\n\n\n\n\n\n\n\n\n\n\n결말\n실현율 계산에\n제품\n비중\n예고 → 결말 개월, 중앙값 [최소 ~ 최대]\n\n\n\n\n예고대로 시행\n넣음\n66\n75.0%\n27 [22 ~ 27]\n\n\n다른 금액으로 시행\n넣음\n11\n12.5%\n27 [22 ~ 27]\n\n\n시행 안 됨\n넣음\n11\n12.5%\n27 [26 ~ 32]\n\n\n목록에서 빠짐 (허가취하 7·유효기간 만료 3·미청구 정비 6)\n뺌\n16\n—\n—\n\n\n아직 진행 중\n뺌\n47\n—\n2026년 11월까지 25 [25 ~ 33] 경과\n\n\n\n2022 ~ 2025년에 처음 실린 예고를 2026년 11월 목록까지 따라갔다. 목록에서 빠진 사유는 필자가 식품의약품안전처 의약품 정보와 캐시닥에서 확인했다.\n\n\nE. 약가유연계약 표시\n목록 메모 칸에 약가유연계약 적용 약제가 붙은 제품은 2026년 6월 12개에서 11월 52개로 늘었다. 처음 표시된 달에 목록 금액이 오른 제품이 16개였다(전달 대비 중앙값 3.03배). 목록에 적히는 금액(상한금액표 금액)과 별도로 합의한 금액은 다를 수 있고, 별도합의 금액은 공개되지 않는다. 제도 설명의 출처는 건강보험심사평가원 안내와 보건복지부 고시다.\n자료 출처: 건강보험심사평가원 급여목록·대체조제 목록 2022-01 ~ 2025-12, 급여목록 2026-01 ~ 11. 보건복지부 고시 제2022-199호·제2023-166호·제2024-67호·제2025-218호와 변경대비표. 대한병원협회 공문(2022, 2023), 대한약사회 안내 자료(2025-12). 목록에서 빠진 사유는 식품의약품안전처 의약품 정보·캐시닥, 약가유연계약 설명은 건강보험심사평가원 안내·보건복지부 고시. 약국 현장의 말은 약업 전문지 보도. 숫자는 분석 코드의 결과 파일에서 왔다(메모 없는 가격 변경과 예고가 먼저 보이는 일수는 2026-11-24 판, 나머지는 2026-11-27 판)."
   },
   {
     "objectID": "en/projects/project-b.html",
@@ -541,72 +555,72 @@
   {
     "objectID": "en/posts/2026-11-benefit-change-lead/index.html",
     "href": "en/posts/2026-11-benefit-change-lead/index.html",
-    "title": "How far can announced price cuts be trusted?",
+    "title": "Only in 2024 could most price cuts be seen a month ahead",
     "section": "",
-    "text": "NoteAbout this page\n\n\n\nSecond edition (2026-11-27). The first edition was the reimbursement-change part of “Monitoring reimbursement changes and demand” (2026-11-24). This edition adds how far ahead a reader of the list alone can see a price cut and the size of cuts, computed in a new run. Realization rates were recounted with products that left the list after an injunction removed from the denominator; price changes without a note are unchanged from the first edition.\nDemand forecasting is in the demand report, and the whole series in the series overview."
+    "text": "NoteAbout this page\n\n\n\nSecond edition (2026-11-27), rewritten to start from what pharmacists say. The first edition (2026-11-24) centred on how often announcements in the list come true. Analyses and figures are reused; lead time, size of cuts and a match against government notices are new.\nOne number changed: products that left the list after a court injunction (10 price-cut announcements, 13 planned suspensions) were counted as “not carried out” in the first edition and are now left out, because there is nothing left to judge. Price cuts went from 99.7% to 99.96% and planned suspensions from 89.3% to 100.0%.\nThe whole series is in the series overview; demand forecasting is in the demand report."
   },
   {
-    "objectID": "en/posts/2026-11-benefit-change-lead/index.html#questions",
-    "href": "en/posts/2026-11-benefit-change-lead/index.html#questions",
-    "title": "How far can announced price cuts be trusted?",
-    "section": "Questions",
-    "text": "Questions\nWill a drug’s price or reimbursement status change next month? How often do the notes in the reimbursement list come true? How far ahead can a reader of the list alone see a price cut, and how small are the cuts?"
+    "objectID": "en/posts/2026-11-benefit-change-lead/index.html#summary",
+    "href": "en/posts/2026-11-benefit-change-lead/index.html#summary",
+    "title": "Only in 2024 could most price cuts be seen a month ahead",
+    "section": "Summary",
+    "text": "Summary\nWhat pharmacists say mostly holds, but not every year.\n\n\n\n\n\n\n\nWhat pharmacists say\nWhat the data show\n\n\n\n\n“We learn of price cuts only days before”\nTrue. In the list, most cuts first appear in the month they take effect; government notices and association guidance came 4–13 days ahead. 31.6% of 2022–2025 cuts were visible a month or more ahead, almost all in two months of 2024\n\n\n“1-won cuts are a loss we just absorb”\nTrue in January 2026. 19.6% of that month’s government bulk cuts were exactly 1 won and 39.9% were 5 won or less. Across 2022–2025, 5 won or less was 10.2%, so it varies by year\n\n\n\n\n\n\n\n\n\n\nWhat an alert builder asks\nWhat the data show\n\n\n\n\nCan announced cuts be trusted?\nYes. Nearly all (99.96%) cuts announced in the list’s remarks column were carried out, but only a third of price changes are announced there\n\n\nWhich cuts were large and which small?\nThe documented reasons differed. The September 2023 base-requirement re-evaluation cuts were mostly 10–20%; the January 2026 actual-transaction-price cuts were mostly under 1%"
   },
   {
-    "objectID": "en/posts/2026-11-benefit-change-lead/index.html#four-conclusions",
-    "href": "en/posts/2026-11-benefit-change-lead/index.html#four-conclusions",
-    "title": "How far can announced price cuts be trusted?",
-    "section": "Four conclusions",
-    "text": "Four conclusions\n\nPrice cuts announced in the reimbursement list almost always came true. Of 4,659 products with a known outcome, 99.96% were cut. Among planned suspensions, 3 of 91 decisions were blocked by court injunctions.\nSeeing a cut at least a month ahead in the list happened almost only in 2024. Of 13,708 cuts in 2022–2025, 31.6% were visible a month or more before taking effect, but nearly all came from two months in 2024 (80.8% that year; 0–0.35% in other years). Those cuts were mostly posted exactly one month ahead.\nGovernment bulk cuts first appear in the list in the month they take effect. Notices and association guidance made them known 4–13 days earlier.\nBulk cuts differed in size. The 2023-09 base-requirement re-evaluation cuts were mostly 10–20%; 60% of the 2026-01 actual-transaction-price cuts were under 1%, and 19.6% were exactly 1 won.\n\n\n\n\n\n\n\n\nDo\nDon’t\n\n\n\n\nUse price-cut notes in the remarks for alerts\nConclude “no price change this month” from the remarks alone\n\n\nCompare each month’s list with the previous month, and read notices and association guidance\nExpect cuts to appear in the list in advance; most first appear in the month they take effect\n\n\nLook at cut size in won and in percent\nPresent planned suspensions as certain"
-  },
-  {
-    "objectID": "en/posts/2026-11-benefit-change-lead/index.html#how-often-notes-come-true",
-    "href": "en/posts/2026-11-benefit-change-lead/index.html#how-often-notes-come-true",
-    "title": "How far can announced price cuts be trusted?",
-    "section": "How often notes come true",
-    "text": "How often notes come true\nThe monthly snapshots were chained into a per-product change log. A future date in the remarks, such as “cut on 25.7.1”, was recorded as an announcement, not as a change, and checked against later snapshots.\n\n\n\n\n\n\n\n\n\n\nType of note\nProducts\nRealized, among known outcomes\nOn the planned date\nMedian lead time\n\n\n\n\nPrice cut (remarks)\n4,683\n99.96%\n98.5%\n30 days\n\n\nNew listing\n342\n100.0%\n100.0%\n8 days\n\n\nPlanned suspension\n203\n100.0%\n35.8%\n23 days\n\n\n\n\nRealized includes changes that came slightly late, at a different amount, or as delisting instead of suspension. “Known outcomes” excludes notes still on hold under a court injunction and products that left the list after an injunction (nothing left to judge), the same rule as the injunction-outcome table.\nThe first edition counted those delisted products (10 price-cut notes, 13 planned suspensions) as not realized, giving 99.7% and 89.3%.\nCounted per decision (one company’s one decision, however many products), all 89 of the 91 planned suspensions with an outcome were realized. The 81 products still without an outcome belong to two companies’ decisions under continuing injunctions (59 and 22).\nNotices of a planned suspension should say that a court decision may block it."
-  },
-  {
-    "objectID": "en/posts/2026-11-benefit-change-lead/index.html#price-changes-without-a-note",
-    "href": "en/posts/2026-11-benefit-change-lead/index.html#price-changes-without-a-note",
-    "title": "How far can announced price cuts be trusted?",
-    "section": "Price changes without a note",
-    "text": "Price changes without a note\nOf 14,041 product price changes, 9,370 (66.7%) had no note in the remarks. They took effect through the list itself. This does not mean they were unannounced, only that the remarks column does not show them.\n\n\n\nPrice changes with and without a note in the remarks. The bulk-cut months are 2022-09, 2023-09 and 2024-05.\n\n\n\n7,657 of them fall in three months of government-wide bulk cuts. The 2023-09 base-requirement re-evaluation alone accounts for 7,371; 2022-09 had 175 and 2024-05 had 111.\nEven outside the bulk-cut months, 26.8% changed without a note.\nPrice alerts therefore need both the remarks and a month-on-month comparison of the list."
+    "objectID": "en/posts/2026-11-benefit-change-lead/index.html#perspective",
+    "href": "en/posts/2026-11-benefit-change-lead/index.html#perspective",
+    "title": "Only in 2024 could most price cuts be seen a month ahead",
+    "section": "1. Whose problem, and who can help",
+    "text": "1. Whose problem, and who can help\nThe page takes the view of those who could ease pharmacy burdens with ordering, stock and return information (distributors, pharmacy support services). Pharmacy pain points are sorted by the path a drug takes through a pharmacy: procuring (A), holding stock (B), dispensing (C), earning (D). Stage B is expected to worsen fastest as listed drugs are re-evaluated from 2027, and it is the stage public data cover best.\nWhat a pharmacist said (trade press): cuts become known only days ahead, so checking stock against them to claim the price difference from suppliers is given up, and 1-won cuts are absorbed as a loss. Two of the reasons behind this can be measured with public data: no time (when a cut first becomes visible) and small amounts (size of cuts). A third, shrinking compensation and return terms from manufacturers and wholesalers, is not in public data.\nCuts are grouped as: cuts announced in advance in the list’s remarks column; government bulk cuts (months when 50 or more ingredients changed price without a note); and other cuts without a note.\nNot in the data: pharmacy purchases and stock, product sales, wholesale flows, compensation and return terms, planned delisting dates. Pharmacy-level losses are not computed."
   },
   {
     "objectID": "en/posts/2026-11-benefit-change-lead/index.html#lead",
     "href": "en/posts/2026-11-benefit-change-lead/index.html#lead",
-    "title": "How far can announced price cuts be trusted?",
-    "section": "How far ahead can a cut be seen?",
-    "text": "How far ahead can a cut be seen?\nLead time is the gap between the month a cut first appeared in the list and the month it took effect, counted in months because the actual release date of each file is unknown.\n\n\n\nShare of cuts visible at least one month ahead, by year\n\n\n\nPooled over 2022–2025 the share is 31.6% (4,337 of 13,708), but a single pooled figure misleads: almost all of it is the noted cuts of 2024-03 and 2024-07.\nAll cuts visible in advance were noted in the remarks; 4,334 of 4,337 first appeared in the list of the month before (29–31 days ahead). Only 3 appeared two or more months ahead.\nNotes held by a court injunction were re-timed from the month the lifting of the injunction appeared in the list.\n\nOutside the list, bulk cuts were known 4–13 days ahead: notice No. 2022-199 (7 days), Korean Hospital Association letter (6 days), notice No. 2023-166 (4 days), notice No. 2025-218 (8 days), and a Korean Pharmaceutical Association item table (13 days; shared on 2025-12-19, estimated). The same table listed voluntary cuts after the reimbursement-appropriateness re-evaluation that took effect 44 days later (2026-02). Hospital-route documents are guidance for hospitals; the pharmacy-route document exists only for 2026."
+    "title": "Only in 2024 could most price cuts be seen a month ahead",
+    "section": "2. When can a cut be known?",
+    "text": "2. When can a cut be known?\n\n\n\nShare of cuts visible at least one month ahead, by year\n\n\n\nPooled, 31.6% (4,337 of 13,708) were visible a month or more ahead, but almost all of it is announced cuts in March and July 2024. 4,334 of the 4,337 first appeared in the previous month’s list (29–31 days ahead).\nGovernment bulk cuts and other cuts without a note all first appeared in the list of the month they took effect. For an alert built on the list, only 7 cuts appeared after taking effect: the problem is lateness, not misses.\n9,370 of 14,041 product price changes (66.7%) had no note in the remarks.\nOutside the list, bulk cuts were known 4–13 days ahead: notice No. 2022-199 (7 days), Korean Hospital Association letter (6), notice No. 2023-166 (4), notice No. 2025-218 (8), Korean Pharmaceutical Association item table (13; shared 2025-12-19, estimated). The same table listed voluntary cuts effective 44 days later (2026-02). Only one pharmacy-route document is available (2026)."
   },
   {
     "objectID": "en/posts/2026-11-benefit-change-lead/index.html#size",
     "href": "en/posts/2026-11-benefit-change-lead/index.html#size",
-    "title": "How far can announced price cuts be trusted?",
-    "section": "How small are the cuts?",
-    "text": "How small are the cuts?\n\n\n\nCut size by bulk-cut month\n\n\n\n2023-09: 7,231 of 7,363 cuts (98.2%) are on the list of “base-requirement re-evaluation, round 1” cuts; 92.0% of them were 10–20% (median 15.0%).\n2026-01: 2,405 of 3,865 (62.2%) are on the “actual-transaction-price adjustment” item table; 67.9% of them were under 1% (median 0.47%). The other 1,441 took effect under the same notice but are not on the item table.\n2022-09 and 2024-05: no reason is stated in the notices, and the cuts were not 10–20% (medians 6.2% and 1.9%).\nIn won, 19.6% of the 2026-01 bulk cuts were exactly 1 won and 39.9% were 5 won or less (10.2% across 2022–2025). Won amounts are per unit (tablet, mL), so package sizes mix; percentages are less affected.\n\nReasons are taken only from the wording of documents; no reason was inferred. Products under flexible pricing contracts (from 2026-06) had no cuts, so they do not affect these figures. (Sources on flexible contracts: HIRA guidance and Ministry of Health and Welfare notices. Delisting reasons for injunction cases: Ministry of Food and Drug Safety drug information and Cashdoc.)"
+    "title": "Only in 2024 could most price cuts be seen a month ahead",
+    "section": "3. How small are cuts?",
+    "text": "3. How small are cuts?\n\n19.6% of the 2026-01 bulk cuts were exactly 1 won and 39.9% were 5 won or less; 718 of the 759 1-won cuts are on the actual-transaction-price item table.\nAcross 2022–2025, 5 won or less was 10.2%.\nCuts visible a month ahead were smaller: 27.2% were 5 won or less, vs 2.2% for other cuts.\nWon amounts are per unit (one tablet, one mL); the drop per box is larger, and package sizes mix, so percentages are shown in section 5."
+  },
+  {
+    "objectID": "en/posts/2026-11-benefit-change-lead/index.html#realization",
+    "href": "en/posts/2026-11-benefit-change-lead/index.html#realization",
+    "title": "Only in 2024 could most price cuts be seen a month ahead",
+    "section": "4. Can announced cuts be trusted?",
+    "text": "4. Can announced cuts be trusted?\nThe exception is a court injunction: a company contesting a decision can have a court suspend it, and the announced cut or suspension does not take effect meanwhile.\n\n\n\n\n\n\n\n\n\n\nAnnouncement\nProducts\nCarried out, among those that can be judged\nOn the planned date\nMedian lead time\n\n\n\n\nPrice cut (remarks)\n4,683\n99.96%\n98.5%\n30 days\n\n\nNew listing\n342\n100.0%\n100.0%\n8 days\n\n\nPlanned suspension\n203\n100.0%\n35.8%\n23 days\n\n\n\n\n“Can be judged” leaves out announcements still held by an injunction and products that left the list after one.\nOf 151 price-cut notes held by injunctions, followed to 2026-11, 75.0% of the 88 with an outcome came true as announced, 12.5% at a different amount and 12.5% not; the median time to outcome was 27 months. These are a few companies’ cases."
+  },
+  {
+    "objectID": "en/posts/2026-11-benefit-change-lead/index.html#reasons",
+    "href": "en/posts/2026-11-benefit-change-lead/index.html#reasons",
+    "title": "Only in 2024 could most price cuts be seen a month ahead",
+    "section": "5. Which cuts were large, and which small?",
+    "text": "5. Which cuts were large, and which small?\n\n\n\nCut size by bulk-cut month\n\n\n\n2023-09, base-requirement re-evaluation (round 1): 7,231 of 7,363 bulk cuts (98.2%) are on the re-evaluation cut list; 92.0% of them were 10–20% (median 15.0%).\n2026-01, actual-transaction-price adjustment: 2,405 of 3,865 (62.2%) are on the item table; 67.9% of them were under 1% (median 0.47%). The other 1,441 took effect under the same notice but are not on the item table.\n2022-09 and 2024-05: no reason stated in the notices (medians 6.2% and 1.9%).\nReasons are taken only from document wording. Whether the 2027 re-evaluation will resemble either pattern cannot be told from these data."
+  },
+  {
+    "objectID": "en/posts/2026-11-benefit-change-lead/index.html#implications",
+    "href": "en/posts/2026-11-benefit-change-lead/index.html#implications",
+    "title": "Only in 2024 could most price cuts be seen a month ahead",
+    "section": "6. Implications",
+    "text": "6. Implications\nUntested suggestions for alerts: cuts announced in the remarks as one-month-ahead alerts; bulk cuts tracked through notice and association schedules (1–2 weeks ahead) with item tables turned into checklists; a monthly list-to-list comparison for other cuts; injunction cases flagged as possibly years from an outcome. Showing the size of each cut lets pharmacies decide which items are worth checking. Pharmacy-level expected losses need the pharmacy’s own stock records."
   },
   {
     "objectID": "en/posts/2026-11-benefit-change-lead/index.html#checks",
     "href": "en/posts/2026-11-benefit-change-lead/index.html#checks",
-    "title": "How far can announced price cuts be trusted?",
-    "section": "How the classification was checked",
-    "text": "How the classification was checked\nOf 11,509 bulk cuts in the four months, 11,460 (99.6%) matched the notices’ change tables on product code and before/after price. The automated classification of notes was compared with 30 hand-labelled cases; the type matched in 83.3% (95% interval 66.4–92.7%, one labeller). In the Dong-A ST suspension case, the injunction date recorded in the list matched the court’s decision date (2022-05-09)."
-  },
-  {
-    "objectID": "en/posts/2026-11-benefit-change-lead/index.html#limits",
-    "href": "en/posts/2026-11-benefit-change-lead/index.html#limits",
-    "title": "How far can announced price cuts be trusted?",
-    "section": "Limits",
-    "text": "Limits\nInjunctions not shown in the list are missed; only one was added from outside data. Suspensions for sanctions and for licensing reasons cannot be told apart from the remarks alone. Lead time is measured in months. 37.3% of the 2026-01 bulk cuts have no item-level reason. Some outside-list dates are estimates. Injunction outcomes come from a few companies’ cases. This page does not look at price changes and prescription volume, and computes no savings or incentive amounts."
+    "title": "Only in 2024 could most price cuts be seen a month ahead",
+    "section": "Checks and limits",
+    "text": "Checks and limits\nOf 11,509 bulk cuts in the four months, 11,460 (99.6%) matched the notices’ change tables on product code and before/after price. Note classification matched 30 hand-labelled cases in 83.3%. Limits: the case and the ranking of pain points rest mainly on trade press and pharmacist surveys; lead time is measured in months; 37.3% of the 2026-01 bulk cuts have no item-level reason; some outside-list dates are estimates; injunction outcomes come from a few companies. Products under flexible pricing contracts (from 2026-06) had no cuts. No savings, settlement or incentive amounts are computed.\nSources: HIRA reimbursement lists; MOHW notices No. 2022-199, 2023-166, 2024-67, 2025-218; Korean Hospital Association letters (2022, 2023); Korean Pharmaceutical Association guidance (2025-12); delisting reasons from MFDS drug information and Cashdoc; flexible contracts from HIRA guidance and MOHW notices."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Ben's Notes",
     "section": "",
-    "text": "데이터로 사람들의 건강에 보탬이 되려는 분석가, Ben Kim입니다.\n\n\n스타트업에서 5년 넘게 데이터 분석가, 데이터 사이언티스트, AI 데이터 파트 리드로 일했습니다. 지금은 의사, 약사, 제약사, 유통사처럼 약을 다루는 사람들이 더 나은 결정을 내리도록 공개 의약품 데이터를 분석하고 있습니다.\n\n\n보고서 읽기 경력 보기\n\n\n\n\n\n환자를 직접 만나지 않아도, 환자에게 약을 처방하고 건네고 만들고 공급하는 사람들의 결정을 도우면 건강에 보탬이 될 수 있다고 봅니다.\n\n\n  처방하려는 성분의 급여 변경과 공급 변화를 미리 확인합니다.\n  약값 인하와 급여정지 예고를 미리 알아 재고를 계획합니다.\n  자사 성분의 시장 흐름과 경쟁 제품의 가격 변화를 한눈에 봅니다.\n  성분별 수요 흐름을 공급 계획과 약국 알림의 기준으로 씁니다.\n\n\n\n\n\n\n공개 의약품 데이터로 답할 수 있는 질문을 다룹니다. 결과만큼 “이 숫자를 얼마나 믿을 수 있는가”를 자세히 적었습니다.\n\n\n\n\n\n\n\n급여목록 스냅샷으로 본 예고의 실현율, 인하를 미리 알 수 있는 정도, 그리고 인하의 폭\n\n\n\n\n\n2026-11-27\n\n\n\n\n\n\n\n\n급여목록과 의약품 사용통계로 묻는 두 질문, 그리고 두 자료를 합쳐 본 결과\n\n\n\n\n\n2026-11-27\n\n\n\n\n\n\n\n\n건보공단 사용통계로 성분별 원외 처방량을 예측하고, 오차가 몰리는 성분과 분류군을 가려내기\n\n\n\n\n\n2026-11-24\n\n\n\n\n\n일치 없음\n\n\n\n\n\n\n제약조건 안에서 가장 저항이 적고 실행 가능한 행동을 찾는다.\n\n복잡한 방법이 단순한 방법보다 낫다는 근거가 없으면 단순한 방법을 고릅니다. 결과를 보기 전에 판정 기준을 먼저 정하고, 불리한 결과도 그대로 적습니다.\n\n\n\n\n  \n    2021.03 – 2023.11\n    Klleon R&D · 데이터 파트 리드\n      MLOps 팀과 데이터 파트를 만들고 이끌었습니다. 생성형 AI 앱의 그로스 분석과 A/B 테스트, 학습 데이터 큐레이션을 맡았습니다.\n      그로스 분석 · 데이터 큐레이션\n  \n  \n    2019.04 – 2020.07\n    Freewheelin · 데이터 분석가\n      프로모션 성과 대시보드를 만들고, BigQuery로 데이터를 모아 품질 관리를 맡았습니다.\n  \n  \n    2017.12 – 2019.03\n    Epopcon · 데이터 사이언티스트\n      포아송 과정으로 쇼핑몰 상품 재고가 바뀌는 시점을 예측해 수집 주기를 최적화했습니다.\n      스케줄링 모델\n  \n\n연세대학교 응용통계학·경제학 학사 · Python, SQL, 통계·시계열 분석, LightGBM, BigQuery, MLflow\n전체 경력 · 프로젝트 · LinkedIn · Medium · GitHub"
+    "text": "데이터로 사람들의 건강에 보탬이 되려는 분석가, Ben Kim입니다.\n\n\n스타트업에서 5년 넘게 데이터 분석가, 데이터 사이언티스트, AI 데이터 파트 리드로 일했습니다. 지금은 의사, 약사, 제약사, 유통사처럼 약을 다루는 사람들이 더 나은 결정을 내리도록 공개 의약품 데이터를 분석하고 있습니다.\n\n\n보고서 읽기 경력 보기\n\n\n\n\n\n환자를 직접 만나지 않아도, 환자에게 약을 처방하고 건네고 만들고 공급하는 사람들의 결정을 도우면 건강에 보탬이 될 수 있다고 봅니다.\n\n\n  처방하려는 성분의 급여 변경과 공급 변화를 미리 확인합니다.\n  약값 인하와 급여정지 예고를 미리 알아 재고를 계획합니다.\n  자사 성분의 시장 흐름과 경쟁 제품의 가격 변화를 한눈에 봅니다.\n  성분별 수요 흐름을 공급 계획과 약국 알림의 기준으로 씁니다.\n\n\n\n\n\n\n공개 의약품 데이터로 답할 수 있는 질문을 다룹니다. 결과만큼 “이 숫자를 얼마나 믿을 수 있는가”를 자세히 적었습니다.\n\n\n\n\n\n\n\n급여목록만 보는 약국은 대부분 시행 달에 알고, 2026년 1월 인하의 5분의 1은 1원이었다\n\n\n\n\n\n2026-11-27\n\n\n\n\n\n\n\n\n급여목록과 의약품 사용통계로 본 약가인하와 처방 수요\n\n\n\n\n\n2026-11-27\n\n\n\n\n\n\n\n\n전국 성분 처방량은 다음 달 기준 평균 6~7% 빗나갔고, 단순한 통계 모형으로 충분했다\n\n\n\n\n\n2026-11-24\n\n\n\n\n\n일치 없음\n\n\n\n\n\n\n제약조건 안에서 가장 저항이 적고 실행 가능한 행동을 찾는다.\n\n복잡한 방법이 단순한 방법보다 낫다는 근거가 없으면 단순한 방법을 고릅니다. 결과를 보기 전에 판정 기준을 먼저 정하고, 불리한 결과도 그대로 적습니다.\n\n\n\n\n  \n    2021.03 – 2023.11\n    Klleon R&D · 데이터 파트 리드\n      MLOps 팀과 데이터 파트를 만들고 이끌었습니다. 생성형 AI 앱의 그로스 분석과 A/B 테스트, 학습 데이터 큐레이션을 맡았습니다.\n      그로스 분석 · 데이터 큐레이션\n  \n  \n    2019.04 – 2020.07\n    Freewheelin · 데이터 분석가\n      프로모션 성과 대시보드를 만들고, BigQuery로 데이터를 모아 품질 관리를 맡았습니다.\n  \n  \n    2017.12 – 2019.03\n    Epopcon · 데이터 사이언티스트\n      포아송 과정으로 쇼핑몰 상품 재고가 바뀌는 시점을 예측해 수집 주기를 최적화했습니다.\n      스케줄링 모델\n  \n\n연세대학교 응용통계학·경제학 학사 · Python, SQL, 통계·시계열 분석, LightGBM, BigQuery, MLflow\n전체 경력 · 프로젝트 · LinkedIn · Medium · GitHub"
   },
   {
     "objectID": "index.html#누구를-돕는-분석인가",
@@ -620,7 +634,7 @@
     "href": "index.html#보고서",
     "title": "Ben's Notes",
     "section": "",
-    "text": "공개 의약품 데이터로 답할 수 있는 질문을 다룹니다. 결과만큼 “이 숫자를 얼마나 믿을 수 있는가”를 자세히 적었습니다.\n\n\n\n\n\n\n\n급여목록 스냅샷으로 본 예고의 실현율, 인하를 미리 알 수 있는 정도, 그리고 인하의 폭\n\n\n\n\n\n2026-11-27\n\n\n\n\n\n\n\n\n급여목록과 의약품 사용통계로 묻는 두 질문, 그리고 두 자료를 합쳐 본 결과\n\n\n\n\n\n2026-11-27\n\n\n\n\n\n\n\n\n건보공단 사용통계로 성분별 원외 처방량을 예측하고, 오차가 몰리는 성분과 분류군을 가려내기\n\n\n\n\n\n2026-11-24\n\n\n\n\n\n일치 없음"
+    "text": "공개 의약품 데이터로 답할 수 있는 질문을 다룹니다. 결과만큼 “이 숫자를 얼마나 믿을 수 있는가”를 자세히 적었습니다.\n\n\n\n\n\n\n\n급여목록만 보는 약국은 대부분 시행 달에 알고, 2026년 1월 인하의 5분의 1은 1원이었다\n\n\n\n\n\n2026-11-27\n\n\n\n\n\n\n\n\n급여목록과 의약품 사용통계로 본 약가인하와 처방 수요\n\n\n\n\n\n2026-11-27\n\n\n\n\n\n\n\n\n전국 성분 처방량은 다음 달 기준 평균 6~7% 빗나갔고, 단순한 통계 모형으로 충분했다\n\n\n\n\n\n2026-11-24\n\n\n\n\n\n일치 없음"
   },
   {
     "objectID": "index.html#일하는-방식",
@@ -695,114 +709,135 @@
   {
     "objectID": "en/posts/2026-11-pharm-data-series/index.html",
     "href": "en/posts/2026-11-pharm-data-series/index.html",
-    "title": "Public medicine data series: price changes and prescription demand",
+    "title": "How far can public data ease pharmacies’ problems?",
     "section": "",
-    "text": "This series uses two public datasets to answer questions that pharmacies and pharmaceutical and distribution teams ask. “Monitoring reimbursement changes and demand”, published as one report on 2026-11-24, was split into the pages below on 2026-11-27. The full Korean version of this overview is here."
+    "text": "This series asks how far public medicine data can ease the problems pharmacies face. The perspective is that of those who could help pharmacies with ordering, stock and return information (distributors, pharmacy support services). Each page starts from what makes pharmacy work hard and ends with what public information can tell in advance. The full Korean version of this overview is here."
+  },
+  {
+    "objectID": "en/posts/2026-11-pharm-data-series/index.html#why",
+    "href": "en/posts/2026-11-pharm-data-series/index.html#why",
+    "title": "How far can public data ease pharmacies’ problems?",
+    "section": "Why these questions",
+    "text": "Why these questions\n\n\n\n\n\n\n\n\n\n\nStage\nQuestion\nWhat leaks\nFelt rank\nPublic data coverage\n\n\n\n\nA. Procuring\nCan the drugs needed be obtained on time, in the amount needed?\nTime, dispensing opportunities\n1\nPartly. Demand (prescriptions) and the number of substitutes; not shortages, allocation or stock\n\n\nB. Holding stock\nDoes stock already bought keep its value?\nMoney\n2 (worsening fastest)\nMost. What is cut, when and by how much\n\n\nC. Dispensing\nIs dispensing manageable?\nTime, consumables, disputes\n3\nWeakly. Volume per prescription\n\n\nD. Earning\nAre sales and margins holding?\nSales\n4\nNone. No pharmacy- or area-level data\n\n\n\nProcuring is felt most today; holding stock is a close second and is expected to worsen fastest as listed drugs are re-evaluated from 2027. The stages are linked: when drugs are hard to get, pharmacies stock up, and stock loses value when prices are cut.\nWhat public data can and cannot do. They can tell in advance what will be cut, when and by how much; single out ingredients whose demand swings; and show how far announcements can be trusted. They cannot compute a pharmacy’s losses (that needs its stock records), forecast shortages (no supply or stock data), or change compensation and return terms. The pain points and cases rest mainly on trade press and pharmacist surveys, which may lean towards reported harm."
   },
   {
     "objectID": "en/posts/2026-11-pharm-data-series/index.html#list-price",
     "href": "en/posts/2026-11-pharm-data-series/index.html#list-price",
-    "title": "Public medicine data series: price changes and prescription demand",
+    "title": "How far can public data ease pharmacies’ problems?",
     "section": "Does combining the two datasets help?",
-    "text": "Does combining the two datasets help?\nAdding reimbursement-list price information to demand forecasts did not show an improvement. With the price changes visible in the list at forecast time, unit-price forecast error was 0.0186 vs 0.0217, about 15% lower, but p = 0.252 could not be told apart from chance, nor from forecasts with the timing deliberately shifted. For prescription volume, the test could not even detect a deliberately injected 20% effect, so it could not measure an effect. The median pass-through from list price change to claimed unit price was only 0.55. The series therefore uses the reimbursement list for price and suspension alerts and the usage statistics for demand. The criteria were fixed before results were seen; the table is in the technical note."
+    "text": "Does combining the two datasets help?\nAdding reimbursement-list price information to demand forecasts did not show an improvement. With the price changes visible in the list at forecast time, unit-price forecast error was 0.0186 vs 0.0217, about 15% lower, but p = 0.252 could not be told apart from chance, nor from forecasts with the timing deliberately shifted. For prescription volume, the test could not even detect a deliberately injected 20% effect. The median pass-through from list price change to claimed unit price was only 0.55. The series therefore uses the reimbursement list for price and suspension alerts and the usage statistics for demand. The table is in the technical note."
   },
   {
     "objectID": "en/posts/2026-11-pharm-data-series/index.html#ground-rules",
     "href": "en/posts/2026-11-pharm-data-series/index.html#ground-rules",
-    "title": "Public medicine data series: price changes and prescription demand",
+    "title": "How far can public data ease pharmacies’ problems?",
     "section": "Ground rules",
-    "text": "Ground rules\n\nA future date in the remarks is an announcement, not a change. Pages say “a cut was announced” or “realization rate 99.96%”, never “the price was cut”.\nPrice changes and prescription volume are compared only as before-and-after changes and associations, not as causes.\nDemand forecasts are national and per ingredient, not order quantities for a pharmacy or product.\nNo savings or incentive amounts are computed.\nThe data contain no product-level sales, pharmacy purchases or stock, wholesale distribution, or planned delisting dates."
+    "text": "Ground rules\n\nA future date in the remarks is an announcement, not a change. Pages say “a cut was announced” or “realization rate 99.96%”, never “the price was cut”.\nPrice changes and prescription volume are compared only as before-and-after changes and associations, not as causes.\nDemand forecasts are national and per ingredient, not order quantities for a pharmacy or product.\nNo savings or incentive amounts are computed.\nThe data contain no shortages, product-level sales, pharmacy purchases or stock, wholesale distribution, or planned delisting dates."
   },
   {
     "objectID": "en/posts/2026-11-pharm-data-series/index.html#next",
     "href": "en/posts/2026-11-pharm-data-series/index.html#next",
-    "title": "Public medicine data series: price changes and prescription demand",
+    "title": "How far can public data ease pharmacies’ problems?",
     "section": "Next analyses",
-    "text": "Next analyses\nThe order follows the pharmacy pain points in the Korean overview, weighted by how much information can reduce them and by what is coming (re-evaluation of listed drugs from 2027). “Possible now” means the public data already in hand are enough.\n\n\n\n#\nAnalysis\nPain point\nWhy\nPossible now?\n\n\n\n\n1\nHow far ahead can a cut be known: split cuts into noted cuts, bulk cuts and other cuts without a note; measure the share visible in the list at least a month ahead and the size of cuts (won and percent)\nStock value\nAnswers “we only learn days before, so we give up checking” and “1-won cuts are a loss we just absorb” with numbers\nDone (2026-11-27). Seeing a cut a month ahead happened mostly in 2024 (80.8%; 0–0.35% in other years). Bulk cuts were known 4–13 days ahead through notices and association guidance; 19.6% of the 2026-01 actual-transaction-price cuts were 1 won. 2nd edition\n\n\n2\nRe-evaluation exposure map: describe which products were cut in the 2023-09 base-requirement re-evaluation, and count products in today’s list with similar characteristics\nStock value\nThe pain point expected to worsen fastest\nPossible now (descriptive). There has been essentially one bulk re-evaluation, so no predictive model\n\n\n3\nSupply-vulnerability map: trend of listed products and companies per ingredient, delistings, suspensions and price-ceiling increases, to find ingredients with few substitutes\nProcurement\nThe part of shortages that public data can address is “can it be substituted?”\nMap possible now. Matching with actual shortages needs supply-interruption reports; until then results are “vulnerability candidates”\n\n\n4\nDelisting, suspension and unsellable stock: was there a signal before a product left the list or was suspended, and how many same-ingredient substitutes existed then\nStock value\nCan warn about stock that may become unreturnable\nPossible now. Planned delisting dates are not in the data\n\n\n5\nReported shortage cases: did ingredient prescriptions change sharply around reported shortages\nProcurement\nLinks field complaints to data\nConditional. Ingredients with two or fewer companies are suppressed in the usage statistics; used as validation cases for #3\n\n\n6\nLeading signals for winter respiratory and antibiotic demand: do search indices, paediatric care flows and the calendar move ahead of prescription increases\nProcurement\nFever-reducer and antibiotic shortages cluster in winter and overlap with the largest forecast errors\nIn progress. Results are leading correlations, not causes or shortage forecasts\n\n\n7\nLong-term prescribing trend: volume per claim by province, care-institution type and age\nDispensing\nLong prescriptions add to stock and consumable burden\nPossible but the indicator is weak: volume is in product units, not days supplied\n\n\n\nWarehouse-style pharmacies and dispensing fees per pharmacy are not covered: there are no pharmacy- or area-level data.\nOther candidates: ingredient unit price around changes in the generic-substitution list, ingredient markets around patent expiry and generic entry, prescription flows by province and facility type, how combining strengths and forms affects forecast error, and an example of a single pharmacy alert built from the change log."
+    "text": "Next analyses\nThe order follows the pain points above, weighted by how much information can reduce them and by what is coming (re-evaluation of listed drugs from 2027). “Possible now” means the public data already in hand are enough.\n\n\n\n#\nAnalysis\nPain point\nWhy\nPossible now?\n\n\n\n\n1\nHow far ahead can a cut be known: split cuts into cuts announced in the remarks, government bulk cuts and other cuts; measure the share visible in the list at least a month ahead and the size of cuts (won and percent)\nStock value\nAnswers “we only learn days before, so we give up checking” and “1-won cuts are a loss we just absorb” with numbers\nDone (2026-11-27). Seeing a cut a month ahead happened mostly in 2024 (80.8%; 0–0.35% in other years). Bulk cuts were known 4–13 days ahead through notices and association guidance; 19.6% of the 2026-01 actual-transaction-price cuts were 1 won. 2nd edition\n\n\n2\nRe-evaluation exposure map: describe which products were cut in the 2023-09 base-requirement re-evaluation, and count products in today’s list with similar characteristics\nStock value\nThe pain point expected to worsen fastest\nPossible now (descriptive). There has been essentially one bulk re-evaluation, so no predictive model\n\n\n3\nSupply-vulnerability map: trend of listed products and companies per ingredient, delistings, suspensions and price-ceiling increases, to find ingredients with few substitutes\nProcurement\nThe part of shortages that public data can address is “can it be substituted?”\nMap possible now. Matching with actual shortages needs supply-interruption reports; until then results are “vulnerability candidates”\n\n\n4\nDelisting, suspension and unsellable stock: was there a signal before a product left the list or was suspended, and how many same-ingredient substitutes existed then\nStock value\nCan warn about stock that may become unreturnable\nPossible now. Planned delisting dates are not in the data\n\n\n5\nReported shortage cases: did ingredient prescriptions change sharply around reported shortages\nProcurement\nLinks field complaints to data\nConditional. Ingredients with two or fewer companies are suppressed in the usage statistics; used as validation cases for #3\n\n\n6\nLeading signals for winter respiratory and antibiotic demand: do search indices, paediatric care flows and the calendar move ahead of prescription increases\nProcurement\nFever-reducer and antibiotic shortages cluster in winter and overlap with the largest forecast errors\nIn progress. Results are leading correlations, not causes or shortage forecasts\n\n\n7\nLong-term prescribing trend: volume per claim by province, care-institution type and age\nDispensing\nLong prescriptions add to stock and consumable burden\nPossible but the indicator is weak: volume is in product units, not days supplied\n\n\n\nWarehouse-style pharmacies and dispensing fees per pharmacy are not covered: there are no pharmacy- or area-level data.\nOther candidates: ingredient unit price around changes in the generic-substitution list, ingredient markets around patent expiry and generic entry, prescription flows by province and facility type, how combining strengths and forms affects forecast error, and an example of a single pharmacy alert built from the change log."
   },
   {
     "objectID": "en/posts/2026-11-drug-demand-forecast/index.html",
     "href": "en/posts/2026-11-drug-demand-forecast/index.html",
-    "title": "Ingredient prescription demand: how well can six months ahead be forecast?",
+    "title": "Prescription forecasts missed most for winter respiratory drugs and antibiotics",
     "section": "",
-    "text": "NoteThis report was split into a series\n\n\n\n“Monitoring reimbursement changes and demand” (2026-11-24) was split into four pages on 2026-11-27. This page is the demand forecasting part; the numbers are unchanged from the 2026-11-24 edition.\n\nRealization of announced price cuts and suspensions, and price changes without a note: How far can announced price cuts be trusted?\nDrug-class diagnostics, verification, and model specification: Demand forecasting technical note\nThe whole series, and whether reimbursement-list prices help: Series overview\nThis page summarizes the main findings in English. More tables, case studies, and the full list of limitations are in the Korean version."
+    "text": "NoteAbout this page\n\n\n\nSecond edition (2026-11-27), rewritten to start from the pharmacy problem of getting drugs on time. The first edition (2026-11-24) centred on comparing four forecasting methods. Analyses, numbers and figures are unchanged.\nPrice cuts: Only in 2024 could most price cuts be seen a month ahead. Whole series: series overview. Verification and model specification: technical note."
   },
   {
-    "objectID": "en/posts/2026-11-drug-demand-forecast/index.html#questions",
-    "href": "en/posts/2026-11-drug-demand-forecast/index.html#questions",
-    "title": "Ingredient prescription demand: how well can six months ahead be forecast?",
-    "section": "Questions",
-    "text": "Questions\nWhich way is prescription demand for each ingredient heading? How well can six months ahead (next month, as seen on the day of the forecast) be forecast, and which method should be the default? Does using differences between drug classes make forecasts more accurate?"
+    "objectID": "en/posts/2026-11-drug-demand-forecast/index.html#summary",
+    "href": "en/posts/2026-11-drug-demand-forecast/index.html#summary",
+    "title": "Prescription forecasts missed most for winter respiratory drugs and antibiotics",
+    "section": "Summary",
+    "text": "Summary\nPublic data cannot show shortages, but they can single out ingredients whose demand swings. Those were concentrated in winter respiratory drugs and antibiotics.\n\n\n\n\n\n\n\nWhat pharmacies experience\nWhat public data show\n\n\n\n\n“We can’t get the drugs we need on time”\nShortages themselves are not in these data. Usage statistics show only what was prescribed, but they can single out ingredients whose prescriptions swing\n\n\nCold medicines and antibiotics run short every winter\nThe drug classes forecast worst were cough and cold drugs, antibiotics and respiratory drugs (16–22% error). How much larger winter was than summer differed from year to year\n\n\n\n\n\n\n\n\n\n\nWhat a demand-baseline builder asks\nWhat the data show\n\n\n\n\nHow far off is next month’s forecast?\nAbout 6–7% on average for national ingredient totals. Data are published five months late, so “next month” is six months past the data\n\n\nWhich method?\nA simple statistical model (ETS) was enough. Machine learning was slightly lower but not distinguishable from chance; “same month last year” was worse than both\n\n\nWhere does the error come from?\n59 volatile ingredients are 5.3% of amount but 24.4% of error; more than half are respiratory or anti-infective\n\n\nDoes a separate method per drug class help?\nNo. Both approaches differed by only 0.12 percentage points"
   },
   {
-    "objectID": "en/posts/2026-11-drug-demand-forecast/index.html#three-conclusions",
-    "href": "en/posts/2026-11-drug-demand-forecast/index.html#three-conclusions",
-    "title": "Ingredient prescription demand: how well can six months ahead be forecast?",
-    "section": "Three conclusions",
-    "text": "Three conclusions\n\nFor 6-month-ahead demand forecasts, a simple statistical model (ETS) was enough. Machine learning (LightGBM) beat “same month last year” but showed no evidence of beating ETS (6.46% vs 7.11% WAPE over 36 months; the gap could not be told apart from chance). The gain over “same month last year” was spread across 2023, 2024 and 2025, not concentrated in the post-COVID recovery.\nForecast errors pile up in a small set of highly volatile ingredients. The 59 ingredients whose same-month volume swung by ±30% or more from year to year are 5.3% of amount but make up 24.4% of total error. More than half are respiratory or anti-infective drugs.\nDrug classes differ in error and in which method fits best, but adding class information did not help. Error is 2.4% for lipid-lowering drugs and 19–22% for antibiotics (J01) and cough and cold drugs (R05), measured with machine learning. Both class-based approaches differed from the existing model by only 0.12 percentage points. A follow-up look at the high-error classes gave no reason to make the model more complex; it supports keeping ETS as the default and monitoring each class’s characteristics separately (see the technical note)."
+    "objectID": "en/posts/2026-11-drug-demand-forecast/index.html#perspective",
+    "href": "en/posts/2026-11-drug-demand-forecast/index.html#perspective",
+    "title": "Prescription forecasts missed most for winter respiratory drugs and antibiotics",
+    "section": "1. Whose problem, and who can help",
+    "text": "1. Whose problem, and who can help\nThe page takes the view of those who could ease pharmacy burdens with ordering, stock and return information (distributors, pharmacy support services). Pharmacy pain points are sorted by the path a drug takes through a pharmacy: procuring (A), holding stock (B, see the price-cut page), dispensing (C), earning (D). Procuring is the problem pharmacies feel most today.\nIn trade-press cases, drugs are short for several reasons: allocation differs by pharmacy, wholesalers limit quantities or set minimum orders, and changes in distribution policy cut deliveries for days. Of these, only demand is visible in public data; production, shipments, wholesale and pharmacy stock are not. Usage statistics also arrive about five months late. This page therefore does not forecast shortages. It builds a demand baseline and shows where that baseline can and cannot be trusted.\nNot in the data: shortages and supply, product sales, pharmacy purchases and stock, wholesale flows, regional demand."
   },
   {
     "objectID": "en/posts/2026-11-drug-demand-forecast/index.html#forecast",
     "href": "en/posts/2026-11-drug-demand-forecast/index.html#forecast",
-    "title": "Ingredient prescription demand: how well can six months ahead be forecast?",
-    "section": "Demand forecasting six months ahead",
-    "text": "Demand forecasting six months ahead\nWhy six months: usage statistics are published about five months late. The latest month available today is five months back, so forecasting “next month” means forecasting six months past the data. In other words, “six months ahead” is not the distant future: it is next month as seen on the day of the forecast.\n\n\n\nPublication lag and the target month. The target is six months after the last observed month a.\n\n\nFour methods were compared on 501 ingredients (93.8% of outpatient claimed amount), re-forecasting every month from 2023-01 to 2025-12.\n\n\n\n\n\n\n\n\n\nMethod\nPlain description\nAverage error (WAPE)\nVerdict\n\n\n\n\nSame month last year\n“As much as last July, again this July”\n9.76%\nWorse than machine learning (significant)\n\n\nLast year × recent growth\nLast year’s value times the last 12 months’ growth\n45.30%\nOne ingredient went badly wrong\n\n\nETS\nStatistical model of recent trend and seasonal pattern\n7.11%\nNot distinguishable from machine learning\n\n\nMachine learning (LightGBM)\nOne model trained on all 501 ingredients\n6.46%\n—\n\n\n\n“Significant” refers to a monthly test: the 36 monthly error differences were tested as one series; no per-ingredient test was used. The 2023–2025 evaluation used fully revised usage statistics (the November 2026 release). The 2026 actuals are a provisional release that may still rise; if they do, a model that forecast low looks better now than it really is, so 2026 will be re-scored on the final release.\n\n\n\nAverage error by forecast horizon, 501 ingredients. Lower is better. “Last year” is the value of the same month last year.\n\n\n\nWhich years the gain came from\nThe gain over “same month last year” is spread evenly across the three years. The first half of 2023, right after the COVID-19 recovery, is when “same month last year” missed badly. If the gain had piled up there, the conclusion could reflect that one episode, so it was split by period. This was not pre-registered and is not used for any verdict.\n\n\n\nMonthly error difference. Top: machine learning vs same month last year. Bottom: machine learning vs ETS.\n\n\n\nThe share of the gain over last year was 40% in 2023, 31% in 2024 and 29% in 2025; the first half of 2023 alone was 23%.\nAgainst ETS the months were mixed; in the first half of 2023 machine learning was 0.13 pp worse.\nThe model’s COVID-19 indicators cover only 2020–2021. Forecasts for 2023, whose base year is the incompletely recovered 2022, are not flagged (see the model specification). In the previous edition (2026-11-19), most of the machine learning gain came from this period; in this edition it was 23%.\nThe figure uses a slightly simplified set of ingredient-months, so its totals differ a little from the official values (−3.30 pp, −0.65 pp).\n\nAdding reimbursement-list price information to the forecast did not show an improvement; see the series overview and the technical note."
-  },
-  {
-    "objectID": "en/posts/2026-11-drug-demand-forecast/index.html#what-to-do-and-not-do",
-    "href": "en/posts/2026-11-drug-demand-forecast/index.html#what-to-do-and-not-do",
-    "title": "Ingredient prescription demand: how well can six months ahead be forecast?",
-    "section": "What to do and not do",
-    "text": "What to do and not do\n\n\n\n\n\n\n\nDo\nDon’t\n\n\n\n\nUse ETS as the default for ingredient demand monitoring\nForecast with “last year × recent growth rate”\n\n\nWatch respiratory and highly volatile ingredients separately\nUse these forecasts directly as pharmacy order quantities\n\n\nUse per-class error to decide how much to trust a forecast\nBuild a separate forecasting model for each class\n\n\n\nPrice alert recommendations are in the reimbursement-change page."
+    "title": "Prescription forecasts missed most for winter respiratory drugs and antibiotics",
+    "section": "2. How far off is next month’s forecast?",
+    "text": "2. How far off is next month’s forecast?\n\n\n\nPublication lag and the target month. The target is six months after the last observed month a.\n\n\nFour methods were compared on 501 ingredients (93.8% of outpatient claimed amount), re-forecasting every month from 2023-01 to 2025-12 with only the data available at the time.\n\n\n\n\n\n\n\n\n\nMethod\nPlain description\nAverage error\nVerdict\n\n\n\n\nSame month last year\n“As much as last July, again this July”\n9.76%\nWorse than machine learning (unlikely to be chance)\n\n\nLast year × recent growth\nLast year’s value times the last 12 months’ growth\n45.30%\nOne ingredient went badly wrong (section 5)\n\n\nETS\nStatistical model of recent trend and seasonal pattern\n7.11%\nNot distinguishable from machine learning\n\n\nMachine learning (LightGBM)\nOne model trained on all 501 ingredients\n6.46%\n—\n\n\n\n\nAverage error is the sum of misses ÷ the sum of actuals: 6.5% means about 6.5 units off per 100.\nThe 0.65-point gap between machine learning and ETS could not be told apart from chance over 36 months; on unseen 2026-01 to 06 data (provisional), ETS was 0.25 points lower over six months. ETS is kept as the default because it is easier to explain and check.\nMachine learning was 3.30 points lower than “same month last year”, lower in every 2026 month, and lower for 85% of ingredients.\n\n\n\n\nAverage error by forecast horizon, 501 ingredients. Lower is better."
   },
   {
     "objectID": "en/posts/2026-11-drug-demand-forecast/index.html#class-error",
     "href": "en/posts/2026-11-drug-demand-forecast/index.html#class-error",
-    "title": "Ingredient prescription demand: how well can six months ahead be forecast?",
-    "section": "High-error drug classes",
-    "text": "High-error drug classes\n\n\n\nForecast error six months ahead by drug class, 2023-01 to 2025-12.\n\n\nAmong ATC level-2 classes with at least 10 ingredients, ranked by machine learning error. Post-hoc exploration: these are observed patterns and associations, not causes.\nIn R03, J01 and R05, the size of the winter peak differed from year to year. The figure below shows, for each winter, how many times larger winter prescriptions were than summer.\n\n\n\nHow many times larger winter prescriptions were than summer, winters 18/19 to 24/25. Only ingredients observed in all eight years.\n\n\nWinter height shrank sharply in 2020/21, during the COVID-19 period, rose again in 2021/22, and fell in each of the next three winters. The data used here do not show why.\nPer-class tables, the separate S01 group, and follow-up directions are in the technical note."
+    "title": "Prescription forecasts missed most for winter respiratory drugs and antibiotics",
+    "section": "3. Where do forecasts go most wrong?",
+    "text": "3. Where do forecasts go most wrong?\n\nFor half the ingredients, the busiest month in 2018–2025 was at most 2.3 times the quietest; for the top 5% it was over 17 times.\nThe 59 ingredients whose same-month volume swung by ±30% or more from year to year average 29.6% error vs 4.6% for the rest (machine learning).\nThe 62 respiratory ingredients had 16.05% error with ETS and 18.63% with machine learning.\n\n\n\n\nForecast error by drug class, 2023-01 to 2025-12.\n\n\nChronic and cardiovascular drugs (lipid-lowering C10, antithrombotics B01) were 2–4% off; respiratory (R03), antibiotics (J01) and cough and cold drugs (R05) were 14–22%. In those three classes the size of the winter peak differed from year to year:\n\n\n\nHow many times larger winter prescriptions were than summer, winters 18/19 to 24/25.\n\n\nThese are the same classes pharmacists describe as running short in winter. The data show only that their demand is hard to forecast; how short supply was is not in the data. These are observed associations, not causes."
+  },
+  {
+    "objectID": "en/posts/2026-11-drug-demand-forecast/index.html#class-test",
+    "href": "en/posts/2026-11-drug-demand-forecast/index.html#class-test",
+    "title": "Prescription forecasts missed most for winter respiratory drugs and antibiotics",
+    "section": "4. Does a separate method per drug class help?",
+    "text": "4. Does a separate method per drug class help?\nNo. Blending machine learning and ETS differently per class, and adding class information to the model, were tested against criteria fixed in advance. Both reached 6.34% vs 6.46% for the existing model, a 0.12-point gap with no evidence of improvement. Per-class error is used to decide how much to trust a forecast, not to change the method. Details are in the technical note."
+  },
+  {
+    "objectID": "en/posts/2026-11-drug-demand-forecast/index.html#case-flu",
+    "href": "en/posts/2026-11-drug-demand-forecast/index.html#case-flu",
+    "title": "Prescription forecasts missed most for winter respiratory drugs and antibiotics",
+    "section": "5. Case: the flu drug and “last year × growth”",
+    "text": "5. Case: the flu drug and “last year × growth”\nOutpatient prescriptions of oseltamivir rose from about 4,900 in 2022-01 to about 4.15 million in 2023-01. “Last year × recent growth” counted that surge twice, so the 2024-05 forecast was about 1,143 times the actual, and this one ingredient made up 79.1% of the method’s total error. Growth multipliers should not be used for ingredients whose demand level jumped."
+  },
+  {
+    "objectID": "en/posts/2026-11-drug-demand-forecast/index.html#implications",
+    "href": "en/posts/2026-11-drug-demand-forecast/index.html#implications",
+    "title": "Prescription forecasts missed most for winter respiratory drugs and antibiotics",
+    "section": "6. Implications",
+    "text": "6. Implications\nUntested suggestions: build a national next-month baseline per ingredient with ETS, and set its trust range from the drug class’s error (3–4% for chronic drugs, 16–18% for respiratory drugs and antibiotics, ETS); flag ingredients with large year-on-year swings for human review, using only data available at forecast time; widen ranges for respiratory drugs and antibiotics before winter; fill the five-month publication gap with one’s own order data, and split share changes from market changes with own volume ÷ national prescriptions. Do not use “last year × growth”, do not use national forecasts as pharmacy orders, and do not build a model per class. Pharmacy-level demand needs pharmacy order and stock records."
   },
   {
     "objectID": "en/posts/2026-11-drug-demand-forecast/index.html#limits",
     "href": "en/posts/2026-11-drug-demand-forecast/index.html#limits",
-    "title": "Ingredient prescription demand: how well can six months ahead be forecast?",
-    "section": "Limits",
-    "text": "Limits\nThe report does not answer demand at the level of a pharmacy, product, or region. The 2026 evaluation is provisional, because recent usage statistics are revised in later releases. The 2023–2025 evaluation used revised data, so forecasts made with the first release available at the time could be less accurate. The machine learning settings were fixed without tuning, and results are limited to those settings. Relationships between price changes, drug classes, and prescription volume are associations, not causal claims. The look at high-error classes is post-hoc: it re-examines 2023–2025, and only two full winters have passed since the COVID-19 period, so it is not generalized to future winters."
+    "title": "Prescription forecasts missed most for winter respiratory drugs and antibiotics",
+    "section": "Checks and limits",
+    "text": "Checks and limits\nMethods and decision rules were fixed before results (pre-registration); each month was forecast with only data available then (backtest), with a separate test against future-data leakage; unseen 2026 data were scored as well. Limits: the field cases rest mainly on trade press and pharmacist surveys; shortages are not visible, and a prescription switched because a drug was unavailable looks like demand; the 2026 evaluation is provisional; the class diagnostics are post-hoc and only two full post-COVID winters exist; class codes come from 2026 data; revised data were used for 2023–2025; machine learning settings were not tuned. Relationships between drug classes and error are associations."
   },
   {
-    "objectID": "en/posts/2026-11-drug-demand-forecast/index.html#next-analyses",
-    "href": "en/posts/2026-11-drug-demand-forecast/index.html#next-analyses",
-    "title": "Ingredient prescription demand: how well can six months ahead be forecast?",
-    "section": "Next analyses",
-    "text": "Next analyses\nDemand-side follow-ups are linking shortage and supply-interruption data, breaking national totals down by province and facility type, and checking the effect of combining strengths and dosage forms. The full list is in the series overview."
+    "objectID": "en/posts/2026-11-drug-demand-forecast/index.html#by-year",
+    "href": "en/posts/2026-11-drug-demand-forecast/index.html#by-year",
+    "title": "Prescription forecasts missed most for winter respiratory drugs and antibiotics",
+    "section": "Appendix: which years the gain came from",
+    "text": "Appendix: which years the gain came from\n\n\n\nMonthly error difference. Top: machine learning vs same month last year. Bottom: machine learning vs ETS.\n\n\nThe gain over “same month last year” was 40% in 2023, 31% in 2024 and 29% in 2025 (23% in the first half of 2023), so it is not a post-COVID artefact. Against ETS the months were mixed. This split was not pre-registered and is not used for any verdict. Adding reimbursement-list prices did not help; see the series overview."
   },
   {
     "objectID": "en/posts/2026-11-drug-demand-forecast/index.html#glossary",
     "href": "en/posts/2026-11-drug-demand-forecast/index.html#glossary",
-    "title": "Ingredient prescription demand: how well can six months ahead be forecast?",
+    "title": "Prescription forecasts missed most for winter respiratory drugs and antibiotics",
     "section": "Glossary",
-    "text": "Glossary\n\n\n\n\n\n\n\nTerm\nMeaning\n\n\n\n\nWAPE\nSum of absolute errors ÷ sum of actuals. 6.5% means forecasts missed by about 6.5 units per 100\n\n\npp (percentage point)\nDifference between two percentages. 7.11% and 6.46% differ by 0.65 pp\n\n\nETS\nClassical statistical model that weights recent values more and adds a seasonal pattern\n\n\nBacktest\nGoing back to past dates, forecasting with only the data available then, and comparing with known actuals\n\n\nPre-registration\nFixing the analysis method and decision rules before seeing results\n\n\nInconclusive\nThe gap cannot be told apart from chance, so neither method can be called better. Not the same as “no difference”\n\n\nPost-hoc exploration\nAnalysis added after seeing results, not planned in advance. Not used for verdicts\n\n\nEWC test\nA test designed to avoid spurious significance in short series whose months move together\n\n\nHolm correction\nAdjustment that stops one comparison from looking significant by chance when several are made\n\n\nFeature importance\nHow much the model relied on each input. Not a cause\n\n\nSHAP value\nA single forecast split into contributions from each feature"
+    "text": "Glossary\n\n\n\n\n\n\n\nTerm\nMeaning\n\n\n\n\nUsage statistics\nNHIS monthly table of prescription volume and claimed amount per ingredient, published about five months late\n\n\nIngredient (4-digit code)\nUnit grouping products with the same active ingredient\n\n\nATC code\nInternational drug classification. C10 lipid-lowering, J01 antibiotics, R03 respiratory, R05 cough and cold, S01 eye\n\n\nAverage error (WAPE)\nSum of absolute errors ÷ sum of actuals\n\n\nETS\nStatistical model that weights recent values more and adds a seasonal pattern\n\n\nBacktest\nForecasting from past dates with only the data available then and comparing with actuals\n\n\nPre-registration\nFixing methods and decision rules before seeing results\n\n\nPost-hoc exploration\nAnalysis added after seeing results; not used for verdicts\n\n\n\nMore technical terms (EWC test, Holm correction, SHAP values) are in the technical note."
   },
   {
     "objectID": "en/index.html",
     "href": "en/index.html",
     "title": "Ben's Notes",
     "section": "",
-    "text": "I’m Ben Kim, an analyst who wants data to help people stay healthy.\n\n\nI spent more than five years at startups as a data analyst, data scientist, and AI data part lead. Now I analyze public medicine data to help the people who handle medicines, such as doctors, pharmacists, drug makers, and distributors, make better decisions.\n\n\nRead the reports See experience\n\n\n\n\n\nEven without meeting patients directly, helping the people who prescribe, dispense, make, and supply medicines can contribute to people’s health.\n\n\n  See reimbursement and supply changes for an ingredient before prescribing.\n  Know about announced price cuts and suspensions early and plan stock.\n  Follow the market for their ingredients and competitors' price changes in one view.\n  Use ingredient demand trends as a baseline for supply planning and pharmacy alerts.\n\n\n\n\n\n\nThese reports take on questions that public medicine data can answer. Each report spends as much space on how far the numbers can be trusted as on the results.\n\n\n\n\n\n\n\nRealization of notes in the reimbursement list, how far ahead a cut can be seen, and how small cuts are\n\n\n\n\n\nNov 27, 2026\n\n\n\n\n\n\n\n\nTwo questions asked of the reimbursement list and drug usage statistics, and what happened when the two were combined\n\n\n\n\n\nNov 27, 2026\n\n\n\n\n\n\n\n\nForecasting outpatient prescription volume per ingredient from NHIS usage statistics, and finding the ingredients and classes where errors pile up\n\n\n\n\n\nNov 24, 2026\n\n\n\n\n\n\n\n\nAn experiment note from funnel diagnosis to sample sizing and significance testing\n\n\n\n\n\nNov 23, 2026\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\nFind the action with the least resistance that can still be carried out within the constraints.\n\nIf there is no evidence that a complex method beats a simple one, I choose the simple one. I fix decision rules before seeing results, and I report unfavorable results as they are.\n\n\n\n\n  \n    2021.03 – 2023.11\n    Klleon R&D · Data part lead\n      Built and led the MLOps team and data part. Ran growth analytics, A/B testing, and training-data curation for a generative AI app.\n      Growth analytics · Data curation\n  \n  \n    2019.04 – 2020.07\n    Freewheelin · Data analyst\n      Built promotion performance dashboards, centralized data in BigQuery, and managed data quality.\n  \n  \n    2017.12 – 2019.03\n    Epopcon · Data scientist\n      Predicted when online-store inventory changes with a Poisson process to optimize crawling schedules.\n      Scheduling model\n  \n\nYonsei University, B.A. in Applied Statistics and Economics · Python, SQL, statistics and time series, LightGBM, BigQuery, MLflow\nFull experience · Projects · LinkedIn · Medium · GitHub"
+    "text": "I’m Ben Kim, an analyst who wants data to help people stay healthy.\n\n\nI spent more than five years at startups as a data analyst, data scientist, and AI data part lead. Now I start from the problems pharmacies face and use public medicine data to build evidence that can ease them.\n\n\nRead the reports See experience\n\n\n\n\n\nPharmacies decide neither prescriptions, prices nor supply, yet bear the results. This work starts from pharmacy problems and uses public data to build evidence for those who could ease them with ordering, stock and return information.\n\n\n  Know in advance when and how much prices will be cut, and which ingredients' demand swings.\n  Use price-cut alerts and ingredient demand baselines for pharmacy alerts and supply planning.\n  Combine them with a pharmacy's order and stock records to decide what to check and what to watch.\n  Drug makers and prescribers can check ingredient markets and reimbursement changes on the same evidence.\n\n\n\n\n\n\nThese reports take on questions that public medicine data can answer. Each report spends as much space on how far the numbers can be trusted as on the results.\n\n\n\n\n\n\n\nPharmacies reading the reimbursement list mostly learn of cuts in the month they take effect, and a fifth of the January 2026 cuts were 1 won\n\n\n\n\n\nNov 27, 2026\n\n\n\n\n\n\n\n\nPrice cuts and prescription demand, seen through the reimbursement list and drug usage statistics\n\n\n\n\n\nNov 27, 2026\n\n\n\n\n\n\n\n\nNational ingredient-level prescriptions were forecast about 6–7% off for next month, and a simple statistical model was enough\n\n\n\n\n\nNov 24, 2026\n\n\n\n\n\n\n\n\nAn experiment note from funnel diagnosis to sample sizing and significance testing\n\n\n\n\n\nNov 23, 2026\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\nFind the action with the least resistance that can still be carried out within the constraints.\n\nIf there is no evidence that a complex method beats a simple one, I choose the simple one. I fix decision rules before seeing results, and I report unfavorable results as they are.\n\n\n\n\n  \n    2021.03 – 2023.11\n    Klleon R&D · Data part lead\n      Built and led the MLOps team and data part. Ran growth analytics, A/B testing, and training-data curation for a generative AI app.\n      Growth analytics · Data curation\n  \n  \n    2019.04 – 2020.07\n    Freewheelin · Data analyst\n      Built promotion performance dashboards, centralized data in BigQuery, and managed data quality.\n  \n  \n    2017.12 – 2019.03\n    Epopcon · Data scientist\n      Predicted when online-store inventory changes with a Poisson process to optimize crawling schedules.\n      Scheduling model\n  \n\nYonsei University, B.A. in Applied Statistics and Economics · Python, SQL, statistics and time series, LightGBM, BigQuery, MLflow\nFull experience · Projects · LinkedIn · Medium · GitHub"
   },
   {
     "objectID": "en/index.html#who-the-analysis-helps",
     "href": "en/index.html#who-the-analysis-helps",
     "title": "Ben's Notes",
     "section": "",
-    "text": "Even without meeting patients directly, helping the people who prescribe, dispense, make, and supply medicines can contribute to people’s health.\n\n\n  See reimbursement and supply changes for an ingredient before prescribing.\n  Know about announced price cuts and suspensions early and plan stock.\n  Follow the market for their ingredients and competitors' price changes in one view.\n  Use ingredient demand trends as a baseline for supply planning and pharmacy alerts."
+    "text": "Pharmacies decide neither prescriptions, prices nor supply, yet bear the results. This work starts from pharmacy problems and uses public data to build evidence for those who could ease them with ordering, stock and return information.\n\n\n  Know in advance when and how much prices will be cut, and which ingredients' demand swings.\n  Use price-cut alerts and ingredient demand baselines for pharmacy alerts and supply planning.\n  Combine them with a pharmacy's order and stock records to decide what to check and what to watch.\n  Drug makers and prescribers can check ingredient markets and reimbursement changes on the same evidence."
   },
   {
     "objectID": "en/index.html#reports",
     "href": "en/index.html#reports",
     "title": "Ben's Notes",
     "section": "",
-    "text": "These reports take on questions that public medicine data can answer. Each report spends as much space on how far the numbers can be trusted as on the results.\n\n\n\n\n\n\n\nRealization of notes in the reimbursement list, how far ahead a cut can be seen, and how small cuts are\n\n\n\n\n\nNov 27, 2026\n\n\n\n\n\n\n\n\nTwo questions asked of the reimbursement list and drug usage statistics, and what happened when the two were combined\n\n\n\n\n\nNov 27, 2026\n\n\n\n\n\n\n\n\nForecasting outpatient prescription volume per ingredient from NHIS usage statistics, and finding the ingredients and classes where errors pile up\n\n\n\n\n\nNov 24, 2026\n\n\n\n\n\n\n\n\nAn experiment note from funnel diagnosis to sample sizing and significance testing\n\n\n\n\n\nNov 23, 2026\n\n\n\n\n\nNo matching items"
+    "text": "These reports take on questions that public medicine data can answer. Each report spends as much space on how far the numbers can be trusted as on the results.\n\n\n\n\n\n\n\nPharmacies reading the reimbursement list mostly learn of cuts in the month they take effect, and a fifth of the January 2026 cuts were 1 won\n\n\n\n\n\nNov 27, 2026\n\n\n\n\n\n\n\n\nPrice cuts and prescription demand, seen through the reimbursement list and drug usage statistics\n\n\n\n\n\nNov 27, 2026\n\n\n\n\n\n\n\n\nNational ingredient-level prescriptions were forecast about 6–7% off for next month, and a simple statistical model was enough\n\n\n\n\n\nNov 24, 2026\n\n\n\n\n\n\n\n\nAn experiment note from funnel diagnosis to sample sizing and significance testing\n\n\n\n\n\nNov 23, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "en/index.html#how-i-work",
@@ -823,7 +858,7 @@
     "href": "en/report.html",
     "title": "Report",
     "section": "",
-    "text": "Analysis reports that look at the medicine market and health services through public data. Each report records its questions, data, checks, and limits.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow far can announced price cuts be trusted?\n\n\nRealization of notes in the reimbursement list, how far ahead a cut can be seen, and how small cuts are\n\n\n\nMedicine data\n\nReimbursement list\n\nPublic medicine data series\n\n\n\n\nEnglish summary of a page that chains HIRA reimbursement-list snapshots from 2022 to 2025 to count how often announced price cuts, new listings and suspensions came true, and how many price changes had no advance note.\n\n\n\n\n\n\nNov 27, 2026\n\n\nBen Kim\n\n\n\n\n\n\n\n\n\n\n\n\nPublic medicine data series: price changes and prescription demand\n\n\nTwo questions asked of the reimbursement list and drug usage statistics, and what happened when the two were combined\n\n\n\nMedicine data\n\nPublic medicine data series\n\n\n\n\nOverview of a series that uses the HIRA reimbursement list and NHIS drug usage statistics to look at announced price and reimbursement changes and at ingredient-level prescription demand.\n\n\n\n\n\n\nNov 27, 2026\n\n\nBen Kim\n\n\n\n\n\n\n\n\n\n\n\n\nIngredient prescription demand: how well can six months ahead be forecast?\n\n\nForecasting outpatient prescription volume per ingredient from NHIS usage statistics, and finding the ingredients and classes where errors pile up\n\n\n\nMedicine data\n\nTime-series forecasting\n\nPublic medicine data series\n\n\n\n\nEnglish summary of a report that compares four methods for forecasting 501 ingredients’ prescription volume six months ahead, recommends ETS as the default, and flags high-volatility ingredients such as respiratory drugs and antibiotics.\n\n\n\n\n\n\nNov 24, 2026\n\n\nBen Kim\n\n\n\n\n\n\n\n\n\n\n\n\nA/B Test Analysis Note: Genre-Curated Content and Video Conversion\n\n\nAn experiment note from funnel diagnosis to sample sizing and significance testing\n\n\n\nAnalysis Note\n\nA/B Test\n\nProject A\n\n\n\n\nA sample report on the Project A A/B test, organized as funnel diagnosis, sample sizing, and significance testing.\n\n\n\n\n\n\nNov 23, 2026\n\n\n\n\n\nNo matching items"
+    "text": "Analysis reports that look at the medicine market and health services through public data. Each report records its questions, data, checks, and limits.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOnly in 2024 could most price cuts be seen a month ahead\n\n\nPharmacies reading the reimbursement list mostly learn of cuts in the month they take effect, and a fifth of the January 2026 cuts were 1 won\n\n\n\nMedicine data\n\nReimbursement list\n\nPublic medicine data series\n\n\n\n\nEnglish summary. A pharmacist said cuts become known only days ahead, so checking stock is abandoned, and 1-won cuts are absorbed as a loss. HIRA reimbursement lists 2022–2026 and Ministry of Health and Welfare notices are used to check when cuts can be known, how small they are, and whether announced cuts can be trusted.\n\n\n\n\n\n\nNov 27, 2026\n\n\nBen Kim\n\n\n\n\n\n\n\n\n\n\n\n\nHow far can public data ease pharmacies’ problems?\n\n\nPrice cuts and prescription demand, seen through the reimbursement list and drug usage statistics\n\n\n\nMedicine data\n\nPublic medicine data series\n\n\n\n\nOverview of a series that sorts pharmacy pain points by the path a drug takes through a pharmacy (procuring, holding stock, dispensing, earning) and analyses the parts that public medicine data can address.\n\n\n\n\n\n\nNov 27, 2026\n\n\nBen Kim\n\n\n\n\n\n\n\n\n\n\n\n\nPrescription forecasts missed most for winter respiratory drugs and antibiotics\n\n\nNational ingredient-level prescriptions were forecast about 6–7% off for next month, and a simple statistical model was enough\n\n\n\nMedicine data\n\nTime-series forecasting\n\nPublic medicine data series\n\n\n\n\nEnglish summary. Pharmacies struggle to get drugs on time; public data can show only the demand side of that problem. NHIS usage statistics 2018–2025 were used to forecast 501 ingredients’ prescriptions and to find where forecasts go most wrong.\n\n\n\n\n\n\nNov 24, 2026\n\n\nBen Kim\n\n\n\n\n\n\n\n\n\n\n\n\nA/B Test Analysis Note: Genre-Curated Content and Video Conversion\n\n\nAn experiment note from funnel diagnosis to sample sizing and significance testing\n\n\n\nAnalysis Note\n\nA/B Test\n\nProject A\n\n\n\n\nA sample report on the Project A A/B test, organized as funnel diagnosis, sample sizing, and significance testing.\n\n\n\n\n\n\nNov 23, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "en/projects/project-c.html",
@@ -947,135 +982,170 @@
   {
     "objectID": "ko/posts/2026-11-pharm-data-series/index.html",
     "href": "ko/posts/2026-11-pharm-data-series/index.html",
-    "title": "공개 의약품 데이터 시리즈: 약값 변동과 처방 수요",
+    "title": "약국의 고충, 공개 데이터로 어디까지 덜 수 있나",
     "section": "",
-    "text": "공개 의약품 데이터 두 가지로 약국과 제약·유통 실무가 묻는 질문에 답해 보는 시리즈다. 2026-11-24에 한 편으로 냈던 「급여 변동과 수요 모니터링」을 2026-11-27에 아래처럼 나눴다."
+    "text": "약국이 겪는 고충을 공개 의약품 데이터로 어디까지 덜 수 있는지 보는 시리즈다. 관점은 주문·재고·반품 정보로 약국의 고충을 덜어 줄 수 있는 쪽(의약품 유통, 약국 지원 서비스)이다. 그래서 각 글은 “약국이 무엇 때문에 힘든가”에서 출발해 “공개 정보로 무엇을 미리 알려 줄 수 있는가”로 끝난다."
   },
   {
     "objectID": "ko/posts/2026-11-pharm-data-series/index.html#why",
     "href": "ko/posts/2026-11-pharm-data-series/index.html#why",
-    "title": "공개 의약품 데이터 시리즈: 약값 변동과 처방 수요",
+    "title": "약국의 고충, 공개 데이터로 어디까지 덜 수 있나",
     "section": "왜 이 질문인가",
-    "text": "왜 이 질문인가\n출발점은 약국이 겪는 고충이다. 약이 약국을 지나가는 순서대로 나누면 네 단계가 된다.\n\n\n\n\n\n\n\n\n단계\n고충\n공개 데이터로 다룰 수 있나\n\n\n\n\nA. 들여오기\n필요한 약을 제때 구하지 못한다(품절, 배분, 배송 차질)\n일부. 대체할 제품이 적은 성분, 공급 불안의 신호\n\n\nB. 쌓아두기\n사둔 약의 가치가 약가 인하와 불용재고로 깎인다. 2027년부터 기등재약 재평가로 더 나빠질 전망이다\n가장 많이. 무엇이 언제 인하되는지\n\n\nC. 내주기\n장기처방이 늘어도 조제료는 고정이고 소모품 부담이 커진다\n약하게. 처방 건당 수량 추세\n\n\nD. 벌기\n창고형 약국 인근 매출이 줄고 약국당 조제료가 줄었다\n없음. 약국·상권 단위 자료가 없다\n\n\n\n처방, 약가, 생산은 바꿀 수 없다. 공개 데이터가 줄일 수 있는 것은 약국이 늦게 알거나 혼자 대조하느라 생기는 손실이고, A·B단계가 여기에 해당한다. 다만 공개 데이터로는 “무엇이 언제 바뀌는가”까지만 답할 수 있다. “그래서 이 약국이 얼마를 잃는가”는 약국의 구매·재고 기록이 있어야 답할 수 있다. 고충의 근거는 대부분 약업 전문지 보도와 약사 단체 설문이라, 응답이 피해 쪽으로 쏠렸을 수 있다."
+    "text": "왜 이 질문인가\n약국의 고충을 약이 약국을 지나가는 순서로 나누면 네 단계가 된다. 네 단계는 서로 겹치지 않고, 합치면 약국 운영 전체를 덮는다.\n\n\n\n\n\n\n\n\n\n\n단계\n질문\n무엇이 새는가\n체감 순위\n공개 데이터로 다룰 수 있나\n\n\n\n\nA. 들여오기\n필요한 약을 제때, 필요한 만큼 구할 수 있는가\n시간, 조제 기회\n1\n일부. 수요 쪽(처방량)과 대체할 제품의 수. 품절·배분·재고는 없다\n\n\nB. 쌓아두기\n이미 사둔 약의 가치가 지켜지는가\n돈\n2 (가장 빠르게 악화)\n가장 많이. 무엇이 언제 얼마나 인하되는지\n\n\nC. 내주기\n처방을 받아 약을 내주는 과정이 감당 가능한가\n시간, 소모품, 분쟁\n3\n약하게. 처방 건당 수량 추세\n\n\nD. 벌기\n약국의 매출과 마진이 유지되는가\n매출\n4\n없음. 약국·상권 단위 자료가 없다\n\n\n\n\n들여오기는 지금 체감이 가장 큰 고충이다. 약사 대부분이 품절약으로 고통을 겪는다고 답했고, 약사들이 신고한 품절과 정부 공식 집계 사이에 차이가 크다고 보도됐다.\n쌓아두기는 근소한 2위지만, 이미 등재된 약을 2027년부터 차례로 재평가할 예정이라 가장 빠르게 나빠질 고충으로 꼽힌다.\n네 단계는 서로 이어져 있다. 약을 구하기 어려우면 약국은 필요보다 많이 사두고, 사둔 약은 약가인하를 만나면 가치가 깎인다. 장기처방은 한 번에 많은 재고를 요구해 품절과 소모품 부담을 함께 키운다."
   },
   {
-    "objectID": "ko/posts/2026-11-pharm-data-series/index.html#list-price",
-    "href": "ko/posts/2026-11-pharm-data-series/index.html#list-price",
-    "title": "공개 의약품 데이터 시리즈: 약값 변동과 처방 수요",
-    "section": "두 자료를 합치면 나아지나",
-    "text": "두 자료를 합치면 나아지나\n급여목록의 가격 정보를 수요 예측에 넣어도 나아졌다는 근거는 없었다. 예측 시점에 목록에 보이던 가격 변화를 넣으면 성분 단가 예측 오차가 0.0186 대 0.0217로 약 15% 작았지만, p = 0.252로 우연과 구분되지 않았고 가격 변화 시점을 일부러 어긋나게 넣은 예측과도 구분되지 않았다. 처방량 예측에서는 일부러 넣은 20% 효과도 찾지 못해, 이 시험으로는 효과를 잴 수 없었다. 목록 가격이 바뀐 만큼 실제 청구 단가가 바뀐 비율도 중앙값 0.55에 그쳤다. 그래서 이 시리즈는 급여목록을 가격·급여정지 알림에 쓰고, 수요는 사용통계로 본다. 판정 기준은 결과를 보기 전에 정했고, 표는 기술 노트에 있다.\n2026-06부터는 약가유연계약이 적용된 일부 제품의 목록 금액이 실제 청구 기준과 다를 수 있다(목록에는 표시 금액이 적히고, 별도로 합의한 금액은 인가된 요양기관·청구 프로그램 업체만 본다). 이 시리즈의 숫자는 2025년까지라 영향이 없다. 2026 이후로 늘릴 때는 해당 제품을 빼고, 뺀 비중을 함께 적는다. (출처: 건강보험심사평가원 안내, 보건복지부 고시)"
+    "objectID": "ko/posts/2026-11-pharm-data-series/index.html#scope",
+    "href": "ko/posts/2026-11-pharm-data-series/index.html#scope",
+    "title": "약국의 고충, 공개 데이터로 어디까지 덜 수 있나",
+    "section": "공개 데이터가 할 수 있는 것과 없는 것",
+    "text": "공개 데이터가 할 수 있는 것과 없는 것\n처방은 의사가, 약가는 정부가, 공급과 반품 조건은 제약사와 도매가 정한다. 공개 데이터로 이것을 바꿀 수는 없다. 줄일 수 있는 것은 약국이 늦게 알거나 혼자 대조하느라 생기는 손실이고, 들여오기와 쌓아두기가 여기에 해당한다.\n\n\n\n\n\n\n\n할 수 있는 것\n할 수 없는 것\n\n\n\n\n무엇이 언제 얼마나 인하되는지 미리 알려 주기\n이 약국이 얼마를 잃는지 계산하기(약국 재고 기록이 필요)\n\n\n수요가 크게 흔들리는 성분을 가려내기\n품절을 예측하기(공급·재고 자료가 없음)\n\n\n예고를 얼마나 믿을 수 있는지 알려 주기\n보상·반품 조건을 바꾸기\n\n\n\n근거의 한계: 고충과 사례의 근거는 대부분 약업 전문지 보도와 약사 단체 설문이다. 피해를 호소하는 설문은 응답이 피해 쪽으로 쏠릴 수 있고, 시점이 오래된 숫자도 섞여 있다. 실제 약국의 주문·반품 기록으로 다시 확인하는 단계가 필요하다."
   },
   {
     "objectID": "ko/posts/2026-11-pharm-data-series/index.html#쓴-자료",
     "href": "ko/posts/2026-11-pharm-data-series/index.html#쓴-자료",
-    "title": "공개 의약품 데이터 시리즈: 약값 변동과 처방 수요",
+    "title": "약국의 고충, 공개 데이터로 어디까지 덜 수 있나",
     "section": "쓴 자료",
-    "text": "쓴 자료\n\n\n\n\n\n\n\n\n\n급여목록\n의약품 사용통계\n\n\n\n\n내는 곳\n건강보험심사평가원(심평원)\n국민건강보험공단(건보공단)\n\n\n보여주는 것\n가격: 급여 적용 약, 상한가격, 비고, 약효분류 번호\n처방량: 성분별 처방 수량·청구건수·청구금액\n\n\n단위\n제품\n성분(주성분 코드 4자리) × 월\n\n\n쓴 기간\n2022-01 ~ 2025-12 (48개월)\n2018-01 ~ 2025-12, 잠정 평가용 2026-01 ~ 06\n\n\n공개 시차\n매달 1일 기준 파일\n약 4 ~ 5개월 뒤 공개\n\n\n\n분류군 분석에는 2026 약가정보의 ATC 분류 코드를 속성으로만 더했다. 모두 공개 데이터다.\n이 자료에 없는 것: 제품별 판매량, 약국별 구매·재고, 도매 유통, 급여 삭제 예정일. 이것들에 대한 결론은 이 시리즈에 없다."
+    "text": "쓴 자료\n\n\n\n\n\n\n\n\n\n급여목록\n의약품 사용통계\n\n\n\n\n내는 곳\n건강보험심사평가원(심평원)\n국민건강보험공단(건보공단)\n\n\n보여 주는 것\n가격: 건강보험이 적용되는 약, 상한가격, 메모 칸(비고), 약효분류 번호\n처방량: 성분별 처방 수량·청구건수·청구금액\n\n\n단위\n제품\n성분(주성분 코드 4자리) × 월\n\n\n쓴 기간\n2022-01 ~ 2025-12, 따로 표시한 2026-01 ~ 11\n2018-01 ~ 2025-12, 잠정 평가용 2026-01 ~ 06\n\n\n공개 시차\n매달 1일 기준 파일\n약 4 ~ 5개월 뒤 공개\n\n\n쓰는 글\n약가인하 편\n수요 예측 편\n\n\n\n약가인하 편은 보건복지부 고시와 대한병원협회·대한약사회 안내 문서를, 수요 예측 편은 2026 약가정보의 ATC 분류 코드를 속성으로 더했다. 모두 공개 자료다.\n이 자료에 없는 것: 품절·공급, 제품별 판매량, 약국별 구매·재고, 도매 유통, 급여 삭제 예정일. 이것들에 대한 결론은 이 시리즈에 없다."
+  },
+  {
+    "objectID": "ko/posts/2026-11-pharm-data-series/index.html#list-price",
+    "href": "ko/posts/2026-11-pharm-data-series/index.html#list-price",
+    "title": "약국의 고충, 공개 데이터로 어디까지 덜 수 있나",
+    "section": "두 자료를 합치면 나아지나",
+    "text": "두 자료를 합치면 나아지나\n급여목록의 가격 정보를 수요 예측에 넣어도 나아졌다는 근거는 없었다. 예측 시점에 목록에 보이던 가격 변화를 넣으면 성분 단가 예측 오차가 0.0186 대 0.0217로 약 15% 작았지만, p = 0.252로 우연과 구분되지 않았고 가격 변화 시점을 일부러 어긋나게 넣은 예측과도 구분되지 않았다. 처방량 예측에서는 일부러 넣은 20% 효과도 찾지 못해, 이 시험으로는 효과를 잴 수 없었다. 목록 가격이 바뀐 만큼 실제 청구 단가가 바뀐 비율도 중앙값 0.55에 그쳤다. 그래서 이 시리즈는 급여목록을 가격·급여정지 알림에 쓰고, 수요는 사용통계로 본다. 판정 기준은 결과를 보기 전에 정했고, 표는 기술 노트에 있다.\n2026-06부터는 약가유연계약이 적용된 일부 제품의 목록 금액이 실제 청구 기준과 다를 수 있다(목록에는 표시 금액이 적히고, 별도로 합의한 금액은 인가된 요양기관·청구 프로그램 업체만 본다). 이 시리즈의 숫자에는 영향이 없다(해당 제품의 인하 0건). (출처: 건강보험심사평가원 안내, 보건복지부 고시)"
   },
   {
     "objectID": "ko/posts/2026-11-pharm-data-series/index.html#읽을-때의-약속",
     "href": "ko/posts/2026-11-pharm-data-series/index.html#읽을-때의-약속",
-    "title": "공개 의약품 데이터 시리즈: 약값 변동과 처방 수요",
+    "title": "약국의 고충, 공개 데이터로 어디까지 덜 수 있나",
     "section": "읽을 때의 약속",
-    "text": "읽을 때의 약속\n\n비고의 미래 날짜는 변화가 아니라 예고다. “인하 예고가 있었다”, “실현율 99.96%”처럼 쓰고 “인하됐다”라고 쓰지 않는다.\n가격 변화와 처방량의 관계는 전후 변화와 연관으로만 본다. “인하 때문에 처방이 늘었다” 같은 인과 주장은 하지 않는다.\n수요 예측은 전국 성분 단위다. 특정 약국·제품의 발주량이 아니다.\n절감액·장려금 금액은 계산하지 않는다."
+    "text": "읽을 때의 약속\n\n메모 칸의 미래 날짜는 변화가 아니라 예고다. “인하 예고가 있었다”, “실현율 99.96%”처럼 쓰고 “인하됐다”라고 쓰지 않는다.\n가격 변화와 처방량의 관계는 전후 변화와 연관으로만 본다. “인하 때문에 처방이 늘었다” 같은 인과 주장은 하지 않는다.\n수요 예측은 전국 성분 단위다. 특정 약국·제품의 발주량이 아니다.\n절감액·장려금 금액은 계산하지 않는다."
   },
   {
     "objectID": "ko/posts/2026-11-pharm-data-series/index.html#next",
     "href": "ko/posts/2026-11-pharm-data-series/index.html#next",
-    "title": "공개 의약품 데이터 시리즈: 약값 변동과 처방 수요",
+    "title": "약국의 고충, 공개 데이터로 어디까지 덜 수 있나",
     "section": "다음 분석",
-    "text": "다음 분석\n위 고충 순위에, 정보로 줄일 수 있는 정도와 앞으로의 추세(2027 기등재약 재평가)를 더해 순서를 정했다. “지금 가능”은 이미 가진 공개 자료로 할 수 있다는 뜻이다.\n\n\n\n순서\n분석\n고충\n왜\n지금 할 수 있나\n\n\n\n\n1\n인하를 얼마나 미리 알 수 있나: 인하를 비고 예고, 일괄 인하, 그 밖의 비고 없는 인하로 나누고, 급여목록만 보는 사람이 시행 1개월 이상 전에 알 수 있는 비율과 인하 폭(원·비율)을 본다\nB\n“시행 며칠 전에야 알아 대조를 포기한다”, “1원 단위 인하는 손해를 안고 간다”는 현장의 말에 숫자로 답한다\n완료(2026-11-27). 목록만 보고 한 달 이상 미리 안 인하는 2024년에만 많았다(80.8%, 다른 해 0 ~ 0.35%). 일괄 인하는 고시·단체 안내로 4 ~ 13일 먼저 알려졌고, 2026-01 실거래가 조정 인하의 19.6%는 1원이었다. 급여 변동 편 2판\n\n\n2\n재평가 노출 지도: 2023-09 기준요건 재평가 인하에서 어떤 조건의 제품이 인하됐는지 정리하고, 지금 목록에서 비슷한 조건의 제품이 얼마나 되는지 센다\nB\n가장 빠르게 나빠질 고충이다\n지금 가능(기술 통계). 일괄 재평가가 사실상 한 번뿐이라 예측 모델은 만들지 않는다\n\n\n3\n공급 취약 성분 지도: 성분별 급여 제품·업체 수의 추이, 목록 이탈, 급여정지, 상한가 인상을 모아 대체할 제품이 적은 성분을 찾는다\nA\n품절 고충 가운데 공개 정보로 다룰 수 있는 부분은 “대체 가능성”이다\n지도는 지금 가능. 실제 품절과 맞춰 보려면 공급중단·부족 보고 자료가 필요하다. 그전까지는 “취약 후보”로만 쓴다\n\n\n4\n목록 이탈·급여정지와 불용재고 위험: 빠지거나 정지되기 전에 신호가 있었는지, 그때 같은 성분의 대체 제품이 몇 개였는지 본다\nB\n반품이 막히는 재고가 생기는 경로를 미리 알릴 수 있다\n지금 가능. 급여 삭제 예정일은 자료에 없다\n\n\n5\n품절 보도 품목 사례: 보도된 품절 품목의 성분 처방량이 품절 전후로 급변했는지 본다\nA\n현장의 고충과 데이터를 잇는 사례가 된다\n조건부. 업체가 2곳 이하인 성분은 사용통계에서 비공개라 안 보일 수 있다. 3번의 검증 사례로 붙인다\n\n\n6\n겨울 호흡기·항생제 수요의 선행 신호: 검색 지수, 소아·청소년 진료 흐름, 달력이 처방 증가보다 앞서 움직이는지 본다\nA\n해열제·항생제 품절이 겨울에 몰렸고, 수요 예측 오차가 가장 큰 군과 겹친다\n진행 중. 결과는 선행 상관이며 원인이나 품절 자체의 예측이 아니다\n\n\n7\n장기처방 추세: 청구 1건당 처방량을 시도·요양기관·연령별로 본다\nC\n장기처방이 재고와 소모품 부담을 함께 키운다\n지금 가능하지만 지표가 약하다. 처방량이 투약 일수가 아니라 제품 개수 단위다\n\n\n\n창고형 약국 영향과 약국당 조제료(D단계)는 약국·상권 단위 자료가 없어 다루지 않는다.\n그 밖의 후보: 대체조제 목록 변화 전후의 성분 평균 단가, 특허만료와 제네릭 진입 전후의 성분 시장, 시도·요양기관 종류별 처방 흐름, 함량·제형 합산이 예측 오차에 주는 영향, 제품별 변화 기록표로 만든 약국 알림 한 건의 화면 예시.\n분석 코드는 사전등록 문서의 커밋 시각, 예측 파일 지문과 함께 공개할 예정이다."
+    "text": "다음 분석\n위 고충 순위에, 정보로 줄일 수 있는 정도와 앞으로의 추세(2027 기등재약 재평가)를 더해 순서를 정했다. “지금 가능”은 이미 가진 공개 자료로 할 수 있다는 뜻이다.\n\n\n\n순서\n분석\n고충\n왜\n지금 할 수 있나\n\n\n\n\n1\n인하를 얼마나 미리 알 수 있나: 인하를 메모 칸에 미리 적힌 인하, 정부가 한꺼번에 내린 인하, 그 밖의 인하로 나누고, 급여목록만 보는 사람이 시행 1개월 이상 전에 알 수 있는 비율과 인하 폭(원·비율)을 본다\nB\n“시행 며칠 전에야 알아 대조를 포기한다”, “1원 단위 인하는 손해를 안고 간다”는 현장의 말에 숫자로 답한다\n완료(2026-11-27). 목록만 보고 한 달 이상 미리 안 인하는 2024년에만 많았다(80.8%, 다른 해 0 ~ 0.35%). 일괄 인하는 고시·단체 안내로 4 ~ 13일 먼저 알려졌고, 2026-01 실거래가 조정 인하의 19.6%는 1원이었다. 급여 변동 편 2판\n\n\n2\n재평가 노출 지도: 2023-09 기준요건 재평가 인하에서 어떤 조건의 제품이 인하됐는지 정리하고, 지금 목록에서 비슷한 조건의 제품이 얼마나 되는지 센다\nB\n가장 빠르게 나빠질 고충이다\n지금 가능(기술 통계). 일괄 재평가가 사실상 한 번뿐이라 예측 모델은 만들지 않는다\n\n\n3\n공급 취약 성분 지도: 성분별 급여 제품·업체 수의 추이, 목록 이탈, 급여정지, 상한가 인상을 모아 대체할 제품이 적은 성분을 찾는다\nA\n품절 고충 가운데 공개 정보로 다룰 수 있는 부분은 “대체 가능성”이다\n지도는 지금 가능. 실제 품절과 맞춰 보려면 공급중단·부족 보고 자료가 필요하다. 그전까지는 “취약 후보”로만 쓴다\n\n\n4\n목록 이탈·급여정지와 불용재고 위험: 빠지거나 정지되기 전에 신호가 있었는지, 그때 같은 성분의 대체 제품이 몇 개였는지 본다\nB\n반품이 막히는 재고가 생기는 경로를 미리 알릴 수 있다\n지금 가능. 급여 삭제 예정일은 자료에 없다\n\n\n5\n품절 보도 품목 사례: 보도된 품절 품목의 성분 처방량이 품절 전후로 급변했는지 본다\nA\n현장의 고충과 데이터를 잇는 사례가 된다\n조건부. 업체가 2곳 이하인 성분은 사용통계에서 비공개라 안 보일 수 있다. 3번의 검증 사례로 붙인다\n\n\n6\n겨울 호흡기·항생제 수요의 선행 신호: 검색 지수, 소아·청소년 진료 흐름, 달력이 처방 증가보다 앞서 움직이는지 본다\nA\n해열제·항생제 품절이 겨울에 몰렸고, 수요 예측 오차가 가장 큰 군과 겹친다\n진행 중. 결과는 선행 상관이며 원인이나 품절 자체의 예측이 아니다\n\n\n7\n장기처방 추세: 청구 1건당 처방량을 시도·요양기관·연령별로 본다\nC\n장기처방이 재고와 소모품 부담을 함께 키운다\n지금 가능하지만 지표가 약하다. 처방량이 투약 일수가 아니라 제품 개수 단위다\n\n\n\n창고형 약국 영향과 약국당 조제료(D단계)는 약국·상권 단위 자료가 없어 다루지 않는다.\n그 밖의 후보: 대체조제 목록 변화 전후의 성분 평균 단가, 특허만료와 제네릭 진입 전후의 성분 시장, 시도·요양기관 종류별 처방 흐름, 함량·제형 합산이 예측 오차에 주는 영향, 제품별 변화 기록표로 만든 약국 알림 한 건의 화면 예시.\n분석 코드는 사전등록 문서의 커밋 시각, 예측 파일 지문과 함께 공개할 예정이다."
   },
   {
     "objectID": "ko/posts/2026-11-drug-demand-forecast/index.html",
     "href": "ko/posts/2026-11-drug-demand-forecast/index.html",
-    "title": "성분 처방 수요, 6개월 앞을 얼마나 맞힐 수 있나",
+    "title": "처방 예측이 크게 빗나간 성분은 겨울 호흡기·항생제였다",
     "section": "",
-    "text": "노트이 글은 시리즈로 나뉘었다\n\n\n\n2026-11-24에 낸 「급여 변동과 수요 모니터링」을 2026-11-27에 네 편으로 나눴다. 이 글은 그중 수요 예측 편이다. 숫자는 2026-11-24 판과 같다.\n\n약값 인하·급여정지 예고의 실현율, 비고에 없는 가격 변경: 약값 인하 예고, 얼마나 믿을 수 있나\n분류군 실험, 검증 방식, 예측 모델 명세(옛 부록 A ~ D): 수요 예측 기술 노트\n시리즈 전체와 “급여목록 가격 정보를 넣으면 나아지나”: 시리즈 안내"
+    "text": "노트이 글에 대해 (2판, 2026-11-27)\n\n\n\n1판(2026-11-24)은 “예측 방법 네 가지를 비교한 결과”를 중심으로 썼다. 2판은 약국이 약을 제때 구하지 못하는 고충에서 출발하도록 새로 썼다. 분석·숫자·그림은 1판과 같다.\n약가인하는 한 달 전에 알 수 있었던 약가인하는 2024년뿐이었다에, 시리즈 전체는 시리즈 안내에, 검증 방식과 모델 명세는 기술 노트에 있다."
   },
   {
     "objectID": "ko/posts/2026-11-drug-demand-forecast/index.html#한-쪽-요약",
     "href": "ko/posts/2026-11-drug-demand-forecast/index.html#한-쪽-요약",
-    "title": "성분 처방 수요, 6개월 앞을 얼마나 맞힐 수 있나",
+    "title": "처방 예측이 크게 빗나간 성분은 겨울 호흡기·항생제였다",
     "section": "한 쪽 요약",
-    "text": "한 쪽 요약\n공개된 처방량 자료로 두 질문에 답했다. “이 성분의 처방 수요는 어느 쪽으로 가는가”, “약의 분류군 차이를 예측에 쓰면 더 잘 맞히는가”다.\n결론 세 가지\n\n6개월 앞 성분 처방량 예측은 단순한 통계 모형(ETS)으로 충분했다. 기계학습 모델은 “작년 같은 달 값”보다 나았지만 ETS보다 낫다는 근거는 없었다. “작년 같은 달 값”보다 앞선 차이는 2023~2025년 세 해에 고르게 나뉘었고, 코로나 회복기에 몰리지 않았다.\n예측이 틀리는 곳은 일부 고변동 성분에 몰린다. 해마다 같은 달 처방량이 ±30% 이상 흔들린 성분 59개는 금액 비중이 5.3%인데 전체 오차의 24.4%를 만든다. 절반 이상이 호흡기·항감염 계열이다.\n분류군마다 예측 오차와 잘 맞는 방법은 다르지만, 그 차이를 예측에 넣어도 나아지지 않았다. 고지혈증약 군은 오차 2.4%, 항생제(J01)·기침감기약(R05) 군은 19 ~ 22%다(기계학습 기준). 군마다 방법을 섞거나 군 정보를 더한 두 방식 모두 기존 기계학습 모델과 0.12%p 차이로, 낫다는 근거가 없었다. 그래서 모델을 더 복잡하게 만들지 않고, ETS를 기본으로 유지하면서 성분군별 특성을 따로 모니터링한다.\n\n\n\n\n\n\n\n\n할 것\n하지 말 것\n\n\n\n\n성분 수요 모니터링은 ETS를 기본으로 둔다\n“작년 × 최근 증감률” 방식으로 예측한다\n\n\n호흡기·급변 성분은 따로 지켜본다\n이 예측을 약국 발주량으로 그대로 쓴다\n\n\n분류군별 오차를 “얼마나 믿을지”의 기준으로 쓴다\n분류군마다 따로 예측 모델을 만든다"
+    "text": "한 쪽 요약\n공개 데이터로는 품절을 볼 수 없지만, 수요가 크게 흔들리는 성분은 미리 가려낼 수 있다. 그 성분들은 겨울 호흡기·항생제에 몰려 있었다.\n\n\n\n\n\n\n\n약국이 겪는 일\n공개 데이터로 본 것\n\n\n\n\n“필요한 약을 제때 구하지 못한다”\n품절 자체는 이 자료에 없다. 사용통계는 처방된 양만 보여 준다. 대신 처방이 갑자기 흔들리는 성분을 가려낼 수 있다\n\n\n겨울마다 감기약·항생제가 모자란다\n예측이 가장 크게 빗나간 약 종류가 기침감기약·항생제·호흡기약이었다(16~22%). 겨울 처방이 여름의 몇 배인지가 해마다 달랐다\n\n\n\n\n\n\n\n\n\n\n수요 기준선을 만드는 쪽이 묻는 것\n데이터로 본 것\n\n\n\n\n다음 달 처방량을 얼마나 맞히나\n전국 성분 처방량은 평균 6~7% 빗나갔다. 공개가 5개월 늦어 “다음 달”은 자료 기준 6개월 앞이다\n\n\n어떤 방법을 쓸까\n단순한 통계 모형(ETS)으로 충분했다. 기계학습이 숫자로는 조금 나았지만 우연과 구분되지 않았다. “작년 같은 달만큼”은 둘 다보다 나빴다\n\n\n오차는 어디서 나오나\n흔들리는 성분 59개가 금액으로는 5.3%인데 오차의 24.4%를 만들었다. 절반 이상이 호흡기·항감염 계열이다\n\n\n약 종류마다 방법을 나누면 나아지나\n아니다. 두 방식 모두 0.12%p 차이로, 낫다는 근거가 없었다\n\n\n\n그래서 약국을 돕는 쪽이 할 수 있는 것: 단순한 모형으로 성분 수요의 기준선을 만들고, 흔들리는 성분(특히 겨울 호흡기·항생제)은 따로 표시해 사람이 본다. 이 기준선을 자체 주문·재고 자료와 합치면 약국 단위로 내려갈 수 있다(7장)."
   },
   {
-    "objectID": "ko/posts/2026-11-drug-demand-forecast/index.html#자료-소개",
-    "href": "ko/posts/2026-11-drug-demand-forecast/index.html#자료-소개",
-    "title": "성분 처방 수요, 6개월 앞을 얼마나 맞힐 수 있나",
-    "section": "자료 소개",
-    "text": "자료 소개\n건보공단이 매달 공개하는 의약품 사용통계를 썼다. 분류군 분석에는 약의 분류 코드를 속성으로만 더했다.\n\n\n\n항목\n내용\n\n\n\n\n내는 곳\n국민건강보험공단(건보공단)\n\n\n무엇이 들었나\n성분별 처방 수량·청구건수·청구금액. 연령·시도·요양기관 구분은 기술 노트의 분류군 진단에서 일부만 썼다\n\n\n단위\n성분(주성분 코드 4자리) × 월\n\n\n쓴 기간\n2018-01 ~ 2025-12, 잠정 평가용 2026-01 ~ 06\n\n\n공개 시차\n약 4 ~ 5개월 뒤 공개\n\n\n주의할 점\n업체·품목이 2개 이하인 칸은 비공개. 최근 달은 뒤 판에서 늘 수 있음\n\n\n\n분류군 배정: 성분마다 두 분류를 붙였다. ① 약효분류 앞 2자리(심평원 급여목록 2022-07판에서 그 성분 제품이 가장 많이 속한 분류). ② 국제 표준 분류인 ATC 코드(2026 약가정보의 표준코드로 제품에 연결, 그 성분 제품이 가장 많이 속한 코드). 성분 501개 모두 연결됐다. ATC는 2단계(예: C10)와 1단계(예: C)를 썼고, 성분이 3개보다 적은 군은 상위 분류의 “기타” 군으로 합쳤다.\n이 자료에 없는 것: 제품별 판매량, 약국별 구매·재고, 도매 유통, 지역별 수요(예측은 전국 합계만 썼다). 이것들에 대한 결론은 이 글에 없다."
+    "objectID": "ko/posts/2026-11-drug-demand-forecast/index.html#perspective",
+    "href": "ko/posts/2026-11-drug-demand-forecast/index.html#perspective",
+    "title": "처방 예측이 크게 빗나간 성분은 겨울 호흡기·항생제였다",
+    "section": "1. 관점: 누구의 문제를, 누가 덜어 주나",
+    "text": "1. 관점: 누구의 문제를, 누가 덜어 주나\n이 글은 약국의 고충을 다루되, 주문·재고·반품 정보로 그 고충을 덜어 줄 수 있는 쪽(의약품 유통, 약국 지원 서비스)의 관점에서 본다(시리즈 안내).\n\n\n\n단계\n질문\n무엇이 새는가\n이 글\n\n\n\n\nA. 들여오기\n필요한 약을 제때, 필요한 만큼 구할 수 있는가\n시간, 조제 기회\n여기\n\n\nB. 쌓아두기\n이미 사둔 약의 가치가 지켜지는가\n돈\n약가인하 편\n\n\nC. 내주기\n조제 과정이 감당 가능한가\n시간, 소모품, 분쟁\n—\n\n\nD. 벌기\n매출과 마진이 유지되는가\n매출\n—\n\n\n\n들여오기는 지금 약국이 가장 크게 체감하는 고충이다. 약사 대부분이 품절약으로 고통을 겪는다고 답했고, 약사들이 많이 신고한 품절 품목과 정부의 공식 집계 사이에 차이가 크다고 보도됐다."
   },
   {
-    "objectID": "ko/posts/2026-11-drug-demand-forecast/index.html#forecast",
-    "href": "ko/posts/2026-11-drug-demand-forecast/index.html#forecast",
-    "title": "성분 처방 수요, 6개월 앞을 얼마나 맞힐 수 있나",
-    "section": "6개월 앞 처방량 예측",
-    "text": "6개월 앞 처방량 예측\n성분별 전국 처방량을 6개월 앞에 예측하면 평균 약 6 ~ 7% 빗나간다. 기본 방법으로는 ETS를 권한다.\n왜 6개월 앞인가: 사용통계는 약 5개월 늦게 나온다. 오늘 볼 수 있는 마지막 달이 5개월 전이므로, “다음 달”을 보려면 자료 기준으로 6개월 앞을 맞혀야 한다. 즉 “6개월 앞”은 먼 미래가 아니라, 예측하는 날 기준으로 다음 달이다.\n\n\n\n공개 시차와 예측 대상월. 마지막 관측월 a의 6개월 뒤 달이 예측 대상이다.\n\n\n성분 501개(원외 청구금액의 93.8%)를 2023-01 ~ 2025-12 36개월 동안 매달 다시 예측해 네 방법을 비교했다.\n\n\n\n\n\n\n\n\n\n방법\n쉬운 설명\n평균 오차(WAPE)\n판정\n\n\n\n\n작년 같은 달 값\n“작년 7월만큼 올해 7월에도 나간다”\n9.76%\n기계학습보다 나쁨 (유의)\n\n\n작년 × 최근 증감률\n작년 값에 최근 1년 증감률을 곱함\n45.30%\n한 성분에서 크게 빗나감\n\n\nETS\n최근 흐름과 계절 패턴을 함께 반영하는 통계 모형\n7.11%\n기계학습과 구분 안 됨\n\n\n기계학습 (LightGBM)\n성분 501개를 함께 학습하는 모델\n6.46%\n—\n\n\n\n기계학습의 오차가 숫자로는 가장 작다. 하지만 ETS와의 차이 0.65%p는 36개월 자료로는 우연과 구분되지 않았다. 처음 보는 2026-01 ~ 06 자료(잠정)에서는 오히려 ETS가 6개월 합으로 0.25%p 작았다. 더 복잡한 모델이 낫다는 근거가 없으므로, 설명과 점검이 쉬운 ETS를 기본으로 둔다.\n여기서 “유의”는 월 단위 검정 결과다. 36개월의 월별 오차 차이를 한 줄의 자료로 보고 검정했고, 성분별로 검정하지는 않았다(기술 노트: 평가와 검정).\n자료 판본도 결과 해석에 영향을 준다. 2023~2025년 평가에는 수정이 끝난 사용통계(2026-11 받은 판)를 썼다. 2026년 정답은 첫 공개 후 12개월이 지나지 않은 잠정 판이라, 처방량이 뒤 판에서 더 늘 수 있다. 정답이 나중에 늘어나면 지금은 낮게 예측한 모델의 오차가 실제보다 작아 보인다. 그래서 2026년 결과는 확정 판으로 다시 채점한다.\n\n\n\n백테스트 보조 분석: 예측 거리별 평균 오차. 마지막 관측월 2022-12 ~ 2024-12, 성분 501개. ’작년 × 증감률’은 10~68%로 축 밖이라 뺐다.\n\n\n그림 읽는 법: 선이 낮을수록 잘 맞힌 것이다. 1개월 앞에서는 ETS와 기계학습이 같고, 8개월 이상에서도 다시 비슷해진다.\n’작년 같은 달 값’을 쓰고 있다면 바꾸는 편이 낫다. 기계학습은 이 방법보다 3.30%p 작았고(유의), 2026년 6개월에서도 매달 작았다. 성분별로는 85%에서 오차가 작았다(검정이 아닌 단순 집계).\n\n기계학습이 앞선 차이는 어느 해에서 나왔나\n“작년 같은 달 값”보다 앞선 차이는 세 해에 고르게 나뉜다. 2023년 상반기는 코로나 회복기 직후라 작년 같은 달 값이 크게 빗나간 시기다. 차이가 이 구간에 몰렸다면 결론이 그 한 시기의 일일 수 있어 따로 나눠 봤다. 미리 정하지 않은 추가 분석이라 판정에는 쓰지 않는다.\n\n\n\n월별 오차 차이. 위는 기계학습과 작년 같은 달 값, 아래는 기계학습과 ETS의 비교다.\n\n\n\n작년 같은 달 값보다 앞선 차이의 비중은 2023년 40%, 2024년 31%, 2025년 29%다. 2023년 상반기만 보면 23%다.\nETS와는 달마다 엇갈렸다. 2023년 상반기에는 오히려 기계학습 오차가 0.13%p 컸다.\n기계학습 모델의 코로나 표시는 2020~2021년만 덮는다. 처방이 덜 회복된 2022년을 기준 해로 삼는 2023년 예측은 표시되지 않는다(기술 노트: 학습 설정). 이전 판(2026-11-19) 분석에서는 기계학습이 앞선 차이가 거의 이 구간에서 나왔지만, 이번 판에서는 23%였다.\n이 그림은 평가에 쓴 성분·월을 조금 단순하게 잡아 계산했다. 그래서 합계가 공식 값(−3.30%p, −0.65%p)과 조금 다르다.\n\n급여목록의 가격 정보를 예측에 넣어 본 실험은 시리즈 안내에 한 단락으로, 표는 기술 노트에 있다. 나아졌다는 근거는 없었다."
+    "objectID": "ko/posts/2026-11-drug-demand-forecast/index.html#case",
+    "href": "ko/posts/2026-11-drug-demand-forecast/index.html#case",
+    "title": "처방 예측이 크게 빗나간 성분은 겨울 호흡기·항생제였다",
+    "section": "2. 현장의 사정과 공개 데이터로 볼 수 있는 것",
+    "text": "2. 현장의 사정과 공개 데이터로 볼 수 있는 것\n약업 전문지 보도에 나온 사례를 보면, 약을 구하지 못하는 이유는 여러 겹이다.\n\n출고 기록은 있는데 동네약국 온라인몰 재고는 0이다. 약국마다 배분이 다르다.\n품절약이 들어오면 주문 수량을 1개로 묶거나 최소 주문금액을 정해 다른 약까지 사게 한다.\n제약사가 거래 도매를 줄이거나 도매가 배송을 쉬면 며칠씩 약이 끊긴다. 약국은 바뀐 뒤에야 안다.\n\n\n\n\n사정\n공개 데이터로 볼 수 있나\n\n\n\n\n수요가 갑자기 늘거나 흔들린다\n있다. 성분별 처방량이 매달 공개된다 → 3장, 4장\n\n\n공급·배분·재고가 모자라거나 고르지 않다\n없다. 생산·출고·도매 재고·약국 재고는 공개되지 않는다\n\n\n유통 정책이 바뀐다\n없다\n\n\n자료가 늦게 나온다\n사용통계는 약 5개월 늦게 공개된다. 그래서 “다음 달”을 보려면 6개월 앞을 맞혀야 한다\n\n\n\n그래서 이 글은 들여오기 고충 가운데 수요 쪽만 다룬다. 품절을 예측하지 않는다. “어느 성분의 수요가 믿을 만하게 예측되고, 어느 성분은 그렇지 않은가”를 가려 공급 계획과 알림의 기준선을 만드는 것이 목표다."
   },
   {
-    "objectID": "ko/posts/2026-11-drug-demand-forecast/index.html#주의할-성분",
-    "href": "ko/posts/2026-11-drug-demand-forecast/index.html#주의할-성분",
-    "title": "성분 처방 수요, 6개월 앞을 얼마나 맞힐 수 있나",
-    "section": "주의할 성분",
-    "text": "주의할 성분\n대부분의 성분은 매달 처방량이 크게 흔들리지 않지만, 일부는 수십 ~ 수만 배까지 변한다. 예측이 틀리는 곳은 주로 여기다.\n\n성분 501개의 2018 ~ 2025년 월 처방량을 보면, 가장 많은 달과 가장 적은 달의 차이는 절반의 성분에서 2.3배 이하다.\n그러나 상위 5% 성분은 그 차이가 17배를 넘고, 가장 큰 성분은 약 7만 3천 배다.\n\n\n호흡기 성분\n호흡기 계열 성분 62개의 오차는 ETS 16.05%, 기계학습 18.63%로, 전체와 달리 기계학습이 더 크다. 그 밖의 성분(ETS 약 6.3%, 기계학습 약 5.4%)보다 오차가 ETS는 약 2.5배, 기계학습은 약 3.5배 크다.\n\n\n오차가 큰 분류군: 특성이 서로 다르다\n오차는 분류군마다 크게 다르다. 그런데 오차가 큰 군끼리도 특성이 다르다. 겨울 처방이 여름의 몇 배인지가 해마다 달랐던 군(R03·J01·R05)이 있고, 두 성분에 오차가 몰린 군(S01)이 있다. 모두 관측된 현상이며 원인은 확인하지 않았다. 군별 표와 시사점은 기술 노트에 있다.\n\n\n\n분류군별 6개월 앞 예측 오차(2023-01 ~ 2025-12).\n\n\n오차가 큰 R03·J01·R05에서는 겨울 처방의 크기가 해마다 달랐다. 아래 그림은 겨울 처방이 여름의 몇 배였는지를 겨울마다 보여준다.\n\n\n\n겨울 처방이 여름의 몇 배였나(18/19 ~ 24/25). 8년 모두 관측된 성분만.\n\n\n\n\n분류군 차이를 예측에 넣으면\n군마다 기계학습과 ETS를 섞는 비율을 달리하는 방식, 기계학습에 분류군 정보를 더하는 방식 두 가지를 결과를 보기 전에 정한 기준으로 시험했다. 두 방식 모두 평균 오차 6.34%로 기존 기계학습(6.46%)과 0.12%p 차이였고, 낫다는 근거가 없었다. 분류군별 오차는 “이 예측을 얼마나 믿을지”를 정하는 데 쓰고, 군마다 예측 방법을 바꾸지 않는다. 실험 설계와 판정은 기술 노트에 있다.\n\n\n사례: 독감 치료제와 ’작년 × 증감률’의 함정\n독감 치료제 oseltamivir의 원외 처방량은 2022-01 약 4,900에서 2023-01 약 415만으로 늘었다. 관측된 변화이며 원인은 확인하지 않았다.\n\n’작년 × 최근 증감률’은 작년 값에 이미 급증이 들어 있는데, 증감률에도 같은 급증이 또 들어간다.\n그래서 늘어난 폭이 두 번 곱해져, 2024-05 예측이 실제의 약 1,143배가 됐다.\n이 한 성분이 이 방법 전체 오차의 79.1%를 차지했다. 계산 실수가 아니라 식의 성질이다.\n\n교훈: 수요 수준이 급변한 성분에는 증감률을 곱하는 방식을 쓰지 않는다. 예측값이 작년의 몇 배가 되면 사람이 확인하는 장치를 둔다(시험하지 않은 제안)."
+    "objectID": "ko/posts/2026-11-drug-demand-forecast/index.html#자료",
+    "href": "ko/posts/2026-11-drug-demand-forecast/index.html#자료",
+    "title": "처방 예측이 크게 빗나간 성분은 겨울 호흡기·항생제였다",
+    "section": "자료",
+    "text": "자료\n\n\n\n\n\n\n\n항목\n내용\n\n\n\n\n자료\n건보공단 의약품 사용통계. 성분별 처방 수량·청구건수·청구금액\n\n\n단위\n성분(같은 성분을 가진 여러 회사 제품을 묶은 단위, 코드 4자리) × 월\n\n\n쓴 기간\n2018-01 ~ 2025-12, 잠정 평가용 2026-01 ~ 06\n\n\n공개 시차\n약 4 ~ 5개월 뒤 공개. 최근 달은 뒤 판에서 늘 수 있다\n\n\n범위\n병원 밖 약국에서 조제된 처방(원외 처방). 원외 청구금액의 93.8%를 차지하는 성분 501개\n\n\n주의\n업체·품목이 2개 이하인 칸은 공개되지 않는다. 0이 아니라 “모름”이다\n\n\n\n약 종류(분류군): 성분마다 두 가지 분류를 붙였다. 급여목록의 국내 약효분류 앞 2자리, 그리고 국제 표준 분류인 ATC 코드(예: C10 고지혈증약, J01 항생제, R05 기침감기약). 성분 501개 모두 연결됐고, 성분이 3개보다 적은 군은 상위 분류의 “기타”로 합쳤다.\n이 자료에 없는 것: 품절·공급, 제품별 판매량, 약국별 구매·재고, 도매 유통, 지역별 수요(예측은 전국 합계만 썼다)."
   },
   {
-    "objectID": "ko/posts/2026-11-drug-demand-forecast/index.html#현실적-권장안",
-    "href": "ko/posts/2026-11-drug-demand-forecast/index.html#현실적-권장안",
-    "title": "성분 처방 수요, 6개월 앞을 얼마나 맞힐 수 있나",
-    "section": "현실적 권장안",
-    "text": "현실적 권장안\n당장은 ETS를 기본으로 유지하고 분류군별로 예측 방법을 나누지 않는다. 오차가 몰리는 고변동 성분만 따로 표시해 사람이 검토한다. 고변동 성분 표시는 이 분석에서 시험하지 않은 운영 제안이다.\n\n기본 운영: ETS 유지, 분류군별로 나누지 않음. 설명과 점검이 쉽다. 예측 방법을 분류군별로 쪼개면 관리할 곳과 검증 부담만 늘고, 성능 이득은 분류군 실험에서 확인되지 않았다.\n호흡기·급변 성분 대응: 방법을 나누지 말고 표시한다. 해마다 같은 달 처방량이 ±30% 이상 흔들리거나 급등 이력이 있는 성분을 별도 모니터링·예외 검토 대상으로 표시한다. 가벼운 운영 보완이다.\n\n근거: 2023 ~ 2025년 기준으로 ±30% 이상 흔들린 성분은 59개다. 금액 비중은 5.3%인데 전체 오차의 24.4%를 만든다. 이 성분들의 평균 오차는 29.6%, 나머지는 4.6%다(기계학습 기준). 절반 이상이 호흡기(16개)·항감염(15개) 계열이다. 실제 운영에서는 표시 기준을 예측 시점 이전 자료로 정해야 한다. 위 숫자는 평가 기간을 돌아본 것이다."
+    "objectID": "ko/posts/2026-11-drug-demand-forecast/index.html#q1",
+    "href": "ko/posts/2026-11-drug-demand-forecast/index.html#q1",
+    "title": "처방 예측이 크게 빗나간 성분은 겨울 호흡기·항생제였다",
+    "section": "3. 다음 달 처방량을 얼마나 맞히나",
+    "text": "3. 다음 달 처방량을 얼마나 맞히나\n성분별 전국 처방량을 다음 달 기준으로 예측하면 평균 약 6~7% 빗나간다. 기본 방법으로는 단순한 통계 모형(ETS)을 권한다.\n\n\n\n공개 시차와 예측 대상월. 마지막 관측월 a의 6개월 뒤 달이 예측 대상이다.\n\n\n오늘 볼 수 있는 마지막 달이 5개월 전이므로, 다음 달을 보려면 자료 기준으로 6개월 앞을 맞혀야 한다. 2023-01 ~ 2025-12의 36개월 동안 매달 그 시점의 자료만으로 다시 예측해 네 방법을 비교했다.\n\n\n\n방법\n쉬운 설명\n평균 오차\n판정\n\n\n\n\n작년 같은 달 값\n“작년 7월만큼 올해 7월에도 나간다”\n9.76%\n기계학습보다 나쁨 (우연으로 보기 어려움)\n\n\n작년 × 최근 증감률\n작년 값에 최근 1년 증감률을 곱함\n45.30%\n한 성분에서 크게 빗나감(6장)\n\n\nETS\n최근 흐름과 계절 패턴을 함께 반영하는 통계 모형\n7.11%\n기계학습과 구분 안 됨\n\n\n기계학습 (LightGBM)\n성분 501개를 함께 학습하는 모델\n6.46%\n—\n\n\n\n\n평균 오차는 “빗나간 양의 합 ÷ 실제량의 합”이다. 6.5%면 100개를 예상했을 때 평균 6.5개쯤 빗나간다는 뜻이다.\n기계학습의 오차가 숫자로는 가장 작다. 하지만 ETS와의 차이 0.65%p는 36개월 자료로는 우연과 구분되지 않았다. 처음 보는 2026-01 ~ 06 자료(잠정)에서는 오히려 ETS가 6개월 합으로 0.25%p 작았다. 더 복잡한 모델이 낫다는 근거가 없으므로, 설명과 점검이 쉬운 ETS를 기본으로 둔다.\n“작년 같은 달 값”을 쓰고 있다면 바꾸는 편이 낫다. 기계학습은 이 방법보다 3.30%p 작았고, 2026년 6개월에서도 매달 작았다. 성분별로는 85%에서 오차가 작았다.\n\n\n\n\n예측 거리별 평균 오차(보조 분석). 마지막 관측월 2022-12 ~ 2024-12, 성분 501개. ’작년 × 증감률’은 10~68%로 축 밖이라 뺐다.\n\n\n선이 낮을수록 잘 맞힌 것이다. 1개월 앞에서는 ETS와 기계학습이 같고, 8개월 이상에서도 다시 비슷해진다. 해마다 나눠 본 결과와 자료 판본의 영향은 부록 A에 있다."
   },
   {
-    "objectID": "ko/posts/2026-11-drug-demand-forecast/index.html#누가-어떻게-쓸까",
-    "href": "ko/posts/2026-11-drug-demand-forecast/index.html#누가-어떻게-쓸까",
-    "title": "성분 처방 수요, 6개월 앞을 얼마나 맞힐 수 있나",
-    "section": "누가 어떻게 쓸까",
-    "text": "누가 어떻게 쓸까\n수요 예측은 “성분 시장이 어느 쪽으로 가는지”의 기준선에 맞다. 아래는 모두 이 분석에서 시험하지 않은 활용 제안이다. 가격 알림 쪽 활용은 급여 변동 편에 있다.\n\n\n\n\n\n\n\n실무\n수요 모니터링으로\n\n\n\n\n제약 영업·마케팅\n자사 성분의 전국 시장 흐름과 6개월 앞 예측 범위. 범위는 그 성분이 속한 분류군의 오차를 기준으로\n\n\n유통 운영\n성분별 자체 거래량 ÷ 전국 처방량으로 점유율 변화와 시장 변화를 나눔\n\n\n유통 데이터팀\n사용통계가 나오지 않은 5개월을 자체 거래 자료로 메우는 예측 실험\n\n\n\n기억할 것 세 가지\n\n이 예측은 전국 성분 단위다. 특정 약국·제품의 발주량이 아니다.\n오차 6%는 평균이다. ETS 기준으로 순환계 주요 군(B01·C08·C09·C10)은 3 ~ 4%, 항생제·호흡기 군(R03·J01·R05)은 16 ~ 18%로 훨씬 더 빗나간다.\n분류군마다 예측 방법을 따로 두면 나아진다는 근거가 없었다. ETS를 기본으로 쓰고, 분류군별 오차로 믿을 만큼을 나눈다."
+    "objectID": "ko/posts/2026-11-drug-demand-forecast/index.html#q2",
+    "href": "ko/posts/2026-11-drug-demand-forecast/index.html#q2",
+    "title": "처방 예측이 크게 빗나간 성분은 겨울 호흡기·항생제였다",
+    "section": "4. 어디서 크게 빗나가나",
+    "text": "4. 어디서 크게 빗나가나\n대부분의 성분은 매달 처방량이 크게 흔들리지 않는다. 예측이 크게 틀리는 곳은 일부 성분, 특히 겨울 호흡기·항생제다.\n\n성분 501개의 2018 ~ 2025년 월 처방량을 보면, 가장 많은 달과 가장 적은 달의 차이가 절반의 성분에서 2.3배 이하다. 상위 5% 성분은 17배를 넘고, 가장 큰 성분은 약 7만 3천 배다.\n해마다 같은 달 처방량이 ±30% 이상 흔들린 성분 59개는 금액 비중이 5.3%인데 전체 오차의 24.4%를 만든다. 이 성분들의 평균 오차는 29.6%, 나머지는 4.6%다(기계학습 기준). 절반 이상이 호흡기(16개)·항감염(15개) 계열이다.\n호흡기 계열 성분 62개의 오차는 ETS 16.05%, 기계학습 18.63%로, 전체와 달리 기계학습이 더 크다.\n\n\n\n\n약 종류별 다음 달 예측 오차(2023-01 ~ 2025-12).\n\n\n\n잘 맞는 약: 고지혈증약(C10)·항혈전제(B01) 같은 만성질환·순환계 약은 오차 2~4%다.\n크게 빗나가는 약: 호흡기약(R03)·항생제(J01)·기침감기약(R05)은 14~22%다. 안과용제(S01)는 두 성분에 오차가 몰려 있다.\n\n겨울 처방의 크기가 해마다 달랐다. 아래 그림은 겨울 처방이 여름의 몇 배였는지를 겨울마다 보여 준다. 이렇게 해마다 다른 겨울이 호흡기·항생제 예측을 어렵게 만드는 모습과 함께 나타난다. 관측된 연관이며 원인은 확인하지 않았다.\n\n\n\n겨울 처방이 여름의 몇 배였나(18/19 ~ 24/25). 8년 모두 관측된 성분만.\n\n\n약국 현장의 “겨울마다 감기약·항생제가 모자란다”는 말과 같은 약 종류다. 다만 이 자료로 알 수 있는 것은 수요 쪽이 예측하기 어렵다는 데까지다. 그때 공급이 얼마나 모자랐는지는 알 수 없다."
   },
   {
-    "objectID": "ko/posts/2026-11-drug-demand-forecast/index.html#한계-이-글이-답하지-않는-것",
-    "href": "ko/posts/2026-11-drug-demand-forecast/index.html#한계-이-글이-답하지-않는-것",
-    "title": "성분 처방 수요, 6개월 앞을 얼마나 맞힐 수 있나",
-    "section": "한계: 이 글이 답하지 않는 것",
-    "text": "한계: 이 글이 답하지 않는 것\n약국·제품·지역 단위의 수요는 이 글이 답하지 않는다. 그 밖의 한계는 아래와 같다.\n\n\n\n\n\n\n\n한계\n무엇을 조심해야 하나\n\n\n\n\n2026년 평가는 잠정이다\n최근 달 사용통계는 뒤 판에서 늘 수 있다. 2027-11 이후 판으로 다시 채점한다\n\n\n처음 보는 기간이 6개월뿐이다\n2023 ~ 2025는 이전 분석에서 이미 본 기간이다\n\n\n분류군 실험은 완전한 맹검이 아니다\n군별 섞기의 착안이 같은 2023 ~ 2025 오차에서 나왔다. 그런데도 개선이 없었다\n\n\n오차가 큰 군의 진단은 사후 탐색이다\n이미 본 2023 ~ 2025를 다시 나눠 본 것이고 원인을 밝히지 않았다. 코로나 뒤 완전한 겨울은 두 번뿐이라 다음 겨울로 일반화하지 않는다\n\n\n분류군 배정은 2026 자료다\nATC 코드를 2026 약가정보에서 가져왔다. 평가 시점에 같은 배정을 알 수 있었다고 가정했다\n\n\n섞는 비율의 창에 특수한 해가 들어 있다\n2023년 예측의 직전 12개월에는 코로나 기간(2021)과 회복기(2022)가 들어 있다\n\n\n수정된 자료로 평가했다\n그 달에 실제로 볼 수 있었던 첫 공개본으로 예측하면 오차가 더 클 수 있다\n\n\n모델 설정을 조정하지 않았다\n기계학습 설정은 고정했다. 결과는 그 설정에 한정된다\n\n\n\n분류군과 오차의 관계는 연관이다. 약효가 오차를 만든다는 뜻이 아니다."
+    "objectID": "ko/posts/2026-11-drug-demand-forecast/index.html#q3",
+    "href": "ko/posts/2026-11-drug-demand-forecast/index.html#q3",
+    "title": "처방 예측이 크게 빗나간 성분은 겨울 호흡기·항생제였다",
+    "section": "5. 약 종류마다 방법을 나누면 나아지나",
+    "text": "5. 약 종류마다 방법을 나누면 나아지나\n나아지지 않았다. 약 종류마다 기계학습과 ETS를 섞는 비율을 달리하는 방식, 기계학습에 약 종류 정보를 더하는 방식 두 가지를 결과를 보기 전에 정한 기준으로 시험했다. 두 방식 모두 평균 오차 6.34%로 기존 기계학습(6.46%)과 0.12%p 차이였고, 낫다는 근거가 없었다.\n그래서 약 종류별 오차는 “이 예측을 얼마나 믿을지”를 정하는 데 쓰고, 약 종류마다 예측 방법을 바꾸지 않는다. 실험 설계와 판정은 기술 노트에 있다."
   },
   {
-    "objectID": "ko/posts/2026-11-drug-demand-forecast/index.html#다음-분석",
-    "href": "ko/posts/2026-11-drug-demand-forecast/index.html#다음-분석",
-    "title": "성분 처방 수요, 6개월 앞을 얼마나 맞힐 수 있나",
-    "section": "다음 분석",
-    "text": "다음 분석\n운영 쪽으로는 새 사용통계가 나올 때마다 같은 방식으로 갱신하는 월간 리포트를 만들고, 2027년 11월 이후 수정본으로 2026년 예측을 다시 채점한다. 수요 쪽 후속 질문은 품절·공급중단 자료 결합, 시도·요양기관 종류별로 내려가기, 함량·제형 합산의 영향 점검이다. 시리즈 전체의 다음 분석 목록은 시리즈 안내에, 성분군별 후속 방향(R05·J01·R03·S01)은 기술 노트에 있다."
+    "objectID": "ko/posts/2026-11-drug-demand-forecast/index.html#case-flu",
+    "href": "ko/posts/2026-11-drug-demand-forecast/index.html#case-flu",
+    "title": "처방 예측이 크게 빗나간 성분은 겨울 호흡기·항생제였다",
+    "section": "6. 사례: 독감 치료제와 “작년 × 증감률”의 함정",
+    "text": "6. 사례: 독감 치료제와 “작년 × 증감률”의 함정\n독감 치료제 oseltamivir의 원외 처방량은 2022-01 약 4,900에서 2023-01 약 415만으로 늘었다.\n\n“작년 × 최근 증감률”은 작년 값에 이미 급증이 들어 있는데, 증감률에도 같은 급증이 또 들어간다.\n그래서 늘어난 폭이 두 번 곱해져, 2024-05 예측이 실제의 약 1,143배가 됐다.\n이 한 성분이 이 방법 전체 오차의 79.1%를 차지했다. 계산 실수가 아니라 식의 성질이다.\n\n교훈: 수요가 급변한 성분에는 증감률을 곱하는 방식을 쓰지 않는다. 예측값이 작년의 몇 배가 되면 사람이 확인하는 장치를 둔다(시험하지 않은 제안)."
+  },
+  {
+    "objectID": "ko/posts/2026-11-drug-demand-forecast/index.html#implications",
+    "href": "ko/posts/2026-11-drug-demand-forecast/index.html#implications",
+    "title": "처방 예측이 크게 빗나간 성분은 겨울 호흡기·항생제였다",
+    "section": "7. 이 관점에서 할 수 있는 것",
+    "text": "7. 이 관점에서 할 수 있는 것\n공개 데이터로 품절을 막을 수는 없다. 줄일 수 있는 것은 수요 변화를 늦게 알아채서 생기는 손실이다. 아래는 모두 이 분석에서 시험하지 않은 제안이다.\n\n\n\n\n\n\n\n할 것\n내용\n\n\n\n\n성분 수요 기준선\nETS로 전국 성분 처방량의 다음 달 기준선을 만든다. 기준선의 신뢰 범위는 그 성분이 속한 약 종류의 오차로 정한다(만성질환 약 3~4%, 호흡기·항생제 16~18%, ETS 기준)\n\n\n흔들리는 성분 표시\n해마다 같은 달 처방량이 ±30% 이상 흔들리거나 급등 이력이 있는 성분을 따로 표시해 사람이 본다. 표시 기준은 예측 시점 이전 자료로 정해야 한다\n\n\n겨울 앞 점검\n호흡기·항생제는 겨울 전에 예측 범위를 넓게 잡고 공급 계획을 따로 본다\n\n\n5개월 공백 메우기\n사용통계가 나오지 않은 최근 5개월을 자체 주문·거래 자료로 메운다. 자체 거래량 ÷ 전국 처방량으로 점유율 변화와 시장 변화를 나눌 수 있다\n\n\n\n\n\n\n\n\n\n\n하지 말 것\n이유\n\n\n\n\n“작년 × 최근 증감률”로 예측한다\n급변 성분에서 수백~수천 배 빗나간다\n\n\n이 예측을 약국 발주량으로 그대로 쓴다\n전국 성분 단위다. 약국·제품 단위가 아니다\n\n\n약 종류마다 따로 예측 모델을 만든다\n나아진다는 근거가 없었다\n\n\n\n\n약국 단위의 수요와 재고는 이 기준선을 약국의 주문·재고 기록과 합쳐야 계산할 수 있다. 그 단계는 공개 데이터 밖이다.\n가격 알림 쪽은 약가인하 편 7장에 있다."
+  },
+  {
+    "objectID": "ko/posts/2026-11-drug-demand-forecast/index.html#checks",
+    "href": "ko/posts/2026-11-drug-demand-forecast/index.html#checks",
+    "title": "처방 예측이 크게 빗나간 성분은 겨울 호흡기·항생제였다",
+    "section": "8. 이 숫자를 어떻게 확인했나",
+    "text": "8. 이 숫자를 어떻게 확인했나\n\n결과를 보기 전에 기준을 정했다. 비교할 방법과 판정 기준을 미리 고정했다(사전등록).\n그때 볼 수 있던 자료만 썼다. 2023 ~ 2025년 36개월 동안 매달, 그 시점에 공개됐을 자료만으로 예측하고 실제값과 맞췄다(백테스트). 미래 자료가 섞이지 않는지 따로 시험했다.\n처음 보는 자료로도 채점했다. 방법을 정할 때 보지 않은 2026-01 ~ 06 자료로 다시 채점했다(잠정 판).\n차이가 우연인지 검정했다. 36개월의 월별 오차 차이를 한 줄의 자료로 보고 검정했다. 성분별로 검정하지는 않았다.\n\n검정 방법, 모델 설정, 입력 특징은 기술 노트에 있다."
+  },
+  {
+    "objectID": "ko/posts/2026-11-drug-demand-forecast/index.html#limits",
+    "href": "ko/posts/2026-11-drug-demand-forecast/index.html#limits",
+    "title": "처방 예측이 크게 빗나간 성분은 겨울 호흡기·항생제였다",
+    "section": "9. 한계",
+    "text": "9. 한계\n\n\n\n\n\n\n\n한계\n무엇을 조심해야 하나\n\n\n\n\n현장 사례의 근거\n대부분 약업 전문지 보도와 약사 단체 설문이다. 피해를 호소하는 설문은 응답이 피해 쪽으로 쏠릴 수 있다\n\n\n품절·공급은 보지 못한다\n사용통계는 처방된 양만 담는다. 약이 없어 처방이 바뀌었다면 그 변화도 수요처럼 보인다\n\n\n2026년 평가는 잠정이다\n최근 달 사용통계는 뒤 판에서 늘 수 있다. 2027-11 이후 판으로 다시 채점한다\n\n\n처음 보는 기간이 6개월뿐이다\n2023 ~ 2025는 이전 분석에서 이미 본 기간이다\n\n\n약 종류별 진단은 사후 탐색이다\n이미 본 기간을 다시 나눠 본 것이고 원인을 밝히지 않았다. 코로나 뒤 완전한 겨울은 두 번뿐이라 다음 겨울로 일반화하지 않는다\n\n\n약 종류 배정은 2026 자료다\nATC 코드를 2026 약가정보에서 가져왔다. 평가 시점에도 같은 배정을 알 수 있었다고 가정했다\n\n\n수정된 자료로 평가했다\n그 달에 실제로 볼 수 있었던 첫 공개본으로 예측하면 오차가 더 클 수 있다\n\n\n모델 설정을 조정하지 않았다\n기계학습 설정은 고정했다. 결과는 그 설정에 한정된다\n\n\n\n약 종류와 오차의 관계는 연관이다. 약효가 오차를 만든다는 뜻이 아니다."
   },
   {
     "objectID": "ko/posts/2026-11-drug-demand-forecast/index.html#glossary",
     "href": "ko/posts/2026-11-drug-demand-forecast/index.html#glossary",
-    "title": "성분 처방 수요, 6개월 앞을 얼마나 맞힐 수 있나",
-    "section": "용어집",
-    "text": "용어집\n\n\n\n\n\n\n\n용어\n한 줄 풀이\n\n\n\n\n의약품 사용통계\n건보공단이 성분별 처방 수량·청구금액을 매달 공개하는 표. 약 5개월 늦게 나온다\n\n\n급여목록\n건강보험이 적용되는 약과 그 상한가격의 공식 목록. 이 글에서는 약효분류 번호만 가져왔다\n\n\n원외 처방\n병원 밖 약국에서 조제되는 처방\n\n\n성분(코드 4자리)\n같은 성분을 가진 여러 회사 제품을 묶는 단위\n\n\n사용통계 비공개\n업체·품목이 2개 이하라 공개되지 않는 칸. 0이 아니라 “모름”이다\n\n\n분류군\n약효나 부위가 비슷한 성분끼리의 묶음. 이 글은 약효분류와 ATC 두 가지를 썼다\n\n\n약효분류\n급여목록에 적힌 국내 약효 분류 번호. 이 글은 앞 2자리를 썼다\n\n\nATC 코드\n국제 표준 의약품 분류. 1단계는 알파벳 한 글자(예: C), 2단계는 세 자리(예: C10)\n\n\nWAPE\n빗나간 양의 합 ÷ 실제량의 합. 6.5%면 100개를 예상했을 때 평균 6.5개씩 빗나간다는 뜻\n\n\n%p\n비율끼리의 차. 7.11%와 6.46%의 차는 0.65%p\n\n\nETS\n최근 값에 더 큰 무게를 주고 계절 패턴을 더해 앞을 내다보는 전통 통계 모형\n\n\nLightGBM\n여러 개의 결정 트리를 쌓아 예측하는 기계학습 모델\n\n\n섞기(결합)\n두 방법의 예측을 정한 비율로 더하는 것. 예: 기계학습 70% + ETS 30%\n\n\n백테스트\n과거 시점으로 돌아가 그때 자료만으로 예측하고, 이미 아는 실제값과 맞춰 보는 검증\n\n\n사전등록\n결과를 보기 전에 분석 방법과 판정 기준을 고정해 두는 것\n\n\n맹검 평가\n방법을 정할 때 보지 않은 자료로 채점하는 것\n\n\np값\n실제로 차이가 없는데도 이만큼의 차이가 우연히 나올 가능성. 0.05보다 작으면 “유의하다”고 본다\n\n\n신뢰구간\n진짜 값이 있을 법한 범위. 표본이 작을수록 넓다\n\n\n판단 보류\n차이가 우연과 구분되지 않아 어느 쪽이 낫다고 말할 수 없는 경우. ’차이 없음’과 다르다\n\n\n사후 탐색\n결과를 본 뒤 미리 정하지 않고 더 해 본 분석. 판정에 쓰지 않고 가설로만 남긴다\n\n\n동등\n두 방법의 차이가 미리 정한 실무 허용폭(±0.5%p) 안이라고 말할 수 있는 경우\n\n\nEWC 검정\n달마다 서로 비슷하게 움직이는 짧은 오차 계열에서 우연한 유의를 덜 내도록 만든 검정\n\n\nHolm 보정\n여러 비교를 한꺼번에 할 때 우연히 하나쯤 유의해지는 일을 막는 보정\n\n\n특징 중요도\n모델이 예측할 때 어떤 입력에 얼마나 기댔는지의 비중. 원인을 뜻하지 않는다\n\n\nSHAP 값\n예측값 하나를 특징별 기여로 나눈 값\n\n\n\n자료 출처: 국민건강보험공단 의약품 사용통계 2018-01 ~ 2025-12와 2026-01 ~ 06(2026-10-28 공개본), 건강보험심사평가원 급여목록 2022-07판(약효분류 번호, 속성으로만), 2026 약가정보(ATC 코드, 속성으로만). 모두 공개 데이터다. 숫자는 분석 코드의 결과 파일에서 왔다. 첫 판은 2026-11-19, 분류군 분석과 모델 명세를 더한 판은 2026-11-24에 냈고, 2026-11-27에 시리즈로 나누며 급여 변동 부분과 부록을 다른 글로 옮겼다."
+    "title": "처방 예측이 크게 빗나간 성분은 겨울 호흡기·항생제였다",
+    "section": "용어",
+    "text": "용어\n\n\n\n\n\n\n\n용어\n한 줄 풀이\n\n\n\n\n의약품 사용통계\n건보공단이 성분별 처방 수량·청구금액을 매달 공개하는 표. 약 5개월 늦게 나온다\n\n\n원외 처방\n병원 밖 약국에서 조제되는 처방\n\n\n성분(코드 4자리)\n같은 성분을 가진 여러 회사 제품을 묶는 단위\n\n\n약 종류(분류군)\n약효나 부위가 비슷한 성분끼리의 묶음. 약효분류와 ATC 두 가지를 썼다\n\n\nATC 코드\n국제 표준 의약품 분류. 예: C10 고지혈증약, J01 항생제, R03 호흡기약, R05 기침감기약, S01 안과용제\n\n\n평균 오차(WAPE)\n빗나간 양의 합 ÷ 실제량의 합\n\n\n%p\n비율끼리의 차. 7.11%와 6.46%의 차는 0.65%p\n\n\nETS\n최근 값에 더 큰 무게를 주고 계절 패턴을 더해 앞을 내다보는 통계 모형\n\n\n기계학습(LightGBM)\n여러 결정 트리를 쌓아 예측하는 모델\n\n\n백테스트\n과거 시점으로 돌아가 그때 자료만으로 예측하고 실제값과 맞춰 보는 검증\n\n\n사전등록\n결과를 보기 전에 분석 방법과 판정 기준을 고정해 두는 것\n\n\n사후 탐색\n결과를 본 뒤 더 해 본 분석. 판정에 쓰지 않고 가설로만 남긴다\n\n\n\n더 자세한 용어(EWC 검정, Holm 보정, SHAP 값 등)는 기술 노트에 있다."
+  },
+  {
+    "objectID": "ko/posts/2026-11-drug-demand-forecast/index.html#부록",
+    "href": "ko/posts/2026-11-drug-demand-forecast/index.html#부록",
+    "title": "처방 예측이 크게 빗나간 성분은 겨울 호흡기·항생제였다",
+    "section": "부록",
+    "text": "부록\n\nA. 해마다 나눠 본 결과와 자료 판본\n“작년 같은 달 값”보다 앞선 차이는 세 해에 고르게 나뉜다. 2023년 상반기는 코로나 회복기 직후라 작년 같은 달 값이 크게 빗나간 시기다. 차이가 이 구간에 몰렸다면 결론이 그 한 시기의 일일 수 있어 따로 나눠 봤다. 미리 정하지 않은 추가 분석이라 판정에는 쓰지 않는다.\n\n\n\n월별 오차 차이. 위는 기계학습과 작년 같은 달 값, 아래는 기계학습과 ETS의 비교다.\n\n\n\n작년 같은 달 값보다 앞선 차이의 비중은 2023년 40%, 2024년 31%, 2025년 29%다. 2023년 상반기만 보면 23%다.\nETS와는 달마다 엇갈렸다. 2023년 상반기에는 오히려 기계학습 오차가 0.13%p 컸다.\n기계학습 모델의 코로나 표시는 2020~2021년만 덮는다. 이전 판(2026-11-19) 분석에서는 기계학습이 앞선 차이가 거의 2023년 상반기에서 나왔지만, 이번 판에서는 23%였다.\n이 그림은 평가에 쓴 성분·월을 조금 단순하게 잡아 계산했다. 그래서 합계가 공식 값(−3.30%p, −0.65%p)과 조금 다르다.\n\n자료 판본: 2023 ~ 2025년 평가에는 수정이 끝난 사용통계(2026-11 받은 판)를 썼다. 2026년 정답은 첫 공개 후 12개월이 지나지 않은 잠정 판이라 처방량이 뒤 판에서 더 늘 수 있다. 정답이 나중에 늘어나면 지금 낮게 예측한 모델의 오차가 실제보다 작아 보인다. 그래서 2026년 결과는 확정 판으로 다시 채점한다.\n급여목록 가격 정보를 넣어 본 실험은 시리즈 안내와 기술 노트에 있다. 나아졌다는 근거는 없었다.\n자료 출처: 국민건강보험공단 의약품 사용통계 2018-01 ~ 2025-12와 2026-01 ~ 06(2026-10-28 공개본), 건강보험심사평가원 급여목록 2022-07판(약효분류 번호, 속성으로만), 2026 약가정보(ATC 코드, 속성으로만). 현장 사례는 약업 전문지 보도. 숫자는 분석 코드의 결과 파일에서 왔다(2026-11-24 판). 첫 판은 2026-11-19, 분류군 분석과 모델 명세를 더한 판은 2026-11-24에 냈고, 2026-11-27에 약국 고충에서 출발하도록 새로 썼다."
   },
   {
     "objectID": "ko/index.html",
     "href": "ko/index.html",
     "title": "Ben's Notes",
     "section": "",
-    "text": "데이터로 사람들의 건강에 보탬이 되려는 분석가, Ben Kim입니다.\n\n\n스타트업에서 5년 넘게 데이터 분석가, 데이터 사이언티스트, AI 데이터 파트 리드로 일했습니다. 지금은 의사, 약사, 제약사, 유통사처럼 약을 다루는 사람들이 더 나은 결정을 내리도록 공개 의약품 데이터를 분석하고 있습니다.\n\n\n보고서 읽기 경력 보기\n\n\n\n\n\n환자를 직접 만나지 않아도, 환자에게 약을 처방하고 건네고 만들고 공급하는 사람들의 결정을 도우면 건강에 보탬이 될 수 있다고 봅니다.\n\n\n  처방하려는 성분의 급여 변경과 공급 변화를 미리 확인합니다.\n  약값 인하와 급여정지 예고를 미리 알아 재고를 계획합니다.\n  자사 성분의 시장 흐름과 경쟁 제품의 가격 변화를 한눈에 봅니다.\n  성분별 수요 흐름을 공급 계획과 약국 알림의 기준으로 씁니다.\n\n\n\n\n\n\n공개 의약품 데이터로 답할 수 있는 질문을 다룹니다. 결과만큼 “이 숫자를 얼마나 믿을 수 있는가”를 자세히 적었습니다.\n\n\n\n\n\n\n\n급여목록 스냅샷으로 본 예고의 실현율, 인하를 미리 알 수 있는 정도, 그리고 인하의 폭\n\n\n\n\n\n2026-11-27\n\n\n\n\n\n\n\n\n급여목록과 의약품 사용통계로 묻는 두 질문, 그리고 두 자료를 합쳐 본 결과\n\n\n\n\n\n2026-11-27\n\n\n\n\n\n\n\n\n건보공단 사용통계로 성분별 원외 처방량을 예측하고, 오차가 몰리는 성분과 분류군을 가려내기\n\n\n\n\n\n2026-11-24\n\n\n\n\n\n일치 없음\n\n\n\n\n\n\n제약조건 안에서 가장 저항이 적고 실행 가능한 행동을 찾는다.\n\n복잡한 방법이 단순한 방법보다 낫다는 근거가 없으면 단순한 방법을 고릅니다. 결과를 보기 전에 판정 기준을 먼저 정하고, 불리한 결과도 그대로 적습니다.\n\n\n\n\n  \n    2021.03 – 2023.11\n    Klleon R&D · 데이터 파트 리드\n      MLOps 팀과 데이터 파트를 만들고 이끌었습니다. 생성형 AI 앱의 그로스 분석과 A/B 테스트, 학습 데이터 큐레이션을 맡았습니다.\n      그로스 분석 · 데이터 큐레이션\n  \n  \n    2019.04 – 2020.07\n    Freewheelin · 데이터 분석가\n      프로모션 성과 대시보드를 만들고, BigQuery로 데이터를 모아 품질 관리를 맡았습니다.\n  \n  \n    2017.12 – 2019.03\n    Epopcon · 데이터 사이언티스트\n      포아송 과정으로 쇼핑몰 상품 재고가 바뀌는 시점을 예측해 수집 주기를 최적화했습니다.\n      스케줄링 모델\n  \n\n연세대학교 응용통계학·경제학 학사 · Python, SQL, 통계·시계열 분석, LightGBM, BigQuery, MLflow\n전체 경력 · 프로젝트 · LinkedIn · Medium · GitHub"
+    "text": "데이터로 사람들의 건강에 보탬이 되려는 분석가, Ben Kim입니다.\n\n\n스타트업에서 5년 넘게 데이터 분석가, 데이터 사이언티스트, AI 데이터 파트 리드로 일했습니다. 지금은 약국이 겪는 고충에서 출발해, 그 고충을 덜어 줄 수 있는 근거를 공개 의약품 데이터로 만들고 있습니다.\n\n\n보고서 읽기 경력 보기\n\n\n\n\n\n약국은 처방도, 약가도, 공급도 정하지 못한 채 그 결과를 떠안습니다. 이 분석은 약국의 고충에서 출발해, 주문·재고·반품 정보로 그 고충을 덜어 줄 수 있는 쪽이 쓸 근거를 공개 데이터로 만듭니다.\n\n\n  약가인하가 언제, 얼마나 오는지와 어떤 성분의 수요가 크게 흔들리는지 미리 압니다.\n  인하 알림과 성분 수요 기준선을 약국 알림과 공급 계획의 기준으로 씁니다.\n  약국의 주문·재고 기록과 합쳐 대조할 품목과 챙길 성분의 순서를 정합니다.\n  제약사와 처방하는 의사도 같은 근거로 성분 시장과 급여 변경을 확인할 수 있습니다.\n\n\n\n\n\n\n공개 의약품 데이터로 답할 수 있는 질문을 다룹니다. 결과만큼 “이 숫자를 얼마나 믿을 수 있는가”를 자세히 적었습니다.\n\n\n\n\n\n\n\n급여목록만 보는 약국은 대부분 시행 달에 알고, 2026년 1월 인하의 5분의 1은 1원이었다\n\n\n\n\n\n2026-11-27\n\n\n\n\n\n\n\n\n급여목록과 의약품 사용통계로 본 약가인하와 처방 수요\n\n\n\n\n\n2026-11-27\n\n\n\n\n\n\n\n\n전국 성분 처방량은 다음 달 기준 평균 6~7% 빗나갔고, 단순한 통계 모형으로 충분했다\n\n\n\n\n\n2026-11-24\n\n\n\n\n\n일치 없음\n\n\n\n\n\n\n제약조건 안에서 가장 저항이 적고 실행 가능한 행동을 찾는다.\n\n복잡한 방법이 단순한 방법보다 낫다는 근거가 없으면 단순한 방법을 고릅니다. 결과를 보기 전에 판정 기준을 먼저 정하고, 불리한 결과도 그대로 적습니다.\n\n\n\n\n  \n    2021.03 – 2023.11\n    Klleon R&D · 데이터 파트 리드\n      MLOps 팀과 데이터 파트를 만들고 이끌었습니다. 생성형 AI 앱의 그로스 분석과 A/B 테스트, 학습 데이터 큐레이션을 맡았습니다.\n      그로스 분석 · 데이터 큐레이션\n  \n  \n    2019.04 – 2020.07\n    Freewheelin · 데이터 분석가\n      프로모션 성과 대시보드를 만들고, BigQuery로 데이터를 모아 품질 관리를 맡았습니다.\n  \n  \n    2017.12 – 2019.03\n    Epopcon · 데이터 사이언티스트\n      포아송 과정으로 쇼핑몰 상품 재고가 바뀌는 시점을 예측해 수집 주기를 최적화했습니다.\n      스케줄링 모델\n  \n\n연세대학교 응용통계학·경제학 학사 · Python, SQL, 통계·시계열 분석, LightGBM, BigQuery, MLflow\n전체 경력 · 프로젝트 · LinkedIn · Medium · GitHub"
   },
   {
     "objectID": "ko/index.html#누구를-돕는-분석인가",
     "href": "ko/index.html#누구를-돕는-분석인가",
     "title": "Ben's Notes",
     "section": "",
-    "text": "환자를 직접 만나지 않아도, 환자에게 약을 처방하고 건네고 만들고 공급하는 사람들의 결정을 도우면 건강에 보탬이 될 수 있다고 봅니다.\n\n\n  처방하려는 성분의 급여 변경과 공급 변화를 미리 확인합니다.\n  약값 인하와 급여정지 예고를 미리 알아 재고를 계획합니다.\n  자사 성분의 시장 흐름과 경쟁 제품의 가격 변화를 한눈에 봅니다.\n  성분별 수요 흐름을 공급 계획과 약국 알림의 기준으로 씁니다."
+    "text": "약국은 처방도, 약가도, 공급도 정하지 못한 채 그 결과를 떠안습니다. 이 분석은 약국의 고충에서 출발해, 주문·재고·반품 정보로 그 고충을 덜어 줄 수 있는 쪽이 쓸 근거를 공개 데이터로 만듭니다.\n\n\n  약가인하가 언제, 얼마나 오는지와 어떤 성분의 수요가 크게 흔들리는지 미리 압니다.\n  인하 알림과 성분 수요 기준선을 약국 알림과 공급 계획의 기준으로 씁니다.\n  약국의 주문·재고 기록과 합쳐 대조할 품목과 챙길 성분의 순서를 정합니다.\n  제약사와 처방하는 의사도 같은 근거로 성분 시장과 급여 변경을 확인할 수 있습니다."
   },
   {
     "objectID": "ko/index.html#보고서",
     "href": "ko/index.html#보고서",
     "title": "Ben's Notes",
     "section": "",
-    "text": "공개 의약품 데이터로 답할 수 있는 질문을 다룹니다. 결과만큼 “이 숫자를 얼마나 믿을 수 있는가”를 자세히 적었습니다.\n\n\n\n\n\n\n\n급여목록 스냅샷으로 본 예고의 실현율, 인하를 미리 알 수 있는 정도, 그리고 인하의 폭\n\n\n\n\n\n2026-11-27\n\n\n\n\n\n\n\n\n급여목록과 의약품 사용통계로 묻는 두 질문, 그리고 두 자료를 합쳐 본 결과\n\n\n\n\n\n2026-11-27\n\n\n\n\n\n\n\n\n건보공단 사용통계로 성분별 원외 처방량을 예측하고, 오차가 몰리는 성분과 분류군을 가려내기\n\n\n\n\n\n2026-11-24\n\n\n\n\n\n일치 없음"
+    "text": "공개 의약품 데이터로 답할 수 있는 질문을 다룹니다. 결과만큼 “이 숫자를 얼마나 믿을 수 있는가”를 자세히 적었습니다.\n\n\n\n\n\n\n\n급여목록만 보는 약국은 대부분 시행 달에 알고, 2026년 1월 인하의 5분의 1은 1원이었다\n\n\n\n\n\n2026-11-27\n\n\n\n\n\n\n\n\n급여목록과 의약품 사용통계로 본 약가인하와 처방 수요\n\n\n\n\n\n2026-11-27\n\n\n\n\n\n\n\n\n전국 성분 처방량은 다음 달 기준 평균 6~7% 빗나갔고, 단순한 통계 모형으로 충분했다\n\n\n\n\n\n2026-11-24\n\n\n\n\n\n일치 없음"
   },
   {
     "objectID": "ko/index.html#일하는-방식",
@@ -1096,7 +1166,7 @@
     "href": "ko/report.html",
     "title": "Report",
     "section": "",
-    "text": "공개 데이터로 의약품 시장과 건강 서비스를 들여다본 분석 보고서입니다. 각 보고서는 질문, 자료, 검증 방식, 한계를 함께 적습니다.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n약값 인하 예고, 얼마나 믿을 수 있나\n\n\n급여목록 스냅샷으로 본 예고의 실현율, 인하를 미리 알 수 있는 정도, 그리고 인하의 폭\n\n\n\n의약품 데이터\n\n급여목록\n\n공개 의약품 데이터 시리즈\n\n\n\n\n심평원 급여목록 2022~2025 스냅샷을 이어 붙여, 비고에 적힌 약값 인하 예고가 얼마나 실현됐는지, 목록만 보는 사람이 인하를 얼마나 미리 알 수 있었는지, 인하 폭이 얼마나 작았는지 셌습니다.\n\n\n\n\n\n\n2026년 11월 27일\n\n\nBen Kim\n\n\n\n\n\n\n\n\n\n\n\n\n공개 의약품 데이터 시리즈: 약값 변동과 처방 수요\n\n\n급여목록과 의약품 사용통계로 묻는 두 질문, 그리고 두 자료를 합쳐 본 결과\n\n\n\n의약품 데이터\n\n공개 의약품 데이터 시리즈\n\n\n\n\n심평원 급여목록과 건보공단 의약품 사용통계로 약값·급여 변동의 예고와 성분별 처방 수요를 본 시리즈의 안내 글입니다. 각 글이 무엇에 답하는지와 다음 분석 계획을 정리했습니다.\n\n\n\n\n\n\n2026년 11월 27일\n\n\nBen Kim\n\n\n\n\n\n\n\n\n\n\n\n\n성분 처방 수요, 6개월 앞을 얼마나 맞힐 수 있나\n\n\n건보공단 사용통계로 성분별 원외 처방량을 예측하고, 오차가 몰리는 성분과 분류군을 가려내기\n\n\n\n의약품 데이터\n\n시계열 예측\n\n공개 의약품 데이터 시리즈\n\n\n\n\n의약품 사용통계 2018~2025로 성분 501개의 6개월 앞 처방량을 네 방법으로 예측해 비교했습니다. ETS를 기본으로 두고, 호흡기·항생제 같은 고변동 성분을 따로 지켜볼 근거를 정리했습니다.\n\n\n\n\n\n\n2026년 11월 24일\n\n\nBen Kim\n\n\n\n\n\n일치 없음"
+    "text": "공개 데이터로 의약품 시장과 건강 서비스를 들여다본 분석 보고서입니다. 각 보고서는 질문, 자료, 검증 방식, 한계를 함께 적습니다.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n한 달 전에 알 수 있었던 약가인하는 2024년뿐이었다\n\n\n급여목록만 보는 약국은 대부분 시행 달에 알고, 2026년 1월 인하의 5분의 1은 1원이었다\n\n\n\n의약품 데이터\n\n급여목록\n\n공개 의약품 데이터 시리즈\n\n\n\n\n“약가인하를 시행 며칠 전에야 알아 대조를 포기하고, 1원 단위 인하는 손해를 안고 간다”는 약국 현장의 말을 심평원 급여목록 2022~2026과 보건복지부 고시로 확인했습니다. 언제 알 수 있는지, 인하가 얼마나 작은지, 미리 알려진 인하를 믿을 수 있는지를 차례로 봅니다.\n\n\n\n\n\n\n2026년 11월 27일\n\n\nBen Kim\n\n\n\n\n\n\n\n\n\n\n\n\n약국의 고충, 공개 데이터로 어디까지 덜 수 있나\n\n\n급여목록과 의약품 사용통계로 본 약가인하와 처방 수요\n\n\n\n의약품 데이터\n\n공개 의약품 데이터 시리즈\n\n\n\n\n약국이 겪는 고충을 약이 약국을 지나가는 순서(들여오기·쌓아두기·내주기·벌기)로 나누고, 공개 의약품 데이터로 다룰 수 있는 부분을 차례로 분석하는 시리즈의 안내 글입니다.\n\n\n\n\n\n\n2026년 11월 27일\n\n\nBen Kim\n\n\n\n\n\n\n\n\n\n\n\n\n처방 예측이 크게 빗나간 성분은 겨울 호흡기·항생제였다\n\n\n전국 성분 처방량은 다음 달 기준 평균 6~7% 빗나갔고, 단순한 통계 모형으로 충분했다\n\n\n\n의약품 데이터\n\n시계열 예측\n\n공개 의약품 데이터 시리즈\n\n\n\n\n약국이 약을 제때 구하지 못하는 고충(들여오기) 가운데 공개 데이터로 다룰 수 있는 수요 쪽을 봤습니다. 건보공단 사용통계 2018~2025로 성분 501개의 처방량을 예측해, 얼마나 맞히는지와 어디서 크게 빗나가는지를 정리했습니다.\n\n\n\n\n\n\n2026년 11월 24일\n\n\nBen Kim\n\n\n\n\n\n일치 없음"
   },
   {
     "objectID": "ko/projects/project-c.html",

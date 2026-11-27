@@ -8,9 +8,9 @@
 
 <meta name="author" content="Ben Kim">
 <meta name="dcterms.date" content="2026-11-27">
-<meta name="description" content="Overview of a series that uses the HIRA reimbursement list and NHIS drug usage statistics to look at announced price and reimbursement changes and at ingredient-level prescription demand.">
+<meta name="description" content="Overview of a series that sorts pharmacy pain points by the path a drug takes through a pharmacy (procuring, holding stock, dispensing, earning) and analyses the parts that public medicine data can address.">
 
-<title>Public medicine data series: price changes and prescription demand – Ben’s Notes</title>
+<title>How far can public data ease pharmacies’ problems? – Ben's Notes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -185,7 +185,8 @@ document.addEventListener("DOMContentLoaded", function () {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#list-price" id="toc-list-price" class="nav-link active" data-scroll-target="#list-price">Does combining the two datasets help?</a></li>
+  <li><a href="#why" id="toc-why" class="nav-link active" data-scroll-target="#why">Why these questions</a></li>
+  <li><a href="#list-price" id="toc-list-price" class="nav-link" data-scroll-target="#list-price">Does combining the two datasets help?</a></li>
   <li><a href="#ground-rules" id="toc-ground-rules" class="nav-link" data-scroll-target="#ground-rules">Ground rules</a></li>
   <li><a href="#next" id="toc-next" class="nav-link" data-scroll-target="#next">Next analyses</a></li>
   </ul>
@@ -196,8 +197,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Public medicine data series: price changes and prescription demand</h1>
-<p class="subtitle lead">Two questions asked of the reimbursement list and drug usage statistics, and what happened when the two were combined</p>
+<h1 class="title">How far can public data ease pharmacies’ problems?</h1>
+<p class="subtitle lead">Price cuts and prescription demand, seen through the reimbursement list and drug usage statistics</p>
   <div class="quarto-categories">
     <div class="quarto-category">Medicine data</div>
     <div class="quarto-category">Public medicine data series</div>
@@ -206,7 +207,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <div>
   <div class="description">
-    Overview of a series that uses the HIRA reimbursement list and NHIS drug usage statistics to look at announced price and reimbursement changes and at ingredient-level prescription demand.
+    Overview of a series that sorts pharmacy pain points by the path a drug takes through a pharmacy (procuring, holding stock, dispensing, earning) and analyses the parts that public medicine data can address.
   </div>
 </div>
 
@@ -235,36 +236,89 @@ document.addEventListener("DOMContentLoaded", function () {
 </header>
 
 
-<p>This series uses two public datasets to answer questions that pharmacies and pharmaceutical and distribution teams ask. “Monitoring reimbursement changes and demand”, published as one report on 2026-11-24, was split into the pages below on 2026-11-27. The full Korean version of this overview is <a href="../../../ko/posts/2026-11-pharm-data-series/index.html">here</a>.</p>
+<p>This series asks how far public medicine data can ease the problems pharmacies face. The perspective is that of <strong>those who could help pharmacies with ordering, stock and return information</strong> (distributors, pharmacy support services). Each page starts from what makes pharmacy work hard and ends with what public information can tell in advance. The full Korean version of this overview is <a href="../../../ko/posts/2026-11-pharm-data-series/index.html">here</a>.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
+<th>Pain point</th>
 <th>Question</th>
-<th>Data</th>
 <th>Page</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Will a price or reimbursement status change next month? How often do announced notes come true? How far ahead can a cut be seen?</td>
-<td>HIRA reimbursement list 2022-01 to 2025-12</td>
-<td><a href="../../../en/posts/2026-11-benefit-change-lead/index.html">How far can announced price cuts be trusted?</a></td>
+<td><strong>Holding stock:</strong> stock loses value when prices are cut</td>
+<td>How many days ahead can a pharmacy know about a cut, how small is it, and can announced cuts be trusted?</td>
+<td><a href="../../../en/posts/2026-11-benefit-change-lead/index.html">Only in 2024 could most price cuts be seen a month ahead</a></td>
 </tr>
 <tr class="even">
-<td>Which way is demand for each ingredient heading? How well can six months ahead be forecast?</td>
-<td>NHIS drug usage statistics 2018-01 to 2025-12</td>
-<td><a href="../../../en/posts/2026-11-drug-demand-forecast/index.html">Ingredient prescription demand</a></td>
+<td><strong>Procuring:</strong> drugs cannot be obtained on time</td>
+<td>How well can ingredient-level prescriptions be forecast, and where do forecasts go most wrong?</td>
+<td><a href="../../../en/posts/2026-11-drug-demand-forecast/index.html">Prescription forecasts missed most for winter respiratory drugs and antibiotics</a></td>
 </tr>
 <tr class="odd">
+<td>(Verification)</td>
 <td>How were those numbers checked?</td>
-<td>Same data</td>
 <td><a href="../../../en/posts/2026-11-drug-demand-tech-note/index.html">Demand forecasting technical note</a></td>
 </tr>
 </tbody>
 </table>
+<section id="why" class="level2">
+<h2 class="anchored" data-anchor-id="why">Why these questions</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Stage</th>
+<th>Question</th>
+<th>What leaks</th>
+<th>Felt rank</th>
+<th>Public data coverage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A. Procuring</td>
+<td>Can the drugs needed be obtained on time, in the amount needed?</td>
+<td>Time, dispensing opportunities</td>
+<td>1</td>
+<td><strong>Partly.</strong> Demand (prescriptions) and the number of substitutes; not shortages, allocation or stock</td>
+</tr>
+<tr class="even">
+<td>B. Holding stock</td>
+<td>Does stock already bought keep its value?</td>
+<td>Money</td>
+<td>2 (worsening fastest)</td>
+<td><strong>Most.</strong> What is cut, when and by how much</td>
+</tr>
+<tr class="odd">
+<td>C. Dispensing</td>
+<td>Is dispensing manageable?</td>
+<td>Time, consumables, disputes</td>
+<td>3</td>
+<td>Weakly. Volume per prescription</td>
+</tr>
+<tr class="even">
+<td>D. Earning</td>
+<td>Are sales and margins holding?</td>
+<td>Sales</td>
+<td>4</td>
+<td>None. No pharmacy- or area-level data</td>
+</tr>
+</tbody>
+</table>
+<p>Procuring is felt most today; holding stock is a close second and is expected to worsen fastest as listed drugs are re-evaluated from 2027. The stages are linked: when drugs are hard to get, pharmacies stock up, and stock loses value when prices are cut.</p>
+<p><strong>What public data can and cannot do.</strong> They can tell in advance what will be cut, when and by how much; single out ingredients whose demand swings; and show how far announcements can be trusted. They cannot compute a pharmacy’s losses (that needs its stock records), forecast shortages (no supply or stock data), or change compensation and return terms. The pain points and cases rest mainly on trade press and pharmacist surveys, which may lean towards reported harm.</p>
+</section>
 <section id="list-price" class="level2">
 <h2 class="anchored" data-anchor-id="list-price">Does combining the two datasets help?</h2>
-<p><strong>Adding reimbursement-list price information to demand forecasts did not show an improvement.</strong> With the price changes visible in the list at forecast time, unit-price forecast error was 0.0186 vs 0.0217, about 15% lower, but p = 0.252 could not be told apart from chance, nor from forecasts with the timing deliberately shifted. For prescription volume, the test could not even detect a deliberately injected 20% effect, so it could not measure an effect. The median pass-through from list price change to claimed unit price was only 0.55. The series therefore uses the reimbursement list for price and suspension alerts and the usage statistics for demand. The criteria were fixed before results were seen; the table is in the <a href="../../../en/posts/2026-11-drug-demand-tech-note/index.html#list-price-test">technical note</a>.</p>
+<p><strong>Adding reimbursement-list price information to demand forecasts did not show an improvement.</strong> With the price changes visible in the list at forecast time, unit-price forecast error was 0.0186 vs 0.0217, about 15% lower, but p = 0.252 could not be told apart from chance, nor from forecasts with the timing deliberately shifted. For prescription volume, the test could not even detect a deliberately injected 20% effect. The median pass-through from list price change to claimed unit price was only 0.55. The series therefore uses the reimbursement list for price and suspension alerts and the usage statistics for demand. The table is in the <a href="../../../en/posts/2026-11-drug-demand-tech-note/index.html#list-price-test">technical note</a>.</p>
 </section>
 <section id="ground-rules" class="level2">
 <h2 class="anchored" data-anchor-id="ground-rules">Ground rules</h2>
@@ -273,12 +327,12 @@ document.addEventListener("DOMContentLoaded", function () {
 <li>Price changes and prescription volume are compared only as before-and-after changes and associations, not as causes.</li>
 <li>Demand forecasts are national and per ingredient, not order quantities for a pharmacy or product.</li>
 <li>No savings or incentive amounts are computed.</li>
-<li>The data contain no product-level sales, pharmacy purchases or stock, wholesale distribution, or planned delisting dates.</li>
+<li>The data contain no shortages, product-level sales, pharmacy purchases or stock, wholesale distribution, or planned delisting dates.</li>
 </ul>
 </section>
 <section id="next" class="level2">
 <h2 class="anchored" data-anchor-id="next">Next analyses</h2>
-<p>The order follows the pharmacy pain points in the Korean overview, weighted by how much information can reduce them and by what is coming (re-evaluation of listed drugs from 2027). “Possible now” means the public data already in hand are enough.</p>
+<p>The order follows the pain points above, weighted by how much information can reduce them and by what is coming (re-evaluation of listed drugs from 2027). “Possible now” means the public data already in hand are enough.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -292,7 +346,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <tbody>
 <tr class="odd">
 <td>1</td>
-<td><strong>How far ahead can a cut be known:</strong> split cuts into noted cuts, bulk cuts and other cuts without a note; measure the share visible in the list at least a month ahead and the size of cuts (won and percent)</td>
+<td><strong>How far ahead can a cut be known:</strong> split cuts into cuts announced in the remarks, government bulk cuts and other cuts; measure the share visible in the list at least a month ahead and the size of cuts (won and percent)</td>
 <td>Stock value</td>
 <td>Answers “we only learn days before, so we give up checking” and “1-won cuts are a loss we just absorb” with numbers</td>
 <td><strong>Done (2026-11-27).</strong> Seeing a cut a month ahead happened mostly in 2024 (80.8%; 0–0.35% in other years). Bulk cuts were known 4–13 days ahead through notices and association guidance; 19.6% of the 2026-01 actual-transaction-price cuts were 1 won. <a href="../../../en/posts/2026-11-benefit-change-lead/index.html#lead">2nd edition</a></td>

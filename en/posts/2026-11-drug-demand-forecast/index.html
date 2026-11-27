@@ -8,9 +8,9 @@
 
 <meta name="author" content="Ben Kim">
 <meta name="dcterms.date" content="2026-11-24">
-<meta name="description" content="English summary of a report that compares four methods for forecasting 501 ingredients’ prescription volume six months ahead, recommends ETS as the default, and flags high-volatility ingredients such as respiratory drugs and antibiotics.">
+<meta name="description" content="English summary. Pharmacies struggle to get drugs on time; public data can show only the demand side of that problem. NHIS usage statistics 2018–2025 were used to forecast 501 ingredients’ prescriptions and to find where forecasts go most wrong.">
 
-<title>Ingredient prescription demand: how well can six months ahead be forecast? – Ben’s Notes</title>
+<title>Prescription forecasts missed most for winter respiratory drugs and antibiotics – Ben’s Notes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -185,16 +185,15 @@ document.addEventListener("DOMContentLoaded", function () {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#questions" id="toc-questions" class="nav-link active" data-scroll-target="#questions">Questions</a></li>
-  <li><a href="#three-conclusions" id="toc-three-conclusions" class="nav-link" data-scroll-target="#three-conclusions">Three conclusions</a></li>
-  <li><a href="#forecast" id="toc-forecast" class="nav-link" data-scroll-target="#forecast">Demand forecasting six months ahead</a>
-  <ul class="collapse">
-  <li><a href="#by-year" id="toc-by-year" class="nav-link" data-scroll-target="#by-year">Which years the gain came from</a></li>
-  </ul></li>
-  <li><a href="#what-to-do-and-not-do" id="toc-what-to-do-and-not-do" class="nav-link" data-scroll-target="#what-to-do-and-not-do">What to do and not do</a></li>
-  <li><a href="#class-error" id="toc-class-error" class="nav-link" data-scroll-target="#class-error">High-error drug classes</a></li>
-  <li><a href="#limits" id="toc-limits" class="nav-link" data-scroll-target="#limits">Limits</a></li>
-  <li><a href="#next-analyses" id="toc-next-analyses" class="nav-link" data-scroll-target="#next-analyses">Next analyses</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#perspective" id="toc-perspective" class="nav-link" data-scroll-target="#perspective">1. Whose problem, and who can help</a></li>
+  <li><a href="#forecast" id="toc-forecast" class="nav-link" data-scroll-target="#forecast">2. How far off is next month’s forecast?</a></li>
+  <li><a href="#class-error" id="toc-class-error" class="nav-link" data-scroll-target="#class-error">3. Where do forecasts go most wrong?</a></li>
+  <li><a href="#class-test" id="toc-class-test" class="nav-link" data-scroll-target="#class-test">4. Does a separate method per drug class help?</a></li>
+  <li><a href="#case-flu" id="toc-case-flu" class="nav-link" data-scroll-target="#case-flu">5. Case: the flu drug and “last year × growth”</a></li>
+  <li><a href="#implications" id="toc-implications" class="nav-link" data-scroll-target="#implications">6. Implications</a></li>
+  <li><a href="#limits" id="toc-limits" class="nav-link" data-scroll-target="#limits">Checks and limits</a></li>
+  <li><a href="#by-year" id="toc-by-year" class="nav-link" data-scroll-target="#by-year">Appendix: which years the gain came from</a></li>
   <li><a href="#glossary" id="toc-glossary" class="nav-link" data-scroll-target="#glossary">Glossary</a></li>
   </ul>
 </nav>
@@ -204,8 +203,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Ingredient prescription demand: how well can six months ahead be forecast?</h1>
-<p class="subtitle lead">Forecasting outpatient prescription volume per ingredient from NHIS usage statistics, and finding the ingredients and classes where errors pile up</p>
+<h1 class="title">Prescription forecasts missed most for winter respiratory drugs and antibiotics</h1>
+<p class="subtitle lead">National ingredient-level prescriptions were forecast about 6–7% off for next month, and a simple statistical model was enough</p>
   <div class="quarto-categories">
     <div class="quarto-category">Medicine data</div>
     <div class="quarto-category">Time-series forecasting</div>
@@ -215,7 +214,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <div>
   <div class="description">
-    English summary of a report that compares four methods for forecasting 501 ingredients’ prescription volume six months ahead, recommends ETS as the default, and flags high-volatility ingredients such as respiratory drugs and antibiotics.
+    English summary. Pharmacies struggle to get drugs on time; public data can show only the demand side of that problem. NHIS usage statistics 2018–2025 were used to forecast 501 ingredients’ prescriptions and to find where forecasts go most wrong.
   </div>
 </div>
 
@@ -256,46 +255,88 @@ document.addEventListener("DOMContentLoaded", function () {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>This report was split into a series
+<span class="screen-reader-only">Note</span>About this page
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>“Monitoring reimbursement changes and demand” (2026-11-24) was split into four pages on 2026-11-27. This page is the <strong>demand forecasting</strong> part; the numbers are unchanged from the 2026-11-24 edition.</p>
-<ul>
-<li>Realization of announced price cuts and suspensions, and price changes without a note: <a href="../../../en/posts/2026-11-benefit-change-lead/index.html">How far can announced price cuts be trusted?</a></li>
-<li>Drug-class diagnostics, verification, and model specification: <a href="../../../en/posts/2026-11-drug-demand-tech-note/index.html">Demand forecasting technical note</a></li>
-<li>The whole series, and whether reimbursement-list prices help: <a href="../../../en/posts/2026-11-pharm-data-series/index.html">Series overview</a></li>
-</ul>
+<p>Second edition (2026-11-27), rewritten to start from the pharmacy problem of getting drugs on time. The first edition (2026-11-24) centred on comparing four forecasting methods. Analyses, numbers and figures are unchanged.</p>
+<p>Price cuts: <a href="../../../en/posts/2026-11-benefit-change-lead/index.html">Only in 2024 could most price cuts be seen a month ahead</a>. Whole series: <a href="../../../en/posts/2026-11-pharm-data-series/index.html">series overview</a>. Verification and model specification: <a href="../../../en/posts/2026-11-drug-demand-tech-note/index.html">technical note</a>.</p>
 </div>
 </div>
 <div class="report-meta">
-<p><strong>Edition</strong> November 24, 2026, split into a series on November 27, 2026<br>
-<strong>Data</strong> NHIS drug usage statistics 2018-01 to 2025-12 (provisional evaluation 2026-01 to 06); drug-class codes as attributes only<br>
-<strong>Full report (Korean)</strong> <a href="../../../ko/posts/2026-11-drug-demand-forecast/index.html">Read the full Korean version</a></p>
+<p><strong>Edition</strong> 2nd, November 27, 2026 (numbers from the November 24, 2026 edition) <strong>Data</strong> NHIS drug usage statistics 2018-01 to 2025-12 (provisional evaluation 2026-01 to 06); drug-class codes as attributes only <strong>Full report (Korean)</strong> <a href="../../../ko/posts/2026-11-drug-demand-forecast/index.html">Read the full Korean version</a></p>
 </div>
-<p>This page summarizes the main findings in English. More tables, case studies, and the full list of limitations are in the Korean version.</p>
-<section id="questions" class="level2">
-<h2 class="anchored" data-anchor-id="questions">Questions</h2>
-<p>Which way is prescription demand for each ingredient heading? How well can six months ahead (next month, as seen on the day of the forecast) be forecast, and which method should be the default? Does using differences between drug classes make forecasts more accurate?</p>
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<p><strong>Public data cannot show shortages, but they can single out ingredients whose demand swings. Those were concentrated in winter respiratory drugs and antibiotics.</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>What pharmacies experience</th>
+<th>What public data show</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>“We can’t get the drugs we need on time”</td>
+<td><strong>Shortages themselves are not in these data.</strong> Usage statistics show only what was prescribed, but they can single out ingredients whose prescriptions swing</td>
+</tr>
+<tr class="even">
+<td>Cold medicines and antibiotics run short every winter</td>
+<td><strong>The drug classes forecast worst were cough and cold drugs, antibiotics and respiratory drugs</strong> (16–22% error). How much larger winter was than summer differed from year to year</td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>What a demand-baseline builder asks</th>
+<th>What the data show</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>How far off is next month’s forecast?</td>
+<td><strong>About 6–7% on average for national ingredient totals.</strong> Data are published five months late, so “next month” is six months past the data</td>
+</tr>
+<tr class="even">
+<td>Which method?</td>
+<td><strong>A simple statistical model (ETS) was enough.</strong> Machine learning was slightly lower but not distinguishable from chance; “same month last year” was worse than both</td>
+</tr>
+<tr class="odd">
+<td>Where does the error come from?</td>
+<td><strong>59 volatile ingredients are 5.3% of amount but 24.4% of error;</strong> more than half are respiratory or anti-infective</td>
+</tr>
+<tr class="even">
+<td>Does a separate method per drug class help?</td>
+<td><strong>No.</strong> Both approaches differed by only 0.12 percentage points</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="three-conclusions" class="level2">
-<h2 class="anchored" data-anchor-id="three-conclusions">Three conclusions</h2>
-<ol type="1">
-<li><strong>For 6-month-ahead demand forecasts, a simple statistical model (ETS) was enough.</strong> Machine learning (LightGBM) beat “same month last year” but showed no evidence of beating ETS (6.46% vs 7.11% WAPE over 36 months; the gap could not be told apart from chance). The gain over “same month last year” was spread across 2023, 2024 and 2025, not concentrated in the post-COVID recovery.</li>
-<li><strong>Forecast errors pile up in a small set of highly volatile ingredients.</strong> The 59 ingredients whose same-month volume swung by ±30% or more from year to year are 5.3% of amount but make up 24.4% of total error. More than half are respiratory or anti-infective drugs.</li>
-<li><strong>Drug classes differ in error and in which method fits best, but adding class information did not help.</strong> Error is 2.4% for lipid-lowering drugs and 19–22% for antibiotics (J01) and cough and cold drugs (R05), measured with machine learning. Both class-based approaches differed from the existing model by only 0.12 percentage points. A follow-up look at the high-error classes gave no reason to make the model more complex; it supports <strong>keeping ETS as the default and monitoring each class’s characteristics separately</strong> (see the <a href="../../../en/posts/2026-11-drug-demand-tech-note/index.html#class-diff">technical note</a>).</li>
-</ol>
+<section id="perspective" class="level2">
+<h2 class="anchored" data-anchor-id="perspective">1. Whose problem, and who can help</h2>
+<p>The page takes the view of those who could ease pharmacy burdens with ordering, stock and return information (distributors, pharmacy support services). Pharmacy pain points are sorted by the path a drug takes through a pharmacy: <strong>procuring (A)</strong>, holding stock (B, see the <a href="../../../en/posts/2026-11-benefit-change-lead/index.html">price-cut page</a>), dispensing (C), earning (D). Procuring is the problem pharmacies feel most today.</p>
+<p>In trade-press cases, drugs are short for several reasons: allocation differs by pharmacy, wholesalers limit quantities or set minimum orders, and changes in distribution policy cut deliveries for days. Of these, only <strong>demand</strong> is visible in public data; production, shipments, wholesale and pharmacy stock are not. Usage statistics also arrive about five months late. This page therefore does not forecast shortages. It builds a demand baseline and shows where that baseline can and cannot be trusted.</p>
+<p><strong>Not in the data</strong>: shortages and supply, product sales, pharmacy purchases and stock, wholesale flows, regional demand.</p>
 </section>
 <section id="forecast" class="level2">
-<h2 class="anchored" data-anchor-id="forecast">Demand forecasting six months ahead</h2>
-<p><strong>Why six months:</strong> usage statistics are published about five months late. The latest month available today is five months back, so forecasting “next month” means forecasting six months past the data. In other words, “six months ahead” is not the distant future: it is <strong>next month</strong> as seen on the day of the forecast.</p>
+<h2 class="anchored" data-anchor-id="forecast">2. How far off is next month’s forecast?</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/lag-timeline.svg" class="img-fluid figure-img" alt="Twelve cells from January to December 2025. January to June are published (last observed month a = June); July to November are not yet published and cannot be used; today is November; the target is December (a + 6)."></p>
 <figcaption>Publication lag and the target month. The target is six months after the last observed month a.</figcaption>
 </figure>
 </div>
-<p>Four methods were compared on 501 ingredients (93.8% of outpatient claimed amount), re-forecasting every month from 2023-01 to 2025-12.</p>
+<p>Four methods were compared on 501 ingredients (93.8% of outpatient claimed amount), re-forecasting every month from 2023-01 to 2025-12 with only the data available at the time.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 25%">
@@ -307,7 +348,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <tr class="header">
 <th>Method</th>
 <th>Plain description</th>
-<th>Average error (WAPE)</th>
+<th>Average error</th>
 <th>Verdict</th>
 </tr>
 </thead>
@@ -316,13 +357,13 @@ document.addEventListener("DOMContentLoaded", function () {
 <td>Same month last year</td>
 <td>“As much as last July, again this July”</td>
 <td>9.76%</td>
-<td>Worse than machine learning (significant)</td>
+<td>Worse than machine learning (unlikely to be chance)</td>
 </tr>
 <tr class="even">
 <td>Last year × recent growth</td>
 <td>Last year’s value times the last 12 months’ growth</td>
 <td>45.30%</td>
-<td>One ingredient went badly wrong</td>
+<td>One ingredient went badly wrong (section 5)</td>
 </tr>
 <tr class="odd">
 <td>ETS</td>
@@ -338,87 +379,65 @@ document.addEventListener("DOMContentLoaded", function () {
 </tr>
 </tbody>
 </table>
-<p>“Significant” refers to a <strong>monthly</strong> test: the 36 monthly error differences were tested as one series; no per-ingredient test was used. The 2023–2025 evaluation used fully revised usage statistics (the November 2026 release). The 2026 actuals are a provisional release that may still rise; if they do, a model that forecast low looks better now than it really is, so 2026 will be re-scored on the final release.</p>
+<ul>
+<li>Average error is the sum of misses ÷ the sum of actuals: 6.5% means about 6.5 units off per 100.</li>
+<li>The 0.65-point gap between machine learning and ETS could not be told apart from chance over 36 months; on unseen 2026-01 to 06 data (provisional), ETS was 0.25 points lower over six months. ETS is kept as the default because it is easier to explain and check.</li>
+<li>Machine learning was 3.30 points lower than “same month last year”, lower in every 2026 month, and lower for 85% of ingredients.</li>
+</ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/horizon-curve.svg" class="img-fluid figure-img" alt="Line chart of forecast error from 1 to 12 months ahead. Machine learning is lower than ETS from 2 to 7 months ahead; the 6-month gap could not be told apart from chance. Same month last year stays around 9%."></p>
-<figcaption>Average error by forecast horizon, 501 ingredients. Lower is better. “Last year” is the value of the same month last year.</figcaption>
+<p><img src="images/horizon-curve.svg" class="img-fluid figure-img" alt="Line chart of forecast error from 1 to 12 months ahead. Machine learning is lower than ETS from 2 to 7 months ahead; similar at 1 month and at 8 months or more. Same month last year stays around 9%."></p>
+<figcaption>Average error by forecast horizon, 501 ingredients. Lower is better.</figcaption>
 </figure>
 </div>
-<section id="by-year" class="level3">
-<h3 class="anchored" data-anchor-id="by-year">Which years the gain came from</h3>
-<p><strong>The gain over “same month last year” is spread evenly across the three years.</strong> The first half of 2023, right after the COVID-19 recovery, is when “same month last year” missed badly. If the gain had piled up there, the conclusion could reflect that one episode, so it was split by period. This was not pre-registered and is not used for any verdict.</p>
+</section>
+<section id="class-error" class="level2">
+<h2 class="anchored" data-anchor-id="class-error">3. Where do forecasts go most wrong?</h2>
+<ul>
+<li>For half the ingredients, the busiest month in 2018–2025 was at most 2.3 times the quietest; for the top 5% it was over 17 times.</li>
+<li>The 59 ingredients whose same-month volume swung by ±30% or more from year to year average 29.6% error vs 4.6% for the rest (machine learning).</li>
+<li>The 62 respiratory ingredients had 16.05% error with ETS and 18.63% with machine learning.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/class-error.svg" class="img-fluid figure-img" alt="Error for eight classes, machine learning then ETS: C10 2.4%, 3.4%; B01 2.5%, 3.9%; C08 2.6%, 3.4%; C09 2.7%, 3.9%; S01 11.1%, 9.6%; R03 14.5%, 16.1%; J01 18.8%, 16.4%; R05 21.7%, 17.5%."></p>
+<figcaption>Forecast error by drug class, 2023-01 to 2025-12.</figcaption>
+</figure>
+</div>
+<p>Chronic and cardiovascular drugs (lipid-lowering C10, antithrombotics B01) were 2–4% off; respiratory (R03), antibiotics (J01) and cough and cold drugs (R05) were 14–22%. In those three classes the size of the winter peak differed from year to year:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/winter-height.svg" class="img-fluid figure-img" alt="Winter-to-summer multiples for seven winters. R05: 1.81, 1.52, 1.07, 2.36, 1.47, 1.42, 1.24. R03: 1.50, 1.30, 1.11, 1.50, 1.38, 1.35, 1.24. J01: 1.35, 1.17, 0.93, 1.64, 1.33, 1.21, 1.07."></p>
+<figcaption>How many times larger winter prescriptions were than summer, winters 18/19 to 24/25.</figcaption>
+</figure>
+</div>
+<p>These are the same classes pharmacists describe as running short in winter. The data show only that their demand is hard to forecast; how short supply was is not in the data. These are observed associations, not causes.</p>
+</section>
+<section id="class-test" class="level2">
+<h2 class="anchored" data-anchor-id="class-test">4. Does a separate method per drug class help?</h2>
+<p>No.&nbsp;Blending machine learning and ETS differently per class, and adding class information to the model, were tested against criteria fixed in advance. Both reached 6.34% vs 6.46% for the existing model, a 0.12-point gap with no evidence of improvement. Per-class error is used to decide <strong>how much to trust</strong> a forecast, not to change the method. Details are in the <a href="../../../en/posts/2026-11-drug-demand-tech-note/index.html#class-test">technical note</a>.</p>
+</section>
+<section id="case-flu" class="level2">
+<h2 class="anchored" data-anchor-id="case-flu">5. Case: the flu drug and “last year × growth”</h2>
+<p>Outpatient prescriptions of oseltamivir rose from about 4,900 in 2022-01 to about 4.15 million in 2023-01. “Last year × recent growth” counted that surge twice, so the 2024-05 forecast was about 1,143 times the actual, and this one ingredient made up 79.1% of the method’s total error. Growth multipliers should not be used for ingredients whose demand level jumped.</p>
+</section>
+<section id="implications" class="level2">
+<h2 class="anchored" data-anchor-id="implications">6. Implications</h2>
+<p>Untested suggestions: build a national next-month baseline per ingredient with ETS, and set its trust range from the drug class’s error (3–4% for chronic drugs, 16–18% for respiratory drugs and antibiotics, ETS); flag ingredients with large year-on-year swings for human review, using only data available at forecast time; widen ranges for respiratory drugs and antibiotics before winter; fill the five-month publication gap with one’s own order data, and split share changes from market changes with own volume ÷ national prescriptions. Do not use “last year × growth”, do not use national forecasts as pharmacy orders, and do not build a model per class. Pharmacy-level demand needs pharmacy order and stock records.</p>
+</section>
+<section id="limits" class="level2">
+<h2 class="anchored" data-anchor-id="limits">Checks and limits</h2>
+<p>Methods and decision rules were fixed before results (pre-registration); each month was forecast with only data available then (backtest), with a separate test against future-data leakage; unseen 2026 data were scored as well. Limits: the field cases rest mainly on trade press and pharmacist surveys; shortages are not visible, and a prescription switched because a drug was unavailable looks like demand; the 2026 evaluation is provisional; the class diagnostics are post-hoc and only two full post-COVID winters exist; class codes come from 2026 data; revised data were used for 2023–2025; machine learning settings were not tuned. Relationships between drug classes and error are associations.</p>
+</section>
+<section id="by-year" class="level2">
+<h2 class="anchored" data-anchor-id="by-year">Appendix: which years the gain came from</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/period-diff.svg" class="img-fluid figure-img" alt="Two rows of 36 monthly bars. Top row (ML minus last year): 35 months below zero, total −3.26 pp. Bottom row (ML minus ETS): 23 months below zero, total −0.63 pp, with several months in 2023 H1 and 2024 where ETS was lower."></p>
 <figcaption>Monthly error difference. Top: machine learning vs same month last year. Bottom: machine learning vs ETS.</figcaption>
 </figure>
 </div>
-<ul>
-<li>The share of the gain over last year was 40% in 2023, 31% in 2024 and 29% in 2025; the first half of 2023 alone was 23%.</li>
-<li>Against ETS the months were mixed; in the first half of 2023 machine learning was 0.13 pp worse.</li>
-<li>The model’s COVID-19 indicators cover only 2020–2021. Forecasts for 2023, whose base year is the incompletely recovered 2022, are not flagged (see the <a href="../../../en/posts/2026-11-drug-demand-tech-note/index.html#model-spec">model specification</a>). In the previous edition (2026-11-19), most of the machine learning gain came from this period; in this edition it was 23%.</li>
-<li>The figure uses a slightly simplified set of ingredient-months, so its totals differ a little from the official values (−3.30 pp, −0.65 pp).</li>
-</ul>
-<p>Adding reimbursement-list price information to the forecast did not show an improvement; see the <a href="../../../en/posts/2026-11-pharm-data-series/index.html#list-price">series overview</a> and the <a href="../../../en/posts/2026-11-drug-demand-tech-note/index.html#list-price-test">technical note</a>.</p>
-</section>
-</section>
-<section id="what-to-do-and-not-do" class="level2">
-<h2 class="anchored" data-anchor-id="what-to-do-and-not-do">What to do and not do</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Do</th>
-<th>Don’t</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Use ETS as the default for ingredient demand monitoring</td>
-<td>Forecast with “last year × recent growth rate”</td>
-</tr>
-<tr class="even">
-<td>Watch respiratory and highly volatile ingredients separately</td>
-<td>Use these forecasts directly as pharmacy order quantities</td>
-</tr>
-<tr class="odd">
-<td>Use per-class error to decide how much to trust a forecast</td>
-<td>Build a separate forecasting model for each class</td>
-</tr>
-</tbody>
-</table>
-<p>Price alert recommendations are in the <a href="../../../en/posts/2026-11-benefit-change-lead/index.html">reimbursement-change page</a>.</p>
-</section>
-<section id="class-error" class="level2">
-<h2 class="anchored" data-anchor-id="class-error">High-error drug classes</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/class-error.svg" class="img-fluid figure-img" alt="Error for eight classes, machine learning then ETS: C10 2.4%, 3.4%; B01 2.5%, 3.9%; C08 2.6%, 3.4%; C09 2.7%, 3.9%; S01 11.1%, 9.6%; R03 14.5%, 16.1%; J01 18.8%, 16.4%; R05 21.7%, 17.5%."></p>
-<figcaption>Forecast error six months ahead by drug class, 2023-01 to 2025-12.</figcaption>
-</figure>
-</div>
-<p><em>Among ATC level-2 classes with at least 10 ingredients, ranked by machine learning error. Post-hoc exploration: these are observed patterns and associations, not causes.</em></p>
-<p>In R03, J01 and R05, the size of the winter peak differed from year to year. The figure below shows, for each winter, how many times larger winter prescriptions were than summer.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/winter-height.svg" class="img-fluid figure-img" alt="Winter-to-summer multiples for seven winters. R05: 1.81, 1.52, 1.07, 2.36, 1.47, 1.42, 1.24. R03: 1.50, 1.30, 1.11, 1.50, 1.38, 1.35, 1.24. J01: 1.35, 1.17, 0.93, 1.64, 1.33, 1.21, 1.07."></p>
-<figcaption>How many times larger winter prescriptions were than summer, winters 18/19 to 24/25. Only ingredients observed in all eight years.</figcaption>
-</figure>
-</div>
-<p>Winter height shrank sharply in 2020/21, during the COVID-19 period, rose again in 2021/22, and fell in each of the next three winters. The data used here do not show why.</p>
-<p>Per-class tables, the separate S01 group, and follow-up directions are in the <a href="../../../en/posts/2026-11-drug-demand-tech-note/index.html#class-diff">technical note</a>.</p>
-</section>
-<section id="limits" class="level2">
-<h2 class="anchored" data-anchor-id="limits">Limits</h2>
-<p>The report does not answer demand at the level of a pharmacy, product, or region. The 2026 evaluation is provisional, because recent usage statistics are revised in later releases. The 2023–2025 evaluation used revised data, so forecasts made with the first release available at the time could be less accurate. The machine learning settings were fixed without tuning, and results are limited to those settings. Relationships between price changes, drug classes, and prescription volume are associations, not causal claims. The look at high-error classes is post-hoc: it re-examines 2023–2025, and only two full winters have passed since the COVID-19 period, so it is not generalized to future winters.</p>
-</section>
-<section id="next-analyses" class="level2">
-<h2 class="anchored" data-anchor-id="next-analyses">Next analyses</h2>
-<p>Demand-side follow-ups are linking shortage and supply-interruption data, breaking national totals down by province and facility type, and checking the effect of combining strengths and dosage forms. The full list is in the <a href="../../../en/posts/2026-11-pharm-data-series/index.html#next">series overview</a>.</p>
+<p>The gain over “same month last year” was 40% in 2023, 31% in 2024 and 29% in 2025 (23% in the first half of 2023), so it is not a post-COVID artefact. Against ETS the months were mixed. This split was not pre-registered and is not used for any verdict. Adding reimbursement-list prices did not help; see the <a href="../../../en/posts/2026-11-pharm-data-series/index.html#list-price">series overview</a>.</p>
 </section>
 <section id="glossary" class="level2">
 <h2 class="anchored" data-anchor-id="glossary">Glossary</h2>
@@ -435,51 +454,40 @@ document.addEventListener("DOMContentLoaded", function () {
 </thead>
 <tbody>
 <tr class="odd">
-<td>WAPE</td>
-<td>Sum of absolute errors ÷ sum of actuals. 6.5% means forecasts missed by about 6.5 units per 100</td>
+<td>Usage statistics</td>
+<td>NHIS monthly table of prescription volume and claimed amount per ingredient, published about five months late</td>
 </tr>
 <tr class="even">
-<td>pp (percentage point)</td>
-<td>Difference between two percentages. 7.11% and 6.46% differ by 0.65 pp</td>
+<td>Ingredient (4-digit code)</td>
+<td>Unit grouping products with the same active ingredient</td>
+</tr>
+<tr class="odd">
+<td>ATC code</td>
+<td>International drug classification. C10 lipid-lowering, J01 antibiotics, R03 respiratory, R05 cough and cold, S01 eye</td>
+</tr>
+<tr class="even">
+<td>Average error (WAPE)</td>
+<td>Sum of absolute errors ÷ sum of actuals</td>
 </tr>
 <tr class="odd">
 <td>ETS</td>
-<td>Classical statistical model that weights recent values more and adds a seasonal pattern</td>
+<td>Statistical model that weights recent values more and adds a seasonal pattern</td>
 </tr>
 <tr class="even">
 <td>Backtest</td>
-<td>Going back to past dates, forecasting with only the data available then, and comparing with known actuals</td>
+<td>Forecasting from past dates with only the data available then and comparing with actuals</td>
 </tr>
 <tr class="odd">
 <td>Pre-registration</td>
-<td>Fixing the analysis method and decision rules before seeing results</td>
+<td>Fixing methods and decision rules before seeing results</td>
 </tr>
 <tr class="even">
-<td>Inconclusive</td>
-<td>The gap cannot be told apart from chance, so neither method can be called better. Not the same as “no difference”</td>
-</tr>
-<tr class="odd">
 <td>Post-hoc exploration</td>
-<td>Analysis added after seeing results, not planned in advance. Not used for verdicts</td>
-</tr>
-<tr class="even">
-<td>EWC test</td>
-<td>A test designed to avoid spurious significance in short series whose months move together</td>
-</tr>
-<tr class="odd">
-<td>Holm correction</td>
-<td>Adjustment that stops one comparison from looking significant by chance when several are made</td>
-</tr>
-<tr class="even">
-<td>Feature importance</td>
-<td>How much the model relied on each input. Not a cause</td>
-</tr>
-<tr class="odd">
-<td>SHAP value</td>
-<td>A single forecast split into contributions from each feature</td>
+<td>Analysis added after seeing results; not used for verdicts</td>
 </tr>
 </tbody>
 </table>
+<p>More technical terms (EWC test, Holm correction, SHAP values) are in the <a href="../../../en/posts/2026-11-drug-demand-tech-note/index.html">technical note</a>.</p>
 
 
 </section>

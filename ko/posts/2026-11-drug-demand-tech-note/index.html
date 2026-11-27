@@ -198,7 +198,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">수요 예측 기술 노트: 분류군 실험, 사전등록, 모델 명세</h1>
-<p class="subtitle lead">「성분 처방 수요, 6개월 앞을 얼마나 맞힐 수 있나」의 검증 방식과 재현 정보</p>
+<p class="subtitle lead">「처방 예측이 크게 빗나간 성분은 겨울 호흡기·항생제였다」의 검증 방식과 재현 정보</p>
   <div class="quarto-categories">
     <div class="quarto-category">의약품 데이터</div>
     <div class="quarto-category">시계열 예측</div>
@@ -388,7 +388,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </tbody>
 </table>
 </div>
-<p>겨울별 배수는 <a href="../../../ko/posts/2026-11-drug-demand-forecast/index.html#class-error">수요 보고서의 ‘오차가 큰 분류군’ 그림</a>에 있다. 코로나 기간인 2020/21 겨울에는 높이가 크게 줄었고 2021/22에 다시 커졌으며 그 뒤 세 겨울은 차례로 낮아졌다. 이는 관측된 현상이다. 왜 달라졌는지는 이 자료로 확인하지 않았다.</p>
+<p>겨울별 배수는 <a href="../../../ko/posts/2026-11-drug-demand-forecast/index.html#q2">수요 보고서의 ‘오차가 큰 분류군’ 그림</a>에 있다. 코로나 기간인 2020/21 겨울에는 높이가 크게 줄었고 2021/22에 다시 커졌으며 그 뒤 세 겨울은 차례로 낮아졌다. 이는 관측된 현상이다. 왜 달라졌는지는 이 자료로 확인하지 않았다.</p>
 </section>
 <section id="별도-성분군-s01-안과용제" class="level3">
 <h3 class="anchored" data-anchor-id="별도-성분군-s01-안과용제">별도 성분군: S01 안과용제</h3>
@@ -678,7 +678,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <section id="예측-방식" class="level3">
 <h3 class="anchored" data-anchor-id="예측-방식">예측 방식</h3>
 <ul>
-<li><strong>“6개월 앞” = 다음 달</strong>: 마지막 관측월이 a이면 예측하는 날은 그 자료가 공개되는 a + 5월이고, 예측 대상 a + 6월은 그날 기준으로 다음 달이다. 주 결과는 이 6개월 앞 모델이다. 1 ~ 12개월 앞 모델은 <a href="../../../ko/posts/2026-11-drug-demand-forecast/index.html#forecast">수요 보고서의 예측 거리별 비교 그림</a>에만 쓴다.</li>
+<li><strong>“6개월 앞” = 다음 달</strong>: 마지막 관측월이 a이면 예측하는 날은 그 자료가 공개되는 a + 5월이고, 예측 대상 a + 6월은 그날 기준으로 다음 달이다. 주 결과는 이 6개월 앞 모델이다. 1 ~ 12개월 앞 모델은 <a href="../../../ko/posts/2026-11-drug-demand-forecast/index.html#q1">수요 보고서의 예측 거리별 비교 그림</a>에만 쓴다.</li>
 <li><strong>한 번에 6개월 앞</strong>: 1개월씩 이어 예측하지 않고, a에서 a의 6개월 뒤 달을 바로 예측한다.</li>
 <li><strong>예측 시점마다 새로 학습</strong>: 대상월 2023-01 ~ 2025-12(마지막 관측월 2022-07 ~ 2025-06)의 36개 예측 시점마다 모델을 처음부터 다시 학습한다. 예측 거리마다 모델도 따로다. 학습 행은 예측 시점마다 17,535 ~ 33,897행이다.</li>
 <li><strong>성분 501개를 한 모델로</strong>: 목표를 “전년 같은 달 대비 로그 증감” log y(t) − log y(t−12)로 두어 성분 사이 규모 차이를 없앴다. 예측값은 y(t−12) × exp(예측 증감)으로 되돌린다.</li>
@@ -777,7 +777,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <ul>
 <li><strong>학습 기간</strong>: 2018-01부터 마지막 관측월까지. 특징에 24개월 이력이 필요해, 6개월 앞 기준으로 학습 대상월은 2019-09부터다.</li>
 <li><strong>코로나 기간</strong>: 빼지 않았다. 대신 위의 코로나 표시 특징 두 개로 그 기간임을 알렸다.</li>
-<li><strong>코로나 표시가 덮지 못하는 구간</strong>: 표시는 2020-01 ~ 2021-12만 덮는다. 목표가 “12개월 전 대비 증감”이라 기준 해가 이례적이면 목표 자체가 커지는데, 처방이 덜 회복된 2022년을 기준 해로 삼는 2023년 예측은 표시되지 않는다. <a href="../../../ko/posts/2026-11-drug-demand-forecast/index.html#by-year">수요 보고서의 “기계학습이 앞선 차이는 어느 해에서 나왔나”</a>에서 이 구간을 따로 봤다.</li>
+<li><strong>코로나 표시가 덮지 못하는 구간</strong>: 표시는 2020-01 ~ 2021-12만 덮는다. 목표가 “12개월 전 대비 증감”이라 기준 해가 이례적이면 목표 자체가 커지는데, 처방이 덜 회복된 2022년을 기준 해로 삼는 2023년 예측은 표시되지 않는다. <a href="../../../ko/posts/2026-11-drug-demand-forecast/index.html#appendix-a">수요 보고서의 “기계학습이 앞선 차이는 어느 해에서 나왔나”</a>에서 이 구간을 따로 봤다.</li>
 <li><strong>LightGBM 설정(조정 없이 고정)</strong>: 손실 L1(절대오차), 트리 500개, 학습률 0.03, 잎 15개, 잎당 최소 표본 100, 깊이 제한 없음, 표본·특징 추출 없음, L2 규제 1, 학습 행 가중치 없음, 결정론 모드, 시드 20261114.</li>
 </ul>
 </section>
