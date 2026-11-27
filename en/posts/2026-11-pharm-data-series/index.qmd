@@ -13,7 +13,7 @@ This series uses two public datasets to answer questions that pharmacies and pha
 
 | Question | Data | Page |
 |---|---|---|
-| Will a price or reimbursement status change next month? How often do announced notes come true? | HIRA reimbursement list 2022-01 to 2025-12 | [How far can announced price cuts be trusted?](../2026-11-benefit-change-lead/index.qmd) |
+| Will a price or reimbursement status change next month? How often do announced notes come true? How far ahead can a cut be seen? | HIRA reimbursement list 2022-01 to 2025-12 | [How far can announced price cuts be trusted?](../2026-11-benefit-change-lead/index.qmd) |
 | Which way is demand for each ingredient heading? How well can six months ahead be forecast? | NHIS drug usage statistics 2018-01 to 2025-12 | [Ingredient prescription demand](../2026-11-drug-demand-forecast/index.qmd) |
 | How were those numbers checked? | Same data | [Demand forecasting technical note](../2026-11-drug-demand-tech-note/index.qmd) |
 
@@ -31,7 +31,7 @@ This series uses two public datasets to answer questions that pharmacies and pha
 
 ## Next analyses {#next}
 
-1. **Price cuts by type:** separate patent-expiry, price-volume, actual-transaction-price, and re-evaluation cuts, and measure each type's realization rate, lead time, size of cut, and market response. This becomes the next edition of the [reimbursement-change page](../2026-11-benefit-change-lead/index.qmd).
+1. **How far ahead can a cut be known (done, 2026-11-27):** cuts split into noted cuts, bulk cuts and other cuts without a note, with lead time and size of cut. Seeing a cut a month ahead in the list happened almost only in 2024; bulk cuts were known 4–13 days ahead through notices and association guidance. See the [reimbursement-change page, 2nd edition](../2026-11-benefit-change-lead/index.qmd#lead).
 2. **Generic-substitution list and prescription shifts:** check whether the average unit price per ingredient (claimed amount ÷ volume) falls after products enter or leave the substitution incentive list.
 3. **Patent expiry and generic entry:** compare ingredient market value and unit price before and after new same-ingredient products are listed.
 4. **Shortage and supply-interruption data:** match official shortage reports with sudden demand changes to explain large errors for respiratory drugs and antibiotics.
