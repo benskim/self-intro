@@ -2,6 +2,7 @@
 title: "Subjects"
 subtitle: "현장의 고충을 정의하고, 공개 데이터로 어디까지 다룰 수 있는지 평가한 조사 노트"
 listing:
+  id: listing-subjects
   contents:
     - "subjects/*.md"
   type: default
@@ -11,7 +12,7 @@ listing:
   sort: "date desc"
   sort-ui: false
   filter-ui: false
-page-layout: article
+page-layout: full
 title-block-banner: false
 code-tools: false
 ---
