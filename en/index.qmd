@@ -19,7 +19,6 @@ listing:
     contents:
       - posts/2026-11-benefit-change-lead/index.qmd
       - posts/2026-11-drug-demand-forecast/index.qmd
-      - posts/2026-11-winter-leading-signals/index.qmd
     sort: false
     type: default
     fields: [title, subtitle]
@@ -67,8 +66,8 @@ I research the problems patients and pharmacies face, and use public data to che
   <div>
     <p class="domain-name">Pharmacy &amp; Drug Market</p>
     <h3>Pharmacies and the drug market</h3>
-    <p>Timing and size of price cuts, prescription demand and winter demand signals, so that distributors and pharmacy support services can ease pharmacy burdens.</p>
-    <span class="status status-done">3 reports published</span>
+    <p>Timing and size of price cuts and ingredient-level prescription demand, so that distributors and pharmacy support services can ease pharmacy burdens.</p>
+    <span class="status status-done">2 reports published</span>
   </div>
   <div>
     <p class="domain-name">Patient &amp; Medication</p>
