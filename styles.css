@@ -373,8 +373,7 @@ main table thead th { border-bottom: 1.5px solid var(--ink) !important; }
 
 /* ===== Korean project listing: readable responsive cards ===== */
 #listing-projects .list,
-#listing-projects .list-grid,
-.quarto-listing-default .list {
+#listing-projects .list-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.25rem;
