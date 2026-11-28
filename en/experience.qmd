@@ -1,11 +1,14 @@
 ---
-title: "Experience"
+title: "About"
+subtitle: "Experience · Education · Skills · Contact"
 toc: true
 ---
 
-A career that runs from data analytics through data curation and MLOps to statistical predictive modeling, and on to leading teams.
+I'm Ben Kim. I research problems in health and medicine and test them with public data. My career runs from data analytics through data curation and MLOps to statistical predictive modeling and team leadership. Current work is in [Subjects](subjects.qmd) and [Reports](report.qmd); past job projects are in [Projects](projects.qmd).
 
-## Klleon R&D — Data Part Lead {#klleon}
+## Experience {#career}
+
+### Klleon R&D — Data Part Lead {#klleon}
 
 `Mar 2021 – Nov 2023` (2 yrs 9 mos)
 
@@ -25,7 +28,7 @@ A career that runs from data analytics through data curation and MLOps to statis
 
 → Details: [Gen-AI B2C App Service Growth Analytics](projects/project-a.qmd)
 
-## freewheelin — Data Analyst {#freewheelin}
+### freewheelin — Data Analyst {#freewheelin}
 
 `Apr 2019 – Jul 2020` (1 yr 4 mos) · Gwanak-gu, Seoul
 
@@ -41,7 +44,7 @@ A career that runs from data analytics through data curation and MLOps to statis
 * Reduced inefficient storage cost
 * Oversaw data quality
 
-## Epopcon — Data Scientist {#epopcon}
+### Epopcon — Data Scientist {#epopcon}
 
 `Dec 2017 – Mar 2019` (1 yr 4 mos)
 
@@ -71,11 +74,19 @@ A career that runs from data analytics through data curation and MLOps to statis
 * Using Machine Learning in Trading and Finance
 * Financial Engineering and Risk Management Part I
 
-## Core Skills
+## Skills
 
-Mathematics · Problem Management · Analytical Skills
+| Area | Tools and methods |
+|---|---|
+| Analysis and statistics | Statistics and time series, experiment design (A/B tests), pre-registration and backtesting, probability models (Poisson process) |
+| Machine learning | LightGBM, TensorFlow, data-centric AI (data curation) |
+| Data processing | Python, SQL, DuckDB, BigQuery |
+| Operations and MLOps | MLflow, Kubeflow, DVC |
+| Product analytics | Firebase, Appsflyer, Amplitude, Tableau |
+| Strengths | Mathematics · Problem management · Analytical skills |
 
-## Links
+## Contact {#contact}
 
+* [GitHub](https://github.com/benskim)
 * [LinkedIn](https://www.linkedin.com/in/benjamin-s-k)
 * [Medium Blog](https://medium.com/@benskim915)

@@ -1,0 +1,23 @@
+---
+title: "Subjects"
+subtitle: "Research notes that define field problems and rate how far public data can reach"
+listing:
+  contents:
+    - "../ko/subjects/*.md"
+  type: default
+  fields: [image, title, description]
+  image-height: 160px
+  sort: "date desc"
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: false
+code-tools: false
+---
+
+Subjects are research notes written before any analysis: **which problems are worth solving, and why**, and **how far public data can reach**. The notes are currently in **Korean** only. Analyses built on them are in [Reports](report.qmd).
+
+| Subject | In short | Status |
+|---|---|---|
+| Pharmacy pain points (Korean) | Pharmacy problems sorted by the path a drug takes through a pharmacy: procuring, holding stock, dispensing, earning | Research done · 3 reports published |
+| Patients taking medicines and supplements (Korean) | Problems of chronically ill patients who take medicines and health supplements together: choosing, checking against drugs, taking, monitoring; 20 public datasets rated | Research done · first analysis planned |

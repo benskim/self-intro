@@ -4,7 +4,7 @@ subtitle: "National ingredient-level prescriptions were forecast about 6–7% of
 description: "English summary. Pharmacies struggle to get drugs on time; public data can show only the demand side of that problem. NHIS usage statistics 2018–2025 were used to forecast 501 ingredients' prescriptions and to find where forecasts go most wrong."
 date: "2026-11-24"
 date-modified: "2026-11-27"
-categories: [Medicine data, Time-series forecasting, Public medicine data series]
+categories: ["Pharmacy: procuring", Medicine data, Time-series forecasting, Public medicine data series]
 image: images/class-error.svg
 author: "Ben Kim"
 toc: true

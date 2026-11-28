@@ -1,0 +1,27 @@
+---
+title: "Subjects"
+subtitle: "현장의 고충을 정의하고, 공개 데이터로 어디까지 다룰 수 있는지 평가한 조사 노트"
+listing:
+  contents:
+    - "subjects/*.md"
+  type: default
+  fields: [image, title, description, categories]
+  image-height: 160px
+  categories: true
+  sort: "date desc"
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: false
+code-tools: false
+---
+
+Subjects는 분석에 들어가기 전에 **어떤 문제를 왜 풀어야 하는지**, **공개 데이터로 어디까지 확인할 수 있는지**를 정리한 조사 노트입니다. 여기서 나온 질문을 분석한 결과는 [Reports](report.qmd)에 있습니다.
+
+```{=html}
+<p class="status-legend">
+  <span class="status status-next">시장조사 완료</span> 고충과 공개 데이터셋 조사를 마침
+  <span class="status status-done">분석 공개</span> 이 주제에서 나온 보고서가 있음
+  <span class="status status-plan">다음 분석 설계</span> 첫 분석 단계를 정함
+</p>
+```

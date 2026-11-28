@@ -1,11 +1,12 @@
 ---
-title: "Report"
+title: "Reports"
 listing:
   contents:
-    - "posts/*/index.qmd"
-    - "!posts/2025-11-kamelo-analysis/index.qmd"
-    - "!posts/2026-11-drug-demand-tech-note/index.qmd"
-  sort: "date desc"
+    - posts/2026-11-pharm-data-series/index.qmd
+    - posts/2026-11-benefit-change-lead/index.qmd
+    - posts/2026-11-drug-demand-forecast/index.qmd
+    - posts/2026-11-winter-leading-signals/index.qmd
+  sort: false
   type: default
   categories: true
   sort-ui: false
@@ -16,4 +17,4 @@ date-format: "YYYY년 M월 D일"
 code-tools: false
 ---
 
-공개 데이터로 의약품 시장과 건강 서비스를 들여다본 분석 보고서입니다. 각 보고서는 질문, 자료, 검증 방식, 한계를 함께 적습니다.
+[Subjects](subjects.qmd)에서 정의한 문제를 공개 데이터로 분석한 결과입니다. 숫자와 함께 그 숫자를 얼마나 믿을 수 있는지와 한계를 적습니다. 지금 공개된 보고서는 모두 [약국 고충 시장조사](subjects/drug_store.md)에서 나왔고, 첫 글인 시리즈 안내가 그 연결을 정리합니다. 분류(오른쪽)로 고충 단계별로 볼 수 있습니다. 검증 방식과 모델 명세는 각 보고서에서 [기술 노트](posts/2026-11-drug-demand-tech-note/index.qmd)로 이어집니다.

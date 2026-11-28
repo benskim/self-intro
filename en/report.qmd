@@ -1,11 +1,12 @@
 ---
-title: "Report"
+title: "Reports"
 listing:
   contents:
-    - "posts/*/index.qmd"
-    - "!posts/2025-11-kamelo-analysis/index.qmd"
-    - "!posts/2026-11-drug-demand-tech-note/index.qmd"
-  sort: "date desc"
+    - posts/2026-11-pharm-data-series/index.qmd
+    - posts/2026-11-benefit-change-lead/index.qmd
+    - posts/2026-11-drug-demand-forecast/index.qmd
+    - posts/2026-11-winter-leading-signals/index.qmd
+  sort: false
   type: default
   categories: true
   sort-ui: false
@@ -15,4 +16,4 @@ title-block-banner: false
 code-tools: false
 ---
 
-Analysis reports that look at the medicine market and health services through public data. Each report records its questions, data, checks, and limits.
+Analyses of problems defined in [Subjects](subjects.qmd), using public data, with how far the numbers can be trusted and their limits. All current reports come from the pharmacy pain-point research; the first item, the series overview, explains the links. Use the categories to browse by pharmacy stage. Verification and model specification are in the [technical note](posts/2026-11-drug-demand-tech-note/index.qmd), linked from each report.

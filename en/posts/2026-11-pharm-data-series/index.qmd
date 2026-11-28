@@ -3,7 +3,7 @@ title: "How far can public data ease pharmacies' problems?"
 subtitle: "Price cuts and prescription demand, seen through the reimbursement list and drug usage statistics"
 description: "Overview of a series that sorts pharmacy pain points by the path a drug takes through a pharmacy (procuring, holding stock, dispensing, earning) and analyses the parts that public medicine data can address."
 date: "2026-11-27"
-categories: [Medicine data, Public medicine data series]
+categories: [Series overview, Medicine data, Public medicine data series]
 author: "Ben Kim"
 toc: true
 code-tools: false
