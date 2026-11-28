@@ -3,9 +3,9 @@ title: "Projects"
 subtitle: "이전 직무에서 수행한 데이터 분석·머신러닝 프로젝트"
 listing:
   contents:
-    - projects/project-c.qmd
-    - projects/project-b.qmd
     - projects/project-a.qmd
+    - projects/project-b.qmd
+    - projects/project-c.qmd
   sort: false
   type: default
   fields: [image, title, description]
