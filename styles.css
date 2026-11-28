@@ -369,3 +369,69 @@ main table thead th { border-bottom: 1.5px solid var(--ink) !important; }
 /* 보고서 첫머리 개요 */
 .report-overview { margin: 0.8rem 0 1.8rem; border-color: var(--line); }
 .report-overview .leaflet-row { padding: 0.8rem 1.2rem; }
+
+
+/* ===== Korean project listing: readable responsive cards ===== */
+#listing-projects .list,
+#listing-projects .list-grid,
+.quarto-listing-default .list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+#listing-projects .quarto-post,
+#listing-projects .quarto-grid-item {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--paper);
+}
+#listing-projects .quarto-post img,
+#listing-projects .quarto-grid-item img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+#listing-projects .body,
+#listing-projects .card-body {
+  padding: 1rem 1.1rem;
+}
+#listing-projects .listing-title {
+  font-size: 1.05rem;
+  line-height: 1.4;
+  font-weight: 750;
+  margin: 0 0 0.45rem;
+}
+#listing-projects .listing-description,
+#listing-projects .listing-subtitle {
+  color: var(--ink-sub);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+#listing-projects .quarto-post:hover,
+#listing-projects .quarto-grid-item:hover {
+  border-color: var(--pine);
+}
+main img { max-width: 100%; height: auto; }
+main pre, main .mermaid { max-width: 100%; }
+main table { display: block; max-width: 100%; overflow-x: auto; }
+
+@media (max-width: 900px) {
+  #listing-projects .list,
+  #listing-projects .list-grid,
+  .quarto-listing-default .list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 560px) {
+  #listing-projects .list,
+  #listing-projects .list-grid,
+  .quarto-listing-default .list {
+    grid-template-columns: 1fr;
+  }
+  .hero-title { font-size: clamp(1.8rem, 8vw, 2.4rem); }
+  .kpi-grid { grid-template-columns: 1fr 1fr; }
+  .kpi .kpi-value { font-size: 1.25rem; }
+}
