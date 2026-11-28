@@ -1,54 +1,48 @@
 ---
-title: "영상 데이터 큐레이션 및 MLOps PoC"
-subtitle: "인프라 리소스 효율화 및 데이터 품질 강화를 구현한 비전 모델 ML Pipeline 엔지니어링"
+title: "Video Data Curation & MLOps"
+subtitle: "데이터 품질 개선을 모델 학습과 운영 파이프라인에 연결하다"
 image: images/project-b.png
 toc: true
 ---
 
-## [Overview]{.tag} DL모델 학습사이클 최적화 개요
-
-::: {.lead-line}
-FaceSwap 비전 모델학습을 위한 AI-driven 데이터 큐레이션(MLOps)
+::: {.kpi-grid}
+::: {.kpi}
+[학습에 쓰는 샘플 수]{.kpi-label} [약 20 ~ 30% 감소]{.kpi-value} [정제 기준으로 노이즈 데이터를 걸러 냄]{.kpi-desc}
+:::
+::: {.kpi}
+[GPU 학습 시간]{.kpi-label} [최대 40% 감소]{.kpi-value} [같은 원천 데이터·모델·하드웨어에서 정제 전후 비교]{.kpi-desc}
+:::
 :::
 
-* **Project Context:** 학습데이터 수집-가공–검수-학습-저장의 주기를 준자동화하여 학습데이터의 품질 자체를 향상시켜 모델성능을 향상시키고 동시에 모델연구부터 모델배포까지의 업무속도를 개선하는 프로젝트.
-* **Core Mission:** 원천 비정형 데이터셋의 메타데이터 탐색(EDA) 및 클렌징 기준 수립, 가공 속도 효율화, 검수 DL머신 생성, 파이프라인 연결, 리소스 제약 하에서 실험 재현성을 보장하는 MVP 수준의 MLOps 검증 환경 구축.
+## [My Role & Contribution]{.tag} 역할과 기여
 
-## [Problem Definition]{.tag} 인프라 비용 급증 및 모델 학습 비효율
+영상 데이터의 품질 문제를 정량적으로 분석하고, 데이터 정제 기준부터 딥러닝 기반 품질 평가, MLOps 환경 구축까지 수행했다.
 
-::: {.lead-line}
-무질서한 데이터 적재(Garbage In)로 인한 연산 한계 및 모델 성능 정체
-:::
+* SQL, Python, Librosa, OpenCV로 메타데이터 추출과 품질 분석
+* 데이터 품질 기준과 정제 규칙 설계
+* CNN·Vision Encoder 기반 데이터 품질 평가 모델 학습과 적용
+* 데이터 수집·전처리·품질 필터링 파이프라인 구현
+* MLflow 기반 실험 추적과 모델 관리 환경 구축
+* 데이터셋 버전 관리와 학습 설정 재현 환경 구성
 
-* **원천 데이터의 노이즈:** 크롤링 등을 통해 대량 적재된 영상 및 이미지 원천 데이터 세트의 극심한 노이즈(오디오 클리핑 현상, 저해상도 편향) 존재.
-* **리소스 및 비용 낭비:** 정제되지 않은 데이터를 무조건 모델에 학습시키면서 GPU 인프라 리소스 소모 급증 및 학습 비용 기하급수적 낭비.
-* **추론 정확도 한계:** 모델 파라미터를 고도화해도 정제되지 않은 데이터 편향으로 인해 평가 셋에서의 최종 추론 정확도 성능 정체.
+## [Data Quality Analysis]{.tag} 데이터 품질 분석
 
-## [Data Profile EDA]{.tag} 원천 비정형 데이터셋 메타데이터 심층 EDA
-
-::: {.lead-line}
-비정형 원천 데이터의 통계적 노이즈 감지 및 품질 기준 정립
-:::
-
-**Action (Exploratory Data Analysis):** SQL과 Python(Pandas, Librosa, OpenCV)을 결합하여 대량의 비정형 데이터 메타 속성 추출(MFCC, Object, Brightness, etc).
+영상·음성 데이터의 품질 편차가 학습 효율과 모델 성능에 주는 문제를 분석했다.
 
 ::: {.callout-card}
-💡 **주요 발견 사실**
+**주요 발견**
 
-* 기존 확보 영상의 20%가 `access denied` 상태로 공개 메타데이터와의 불일치를 탐지.
-* 아시아인 분포가 5% 미만으로 서구권 인종에 크게 편향되어 있음을 규명.
-* 수집 음성 파일 중 4%가 노이즈 레벨(SNR) 허용 한계를 초과하고, 비전 이미지의 15%에서 face detection failed 상태 및 특정 밝기 영역 편향 발견.
+* **접근·수집 품질:** 확보한 영상의 20%가 `access denied` 상태로, 공개 메타데이터와 맞지 않았다.
+* **대표성:** 아시아인 비중이 5% 미만으로 서구권에 치우쳐 있었다.
+* **음성 품질:** 음성 파일의 4%가 노이즈 허용 한계(SNR)를 넘었다.
+* **영상 품질:** 이미지의 15%에서 얼굴 검출에 실패했고, 특정 밝기 영역에 치우쳐 있었다.
 :::
 
-::: {.callout-card .accent}
-✅ **정제 가이드라인 설계:** 얼굴 인식에 영향을 주는 crop size, similarity 등의 모델 인자값 그리고 최소 SNR, 이미지 최소 해상도의 데이터 정화 임계값(Threshold) 수립.
-:::
+분석 결과로 얼굴 인식에 영향을 주는 crop 크기·유사도 기준과 최소 SNR, 최소 해상도 같은 정제 임계값을 정했다.
 
-## [Solution Architecture]{.tag} 데이터 큐레이션 MLOps 파이프라인 설계
+## [Data Curation & Model Implementation]{.tag} 데이터 정제와 모델 구현
 
-::: {.lead-line}
-End-to-End AI-driven Data Curation MLOps Pipeline (비전 및 데이터 가공 자동화 구조)
-:::
+규칙 기반 검증과 딥러닝 기반 품질 평가를 결합한 정제 구조를 구현했다.
 
 ```{mermaid}
 %%| fig-align: center
@@ -56,72 +50,48 @@ flowchart LR
   A["Raw Data"] --> B["Preprocessing"] --> C["Quality Filter"] --> D["Labeling"] --> E["Training"] --> F["Registry"]
 ```
 
-**단계별 구성 컴포넌트**
-
-1. **Raw:** 데이터 수집 단계에서 metadata extraction 및 schema normalization 수행 + 저장
-2. **Preprocessing:** 얼굴인식/특징점추출/얼굴정렬 수행 — On-demand 함수 적용: smoothing, re-alignment 등
-3. **Quality Filtering:** EDA 기반 threshold rule + ML 기반 anomaly detection 결합
-4. **Labeling / Training:** Labeling 단계는 semi-automated human-in-the-loop 구조로 효율성 확보. Training Pipeline은 versioned dataset 기반으로 재현 가능한 학습 환경 구성 및 registry 기반의 lineage tracking 구현
-
-## [Automated Data Quality Scoring]{.tag} DL 기반 데이터 검수 시스템
-
-::: {.lead-line}
-AI 기반 데이터 품질 자동 평가 및 필터링 시스템 (Core Component)
-:::
-
-**Core Integration** — Rule-based + Deep Learning hybrid 방식의 데이터 검수 엔진을 적용하여 단순 기준 필터링을 고도화했습니다.
-
-* Face detection confidence 검사
-* Image resolution 및 blur score 벡터 분석
-
-**3-Tier Triage System**
+* 영상·음성 메타데이터 자동 추출
+* 규칙 기반 품질 검증과 필터링
+* CNN·Vision Encoder 기반 품질 평가 모델 학습과 적용
+* 품질 기준에 따른 학습 데이터 선별(Accept / Review / Reject)
+* 정제 데이터와 모델 학습 결과 연결
 
 ::: {.triage}
 [Accept]{.accept} [Review]{.review} [Reject]{.reject}
 :::
 
-Lightweight CNN / Vision encoder 기반 Quality Scoring을 통해 Human labeling 비용을 줄이는 active filtering을 접목.
+## [Experimental Environment]{.tag} 실험 환경
 
-## [Infrastructure Optimization]{.tag} GPU 비용 절감 및 학습 효율화 전략
+같은 원천 데이터·모델·하드웨어에서 **정제 적용 여부만 바꿔** 성능과 학습 자원 소모를 비교했다.
 
-::: {.lead-line}
-데이터 정제 기반 인프라 비용 최적화 전략 (Impact)
-:::
+| 항목 | 구성 |
+|---|---|
+| 데이터셋 | VoxCeleb1, VoxCeleb2 |
+| 데이터 처리·얼굴 분석 | FFmpeg, RetinaFace |
+| 얼굴 표현 | ArcFace |
+| 하드웨어 | NVIDIA RTX 3090 |
 
-::: {.kpi-grid}
-::: {.kpi}
-[Epoch 샘플 최적화]{.kpi-label} [20 ~ 30% 감소]{.kpi-value} [불필요 노이즈 데이터 차단]{.kpi-desc}
-:::
-::: {.kpi .red}
-[GPU Training Time]{.kpi-label} [최대 40% 단축]{.kpi-value} [정제 데이터셋 기반 리소스 효율화]{.kpi-desc}
-:::
-::: {.kpi}
-[Early Rejection]{.kpi-label} [Allocation 최소화]{.kpi-value} [불필요한 Compute 자원 낭비 방지]{.kpi-desc}
-:::
-:::
+## [MLOps Implementation]{.tag} MLOps 구현
 
-결과적으로 동일 모델 성능 대비 **Infra cost curve flattening**(기하급수적 비용 평탄화) 효과 달성.
+MLflow 기반 실험 추적, 모델 관리, 데이터셋 버전 관리가 되는 MLOps PoC를 만들었다.
 
-## [MLOps MVP System]{.tag} 재현 가능한 실험 환경 및 모델 운영 구조
+* 실험 설정과 학습 결과 추적
+* 모델 버전 관리
+* 데이터셋 버전 관리
+* 학습 환경과 설정 재현(seed, 하이퍼파라미터, 데이터셋 버전 고정)
+* 데이터 처리와 모델 학습 단계 연결
 
-::: {.lead-line}
-실험 재현성과 모델 운영을 보장하는 MLOps 환경 (MVP)
-:::
+## [Measured Results]{.tag} 측정 결과
 
-* **실험 유닛 완벽 관리:** Dataset versioning을 통한 실험 단위 재현성 보장(data hash tracking) 및 MLflow 기반의 experiment tracking 및 model registry를 정교하게 연동하였습니다.
-* **운영 파이프라인 정형화:** Training configuration(seed, hyperparameter, dataset version) 완전 고정 및 pipeline orchestration에 입각하여 연구 자원과 서비스 운영 자원을 명확히 격리했습니다.
+같은 원천 데이터·모델·하드웨어에서 정제 적용 전후를 비교했다.
 
-## [Expected Outcome]{.tag} 데이터 품질 개선 기반 모델 성능 향상 효과
+* 학습에 쓰는 샘플 수: **약 20 ~ 30% 감소**
+* GPU 학습 시간: **최대 40% 감소**
 
-::: {.lead-line}
-데이터 중심 MLOps 전환을 통한 성능 및 효율 개선 (Outcome)
-:::
+함께 비교한 항목: 정제 전후의 모델 성능, 학습 안정성과 과적합 지표.
 
-* **Accuracy Uplift:** 동일 모델 구조 대비 정제 데이터 적용 시 정확도 가시적 향상
-* **Convergence 안정성:** noisy dataset 배제로 학습 안정성 향상 및 오버피팅 감소
-* **상관관계 확보:** 데이터 품질 지표와 실제 성능 간의 정량적 인과관계 입증
-* **리드타임 대폭 단축:** 연구-개발-배포 단계의 전체 사이클 리드타임 감축 실현
+## [Limitations & Expected Impact]{.tag} 한계와 기대 효과
 
-::: {.callout-card .final}
-"Model-centric에서 Data-centric AI pipeline으로의 완벽한 패러다임 전환 완료"
-:::
+정제 적용 전후 비교는 한 가지 설정(위 데이터셋·모델·하드웨어)에서 한 것이다. 반복 실험이나 다른 모델·데이터에서도 같은 효과가 나는지는 확인하지 않았고, 데이터 품질 지표와 모델 성능의 인과관계를 주장하지 않는다.
+
+데이터 품질 관리와 실험 추적을 모델 개발 과정에 넣어, 앞으로 데이터 관리 효율과 모델 개발 생산성을 높일 기반을 만들었다.

@@ -55,9 +55,9 @@
 
 | 항목 | 핵심 내용 |
 | --- | --- |
-| [탄력적 수집 관리를 위한 스케줄링 포아송 머신](ko/projects/project-c.qmd) | 포아송 과정과 ML을 결합한 동적 크롤링 주기 최적화 |
-| [영상 데이터 큐레이션 및 MLOps PoC](ko/projects/project-b.qmd) | 비정형 데이터 품질 개선, DL 검수 모델, 재현 가능한 학습 파이프라인 |
-| [Gen-AI B2C 앱 서비스 그로스 분석](ko/projects/project-a.qmd) | 로그 기반 퍼널 진단, North Star Metric 설계, A/B 테스트 |
+| [Poisson-based Adaptive Crawling Scheduler](ko/projects/project-c.qmd) | 포아송·ML 결합 적응형 크롤링 스케줄러, 2018.12.01부터 운영 크롤러에 적용 |
+| [Video Data Curation & MLOps](ko/projects/project-b.qmd) | 영상 데이터 품질 분석·정제, 같은 조건 비교에서 샘플 수 약 20~30%·GPU 학습 시간 최대 40% 감소 |
+| [Gen-AI B2C Growth Analytics](ko/projects/project-a.qmd) | 퍼널 분석과 A/B 테스트, 콘텐츠 생성 전환율 14.2% → 19.8% (p = 0.012) |
 
 ## 시장조사 (Subjects)
 
