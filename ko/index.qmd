@@ -10,8 +10,7 @@ listing:
       - "subjects/*.md"
     sort: "date desc"
     type: default
-    fields: [image, title, description, categories]
-    image-height: 160px
+    fields: [title, description, categories]
     max-items: 2
     sort-ui: false
     filter-ui: false
