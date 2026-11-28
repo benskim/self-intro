@@ -8,23 +8,7 @@
     ]
   },
   {
-    "listing": "/en/report.html",
-    "items": [
-      "/en/posts/2026-11-winter-leading-signals/index.html",
-      "/en/posts/2026-11-benefit-change-lead/index.html",
-      "/en/posts/2026-11-pharm-data-series/index.html",
-      "/en/posts/2026-11-drug-demand-forecast/index.html"
-    ]
-  },
-  {
-    "listing": "/en/index.html",
-    "items": [
-      "/ko/subjects/polypharm.html",
-      "/ko/subjects/drug_store.html"
-    ]
-  },
-  {
-    "listing": "/index.html",
+    "listing": "/ko/subjects.html",
     "items": [
       "/ko/subjects/polypharm.html",
       "/ko/subjects/drug_store.html"
@@ -39,19 +23,48 @@
     ]
   },
   {
-    "listing": "/ko/index.html",
+    "listing": "/en/subjects.html",
     "items": [
       "/ko/subjects/polypharm.html",
       "/ko/subjects/drug_store.html"
     ]
   },
   {
+    "listing": "/en/index.html",
+    "items": [
+      "/ko/subjects/polypharm.html",
+      "/ko/subjects/drug_store.html",
+      "/en/posts/2026-11-benefit-change-lead/index.html",
+      "/en/posts/2026-11-drug-demand-forecast/index.html",
+      "/en/posts/2026-11-winter-leading-signals/index.html"
+    ]
+  },
+  {
+    "listing": "/en/report.html",
+    "items": [
+      "/en/posts/2026-11-pharm-data-series/index.html",
+      "/en/posts/2026-11-benefit-change-lead/index.html",
+      "/en/posts/2026-11-drug-demand-forecast/index.html",
+      "/en/posts/2026-11-winter-leading-signals/index.html"
+    ]
+  },
+  {
+    "listing": "/ko/index.html",
+    "items": [
+      "/ko/subjects/polypharm.html",
+      "/ko/subjects/drug_store.html",
+      "/ko/posts/2026-11-benefit-change-lead/index.html",
+      "/ko/posts/2026-11-drug-demand-forecast/index.html",
+      "/ko/posts/2026-11-winter-leading-signals/index.html"
+    ]
+  },
+  {
     "listing": "/ko/report.html",
     "items": [
-      "/ko/posts/2026-11-winter-leading-signals/index.html",
-      "/ko/posts/2026-11-benefit-change-lead/index.html",
       "/ko/posts/2026-11-pharm-data-series/index.html",
-      "/ko/posts/2026-11-drug-demand-forecast/index.html"
+      "/ko/posts/2026-11-benefit-change-lead/index.html",
+      "/ko/posts/2026-11-drug-demand-forecast/index.html",
+      "/ko/posts/2026-11-winter-leading-signals/index.html"
     ]
   }
 ]

@@ -100,7 +100,11 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 <script>
-/* Keep navigation and language switching at the repository root. */
+/* Keep navigation and language switching at the repository root.
+   - 왼쪽 메뉴는 지금 언어(ko/en)의 같은 페이지로 연결한다.
+   - KO/EN 전환은 같은 상대 경로의 반대 언어 페이지로 보낸다.
+     대응 페이지가 없는 경로(NO_COUNTERPART)는 그 언어의 목록 페이지로 보낸다.
+     그 밖의 경우에도 대상 페이지가 없으면(HEAD 404) 그 언어의 홈으로 보낸다. */
 document.addEventListener("DOMContentLoaded", function () {
   try {
     var meta = document.querySelector('meta[name="quarto:offset"]');
@@ -110,25 +114,45 @@ document.addEventListener("DOMContentLoaded", function () {
     if (rel === "" || rel.slice(-1) === "/") rel += "index.html";
     var isKo = rel.indexOf("ko/") === 0;
     var isEn = rel.indexOf("en/") === 0;
-    var page = isKo ? rel.slice(3) : isEn ? rel.slice(3) : rel;
-    var ko = "ko/" + page;
-    var en = "en/" + page;
+    var page = (isKo || isEn) ? rel.slice(3) : rel;
+    if (!isKo && !isEn) page = "index.html";
+
+    // 한쪽 언어에만 있는 경로 접두어 → 반대 언어에서 보낼 페이지
+    var NO_COUNTERPART = {
+      en: { "subjects/": "subjects.html" },
+      ko: {}
+    };
+    function target(lang) {
+      var map = NO_COUNTERPART[lang];
+      for (var prefix in map) {
+        if (Object.prototype.hasOwnProperty.call(map, prefix) && page.indexOf(prefix) === 0) {
+          return root + lang + "/" + map[prefix];
+        }
+      }
+      return root + lang + "/" + page;
+    }
+
     var leftNav = {
-      "About": "index",
-      "Report": "report",
+      "Home": "index",
+      "Subjects": "subjects",
+      "Reports": "report",
       "Projects": "projects",
-      "Experience": "experience"
+      "About": "experience"
     };
     document.querySelectorAll(".navbar a[href]").forEach(function (a) {
       var label = a.textContent.trim();
-      if (label === "KO") {
-        a.href = root + ko + location.hash;
-        if (isKo) a.classList.add("active");
-        return;
-      }
-      if (label === "EN") {
-        a.href = root + en + location.hash;
-        if (isEn) a.classList.add("active");
+      if (label === "KO" || label === "EN") {
+        var lang = label === "KO" ? "ko" : "en";
+        a.href = target(lang) + location.hash;
+        if ((lang === "ko" && isKo) || (lang === "en" && isEn)) a.classList.add("active");
+        a.addEventListener("click", function (ev) {
+          if (!window.fetch) return;
+          ev.preventDefault();
+          var href = a.href;
+          fetch(href, { method: "HEAD" }).then(function (r) {
+            location.href = r.ok ? href : root + lang + "/index.html";
+          }).catch(function () { location.href = href; });
+        });
         return;
       }
       if (Object.prototype.hasOwnProperty.call(leftNav, label)) {
@@ -189,12 +213,16 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
-<span class="menu-text">About</span></a>
+    <a class="nav-link" href="../ko/index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../ko/subjects.html"> 
+<span class="menu-text">Subjects</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../ko/report.html"> 
-<span class="menu-text">Report</span></a>
+<span class="menu-text">Reports</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../ko/projects.html"> 
@@ -202,7 +230,7 @@ window.Quarto = {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../ko/experience.html"> 
-<span class="menu-text">Experience</span></a>
+<span class="menu-text">About</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -262,7 +290,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1795835201182" data-listing-reading-time-sort="5" data-listing-word-count-sort="886">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1795848969048" data-listing-reading-time-sort="5" data-listing-word-count-sort="886">
 <div class="thumbnail"><a href="../en/projects/project-c.html" class="no-external-icon">
 
 <img loading="lazy" src="../ko/projects/images/project-c.png" class="thumbnail-image">
@@ -280,7 +308,7 @@ window.Quarto = {
 
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1795835201182" data-listing-reading-time-sort="4" data-listing-word-count-sort="650">
+<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1795848969048" data-listing-reading-time-sort="4" data-listing-word-count-sort="650">
 <div class="thumbnail"><a href="../en/projects/project-b.html" class="no-external-icon">
 
 <img loading="lazy" src="../ko/projects/images/project-b.png" class="thumbnail-image">
@@ -298,7 +326,7 @@ window.Quarto = {
 
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1795835201182" data-listing-reading-time-sort="6" data-listing-word-count-sort="1010">
+<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1795848969048" data-listing-reading-time-sort="6" data-listing-word-count-sort="1010">
 <div class="thumbnail"><a href="../en/projects/project-a.html" class="no-external-icon">
 
 <img loading="lazy" src="../ko/projects/images/project-a.png" class="thumbnail-image">

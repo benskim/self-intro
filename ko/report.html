@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Report – Ben’s Notes</title>
+<title>Reports – Ben’s Notes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -100,7 +100,11 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 <script>
-/* Keep navigation and language switching at the repository root. */
+/* Keep navigation and language switching at the repository root.
+   - 왼쪽 메뉴는 지금 언어(ko/en)의 같은 페이지로 연결한다.
+   - KO/EN 전환은 같은 상대 경로의 반대 언어 페이지로 보낸다.
+     대응 페이지가 없는 경로(NO_COUNTERPART)는 그 언어의 목록 페이지로 보낸다.
+     그 밖의 경우에도 대상 페이지가 없으면(HEAD 404) 그 언어의 홈으로 보낸다. */
 document.addEventListener("DOMContentLoaded", function () {
   try {
     var meta = document.querySelector('meta[name="quarto:offset"]');
@@ -110,25 +114,45 @@ document.addEventListener("DOMContentLoaded", function () {
     if (rel === "" || rel.slice(-1) === "/") rel += "index.html";
     var isKo = rel.indexOf("ko/") === 0;
     var isEn = rel.indexOf("en/") === 0;
-    var page = isKo ? rel.slice(3) : isEn ? rel.slice(3) : rel;
-    var ko = "ko/" + page;
-    var en = "en/" + page;
+    var page = (isKo || isEn) ? rel.slice(3) : rel;
+    if (!isKo && !isEn) page = "index.html";
+
+    // 한쪽 언어에만 있는 경로 접두어 → 반대 언어에서 보낼 페이지
+    var NO_COUNTERPART = {
+      en: { "subjects/": "subjects.html" },
+      ko: {}
+    };
+    function target(lang) {
+      var map = NO_COUNTERPART[lang];
+      for (var prefix in map) {
+        if (Object.prototype.hasOwnProperty.call(map, prefix) && page.indexOf(prefix) === 0) {
+          return root + lang + "/" + map[prefix];
+        }
+      }
+      return root + lang + "/" + page;
+    }
+
     var leftNav = {
-      "About": "index",
-      "Report": "report",
+      "Home": "index",
+      "Subjects": "subjects",
+      "Reports": "report",
       "Projects": "projects",
-      "Experience": "experience"
+      "About": "experience"
     };
     document.querySelectorAll(".navbar a[href]").forEach(function (a) {
       var label = a.textContent.trim();
-      if (label === "KO") {
-        a.href = root + ko + location.hash;
-        if (isKo) a.classList.add("active");
-        return;
-      }
-      if (label === "EN") {
-        a.href = root + en + location.hash;
-        if (isEn) a.classList.add("active");
+      if (label === "KO" || label === "EN") {
+        var lang = label === "KO" ? "ko" : "en";
+        a.href = target(lang) + location.hash;
+        if ((lang === "ko" && isKo) || (lang === "en" && isEn)) a.classList.add("active");
+        a.addEventListener("click", function (ev) {
+          if (!window.fetch) return;
+          ev.preventDefault();
+          var href = a.href;
+          fetch(href, { method: "HEAD" }).then(function (r) {
+            location.href = r.ok ? href : root + lang + "/index.html";
+          }).catch(function () { location.href = href; });
+        });
         return;
       }
       if (Object.prototype.hasOwnProperty.call(leftNav, label)) {
@@ -189,12 +213,16 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
-<span class="menu-text">About</span></a>
+    <a class="nav-link" href="../ko/index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../ko/subjects.html"> 
+<span class="menu-text">Subjects</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="../ko/report.html" aria-current="page"> 
-<span class="menu-text">Report</span></a>
+<span class="menu-text">Reports</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../ko/projects.html"> 
@@ -202,7 +230,7 @@ window.Quarto = {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../ko/experience.html"> 
-<span class="menu-text">Experience</span></a>
+<span class="menu-text">About</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -233,13 +261,13 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">분류</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">전체 <span class="quarto-category-count">(4)</span></div><div class="category" data-category="JUVBJUIzJUI1JUVBJUIwJTlDJTIwJUVDJTlEJTk4JUVDJTk1JUJEJUVEJTkyJTg4JTIwJUVCJThEJUIwJUVDJTlEJUI0JUVEJTg0JUIwJTIwJUVDJThCJTlDJUVCJUE2JUFDJUVDJUE2JTg4">공개 의약품 데이터 시리즈 <span class="quarto-category-count">(4)</span></div><div class="category" data-category="JUVBJUI4JTg5JUVDJTk3JUFDJUVCJUFBJUE5JUVCJUExJTlE">급여목록 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVDJThCJTlDJUVBJUIzJTg0JUVDJTk3JUI0JTIwJUVDJTk4JTg4JUVDJUI4JUEx">시계열 예측 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVDJTlEJTk4JUVDJTk1JUJEJUVEJTkyJTg4JTIwJUVCJThEJUIwJUVDJTlEJUI0JUVEJTg0JUIw">의약품 데이터 <span class="quarto-category-count">(4)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">분류</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">전체 <span class="quarto-category-count">(4)</span></div><div class="category" data-category="JUVBJUIzJUI1JUVBJUIwJTlDJTIwJUVDJTlEJTk4JUVDJTk1JUJEJUVEJTkyJTg4JTIwJUVCJThEJUIwJUVDJTlEJUI0JUVEJTg0JUIwJTIwJUVDJThCJTlDJUVCJUE2JUFDJUVDJUE2JTg4">공개 의약품 데이터 시리즈 <span class="quarto-category-count">(4)</span></div><div class="category" data-category="JUVBJUI4JTg5JUVDJTk3JUFDJUVCJUFBJUE5JUVCJUExJTlE">급여목록 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVDJThCJTlDJUVBJUIzJTg0JUVDJTk3JUI0JTIwJUVDJTk4JTg4JUVDJUI4JUEx">시계열 예측 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVDJThCJTlDJUVCJUE2JUFDJUVDJUE2JTg4JTIwJUVDJTk1JTg4JUVCJTgyJUI0">시리즈 안내 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVDJTk1JUJEJUVBJUI1JUFEJTNBJTIwJUVCJTkzJUE0JUVDJTk3JUFDJUVDJTk4JUE0JUVBJUI4JUIw">약국: 들여오기 <span class="quarto-category-count">(2)</span></div><div class="category" data-category="JUVDJTk1JUJEJUVBJUI1JUFEJTNBJTIwJUVDJThDJTkzJUVDJTk1JTg0JUVCJTkxJTkwJUVBJUI4JUIw">약국: 쌓아두기 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JUVDJTlEJTk4JUVDJTk1JUJEJUVEJTkyJTg4JTIwJUVCJThEJUIwJUVDJTlEJUI0JUVEJTg0JUIw">의약품 데이터 <span class="quarto-category-count">(4)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content" tabindex="-1">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Report</h1>
+<h1 class="title">Reports</h1>
 </div>
 
 
@@ -256,27 +284,29 @@ window.Quarto = {
 </header>
 
 
-<p>공개 데이터로 의약품 시장과 건강 서비스를 들여다본 분석 보고서입니다. 각 보고서는 질문, 자료, 검증 방식, 한계를 함께 적습니다.</p>
+<p><a href="../ko/subjects.html">Subjects</a>에서 정의한 문제를 공개 데이터로 분석한 결과입니다. 숫자와 함께 그 숫자를 얼마나 믿을 수 있는지와 한계를 적습니다. 지금 공개된 보고서는 모두 <a href="../ko/subjects/drug_store.html">약국 고충 시장조사</a>에서 나왔고, 첫 글인 시리즈 안내가 그 연결을 정리합니다. 분류(오른쪽)로 고충 단계별로 볼 수 있습니다. 검증 방식과 모델 명세는 각 보고서에서 <a href="../ko/posts/2026-11-drug-demand-tech-note/index.html">기술 노트</a>로 이어집니다.</p>
 
 
 
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="JUVDJTlEJTk4JUVDJTk1JUJEJUVEJTkyJTg4JTIwJUVCJThEJUIwJUVDJTlEJUI0JUVEJTg0JUIwJTJDJUVBJUIzJUI1JUVBJUIwJTlDJTIwJUVDJTlEJTk4JUVDJTk1JUJEJUVEJTkyJTg4JTIwJUVCJThEJUIwJUVDJTlEJUI0JUVEJTg0JUIwJTIwJUVDJThCJTlDJUVCJUE2JUFDJUVDJUE2JTg4" data-listing-date-sort="1795824000000" data-listing-file-modified-sort="1795835201185" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1227">
-<div class="thumbnail"><a href="../ko/posts/2026-11-winter-leading-signals/index.html" class="no-external-icon" aria-hidden="true" tabindex="-1">
+<div class="quarto-post image-right" data-index="0" data-categories="JUVDJThCJTlDJUVCJUE2JUFDJUVDJUE2JTg4JTIwJUVDJTk1JTg4JUVCJTgyJUI0JTJDJUVDJTlEJTk4JUVDJTk1JUJEJUVEJTkyJTg4JTIwJUVCJThEJUIwJUVDJTlEJUI0JUVEJTg0JUIwJTJDJUVBJUIzJUI1JUVBJUIwJTlDJTIwJUVDJTlEJTk4JUVDJTk1JUJEJUVEJTkyJTg4JTIwJUVCJThEJUIwJUVDJTlEJUI0JUVEJTg0JUIwJTIwJUVDJThCJTlDJUVCJUE2JUFDJUVDJUE2JTg4" data-listing-date-sort="1795737600000" data-listing-file-modified-sort="1795848969050" data-listing-date-modified-sort="1795737600000" data-listing-reading-time-sort="7" data-listing-word-count-sort="1259">
+<div class="thumbnail"><a href="../ko/posts/2026-11-pharm-data-series/index.html" class="no-external-icon" aria-hidden="true" tabindex="-1">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../ko/posts/2026-11-winter-leading-signals/index.html" class="no-external-icon">겨울 처방 증가를 몇 달 앞서 알려 주는 신호는 찾지 못했다</a>
+<a href="../ko/posts/2026-11-pharm-data-series/index.html" class="no-external-icon">약국의 고충, 공개 데이터로 어디까지 덜 수 있나</a>
 </h3>
 <div class="listing-subtitle">
-<a href="../ko/posts/2026-11-winter-leading-signals/index.html" class="no-external-icon">검색 지수와 소아청소년 진료 흐름에서 만든 후보 39만 개 중 남은 것은 ’그 달 검색의 증가 속도’뿐이었다</a>
+<a href="../ko/posts/2026-11-pharm-data-series/index.html" class="no-external-icon">급여목록과 의약품 사용통계로 본 약가인하와 처방 수요</a>
 </div>
 <div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJThCJTlDJUVCJUE2JUFDJUVDJUE2JTg4JTIwJUVDJTk1JTg4JUVCJTgyJUI0'); return false;">시리즈 안내</div>
 
 <div class="listing-category" onclick="window.quartoListingCategory('JUVDJTlEJTk4JUVDJTk1JUJEJUVEJTkyJTg4JTIwJUVCJThEJUIwJUVDJTlEJUI0JUVEJTg0JUIw'); return false;">의약품 데이터</div>
 
@@ -284,15 +314,15 @@ window.Quarto = {
 
 </div>
 <div class="listing-description">
-<a href="../ko/posts/2026-11-winter-leading-signals/index.html" class="no-external-icon">
-<p>약국이 겨울마다 감기약·항생제를 구하지 못하는 고충(들여오기)에서 출발해, 처방 증가보다 1~6개월 앞서 움직이는 공개 신호가 있는지 찾았습니다. 앞서는 신호는 확인되지 않았고, 그 달 검색의 증가 속도가 그 달 처방 증가와 함께 움직였습니다.</p>
+<a href="../ko/posts/2026-11-pharm-data-series/index.html" class="no-external-icon">
+<p>약국이 겪는 고충을 약이 약국을 지나가는 순서(들여오기·쌓아두기·내주기·벌기)로 나누고, 공개 의약품 데이터로 다룰 수 있는 부분을 차례로 분석하는 시리즈의 안내 글입니다.</p>
 </a>
 </div>
 </div>
 <div class="metadata">
-<a href="../ko/posts/2026-11-winter-leading-signals/index.html" class="no-external-icon">
+<a href="../ko/posts/2026-11-pharm-data-series/index.html" class="no-external-icon">
 <div class="listing-date">
-2026년 11월 28일
+2026년 11월 27일
 </div>
 <div class="listing-author">
 Ben Kim
@@ -300,7 +330,7 @@ Ben Kim
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="JUVDJTlEJTk4JUVDJTk1JUJEJUVEJTkyJTg4JTIwJUVCJThEJUIwJUVDJTlEJUI0JUVEJTg0JUIwJTJDJUVBJUI4JTg5JUVDJTk3JUFDJUVCJUFBJUE5JUVCJUExJTlEJTJDJUVBJUIzJUI1JUVBJUIwJTlDJTIwJUVDJTlEJTk4JUVDJTk1JUJEJUVEJTkyJTg4JTIwJUVCJThEJUIwJUVDJTlEJUI0JUVEJTg0JUIwJTIwJUVDJThCJTlDJUVCJUE2JUFDJUVDJUE2JTg4" data-listing-date-sort="1795737600000" data-listing-file-modified-sort="1795835201184" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="15" data-listing-word-count-sort="2940">
+<div class="quarto-post image-right" data-index="1" data-categories="JUVDJTk1JUJEJUVBJUI1JUFEJTNBJTIwJUVDJThDJTkzJUVDJTk1JTg0JUVCJTkxJTkwJUVBJUI4JUIwJTJDJUVDJTlEJTk4JUVDJTk1JUJEJUVEJTkyJTg4JTIwJUVCJThEJUIwJUVDJTlEJUI0JUVEJTg0JUIwJTJDJUVBJUI4JTg5JUVDJTk3JUFDJUVCJUFBJUE5JUVCJUExJTlEJTJDJUVBJUIzJUI1JUVBJUIwJTlDJTIwJUVDJTlEJTk4JUVDJTk1JUJEJUVEJTkyJTg4JTIwJUVCJThEJUIwJUVDJTlEJUI0JUVEJTg0JUIwJTIwJUVDJThCJTlDJUVCJUE2JUFDJUVDJUE2JTg4" data-listing-date-sort="1795737600000" data-listing-file-modified-sort="1795848969050" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="15" data-listing-word-count-sort="2940">
 <div class="thumbnail"><a href="../ko/posts/2026-11-benefit-change-lead/index.html" class="no-external-icon">
 
 <img loading="lazy" src="../ko/posts/2026-11-benefit-change-lead/images/lead-by-year.svg" class="thumbnail-image">
@@ -314,6 +344,8 @@ Ben Kim
 <a href="../ko/posts/2026-11-benefit-change-lead/index.html" class="no-external-icon">급여목록만 보는 약국은 대부분 시행 달에 알고, 2026년 1월 인하의 5분의 1은 1원이었다</a>
 </div>
 <div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJTk1JUJEJUVBJUI1JUFEJTNBJTIwJUVDJThDJTkzJUVDJTk1JTg0JUVCJTkxJTkwJUVBJUI4JUIw'); return false;">약국: 쌓아두기</div>
 
 <div class="listing-category" onclick="window.quartoListingCategory('JUVDJTlEJTk4JUVDJTk1JUJEJUVEJTkyJTg4JTIwJUVCJThEJUIwJUVDJTlEJUI0JUVEJTg0JUIw'); return false;">의약품 데이터</div>
 
@@ -339,44 +371,7 @@ Ben Kim
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="JUVDJTlEJTk4JUVDJTk1JUJEJUVEJTkyJTg4JTIwJUVCJThEJUIwJUVDJTlEJUI0JUVEJTg0JUIwJTJDJUVBJUIzJUI1JUVBJUIwJTlDJTIwJUVDJTlEJTk4JUVDJTk1JUJEJUVEJTkyJTg4JTIwJUVCJThEJUIwJUVDJTlEJUI0JUVEJTg0JUIwJTIwJUVDJThCJTlDJUVCJUE2JUFDJUVDJUE2JTg4" data-listing-date-sort="1795737600000" data-listing-file-modified-sort="1795835201185" data-listing-date-modified-sort="1795737600000" data-listing-reading-time-sort="7" data-listing-word-count-sort="1259">
-<div class="thumbnail"><a href="../ko/posts/2026-11-pharm-data-series/index.html" class="no-external-icon" aria-hidden="true" tabindex="-1">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../ko/posts/2026-11-pharm-data-series/index.html" class="no-external-icon">약국의 고충, 공개 데이터로 어디까지 덜 수 있나</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../ko/posts/2026-11-pharm-data-series/index.html" class="no-external-icon">급여목록과 의약품 사용통계로 본 약가인하와 처방 수요</a>
-</div>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('JUVDJTlEJTk4JUVDJTk1JUJEJUVEJTkyJTg4JTIwJUVCJThEJUIwJUVDJTlEJUI0JUVEJTg0JUIw'); return false;">의약품 데이터</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('JUVBJUIzJUI1JUVBJUIwJTlDJTIwJUVDJTlEJTk4JUVDJTk1JUJEJUVEJTkyJTg4JTIwJUVCJThEJUIwJUVDJTlEJUI0JUVEJTg0JUIwJTIwJUVDJThCJTlDJUVCJUE2JUFDJUVDJUE2JTg4'); return false;">공개 의약품 데이터 시리즈</div>
-
-</div>
-<div class="listing-description">
-<a href="../ko/posts/2026-11-pharm-data-series/index.html" class="no-external-icon">
-<p>약국이 겪는 고충을 약이 약국을 지나가는 순서(들여오기·쌓아두기·내주기·벌기)로 나누고, 공개 의약품 데이터로 다룰 수 있는 부분을 차례로 분석하는 시리즈의 안내 글입니다.</p>
-</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../ko/posts/2026-11-pharm-data-series/index.html" class="no-external-icon">
-<div class="listing-date">
-2026년 11월 27일
-</div>
-<div class="listing-author">
-Ben Kim
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="JUVDJTlEJTk4JUVDJTk1JUJEJUVEJTkyJTg4JTIwJUVCJThEJUIwJUVDJTlEJUI0JUVEJTg0JUIwJTJDJUVDJThCJTlDJUVBJUIzJTg0JUVDJTk3JUI0JTIwJUVDJTk4JTg4JUVDJUI4JUExJTJDJUVBJUIzJUI1JUVBJUIwJTlDJTIwJUVDJTlEJTk4JUVDJTk1JUJEJUVEJTkyJTg4JTIwJUVCJThEJUIwJUVDJTlEJUI0JUVEJTg0JUIwJTIwJUVDJThCJTlDJUVCJUE2JUFDJUVDJUE2JTg4" data-listing-date-sort="1795478400000" data-listing-file-modified-sort="1795835201184" data-listing-date-modified-sort="1795737600000" data-listing-reading-time-sort="13" data-listing-word-count-sort="2465">
+<div class="quarto-post image-right" data-index="2" data-categories="JUVDJTk1JUJEJUVBJUI1JUFEJTNBJTIwJUVCJTkzJUE0JUVDJTk3JUFDJUVDJTk4JUE0JUVBJUI4JUIwJTJDJUVDJTlEJTk4JUVDJTk1JUJEJUVEJTkyJTg4JTIwJUVCJThEJUIwJUVDJTlEJUI0JUVEJTg0JUIwJTJDJUVDJThCJTlDJUVBJUIzJTg0JUVDJTk3JUI0JTIwJUVDJTk4JTg4JUVDJUI4JUExJTJDJUVBJUIzJUI1JUVBJUIwJTlDJTIwJUVDJTlEJTk4JUVDJTk1JUJEJUVEJTkyJTg4JTIwJUVCJThEJUIwJUVDJTlEJUI0JUVEJTg0JUIwJTIwJUVDJThCJTlDJUVCJUE2JUFDJUVDJUE2JTg4" data-listing-date-sort="1795478400000" data-listing-file-modified-sort="1795848969050" data-listing-date-modified-sort="1795737600000" data-listing-reading-time-sort="13" data-listing-word-count-sort="2465">
 <div class="thumbnail"><a href="../ko/posts/2026-11-drug-demand-forecast/index.html" class="no-external-icon">
 
 <img loading="lazy" src="../ko/posts/2026-11-drug-demand-forecast/images/class-error.svg" class="thumbnail-image">
@@ -390,6 +385,8 @@ Ben Kim
 <a href="../ko/posts/2026-11-drug-demand-forecast/index.html" class="no-external-icon">전국 성분 처방량은 다음 달 기준 평균 6~7% 빗나갔고, 단순한 통계 모형으로 충분했다</a>
 </div>
 <div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJTk1JUJEJUVBJUI1JUFEJTNBJTIwJUVCJTkzJUE0JUVDJTk3JUFDJUVDJTk4JUE0JUVBJUI4JUIw'); return false;">약국: 들여오기</div>
 
 <div class="listing-category" onclick="window.quartoListingCategory('JUVDJTlEJTk4JUVDJTk1JUJEJUVEJTkyJTg4JTIwJUVCJThEJUIwJUVDJTlEJUI0JUVEJTg0JUIw'); return false;">의약품 데이터</div>
 
@@ -408,6 +405,45 @@ Ben Kim
 <a href="../ko/posts/2026-11-drug-demand-forecast/index.html" class="no-external-icon">
 <div class="listing-date">
 2026년 11월 24일
+</div>
+<div class="listing-author">
+Ben Kim
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="JUVDJTk1JUJEJUVBJUI1JUFEJTNBJTIwJUVCJTkzJUE0JUVDJTk3JUFDJUVDJTk4JUE0JUVBJUI4JUIwJTJDJUVDJTlEJTk4JUVDJTk1JUJEJUVEJTkyJTg4JTIwJUVCJThEJUIwJUVDJTlEJUI0JUVEJTg0JUIwJTJDJUVBJUIzJUI1JUVBJUIwJTlDJTIwJUVDJTlEJTk4JUVDJTk1JUJEJUVEJTkyJTg4JTIwJUVCJThEJUIwJUVDJTlEJUI0JUVEJTg0JUIwJTIwJUVDJThCJTlDJUVCJUE2JUFDJUVDJUE2JTg4" data-listing-date-sort="1795824000000" data-listing-file-modified-sort="1795848969050" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1227">
+<div class="thumbnail"><a href="../ko/posts/2026-11-winter-leading-signals/index.html" class="no-external-icon" aria-hidden="true" tabindex="-1">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../ko/posts/2026-11-winter-leading-signals/index.html" class="no-external-icon">겨울 처방 증가를 몇 달 앞서 알려 주는 신호는 찾지 못했다</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../ko/posts/2026-11-winter-leading-signals/index.html" class="no-external-icon">검색 지수와 소아청소년 진료 흐름에서 만든 후보 39만 개 중 남은 것은 ’그 달 검색의 증가 속도’뿐이었다</a>
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJTk1JUJEJUVBJUI1JUFEJTNBJTIwJUVCJTkzJUE0JUVDJTk3JUFDJUVDJTk4JUE0JUVBJUI4JUIw'); return false;">약국: 들여오기</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVDJTlEJTk4JUVDJTk1JUJEJUVEJTkyJTg4JTIwJUVCJThEJUIwJUVDJTlEJUI0JUVEJTg0JUIw'); return false;">의약품 데이터</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('JUVBJUIzJUI1JUVBJUIwJTlDJTIwJUVDJTlEJTk4JUVDJTk1JUJEJUVEJTkyJTg4JTIwJUVCJThEJUIwJUVDJTlEJUI0JUVEJTg0JUIwJTIwJUVDJThCJTlDJUVCJUE2JUFDJUVDJUE2JTg4'); return false;">공개 의약품 데이터 시리즈</div>
+
+</div>
+<div class="listing-description">
+<a href="../ko/posts/2026-11-winter-leading-signals/index.html" class="no-external-icon">
+<p>약국이 겨울마다 감기약·항생제를 구하지 못하는 고충(들여오기)에서 출발해, 처방 증가보다 1~6개월 앞서 움직이는 공개 신호가 있는지 찾았습니다. 앞서는 신호는 확인되지 않았고, 그 달 검색의 증가 속도가 그 달 처방 증가와 함께 움직였습니다.</p>
+</a>
+</div>
+</div>
+<div class="metadata">
+<a href="../ko/posts/2026-11-winter-leading-signals/index.html" class="no-external-icon">
+<div class="listing-date">
+2026년 11월 28일
 </div>
 <div class="listing-author">
 Ben Kim

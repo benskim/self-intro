@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Experience – Ben’s Notes</title>
+<title>About – Ben’s Notes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -110,7 +110,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 <script>
-/* Keep navigation and language switching at the repository root. */
+/* Keep navigation and language switching at the repository root.
+   - 왼쪽 메뉴는 지금 언어(ko/en)의 같은 페이지로 연결한다.
+   - KO/EN 전환은 같은 상대 경로의 반대 언어 페이지로 보낸다.
+     대응 페이지가 없는 경로(NO_COUNTERPART)는 그 언어의 목록 페이지로 보낸다.
+     그 밖의 경우에도 대상 페이지가 없으면(HEAD 404) 그 언어의 홈으로 보낸다. */
 document.addEventListener("DOMContentLoaded", function () {
   try {
     var meta = document.querySelector('meta[name="quarto:offset"]');
@@ -120,25 +124,45 @@ document.addEventListener("DOMContentLoaded", function () {
     if (rel === "" || rel.slice(-1) === "/") rel += "index.html";
     var isKo = rel.indexOf("ko/") === 0;
     var isEn = rel.indexOf("en/") === 0;
-    var page = isKo ? rel.slice(3) : isEn ? rel.slice(3) : rel;
-    var ko = "ko/" + page;
-    var en = "en/" + page;
+    var page = (isKo || isEn) ? rel.slice(3) : rel;
+    if (!isKo && !isEn) page = "index.html";
+
+    // 한쪽 언어에만 있는 경로 접두어 → 반대 언어에서 보낼 페이지
+    var NO_COUNTERPART = {
+      en: { "subjects/": "subjects.html" },
+      ko: {}
+    };
+    function target(lang) {
+      var map = NO_COUNTERPART[lang];
+      for (var prefix in map) {
+        if (Object.prototype.hasOwnProperty.call(map, prefix) && page.indexOf(prefix) === 0) {
+          return root + lang + "/" + map[prefix];
+        }
+      }
+      return root + lang + "/" + page;
+    }
+
     var leftNav = {
-      "About": "index",
-      "Report": "report",
+      "Home": "index",
+      "Subjects": "subjects",
+      "Reports": "report",
       "Projects": "projects",
-      "Experience": "experience"
+      "About": "experience"
     };
     document.querySelectorAll(".navbar a[href]").forEach(function (a) {
       var label = a.textContent.trim();
-      if (label === "KO") {
-        a.href = root + ko + location.hash;
-        if (isKo) a.classList.add("active");
-        return;
-      }
-      if (label === "EN") {
-        a.href = root + en + location.hash;
-        if (isEn) a.classList.add("active");
+      if (label === "KO" || label === "EN") {
+        var lang = label === "KO" ? "ko" : "en";
+        a.href = target(lang) + location.hash;
+        if ((lang === "ko" && isKo) || (lang === "en" && isEn)) a.classList.add("active");
+        a.addEventListener("click", function (ev) {
+          if (!window.fetch) return;
+          ev.preventDefault();
+          var href = a.href;
+          fetch(href, { method: "HEAD" }).then(function (r) {
+            location.href = r.ok ? href : root + lang + "/index.html";
+          }).catch(function () { location.href = href; });
+        });
         return;
       }
       if (Object.prototype.hasOwnProperty.call(leftNav, label)) {
@@ -170,12 +194,16 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
-<span class="menu-text">About</span></a>
+    <a class="nav-link" href="../ko/index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../ko/subjects.html"> 
+<span class="menu-text">Subjects</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../ko/report.html"> 
-<span class="menu-text">Report</span></a>
+<span class="menu-text">Reports</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../ko/projects.html"> 
@@ -183,7 +211,7 @@ document.addEventListener("DOMContentLoaded", function () {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../ko/experience.html"> 
-<span class="menu-text">Experience</span></a>
+<span class="menu-text">About</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -217,13 +245,16 @@ document.addEventListener("DOMContentLoaded", function () {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#klleon" id="toc-klleon" class="nav-link active" data-scroll-target="#klleon">Klleon R&amp;D — Data Part Lead</a></li>
+  <li><a href="#career" id="toc-career" class="nav-link active" data-scroll-target="#career">Experience</a>
+  <ul class="collapse">
+  <li><a href="#klleon" id="toc-klleon" class="nav-link" data-scroll-target="#klleon">Klleon R&amp;D — Data Part Lead</a></li>
   <li><a href="#freewheelin" id="toc-freewheelin" class="nav-link" data-scroll-target="#freewheelin">freewheelin — Data Analyst</a></li>
   <li><a href="#epopcon" id="toc-epopcon" class="nav-link" data-scroll-target="#epopcon">Epopcon — Data Scientist</a></li>
+  </ul></li>
   <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education">Education</a></li>
   <li><a href="#certifications" id="toc-certifications" class="nav-link" data-scroll-target="#certifications">Certifications</a></li>
-  <li><a href="#core-skills" id="toc-core-skills" class="nav-link" data-scroll-target="#core-skills">Core Skills</a></li>
-  <li><a href="#links" id="toc-links" class="nav-link" data-scroll-target="#links">Links</a></li>
+  <li><a href="#skills" id="toc-skills" class="nav-link" data-scroll-target="#skills">Skills</a></li>
+  <li><a href="#contact" id="toc-contact" class="nav-link" data-scroll-target="#contact">Contact</a></li>
   </ul>
 </nav>
     </div>
@@ -232,7 +263,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Experience</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title">About</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<p class="subtitle lead">Experience · Education · Skills · Contact</p>
 </div>
 
 
@@ -249,9 +281,11 @@ document.addEventListener("DOMContentLoaded", function () {
 </header>
 
 
-<p>A career that runs from data analytics through data curation and MLOps to statistical predictive modeling, and on to leading teams.</p>
-<section id="klleon" class="level2">
-<h2 class="anchored" data-anchor-id="klleon">Klleon R&amp;D — Data Part Lead</h2>
+<p>I’m Ben Kim. I research problems in health and medicine and test them with public data. My career runs from data analytics through data curation and MLOps to statistical predictive modeling and team leadership. Current work is in <a href="../en/subjects.html">Subjects</a> and <a href="../en/report.html">Reports</a>; past job projects are in <a href="../en/projects.html">Projects</a>.</p>
+<section id="career" class="level2">
+<h2 class="anchored" data-anchor-id="career">Experience</h2>
+<section id="klleon" class="level3">
+<h3 class="anchored" data-anchor-id="klleon">Klleon R&amp;D — Data Part Lead</h3>
 <p><code>Mar 2021 – Nov 2023</code> (2 yrs 9 mos)</p>
 <p><strong>Built and led the MLOps team and data part for an effective research environment</strong></p>
 <ul>
@@ -268,8 +302,8 @@ document.addEventListener("DOMContentLoaded", function () {
 </ul>
 <p>→ Details: <a href="../en/projects/project-a.html">Gen-AI B2C App Service Growth Analytics</a></p>
 </section>
-<section id="freewheelin" class="level2">
-<h2 class="anchored" data-anchor-id="freewheelin">freewheelin — Data Analyst</h2>
+<section id="freewheelin" class="level3">
+<h3 class="anchored" data-anchor-id="freewheelin">freewheelin — Data Analyst</h3>
 <p><code>Apr 2019 – Jul 2020</code> (1 yr 4 mos) · Gwanak-gu, Seoul</p>
 <p><strong>Built a dashboard for promotion performance analysis</strong></p>
 <ul>
@@ -284,8 +318,8 @@ document.addEventListener("DOMContentLoaded", function () {
 <li>Oversaw data quality</li>
 </ul>
 </section>
-<section id="epopcon" class="level2">
-<h2 class="anchored" data-anchor-id="epopcon">Epopcon — Data Scientist</h2>
+<section id="epopcon" class="level3">
+<h3 class="anchored" data-anchor-id="epopcon">Epopcon — Data Scientist</h3>
 <p><code>Dec 2017 – Mar 2019</code> (1 yr 4 mos)</p>
 <p><strong>Built stochastic scheduling models that predict when product stock levels change</strong> (Poisson process)</p>
 <ul>
@@ -303,6 +337,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <li>Visualized the distribution of target features and compared it with a control group</li>
 </ul>
 </section>
+</section>
 <section id="education" class="level2">
 <h2 class="anchored" data-anchor-id="education">Education</h2>
 <p><strong>Yonsei University</strong> — Bachelor’s degree, Applied Statistics and Economics</p>
@@ -315,13 +350,51 @@ document.addEventListener("DOMContentLoaded", function () {
 <li>Financial Engineering and Risk Management Part I</li>
 </ul>
 </section>
-<section id="core-skills" class="level2">
-<h2 class="anchored" data-anchor-id="core-skills">Core Skills</h2>
-<p>Mathematics · Problem Management · Analytical Skills</p>
+<section id="skills" class="level2">
+<h2 class="anchored" data-anchor-id="skills">Skills</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Area</th>
+<th>Tools and methods</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Analysis and statistics</td>
+<td>Statistics and time series, experiment design (A/B tests), pre-registration and backtesting, probability models (Poisson process)</td>
+</tr>
+<tr class="even">
+<td>Machine learning</td>
+<td>LightGBM, TensorFlow, data-centric AI (data curation)</td>
+</tr>
+<tr class="odd">
+<td>Data processing</td>
+<td>Python, SQL, DuckDB, BigQuery</td>
+</tr>
+<tr class="even">
+<td>Operations and MLOps</td>
+<td>MLflow, Kubeflow, DVC</td>
+</tr>
+<tr class="odd">
+<td>Product analytics</td>
+<td>Firebase, Appsflyer, Amplitude, Tableau</td>
+</tr>
+<tr class="even">
+<td>Strengths</td>
+<td>Mathematics · Problem management · Analytical skills</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="links" class="level2">
-<h2 class="anchored" data-anchor-id="links">Links</h2>
+<section id="contact" class="level2">
+<h2 class="anchored" data-anchor-id="contact">Contact</h2>
 <ul>
+<li><a href="https://github.com/benskim">GitHub</a></li>
 <li><a href="https://www.linkedin.com/in/benjamin-s-k">LinkedIn</a></li>
 <li><a href="https://medium.com/@benskim915">Medium Blog</a></li>
 </ul>
@@ -860,86 +933,97 @@ document.addEventListener("DOMContentLoaded", function () {
   window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Experience"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">toc:</span><span class="co"> true</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>A career that runs from data analytics through data curation and MLOps to statistical predictive modeling, and on to leading teams.</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">## Klleon R&amp;D — Data Part Lead {#klleon}</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="in">`Mar 2021 – Nov 2023`</span> (2 yrs 9 mos)</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>**Built and led the MLOps team and data part for an effective research environment**</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Developed Korean TTS technology based on Data-Centric AI (DCAI)</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Built and optimized a computer-vision data curation system covering data collection, processing, and screening</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Supported engineering with Kubeflow and DVC</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>→ Details: <span class="co">[</span><span class="ot">Video Data Curation and MLOps PoC</span><span class="co">](projects/project-b.qmd)</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>**Supported data-driven decisions for a Gen-AI based B2C service**</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Analyzed users with Firebase, Appsflyer, Amplitude, Tableau, and statistical modeling</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Led the beta launch (App Store, Google Play)</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Led digital marketing (Meta, Google Ads)</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>→ Details: <span class="co">[</span><span class="ot">Gen-AI B2C App Service Growth Analytics</span><span class="co">](projects/project-a.qmd)</span></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="fu">## freewheelin — Data Analyst {#freewheelin}</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="in">`Apr 2019 – Jul 2020`</span> (1 yr 4 mos) · Gwanak-gu, Seoul</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>**Built a dashboard for promotion performance analysis**</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Analyzed the correlation between promotions and user properties (price, free-trial period)</span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Analyzed retention trends of user groups by promotion</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Defined and calculated KPIs to measure performance</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>**Reorganized the data management system**</span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Centralized data in BigQuery</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Reduced inefficient storage cost</span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Oversaw data quality</span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="fu">## Epopcon — Data Scientist {#epopcon}</span></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="in">`Dec 2017 – Mar 2019`</span> (1 yr 4 mos)</span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>**Built stochastic scheduling models that predict when product stock levels change** (Poisson process)</span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Imputed missing inventory values and handled outliers (clustering, anomaly detection)</span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>→ Details: <span class="co">[</span><span class="ot">Predictive Scheduling Machine for Elastic Collection Management</span><span class="co">](projects/project-c.qmd)</span></span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>**Created standardized keys for the same product listed across multiple shopping malls**</span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Preprocessed image and natural-language data, then applied the MinHash-LSH algorithm</span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>**Analyzed hidden customer behavior patterns**</span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Used geographical data</span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Cleaned store addresses and categories using open data</span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Visualized the distribution of target features and compared it with a control group</span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="fu">## Education</span></span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>**Yonsei University** — Bachelor's degree, Applied Statistics and Economics</span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="fu">## Certifications</span></span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>TensorFlow Developer Professional Certificate</span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Using Machine Learning in Trading and Finance</span>
-<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Financial Engineering and Risk Management Part I</span>
-<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="fu">## Core Skills</span></span>
-<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>Mathematics · Problem Management · Analytical Skills</span>
-<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="fu">## Links</span></span>
-<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">LinkedIn</span><span class="co">](https://www.linkedin.com/in/benjamin-s-k)</span></span>
-<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Medium Blog</span><span class="co">](https://medium.com/@benskim915)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "About"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "Experience · Education · Skills · Contact"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">toc:</span><span class="co"> true</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>I'm Ben Kim. I research problems in health and medicine and test them with public data. My career runs from data analytics through data curation and MLOps to statistical predictive modeling and team leadership. Current work is in <span class="co">[</span><span class="ot">Subjects</span><span class="co">](subjects.qmd)</span> and <span class="co">[</span><span class="ot">Reports</span><span class="co">](report.qmd)</span>; past job projects are in <span class="co">[</span><span class="ot">Projects</span><span class="co">](projects.qmd)</span>.</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">## Experience {#career}</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">### Klleon R&amp;D — Data Part Lead {#klleon}</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="in">`Mar 2021 – Nov 2023`</span> (2 yrs 9 mos)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>**Built and led the MLOps team and data part for an effective research environment**</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Developed Korean TTS technology based on Data-Centric AI (DCAI)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Built and optimized a computer-vision data curation system covering data collection, processing, and screening</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Supported engineering with Kubeflow and DVC</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>→ Details: <span class="co">[</span><span class="ot">Video Data Curation and MLOps PoC</span><span class="co">](projects/project-b.qmd)</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>**Supported data-driven decisions for a Gen-AI based B2C service**</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Analyzed users with Firebase, Appsflyer, Amplitude, Tableau, and statistical modeling</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Led the beta launch (App Store, Google Play)</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Led digital marketing (Meta, Google Ads)</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>→ Details: <span class="co">[</span><span class="ot">Gen-AI B2C App Service Growth Analytics</span><span class="co">](projects/project-a.qmd)</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="fu">### freewheelin — Data Analyst {#freewheelin}</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="in">`Apr 2019 – Jul 2020`</span> (1 yr 4 mos) · Gwanak-gu, Seoul</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>**Built a dashboard for promotion performance analysis**</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Analyzed the correlation between promotions and user properties (price, free-trial period)</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Analyzed retention trends of user groups by promotion</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Defined and calculated KPIs to measure performance</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>**Reorganized the data management system**</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Centralized data in BigQuery</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Reduced inefficient storage cost</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Oversaw data quality</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="fu">### Epopcon — Data Scientist {#epopcon}</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="in">`Dec 2017 – Mar 2019`</span> (1 yr 4 mos)</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>**Built stochastic scheduling models that predict when product stock levels change** (Poisson process)</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Imputed missing inventory values and handled outliers (clustering, anomaly detection)</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>→ Details: <span class="co">[</span><span class="ot">Predictive Scheduling Machine for Elastic Collection Management</span><span class="co">](projects/project-c.qmd)</span></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>**Created standardized keys for the same product listed across multiple shopping malls**</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Preprocessed image and natural-language data, then applied the MinHash-LSH algorithm</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>**Analyzed hidden customer behavior patterns**</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Used geographical data</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Cleaned store addresses and categories using open data</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Visualized the distribution of target features and compared it with a control group</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="fu">## Education</span></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>**Yonsei University** — Bachelor's degree, Applied Statistics and Economics</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="fu">## Certifications</span></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>TensorFlow Developer Professional Certificate</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Using Machine Learning in Trading and Finance</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Financial Engineering and Risk Management Part I</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a><span class="fu">## Skills</span></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Area <span class="pp">|</span> Tools and methods <span class="pp">|</span></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|</span></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Analysis and statistics <span class="pp">|</span> Statistics and time series, experiment design (A/B tests), pre-registration and backtesting, probability models (Poisson process) <span class="pp">|</span></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Machine learning <span class="pp">|</span> LightGBM, TensorFlow, data-centric AI (data curation) <span class="pp">|</span></span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Data processing <span class="pp">|</span> Python, SQL, DuckDB, BigQuery <span class="pp">|</span></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Operations and MLOps <span class="pp">|</span> MLflow, Kubeflow, DVC <span class="pp">|</span></span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Product analytics <span class="pp">|</span> Firebase, Appsflyer, Amplitude, Tableau <span class="pp">|</span></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Strengths <span class="pp">|</span> Mathematics · Problem management · Analytical skills <span class="pp">|</span></span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="fu">## Contact {#contact}</span></span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">GitHub</span><span class="co">](https://github.com/benskim)</span></span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">LinkedIn</span><span class="co">](https://www.linkedin.com/in/benjamin-s-k)</span></span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="co">[</span><span class="ot">Medium Blog</span><span class="co">](https://medium.com/@benskim915)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

@@ -100,7 +100,11 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 <script>
-/* Keep navigation and language switching at the repository root. */
+/* Keep navigation and language switching at the repository root.
+   - 왼쪽 메뉴는 지금 언어(ko/en)의 같은 페이지로 연결한다.
+   - KO/EN 전환은 같은 상대 경로의 반대 언어 페이지로 보낸다.
+     대응 페이지가 없는 경로(NO_COUNTERPART)는 그 언어의 목록 페이지로 보낸다.
+     그 밖의 경우에도 대상 페이지가 없으면(HEAD 404) 그 언어의 홈으로 보낸다. */
 document.addEventListener("DOMContentLoaded", function () {
   try {
     var meta = document.querySelector('meta[name="quarto:offset"]');
@@ -110,25 +114,45 @@ document.addEventListener("DOMContentLoaded", function () {
     if (rel === "" || rel.slice(-1) === "/") rel += "index.html";
     var isKo = rel.indexOf("ko/") === 0;
     var isEn = rel.indexOf("en/") === 0;
-    var page = isKo ? rel.slice(3) : isEn ? rel.slice(3) : rel;
-    var ko = "ko/" + page;
-    var en = "en/" + page;
+    var page = (isKo || isEn) ? rel.slice(3) : rel;
+    if (!isKo && !isEn) page = "index.html";
+
+    // 한쪽 언어에만 있는 경로 접두어 → 반대 언어에서 보낼 페이지
+    var NO_COUNTERPART = {
+      en: { "subjects/": "subjects.html" },
+      ko: {}
+    };
+    function target(lang) {
+      var map = NO_COUNTERPART[lang];
+      for (var prefix in map) {
+        if (Object.prototype.hasOwnProperty.call(map, prefix) && page.indexOf(prefix) === 0) {
+          return root + lang + "/" + map[prefix];
+        }
+      }
+      return root + lang + "/" + page;
+    }
+
     var leftNav = {
-      "About": "index",
-      "Report": "report",
+      "Home": "index",
+      "Subjects": "subjects",
+      "Reports": "report",
       "Projects": "projects",
-      "Experience": "experience"
+      "About": "experience"
     };
     document.querySelectorAll(".navbar a[href]").forEach(function (a) {
       var label = a.textContent.trim();
-      if (label === "KO") {
-        a.href = root + ko + location.hash;
-        if (isKo) a.classList.add("active");
-        return;
-      }
-      if (label === "EN") {
-        a.href = root + en + location.hash;
-        if (isEn) a.classList.add("active");
+      if (label === "KO" || label === "EN") {
+        var lang = label === "KO" ? "ko" : "en";
+        a.href = target(lang) + location.hash;
+        if ((lang === "ko" && isKo) || (lang === "en" && isEn)) a.classList.add("active");
+        a.addEventListener("click", function (ev) {
+          if (!window.fetch) return;
+          ev.preventDefault();
+          var href = a.href;
+          fetch(href, { method: "HEAD" }).then(function (r) {
+            location.href = r.ok ? href : root + lang + "/index.html";
+          }).catch(function () { location.href = href; });
+        });
         return;
       }
       if (Object.prototype.hasOwnProperty.call(leftNav, label)) {
@@ -189,12 +213,16 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
-<span class="menu-text">About</span></a>
+    <a class="nav-link" href="../ko/index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../ko/subjects.html"> 
+<span class="menu-text">Subjects</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../ko/report.html"> 
-<span class="menu-text">Report</span></a>
+<span class="menu-text">Reports</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="../ko/projects.html" aria-current="page"> 
@@ -202,7 +230,7 @@ window.Quarto = {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../ko/experience.html"> 
-<span class="menu-text">Experience</span></a>
+<span class="menu-text">About</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -256,13 +284,40 @@ window.Quarto = {
 </header>
 
 
+<p>이전 직무에서 한 프로젝트입니다. 각 페이지는 <strong>역할과 기여 → 문제와 분석 → 구현 → 측정 결과 → 한계와 기대 효과</strong> 순서로, 직접 측정한 성과와 기대 효과를 나눠 적었습니다.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>프로젝트</th>
+<th>대표 성과</th>
+<th>보여 주는 역량</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="../ko/projects/project-c.html">Poisson-based Adaptive Crawling Scheduler</a></td>
+<td>포아송·ML 모델을 운영 크롤러에 적용, 2018.12.01부터 운영</td>
+<td>통계 모델링·머신러닝·운영 시스템 적용</td>
+</tr>
+<tr class="even">
+<td><a href="../ko/projects/project-b.html">Video Data Curation &amp; MLOps</a></td>
+<td>샘플 수 약 20~30% 감소, GPU 학습 시간 최대 40% 감소</td>
+<td>데이터 품질·딥러닝·MLOps</td>
+</tr>
+<tr class="odd">
+<td><a href="../ko/projects/project-a.html">Gen-AI B2C Growth Analytics</a></td>
+<td>콘텐츠 생성 전환율 14.2% → 19.8%, p = 0.012, 롤아웃</td>
+<td>비즈니스 분석·실험 설계·성과 개선</td>
+</tr>
+</tbody>
+</table>
 
 
 
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1795835201202" data-listing-reading-time-sort="5" data-listing-word-count-sort="835">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1795848969064" data-listing-reading-time-sort="2" data-listing-word-count-sort="398">
 <div class="thumbnail"><a href="../ko/projects/project-c.html" class="no-external-icon">
 
 <img loading="lazy" src="../ko/projects/images/project-c.png" class="thumbnail-image">
@@ -270,17 +325,17 @@ window.Quarto = {
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../ko/projects/project-c.html" class="no-external-icon">탄력적 수집 관리를 위한 스케줄링 포아송 머신</a>
+<a href="../ko/projects/project-c.html" class="no-external-icon">Poisson-based Adaptive Crawling Scheduler</a>
 </h3>
 <div class="listing-subtitle">
-<a href="../ko/projects/project-c.html" class="no-external-icon">통계적 웹페이지 변화 감지 및 기계학습 모델을 결합한 지능형 데이터 획득(Crawl Period Optimization)</a>
+<a href="../ko/projects/project-c.html" class="no-external-icon">상품별 변경 패턴을 학습해 크롤링 자원을 최적화하다</a>
 </div>
 </div>
 <div class="metadata">
 
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1795835201202" data-listing-reading-time-sort="4" data-listing-word-count-sort="609">
+<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1795848969064" data-listing-reading-time-sort="3" data-listing-word-count-sort="405">
 <div class="thumbnail"><a href="../ko/projects/project-b.html" class="no-external-icon">
 
 <img loading="lazy" src="../ko/projects/images/project-b.png" class="thumbnail-image">
@@ -288,17 +343,17 @@ window.Quarto = {
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../ko/projects/project-b.html" class="no-external-icon">영상 데이터 큐레이션 및 MLOps PoC</a>
+<a href="../ko/projects/project-b.html" class="no-external-icon">Video Data Curation &amp; MLOps</a>
 </h3>
 <div class="listing-subtitle">
-<a href="../ko/projects/project-b.html" class="no-external-icon">인프라 리소스 효율화 및 데이터 품질 강화를 구현한 비전 모델 ML Pipeline 엔지니어링</a>
+<a href="../ko/projects/project-b.html" class="no-external-icon">데이터 품질 개선을 모델 학습과 운영 파이프라인에 연결하다</a>
 </div>
 </div>
 <div class="metadata">
 
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1795835201202" data-listing-reading-time-sort="5" data-listing-word-count-sort="922">
+<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1795848969064" data-listing-reading-time-sort="2" data-listing-word-count-sort="373">
 <div class="thumbnail"><a href="../ko/projects/project-a.html" class="no-external-icon">
 
 <img loading="lazy" src="../ko/projects/images/project-a.png" class="thumbnail-image">
@@ -306,10 +361,10 @@ window.Quarto = {
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../ko/projects/project-a.html" class="no-external-icon">Gen-AI B2C 앱 서비스 그로스 분석</a>
+<a href="../ko/projects/project-a.html" class="no-external-icon">Gen-AI B2C Growth Analytics</a>
 </h3>
 <div class="listing-subtitle">
-<a href="../ko/projects/project-a.html" class="no-external-icon">실제 비즈니스 성장 전략 설계와 데이터 검증의 엔드투엔드(End-to-End) 케이스 스터디</a>
+<a href="../ko/projects/project-a.html" class="no-external-icon">사용자 행동 분석과 실험으로 생성형 AI 앱의 콘텐츠 생성 전환을 개선하다</a>
 </div>
 </div>
 <div class="metadata">

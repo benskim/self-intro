@@ -86,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
     };
@@ -98,9 +98,35 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   });
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-reports .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-reports'] = new List('listing-reports', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
   </script>
 <script>
-/* Keep navigation and language switching at the repository root. */
+/* Keep navigation and language switching at the repository root.
+   - 왼쪽 메뉴는 지금 언어(ko/en)의 같은 페이지로 연결한다.
+   - KO/EN 전환은 같은 상대 경로의 반대 언어 페이지로 보낸다.
+     대응 페이지가 없는 경로(NO_COUNTERPART)는 그 언어의 목록 페이지로 보낸다.
+     그 밖의 경우에도 대상 페이지가 없으면(HEAD 404) 그 언어의 홈으로 보낸다. */
 document.addEventListener("DOMContentLoaded", function () {
   try {
     var meta = document.querySelector('meta[name="quarto:offset"]');
@@ -110,25 +136,45 @@ document.addEventListener("DOMContentLoaded", function () {
     if (rel === "" || rel.slice(-1) === "/") rel += "index.html";
     var isKo = rel.indexOf("ko/") === 0;
     var isEn = rel.indexOf("en/") === 0;
-    var page = isKo ? rel.slice(3) : isEn ? rel.slice(3) : rel;
-    var ko = "ko/" + page;
-    var en = "en/" + page;
+    var page = (isKo || isEn) ? rel.slice(3) : rel;
+    if (!isKo && !isEn) page = "index.html";
+
+    // 한쪽 언어에만 있는 경로 접두어 → 반대 언어에서 보낼 페이지
+    var NO_COUNTERPART = {
+      en: { "subjects/": "subjects.html" },
+      ko: {}
+    };
+    function target(lang) {
+      var map = NO_COUNTERPART[lang];
+      for (var prefix in map) {
+        if (Object.prototype.hasOwnProperty.call(map, prefix) && page.indexOf(prefix) === 0) {
+          return root + lang + "/" + map[prefix];
+        }
+      }
+      return root + lang + "/" + page;
+    }
+
     var leftNav = {
-      "About": "index",
-      "Report": "report",
+      "Home": "index",
+      "Subjects": "subjects",
+      "Reports": "report",
       "Projects": "projects",
-      "Experience": "experience"
+      "About": "experience"
     };
     document.querySelectorAll(".navbar a[href]").forEach(function (a) {
       var label = a.textContent.trim();
-      if (label === "KO") {
-        a.href = root + ko + location.hash;
-        if (isKo) a.classList.add("active");
-        return;
-      }
-      if (label === "EN") {
-        a.href = root + en + location.hash;
-        if (isEn) a.classList.add("active");
+      if (label === "KO" || label === "EN") {
+        var lang = label === "KO" ? "ko" : "en";
+        a.href = target(lang) + location.hash;
+        if ((lang === "ko" && isKo) || (lang === "en" && isEn)) a.classList.add("active");
+        a.addEventListener("click", function (ev) {
+          if (!window.fetch) return;
+          ev.preventDefault();
+          var href = a.href;
+          fetch(href, { method: "HEAD" }).then(function (r) {
+            location.href = r.ok ? href : root + lang + "/index.html";
+          }).catch(function () { location.href = href; });
+        });
         return;
       }
       if (Object.prototype.hasOwnProperty.call(leftNav, label)) {
@@ -189,12 +235,16 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
-<span class="menu-text">About</span></a>
+    <a class="nav-link" href="../ko/index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../ko/subjects.html"> 
+<span class="menu-text">Subjects</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../ko/report.html"> 
-<span class="menu-text">Report</span></a>
+<span class="menu-text">Reports</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../ko/projects.html"> 
@@ -202,7 +252,7 @@ window.Quarto = {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../ko/experience.html"> 
-<span class="menu-text">Experience</span></a>
+<span class="menu-text">About</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -241,36 +291,56 @@ window.Quarto = {
 <div class="home">
 <div class="hero">
 <div class="hero-title">
-<p>I’m Ben Kim, an analyst who wants data to help people stay healthy.</p>
+<p>I find problems in health and medicine, and test them with data.</p>
 </div>
 <div class="hero-lede">
-<p>I spent more than five years at startups as a data analyst, data scientist, and AI data part lead. Now I start from the problems pharmacies face and use public medicine data to build evidence that can ease them.</p>
+<p>I research the problems patients and pharmacies face, and use public data to check how large they are and what can be done. I spent more than five years at startups as a data analyst, data scientist, and data part lead.</p>
 </div>
 <div class="hero-actions">
-<p><a href="#reports-section">See recent interests</a> <a href="../en/report.html">All reports</a> <a href="../en/experience.html">See experience</a></p>
+<p><a href="../en/subjects.html">Subjects</a> <a href="../en/report.html">Reports</a> <a href="../en/experience.html">About</a></p>
 </div>
 </div>
-<section id="who-the-analysis-helps" class="level2 home-section">
-<h2 class="anchored" data-anchor-id="who-the-analysis-helps">Who the analysis helps</h2>
-<div class="section-lede">
-<p>Pharmacies decide neither prescriptions, prices nor supply, yet bear the results. This work starts from pharmacy problems and uses public data to build evidence for those who could ease them with ordering, stock and return information.</p>
-</div>
-<div class="audience">
-  <div><h3 class="anchored">Pharmacies</h3><p>Know in advance when and how much prices will be cut, and which ingredients' demand swings.</p></div>
-  <div><h3 class="anchored">Distributors</h3><p>Use price-cut alerts and ingredient demand baselines for pharmacy alerts and supply planning.</p></div>
-  <div><h3 class="anchored">Pharmacy support services</h3><p>Combine them with a pharmacy's order and stock records to decide what to check and what to watch.</p></div>
-  <div><h3 class="anchored">Also useful for</h3><p>Drug makers and prescribers can check ingredient markets and reimbursement changes on the same evidence.</p></div>
+<section id="how-the-work-flows" class="level2 home-section">
+<h2 class="anchored" data-anchor-id="how-the-work-flows">How the work flows</h2>
+<ol class="flow">
+  <li><strong>Field problem</strong><span>Find who struggles with what, from press, surveys and cases</span></li>
+  <li><strong>Market research</strong><span>Split the problems into stages and rank them</span></li>
+  <li><strong>Data search</strong><span>Rate public data on access, completeness and one-person feasibility</span></li>
+  <li><strong>Analysis and checks</strong><span>Fix criteria before results; confirm on another period</span></li>
+  <li><strong>Use and limits</strong><span>Separate what can be done from what cannot</span></li>
+</ol>
+</section>
+<section id="research-domains" class="level2 home-section">
+<h2 class="anchored" data-anchor-id="research-domains">Research domains</h2>
+<div class="domain-grid">
+  <div>
+    <p class="domain-name">Pharmacy &amp; Drug Market</p>
+    <h3 class="anchored">Pharmacies and the drug market</h3>
+    <p>Timing and size of price cuts, prescription demand and winter demand signals, so that distributors and pharmacy support services can ease pharmacy burdens.</p>
+    <span class="status status-done">3 reports published</span>
+  </div>
+  <div>
+    <p class="domain-name">Patient &amp; Medication</p>
+    <h3 class="anchored">Patients' medicines and supplements</h3>
+    <p>How public data can help chronically ill patients who take medicines and health supplements together check ingredients against drugs and keep up with recalls and re-evaluations.</p>
+    <span class="status status-next">Research done · next focus</span>
+  </div>
 </div>
 </section>
-<div id="reports-section" class="home-section">
-<section id="recent-interests" class="level2">
-<h2 class="anchored" data-anchor-id="recent-interests">Recent interests</h2>
+<div id="subjects-section" class="home-section">
+<section id="subjects" class="level2">
+<h2 class="anchored" data-anchor-id="subjects">Subjects</h2>
 <div class="section-lede">
-<p>The people and problems I am looking into now. Each subject starts from field research and leads to analyses that public data allow within real constraints. The subject notes are in Korean; analysis results are in the <a href="../en/report.html">reports</a>.</p>
+<p>Research notes on which problems to solve and how far public data can reach, written before any analysis. The notes are in Korean. <a href="../en/subjects.html">See all →</a></p>
 </div>
 <div id="listing-subjects" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1795824000000" data-listing-file-modified-sort="1795835201203" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="19" data-listing-word-count-sort="3684">
+<div class="quarto-post image-right" data-index="0" data-categories="JUVEJTk5JTk4JUVDJTlFJTkwJTJDJUVDJThCJTlDJUVDJTlFJUE1JUVDJUExJUIwJUVDJTgyJUFDJTIwJUVDJTk5JTg0JUVCJUEzJThDJTJDJUVCJThCJUE0JUVDJTlEJThDJTIwJUVCJUI2JTg0JUVDJTg0JTlEJTIwJUVDJTg0JUE0JUVBJUIzJTg0" data-listing-date-sort="1795824000000" data-listing-file-modified-sort="1795848969066" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="19" data-listing-word-count-sort="3765">
+<div class="thumbnail"><a href="../ko/subjects/polypharm.html" class="no-external-icon">
+
+<img loading="lazy" src="../ko/subjects/images/polypharm_risk_trends.png" class="thumbnail-image" style="height: 160px;">
+
+</a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../ko/subjects/polypharm.html" class="no-external-icon">건강기능식품 다제복용 만성질환자 고충 시장조사</a>
@@ -285,7 +355,12 @@ window.Quarto = {
 
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1795737600000" data-listing-file-modified-sort="1795835201203" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1346">
+<div class="quarto-post image-right" data-index="1" data-categories="JUVDJTk1JUJEJUVBJUI1JUFEJTJDJUVDJThCJTlDJUVDJTlFJUE1JUVDJUExJUIwJUVDJTgyJUFDJTIwJUVDJTk5JTg0JUVCJUEzJThDJTJDJUVCJUI2JTg0JUVDJTg0JTlEJTIwJUVBJUIzJUI1JUVBJUIwJTlD" data-listing-date-sort="1795737600000" data-listing-file-modified-sort="1795848969064" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1546">
+<div class="thumbnail"><a href="../ko/subjects/drug_store.html" class="no-external-icon">
+
+<img loading="lazy" src="../ko/subjects/images/drug_store_4stages_impact.png" class="thumbnail-image" style="height: 160px;">
+
+</a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../ko/subjects/drug_store.html" class="no-external-icon">약국 고충 시장조사</a>
@@ -305,12 +380,69 @@ window.Quarto = {
 </div>
 </section>
 </div>
+<div id="reports-section" class="home-section">
+<section id="reports" class="level2">
+<h2 class="anchored" data-anchor-id="reports">Reports</h2>
+<div class="section-lede">
+<p>Analyses of questions raised by the pharmacy research, using public data, with how far the numbers can be trusted and their limits. <a href="../en/report.html">See all →</a></p>
+</div>
+<div id="listing-reports" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="UGhhcm1hY3klM0ElMjBob2xkaW5nJTIwc3RvY2slMkNNZWRpY2luZSUyMGRhdGElMkNSZWltYnVyc2VtZW50JTIwbGlzdCUyQ1B1YmxpYyUyMG1lZGljaW5lJTIwZGF0YSUyMHNlcmllcw==" data-listing-date-sort="1795737600000" data-listing-file-modified-sort="1795848969047" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1288">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../en/posts/2026-11-benefit-change-lead/index.html" class="no-external-icon">Only in 2024 could most price cuts be seen a month ahead</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../en/posts/2026-11-benefit-change-lead/index.html" class="no-external-icon">Pharmacies reading the reimbursement list mostly learn of cuts in the month they take effect, and a fifth of the January 2026 cuts were 1 won</a>
+</div>
+</div>
+<div class="metadata">
+
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="UGhhcm1hY3klM0ElMjBwcm9jdXJpbmclMkNNZWRpY2luZSUyMGRhdGElMkNUaW1lLXNlcmllcyUyMGZvcmVjYXN0aW5nJTJDUHVibGljJTIwbWVkaWNpbmUlMjBkYXRhJTIwc2VyaWVz" data-listing-date-sort="1795478400000" data-listing-file-modified-sort="1795848969048" data-listing-date-modified-sort="1795737600000" data-listing-reading-time-sort="9" data-listing-word-count-sort="1766">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../en/posts/2026-11-drug-demand-forecast/index.html" class="no-external-icon">Prescription forecasts missed most for winter respiratory drugs and antibiotics</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../en/posts/2026-11-drug-demand-forecast/index.html" class="no-external-icon">National ingredient-level prescriptions were forecast about 6–7% off for next month, and a simple statistical model was enough</a>
+</div>
+</div>
+<div class="metadata">
+
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="UGhhcm1hY3klM0ElMjBwcm9jdXJpbmclMkNNZWRpY2luZSUyMGRhdGElMkNQdWJsaWMlMjBtZWRpY2luZSUyMGRhdGElMjBzZXJpZXM=" data-listing-date-sort="1795824000000" data-listing-file-modified-sort="1795848969048" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="349">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../en/posts/2026-11-winter-leading-signals/index.html" class="no-external-icon">No signal was found that announces winter prescription rises months ahead</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../en/posts/2026-11-winter-leading-signals/index.html" class="no-external-icon">Of 394,548 candidates built from search indices and paediatric care flows, only the current month’s search acceleration held up</a>
+</div>
+</div>
+<div class="metadata">
+
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+</div>
 <section id="how-i-work" class="level2 home-section">
 <h2 class="anchored" data-anchor-id="how-i-work">How I work</h2>
 <div class="principle">
 <p>Find the action with the least resistance that can still be carried out within the constraints.</p>
 </div>
-<p>If there is no evidence that a complex method beats a simple one, I choose the simple one. I fix decision rules before seeing results, and I report unfavorable results as they are.</p>
+<ul>
+<li>Check first whether the data can actually be obtained.</li>
+<li>Fix decision rules before seeing results.</li>
+<li>Choose a proven simple method unless there is evidence a complex one is better.</li>
+<li>Report unfavorable results and limits as they are.</li>
+</ul>
 </section>
 <section id="experience" class="level2 home-section">
 <h2 class="anchored" data-anchor-id="experience">Experience</h2>
@@ -333,8 +465,11 @@ window.Quarto = {
       <a href="projects/project-c.html">Scheduling model</a></p></div>
   </li>
 </ol>
-<p>Yonsei University, B.A. in Applied Statistics and Economics · Python, SQL, statistics and time series, LightGBM, BigQuery, MLflow</p>
-<p><a href="../en/experience.html">Full experience</a> · <a href="../en/projects.html">Projects</a> · <a href="https://www.linkedin.com/in/benjamin-s-k">LinkedIn</a> · <a href="https://medium.com/@benskim915">Medium</a> · <a href="https://github.com/benskim">GitHub</a></p>
+<p>Yonsei University, B.A. in Applied Statistics and Economics · Python, SQL, statistics and time series, LightGBM, BigQuery, MLflow · <a href="../en/experience.html">Full profile in About</a> · <a href="../en/projects.html">Projects</a></p>
+</section>
+<section id="contact" class="level2 home-section">
+<h2 class="anchored" data-anchor-id="contact">Contact</h2>
+<p><a href="https://github.com/benskim">GitHub</a> · <a href="https://www.linkedin.com/in/benjamin-s-k">LinkedIn</a> · <a href="https://medium.com/@benskim915">Medium</a></p>
 </section>
 </div>
 
