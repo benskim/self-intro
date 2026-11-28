@@ -10,10 +10,12 @@ listing:
   fields: [date, title, description, categories]
   sort-ui: false
   filter-ui: false
-page-layout: full
+page-layout: article
 title-block-banner: false
 date-format: "YYYY년 M월 D일"
 code-tools: false
 ---
 
 [Subjects](subjects.qmd)에서 정의한 문제를 공개 데이터로 분석한 결과입니다. 숫자와 함께 그 숫자를 얼마나 믿을 수 있는지와 한계를 적습니다. 분석 방법·검증 절차·재현 정보는 각 보고서의 본문과 부록에 함께 수록합니다.
+
+---
