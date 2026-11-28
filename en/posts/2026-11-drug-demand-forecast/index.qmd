@@ -83,7 +83,7 @@ Chronic and cardiovascular drugs (lipid-lowering C10, antithrombotics B01) were 
 
 ![How many times larger winter prescriptions were than summer, winters 18/19 to 24/25.](images/winter-height.svg){fig-alt="Winter-to-summer multiples for seven winters. R05: 1.81, 1.52, 1.07, 2.36, 1.47, 1.42, 1.24. R03: 1.50, 1.30, 1.11, 1.50, 1.38, 1.35, 1.24. J01: 1.35, 1.17, 0.93, 1.64, 1.33, 1.21, 1.07."}
 
-These are the same classes pharmacists describe as running short in winter. Whether any public signal announces such winters months ahead is examined [on a separate page](../2026-11-winter-leading-signals/index.qmd). The data show only that their demand is hard to forecast; how short supply was is not in the data. These are observed associations, not causes.
+These are the same classes pharmacists describe as running short in winter. The data show that winter demand varies and is difficult to forecast; they do not show how much supply fell short or whether a shortage occurred. This analysis examines seasonal prescription differences and ingredient-level forecast errors, not a public early-warning signal.
 
 ## 4. Does a separate method per drug class help? {#class-test}
 
