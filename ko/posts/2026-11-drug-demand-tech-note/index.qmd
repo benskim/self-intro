@@ -12,7 +12,7 @@ toc-depth: 2
 
 ::: {.callout-note}
 ## 이 노트에 대해
-용어 풀이는 [수요 보고서의 용어집](../2026-11-drug-demand-forecast/index.qmd#glossary)에 있다. 시리즈 전체는 [시리즈 안내](../2026-11-pharm-data-series/index.qmd)에서 본다.
+용어 풀이는 [수요 보고서의 용어집](../2026-11-drug-demand-forecast/index.qmd#glossary)에 있다. 현장 고충과 공개 데이터 범위는 [약국 고충 시장조사](../../subjects/drug_store.md)에 정리했다.
 :::
 
 ## 분류군마다 무엇이 다른가 {#class-diff}
