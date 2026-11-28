@@ -2,11 +2,13 @@
 title: "Subjects"
 subtitle: "현장의 고충을 정의하고, 공개 데이터로 어디까지 다룰 수 있는지 평가한 조사 노트"
 listing:
+  id: listing-subjects
   contents:
     - "subjects/*.md"
-  type: default
+  type: grid
+  grid-columns: 2  
   fields: [image, title, description, categories]
-  image-height: 160px
+  image-height: 200px
   categories: true
   sort: "date desc"
   sort-ui: false
@@ -19,9 +21,11 @@ code-tools: false
 Subjects는 분석에 들어가기 전에 **어떤 문제를 왜 풀어야 하는지**, **공개 데이터로 어디까지 확인할 수 있는지**를 정리한 조사 노트입니다. 여기서 나온 질문을 분석한 결과는 [Reports](report.qmd)에 있습니다.
 
 ```{=html}
-<div class="status-legend" style="display: flex; flex-direction: column; align-items: flex-start; gap: 8px;">
-  <div><span class="status status-next">시장조사 완료</span> 고충과 공개 데이터셋 조사를 마침</div>
-  <div><span class="status status-done">분석 공개</span> 이 주제에서 나온 보고서가 있음</div>
-  <div><span class="status status-plan">다음 분석 설계</span> 첫 분석 단계를 정함</div>
+<div class="status-legend" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 16px; margin: 1.5rem auto; padding: 12px 16px; background-color: #f8f9fa; border-radius: 8px; font-size: 0.9rem; color: #555; width: fit-content;">
+  <div><span class="status status-next">시장조사 완료</span> 조사 마침</div>
+  <div><span class="status status-plan">다음 분석 설계</span> 분석 단계 정함</div>
+  <div><span class="status status-done">분석 공개</span> 보고서 있음</div>
 </div>
 ```
+
+---

@@ -16,7 +16,7 @@ Second edition (2026-11-27), rewritten to start from what pharmacists say. The f
 
 One number changed: products that left the list after a court injunction (10 price-cut announcements, 13 planned suspensions) were counted as "not carried out" in the first edition and are now left out, because there is nothing left to judge. Price cuts went from 99.7% to 99.96% and planned suspensions from 89.3% to 100.0%.
 
-The whole series is in the [series overview](../2026-11-pharm-data-series/index.qmd); demand forecasting is in the [demand report](../2026-11-drug-demand-forecast/index.qmd).
+The field context and public-data scope are in the [pharmacy pain-point research](../../../ko/subjects/drug_store.md); demand forecasting is in the [demand report](../2026-11-drug-demand-forecast/index.qmd).
 :::
 
 ::: {.report-meta}

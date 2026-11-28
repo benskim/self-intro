@@ -2,10 +2,8 @@
 title: "Reports"
 listing:
   contents:
-    - posts/2026-11-pharm-data-series/index.qmd
     - posts/2026-11-benefit-change-lead/index.qmd
     - posts/2026-11-drug-demand-forecast/index.qmd
-    - posts/2026-11-winter-leading-signals/index.qmd
   sort: false
   type: default
   categories: true
@@ -16,4 +14,4 @@ title-block-banner: false
 code-tools: false
 ---
 
-Analyses of problems defined in [Subjects](subjects.qmd), using public data, with how far the numbers can be trusted and their limits. All current reports come from the pharmacy pain-point research; the first item, the series overview, explains the links. Use the categories to browse by pharmacy stage. Verification and model specification are in the [technical note](posts/2026-11-drug-demand-tech-note/index.qmd), linked from each report.
+Analyses of problems defined in [Subjects](subjects.qmd), using public data, with how far the numbers can be trusted and their limits. Both current reports come from the pharmacy pain-point research. Methods, validation and reproduction details are included in each report.

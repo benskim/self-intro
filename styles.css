@@ -369,3 +369,386 @@ main table thead th { border-bottom: 1.5px solid var(--ink) !important; }
 /* 보고서 첫머리 개요 */
 .report-overview { margin: 0.8rem 0 1.8rem; border-color: var(--line); }
 .report-overview .leaflet-row { padding: 0.8rem 1.2rem; }
+
+
+main img { max-width: 100%; height: auto; }
+main pre, main .mermaid { max-width: 100%; }
+main table { display: block; max-width: 100%; overflow-x: auto; }
+
+@media (max-width: 900px) {
+  #listing-projects .list,
+  #listing-projects .list-grid,
+  .quarto-listing-default .list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 560px) {
+  #listing-projects .list,
+  #listing-projects .list-grid,
+  .quarto-listing-default .list {
+    grid-template-columns: 1fr;
+  }
+  .hero-title { font-size: clamp(1.8rem, 8vw, 2.4rem); }
+  .kpi-grid { grid-template-columns: 1fr 1fr; }
+  .kpi .kpi-value { font-size: 1.25rem; }
+}
+
+
+
+
+/* ===== Editorial listings: use the full page width ===== */
+#listing-subjects,
+#listing-report,
+#listing-projects {
+  width: 100%;
+  max-width: none;
+  margin: 2.25rem 0 0;
+  padding: 1.5rem 0 0;
+  border-top: 1px solid var(--line);
+}
+
+#listing-subjects .list,
+#listing-report .list,
+#listing-projects .list {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+#listing-subjects .quarto-post,
+#listing-report .quarto-post,
+#listing-projects .quarto-post {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(12rem, 30%);
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  margin: 0;
+  padding: 1.8rem 0;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+#listing-subjects .quarto-post:first-child,
+#listing-report .quarto-post:first-child,
+#listing-projects .quarto-post:first-child {
+  padding-top: 0.25rem;
+}
+
+#listing-subjects .quarto-post:last-child,
+#listing-report .quarto-post:last-child,
+#listing-projects .quarto-post:last-child {
+  border-bottom: 0;
+}
+
+#listing-subjects .quarto-post .body,
+#listing-report .quarto-post .body,
+#listing-projects .quarto-post .body {
+  grid-column: 1;
+  grid-row: 1;
+  min-width: 0;
+  width: 100%;
+  padding: 0;
+}
+
+#listing-subjects .quarto-post .thumbnail,
+#listing-report .quarto-post .thumbnail,
+#listing-projects .quarto-post .thumbnail {
+  grid-column: 2;
+  grid-row: 1;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+}
+
+#listing-subjects .quarto-post .thumbnail img,
+#listing-projects .quarto-post .thumbnail img {
+  display: block;
+  width: 100%;
+  max-height: 15rem;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  object-position: center;
+}
+
+#listing-subjects .listing-title,
+#listing-report .listing-title,
+#listing-projects .listing-title {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.2rem, 1.8vw, 1.55rem);
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+#listing-subjects .listing-description,
+#listing-report .listing-description,
+#listing-projects .listing-description {
+  margin-top: 0.5rem;
+  color: var(--ink-sub);
+  line-height: 1.7;
+}
+
+#listing-report .quarto-post {
+  grid-template-columns: minmax(0, 1fr) minmax(12rem, 25%);
+  align-items: start;
+}
+
+#listing-report .quarto-post .metadata {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
+  text-align: right;
+  color: var(--ink-faint);
+  font-size: 0.9rem;
+  padding: 0;
+}
+
+#listing-report .quarto-post .body {
+  grid-column: 1;
+}
+
+#listing-report .quarto-post .listing-title {
+  text-align: left;
+}
+
+#listing-subjects .quarto-post:hover,
+#listing-report .quarto-post:hover,
+#listing-projects .quarto-post:hover {
+  background: transparent;
+}
+
+@media (max-width: 760px) {
+  #listing-subjects,
+  #listing-report,
+  #listing-projects {
+    margin-top: 1.8rem;
+    padding-top: 1.2rem;
+  }
+
+  #listing-subjects .quarto-post,
+  #listing-report .quarto-post,
+  #listing-projects .quarto-post {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.9rem;
+    padding: 1.4rem 0;
+  }
+
+  #listing-subjects .quarto-post .body,
+  #listing-report .quarto-post .body,
+  #listing-projects .quarto-post .body,
+  #listing-subjects .quarto-post .thumbnail,
+  #listing-report .quarto-post .metadata,
+  #listing-projects .quarto-post .thumbnail {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  #listing-report .quarto-post .metadata {
+    justify-self: start;
+    text-align: left;
+    order: 2;
+  }
+
+  #listing-subjects .quarto-post .thumbnail,
+  #listing-projects .quarto-post .thumbnail {
+    max-width: 36rem;
+  }
+}
+
+
+/* Home page: make Subjects follow the image-free Reports listing */
+#subjects .quarto-post,
+#reports .quarto-post {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(10rem, 25%);
+  align-items: start;
+  column-gap: 2rem;
+  width: 100%;
+  max-width: none;
+  padding: 1rem 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+#subjects .quarto-post:first-child,
+#reports .quarto-post:first-child {
+  border-top: 0 !important;
+  padding-top: 0;
+}
+
+#subjects .quarto-post .body,
+#reports .quarto-post .body {
+  grid-column: 1;
+  min-width: 0;
+  width: 100%;
+  padding: 0;
+}
+
+#subjects .quarto-post .metadata,
+#reports .quarto-post .metadata {
+  grid-column: 2;
+  justify-self: end;
+  text-align: right;
+  min-width: 0;
+  padding: 0;
+  color: var(--ink-faint);
+}
+
+#subjects .quarto-post .thumbnail,
+#reports .quarto-post .thumbnail {
+  display: none !important;
+}
+
+#subjects .listing-title,
+#reports .listing-title {
+  margin: 0 0 0.45rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+@media (max-width: 760px) {
+  #subjects .quarto-post,
+  #reports .quarto-post {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 0.4rem;
+  }
+
+  #subjects .quarto-post .metadata,
+  #reports .quarto-post .metadata {
+    grid-column: 1;
+    justify-self: start;
+    text-align: left;
+  }
+}
+
+
+/* ===== Full-width editorial rows: remove Quarto's inset listing column ===== */
+#listing-subjects,
+#listing-projects,
+#listing-report {
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+#listing-subjects .list,
+#listing-projects .list,
+#listing-report .list,
+#listing-subjects .quarto-listing,
+#listing-projects .quarto-listing,
+#listing-report .quarto-listing {
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+#listing-subjects .quarto-post,
+#listing-projects .quarto-post,
+#listing-report .quarto-post {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(15rem, 34%) !important;
+  grid-template-areas: "copy visual";
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 1.75rem 0 !important;
+  box-sizing: border-box;
+}
+
+#listing-subjects .quarto-post .body,
+#listing-projects .quarto-post .body,
+#listing-report .quarto-post .body {
+  grid-area: copy;
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#listing-subjects .quarto-post .thumbnail,
+#listing-projects .quarto-post .thumbnail,
+#listing-report .quarto-post .thumbnail {
+  grid-area: visual;
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#listing-subjects .quarto-post .thumbnail img,
+#listing-projects .quarto-post .thumbnail img,
+#listing-report .quarto-post .thumbnail img {
+  display: block;
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  object-position: center;
+}
+
+#listing-subjects .quarto-post .metadata,
+#listing-projects .quarto-post .metadata,
+#listing-report .quarto-post .metadata {
+  grid-area: meta;
+}
+
+#listing-report .quarto-post {
+  grid-template-areas: "copy visual" !important;
+  grid-template-columns: minmax(0, 1fr) minmax(15rem, 34%) !important;
+  align-items: start;
+}
+
+#listing-report .quarto-post .thumbnail img {
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+}
+
+#listing-subjects .quarto-post .listing-title,
+#listing-projects .quarto-post .listing-title,
+#listing-report .quarto-post .listing-title {
+  text-align: left !important;
+  margin-top: 0;
+}
+
+#listing-subjects .quarto-post:first-child,
+#listing-projects .quarto-post:first-child,
+#listing-report .quarto-post:first-child {
+  padding-top: 0.25rem !important;
+}
+
+@media (max-width: 760px) {
+  #listing-subjects .quarto-post,
+  #listing-projects .quarto-post,
+  #listing-report .quarto-post {
+    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-areas: "copy" "visual";
+    gap: 0.9rem;
+  }
+
+  #listing-subjects .quarto-post .thumbnail,
+  #listing-projects .quarto-post .thumbnail,
+  #listing-report .quarto-post .thumbnail {
+    max-width: 100% !important;
+  }
+}
