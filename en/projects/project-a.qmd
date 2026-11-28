@@ -166,8 +166,6 @@ Conversion proportions were tested with an independent-samples t-test and a chi-
 
 **Conclusion:** The difference was verified as statistically significant, not due to chance, and the new service scenario was decided for full rollout. The observed difference (+5.6 pp) is smaller than the design MDE (+6.5 pp), so power is about 71%; the effect size will be re-checked through post-rollout monitoring.
 
-> A detailed reproduction is in [Report: A/B Test Analysis Note](../posts/2025-11-kamelo-analysis/index.qmd).
-
 ## [Tableau]{.tag} Real-time business growth dashboard
 
 ::: {.lead-line}

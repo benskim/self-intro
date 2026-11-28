@@ -2,6 +2,7 @@
 title: "A/B 테스트 분석 노트: 장르 기획 콘텐츠의 영상 변환율 개선"
 subtitle: "퍼널 진단부터 표본 산정, 유의성 검정까지 정리한 실험 노트"
 description: "Project A의 A/B 테스트를 퍼널 진단 → 표본 산정 → 유의성 검정 순서로 정리한 샘플 리포트입니다."
+draft: true
 date: "2026-11-23"
 categories: [분석노트, A/B테스트, Project A]
 image: images/ab-result.png
