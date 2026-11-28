@@ -1,6 +1,7 @@
 ---
 title: "Video Data Curation & MLOps"
 subtitle: "데이터 품질 개선을 모델 학습과 운영 파이프라인에 연결하다"
+description: "영상·음성 데이터의 품질 기준과 자동 정제 파이프라인을 만들고, 학습 샘플과 GPU 학습 시간을 줄인 데이터 큐레이션·MLOps 프로젝트입니다."
 image: images/project-b.png
 toc: true
 ---
