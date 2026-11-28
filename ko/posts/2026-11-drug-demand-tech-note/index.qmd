@@ -12,7 +12,7 @@ toc-depth: 2
 
 ::: {.callout-note}
 ## 이 노트에 대해
-[수요 보고서](../2026-11-drug-demand-forecast/index.qmd)의 부록 A \~ D를 옮긴 것이다. 숫자는 2026-11-24 판과 같다. 결론과 실무 권장안은 수요 보고서에, 용어 풀이는 [수요 보고서의 용어집](../2026-11-drug-demand-forecast/index.qmd#glossary)에 있다. 시리즈 전체는 [시리즈 안내](../2026-11-pharm-data-series/index.qmd)에서 본다.
+용어 풀이는 [수요 보고서의 용어집](../2026-11-drug-demand-forecast/index.qmd#glossary)에 있다. 시리즈 전체는 [시리즈 안내](../2026-11-pharm-data-series/index.qmd)에서 본다.
 :::
 
 ## 분류군마다 무엇이 다른가 {#class-diff}

@@ -5,15 +5,12 @@ page-layout: full
 toc: false
 code-tools: false
 listing:
-  id: reports
+  id: subjects
   contents:
-    - "posts/*/index.qmd"
-    - "!posts/2026-11-sample-analysis/index.qmd"
-    - "!posts/2026-11-drug-demand-tech-note/index.qmd"
+    - "../ko/subjects/*.md"
   sort: "date desc"
   type: default
-  fields: [date, title, subtitle]
-  date-format: "MMM D, YYYY"
+  fields: [title, description]
   sort-ui: false
   filter-ui: false
 ---
@@ -30,7 +27,8 @@ I spent more than five years at startups as a data analyst, data scientist, and 
 :::
 
 ::: {.hero-actions}
-[Read the reports](#reports-section)
+[See recent interests](#reports-section)
+[All reports](report.qmd)
 [See experience](experience.qmd)
 :::
 :::
@@ -53,13 +51,13 @@ Pharmacies decide neither prescriptions, prices nor supply, yet bear the results
 :::
 
 ::: {.home-section #reports-section}
-## Reports
+## Recent interests
 
 ::: {.section-lede}
-These reports take on questions that public medicine data can answer. Each report spends as much space on how far the numbers can be trusted as on the results.
+The people and problems I am looking into now. Each subject starts from field research and leads to analyses that public data allow within real constraints. The subject notes are in Korean; analysis results are in the [reports](report.qmd).
 :::
 
-::: {#reports}
+::: {#subjects}
 :::
 :::
 

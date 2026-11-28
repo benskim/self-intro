@@ -1,0 +1,35 @@
+---
+title: "No signal was found that announces winter prescription rises months ahead"
+subtitle: "Of 394,548 candidates built from search indices and paediatric care flows, only the current month's search acceleration held up"
+description: "English summary. Starting from pharmacies' winter shortages of cold medicines and antibiotics, the analysis searched for public signals that move 1–6 months ahead of prescription growth. None held up; current-month search acceleration moved together with current-month prescription growth."
+date: "2026-11-28"
+categories: [Medicine data, Public medicine data series]
+author: "Ben Kim"
+toc: true
+code-tools: false
+---
+
+::: {.report-meta}
+**Edition** November 28, 2026 (numbers from the November 26, 2026 run)
+**Data** NHIS drug usage statistics 2019–2025 by age, sex and facility type; Google Trends (cold, flu, cough, pneumonia, runny nose, rhinitis); working days as a control
+**Full report (Korean)** [Read the Korean version](../../../ko/posts/2026-11-winter-leading-signals/index.qmd)
+:::
+
+## Summary
+
+The [demand page](../2026-11-drug-demand-forecast/index.qmd) found that forecasts missed most for winter respiratory drugs and antibiotics. This page asks whether any public signal announces that winter months ahead, which would give distributors time to prepare.
+
+| Question | What the data show |
+|---|---|
+| Is there a signal 1–6 months ahead? | **None held up.** 394,548 candidates were screened on 2020–2023 and checked once on 2024–2025; no leading candidate survived |
+| Is there a signal in the same month? | **Yes.** The year-on-year acceleration of a combined index of six searches moved with same-month prescription growth (correlation 0.50–0.56 in the check period, six series). No fake signal (true signals shifted 13–71 months) survived in the search track |
+| Where is it stronger? | **Children (0–9), adolescents (10–19) and respiratory drugs; weaker for 60+** |
+| Do paediatric care flows lead? | **Not confirmed.** They beat fakes in the screening period but not in the check period |
+
+## What it means
+
+Months-ahead warnings could not be built from these data. Because usage statistics arrive five months late, current-month search acceleration can still serve as a **nowcast**: a sign of how fast prescriptions are rising now, available before the official counts. Untested suggestions: keep wide forecast ranges for respiratory drugs and antibiotics before winter; watch search acceleration monthly during winter and recheck supply when it rises fast; start with paediatric and respiratory drugs. Do not use search to forecast prescriptions months ahead, and do not read the association as a cause.
+
+## Limits
+
+These are correlations; epidemics and seasons move both searches and prescriptions. Evidence for national signals is the number of months (48 for screening, 24 for checking). 2019–2025 had been examined before, so this is exploration, not confirmation; confirmation will use 2026 data. Care flows are proxies built from the same usage statistics, not disease-agency data. Google Trends was downloaded once. Shortages are not visible.
