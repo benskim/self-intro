@@ -10,7 +10,8 @@
 | --- | --- | --- |
 | Home | `ko/index.qmd`, `en/index.qmd` (루트 `index.qmd`는 `ko/`로 이동) | 정체성, 연구 분야, 대표 Subjects·Reports, 경력 요약 |
 | Subjects | `ko/subjects.qmd` → `ko/subjects/*.md` | 시장조사·문제 정의 (영어판은 목록만) |
-| Reports | `ko/report.qmd` → `ko/posts/*/index.qmd` | 데이터 분석과 검증 결과 |
+| Reports | `ko/report.qmd` → `ko/posts/*/index.qmd` | 공개 데이터 분석 결과 2건 |
+| Technical Notes | `ko/technical-notes.qmd` → `ko/posts/*-tech-note/index.qmd` | 분석 방법, 검증 절차, 재현 정보 |
 | Projects | `ko/projects.qmd` → `ko/projects/*.qmd` | 이전 직무 프로젝트 |
 | About | `ko/experience.qmd` | 경력·학력·기술·연락처 |
 
@@ -70,10 +71,15 @@
 
 | 보고서 | 핵심 내용 |
 | --- | --- |
-| [약국의 고충, 공개 데이터로 어디까지 덜 수 있나](ko/posts/2026-11-pharm-data-series/index.qmd) (2026-11-27) | 시리즈 안내. 고충 단계와 보고서의 연결, 다음 분석 계획 |
 | [한 달 전에 알 수 있었던 약가인하는 2024년뿐이었다](ko/posts/2026-11-benefit-change-lead/index.qmd) (2026-11-27) | 쌓아두기: 약가인하를 언제 알 수 있고 얼마나 작은가, 예고 실현율, 고시 대조 |
 | [처방 예측이 크게 빗나간 성분은 겨울 호흡기·항생제였다](ko/posts/2026-11-drug-demand-forecast/index.qmd) (2026-11-24, 2026-11-27 개정) | 들여오기: 성분별 처방 수요 예측, 오차가 몰리는 성분과 분류군 |
 | [수요 예측 기술 노트](ko/posts/2026-11-drug-demand-tech-note/index.qmd) (2026-11-27) | 분류군 실험, 사전등록·예측 봉인, 예측 모델 명세 |
+
+## 기술 노트
+
+| 문서 | 핵심 내용 |
+| --- | --- |
+| [수요 예측 기술 노트](ko/posts/2026-11-drug-demand-tech-note/index.qmd) (2026-11-27) | 분류군 실험, 사전등록·예측 봉인, 가격 정보 결합 실험, 예측 모델 명세 |
 
 ## 기술 스택
 
