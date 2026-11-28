@@ -8,8 +8,9 @@ listing:
     - projects/project-b.qmd
     - projects/project-c.qmd
   sort: false
-  type: default
-  fields: [image, title, description]
+  type: grid
+  grid-columns: 2  
+  fields: [image, title, description,categories]
   image-height: 200px
 page-layout: full
 code-tools: false

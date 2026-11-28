@@ -4,25 +4,6 @@ pagetitle: "Ben Kim · 건강 데이터 분석"
 page-layout: full
 toc: false
 code-tools: false
-listing:
-  - id: subjects
-    contents:
-      - "subjects/*.md"
-    sort: "date desc"
-    type: default
-    fields: [title, description, categories]
-    max-items: 2
-    sort-ui: false
-    filter-ui: false
-  - id: reports
-    contents:
-      - posts/2026-11-benefit-change-lead/index.qmd
-      - posts/2026-11-drug-demand-forecast/index.qmd
-    sort: false
-    type: default
-    fields: [title, subtitle, categories]
-    sort-ui: false
-    filter-ui: false
 ---
 
 :::: {.home}
@@ -58,7 +39,7 @@ listing:
 :::
 
 ::: {.home-section}
-## 연구 분야
+## Subjects
 
 ```{=html}
 <div class="domain-grid">
@@ -76,29 +57,31 @@ listing:
   </div>
 </div>
 ```
-:::
 
-::: {.home-section #subjects-section}
-## Subjects
-
-::: {.section-lede}
-분석에 들어가기 전에 어떤 문제를 왜 풀어야 하는지, 공개 데이터로 어디까지 확인할 수 있는지 정리한 조사 노트입니다. [전체 보기 →](subjects.qmd)
-:::
-
-::: {#subjects}
-:::
-:::
-
-::: {.home-section #reports-section}
+::: {.home-section }
 ## Reports
 
 ::: {.section-lede}
 약국 고충 조사에서 나온 질문을 공개 데이터로 분석한 결과입니다. 숫자와 함께 그 숫자를 얼마나 믿을 수 있는지와 한계를 적습니다. [전체 보기 →](report.qmd)
 :::
 
-::: {#reports}
-:::
-:::
+```{=html}
+<ol class="timeline">
+  <li>
+    <span class="when">약국-기간분석</span>
+    <div><strong>한 달 전에 알 수 있었던 약가인하는 2024년뿐이었다</strong>
+      <p>“약가인하를 시행 며칠 전에야 알아 대조를 포기하고, 1원 단위 인하는 손해를 안고 간다”는 약국 현장의 말을 심평원 급여목록 2022~2026과 보건복지부 고시로 확인했습니다.
+      <a href="posts/2026-11-benefit-change-lead/index.qmd">자세히 보기</a></p></div>
+  </li>
+  <li>
+    <span class="when">약국-수요예측</span>
+    <div><strong>처방 예측이 크게 빗나간 성분은 겨울 호흡기·항생제였다</strong>
+      <p>약국이 약을 제때 구하지 못하는 고충(들여오기) 가운데 공개 데이터로 다룰 수 있는 수요 쪽을 봤습니다. 건보공단 사용통계 2018~2025로 성분 501개의 처방량을 예측해, 얼마나 맞히는지와 어디서 크게 빗나가는지를 정리했습니다.
+      <a href="posts/2026-11-drug-demand-forecast/index.qmd">자세히 보기</a></p></div>
+  </li>
+</ol>
+```
+
 
 ::: {.home-section}
 ## 일하는 방식

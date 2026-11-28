@@ -6,14 +6,14 @@ listing:
     - posts/2026-11-benefit-change-lead/index.qmd
     - posts/2026-11-drug-demand-forecast/index.qmd
   sort: false
-  type: default
+  type: grid
+  grid-columns: 2  
   categories: true
-  fields: [image, date, title, description, categories]
+  fields: [image, title, description, categories]
   sort-ui: false
   filter-ui: false
 page-layout: full
 title-block-banner: false
-date-format: "YYYY년 M월 D일"
 code-tools: false
 ---
 
