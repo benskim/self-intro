@@ -1,7 +1,6 @@
 ---
 title: "Reports"
 listing:
-  id: listing-report
   contents:
     - posts/2026-11-benefit-change-lead/index.qmd
     - posts/2026-11-drug-demand-forecast/index.qmd
