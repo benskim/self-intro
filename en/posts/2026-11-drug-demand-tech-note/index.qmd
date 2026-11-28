@@ -11,7 +11,7 @@ code-tools: false
 
 ::: {.callout-note}
 ## About this note
-These sections were moved out of the [demand forecasting report](../2026-11-drug-demand-forecast/index.qmd) on 2026-11-27; the numbers are unchanged from the 2026-11-24 edition. Conclusions and recommendations are in the report, terms in [its glossary](../2026-11-drug-demand-forecast/index.qmd#glossary), and the whole series in the [series overview](../2026-11-pharm-data-series/index.qmd). The full Korean version is [here](../../../ko/posts/2026-11-drug-demand-tech-note/index.qmd).
+These sections were moved out of the [demand forecasting report](../2026-11-drug-demand-forecast/index.qmd) on 2026-11-27; the numbers are unchanged from the 2026-11-24 edition. Conclusions and recommendations are in the report, terms in [its glossary](../2026-11-drug-demand-forecast/index.qmd#glossary), and field context in the [pharmacy pain-point research](../../../ko/subjects/drug_store.md). The full Korean version is [here](../../../ko/posts/2026-11-drug-demand-tech-note/index.qmd).
 :::
 
 ## Drug-class diagnostics {#class-diff}
