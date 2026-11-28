@@ -3,8 +3,8 @@ title: "Prescription forecasts missed most for winter respiratory drugs and anti
 subtitle: "National ingredient-level prescriptions were forecast about 6–7% off for next month, and a simple statistical model was enough"
 description: "English summary. Pharmacies struggle to get drugs on time; public data can show only the demand side of that problem. NHIS usage statistics 2018–2025 were used to forecast 501 ingredients' prescriptions and to find where forecasts go most wrong."
 date: "2026-11-24"
-date-modified: "2026-11-27"
-categories: ["Pharmacy: procuring", Medicine data, Time-series forecasting, Public medicine data series]
+date-modified: "2026-11-28"
+categories: ["Pharmacy: procuring", Medicine data, Time-series forecasting]
 image: images/class-error.svg
 author: "Ben Kim"
 toc: true
