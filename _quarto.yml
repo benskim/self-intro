@@ -8,12 +8,12 @@ website:
   repo-url: "https://github.com/benskim/self-intro"
   navbar:
     left:
-      - text: "Home"
-        href: ko/index.qmd
       - text: "Subjects"
         href: ko/subjects.qmd
       - text: "Reports"
         href: ko/report.qmd
+      - text: "Technical Notes"
+        href: ko/technical-notes.qmd
       - text: "Projects"
         href: ko/projects.qmd
       - text: "About"
