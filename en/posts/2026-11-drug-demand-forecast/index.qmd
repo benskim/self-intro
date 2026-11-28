@@ -117,11 +117,11 @@ The gain over "same month last year" was 40% in 2023, 31% in 2024 and 29% in 202
 
 ## Appendix A: additional class diagnostics and price-list experiment {#appendix-a}
 
-## Drug-class diagnostics {#class-diff}
+### Drug-class diagnostics
 
 *Among ATC level-2 classes with at least 10 ingredients, ranked by machine learning error. Post-hoc exploration: these are observed patterns and associations, not causes. The per-class error chart is in the [demand report](#class-error).*
 
-### Respiratory drugs and antibiotics: winter height differed from year to year
+#### Respiratory drugs and antibiotics: winter height differed from year to year
 
 ::: {.wide-table}
 | ATC class | Ingredients | Share of amount | Machine learning error | ETS error | Winter/summer ratio | Year-on-year swing |
@@ -133,13 +133,13 @@ The gain over "same month last year" was 40% in 2023, 31% in 2024 and 29% in 202
 
 Errors are weighted by claimed amount within the class. Ratios and swings are medians across ingredients, 2023–2025.
 
-### A separate group: S01, ophthalmologicals
+#### A separate group: S01, ophthalmologicals
 
 S01 has 20 ingredients (4.8% of amount), a machine learning error of 11.1% and an ETS error of 9.6%. It has no winter peak (ratio 0.95) and a median swing of only ±7%. Its error is concentrated in two ingredients: 54% of the machine learning error comes from sodium hyaluronate and 17% from bilberry fruit extract.
 
 ![Share of the S01 machine learning error by ingredient.](images/s01-share.svg){fig-alt="Sodium hyaluronate 54%, bilberry 17%, olopatadine 6%, brimonidine 4%, tobramycin 4%, 15 other ingredients 15%."}
 
-### What this means
+#### What this means
 
 The analysis does more than measure error: prescription volume varies in different ways across classes.
 
@@ -165,7 +165,7 @@ The analysis does more than measure error: prescription volume varies in differe
 - **Without more data, the analysis does not go on to explain causes.** There are no data on epidemics, allergies, or shortages.
 - **Conclusion:** this is not a reason to make the model more complex. Keep ETS as the default and monitor each class's characteristics separately.
 
-## Reimbursement-list price test {#list-price-test}
+### Reimbursement-list price test
 
 **Adding the price changes visible in the list at forecast time did not show an improvement.** The criteria were fixed before results were seen.
 
@@ -180,8 +180,6 @@ The analysis does more than measure error: prescription volume varies in differe
 - The list information is better suited to price and suspension alerts than to demand forecasting.
 
 ## Appendix B: model specification and reproducibility {#appendix-b}
-
-## Model specification {#model-spec}
 
 **This section records the target set, inputs, training and evaluation so the demand forecast can be reproduced.** All settings were locked in the pre-registration document and code before results were seen.
 
