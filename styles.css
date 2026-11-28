@@ -205,6 +205,63 @@ h3 { font-weight: 700; margin-top: 1.8rem; font-size: 1.15rem; }
 .audience h3 { margin: 0 0 0.35rem; font-size: 1.1rem; }
 .audience p { margin: 0; color: var(--ink-sub); font-size: 0.95rem; line-height: 1.6; }
 
+/* 일하는 흐름: 순서가 있는 다섯 단계 */
+.flow {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 56rem;
+  counter-reset: flow;
+}
+.flow li {
+  padding: 0.9rem 0.9rem 0.9rem 0;
+  border-top: 4px solid var(--pine);
+  font-size: 0.93rem;
+  line-height: 1.5;
+}
+.flow li::before {
+  counter-increment: flow;
+  content: counter(flow);
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--pine);
+}
+.flow strong { display: block; margin-bottom: 0.2rem; }
+.flow span { color: var(--ink-sub); }
+
+/* 연구 분야 두 칸 */
+.domain-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 56rem;
+}
+.domain-grid > div { border-top: 3px solid var(--pine); padding-top: 0.8rem; }
+.domain-grid .domain-name { margin: 0; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.04em; color: var(--ink-faint); text-transform: uppercase; }
+.domain-grid h3 { margin: 0.2rem 0 0.4rem; font-size: 1.15rem; }
+.domain-grid p { color: var(--ink-sub); font-size: 0.95rem; line-height: 1.6; }
+
+/* 상태 표시: 분석 공개 / 시장조사 완료 / 다음 분석 설계 */
+.status {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.15rem 0.65rem;
+  border-radius: 999px;
+  margin-right: 0.3rem;
+}
+.status-done { background: var(--pine); color: #fff; }
+.status-next { background: var(--mint); color: var(--pine-dark); }
+.status-plan { background: #EEF1F0; color: var(--ink-sub); }
+.status-legend { font-size: 0.9rem; color: var(--ink-sub); line-height: 2.1; }
+
+/* 홈 목록 두 개(Subjects, Reports) */
+#subjects .quarto-post, #reports .quarto-post { padding: 1rem 0; }
+#subjects .listing-title { font-size: 1.15rem; font-weight: 700; }
+
 /* 경력 타임라인: 실제 시간 순서 */
 .timeline { list-style: none; padding: 0; margin: 0.4rem 0 1.4rem; max-width: 48rem; }
 .timeline li {
@@ -224,6 +281,9 @@ h3 { font-weight: 700; margin-top: 1.8rem; font-size: 1.15rem; }
 #reports .listing-subtitle { color: var(--ink-sub); }
 
 @media (max-width: 760px) {
+  .flow { grid-template-columns: 1fr; }
+  .flow li { padding: 0.7rem 0; }
+  .domain-grid { grid-template-columns: 1fr; gap: 1.2rem; }
   .audience { grid-template-columns: 1fr 1fr; }
   .timeline li { grid-template-columns: 1fr; gap: 0.2rem; }
 }

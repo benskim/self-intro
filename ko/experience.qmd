@@ -1,11 +1,14 @@
 ---
-title: "Experience"
+title: "About"
+subtitle: "경력 · 학력 · 기술 · 연락처"
 toc: true
 ---
 
-데이터 분석, 데이터 큐레이션·MLOps, 통계 기반 예측 모델링을 거쳐 팀을 이끄는 역할까지 이어온 경력입니다.
+건강과 의약품 현장의 문제를 조사하고 공개 데이터로 검증하는 분석가 Ben Kim입니다. 데이터 분석, 데이터 큐레이션·MLOps, 통계 기반 예측 모델링을 거쳐 팀을 이끄는 역할까지 일했습니다. 지금 하는 분석은 [Subjects](subjects.qmd)와 [Reports](report.qmd)에, 과거 직무 프로젝트는 [Projects](projects.qmd)에 있습니다.
 
-## Klleon R&D — 데이터 파트 리드 {#klleon}
+## 경력 {#career}
+
+### Klleon R&D — 데이터 파트 리드 {#klleon}
 
 `2021.03 ~ 2023.11` (2년 9개월)
 
@@ -25,7 +28,7 @@ toc: true
 
 → 상세: [생성형AI B2C 앱 서비스 그로스 분석](projects/project-a.qmd)
 
-## Freewheelin — 데이터 분석가 {#freewheelin}
+### Freewheelin — 데이터 분석가 {#freewheelin}
 
 `2019.04 ~ 2020.07` (1년 4개월) · 서울 관악구
 
@@ -41,7 +44,7 @@ toc: true
 * 비효율적인 저장 비용 절감
 * 데이터 품질 관리 총괄
 
-## Epopcon — 데이터 사이언티스트 {#epopcon}
+### Epopcon — 데이터 사이언티스트 {#epopcon}
 
 `2017.12 ~ 2019.03` (1년 4개월)
 
@@ -71,11 +74,19 @@ toc: true
 * Using Machine Learning in Trading and Finance
 * Financial Engineering and Risk Management Part I
 
-## 보유 기술
+## 기술
 
-수학 · 문제 관리 · 분석 능력
+| 분야 | 도구·방법 |
+|---|---|
+| 분석·통계 | 통계·시계열 분석, 실험 설계(A/B 테스트), 사전등록과 백테스트, 확률 모델(포아송 과정) |
+| 기계학습 | LightGBM, TensorFlow, 데이터 중심 AI(데이터 큐레이션) |
+| 데이터 처리 | Python, SQL, DuckDB, BigQuery |
+| 운영·MLOps | MLflow, Kubeflow, DVC |
+| 제품 분석 | Firebase, Appsflyer, Amplitude, Tableau |
+| 강점 | 수학 · 문제 관리 · 분석 능력 |
 
-## 링크
+## 연락처 {#contact}
 
+* [GitHub](https://github.com/benskim)
 * [LinkedIn](https://www.linkedin.com/in/benjamin-s-k)
 * [Medium Blog](https://medium.com/@benskim915)

@@ -5,60 +5,100 @@ page-layout: full
 toc: false
 code-tools: false
 listing:
-  id: subjects
-  contents:
-    - "subjects/*.md"
-  sort: "date desc"
-  type: default
-  fields: [image, title, description]
-  image-height: 160px
-  sort-ui: false
-  filter-ui: false
+  - id: subjects
+    contents:
+      - "subjects/*.md"
+    sort: "date desc"
+    type: default
+    fields: [image, title, description, categories]
+    image-height: 160px
+    max-items: 2
+    sort-ui: false
+    filter-ui: false
+  - id: reports
+    contents:
+      - posts/2026-11-benefit-change-lead/index.qmd
+      - posts/2026-11-drug-demand-forecast/index.qmd
+      - posts/2026-11-winter-leading-signals/index.qmd
+    sort: false
+    type: default
+    fields: [title, subtitle, categories]
+    sort-ui: false
+    filter-ui: false
 ---
 
 :::: {.home}
 
 ::: {.hero}
 ::: {.hero-title}
-데이터로 사람들의 건강에 보탬이 되려는 분석가, Ben Kim입니다.
+건강과 의약품 현장의 문제를 발견하고, 데이터로 검증합니다.
 :::
 
 ::: {.hero-lede}
-스타트업에서 5년 넘게 데이터 분석가, 데이터 사이언티스트, AI 데이터 파트 리드로 일했습니다. 지금은 약국이 겪는 고충에서 출발해, 그 고충을 덜어 줄 수 있는 근거를 공개 의약품 데이터로 만들고 있습니다.
+환자와 약국이 겪는 문제를 조사하고, 공개 데이터로 문제의 규모와 해결 가능성을 확인합니다. 스타트업에서 5년 넘게 데이터 분석가, 데이터 사이언티스트, 데이터 파트 리드로 일했습니다.
 :::
 
 ::: {.hero-actions}
-[최근 관심사 보기](#reports-section)
-[보고서 목록](report.qmd)
-[경력 보기](experience.qmd)
+[Subjects](subjects.qmd)
+[Reports](report.qmd)
+[About](experience.qmd)
 :::
 :::
 
 ::: {.home-section}
-## 누구를 돕는 분석인가
-
-::: {.section-lede}
-약국은 처방도, 약가도, 공급도 정하지 못한 채 그 결과를 떠안습니다. 이 분석은 약국의 고충에서 출발해, 주문·재고·반품 정보로 그 고충을 덜어 줄 수 있는 쪽이 쓸 근거를 공개 데이터로 만듭니다.
-:::
+## 일하는 흐름
 
 ```{=html}
-<div class="audience">
-  <div><h3>약국</h3><p>약가인하가 언제, 얼마나 오는지와 어떤 성분의 수요가 크게 흔들리는지 미리 압니다.</p></div>
-  <div><h3>의약품 유통</h3><p>인하 알림과 성분 수요 기준선을 약국 알림과 공급 계획의 기준으로 씁니다.</p></div>
-  <div><h3>약국 지원 서비스</h3><p>약국의 주문·재고 기록과 합쳐 대조할 품목과 챙길 성분의 순서를 정합니다.</p></div>
-  <div><h3>함께 쓸 수 있는 곳</h3><p>제약사와 처방하는 의사도 같은 근거로 성분 시장과 급여 변경을 확인할 수 있습니다.</p></div>
+<ol class="flow">
+  <li><strong>현장 문제</strong><span>보도·설문·사례로 누가 무엇 때문에 힘든지 찾는다</span></li>
+  <li><strong>시장조사</strong><span>고충을 단계로 나누고 우선순위를 매긴다</span></li>
+  <li><strong>데이터 탐색</strong><span>공개 데이터의 접근성·확보 가능성·1인 구현 제약을 평가한다</span></li>
+  <li><strong>분석·검증</strong><span>결과를 보기 전에 기준을 정하고, 다른 기간으로 확인한다</span></li>
+  <li><strong>활용과 한계</strong><span>할 수 있는 것과 없는 것을 나눠 적는다</span></li>
+</ol>
+```
+:::
+
+::: {.home-section}
+## 연구 분야
+
+```{=html}
+<div class="domain-grid">
+  <div>
+    <p class="domain-name">Pharmacy &amp; Drug Market</p>
+    <h3>약국과 의약품 시장</h3>
+    <p>약국의 고충을 의약품 유통·약국 지원 서비스가 덜어 줄 수 있도록, 약가인하의 시점과 폭, 처방 수요, 겨울 수요 신호를 공개 데이터로 본다.</p>
+    <span class="status status-done">분석 공개 3편</span>
+  </div>
+  <div>
+    <p class="domain-name">Patient &amp; Medication</p>
+    <h3>환자의 약과 건강기능식품</h3>
+    <p>약과 건강기능식품을 함께 먹는 만성질환자가 원료와 약 성분을 대조하고 회수·재평가 소식을 챙기는 어려움을 공개 데이터로 줄일 방법을 찾는다.</p>
+    <span class="status status-next">시장조사 완료 · 다음 주력</span>
+  </div>
 </div>
 ```
 :::
 
-::: {.home-section #reports-section}
-## 최근 관심사
+::: {.home-section #subjects-section}
+## Subjects
 
 ::: {.section-lede}
-지금 들여다보는 사람들과 그들이 겪는 고충입니다. 각 주제는 현장 조사에서 출발해, 제약조건 안에서 공개 데이터로 할 수 있는 분석으로 이어집니다. 분석 결과는 [보고서](report.qmd)에 있습니다.
+분석에 들어가기 전에 어떤 문제를 왜 풀어야 하는지, 공개 데이터로 어디까지 확인할 수 있는지 정리한 조사 노트입니다. [전체 보기 →](subjects.qmd)
 :::
 
 ::: {#subjects}
+:::
+:::
+
+::: {.home-section #reports-section}
+## Reports
+
+::: {.section-lede}
+약국 고충 조사에서 나온 질문을 공개 데이터로 분석한 결과입니다. 숫자와 함께 그 숫자를 얼마나 믿을 수 있는지와 한계를 적습니다. [전체 보기 →](report.qmd)
+:::
+
+::: {#reports}
 :::
 :::
 
@@ -69,7 +109,10 @@ listing:
 제약조건 안에서 가장 저항이 적고 실행 가능한 행동을 찾는다.
 :::
 
-복잡한 방법이 단순한 방법보다 낫다는 근거가 없으면 단순한 방법을 고릅니다. 결과를 보기 전에 판정 기준을 먼저 정하고, 불리한 결과도 그대로 적습니다.
+* 데이터를 실제로 구할 수 있는지부터 확인합니다.
+* 결과를 보기 전에 판정 기준을 정합니다.
+* 복잡한 방법이 낫다는 근거가 없으면 검증된 단순한 방법을 고릅니다.
+* 불리한 결과와 분석의 한계를 숨기지 않습니다.
 :::
 
 ::: {.home-section}
@@ -97,9 +140,13 @@ listing:
 </ol>
 ```
 
-연세대학교 응용통계학·경제학 학사 · Python, SQL, 통계·시계열 분석, LightGBM, BigQuery, MLflow
+연세대학교 응용통계학·경제학 학사 · Python, SQL, 통계·시계열 분석, LightGBM, BigQuery, MLflow · [About에서 전체 보기](experience.qmd) · [Projects](projects.qmd)
+:::
 
-[전체 경력](experience.qmd) · [프로젝트](projects.qmd) · [LinkedIn](https://www.linkedin.com/in/benjamin-s-k) · [Medium](https://medium.com/@benskim915) · [GitHub](https://github.com/benskim)
+::: {.home-section}
+## 연락처
+
+[GitHub](https://github.com/benskim) · [LinkedIn](https://www.linkedin.com/in/benjamin-s-k) · [Medium](https://medium.com/@benskim915)
 :::
 
 ::::

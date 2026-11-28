@@ -5,60 +5,100 @@ page-layout: full
 toc: false
 code-tools: false
 listing:
-  id: subjects
-  contents:
-    - "../ko/subjects/*.md"
-  sort: "date desc"
-  type: default
-  fields: [image, title, description]
-  image-height: 160px
-  sort-ui: false
-  filter-ui: false
+  - id: subjects
+    contents:
+      - "../ko/subjects/*.md"
+    sort: "date desc"
+    type: default
+    fields: [image, title, description]
+    image-height: 160px
+    max-items: 2
+    sort-ui: false
+    filter-ui: false
+  - id: reports
+    contents:
+      - posts/2026-11-benefit-change-lead/index.qmd
+      - posts/2026-11-drug-demand-forecast/index.qmd
+      - posts/2026-11-winter-leading-signals/index.qmd
+    sort: false
+    type: default
+    fields: [title, subtitle]
+    sort-ui: false
+    filter-ui: false
 ---
 
 :::: {.home}
 
 ::: {.hero}
 ::: {.hero-title}
-I'm Ben Kim, an analyst who wants data to help people stay healthy.
+I find problems in health and medicine, and test them with data.
 :::
 
 ::: {.hero-lede}
-I spent more than five years at startups as a data analyst, data scientist, and AI data part lead. Now I start from the problems pharmacies face and use public medicine data to build evidence that can ease them.
+I research the problems patients and pharmacies face, and use public data to check how large they are and what can be done. I spent more than five years at startups as a data analyst, data scientist, and data part lead.
 :::
 
 ::: {.hero-actions}
-[See recent interests](#reports-section)
-[All reports](report.qmd)
-[See experience](experience.qmd)
+[Subjects](subjects.qmd)
+[Reports](report.qmd)
+[About](experience.qmd)
 :::
 :::
 
 ::: {.home-section}
-## Who the analysis helps
-
-::: {.section-lede}
-Pharmacies decide neither prescriptions, prices nor supply, yet bear the results. This work starts from pharmacy problems and uses public data to build evidence for those who could ease them with ordering, stock and return information.
-:::
+## How the work flows
 
 ```{=html}
-<div class="audience">
-  <div><h3>Pharmacies</h3><p>Know in advance when and how much prices will be cut, and which ingredients' demand swings.</p></div>
-  <div><h3>Distributors</h3><p>Use price-cut alerts and ingredient demand baselines for pharmacy alerts and supply planning.</p></div>
-  <div><h3>Pharmacy support services</h3><p>Combine them with a pharmacy's order and stock records to decide what to check and what to watch.</p></div>
-  <div><h3>Also useful for</h3><p>Drug makers and prescribers can check ingredient markets and reimbursement changes on the same evidence.</p></div>
+<ol class="flow">
+  <li><strong>Field problem</strong><span>Find who struggles with what, from press, surveys and cases</span></li>
+  <li><strong>Market research</strong><span>Split the problems into stages and rank them</span></li>
+  <li><strong>Data search</strong><span>Rate public data on access, completeness and one-person feasibility</span></li>
+  <li><strong>Analysis and checks</strong><span>Fix criteria before results; confirm on another period</span></li>
+  <li><strong>Use and limits</strong><span>Separate what can be done from what cannot</span></li>
+</ol>
+```
+:::
+
+::: {.home-section}
+## Research domains
+
+```{=html}
+<div class="domain-grid">
+  <div>
+    <p class="domain-name">Pharmacy &amp; Drug Market</p>
+    <h3>Pharmacies and the drug market</h3>
+    <p>Timing and size of price cuts, prescription demand and winter demand signals, so that distributors and pharmacy support services can ease pharmacy burdens.</p>
+    <span class="status status-done">3 reports published</span>
+  </div>
+  <div>
+    <p class="domain-name">Patient &amp; Medication</p>
+    <h3>Patients' medicines and supplements</h3>
+    <p>How public data can help chronically ill patients who take medicines and health supplements together check ingredients against drugs and keep up with recalls and re-evaluations.</p>
+    <span class="status status-next">Research done · next focus</span>
+  </div>
 </div>
 ```
 :::
 
-::: {.home-section #reports-section}
-## Recent interests
+::: {.home-section #subjects-section}
+## Subjects
 
 ::: {.section-lede}
-The people and problems I am looking into now. Each subject starts from field research and leads to analyses that public data allow within real constraints. The subject notes are in Korean; analysis results are in the [reports](report.qmd).
+Research notes on which problems to solve and how far public data can reach, written before any analysis. The notes are in Korean. [See all →](subjects.qmd)
 :::
 
 ::: {#subjects}
+:::
+:::
+
+::: {.home-section #reports-section}
+## Reports
+
+::: {.section-lede}
+Analyses of questions raised by the pharmacy research, using public data, with how far the numbers can be trusted and their limits. [See all →](report.qmd)
+:::
+
+::: {#reports}
 :::
 :::
 
@@ -69,7 +109,10 @@ The people and problems I am looking into now. Each subject starts from field re
 Find the action with the least resistance that can still be carried out within the constraints.
 :::
 
-If there is no evidence that a complex method beats a simple one, I choose the simple one. I fix decision rules before seeing results, and I report unfavorable results as they are.
+* Check first whether the data can actually be obtained.
+* Fix decision rules before seeing results.
+* Choose a proven simple method unless there is evidence a complex one is better.
+* Report unfavorable results and limits as they are.
 :::
 
 ::: {.home-section}
@@ -97,9 +140,13 @@ If there is no evidence that a complex method beats a simple one, I choose the s
 </ol>
 ```
 
-Yonsei University, B.A. in Applied Statistics and Economics · Python, SQL, statistics and time series, LightGBM, BigQuery, MLflow
+Yonsei University, B.A. in Applied Statistics and Economics · Python, SQL, statistics and time series, LightGBM, BigQuery, MLflow · [Full profile in About](experience.qmd) · [Projects](projects.qmd)
+:::
 
-[Full experience](experience.qmd) · [Projects](projects.qmd) · [LinkedIn](https://www.linkedin.com/in/benjamin-s-k) · [Medium](https://medium.com/@benskim915) · [GitHub](https://github.com/benskim)
+::: {.home-section}
+## Contact
+
+[GitHub](https://github.com/benskim) · [LinkedIn](https://www.linkedin.com/in/benjamin-s-k) · [Medium](https://medium.com/@benskim915)
 :::
 
 ::::

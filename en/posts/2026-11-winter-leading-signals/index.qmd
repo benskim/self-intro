@@ -3,7 +3,7 @@ title: "No signal was found that announces winter prescription rises months ahea
 subtitle: "Of 394,548 candidates built from search indices and paediatric care flows, only the current month's search acceleration held up"
 description: "English summary. Starting from pharmacies' winter shortages of cold medicines and antibiotics, the analysis searched for public signals that move 1–6 months ahead of prescription growth. None held up; current-month search acceleration moved together with current-month prescription growth."
 date: "2026-11-28"
-categories: [Medicine data, Public medicine data series]
+categories: ["Pharmacy: procuring", Medicine data, Public medicine data series]
 author: "Ben Kim"
 toc: true
 code-tools: false

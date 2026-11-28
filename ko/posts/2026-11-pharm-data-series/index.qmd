@@ -4,7 +4,7 @@ subtitle: "급여목록과 의약품 사용통계로 본 약가인하와 처방 
 description: "약국이 겪는 고충을 약이 약국을 지나가는 순서(들여오기·쌓아두기·내주기·벌기)로 나누고, 공개 의약품 데이터로 다룰 수 있는 부분을 차례로 분석하는 시리즈의 안내 글입니다."
 date: "2026-11-27"
 date-modified: "2026-11-27"
-categories: [의약품 데이터, 공개 의약품 데이터 시리즈]
+categories: [시리즈 안내, 의약품 데이터, 공개 의약품 데이터 시리즈]
 author: "Ben Kim"
 toc: true
 code-tools: false

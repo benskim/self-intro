@@ -1,8 +1,20 @@
 # Ben's Notes
 
-**데이터로 사람들의 건강에 보탬이 되는 분석가가 되기 위한 개인 분석 아카이브입니다.**
+**건강과 의약품 현장의 문제를 발견하고, 데이터로 검증하는 개인 분석 아카이브입니다.**
 
-공개 의약품·건강 데이터로 질문을 세우고, 분석 과정과 검증 방식, 한계를 함께 기록합니다. 이전 경력의 그로스 분석·MLOps·통계 모델링 기록도 함께 둡니다.
+현장 문제 → 시장조사 → 데이터 탐색 → 분석·검증 → 활용과 한계의 흐름으로 기록합니다. 이전 경력의 그로스 분석·MLOps·통계 모델링 기록도 함께 둡니다.
+
+## 사이트 구조
+
+| 메뉴 | 파일 | 내용 |
+| --- | --- | --- |
+| Home | `ko/index.qmd`, `en/index.qmd` (루트 `index.qmd`는 `ko/`로 이동) | 정체성, 연구 분야, 대표 Subjects·Reports, 경력 요약 |
+| Subjects | `ko/subjects.qmd` → `ko/subjects/*.md` | 시장조사·문제 정의 (영어판은 목록만) |
+| Reports | `ko/report.qmd` → `ko/posts/*/index.qmd` | 데이터 분석과 검증 결과 |
+| Projects | `ko/projects.qmd` → `ko/projects/*.qmd` | 이전 직무 프로젝트 |
+| About | `ko/experience.qmd` | 경력·학력·기술·연락처 |
+
+언어 전환은 `lang-switch.html`이 맡습니다. 영어 대응 페이지가 없는 경로(예: `subjects/`)는 영어 목록 페이지로 보냅니다. 파일 이름이 `_`로 시작하는 문서(예: `ko/projects/_claims_review.md`)와 `draft: true`인 글은 사이트에 공개되지 않습니다.
 
 웹사이트: https://benskim.github.io/self-intro/
 
@@ -47,13 +59,21 @@
 | [영상 데이터 큐레이션 및 MLOps PoC](ko/projects/project-b.qmd) | 비정형 데이터 품질 개선, DL 검수 모델, 재현 가능한 학습 파이프라인 |
 | [Gen-AI B2C 앱 서비스 그로스 분석](ko/projects/project-a.qmd) | 로그 기반 퍼널 진단, North Star Metric 설계, A/B 테스트 |
 
+## 시장조사 (Subjects)
+
+| 문서 | 핵심 내용 |
+| --- | --- |
+| [약국 고충 시장조사](ko/subjects/drug_store.md) | 들여오기·쌓아두기·내주기·벌기 네 단계의 약국 고충. 분석 보고서 3편으로 이어짐 |
+| [건강기능식품 다제복용 만성질환자 고충 시장조사](ko/subjects/polypharm.md) | 약·건기식 병용 고충, 공개 데이터 20종 평가, 매핑 사전부터 시작하는 로드맵 |
+
 ## 분석 보고서
 
 | 보고서 | 핵심 내용 |
 | --- | --- |
-| [공개 의약품 데이터 시리즈: 약값 변동과 처방 수요](ko/posts/2026-11-pharm-data-series/index.qmd) (2026-11-27) | 시리즈 안내. 급여목록 가격 정보를 수요 예측에 넣어 본 결과, 다음 분석 계획 |
-| [약값 인하 예고, 얼마나 믿을 수 있나](ko/posts/2026-11-benefit-change-lead/index.qmd) (2026-11-27) | 급여목록 48개월 스냅샷으로 약값 인하·급여정지 예고의 실현율, 비고에 없는 가격 변경 검증 |
-| [성분 처방 수요, 6개월 앞을 얼마나 맞힐 수 있나](ko/posts/2026-11-drug-demand-forecast/index.qmd) (2026-11-24, 2026-11-27 개정) | 성분별 6개월 앞 처방량 예측(ETS·LightGBM), 고변동 성분, 분류군(약효분류·ATC)별 차이 |
+| [약국의 고충, 공개 데이터로 어디까지 덜 수 있나](ko/posts/2026-11-pharm-data-series/index.qmd) (2026-11-27) | 시리즈 안내. 고충 단계와 보고서의 연결, 다음 분석 계획 |
+| [한 달 전에 알 수 있었던 약가인하는 2024년뿐이었다](ko/posts/2026-11-benefit-change-lead/index.qmd) (2026-11-27) | 쌓아두기: 약가인하를 언제 알 수 있고 얼마나 작은가, 예고 실현율, 고시 대조 |
+| [처방 예측이 크게 빗나간 성분은 겨울 호흡기·항생제였다](ko/posts/2026-11-drug-demand-forecast/index.qmd) (2026-11-24, 2026-11-27 개정) | 들여오기: 성분별 처방 수요 예측, 오차가 몰리는 성분과 분류군 |
+| [겨울 처방 증가를 몇 달 앞서 알려 주는 신호는 찾지 못했다](ko/posts/2026-11-winter-leading-signals/index.qmd) (2026-11-28) | 들여오기: 검색 지수·진료 흐름 후보 39만 개의 선행 상관 탐색 |
 | [수요 예측 기술 노트](ko/posts/2026-11-drug-demand-tech-note/index.qmd) (2026-11-27) | 분류군 실험, 사전등록·예측 봉인, 예측 모델 명세 |
 
 ## 기술 스택
