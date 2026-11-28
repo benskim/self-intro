@@ -5,7 +5,6 @@ listing:
     - posts/2026-11-pharm-data-series/index.qmd
     - posts/2026-11-benefit-change-lead/index.qmd
     - posts/2026-11-drug-demand-forecast/index.qmd
-    - posts/2026-11-winter-leading-signals/index.qmd
   sort: false
   type: default
   categories: true
