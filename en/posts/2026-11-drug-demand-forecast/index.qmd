@@ -15,7 +15,7 @@ aliases:
 
 ::: {.callout-note}
 ## About this page
-Second edition (2026-11-27), rewritten to start from the pharmacy problem of getting drugs on time. The first edition (2026-11-24) centred on comparing four forecasting methods. Analyses, numbers and figures are unchanged.
+Third edition (2026-11-28), integrating the former technical note into the report. The first edition (2026-11-24) centred on comparing four forecasting methods; the second (2026-11-27) reframed the analysis around the pharmacy problem of getting drugs on time.
 
 Price cuts: [price-cut report](../2026-11-benefit-change-lead/index.qmd). Field context and public-data scope: [pharmacy pain-point research](../../../ko/subjects/drug_store.md). Verification and model specification are included in this report's checks and appendices.
 :::
