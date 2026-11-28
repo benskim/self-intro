@@ -19,5 +19,5 @@ Subjects are research notes written before any analysis: **which problems are wo
 
 | Subject | In short | Status |
 |---|---|---|
-| Pharmacy pain points (Korean) | Pharmacy problems sorted by the path a drug takes through a pharmacy: procuring, holding stock, dispensing, earning | Research done · 3 reports published |
+| Pharmacy pain points (Korean) | Pharmacy problems sorted by the path a drug takes through a pharmacy: procuring, holding stock, dispensing, earning | Research done · 2 reports published |
 | Patients taking medicines and supplements (Korean) | Problems of chronically ill patients who take medicines and health supplements together: choosing, checking against drugs, taking, monitoring; 20 public datasets rated | Research done · first analysis planned |
