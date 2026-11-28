@@ -390,6 +390,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <figcaption>Average error by forecast horizon, 501 ingredients. Lower is better.</figcaption>
 </figure>
 </div>
+<p><strong>Adjusting for working days (weekdays that are not holidays) while keeping ETS lowered average error from 7.11% to 6.19%</strong> (−0.92 points, 90% interval −1.59 to −0.25). The same approach gave 90% ranges that contained the actual value 90.77% of the time. It is not yet the default: the idea came from the same 2023–2025 errors it was evaluated on, and for 61 respiratory and antibiotic ingredients error rose from 16.07% to 16.82%. It is the first candidate to confirm on 2026 data.</p>
 </section>
 <section id="class-error" class="level2">
 <h2 class="anchored" data-anchor-id="class-error">3. Where do forecasts go most wrong?</h2>
@@ -411,11 +412,11 @@ document.addEventListener("DOMContentLoaded", function () {
 <figcaption>How many times larger winter prescriptions were than summer, winters 18/19 to 24/25.</figcaption>
 </figure>
 </div>
-<p>These are the same classes pharmacists describe as running short in winter. The data show only that their demand is hard to forecast; how short supply was is not in the data. These are observed associations, not causes.</p>
+<p>These are the same classes pharmacists describe as running short in winter. Whether any public signal announces such winters months ahead is examined <a href="../../../en/posts/2026-11-winter-leading-signals/index.html">on a separate page</a>. The data show only that their demand is hard to forecast; how short supply was is not in the data. These are observed associations, not causes.</p>
 </section>
 <section id="class-test" class="level2">
 <h2 class="anchored" data-anchor-id="class-test">4. Does a separate method per drug class help?</h2>
-<p>No.&nbsp;Blending machine learning and ETS differently per class, and adding class information to the model, were tested against criteria fixed in advance. Both reached 6.34% vs 6.46% for the existing model, a 0.12-point gap with no evidence of improvement. Per-class error is used to decide <strong>how much to trust</strong> a forecast, not to change the method. Details are in the <a href="../../../en/posts/2026-11-drug-demand-tech-note/index.html#class-test">technical note</a>.</p>
+<p>No.&nbsp;Blending machine learning and ETS differently per class, and adding class information to the model, were tested against criteria fixed in advance. Both reached 6.34% vs 6.46% for the existing model, a 0.12-point gap with no evidence of improvement. Per-class error is used to decide <strong>how much to trust</strong> a forecast, not to change the method. Details are in the <a href="../../../en/posts/2026-11-drug-demand-tech-note/index.html#class-diff">technical note</a>.</p>
 </section>
 <section id="case-flu" class="level2">
 <h2 class="anchored" data-anchor-id="case-flu">5. Case: the flu drug and “last year × growth”</h2>
@@ -437,7 +438,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <figcaption>Monthly error difference. Top: machine learning vs same month last year. Bottom: machine learning vs ETS.</figcaption>
 </figure>
 </div>
-<p>The gain over “same month last year” was 40% in 2023, 31% in 2024 and 29% in 2025 (23% in the first half of 2023), so it is not a post-COVID artefact. Against ETS the months were mixed. This split was not pre-registered and is not used for any verdict. Adding reimbursement-list prices did not help; see the <a href="../../../en/posts/2026-11-pharm-data-series/index.html#list-price">series overview</a>.</p>
+<p>The gain over “same month last year” was 40% in 2023, 31% in 2024 and 29% in 2025 (23% in the first half of 2023), so it is not a post-COVID artefact. Against ETS the months were mixed. This split was not pre-registered and is not used for any verdict. Shifts in prescription mix (age, region, clinic share) did not explain errors either: no feature met the pre-set criteria, and adjusting for them made every case worse, so that direction was closed. Adding reimbursement-list prices did not help; see the <a href="../../../en/posts/2026-11-pharm-data-series/index.html#list-price">series overview</a>.</p>
 </section>
 <section id="glossary" class="level2">
 <h2 class="anchored" data-anchor-id="glossary">Glossary</h2>

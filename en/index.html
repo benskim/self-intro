@@ -79,20 +79,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-reports .list');
+    const listingTargetEl = window.document.querySelector('#listing-subjects .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-reports'] = new List('listing-reports', options);
+    window['quarto-listings']['listing-subjects'] = new List('listing-subjects', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -247,7 +247,7 @@ window.Quarto = {
 <p>I spent more than five years at startups as a data analyst, data scientist, and AI data part lead. Now I start from the problems pharmacies face and use public medicine data to build evidence that can ease them.</p>
 </div>
 <div class="hero-actions">
-<p><a href="#reports-section">Read the reports</a> <a href="../en/experience.html">See experience</a></p>
+<p><a href="#reports-section">See recent interests</a> <a href="../en/report.html">All reports</a> <a href="../en/experience.html">See experience</a></p>
 </div>
 </div>
 <section id="who-the-analysis-helps" class="level2 home-section">
@@ -263,79 +263,41 @@ window.Quarto = {
 </div>
 </section>
 <div id="reports-section" class="home-section">
-<section id="reports" class="level2">
-<h2 class="anchored" data-anchor-id="reports">Reports</h2>
+<section id="recent-interests" class="level2">
+<h2 class="anchored" data-anchor-id="recent-interests">Recent interests</h2>
 <div class="section-lede">
-<p>These reports take on questions that public medicine data can answer. Each report spends as much space on how far the numbers can be trusted as on the results.</p>
+<p>The people and problems I am looking into now. Each subject starts from field research and leads to analyses that public data allow within real constraints. The subject notes are in Korean; analysis results are in the <a href="../en/report.html">reports</a>.</p>
 </div>
-<div id="listing-reports" class="quarto-listing quarto-listing-container-default">
+<div id="listing-subjects" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="TWVkaWNpbmUlMjBkYXRhJTJDUmVpbWJ1cnNlbWVudCUyMGxpc3QlMkNQdWJsaWMlMjBtZWRpY2luZSUyMGRhdGElMjBzZXJpZXM=" data-listing-date-sort="1795737600000" data-listing-file-modified-sort="1795792337386" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1288">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1795824000000" data-listing-file-modified-sort="1795835201203" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="19" data-listing-word-count-sort="3684">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../en/posts/2026-11-benefit-change-lead/index.html" class="no-external-icon">Only in 2024 could most price cuts be seen a month ahead</a>
+<a href="../ko/subjects/polypharm.html" class="no-external-icon">건강기능식품 다제복용 만성질환자 고충 시장조사</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../en/posts/2026-11-benefit-change-lead/index.html" class="no-external-icon">Pharmacies reading the reimbursement list mostly learn of cuts in the month they take effect, and a fifth of the January 2026 cuts were 1 won</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../en/posts/2026-11-benefit-change-lead/index.html" class="no-external-icon">
-<div class="listing-date">
-Nov 27, 2026
-</div>
+<div class="listing-description">
+<a href="../ko/subjects/polypharm.html" class="no-external-icon">
+<p>고르기·맞추기·먹기·점검하기 네 단계로 약과 건강기능식품을 함께 먹는 만성질환자의 고충을 나누고, 공개 데이터와 1인 구현 제약으로 분석 순서를 정했습니다.</p>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="TWVkaWNpbmUlMjBkYXRhJTJDUHVibGljJTIwbWVkaWNpbmUlMjBkYXRhJTIwc2VyaWVz" data-listing-date-sort="1795737600000" data-listing-file-modified-sort="1795792337387" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1115">
+<div class="metadata">
+
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1795737600000" data-listing-file-modified-sort="1795835201203" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1346">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../en/posts/2026-11-pharm-data-series/index.html" class="no-external-icon">How far can public data ease pharmacies’ problems?</a>
+<a href="../ko/subjects/drug_store.html" class="no-external-icon">약국 고충 시장조사</a>
 </h3>
-<div class="listing-subtitle">
-<a href="../en/posts/2026-11-pharm-data-series/index.html" class="no-external-icon">Price cuts and prescription demand, seen through the reimbursement list and drug usage statistics</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../en/posts/2026-11-pharm-data-series/index.html" class="no-external-icon">
-<div class="listing-date">
-Nov 27, 2026
-</div>
+<div class="listing-description">
+<a href="../ko/subjects/drug_store.html" class="no-external-icon">
+<p>들여오기·쌓아두기·내주기·벌기 네 단계로 약국의 고충을 나누고 우선순위를 매겼습니다. 공개 의약품 데이터 시리즈의 출발점입니다.</p>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="TWVkaWNpbmUlMjBkYXRhJTJDVGltZS1zZXJpZXMlMjBmb3JlY2FzdGluZyUyQ1B1YmxpYyUyMG1lZGljaW5lJTIwZGF0YSUyMHNlcmllcw==" data-listing-date-sort="1795478400000" data-listing-file-modified-sort="1795792337387" data-listing-date-modified-sort="1795737600000" data-listing-reading-time-sort="9" data-listing-word-count-sort="1638">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../en/posts/2026-11-drug-demand-forecast/index.html" class="no-external-icon">Prescription forecasts missed most for winter respiratory drugs and antibiotics</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../en/posts/2026-11-drug-demand-forecast/index.html" class="no-external-icon">National ingredient-level prescriptions were forecast about 6–7% off for next month, and a simple statistical model was enough</a>
-</div>
-</div>
 <div class="metadata">
-<a href="../en/posts/2026-11-drug-demand-forecast/index.html" class="no-external-icon">
-<div class="listing-date">
-Nov 24, 2026
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="QW5hbHlzaXMlMjBOb3RlJTJDQSUyRkIlMjBUZXN0JTJDUHJvamVjdCUyMEE=" data-listing-date-sort="1795392000000" data-listing-file-modified-sort="1795792337385" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="829">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../en/posts/2025-11-kamelo-analysis/index.html" class="no-external-icon">A/B Test Analysis Note: Genre-Curated Content and Video Conversion</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../en/posts/2025-11-kamelo-analysis/index.html" class="no-external-icon">An experiment note from funnel diagnosis to sample sizing and significance testing</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../en/posts/2025-11-kamelo-analysis/index.html" class="no-external-icon">
-<div class="listing-date">
-Nov 23, 2026
-</div>
-</a>
+
 </div>
 </div>
 </div>

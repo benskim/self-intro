@@ -468,9 +468,6 @@ window.Quarto = {
 </div>
 </div>
 <p><strong>결론:</strong> 우연에 의한 차이가 아님을 통계적 유의도 수준에서 검증하여 새로운 서비스 시나리오로 정식 롤아웃 의사결정. 관측 차이(+5.6%p)는 설계 MDE(+6.5%p)보다 작아 검정력은 약 71%이므로, 롤아웃 후 모니터링으로 효과 크기를 재확인.</p>
-<blockquote class="blockquote">
-<p>상세 재현 분석은 <a href="../../ko/posts/2025-11-kamelo-analysis/index.html">Report: A/B 테스트 분석 노트</a>에서 확인할 수 있습니다.</p>
-</blockquote>
 </section>
 <section id="tableau-실시간-비즈니스-그로스-대시보드-구축" class="level2">
 <h2 class="anchored" data-anchor-id="tableau-실시간-비즈니스-그로스-대시보드-구축"><span class="tag">Tableau</span> 실시간 비즈니스 그로스 대시보드 구축</h2>
@@ -1206,39 +1203,37 @@ window.Quarto = {
 <span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a>**결론:** 우연에 의한 차이가 아님을 통계적 유의도 수준에서 검증하여 새로운 서비스 시나리오로 정식 롤아웃 의사결정. 관측 차이(+5.6%p)는 설계 MDE(+6.5%p)보다 작아 검정력은 약 71%이므로, 롤아웃 후 모니터링으로 효과 크기를 재확인.</span>
 <span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; 상세 재현 분석은 </span><span class="co">[</span><span class="ot">Report: A/B 테스트 분석 노트</span><span class="co">](../posts/2025-11-kamelo-analysis/index.qmd)</span><span class="at">에서 확인할 수 있습니다.</span></span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a><span class="fu">## [Tableau]{.tag} 실시간 비즈니스 그로스 대시보드 구축</span></span>
 <span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a><span class="fu">## [Tableau]{.tag} 실시간 비즈니스 그로스 대시보드 구축</span></span>
-<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>::: {.lead-line}</span>
-<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>비즈니스 의사결정 속도 단축을 위한 실시간 Tableau 대시보드 아키텍처</span>
-<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Dashboard Spec — 연동 데이터 소스:** BigQuery 정제 로그 및 Appsflyer 마케팅 성과 테이블 실시간 조인.</span>
-<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**주요 지표 차트**</span>
-<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>콘텐츠 카테고리별 세션당 생성량 &amp; 체류시간 <span class="co">[</span><span class="ot">기간조정</span><span class="co">]</span></span>
-<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>유입 코호트별 Funnel 차트 + 이탈 구간 경고 알림</span>
-<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>마케팅 채널별 잔존율 대비 GPU Cost 모니터링 차트</span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a>::: {.lead-line}</span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a>비즈니스 의사결정 속도 단축을 위한 실시간 Tableau 대시보드 아키텍처</span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Dashboard Spec — 연동 데이터 소스:** BigQuery 정제 로그 및 Appsflyer 마케팅 성과 테이블 실시간 조인.</span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**주요 지표 차트**</span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>콘텐츠 카테고리별 세션당 생성량 &amp; 체류시간 <span class="co">[</span><span class="ot">기간조정</span><span class="co">]</span></span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>유입 코호트별 Funnel 차트 + 이탈 구간 경고 알림</span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>마케팅 채널별 잔존율 대비 GPU Cost 모니터링 차트</span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a><span class="fu">## [Business Impact]{.tag} 프로젝트 A의 정량적/정성적 성과</span></span>
 <span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a><span class="fu">## [Business Impact]{.tag} 프로젝트 A의 정량적/정성적 성과</span></span>
-<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a>::: {.lead-line}</span>
-<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a>데이터 중심 비즈니스 개선 활동이 가져온 정량적 임팩트</span>
-<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a>::: {.kpi-grid}</span>
-<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a>::: {.kpi .red}</span>
-<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">A/B 테스트 영상 변환율</span><span class="co">]</span>{.kpi-label} <span class="co">[</span><span class="ot">14.2% → 19.8%</span><span class="co">]</span>{.kpi-value} <span class="co">[</span><span class="ot">장르 기획 콘텐츠 적용, +5.6%p, p = 0.012 (군당 576명)</span><span class="co">]</span>{.kpi-desc}</span>
-<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>::: {.kpi}</span>
-<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">재생성 성공률 개선</span><span class="co">]</span>{.kpi-label} <span class="co">[</span><span class="ot">18% → 33%</span><span class="co">]</span>{.kpi-value} <span class="co">[</span><span class="ot">생성화면 도달 유저의 재생성 성공률 개선</span><span class="co">]</span>{.kpi-desc}</span>
-<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>::: {.kpi}</span>
-<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">마케팅 효율화</span><span class="co">]</span>{.kpi-label} <span class="co">[</span><span class="ot">CAC 12% 절감</span><span class="co">]</span>{.kpi-value} <span class="co">[</span><span class="ot">비효율 광고 세그먼트 조정 및 매체 통합</span><span class="co">]</span>{.kpi-desc}</span>
-<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>태블로 대시보드를 기준으로 매일 아침 비즈니스팀과 콘텐츠팀이 가설 검정 결과를 함께 보는 회의를 운영했습니다.</span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a>::: {.lead-line}</span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>데이터 중심 비즈니스 개선 활동이 가져온 정량적 임팩트</span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a>::: {.kpi-grid}</span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a>::: {.kpi .red}</span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">A/B 테스트 영상 변환율</span><span class="co">]</span>{.kpi-label} <span class="co">[</span><span class="ot">14.2% → 19.8%</span><span class="co">]</span>{.kpi-value} <span class="co">[</span><span class="ot">장르 기획 콘텐츠 적용, +5.6%p, p = 0.012 (군당 576명)</span><span class="co">]</span>{.kpi-desc}</span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a>::: {.kpi}</span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">재생성 성공률 개선</span><span class="co">]</span>{.kpi-label} <span class="co">[</span><span class="ot">18% → 33%</span><span class="co">]</span>{.kpi-value} <span class="co">[</span><span class="ot">생성화면 도달 유저의 재생성 성공률 개선</span><span class="co">]</span>{.kpi-desc}</span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>::: {.kpi}</span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">마케팅 효율화</span><span class="co">]</span>{.kpi-label} <span class="co">[</span><span class="ot">CAC 12% 절감</span><span class="co">]</span>{.kpi-value} <span class="co">[</span><span class="ot">비효율 광고 세그먼트 조정 및 매체 통합</span><span class="co">]</span>{.kpi-desc}</span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>태블로 대시보드를 기준으로 매일 아침 비즈니스팀과 콘텐츠팀이 가설 검정 결과를 함께 보는 회의를 운영했습니다.</span>
 </code></pre></div><button title="클립보드 복사" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

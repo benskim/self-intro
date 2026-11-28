@@ -468,9 +468,6 @@ Conversion distributions, control A vs treatment B (conceptual diagram)
 </div>
 </div>
 <p><strong>Conclusion:</strong> The difference was verified as statistically significant, not due to chance, and the new service scenario was decided for full rollout. The observed difference (+5.6 pp) is smaller than the design MDE (+6.5 pp), so power is about 71%; the effect size will be re-checked through post-rollout monitoring.</p>
-<blockquote class="blockquote">
-<p>A detailed reproduction is in <a href="../posts/2026-11-sample-analysis/index.qmd">Report: A/B Test Analysis Note</a>.</p>
-</blockquote>
 </section>
 <section id="tableau-real-time-business-growth-dashboard" class="level2">
 <h2 class="anchored" data-anchor-id="tableau-real-time-business-growth-dashboard"><span class="tag">Tableau</span> Real-time business growth dashboard</h2>
@@ -1206,39 +1203,37 @@ Conversion distributions, control A vs treatment B (conceptual diagram)
 <span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a>**Conclusion:** The difference was verified as statistically significant, not due to chance, and the new service scenario was decided for full rollout. The observed difference (+5.6 pp) is smaller than the design MDE (+6.5 pp), so power is about 71%; the effect size will be re-checked through post-rollout monitoring.</span>
 <span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; A detailed reproduction is in </span><span class="co">[</span><span class="ot">Report: A/B Test Analysis Note</span><span class="co">](../posts/2026-11-sample-analysis/index.qmd)</span><span class="at">.</span></span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a><span class="fu">## [Tableau]{.tag} Real-time business growth dashboard</span></span>
 <span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a><span class="fu">## [Tableau]{.tag} Real-time business growth dashboard</span></span>
-<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>::: {.lead-line}</span>
-<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>Real-time Tableau dashboard architecture to speed up business decisions</span>
-<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Dashboard spec — data sources:** Real-time join of refined BigQuery logs and Appsflyer marketing performance tables.</span>
-<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Key charts**</span>
-<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>Generations per session and dwell time by content category <span class="co">[</span><span class="ot">adjustable period</span><span class="co">]</span></span>
-<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>Funnel chart by acquisition cohort with drop-off alerts</span>
-<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>Retention versus GPU cost monitoring by marketing channel</span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a>::: {.lead-line}</span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a>Real-time Tableau dashboard architecture to speed up business decisions</span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Dashboard spec — data sources:** Real-time join of refined BigQuery logs and Appsflyer marketing performance tables.</span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>**Key charts**</span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>Generations per session and dwell time by content category <span class="co">[</span><span class="ot">adjustable period</span><span class="co">]</span></span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>Funnel chart by acquisition cohort with drop-off alerts</span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a><span class="ss">    * </span>Retention versus GPU cost monitoring by marketing channel</span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a><span class="fu">## [Business Impact]{.tag} Quantitative and qualitative results</span></span>
 <span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a><span class="fu">## [Business Impact]{.tag} Quantitative and qualitative results</span></span>
-<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a>::: {.lead-line}</span>
-<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a>Quantitative impact of data-driven business improvement</span>
-<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a>::: {.kpi-grid}</span>
-<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a>::: {.kpi .red}</span>
-<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">A/B test video conversion</span><span class="co">]</span>{.kpi-label} <span class="co">[</span><span class="ot">14.2% → 19.8%</span><span class="co">]</span>{.kpi-value} <span class="co">[</span><span class="ot">Curated genre content, +5.6 pp, p = 0.012 (576 per group)</span><span class="co">]</span>{.kpi-desc}</span>
-<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>::: {.kpi}</span>
-<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Regeneration success rate</span><span class="co">]</span>{.kpi-label} <span class="co">[</span><span class="ot">18% → 33%</span><span class="co">]</span>{.kpi-value} <span class="co">[</span><span class="ot">Regeneration success among users who reached the generation screen</span><span class="co">]</span>{.kpi-desc}</span>
-<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>::: {.kpi}</span>
-<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Marketing efficiency</span><span class="co">]</span>{.kpi-label} <span class="co">[</span><span class="ot">CAC down 12%</span><span class="co">]</span>{.kpi-value} <span class="co">[</span><span class="ot">Retargeted inefficient ad segments and consolidated channels</span><span class="co">]</span>{.kpi-desc}</span>
-<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>Business and content teams met every morning to review hypothesis-test results on the Tableau dashboard.</span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a>::: {.lead-line}</span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>Quantitative impact of data-driven business improvement</span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a>::: {.kpi-grid}</span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a>::: {.kpi .red}</span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">A/B test video conversion</span><span class="co">]</span>{.kpi-label} <span class="co">[</span><span class="ot">14.2% → 19.8%</span><span class="co">]</span>{.kpi-value} <span class="co">[</span><span class="ot">Curated genre content, +5.6 pp, p = 0.012 (576 per group)</span><span class="co">]</span>{.kpi-desc}</span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a>::: {.kpi}</span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Regeneration success rate</span><span class="co">]</span>{.kpi-label} <span class="co">[</span><span class="ot">18% → 33%</span><span class="co">]</span>{.kpi-value} <span class="co">[</span><span class="ot">Regeneration success among users who reached the generation screen</span><span class="co">]</span>{.kpi-desc}</span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>::: {.kpi}</span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Marketing efficiency</span><span class="co">]</span>{.kpi-label} <span class="co">[</span><span class="ot">CAC down 12%</span><span class="co">]</span>{.kpi-value} <span class="co">[</span><span class="ot">Retargeted inefficient ad segments and consolidated channels</span><span class="co">]</span>{.kpi-desc}</span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>Business and content teams met every morning to review hypothesis-test results on the Tableau dashboard.</span>
 </code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

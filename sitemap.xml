@@ -1,103 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://benskim.github.io/self-intro/ko/subjects/drug_store.html</loc>
+    <lastmod>2026-11-28T03:06:41.203Z</lastmod>
+  </url>
+  <url>
     <loc>https://benskim.github.io/self-intro/ko/projects/project-b.html</loc>
-    <lastmod>2026-11-27T15:12:17.404Z</lastmod>
+    <lastmod>2026-11-28T03:06:41.202Z</lastmod>
   </url>
   <url>
     <loc>https://benskim.github.io/self-intro/ko/projects/project-a.html</loc>
-    <lastmod>2026-11-27T15:12:17.403Z</lastmod>
+    <lastmod>2026-11-28T03:06:41.202Z</lastmod>
   </url>
   <url>
     <loc>https://benskim.github.io/self-intro/ko/projects.html</loc>
-    <lastmod>2026-11-27T15:12:17.390Z</lastmod>
+    <lastmod>2026-11-28T03:06:41.185Z</lastmod>
   </url>
   <url>
-    <loc>https://benskim.github.io/self-intro/ko/posts/2025-11-kamelo-analysis/index.html</loc>
-    <lastmod>2026-11-27T15:12:17.388Z</lastmod>
-  </url>
-  <url>
-    <loc>https://benskim.github.io/self-intro/ko/posts/2026-11-drug-demand-tech-note/index.html</loc>
-    <lastmod>2026-11-27T15:12:17.390Z</lastmod>
-  </url>
-  <url>
-    <loc>https://benskim.github.io/self-intro/ko/posts/2026-11-benefit-change-lead/index.html</loc>
-    <lastmod>2026-11-27T15:12:17.389Z</lastmod>
-  </url>
-  <url>
-    <loc>https://benskim.github.io/self-intro/en/projects/project-b.html</loc>
-    <lastmod>2026-11-27T15:12:17.387Z</lastmod>
-  </url>
-  <url>
-    <loc>https://benskim.github.io/self-intro/en/projects/project-a.html</loc>
-    <lastmod>2026-11-27T15:12:17.387Z</lastmod>
-  </url>
-  <url>
-    <loc>https://benskim.github.io/self-intro/en/projects.html</loc>
-    <lastmod>2026-11-27T15:12:17.387Z</lastmod>
-  </url>
-  <url>
-    <loc>https://benskim.github.io/self-intro/en/posts/2025-11-kamelo-analysis/index.html</loc>
-    <lastmod>2026-11-27T15:12:17.385Z</lastmod>
-  </url>
-  <url>
-    <loc>https://benskim.github.io/self-intro/en/posts/2026-11-drug-demand-tech-note/index.html</loc>
-    <lastmod>2026-11-27T15:12:17.387Z</lastmod>
-  </url>
-  <url>
-    <loc>https://benskim.github.io/self-intro/en/posts/2026-11-benefit-change-lead/index.html</loc>
-    <lastmod>2026-11-27T15:12:17.386Z</lastmod>
-  </url>
-  <url>
-    <loc>https://benskim.github.io/self-intro/index.html</loc>
-    <lastmod>2026-11-27T15:12:17.387Z</lastmod>
-  </url>
-  <url>
-    <loc>https://benskim.github.io/self-intro/en/experience.html</loc>
-    <lastmod>2026-11-27T15:12:17.385Z</lastmod>
-  </url>
-  <url>
-    <loc>https://benskim.github.io/self-intro/en/posts/2026-11-pharm-data-series/index.html</loc>
-    <lastmod>2026-11-27T15:12:17.387Z</lastmod>
-  </url>
-  <url>
-    <loc>https://benskim.github.io/self-intro/en/posts/2026-11-drug-demand-forecast/index.html</loc>
-    <lastmod>2026-11-27T15:12:17.387Z</lastmod>
-  </url>
-  <url>
-    <loc>https://benskim.github.io/self-intro/en/index.html</loc>
-    <lastmod>2026-11-27T15:12:17.385Z</lastmod>
-  </url>
-  <url>
-    <loc>https://benskim.github.io/self-intro/en/report.html</loc>
-    <lastmod>2026-11-27T15:12:17.387Z</lastmod>
-  </url>
-  <url>
-    <loc>https://benskim.github.io/self-intro/en/projects/project-c.html</loc>
-    <lastmod>2026-11-27T15:12:17.387Z</lastmod>
-  </url>
-  <url>
-    <loc>https://benskim.github.io/self-intro/ko/experience.html</loc>
-    <lastmod>2026-11-27T15:12:17.388Z</lastmod>
+    <loc>https://benskim.github.io/self-intro/ko/posts/2026-11-winter-leading-signals/index.html</loc>
+    <lastmod>2026-11-28T03:06:41.185Z</lastmod>
   </url>
   <url>
     <loc>https://benskim.github.io/self-intro/ko/posts/2026-11-pharm-data-series/index.html</loc>
-    <lastmod>2026-11-27T15:12:17.390Z</lastmod>
+    <lastmod>2026-11-28T03:06:41.185Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/ko/experience.html</loc>
+    <lastmod>2026-11-28T03:06:41.183Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/en/projects/project-c.html</loc>
+    <lastmod>2026-11-28T03:06:41.182Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/en/report.html</loc>
+    <lastmod>2026-11-28T03:06:41.182Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/en/index.html</loc>
+    <lastmod>2026-11-28T03:06:41.179Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/en/posts/2026-11-drug-demand-forecast/index.html</loc>
+    <lastmod>2026-11-28T03:06:41.181Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/en/posts/2026-11-drug-demand-tech-note/index.html</loc>
+    <lastmod>2026-11-28T03:06:41.182Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/en/posts/2026-11-benefit-change-lead/index.html</loc>
+    <lastmod>2026-11-28T03:06:41.181Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/index.html</loc>
+    <lastmod>2026-11-28T03:06:41.182Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/en/experience.html</loc>
+    <lastmod>2026-11-28T03:06:41.179Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/en/posts/2026-11-pharm-data-series/index.html</loc>
+    <lastmod>2026-11-28T03:06:41.182Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/en/posts/2026-11-winter-leading-signals/index.html</loc>
+    <lastmod>2026-11-28T03:06:41.182Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/en/projects.html</loc>
+    <lastmod>2026-11-28T03:06:41.182Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/en/projects/project-a.html</loc>
+    <lastmod>2026-11-28T03:06:41.182Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/en/projects/project-b.html</loc>
+    <lastmod>2026-11-28T03:06:41.182Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/ko/posts/2026-11-benefit-change-lead/index.html</loc>
+    <lastmod>2026-11-28T03:06:41.184Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/ko/posts/2026-11-drug-demand-tech-note/index.html</loc>
+    <lastmod>2026-11-28T03:06:41.185Z</lastmod>
   </url>
   <url>
     <loc>https://benskim.github.io/self-intro/ko/posts/2026-11-drug-demand-forecast/index.html</loc>
-    <lastmod>2026-11-27T15:12:17.389Z</lastmod>
+    <lastmod>2026-11-28T03:06:41.184Z</lastmod>
   </url>
   <url>
     <loc>https://benskim.github.io/self-intro/ko/index.html</loc>
-    <lastmod>2026-11-27T15:12:17.388Z</lastmod>
+    <lastmod>2026-11-28T03:06:41.183Z</lastmod>
   </url>
   <url>
     <loc>https://benskim.github.io/self-intro/ko/report.html</loc>
-    <lastmod>2026-11-27T15:12:17.404Z</lastmod>
+    <lastmod>2026-11-28T03:06:41.203Z</lastmod>
   </url>
   <url>
     <loc>https://benskim.github.io/self-intro/ko/projects/project-c.html</loc>
-    <lastmod>2026-11-27T15:12:17.404Z</lastmod>
+    <lastmod>2026-11-28T03:06:41.202Z</lastmod>
+  </url>
+  <url>
+    <loc>https://benskim.github.io/self-intro/ko/subjects/polypharm.html</loc>
+    <lastmod>2026-11-28T03:06:41.203Z</lastmod>
   </url>
 </urlset>
