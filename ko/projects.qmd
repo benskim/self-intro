@@ -12,9 +12,3 @@ code-tools: false
 ---
 
 이전 직무에서 한 프로젝트입니다. 각 페이지는 **역할과 기여 → 문제와 분석 → 구현 → 측정 결과 → 한계와 기대 효과** 순서로, 직접 측정한 성과와 기대 효과를 나눠 적었습니다.
-
-| 프로젝트 | 대표 성과 | 보여 주는 역량 |
-|---|---|---|
-| [Poisson-based Adaptive Crawling Scheduler](projects/project-c.qmd) | 포아송·ML 모델을 운영 크롤러에 적용, 2018.12.01부터 운영 | 통계 모델링·머신러닝·운영 시스템 적용 |
-| [Video Data Curation & MLOps](projects/project-b.qmd) | 샘플 수 약 20~30% 감소, GPU 학습 시간 최대 40% 감소 | 데이터 품질·딥러닝·MLOps |
-| [Gen-AI B2C Growth Analytics](projects/project-a.qmd) | 콘텐츠 생성 전환율 14.2% → 19.8%, p = 0.012, 롤아웃 | 비즈니스 분석·실험 설계·성과 개선 |
