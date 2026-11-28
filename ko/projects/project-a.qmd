@@ -1,6 +1,7 @@
 ---
 title: "Gen-AI B2C Growth Analytics"
 subtitle: "사용자 행동 분석과 실험으로 생성형 AI 앱의 콘텐츠 생성 전환을 개선하다"
+description: "사용자 행동 퍼널과 A/B 테스트를 분석해 콘텐츠 생성 전환율을 높이고, 유입 효율과 재생성 행동을 개선한 프로젝트입니다."
 image: images/project-a.png
 toc: true
 ---

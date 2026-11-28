@@ -1,6 +1,7 @@
 ---
 title: "Poisson-based Adaptive Crawling Scheduler"
 subtitle: "상품별 변경 패턴을 학습해 크롤링 자원을 최적화하다"
+description: "포아송 과정과 머신러닝 분류를 결합해 상품별 수집 주기를 조정하고, 실제 운영 크롤러에 적용한 예측·스케줄링 프로젝트입니다."
 image: images/project-c.png
 toc: true
 ---
