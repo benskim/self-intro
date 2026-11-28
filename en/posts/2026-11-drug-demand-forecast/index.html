@@ -162,10 +162,6 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../ko/index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../../../ko/subjects.html"> 
 <span class="menu-text">Subjects</span></a>
   </li>  
@@ -222,6 +218,23 @@ document.addEventListener("DOMContentLoaded", function () {
   <li><a href="#implications" id="toc-implications" class="nav-link" data-scroll-target="#implications">6. Implications</a></li>
   <li><a href="#limits" id="toc-limits" class="nav-link" data-scroll-target="#limits">Checks and limits</a></li>
   <li><a href="#by-year" id="toc-by-year" class="nav-link" data-scroll-target="#by-year">Appendix: which years the gain came from</a></li>
+  <li><a href="#appendix-a" id="toc-appendix-a" class="nav-link" data-scroll-target="#appendix-a">Appendix A: additional class diagnostics and price-list experiment</a>
+  <ul class="collapse">
+  <li><a href="#drug-class-diagnostics" id="toc-drug-class-diagnostics" class="nav-link" data-scroll-target="#drug-class-diagnostics">Drug-class diagnostics</a></li>
+  <li><a href="#reimbursement-list-price-test" id="toc-reimbursement-list-price-test" class="nav-link" data-scroll-target="#reimbursement-list-price-test">Reimbursement-list price test</a></li>
+  </ul></li>
+  <li><a href="#appendix-b" id="toc-appendix-b" class="nav-link" data-scroll-target="#appendix-b">Appendix B: model specification and reproducibility</a>
+  <ul class="collapse">
+  <li><a href="#target-ingredients-and-missing-months" id="toc-target-ingredients-and-missing-months" class="nav-link" data-scroll-target="#target-ingredients-and-missing-months">Target ingredients and missing months</a></li>
+  <li><a href="#forecasting-approach" id="toc-forecasting-approach" class="nav-link" data-scroll-target="#forecasting-approach">Forecasting approach</a></li>
+  <li><a href="#rows-that-cannot-be-forecast-and-zero-months" id="toc-rows-that-cannot-be-forecast-and-zero-months" class="nav-link" data-scroll-target="#rows-that-cannot-be-forecast-and-zero-months">Rows that cannot be forecast, and zero months</a></li>
+  <li><a href="#features-and-importance" id="toc-features-and-importance" class="nav-link" data-scroll-target="#features-and-importance">Features and importance</a></li>
+  <li><a href="#training-settings" id="toc-training-settings" class="nav-link" data-scroll-target="#training-settings">Training settings</a></li>
+  <li><a href="#comparison-methods" id="toc-comparison-methods" class="nav-link" data-scroll-target="#comparison-methods">Comparison methods</a></li>
+  <li><a href="#evaluation-and-testing" id="toc-evaluation-and-testing" class="nav-link" data-scroll-target="#evaluation-and-testing">Evaluation and testing</a></li>
+  <li><a href="#data-releases" id="toc-data-releases" class="nav-link" data-scroll-target="#data-releases">Data releases</a></li>
+  <li><a href="#checks-against-future-data-leaking-in" id="toc-checks-against-future-data-leaking-in" class="nav-link" data-scroll-target="#checks-against-future-data-leaking-in">Checks against future data leaking in</a></li>
+  </ul></li>
   <li><a href="#glossary" id="toc-glossary" class="nav-link" data-scroll-target="#glossary">Glossary</a></li>
   </ul>
 </nav>
@@ -237,7 +250,6 @@ document.addEventListener("DOMContentLoaded", function () {
     <div class="quarto-category">Pharmacy: procuring</div>
     <div class="quarto-category">Medicine data</div>
     <div class="quarto-category">Time-series forecasting</div>
-    <div class="quarto-category">Public medicine data series</div>
   </div>
   </div>
 
@@ -267,7 +279,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">November 27, 2026</p>
+      <p class="date-modified">November 28, 2026</p>
     </div>
   </div>
     
@@ -288,8 +300,8 @@ document.addEventListener("DOMContentLoaded", function () {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Second edition (2026-11-27), rewritten to start from the pharmacy problem of getting drugs on time. The first edition (2026-11-24) centred on comparing four forecasting methods. Analyses, numbers and figures are unchanged.</p>
-<p>Price cuts: <a href="../../../en/posts/2026-11-benefit-change-lead/index.html">Only in 2024 could most price cuts be seen a month ahead</a>. Whole series: <a href="../../../en/posts/2026-11-pharm-data-series/index.html">series overview</a>. Verification and model specification: <a href="../../../en/posts/2026-11-drug-demand-tech-note/index.html">technical note</a>.</p>
+<p>Third edition (2026-11-28), integrating the former technical note into the report. The first edition (2026-11-24) centred on comparing four forecasting methods; the second (2026-11-27) reframed the analysis around the pharmacy problem of getting drugs on time.</p>
+<p>Price cuts: <a href="../../../en/posts/2026-11-benefit-change-lead/index.html">price-cut report</a>. Field context and public-data scope: <a href="../../../ko/subjects/drug_store.html">pharmacy pain-point research</a>. Verification and model specification are included in this report’s checks and appendices.</p>
 </div>
 </div>
 <div class="report-meta">
@@ -441,11 +453,12 @@ document.addEventListener("DOMContentLoaded", function () {
 <figcaption>How many times larger winter prescriptions were than summer, winters 18/19 to 24/25.</figcaption>
 </figure>
 </div>
-<p>These are the same classes pharmacists describe as running short in winter. Whether any public signal announces such winters months ahead is examined <a href="../../../en/posts/2026-11-winter-leading-signals/index.html">on a separate page</a>. The data show only that their demand is hard to forecast; how short supply was is not in the data. These are observed associations, not causes.</p>
+<p>These are the same classes pharmacists describe as running short in winter. The data show that winter demand varies and is difficult to forecast; they do not show how much supply fell short or whether a shortage occurred. This analysis examines seasonal prescription differences and ingredient-level forecast errors, not a public early-warning signal.</p>
+<p>Among ATC level-2 classes with at least 10 ingredients, the lowest-error groups (C10, B01, C08 and C09) had winter/summer ratios of 0.99–1.00 and year-on-year swings of ±4–5%. R03, J01 and R05 had swings of ±27–33% and winter/summer ratios of 1.20–1.40. S01 had no clear winter peak; 71% of its machine-learning error came from sodium hyaluronate and bilberry. These are post-hoc patterns, not causes. Across classes, error was most strongly associated with year-on-year changes in the same month’s prescriptions (rank correlation 0.94), rather than seasonality alone. More detail is in <a href="#appendix-a">Appendix A</a>.</p>
 </section>
 <section id="class-test" class="level2">
 <h2 class="anchored" data-anchor-id="class-test">4. Does a separate method per drug class help?</h2>
-<p>No.&nbsp;Blending machine learning and ETS differently per class, and adding class information to the model, were tested against criteria fixed in advance. Both reached 6.34% vs 6.46% for the existing model, a 0.12-point gap with no evidence of improvement. Per-class error is used to decide <strong>how much to trust</strong> a forecast, not to change the method. Details are in the <a href="../../../en/posts/2026-11-drug-demand-tech-note/index.html#class-diff">technical note</a>.</p>
+<p>No.&nbsp;Blending machine learning and ETS differently per class, and adding class information to the model, were tested against criteria fixed in advance. Both reached 6.34% vs 6.46% for the existing model, a 0.12-point gap with no evidence of improvement. Per-class error is used to decide <strong>how much to trust</strong> a forecast, not to change the method. Further class diagnostics are in <a href="#appendix-a">Appendix A</a>.</p>
 </section>
 <section id="case-flu" class="level2">
 <h2 class="anchored" data-anchor-id="case-flu">5. Case: the flu drug and “last year × growth”</h2>
@@ -458,6 +471,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <section id="limits" class="level2">
 <h2 class="anchored" data-anchor-id="limits">Checks and limits</h2>
 <p>Methods and decision rules were fixed before results (pre-registration); each month was forecast with only data available then (backtest), with a separate test against future-data leakage; unseen 2026 data were scored as well. Limits: the field cases rest mainly on trade press and pharmacist surveys; shortages are not visible, and a prescription switched because a drug was unavailable looks like demand; the 2026 evaluation is provisional; the class diagnostics are post-hoc and only two full post-COVID winters exist; class codes come from 2026 data; revised data were used for 2023–2025; machine learning settings were not tuned. Relationships between drug classes and error are associations.</p>
+<p>The forecasts were pre-registered: target ingredients, error metric, statistical tests and the rule for declaring an improvement were locked with the code before results were inspected. Each historical month was forecast using only information then available. The January–June 2026 forecasts were sealed with a SHA-256 hash before actuals were opened. Re-running the class experiments reproduced the baseline forecasts to within a relative difference of 3×10⁻¹⁶. A bug found in the locked code was disclosed with its workaround. The detailed procedure is in Appendix B.</p>
 </section>
 <section id="by-year" class="level2">
 <h2 class="anchored" data-anchor-id="by-year">Appendix: which years the gain came from</h2>
@@ -467,7 +481,384 @@ document.addEventListener("DOMContentLoaded", function () {
 <figcaption>Monthly error difference. Top: machine learning vs same month last year. Bottom: machine learning vs ETS.</figcaption>
 </figure>
 </div>
-<p>The gain over “same month last year” was 40% in 2023, 31% in 2024 and 29% in 2025 (23% in the first half of 2023), so it is not a post-COVID artefact. Against ETS the months were mixed. This split was not pre-registered and is not used for any verdict. Shifts in prescription mix (age, region, clinic share) did not explain errors either: no feature met the pre-set criteria, and adjusting for them made every case worse, so that direction was closed. Adding reimbursement-list prices did not help; see the <a href="../../../en/posts/2026-11-pharm-data-series/index.html#list-price">series overview</a>.</p>
+<p>The gain over “same month last year” was 40% in 2023, 31% in 2024 and 29% in 2025 (23% in the first half of 2023), so it is not a post-COVID artefact. Against ETS the months were mixed. This split was not pre-registered and is not used for any verdict. Shifts in prescription mix (age, region, clinic share) did not explain errors either: no feature met the pre-set criteria, and adjusting for them made every case worse, so that direction was closed. Adding reimbursement-list prices did not show a reliable improvement; the experiment is detailed in <a href="#appendix-a">Appendix A</a>.</p>
+</section>
+<section id="appendix-a" class="level2">
+<h2 class="anchored" data-anchor-id="appendix-a">Appendix A: additional class diagnostics and price-list experiment</h2>
+<section id="drug-class-diagnostics" class="level3">
+<h3 class="anchored" data-anchor-id="drug-class-diagnostics">Drug-class diagnostics</h3>
+<p><em>Among ATC level-2 classes with at least 10 ingredients, ranked by machine learning error. Post-hoc exploration: these are observed patterns and associations, not causes. The per-class error chart is in the <a href="#class-error">demand report</a>.</em></p>
+<section id="respiratory-drugs-and-antibiotics-winter-height-differed-from-year-to-year" class="level4">
+<h4 class="anchored" data-anchor-id="respiratory-drugs-and-antibiotics-winter-height-differed-from-year-to-year">Respiratory drugs and antibiotics: winter height differed from year to year</h4>
+<div class="wide-table">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>ATC class</th>
+<th>Ingredients</th>
+<th>Share of amount</th>
+<th>Machine learning error</th>
+<th>ETS error</th>
+<th>Winter/summer ratio</th>
+<th>Year-on-year swing</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>R03</strong> Drugs for obstructive airway diseases</td>
+<td>12</td>
+<td>2.0%</td>
+<td>14.5%</td>
+<td>16.1%</td>
+<td>1.32</td>
+<td>±33%</td>
+</tr>
+<tr class="even">
+<td><strong>J01</strong> Antibacterials for systemic use</td>
+<td>38</td>
+<td>6.0%</td>
+<td>18.8%</td>
+<td>16.4%</td>
+<td>1.20</td>
+<td>±27%</td>
+</tr>
+<tr class="odd">
+<td><strong>R05</strong> Cough and cold preparations</td>
+<td>12</td>
+<td>2.4%</td>
+<td>21.7%</td>
+<td>17.5%</td>
+<td>1.40</td>
+<td>±32%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Errors are weighted by claimed amount within the class. Ratios and swings are medians across ingredients, 2023–2025.</p>
+</section>
+<section id="a-separate-group-s01-ophthalmologicals" class="level4">
+<h4 class="anchored" data-anchor-id="a-separate-group-s01-ophthalmologicals">A separate group: S01, ophthalmologicals</h4>
+<p>S01 has 20 ingredients (4.8% of amount), a machine learning error of 11.1% and an ETS error of 9.6%. It has no winter peak (ratio 0.95) and a median swing of only ±7%. Its error is concentrated in two ingredients: 54% of the machine learning error comes from sodium hyaluronate and 17% from bilberry fruit extract.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/s01-share.svg" class="img-fluid figure-img" alt="Sodium hyaluronate 54%, bilberry 17%, olopatadine 6%, brimonidine 4%, tobramycin 4%, 15 other ingredients 15%."></p>
+<figcaption>Share of the S01 machine learning error by ingredient.</figcaption>
+</figure>
+</div>
+</section>
+<section id="what-this-means" class="level4">
+<h4 class="anchored" data-anchor-id="what-this-means">What this means</h4>
+<p>The analysis does more than measure error: prescription volume varies in different ways across classes.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Class</th>
+<th>Observed</th>
+<th>For people using the forecast (untested suggestions)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>R05</td>
+<td>Ingredients miss together. Error is 13% even one month ahead</td>
+<td>Read a range rather than a single point. If one ingredient misses, check the others in the class</td>
+</tr>
+<tr class="even">
+<td>J01</td>
+<td>Ingredients miss together. Children under 10 are 24% of claims but 48% of the year-on-year variation</td>
+<td>Check class-wide movement and level shifts of single ingredients. Watch ingredients with a high share of children</td>
+</tr>
+<tr class="odd">
+<td>R03</td>
+<td>Children under 10 are 50% of claims and 64% of the variation. Error grows with distance (8% one month ahead, 17% six months ahead)</td>
+<td>Leave more room around six-month-ahead values. Shorter forecasts cannot be used now because of the publication lag</td>
+</tr>
+<tr class="even">
+<td>S01</td>
+<td>Two ingredients make up 71% of the machine learning error</td>
+<td>Check sodium hyaluronate and bilberry individually instead of the class average</td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Class</th>
+<th>Follow-up analysis</th>
+<th>Data needed</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>R05</td>
+<td>Link infectious-disease activity and seasonal usage data</td>
+<td>Disease-activity data (not available now)</td>
+</tr>
+<tr class="even">
+<td>J01</td>
+<td>Antibiotic use by child age group</td>
+<td>Age breakdown in usage statistics (available)</td>
+</tr>
+<tr class="odd">
+<td>R03</td>
+<td>Demand and seasonality of children’s respiratory drugs</td>
+<td>Age breakdown in usage statistics (available)</td>
+</tr>
+<tr class="even">
+<td>S01</td>
+<td>Analysis of the two ingredients</td>
+<td>Usage statistics (available)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>How large “miss together” is:</strong> removing the common error of the other ingredients in the class lowers error by 36–38% for R05 and 20–25% for J01. Removing the common error of other, similarly volatile drugs still lowers it by 27–34% and 10–15%, so the pattern is not specific to either class.</p>
+<p>“Removing the common error” uses the actual outcomes, so it is not error that could have been avoided in a real forecast. Each range spans the values for machine learning and for ETS. “Other drugs” is the average over random draws of ingredients with similar volatility and amount. Errors by distance are for an ETS variant that adjusts for workday differences, target months 2023-07 to 2025-06. For comparison, ingredients outside these four classes and R01 (nasal preparations) have 2.6% error one month ahead and 4.7% six months ahead. <strong>Usage statistics come out about five months late, so a one-month-ahead forecast is not one that can actually be made today.</strong></p>
+<ul>
+<li><strong>No class had its error cut by 10% or more using information known six months ahead.</strong> The pre-set improvement threshold was not met, so this is not reported as a model improvement. It remains a hypothesis to re-test if monthly disease-activity data become available.</li>
+<li><strong>Without more data, the analysis does not go on to explain causes.</strong> There are no data on epidemics, allergies, or shortages.</li>
+<li><strong>Conclusion:</strong> this is not a reason to make the model more complex. Keep ETS as the default and monitor each class’s characteristics separately.</li>
+</ul>
+</section>
+</section>
+<section id="reimbursement-list-price-test" class="level3">
+<h3 class="anchored" data-anchor-id="reimbursement-list-price-test">Reimbursement-list price test</h3>
+<p><strong>Adding the price changes visible in the list at forecast time did not show an improvement.</strong> The criteria were fixed before results were seen.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Result</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Unit-price forecast: do list price changes beat the usage-statistics trend alone?</td>
+<td>Error 0.0186 vs 0.0217 (about 15% lower), p = 0.252</td>
+<td>Inconclusive (not distinguishable from chance)</td>
+</tr>
+<tr class="even">
+<td>Is the gap due to matching the timing of price changes?</td>
+<td>Not distinguishable from forecasts with timing shifted by 7 or 17 months</td>
+<td>Cannot be credited to timing</td>
+</tr>
+<tr class="odd">
+<td>Does it need the ingredient’s own price information?</td>
+<td>Using other ingredients’ price changes made it worse, p = 0.001</td>
+<td>An ingredient’s own price changes are associated with its unit price</td>
+</tr>
+<tr class="even">
+<td>Does a list-based correction improve volume forecasts?</td>
+<td>Could not even detect a deliberately injected 20% effect</td>
+<td>The test could not measure an effect</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>The median pass-through from list price change to actual claimed unit price was 0.55, so carrying list price changes over one-for-one overstates them.</li>
+<li>The list information is better suited to price and suspension alerts than to demand forecasting.</li>
+</ul>
+</section>
+</section>
+<section id="appendix-b" class="level2">
+<h2 class="anchored" data-anchor-id="appendix-b">Appendix B: model specification and reproducibility</h2>
+<p><strong>This section records the target set, inputs, training and evaluation so the demand forecast can be reproduced.</strong> All settings were locked in the pre-registration document and code before results were seen.</p>
+<section id="target-ingredients-and-missing-months" class="level3">
+<h3 class="anchored" data-anchor-id="target-ingredients-and-missing-months">Target ingredients and missing months</h3>
+<ul>
+<li><strong>501 ingredients:</strong> of 800 ingredients with at least one month of outpatient data in 2018-01 to 2022-07, those observed in all 55 months and with positive claimed amount in 2018-12 to 2019-11. Chosen without looking at the evaluation period.</li>
+<li><strong>Weights:</strong> fixed share of outpatient claimed amount in 2018-12 to 2019-11. Volume units (tablets, mL, g) differ by ingredient, so volume cannot serve as a weight.</li>
+<li><strong>Usable months:</strong> observed, above zero, and not the first month after a suppressed gap. Suppressed cells were not filled with zero; dropped cells were logged with reasons.</li>
+</ul>
+</section>
+<section id="forecasting-approach" class="level3">
+<h3 class="anchored" data-anchor-id="forecasting-approach">Forecasting approach</h3>
+<ul>
+<li><strong>“Six months ahead” = next month:</strong> if the last observed month is a, the forecast is made in month a + 5, when that month’s data is published, and the target a + 6 is next month as of that day. The main results use this six-month model; the 1–12-month models are used only for the <a href="#forecast">horizon comparison figure</a>.</li>
+<li><strong>Direct six-month forecast:</strong> from a, the month six months later is forecast in one step, not by chaining one-month forecasts.</li>
+<li><strong>Retrained at every forecast origin:</strong> the model is refit from scratch at each of the 36 origins (target months 2023-01 to 2025-12, last observed months 2022-07 to 2025-06), with a separate model for each horizon. Each origin trains on 17,535 to 33,897 rows.</li>
+<li><strong>One model for all 501 ingredients:</strong> the target is the year-on-year log change, log y(t) − log y(t−12), which removes scale differences between ingredients. Forecasts are converted back as y(t−12) × exp(predicted change).</li>
+<li><strong>No ingredient ID:</strong> ingredients are told apart only by the features below (size, class, own recent history).</li>
+<li><strong>Training and evaluation weight things differently:</strong> training minimizes absolute error in log change with every row weighted equally, so small and large ingredients count the same. The evaluation metric (WAPE) puts more weight on ingredients with a large amount share. Leaving out training weights was decided before results were seen.</li>
+<li><strong>No reimbursement-list information:</strong> the main model’s features contain no list price or listing information. Results with that information added are reported above under “Reimbursement-list price test”.</li>
+</ul>
+</section>
+<section id="rows-that-cannot-be-forecast-and-zero-months" class="level3">
+<h3 class="anchored" data-anchor-id="rows-that-cannot-be-forecast-and-zero-months">Rows that cannot be forecast, and zero months</h3>
+<ul>
+<li><strong>Rows without features are not filled:</strong> if any feature is undefined for a target ingredient-month, no machine learning forecast is made, and no other method fills the gap.</li>
+<li><strong>All four methods are scored on the same rows:</strong> the evaluation set contains only ingredient-months with a usable actual and forecasts from all four methods. Of 16,591 ingredient-months with a usable actual in the evaluation period, 105 (0.6%) were dropped because at least one method had no forecast, leaving 16,486 scored identically for all four.</li>
+<li><strong>There were no zero months:</strong> zero-volume months were set to be excluded as unusable, but none occurred among the 501 ingredients’ observed months in 2018–2025, so the log change is always defined for observed months. What drops out are suppressed months and 13 first months after a suppressed gap.</li>
+</ul>
+</section>
+<section id="features-and-importance" class="level3">
+<h3 class="anchored" data-anchor-id="features-and-importance">Features and importance</h3>
+<p>All features use data up to the last observed month a only, so the five unpublished months never enter. Rows with any feature undefined were not used for training.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>g3</td>
+<td>Year-on-year log change of the last three months’ total</td>
+</tr>
+<tr class="even">
+<td>seas</td>
+<td>Same month 12 months earlier ÷ mean of the 12 months ending at a (log), seasonal level</td>
+</tr>
+<tr class="odd">
+<td>g1</td>
+<td>Year-on-year log change of the last observed month</td>
+</tr>
+<tr class="even">
+<td>mon</td>
+<td>Calendar month of the target (1–12), categorical</td>
+</tr>
+<tr class="odd">
+<td>dwork</td>
+<td>Workday difference between the target month and 12 months earlier. Workdays exclude weekends and public holidays, so months with Lunar New Year or Chuseok have fewer workdays and partly overlap with the holiday flags below</td>
+</tr>
+<tr class="even">
+<td>cls2</td>
+<td>First two digits of the domestic drug-efficacy class, categorical (the code number is not used as an order)</td>
+</tr>
+<tr class="odd">
+<td>size</td>
+<td>Claimed amount over the 12 months ending at a (log), ingredient size. Amount is used because volume units differ by ingredient</td>
+</tr>
+<tr class="even">
+<td>cov_base</td>
+<td>Whether the same month 12 months earlier fell in the COVID-19 period (2020-01 to 2021-12)</td>
+</tr>
+<tr class="odd">
+<td>cov_anchor</td>
+<td>Whether the last observed month fell in the COVID-19 period</td>
+</tr>
+<tr class="even">
+<td>lunar_b</td>
+<td>Lunar New Year or Chuseok in the same month 12 months earlier</td>
+</tr>
+<tr class="odd">
+<td>lunar_t</td>
+<td>Lunar New Year or Chuseok in the target month</td>
+</tr>
+</tbody>
+</table>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/feature-importance.svg" class="img-fluid figure-img" alt="Training gain and prediction contribution for 11 features. Last-3-month growth 37.6% and 27.4%; seasonal level 15.3% and 22.9%; last-month growth 12.0% and 19.0%; calendar month 11.0% and 6.4%; workday difference 10.2% and 8.5%; drug class 7.4% and 4.9%; ingredient size 1.9% and 3.0%; base month in COVID 1.8% and 4.0%; last month in COVID 1.7% and 1.8%; holiday 12 months before 0.9% and 2.0%; holiday in target month 0.2% and 0.3%."></p>
+<figcaption>Feature importance of the main machine learning model. Bars show training gain; dots show prediction contribution.</figcaption>
+</figure>
+</div>
+<ul>
+<li>These are importances for the main six-month model, averaged over the 36 origins (target months 2023-01 to 2025-12).</li>
+<li><strong>Training gain</strong> is each feature’s share of the loss reduction from tree splits. <strong>Prediction contribution</strong> is each feature’s share of the mean absolute SHAP value over the ingredient rows of each origin’s target month that had all features defined. SHAP values are in the target’s unit, log change.</li>
+<li><strong>Recent growth (g3, g1) and seasonal level (seas) account for 65% of training gain.</strong> The ranking barely changed across origins; g3’s share ranged from 35% to 41%. The two COVID-19 indicators together account for 3.5%.</li>
+<li>Importance shows what the model relied on, not what drives prescriptions.</li>
+<li>Computed after the fact by refitting the locked training code at all 36 origins; the refitted forecasts matched the main results to within a relative difference of 3×10⁻¹⁶.</li>
+</ul>
+</section>
+<section id="training-settings" class="level3">
+<h3 class="anchored" data-anchor-id="training-settings">Training settings</h3>
+<ul>
+<li><strong>Training window:</strong> 2018-01 to the last observed month. Features need 24 months of history, so for the six-month horizon training target months start in 2019-09.</li>
+<li><strong>COVID-19 period:</strong> kept in, flagged by the two indicator features above.</li>
+<li><strong>What the COVID-19 flags miss:</strong> they cover only 2020-01 to 2021-12. Because the target is the change from 12 months earlier, an unusual base year inflates the target itself, and 2023 forecasts whose base year is the incompletely recovered 2022 are not flagged. This period is examined in <a href="#by-year">“Which years the gain came from”</a>.</li>
+<li><strong>LightGBM settings (fixed, no tuning):</strong> L1 (absolute error) loss, 500 trees, learning rate 0.03, 15 leaves, minimum 100 samples per leaf, no depth limit, no row or feature subsampling, L2 regularization 1, no row weights, deterministic mode, seed 20261114.</li>
+</ul>
+</section>
+<section id="comparison-methods" class="level3">
+<h3 class="anchored" data-anchor-id="comparison-methods">Comparison methods</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Method</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Same month last year</td>
+<td>y(t−12)</td>
+</tr>
+<tr class="even">
+<td>Last year × recent growth</td>
+<td>y(t−12) × (sum of the 12 months up to the last observed month ÷ sum of the 12 months before that). Only when all 24 months exist</td>
+</tr>
+<tr class="odd">
+<td>ETS</td>
+<td>Fit separately for each ingredient on log volume; additive error and seasonality (period 12); trend chosen by AICc between none and damped additive. Requires an unbroken run of at least 36 months ending at the last observed month. If fitting failed, “last year × recent growth” was used instead (2 evaluation cells, 0.01% of amount)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="evaluation-and-testing" class="level3">
+<h3 class="anchored" data-anchor-id="evaluation-and-testing">Evaluation and testing</h3>
+<ul>
+<li><strong>Combining WAPE:</strong> WAPE (sum of absolute errors ÷ sum of actuals) is computed per ingredient, then weighted by the amount shares above. Errors are summed in volume within an ingredient and by amount share across ingredients.</li>
+</ul>
+<p style="text-align:center">WAPE = Σ<sub>i</sub> w<sub>i</sub> × Σ<sub>t</sub>|y<sub>it</sub> − ŷ<sub>it</sub>| ÷ Σ<sub>t</sub> y<sub>it</sub></p>
+<ul>
+<li><strong>Evaluation set:</strong> ingredient-months with a usable actual and forecasts from all four methods (16,486).</li>
+<li><strong>The test unit is the month:</strong> the 36 monthly differences were tested as one series with the EWC test, built for short autocorrelated series, with Holm correction for the three comparisons.</li>
+<li><strong>Condition for “better”:</strong> p &lt; 0.05, and the error difference negative over the whole period and both sub-periods (2024-01 to 2025-12 and 2023-01 to 2024-10).</li>
+<li><strong>Per-ingredient figures are not tests:</strong> “lower error for 85% of ingredients” is a simple count. A per-ingredient test would treat ingredients as independent, but they miss together in the same months.</li>
+</ul>
+</section>
+<section id="data-releases" class="level3">
+<h3 class="anchored" data-anchor-id="data-releases">Data releases</h3>
+<ul>
+<li>Training and the 2023–2025 evaluation used one revised release received in November 2026. Accuracy on the first release actually available in each month was not measured.</li>
+<li>The 2026-01 to 06 actuals come from the release of 2026-10-28. Less than 12 months have passed since first publication, so they may still rise; they are used for provisional scoring only.</li>
+</ul>
+</section>
+<section id="checks-against-future-data-leaking-in" class="level3">
+<h3 class="anchored" data-anchor-id="checks-against-future-data-leaking-in">Checks against future data leaking in</h3>
+<p>Automated tests on synthetic data; they never read real evaluation-period actuals.</p>
+<ol type="1">
+<li>Changing usage statistics after the last observed month leaves all four methods’ forecasts unchanged.</li>
+<li>Deleting or changing reimbursement lists after the forecast origin leaves the list information and features unchanged.</li>
+<li>A function deliberately made to use future values is caught.</li>
+<li>Filling after-the-fact columns with nonsense leaves results unchanged.</li>
+<li>The same input gives the same output.</li>
+</ol>
+</section>
 </section>
 <section id="glossary" class="level2">
 <h2 class="anchored" data-anchor-id="glossary">Glossary</h2>
@@ -517,7 +908,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </tr>
 </tbody>
 </table>
-<p>More technical terms (EWC test, Holm correction, SHAP values) are in the <a href="../../../en/posts/2026-11-drug-demand-tech-note/index.html">technical note</a>.</p>
+<p>EWC is a test for short autocorrelated monthly differences; Holm correction controls false positives across multiple comparisons. SHAP values describe feature contributions. Definitions and model details are in <a href="#appendix-b">Appendix B</a>.</p>
 
 
 </section>

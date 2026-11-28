@@ -79,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-listing-subjects .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -88,11 +88,11 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-image','listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-listing-subjects'] = new List('listing-listing-subjects', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -213,10 +213,6 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../ko/index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link active" href="../ko/subjects.html" aria-current="page"> 
 <span class="menu-text">Subjects</span></a>
   </li>  
@@ -286,27 +282,28 @@ window.Quarto = {
 
 
 <p>Subjects는 분석에 들어가기 전에 <strong>어떤 문제를 왜 풀어야 하는지</strong>, <strong>공개 데이터로 어디까지 확인할 수 있는지</strong>를 정리한 조사 노트입니다. 여기서 나온 질문을 분석한 결과는 <a href="../ko/report.html">Reports</a>에 있습니다.</p>
-<div class="status-legend" style="display: flex; flex-direction: column; align-items: flex-start; gap: 8px;">
-  <div><span class="status status-next">시장조사 완료</span> 고충과 공개 데이터셋 조사를 마침</div>
-  <div><span class="status status-done">분석 공개</span> 이 주제에서 나온 보고서가 있음</div>
-  <div><span class="status status-plan">다음 분석 설계</span> 첫 분석 단계를 정함</div>
+<div class="status-legend" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 16px; margin: 1.5rem auto; padding: 12px 16px; background-color: #f8f9fa; border-radius: 8px; font-size: 0.9rem; color: #555; width: fit-content;">
+  <div><span class="status status-next">시장조사 완료</span> 조사 마침</div>
+  <div><span class="status status-plan">다음 분석 설계</span> 분석 단계 정함</div>
+  <div><span class="status status-done">분석 공개</span> 보고서 있음</div>
 </div>
+<hr>
 
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="JUVEJTk5JTk4JUVDJTlFJTkwJTJDJUVDJThCJTlDJUVDJTlFJUE1JUVDJUExJUIwJUVDJTgyJUFDJTIwJUVDJTk5JTg0JUVCJUEzJThDJTJDJUVCJThCJUE0JUVDJTlEJThDJTIwJUVCJUI2JTg0JUVDJTg0JTlEJTIwJUVDJTg0JUE0JUVBJUIzJTg0" data-listing-date-sort="1795824000000" data-listing-file-modified-sort="1795851029846" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="19" data-listing-word-count-sort="3765">
-<div class="thumbnail"><a href="../ko/subjects/polypharm.html" class="no-external-icon">
-
-<img loading="lazy" src="../ko/subjects/images/polypharm_risk_trends.png" class="thumbnail-image" style="height: 160px;">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../ko/subjects/polypharm.html" class="no-external-icon">건강기능식품 다제복용 만성질환자 고충 시장조사</a>
-</h3>
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing-subjects">
+<div class="list grid quarto-listing-cols-2">
+<div class="g-col-1" data-index="0" data-categories="JUVEJTk5JTk4JUVDJTlFJTkwJTJDJUVDJThCJTlDJUVDJTlFJUE1JUVDJUExJUIwJUVDJTgyJUFDJTIwJUVDJTk5JTg0JUVCJUEzJThDJTJDJUVCJThCJUE0JUVDJTlEJThDJTIwJUVCJUI2JTg0JUVDJTg0JTlEJTIwJUVDJTg0JUE0JUVBJUIzJTg0" data-listing-date-sort="1795824000000" data-listing-file-modified-sort="1795870213756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="19" data-listing-word-count-sort="3754">
+<a href="../ko/subjects/polypharm.html" class="quarto-grid-link no-external-icon">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../ko/subjects/images/polypharm_thumb.png" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+건강기능식품 다제복용 만성질환자 고충 시장조사
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('JUVEJTk5JTk4JUVDJTlFJTkw'); return false;">환자</div>
@@ -316,26 +313,22 @@ window.Quarto = {
 <div class="listing-category" onclick="window.quartoListingCategory('JUVCJThCJUE0JUVDJTlEJThDJTIwJUVCJUI2JTg0JUVDJTg0JTlEJTIwJUVDJTg0JUE0JUVBJUIzJTg0'); return false;">다음 분석 설계</div>
 
 </div>
-<div class="listing-description">
-<a href="../ko/subjects/polypharm.html" class="no-external-icon">
+<div class="card-text listing-description">
 <p>고르기·맞추기·먹기·점검하기 네 단계로 약과 건강기능식품을 함께 먹는 만성질환자의 고충을 나누고, 공개 데이터와 1인 구현 제약으로 분석 순서를 정했습니다.</p>
-</a>
 </div>
 </div>
-<div class="metadata">
-
+</div></a>
 </div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="JUVDJTk1JUJEJUVBJUI1JUFEJTJDJUVDJThCJTlDJUVDJTlFJUE1JUVDJUExJUIwJUVDJTgyJUFDJTIwJUVDJTk5JTg0JUVCJUEzJThDJTJDJUVCJUI2JTg0JUVDJTg0JTlEJTIwJUVBJUIzJUI1JUVBJUIwJTlD" data-listing-date-sort="1795737600000" data-listing-file-modified-sort="1795851029843" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1546">
-<div class="thumbnail"><a href="../ko/subjects/drug_store.html" class="no-external-icon">
-
-<img loading="lazy" src="../ko/subjects/images/drug_store_4stages_impact.png" class="thumbnail-image" style="height: 160px;">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../ko/subjects/drug_store.html" class="no-external-icon">약국 고충 시장조사</a>
-</h3>
+<div class="g-col-1" data-index="1" data-categories="JUVDJTk1JUJEJUVBJUI1JUFEJTJDJUVDJThCJTlDJUVDJTlFJUE1JUVDJUExJUIwJUVDJTgyJUFDJTIwJUVDJTk5JTg0JUVCJUEzJThDJTJDJUVCJUI2JTg0JUVDJTg0JTlEJTIwJUVBJUIzJUI1JUVBJUIwJTlD" data-listing-date-sort="1795737600000" data-listing-file-modified-sort="1795870213743" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1677">
+<a href="../ko/subjects/drug_store.html" class="quarto-grid-link no-external-icon">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../ko/subjects/images/drug_store_thumb.png" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+약국 고충 시장조사
+</h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('JUVDJTk1JUJEJUVBJUI1JUFE'); return false;">약국</div>
@@ -345,15 +338,11 @@ window.Quarto = {
 <div class="listing-category" onclick="window.quartoListingCategory('JUVCJUI2JTg0JUVDJTg0JTlEJTIwJUVBJUIzJUI1JUVBJUIwJTlD'); return false;">분석 공개</div>
 
 </div>
-<div class="listing-description">
-<a href="../ko/subjects/drug_store.html" class="no-external-icon">
+<div class="card-text listing-description">
 <p>들여오기·쌓아두기·내주기·벌기 네 단계로 약국의 고충을 나누고 우선순위를 매겼습니다. 공개 의약품 데이터 시리즈의 출발점입니다.</p>
-</a>
 </div>
 </div>
-<div class="metadata">
-
-</div>
+</div></a>
 </div>
 </div>
 <div class="listing-no-matching d-none">일치 없음</div>
