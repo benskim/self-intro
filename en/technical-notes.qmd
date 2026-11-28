@@ -1,0 +1,17 @@
+---
+title: "Technical Notes"
+subtitle: "Methods, validation procedures and reproducibility details behind the reports"
+listing:
+  contents:
+    - posts/2026-11-drug-demand-tech-note/index.qmd
+  sort: "date desc"
+  type: default
+  fields: [date, title, description, categories]
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: false
+code-tools: false
+---
+
+Technical Notes document how the findings in Reports were produced and checked, without repeating their conclusions. They collect methods, experimental design, model specifications and details needed for reproduction. Findings are presented in [Reports](report.qmd).
