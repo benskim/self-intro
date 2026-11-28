@@ -69,6 +69,8 @@ Four methods were compared on 501 ingredients (93.8% of outpatient claimed amoun
 
 ![Average error by forecast horizon, 501 ingredients. Lower is better.](images/horizon-curve.svg){fig-alt="Line chart of forecast error from 1 to 12 months ahead. Machine learning is lower than ETS from 2 to 7 months ahead; similar at 1 month and at 8 months or more. Same month last year stays around 9%."}
 
+**Adjusting for working days (weekdays that are not holidays) while keeping ETS lowered average error from 7.11% to 6.19%** (−0.92 points, 90% interval −1.59 to −0.25). The same approach gave 90% ranges that contained the actual value 90.77% of the time. It is not yet the default: the idea came from the same 2023–2025 errors it was evaluated on, and for 61 respiratory and antibiotic ingredients error rose from 16.07% to 16.82%. It is the first candidate to confirm on 2026 data.
+
 ## 3. Where do forecasts go most wrong? {#class-error}
 
 - For half the ingredients, the busiest month in 2018–2025 was at most 2.3 times the quietest; for the top 5% it was over 17 times.
@@ -81,11 +83,11 @@ Chronic and cardiovascular drugs (lipid-lowering C10, antithrombotics B01) were 
 
 ![How many times larger winter prescriptions were than summer, winters 18/19 to 24/25.](images/winter-height.svg){fig-alt="Winter-to-summer multiples for seven winters. R05: 1.81, 1.52, 1.07, 2.36, 1.47, 1.42, 1.24. R03: 1.50, 1.30, 1.11, 1.50, 1.38, 1.35, 1.24. J01: 1.35, 1.17, 0.93, 1.64, 1.33, 1.21, 1.07."}
 
-These are the same classes pharmacists describe as running short in winter. The data show only that their demand is hard to forecast; how short supply was is not in the data. These are observed associations, not causes.
+These are the same classes pharmacists describe as running short in winter. Whether any public signal announces such winters months ahead is examined [on a separate page](../2026-11-winter-leading-signals/index.qmd). The data show only that their demand is hard to forecast; how short supply was is not in the data. These are observed associations, not causes.
 
 ## 4. Does a separate method per drug class help? {#class-test}
 
-No. Blending machine learning and ETS differently per class, and adding class information to the model, were tested against criteria fixed in advance. Both reached 6.34% vs 6.46% for the existing model, a 0.12-point gap with no evidence of improvement. Per-class error is used to decide **how much to trust** a forecast, not to change the method. Details are in the [technical note](../2026-11-drug-demand-tech-note/index.qmd#class-test).
+No. Blending machine learning and ETS differently per class, and adding class information to the model, were tested against criteria fixed in advance. Both reached 6.34% vs 6.46% for the existing model, a 0.12-point gap with no evidence of improvement. Per-class error is used to decide **how much to trust** a forecast, not to change the method. Details are in the [technical note](../2026-11-drug-demand-tech-note/index.qmd#class-diff).
 
 ## 5. Case: the flu drug and "last year × growth" {#case-flu}
 
@@ -103,7 +105,7 @@ Methods and decision rules were fixed before results (pre-registration); each mo
 
 ![Monthly error difference. Top: machine learning vs same month last year. Bottom: machine learning vs ETS.](images/period-diff.svg){fig-alt="Two rows of 36 monthly bars. Top row (ML minus last year): 35 months below zero, total −3.26 pp. Bottom row (ML minus ETS): 23 months below zero, total −0.63 pp, with several months in 2023 H1 and 2024 where ETS was lower."}
 
-The gain over "same month last year" was 40% in 2023, 31% in 2024 and 29% in 2025 (23% in the first half of 2023), so it is not a post-COVID artefact. Against ETS the months were mixed. This split was not pre-registered and is not used for any verdict. Adding reimbursement-list prices did not help; see the [series overview](../2026-11-pharm-data-series/index.qmd#list-price).
+The gain over "same month last year" was 40% in 2023, 31% in 2024 and 29% in 2025 (23% in the first half of 2023), so it is not a post-COVID artefact. Against ETS the months were mixed. This split was not pre-registered and is not used for any verdict. Shifts in prescription mix (age, region, clinic share) did not explain errors either: no feature met the pre-set criteria, and adjusting for them made every case worse, so that direction was closed. Adding reimbursement-list prices did not help; see the [series overview](../2026-11-pharm-data-series/index.qmd#list-price).
 
 ## Glossary {#glossary}
 
