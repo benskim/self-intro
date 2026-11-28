@@ -6,12 +6,12 @@ listing:
     - "subjects/*.md"
   type: default
   fields: [image, title, description, categories]
-  image-height: 160px
+  image-height: 180px
   categories: true
   sort: "date desc"
   sort-ui: false
   filter-ui: false
-page-layout: full
+page-layout: article
 title-block-banner: false
 code-tools: false
 ---
@@ -25,3 +25,5 @@ Subjects는 분석에 들어가기 전에 **어떤 문제를 왜 풀어야 하�
   <div><span class="status status-plan">다음 분석 설계</span> 첫 분석 단계를 정함</div>
 </div>
 ```
+
+---
