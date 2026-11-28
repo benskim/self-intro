@@ -434,3 +434,22 @@ main table { display: block; max-width: 100%; overflow-x: auto; }
   .kpi-grid { grid-template-columns: 1fr 1fr; }
   .kpi .kpi-value { font-size: 1.25rem; }
 }
+
+
+/* ===== Listing pages: separate the introduction from the content list ===== */
+#listing-subjects,
+#listing-report,
+#listing-projects {
+  margin-top: 2.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+@media (max-width: 640px) {
+  #listing-subjects,
+  #listing-report,
+  #listing-projects {
+    margin-top: 2rem;
+    padding-top: 1.1rem;
+  }
+}
