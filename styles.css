@@ -518,6 +518,16 @@ main table { display: block; max-width: 100%; overflow-x: auto; }
   background: transparent;
 }
 
+/* Reports have no thumbnails, so use the full editorial text measure. */
+#listing-report .quarto-post {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+#listing-report .body,
+#listing-report .card-body {
+  max-width: 58rem;
+}
+
 @media (max-width: 760px) {
   #listing-subjects,
   #listing-report,
