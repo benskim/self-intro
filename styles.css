@@ -560,3 +560,74 @@ main table { display: block; max-width: 100%; overflow-x: auto; }
     max-width: 36rem;
   }
 }
+
+
+/* Home page: make Subjects follow the image-free Reports listing */
+#subjects .quarto-post,
+#reports .quarto-post {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(10rem, 25%);
+  align-items: start;
+  column-gap: 2rem;
+  width: 100%;
+  max-width: none;
+  padding: 1rem 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+#subjects .quarto-post:first-child,
+#reports .quarto-post:first-child {
+  border-top: 0 !important;
+  padding-top: 0;
+}
+
+#subjects .quarto-post .body,
+#reports .quarto-post .body {
+  grid-column: 1;
+  min-width: 0;
+  width: 100%;
+  padding: 0;
+}
+
+#subjects .quarto-post .metadata,
+#reports .quarto-post .metadata {
+  grid-column: 2;
+  justify-self: end;
+  text-align: right;
+  min-width: 0;
+  padding: 0;
+  color: var(--ink-faint);
+}
+
+#subjects .quarto-post .thumbnail,
+#reports .quarto-post .thumbnail {
+  display: none !important;
+}
+
+#subjects .listing-title,
+#reports .listing-title {
+  margin: 0 0 0.45rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+@media (max-width: 760px) {
+  #subjects .quarto-post,
+  #reports .quarto-post {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 0.4rem;
+  }
+
+  #subjects .quarto-post .metadata,
+  #reports .quarto-post .metadata {
+    grid-column: 1;
+    justify-self: start;
+    text-align: left;
+  }
+}
