@@ -1,6 +1,7 @@
 ---
 title: "Reports"
 listing:
+  id: listing-report
   contents:
     - posts/2026-11-benefit-change-lead/index.qmd
     - posts/2026-11-drug-demand-forecast/index.qmd
@@ -10,7 +11,7 @@ listing:
   fields: [date, title, description, categories]
   sort-ui: false
   filter-ui: false
-page-layout: article
+page-layout: full
 title-block-banner: false
 date-format: "YYYY년 M월 D일"
 code-tools: false
