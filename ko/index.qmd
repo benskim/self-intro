@@ -19,7 +19,6 @@ listing:
     contents:
       - posts/2026-11-benefit-change-lead/index.qmd
       - posts/2026-11-drug-demand-forecast/index.qmd
-      - posts/2026-11-winter-leading-signals/index.qmd
     sort: false
     type: default
     fields: [title, subtitle, categories]
@@ -67,8 +66,8 @@ listing:
   <div>
     <p class="domain-name">Pharmacy &amp; Drug Market</p>
     <h3>약국과 의약품 시장</h3>
-    <p>약국의 고충을 의약품 유통·약국 지원 서비스가 덜어 줄 수 있도록, 약가인하의 시점과 폭, 처방 수요, 겨울 수요 신호를 공개 데이터로 본다.</p>
-    <span class="status status-done">분석 공개 3편</span>
+    <p>약국의 고충을 의약품 유통·약국 지원 서비스가 덜어 줄 수 있도록, 약가인하의 시점과 폭, 성분별 처방 수요를 공개 데이터로 본다.</p>
+    <span class="status status-done">분석 공개 2편</span>
   </div>
   <div>
     <p class="domain-name">Patient &amp; Medication</p>
