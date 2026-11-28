@@ -2,6 +2,7 @@
 title: "Projects"
 subtitle: "이전 직무에서 수행한 데이터 분석·머신러닝 프로젝트"
 listing:
+  id: listing-projects
   contents:
     - projects/project-a.qmd
     - projects/project-b.qmd
