@@ -9,6 +9,7 @@ listing:
   sort: false
   type: default
   categories: true
+  fields: [date, title, description, categories]
   sort-ui: false
   filter-ui: false
 page-layout: full
