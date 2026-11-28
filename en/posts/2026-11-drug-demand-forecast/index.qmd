@@ -17,7 +17,7 @@ aliases:
 ## About this page
 Second edition (2026-11-27), rewritten to start from the pharmacy problem of getting drugs on time. The first edition (2026-11-24) centred on comparing four forecasting methods. Analyses, numbers and figures are unchanged.
 
-Price cuts: [Only in 2024 could most price cuts be seen a month ahead](../2026-11-benefit-change-lead/index.qmd). Whole series: [series overview](../2026-11-pharm-data-series/index.qmd). Verification and model specification: [technical note](../2026-11-drug-demand-tech-note/index.qmd).
+Price cuts: [price-cut report](../2026-11-benefit-change-lead/index.qmd). Field context and public-data scope: [pharmacy pain-point research](../../../ko/subjects/drug_store.md). Verification and model specification: [technical note](../2026-11-drug-demand-tech-note/index.qmd).
 :::
 
 ::: {.report-meta}
@@ -105,7 +105,7 @@ Methods and decision rules were fixed before results (pre-registration); each mo
 
 ![Monthly error difference. Top: machine learning vs same month last year. Bottom: machine learning vs ETS.](images/period-diff.svg){fig-alt="Two rows of 36 monthly bars. Top row (ML minus last year): 35 months below zero, total −3.26 pp. Bottom row (ML minus ETS): 23 months below zero, total −0.63 pp, with several months in 2023 H1 and 2024 where ETS was lower."}
 
-The gain over "same month last year" was 40% in 2023, 31% in 2024 and 29% in 2025 (23% in the first half of 2023), so it is not a post-COVID artefact. Against ETS the months were mixed. This split was not pre-registered and is not used for any verdict. Shifts in prescription mix (age, region, clinic share) did not explain errors either: no feature met the pre-set criteria, and adjusting for them made every case worse, so that direction was closed. Adding reimbursement-list prices did not help; see the [series overview](../2026-11-pharm-data-series/index.qmd#list-price).
+The gain over "same month last year" was 40% in 2023, 31% in 2024 and 29% in 2025 (23% in the first half of 2023), so it is not a post-COVID artefact. Against ETS the months were mixed. This split was not pre-registered and is not used for any verdict. Shifts in prescription mix (age, region, clinic share) did not explain errors either: no feature met the pre-set criteria, and adjusting for them made every case worse, so that direction was closed. Adding reimbursement-list prices did not help; see the [technical note](../2026-11-drug-demand-tech-note/index.qmd#list-price-test).
 
 ## Glossary {#glossary}
 
