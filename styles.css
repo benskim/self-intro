@@ -631,3 +631,124 @@ main table { display: block; max-width: 100%; overflow-x: auto; }
     text-align: left;
   }
 }
+
+
+/* ===== Full-width editorial rows: remove Quarto's inset listing column ===== */
+#listing-subjects,
+#listing-projects,
+#listing-report {
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+#listing-subjects .list,
+#listing-projects .list,
+#listing-report .list,
+#listing-subjects .quarto-listing,
+#listing-projects .quarto-listing,
+#listing-report .quarto-listing {
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+#listing-subjects .quarto-post,
+#listing-projects .quarto-post,
+#listing-report .quarto-post {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(15rem, 34%) !important;
+  grid-template-areas: "copy visual";
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 1.75rem 0 !important;
+  box-sizing: border-box;
+}
+
+#listing-subjects .quarto-post .body,
+#listing-projects .quarto-post .body,
+#listing-report .quarto-post .body {
+  grid-area: copy;
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#listing-subjects .quarto-post .thumbnail,
+#listing-projects .quarto-post .thumbnail,
+#listing-report .quarto-post .thumbnail {
+  grid-area: visual;
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#listing-subjects .quarto-post .thumbnail img,
+#listing-projects .quarto-post .thumbnail img,
+#listing-report .quarto-post .thumbnail img {
+  display: block;
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  object-position: center;
+}
+
+#listing-subjects .quarto-post .metadata,
+#listing-projects .quarto-post .metadata,
+#listing-report .quarto-post .metadata {
+  grid-area: meta;
+}
+
+#listing-report .quarto-post {
+  grid-template-areas: "copy visual" !important;
+  grid-template-columns: minmax(0, 1fr) minmax(15rem, 34%) !important;
+  align-items: start;
+}
+
+#listing-report .quarto-post .thumbnail img {
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+}
+
+#listing-subjects .quarto-post .listing-title,
+#listing-projects .quarto-post .listing-title,
+#listing-report .quarto-post .listing-title {
+  text-align: left !important;
+  margin-top: 0;
+}
+
+#listing-subjects .quarto-post:first-child,
+#listing-projects .quarto-post:first-child,
+#listing-report .quarto-post:first-child {
+  padding-top: 0.25rem !important;
+}
+
+@media (max-width: 760px) {
+  #listing-subjects .quarto-post,
+  #listing-projects .quarto-post,
+  #listing-report .quarto-post {
+    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-areas: "copy" "visual";
+    gap: 0.9rem;
+  }
+
+  #listing-subjects .quarto-post .thumbnail,
+  #listing-projects .quarto-post .thumbnail,
+  #listing-report .quarto-post .thumbnail {
+    max-width: 100% !important;
+  }
+}
