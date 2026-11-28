@@ -14,4 +14,4 @@ title-block-banner: false
 code-tools: false
 ---
 
-Analyses of problems defined in [Subjects](subjects.qmd), using public data, with how far the numbers can be trusted and their limits. Both current reports come from the pharmacy pain-point research. Verification and model specification are collected in [Technical Notes](technical-notes.qmd).
+Analyses of problems defined in [Subjects](subjects.qmd), using public data, with how far the numbers can be trusted and their limits. Both current reports come from the pharmacy pain-point research. Methods, validation and reproduction details are included in each report.
