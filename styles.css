@@ -371,48 +371,6 @@ main table thead th { border-bottom: 1.5px solid var(--ink) !important; }
 .report-overview .leaflet-row { padding: 0.8rem 1.2rem; }
 
 
-/* ===== Korean project listing: readable responsive cards ===== */
-#listing-projects .list,
-#listing-projects .list-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.25rem;
-}
-#listing-projects .quarto-post,
-#listing-projects .quarto-grid-item {
-  min-width: 0;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  overflow: hidden;
-  background: var(--paper);
-}
-#listing-projects .quarto-post img,
-#listing-projects .quarto-grid-item img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-}
-#listing-projects .body,
-#listing-projects .card-body {
-  padding: 1rem 1.1rem;
-}
-#listing-projects .listing-title {
-  font-size: 1.05rem;
-  line-height: 1.4;
-  font-weight: 750;
-  margin: 0 0 0.45rem;
-}
-#listing-projects .listing-description,
-#listing-projects .listing-subtitle {
-  color: var(--ink-sub);
-  font-size: 0.92rem;
-  line-height: 1.6;
-}
-#listing-projects .quarto-post:hover,
-#listing-projects .quarto-grid-item:hover {
-  border-color: var(--pine);
-}
 main img { max-width: 100%; height: auto; }
 main pre, main .mermaid { max-width: 100%; }
 main table { display: block; max-width: 100%; overflow-x: auto; }
@@ -436,20 +394,169 @@ main table { display: block; max-width: 100%; overflow-x: auto; }
 }
 
 
-/* ===== Listing pages: separate the introduction from the content list ===== */
+
+
+/* ===== Editorial listings: use the full page width ===== */
 #listing-subjects,
 #listing-report,
 #listing-projects {
-  margin-top: 2.75rem;
-  padding-top: 1.5rem;
+  width: 100%;
+  max-width: none;
+  margin: 2.25rem 0 0;
+  padding: 1.5rem 0 0;
   border-top: 1px solid var(--line);
 }
 
-@media (max-width: 640px) {
+#listing-subjects .list,
+#listing-report .list,
+#listing-projects .list {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+#listing-subjects .quarto-post,
+#listing-report .quarto-post,
+#listing-projects .quarto-post {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(12rem, 30%);
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  margin: 0;
+  padding: 1.8rem 0;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+#listing-subjects .quarto-post:first-child,
+#listing-report .quarto-post:first-child,
+#listing-projects .quarto-post:first-child {
+  padding-top: 0.25rem;
+}
+
+#listing-subjects .quarto-post:last-child,
+#listing-report .quarto-post:last-child,
+#listing-projects .quarto-post:last-child {
+  border-bottom: 0;
+}
+
+#listing-subjects .quarto-post .body,
+#listing-report .quarto-post .body,
+#listing-projects .quarto-post .body {
+  grid-column: 1;
+  grid-row: 1;
+  min-width: 0;
+  width: 100%;
+  padding: 0;
+}
+
+#listing-subjects .quarto-post .thumbnail,
+#listing-report .quarto-post .thumbnail,
+#listing-projects .quarto-post .thumbnail {
+  grid-column: 2;
+  grid-row: 1;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+}
+
+#listing-subjects .quarto-post .thumbnail img,
+#listing-projects .quarto-post .thumbnail img {
+  display: block;
+  width: 100%;
+  max-height: 15rem;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  object-position: center;
+}
+
+#listing-subjects .listing-title,
+#listing-report .listing-title,
+#listing-projects .listing-title {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.2rem, 1.8vw, 1.55rem);
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+#listing-subjects .listing-description,
+#listing-report .listing-description,
+#listing-projects .listing-description {
+  margin-top: 0.5rem;
+  color: var(--ink-sub);
+  line-height: 1.7;
+}
+
+#listing-report .quarto-post {
+  grid-template-columns: minmax(0, 1fr) minmax(12rem, 25%);
+  align-items: start;
+}
+
+#listing-report .quarto-post .metadata {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
+  text-align: right;
+  color: var(--ink-faint);
+  font-size: 0.9rem;
+  padding: 0;
+}
+
+#listing-report .quarto-post .body {
+  grid-column: 1;
+}
+
+#listing-report .quarto-post .listing-title {
+  text-align: left;
+}
+
+#listing-subjects .quarto-post:hover,
+#listing-report .quarto-post:hover,
+#listing-projects .quarto-post:hover {
+  background: transparent;
+}
+
+@media (max-width: 760px) {
   #listing-subjects,
   #listing-report,
   #listing-projects {
-    margin-top: 2rem;
-    padding-top: 1.1rem;
+    margin-top: 1.8rem;
+    padding-top: 1.2rem;
+  }
+
+  #listing-subjects .quarto-post,
+  #listing-report .quarto-post,
+  #listing-projects .quarto-post {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.9rem;
+    padding: 1.4rem 0;
+  }
+
+  #listing-subjects .quarto-post .body,
+  #listing-report .quarto-post .body,
+  #listing-projects .quarto-post .body,
+  #listing-subjects .quarto-post .thumbnail,
+  #listing-report .quarto-post .metadata,
+  #listing-projects .quarto-post .thumbnail {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  #listing-report .quarto-post .metadata {
+    justify-self: start;
+    text-align: left;
+    order: 2;
+  }
+
+  #listing-subjects .quarto-post .thumbnail,
+  #listing-projects .quarto-post .thumbnail {
+    max-width: 36rem;
   }
 }
