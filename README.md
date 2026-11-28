@@ -8,7 +8,7 @@
 
 | 메뉴 | 파일 | 내용 |
 | --- | --- | --- |
-| Home | `ko/index.qmd`, `en/index.qmd` (루트 `index.qmd`는 `ko/`로 이동) | 정체성, 연구 분야, 대표 Subjects·Reports, 경력 요약 |
+| Ben's Notes (홈) | `ko/index.qmd`, `en/index.qmd` (루트 `index.qmd`는 `ko/`로 이동) | 별도 Home 메뉴 없이 사이트 제목을 통해 진입하는 첫 화면: 정체성, 연구 분야, 대표 Subjects·Reports, 경력 요약 |
 | Subjects | `ko/subjects.qmd` → `ko/subjects/*.md` | 시장조사·문제 정의 (영어판은 목록만) |
 | Reports | `ko/report.qmd` → `ko/posts/*/index.qmd` | 공개 데이터 분석 결과 2건 |
 | Technical Notes | `ko/technical-notes.qmd` → `ko/posts/*-tech-note/index.qmd` | 분석 방법, 검증 절차, 재현 정보 |
